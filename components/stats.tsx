@@ -13,10 +13,9 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 5, suffix: "B+", prefix: "$", label: "Processed annually" },
-  { value: 99.9, suffix: "%", label: "Uptime guarantee" },
-  { value: 150, suffix: "+", label: "Countries supported" },
-  { value: 2, suffix: "M+", label: "Active users" },
+  { value: 30, suffix: "+", label: "Years of integrated experience" },
+  { value: 3, suffix: "", label: "Disciplines under one roof" },
+  { value: 50, suffix: "", label: "States served nationwide" },
 ];
 
 function AnimatedCounter({
@@ -46,11 +45,14 @@ function AnimatedCounter({
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
-      // Ease out cubic
       const easeOut = 1 - Math.pow(1 - progress, 3);
       const currentValue = easeOut * value;
 
-      setCount(isDecimal ? Math.round(currentValue * 10) / 10 : Math.floor(currentValue));
+      setCount(
+        isDecimal
+          ? Math.round(currentValue * 10) / 10
+          : Math.floor(currentValue),
+      );
 
       if (progress < 1) {
         requestAnimationFrame(animate);
@@ -77,8 +79,26 @@ function AnimatedCounter({
 export function Stats(): ReactNode {
   return (
     <section className="relative w-full bg-muted pb-16 sm:pb-20 overflow-hidden">
-      <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif text-foreground leading-tight">
+            Fee-Only. Fiduciary.{" "}
+            <span className="italic">No Exceptions.</span>
+          </h2>
+          <p className="mt-4 text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+            We don&apos;t earn commissions. We don&apos;t sell products. As a
+            fee-only registered investment advisor, every recommendation we make
+            is legally required to be in your best interest.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}

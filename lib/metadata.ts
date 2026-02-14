@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "React Bits Pro - Finance Template",
+  name: "United Financial Planning Group",
   description:
-    "The modern financial platform that grows with you. From personal accounts to enterprise solutions, manage your money with confidence.",
-  url: "https://finaro.com",
+    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services — integrated for clients nationwide.",
+  url: "https://unitedfpg.com",
   ogImage: "/og-image.png",
-  creator: "@finaro",
+  creator: "@unitedfpg",
   authors: [
     {
-      name: "Finaro",
-      url: "https://finaro.com",
+      name: "United Financial Planning Group",
+      url: "https://unitedfpg.com",
     },
   ],
   keywords: [
-    "banking",
-    "finance",
-    "fintech",
-    "payments",
-    "business banking",
-    "money transfer",
-    "financial platform",
-    "modern banking",
+    "fee-only financial advisor",
+    "financial planning and tax planning under one roof",
+    "CPA and CFP financial advisor",
+    "retirement planning advisor",
+    "tax-efficient investment management",
+    "stock options financial advisor",
+    "equity compensation tax planning",
+    "fiduciary financial advisor",
+    "financial advisor New York",
+    "integrated tax and financial planning",
   ],
 } as const;
 

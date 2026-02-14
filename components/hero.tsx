@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { ChevronRight, Shield } from "lucide-react";
+import { ArrowRight, Shield } from "lucide-react";
 import { motion } from "motion/react";
 import * as THREE from "three";
+import StaggeredText from "@/components/react-bits/staggered-text";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -23,7 +25,6 @@ const fragmentShader = `
 
   #define PI 3.141592654
 
-  // Simplex noise function
   vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
   vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
   vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }
@@ -81,64 +82,51 @@ const fragmentShader = `
     
     float t = iTime * 0.15;
     
-    // Mouse influence - smooth displacement field
     vec2 mouse = iMouse;
     mouse.x *= iResolution.x / iResolution.y;
     
-    // Create a smooth radial displacement that pushes blobs away from cursor
     vec2 toMouse = uv - mouse;
     float dist = length(toMouse);
     
-    // Soft gaussian-like falloff for smooth displacement
     float influence = exp(-dist * dist * 2.0) * 0.12;
     
-    // Displace UV coordinates - pushes the noise field away from cursor
     vec2 displacement = toMouse * influence / (dist + 0.1);
     vec2 displacedUv = uv + displacement;
     
-    // Dark base
     vec3 col = vec3(0.02, 0.02, 0.06);
     
-    // Aurora beams from bottom - displaced by cursor
     float beam1 = snoise(vec3(displacedUv.x * 1.5 + t * 0.5, displacedUv.y * 0.8 - t * 0.2, t * 0.3));
     float beam2 = snoise(vec3(displacedUv.x * 2.0 - t * 0.3, displacedUv.y * 0.6 + t * 0.1, t * 0.2 + 10.0));
     float beam3 = snoise(vec3(displacedUv.x * 1.2 + t * 0.2, displacedUv.y * 1.0 - t * 0.15, t * 0.25 + 20.0));
     
-    // Vertical gradient - stronger at bottom
     float verticalFade = pow(1.0 - uv.y, 1.5);
     float verticalFade2 = pow(1.0 - uv.y, 2.5);
     
-    // Light beam shapes
     float light1 = smoothstep(0.0, 0.8, beam1 * verticalFade);
     float light2 = smoothstep(0.0, 0.7, beam2 * verticalFade);
     float light3 = smoothstep(0.0, 0.6, beam3 * verticalFade2);
     
-    // Colors - warm to cool spectrum
-    vec3 orange = vec3(0.95, 0.4, 0.1);
-    vec3 red = vec3(0.85, 0.15, 0.2);
-    vec3 pink = vec3(0.7, 0.2, 0.4);
-    vec3 blue = vec3(0.1, 0.3, 0.7);
-    vec3 cyan = vec3(0.1, 0.6, 0.8);
+    // Warm navy / gold spectrum for financial trust
+    vec3 gold = vec3(0.85, 0.65, 0.25);
+    vec3 amber = vec3(0.75, 0.45, 0.15);
+    vec3 navy = vec3(0.1, 0.15, 0.35);
+    vec3 blue = vec3(0.15, 0.25, 0.55);
+    vec3 slate = vec3(0.2, 0.3, 0.45);
     
-    // Position-based color mixing
     float xPos = uv.x / (iResolution.x / iResolution.y);
     
-    // Layer the colors
-    col += orange * light1 * 0.6 * smoothstep(0.6, 0.2, xPos);
-    col += red * light1 * 0.5 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
-    col += pink * light2 * 0.4 * smoothstep(0.4, 0.6, xPos);
+    col += gold * light1 * 0.5 * smoothstep(0.6, 0.2, xPos);
+    col += amber * light1 * 0.4 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
+    col += navy * light2 * 0.5 * smoothstep(0.4, 0.6, xPos);
     col += blue * light3 * 0.5 * smoothstep(0.5, 0.8, xPos);
-    col += cyan * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
+    col += slate * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
     
-    // Add subtle glow at bottom center
     float centerGlow = exp(-pow((xPos - 0.5) * 2.0, 2.0)) * verticalFade2;
-    col += vec3(0.9, 0.5, 0.3) * centerGlow * 0.3;
+    col += vec3(0.7, 0.55, 0.25) * centerGlow * 0.25;
     
-    // Slight vignette
     float vignette = 1.0 - pow(length(uv - vec2(0.5 * iResolution.x / iResolution.y, 0.5)) * 0.8, 2.0);
     col *= max(vignette, 0.3);
     
-    // Tone mapping
     col = pow(col, vec3(0.9));
     
     gl_FragColor = vec4(col, 1.0);
@@ -262,47 +250,56 @@ export function Hero(): ReactNode {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease }}
-              className="cursor-pointer flex items-center gap-2 pl-4 pr-3 py-1.5 bg-white rounded-full mb-6"
+              className="flex items-center gap-2 pl-4 pr-3 py-1.5 bg-white rounded-full mb-6"
             >
-              <span className="text-xs font-medium text-black">New: Instant global transfers</span>
-              <ChevronRight className="w-3 h-3 text-black/50" />
+              <span className="text-xs font-medium text-black">
+                Fee-Only · Fiduciary · No Exceptions
+              </span>
             </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5, ease }}
-              className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center leading-tighter tracking-tight max-w-3xl"
-            >
-              Spend, save, & invest with<br/> one powerful app
-            </motion.h1>
+            <StaggeredText
+              as="h1"
+              text="Your Financial Life Is Complex.|Your Advisory Team Shouldn't Make It Harder."
+              separator="|"
+              segmentBy="words"
+              direction="bottom"
+              delay={60}
+              duration={0.7}
+              blur={true}
+              className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center leading-tighter tracking-tight max-w-4xl"
+            />
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7, ease }}
-              className="mt-5 text-lg text-white/70 text-left lg:text-center max-w-xl"
+              className="mt-5 text-lg text-white/70 text-left lg:text-center max-w-2xl"
             >
-              Join 45 million people managing their money better with instant transfers, smart budgeting, and zero foreign exchange fees.
+              United Financial Planning Group brings financial planning,
+              investment management, tax planning, and tax preparation together
+              under one roof — so every decision works in concert, not in
+              conflict.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9, ease }}
-              className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3 mt-10 w-full lg:w-auto"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-10 w-full sm:w-auto"
             >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="h-12 w-full lg:w-72 px-5 text-sm bg-transparent border border-white/20 rounded-full text-white placeholder:text-white/50 focus:outline-none focus:border-white/40"
-              />
-              <button
-                type="button"
-                className="cursor-pointer h-12 px-6 text-sm font-medium bg-white text-black rounded-full hover:bg-white/90 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
+              <Link
+                href="/contact"
+                className="group h-12 px-6 text-sm font-medium bg-white text-black rounded-full hover:bg-white/90 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
               >
-                Get Started
-              </button>
+                Schedule a Conversation
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+              <Link
+                href="/services"
+                className="h-12 px-6 text-sm font-medium border border-white/20 text-white rounded-full hover:bg-white/10 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
+              >
+                Explore Our Services
+              </Link>
             </motion.div>
 
             <motion.p
@@ -312,7 +309,7 @@ export function Hero(): ReactNode {
               className="flex items-center gap-2 mt-6 text-sm text-white/60"
             >
               <Shield className="w-4 h-4" />
-              Industry-leading security. No hidden fees.
+              CFPs, CPAs, and Enrolled Agents working together in-house.
             </motion.p>
           </div>
         </motion.div>

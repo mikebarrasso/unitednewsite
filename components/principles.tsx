@@ -1,39 +1,47 @@
 "use client";
 
 import { type ReactNode } from "react";
-import {
-  Sparkles,
-  Landmark,
-  CreditCard,
-  BarChart3,
-  ArrowRight,
-  Shield,
-} from "lucide-react";
+import { Clock, Building2, BarChart3, Gem } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-type PrincipleCard = {
+type AudienceCard = {
   icon: ReactNode;
-  label: string;
+  title: string;
+  description: string;
+  href: string;
 };
 
-const principles: PrincipleCard[] = [
+const audiences: AudienceCard[] = [
   {
-    icon: <Landmark className="w-12 h-12" strokeWidth={1} />,
-    label: "Bank-grade Infrastructure",
+    icon: <Clock className="w-10 h-10" strokeWidth={1} />,
+    title: "Approaching or in Retirement",
+    description:
+      "We coordinate your Social Security timing, Roth conversion strategies, required minimum distributions, and estate considerations into one cohesive plan.",
+    href: "/services/retirement-planning",
   },
   {
-    icon: <Shield className="w-12 h-12" strokeWidth={1} />,
-    label: "Regulated & Compliant",
+    icon: <Building2 className="w-10 h-10" strokeWidth={1} />,
+    title: "Business Owners",
+    description:
+      "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board — succession planning, tax-efficient compensation, and personal wealth building.",
+    href: "/services/tax-planning",
   },
   {
-    icon: <CreditCard className="w-12 h-12" strokeWidth={1} />,
-    label: "Instant Card Controls",
+    icon: <BarChart3 className="w-10 h-10" strokeWidth={1} />,
+    title: "Executives with Equity Compensation",
+    description:
+      "ISOs, NSOs, RSUs, ESPP shares — each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
+    href: "/services/investment-management",
   },
   {
-    icon: <BarChart3 className="w-12 h-12" strokeWidth={1} />,
-    label: "Real-time Analytics",
+    icon: <Gem className="w-10 h-10" strokeWidth={1} />,
+    title: "High-Net-Worth Individuals",
+    description:
+      "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity — not a cookie-cutter model.",
+    href: "/services/financial-planning",
   },
 ];
 
@@ -41,71 +49,44 @@ export function Principles(): ReactNode {
   return (
     <section className="relative w-full bg-muted text-foreground py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="flex flex-col">
+        <div className="flex flex-col items-center text-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1, ease }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight max-w-3xl"
+          >
+            Built for Financial Lives That{" "}
+            <span className="italic">Don&apos;t Fit in a Template</span>
+          </motion.h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {audiences.map((audience, index) => (
             <motion.div
+              key={audience.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease }}
-              className="flex items-center gap-2 mb-6"
+              transition={{ duration: 0.5, delay: 0.1 * index, ease }}
             >
-              <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-medium">Why Finaro?</span>
-            </motion.div>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1, ease }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight"
-            >
-              Modern banking with{" "}
-              <span className="italic">security at the core</span>
-            </motion.h2>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2, ease }}
-              className="mt-6 text-foreground/70 leading-relaxed max-w-lg"
-            >
-              From instant payments to global transfers, every feature is
-              designed to give you complete control over your finances.
-            </motion.p>
-
-            <motion.a
-              href="#"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3, ease }}
-              className="group inline-flex items-center gap-2 mt-8 px-6 py-3 bg-foreground text-background rounded-full text-sm font-medium w-fit hover:bg-foreground/90 transition-colors"
-            >
-              Open an account
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </motion.a>
-          </div>
-
-          <div className="grid grid-cols-2 gap-2 max-w-md lg:ml-auto">
-            {principles.map((principle, index) => (
-              <motion.div
-                key={principle.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * index, ease }}
-                className="aspect-square flex flex-col items-center justify-center bg-foreground/5 rounded-sm"
+              <Link
+                href={audience.href}
+                className="group flex flex-col p-8 bg-background border border-border rounded-sm hover:border-foreground/20 hover:shadow-lg transition-all h-full"
               >
-                <div className="mb-4 text-foreground/80">{principle.icon}</div>
-                <p className="text-sm text-center text-foreground/80 px-4">
-                  {principle.label}
+                <div className="mb-4 text-foreground/70">
+                  {audience.icon}
+                </div>
+                <h3 className="text-lg font-medium text-foreground mb-3">
+                  {audience.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                  {audience.description}
                 </p>
-              </motion.div>
-            ))}
-          </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

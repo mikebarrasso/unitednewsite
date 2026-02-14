@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import { Plus, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -13,29 +14,40 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How do I open a Finaro account?",
+    question: 'What does "fee-only" mean, and why does it matter?',
     answer:
-      "Opening an account takes just a few minutes. Download our app or sign up on our website, verify your identity with a valid ID, and you're ready to go. No minimum deposit required.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates the conflicts of interest common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you the best advice we can.",
   },
   {
-    question: "Are there any hidden fees?",
+    question:
+      "How is United Financial Planning Group different from other financial advisors?",
     answer:
-      "No hidden fees, ever. We're transparent about our pricing—free personal accounts, no monthly maintenance fees, and real exchange rates for international transfers. You'll always see the exact cost before confirming any transaction.",
+      "Most advisory firms focus on one piece of the puzzle — usually investment management. If you need tax planning, they refer you out. We built our firm differently. Our team includes Certified Financial Planners, CPAs, and Enrolled Agents working together under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily.",
   },
   {
-    question: "How fast are international transfers?",
+    question: "What does it mean that you're a fiduciary?",
     answer:
-      "Most international transfers arrive instantly or within minutes. In some cases, depending on the destination country and local banking hours, it may take up to 24 hours. You can track your transfer in real-time through the app.",
+      "As a registered investment advisor, we are legally obligated to act in your best interest at all times. This is known as a fiduciary duty. Not all financial professionals are held to this standard — many operate under a lower \"suitability\" standard, which only requires that recommendations be suitable for you, not necessarily the best option available.",
   },
   {
-    question: "Is my money safe with Finaro?",
+    question: "Who are your typical clients?",
     answer:
-      "Absolutely. Your deposits are protected up to €100,000 under the European Deposit Insurance Scheme. We use bank-grade encryption, biometric authentication, and 24/7 fraud monitoring to keep your account secure.",
+      "We work with individuals and families who have accumulated meaningful wealth and want thoughtful, coordinated guidance. Many of our clients are approaching or already in retirement. Others are business owners, corporate executives with equity compensation, startup founders, or high-net-worth individuals navigating complex financial situations.",
   },
   {
-    question: "Can I use Finaro for my business?",
+    question: "Do I need to live in New York to work with you?",
     answer:
-      "Yes! We offer dedicated business accounts with features like multi-user access, expense management, corporate cards, invoicing, and integrations with popular accounting software. Business accounts have no monthly fees for startups.",
+      "No. While we have offices in the New York metro area, we serve clients nationwide. Much of our work is done through video calls and secure digital tools, and our planning and tax preparation process works seamlessly regardless of where you're located.",
+  },
+  {
+    question: "How does the planning process work?",
+    answer:
+      "It starts with a conversation. We'll spend time understanding your financial situation, your concerns, and your goals. From there, we develop a comprehensive plan that addresses your investments, retirement timeline, tax situation, and anything else that's relevant. The plan isn't a one-time deliverable — it's an ongoing relationship where we monitor, adjust, and coordinate as your life evolves.",
+  },
+  {
+    question: "Do you help with stock options and equity compensation?",
+    answer:
+      "Yes — this is one of our core strengths. Equity compensation (ISOs, NSOs, RSUs, ESPPs) involves complex tax timing decisions that can significantly impact your net outcome. Because we handle both the financial planning and tax preparation side, we can model exercise strategies, manage AMT exposure, and coordinate equity decisions with your overall financial plan.",
   },
 ];
 
@@ -58,7 +70,7 @@ function FAQAccordionItem({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1, ease }}
+      transition={{ duration: 0.5, delay: index * 0.05, ease }}
       className="border-b border-foreground/10"
     >
       <button
@@ -77,7 +89,10 @@ function FAQAccordionItem({
             animate={{ rotate: isOpen ? 45 : 0 }}
             transition={{ duration: 0.2, ease }}
           >
-            <Plus className="w-5 h-5 text-foreground/60 group-hover:text-foreground transition-colors" aria-hidden="true" />
+            <Plus
+              className="w-5 h-5 text-foreground/60 group-hover:text-foreground transition-colors"
+              aria-hidden="true"
+            />
           </motion.div>
         </div>
       </button>
@@ -118,17 +133,8 @@ export function FAQ(): ReactNode {
               transition={{ duration: 0.6, ease }}
               className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
             >
-              Frequently asked questions
+              Questions We Hear Often
             </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="mt-4 text-foreground/60"
-            >
-              Everything you need to know about Finaro.
-            </motion.p>
           </div>
 
           <div className="border-t border-foreground/10">
@@ -153,13 +159,13 @@ export function FAQ(): ReactNode {
             className="mt-12 flex flex-col sm:flex-row sm:items-center gap-4"
           >
             <p className="text-foreground/60">Still have questions?</p>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="group inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
             >
               Get in touch
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

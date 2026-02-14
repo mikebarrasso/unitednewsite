@@ -1,12 +1,10 @@
-import { BlogShowcase } from "@/components/blog-showcase";
 import { FAQ } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
 import { FeatureHighlight } from "@/components/feature-highlight";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
-import { Pricing } from "@/components/pricing";
-import { Principles } from "@/components/principles";
+import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { TestimonialsSlider } from "@/components/testimonials-slider";
 import { TrustedBy } from "@/components/trusted-by";
@@ -15,8 +13,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: `${siteConfig.name} - Modern Banking for Modern Business`,
-  description: siteConfig.description,
+  title: `${siteConfig.name} — Financial Planning, Tax & Investment Management Under One Roof`,
+  description:
+    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services — integrated for clients nationwide.",
   path: "/",
 });
 
@@ -26,14 +25,12 @@ export default function HomePage(): ReactNode {
       <main id="main-content" className="flex-1">
         <Hero />
         <TrustedBy />
-        <FeatureCards />
         <FeatureHighlight />
-        <Principles />
+        <FeatureCards />
+        <Features2 />
         <Stats />
         <TestimonialsSlider />
-        <Pricing />
         <FAQ />
-        <BlogShowcase />
         <FinalCTA />
       </main>
       <Footer />

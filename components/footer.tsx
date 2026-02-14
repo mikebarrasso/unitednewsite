@@ -1,41 +1,41 @@
 "use client";
 
 import { type ReactNode } from "react";
+import Link from "next/link";
 
 const footerLinks = {
-  product: {
-    title: "Product",
+  services: {
+    title: "Services",
     links: [
-      { label: "Personal", href: "#personal" },
-      { label: "Business", href: "#business" },
-      { label: "Cards", href: "#cards" },
-      { label: "Transfers", href: "#transfers" },
+      { label: "Financial Planning", href: "/services/financial-planning" },
+      { label: "Retirement Planning", href: "/services/retirement-planning" },
+      { label: "Investment Management", href: "/services/investment-management" },
+      { label: "Tax Planning", href: "/services/tax-planning" },
+      { label: "Tax Preparation", href: "/services/tax-preparation" },
     ],
   },
   company: {
     title: "Company",
     links: [
-      { label: "About us", href: "#about" },
-      { label: "Careers", href: "#careers" },
-      { label: "Press", href: "#press" },
-      { label: "Security", href: "#security" },
+      { label: "About", href: "/about" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact", href: "/contact" },
     ],
   },
-  resources: {
-    title: "Resources",
+  offices: {
+    title: "Offices",
     links: [
-      { label: "Help Center", href: "#help" },
-      { label: "Developer API", href: "#api" },
-      { label: "Blog", href: "#blog" },
-      { label: "Community", href: "#community" },
+      { label: "Hauppauge, NY (HQ)", href: "/contact" },
+      { label: "Manhattan, NY", href: "/contact" },
+      { label: "Lake Success, NY", href: "/contact" },
     ],
   },
 };
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#privacy" },
-  { label: "Terms of Service", href: "#terms" },
-  { label: "Cookie Policy", href: "#cookies" },
+  { label: "Privacy Policy", href: "#" },
+  { label: "Terms of Service", href: "#" },
+  { label: "Form ADV", href: "#" },
 ];
 
 export function Footer(): ReactNode {
@@ -60,14 +60,15 @@ export function Footer(): ReactNode {
           <div className="relative w-full px-8 sm:px-12 py-12">
             <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
               <div className="lg:max-w-xs">
-                <a href="#" className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-foreground" />
-                  <span className="text-lg font-semibold text-foreground">
-                    finaro
+                <Link href="/" className="inline-block">
+                  <span className="text-lg font-semibold text-foreground tracking-tight">
+                    United FPG
                   </span>
-                </a>
-                <p className="mt-4 text-sm text-foreground/50 max-w-xs">
-                  © 2026 Finaro Inc. Modern banking for individuals and businesses.
+                </Link>
+                <p className="mt-4 text-sm text-foreground/50 max-w-xs leading-relaxed">
+                  Fee-only financial planning, investment management, tax
+                  planning, and tax preparation — integrated under one roof for
+                  clients nationwide.
                 </p>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-16">
@@ -79,12 +80,12 @@ export function Footer(): ReactNode {
                     <ul className="space-y-3">
                       {section.links.map((link) => (
                         <li key={link.label}>
-                          <a
+                          <Link
                             href={link.href}
                             className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                           >
                             {link.label}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -100,21 +101,19 @@ export function Footer(): ReactNode {
         <div className="relative w-full max-w-270">
           <div className="pt-8 px-8 sm:px-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <a
-                href="#"
-                className="text-sm text-foreground/70 hover:text-foreground transition-colors"
-              >
-                Contact us
-              </a>
+              <p className="text-sm text-foreground/50">
+                © {new Date().getFullYear()} United Financial Planning Group.
+                All rights reserved.
+              </p>
               <div className="flex flex-wrap gap-6">
                 {legalLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
                     className="text-sm text-foreground/50 hover:text-foreground transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

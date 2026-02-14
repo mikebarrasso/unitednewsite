@@ -3,147 +3,227 @@
 import { type ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-type FeatureCard = {
+type ServiceCard = {
   title: string;
   description: string;
   href: string;
-  visual: "comparison" | "chart" | "code";
+  visual: "planning" | "investing" | "tax";
 };
 
-const features: FeatureCard[] = [
+const services: ServiceCard[] = [
   {
-    title: "Send money globally. Instantly.",
+    title: "Financial Planning",
     description:
-      "Transfer funds to 160+ countries with the real exchange rate. No hidden fees, no waiting—your money arrives in seconds.",
-    href: "#",
-    visual: "comparison",
+      "A comprehensive roadmap for your financial future — built around your actual life, informed by deep tax expertise most planners simply don't have.",
+    href: "/services/financial-planning",
+    visual: "planning",
   },
   {
-    title: "Earn more on your savings.",
+    title: "Investment Management",
     description:
-      "Get up to 4.5% APY on your balance with no lock-in period. Your money works harder while staying instantly accessible.",
-    href: "#",
-    visual: "chart",
+      "Tax-aware portfolio management that considers how every trade, every rebalance, and every distribution flows through to your tax return.",
+    href: "/services/investment-management",
+    visual: "investing",
   },
   {
-    title: "Build with our developer API.",
+    title: "Tax Planning & Preparation",
     description:
-      "Access real-time payment data and automate your finances with our REST API. Full documentation and SDKs included.",
-    href: "#",
-    visual: "code",
+      "Proactive, year-round strategies to reduce your lifetime tax burden — prepared by CPAs and Enrolled Agents who already know your financial story.",
+    href: "/services/tax-planning",
+    visual: "tax",
   },
 ];
 
-function ComparisonVisual(): ReactNode {
-  const rows = [
-    { name: "finaro", speed: "Instant", fees: "$0", highlight: true },
-    { name: "Bank", speed: "3-5 days", fees: "$25-50", highlight: false },
-    { name: "Wire", speed: "1-2 days", fees: "$15-35", highlight: false },
+function PlanningVisual(): ReactNode {
+  const milestones = [
+    { label: "Cash Flow", pct: 92 },
+    { label: "Retirement", pct: 78 },
+    { label: "Estate Plan", pct: 65 },
+    { label: "Risk Coverage", pct: 85 },
   ];
 
   return (
     <div className="w-full h-full flex items-end justify-center p-6">
       <div className="w-full max-w-xs">
-        <div className="grid grid-cols-3 text-xs text-muted-foreground pb-2 border-b border-border">
-          <div />
-          <div className="text-center">Speed</div>
-          <div className="text-center">Fees</div>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-2 h-2 rounded-full bg-emerald-500" />
+          <span className="text-xs font-medium text-foreground">
+            Plan Health
+          </span>
+          <span className="text-xs text-emerald-500 ml-auto font-semibold">
+            On Track
+          </span>
         </div>
-        {rows.map((row, i) => (
-          <motion.div
-            key={row.name}
-            initial={{ opacity: 0, x: -10 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.1, ease }}
-            className={`grid grid-cols-3 py-3 text-sm ${i < rows.length - 1 ? "border-b border-border" : ""} ${row.highlight ? "" : "text-muted-foreground"}`}
-          >
-            <div className={row.highlight ? "flex items-center gap-2" : ""}>
-              {row.highlight && <div className="w-4 h-4 rounded-full bg-foreground" />}
-              <span className={row.highlight ? "text-foreground font-medium" : ""}>{row.name}</span>
+        <div className="space-y-3">
+          {milestones.map((m, i) => (
+            <div key={m.label}>
+              <div className="flex items-center justify-between text-xs mb-1">
+                <span className="text-muted-foreground">{m.label}</span>
+                <span className="text-foreground font-medium">{m.pct}%</span>
+              </div>
+              <div className="h-1.5 bg-foreground/5 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-foreground/70 rounded-full origin-left"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: i * 0.1, ease }}
+                  style={{ width: `${m.pct}%` }}
+                />
+              </div>
             </div>
-            <div className={`text-center ${row.highlight ? "text-accent" : ""}`}>{row.speed}</div>
-            <div className={`text-center ${row.highlight ? "text-accent" : ""}`}>{row.fees}</div>
-          </motion.div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function ChartVisual(): ReactNode {
+function InvestingVisual(): ReactNode {
+  const bars = [0.35, 0.5, 0.45, 0.6, 0.55, 0.7, 0.65, 0.8, 0.75, 0.9, 0.85, 1.0];
+
   return (
     <div className="w-full h-full flex items-center justify-center p-8 sm:p-6">
       <div className="relative w-full max-w-xs">
         <div className="mb-3">
-          <div className="text-xs text-muted-foreground">Current APY</div>
-          <div className="text-xl sm:text-2xl font-semibold text-accent">4.50%</div>
+          <div className="text-xs text-muted-foreground">
+            After-Tax Return (10yr)
+          </div>
+          <div className="flex items-baseline gap-2">
+            <span className="text-xl sm:text-2xl font-semibold text-foreground">
+              8.4%
+            </span>
+            <span className="text-xs text-emerald-500 font-medium">
+              +1.7% vs pre-tax only
+            </span>
+          </div>
         </div>
-        <div className="flex items-end justify-between gap-2 h-24 sm:h-32">
-          {[0.3, 0.45, 0.55, 0.5, 0.65, 0.7, 0.75, 0.85, 0.9, 1].map(
-            (height, i) => (
-              <motion.div
-                key={i}
-                className="flex-1 bg-linear-to-t from-accent/80 to-accent/40 rounded-t origin-bottom"
-                initial={{ scaleY: 0 }}
-                whileInView={{ scaleY: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05, ease }}
-                style={{ height: `${height * 100}%` }}
-              />
-            )
-          )}
+        <div className="flex items-end justify-between gap-1.5 h-24 sm:h-32">
+          {bars.map((height, i) => (
+            <motion.div
+              key={i}
+              className="flex-1 bg-linear-to-t from-foreground/60 to-foreground/25 rounded-t origin-bottom"
+              initial={{ scaleY: 0 }}
+              whileInView={{ scaleY: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.04, ease }}
+              style={{ height: `${height * 100}%` }}
+            />
+          ))}
         </div>
-        <div className="flex items-center justify-end gap-1 mt-3">
-          <span className="text-xs text-muted-foreground">vs avg savings</span>
-          <span className="text-xs text-accent">0.5%</span>
+        <div className="flex items-center gap-4 mt-3">
+          <div className="flex items-center gap-1.5">
+            <div className="w-2 h-2 rounded-full bg-foreground/60" />
+            <span className="text-[10px] text-muted-foreground">
+              Tax-optimized
+            </span>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-function CodeVisual(): ReactNode {
-  const codeLines = [
-    { text: "--data '{", style: "text-muted-foreground" },
-    { text: "  'account-balance'", style: "text-accent" },
-    { text: "  'portfolio-value'", style: "text-accent" },
-    { text: "  'transaction-history'", style: "text-accent" },
-    { text: "  'pending-transfers'", style: "text-accent" },
-    { text: "  'card-details'", style: "text-accent" },
-    { text: "  'exchange-rates'", style: "text-accent" },
-    { text: "}'", style: "text-muted-foreground" },
+function TaxVisual(): ReactNode {
+  const rows = [
+    {
+      strategy: "Roth Conversion",
+      savings: "$42,000",
+      status: "Executed",
+      highlight: true,
+    },
+    {
+      strategy: "Tax-Loss Harvest",
+      savings: "$18,500",
+      status: "Executed",
+      highlight: true,
+    },
+    {
+      strategy: "Charitable QCD",
+      savings: "$12,000",
+      status: "Planned",
+      highlight: false,
+    },
+    {
+      strategy: "ESPP Timing",
+      savings: "$8,200",
+      status: "Monitoring",
+      highlight: false,
+    },
   ];
 
   return (
-    <div className="w-full h-full flex items-center justify-start p-6 overflow-hidden">
-      <pre className="text-xs sm:text-sm font-mono leading-relaxed">
-        <code>
-          {codeLines.map((line, i) => (
-            <motion.span
-              key={i}
-              className={`block ${line.style}`}
-              initial={{ opacity: 0, x: -8 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05, ease }}
+    <div className="w-full h-full flex items-end justify-center p-6">
+      <div className="w-full max-w-xs">
+        <div className="flex items-center justify-between text-xs text-muted-foreground pb-2 border-b border-border mb-1">
+          <span>Strategy</span>
+          <div className="flex gap-8">
+            <span>Savings</span>
+            <span className="w-16 text-right">Status</span>
+          </div>
+        </div>
+        {rows.map((row, i) => (
+          <motion.div
+            key={row.strategy}
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.08, ease }}
+            className={`flex items-center justify-between py-2.5 text-sm ${i < rows.length - 1 ? "border-b border-border/50" : ""}`}
+          >
+            <span
+              className={
+                row.highlight
+                  ? "text-foreground font-medium"
+                  : "text-muted-foreground"
+              }
             >
-              {line.text}
-            </motion.span>
-          ))}
-        </code>
-      </pre>
+              {row.strategy}
+            </span>
+            <div className="flex gap-8 items-center">
+              <span className="text-foreground font-medium tabular-nums">
+                {row.savings}
+              </span>
+              <span
+                className={`w-16 text-right text-xs ${row.status === "Executed" ? "text-emerald-500" : "text-muted-foreground"}`}
+              >
+                {row.status}
+              </span>
+            </div>
+          </motion.div>
+        ))}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.4, ease }}
+          className="flex items-center justify-between pt-3 mt-1 border-t border-foreground/10"
+        >
+          <span className="text-sm font-medium text-foreground">
+            Total Projected
+          </span>
+          <span className="text-sm font-semibold text-foreground tabular-nums">
+            $80,700
+          </span>
+        </motion.div>
+      </div>
     </div>
   );
 }
 
-function FeatureCard({ card, index }: { card: FeatureCard; index: number }): ReactNode {
+function ServiceCardComponent({
+  card,
+  index,
+}: {
+  card: ServiceCard;
+  index: number;
+}): ReactNode {
   return (
-    <motion.a
-      href={card.href}
+    <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ y: -4 }}
@@ -152,21 +232,26 @@ function FeatureCard({ card, index }: { card: FeatureCard; index: number }): Rea
       className="group flex flex-col bg-muted/50 border border-border rounded-sm overflow-hidden hover:border-foreground/20 hover:shadow-lg transition-[border-color,box-shadow]"
     >
       <div className="relative h-56 sm:h-64 bg-background">
-        {card.visual === "comparison" && <ComparisonVisual />}
-        {card.visual === "chart" && <ChartVisual />}
-        {card.visual === "code" && <CodeVisual />}
+        {card.visual === "planning" && <PlanningVisual />}
+        {card.visual === "investing" && <InvestingVisual />}
+        {card.visual === "tax" && <TaxVisual />}
       </div>
       <div className="flex flex-col p-6">
-        <h3 className="text-lg font-medium font-serif text-foreground">{card.title}</h3>
+        <h3 className="text-lg font-medium font-serif text-foreground">
+          {card.title}
+        </h3>
         <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
           {card.description}
         </p>
-        <div className="flex items-center gap-1 mt-4 text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors">
+        <Link
+          href={card.href}
+          className="flex items-center gap-1 mt-4 text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors"
+        >
           Learn more
           <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-        </div>
+        </Link>
       </div>
-    </motion.a>
+    </motion.div>
   );
 }
 
@@ -182,14 +267,14 @@ export function FeatureCards(): ReactNode {
             transition={{ duration: 0.6, delay: 0.1, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground"
           >
-            The new standard
+            A one stop shop for your
             <br />
-            <span className="italic">for modern banking</span>
+            <span className="italic">entire financial life</span>
           </motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {features.map((card, index) => (
-            <FeatureCard key={card.title} card={card} index={index} />
+          {services.map((card, index) => (
+            <ServiceCardComponent key={card.title} card={card} index={index} />
           ))}
         </div>
       </div>

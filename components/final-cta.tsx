@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import { useTheme } from "next-themes";
+import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import * as THREE from "three";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -80,72 +82,58 @@ const fragmentShader = `
     
     float t = iTime * 0.15;
     
-    // Aurora beams - from bottom
     float beam1 = snoise(vec3(uv.x * 1.5 + t * 0.5, uv.y * 0.8 - t * 0.2, t * 0.3));
     float beam2 = snoise(vec3(uv.x * 2.0 - t * 0.3, uv.y * 0.6 + t * 0.1, t * 0.2 + 10.0));
     float beam3 = snoise(vec3(uv.x * 1.2 + t * 0.2, uv.y * 1.0 - t * 0.15, t * 0.25 + 20.0));
     
-    // Vertical gradient - stronger at bottom
     float verticalFade = pow(1.0 - uv.y, 1.5);
     float verticalFade2 = pow(1.0 - uv.y, 2.5);
     
-    // Light beam shapes
     float light1 = smoothstep(0.0, 0.8, beam1 * verticalFade);
     float light2 = smoothstep(0.0, 0.7, beam2 * verticalFade);
     float light3 = smoothstep(0.0, 0.6, beam3 * verticalFade2);
     
-    // Position-based color mixing
     float xPos = uv.x / (iResolution.x / iResolution.y);
-    
-    // Add subtle glow at bottom center
     float centerGlow = exp(-pow((xPos - 0.5) * 2.0, 2.0)) * verticalFade2;
     
     vec3 col;
     
     if (isDark > 0.5) {
-      // Dark mode - original dark aurora effect
       col = vec3(0.02, 0.02, 0.06);
       
-      vec3 orange = vec3(0.95, 0.4, 0.1);
-      vec3 red = vec3(0.85, 0.15, 0.2);
-      vec3 pink = vec3(0.7, 0.2, 0.4);
-      vec3 blue = vec3(0.1, 0.3, 0.7);
-      vec3 cyan = vec3(0.1, 0.6, 0.8);
+      vec3 gold = vec3(0.85, 0.65, 0.25);
+      vec3 amber = vec3(0.75, 0.45, 0.15);
+      vec3 navy = vec3(0.1, 0.15, 0.35);
+      vec3 blue = vec3(0.15, 0.25, 0.55);
+      vec3 slate = vec3(0.2, 0.3, 0.45);
       
-      col += orange * light1 * 0.6 * smoothstep(0.6, 0.2, xPos);
-      col += red * light1 * 0.5 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
-      col += pink * light2 * 0.4 * smoothstep(0.4, 0.6, xPos);
+      col += gold * light1 * 0.5 * smoothstep(0.6, 0.2, xPos);
+      col += amber * light1 * 0.4 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
+      col += navy * light2 * 0.5 * smoothstep(0.4, 0.6, xPos);
       col += blue * light3 * 0.5 * smoothstep(0.5, 0.8, xPos);
-      col += cyan * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
-      col += vec3(0.9, 0.5, 0.3) * centerGlow * 0.3;
+      col += slate * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
+      col += vec3(0.7, 0.55, 0.25) * centerGlow * 0.25;
       
-      // Slight vignette
       float vignette = 1.0 - pow(length(uv - vec2(0.5 * iResolution.x / iResolution.y, 0.5)) * 0.8, 2.0);
       col *= max(vignette, 0.3);
       col = pow(col, vec3(0.9));
     } else {
-      // Light mode - soft pastel gradient on white
       col = vec3(0.98, 0.98, 0.97);
       
-      // Softer, more pastel colors for light mode
-      vec3 peach = vec3(1.0, 0.85, 0.75);
-      vec3 salmon = vec3(1.0, 0.75, 0.7);
-      vec3 lavender = vec3(0.85, 0.75, 0.95);
-      vec3 skyBlue = vec3(0.75, 0.85, 1.0);
+      vec3 warmBeige = vec3(0.96, 0.92, 0.85);
+      vec3 softGold = vec3(0.95, 0.88, 0.72);
+      vec3 paleBlue = vec3(0.88, 0.92, 0.96);
+      vec3 lightSlate = vec3(0.85, 0.88, 0.92);
       
-      // Create a soft diffused blob effect
       float blobIntensity = light1 * 0.5 + light2 * 0.3 + centerGlow * 0.8;
       blobIntensity = smoothstep(0.0, 1.0, blobIntensity);
       
-      // Blend pastel colors based on position
-      vec3 gradientColor = mix(peach, salmon, smoothstep(0.3, 0.5, xPos));
-      gradientColor = mix(gradientColor, lavender, smoothstep(0.5, 0.7, xPos));
-      gradientColor = mix(gradientColor, skyBlue, smoothstep(0.7, 0.9, xPos));
+      vec3 gradientColor = mix(warmBeige, softGold, smoothstep(0.3, 0.5, xPos));
+      gradientColor = mix(gradientColor, paleBlue, smoothstep(0.5, 0.7, xPos));
+      gradientColor = mix(gradientColor, lightSlate, smoothstep(0.7, 0.9, xPos));
       
-      // Apply the blob with soft edges
       col = mix(col, gradientColor, blobIntensity * 0.7);
       
-      // Soft radial fade from center-bottom
       float radialFade = 1.0 - length(vec2(xPos - 0.5, uv.y - 0.3) * vec2(1.2, 1.5));
       radialFade = smoothstep(0.0, 0.8, radialFade);
       col = mix(vec3(0.98, 0.98, 0.97), col, radialFade);
@@ -235,10 +223,22 @@ export function FinalCTA(): ReactNode {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease }}
-          className="text-4xl md:text-5xl max-w-md mx-auto font-medium font-serif text-foreground leading-tight"
+          className="text-4xl md:text-5xl max-w-lg mx-auto font-medium font-serif text-foreground leading-tight"
         >
-          Start your financial journey today
+          Ready to Stop Coordinating Between Advisors?
         </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1, ease }}
+          className="mt-6 text-foreground/60 max-w-lg mx-auto"
+        >
+          Schedule a no-pressure conversation. We&apos;ll listen to what&apos;s
+          going on in your financial life and help you decide if working
+          together makes sense.
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -247,12 +247,13 @@ export function FinalCTA(): ReactNode {
           transition={{ duration: 0.5, delay: 0.2, ease }}
           className="mt-10"
         >
-          <a
-            href="#"
-            className="inline-flex items-center px-8 py-4 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 active:scale-[0.97] transition-all duration-150"
+          <Link
+            href="/contact"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 active:scale-[0.97] transition-all duration-150"
           >
-            Get started free
-          </a>
+            Book Your Complimentary Consultation
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
         </motion.div>
       </div>
     </section>

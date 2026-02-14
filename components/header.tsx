@@ -2,6 +2,7 @@
 
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import {
   useState,
   useRef,
@@ -15,60 +16,52 @@ type NavItem = {
   label: string;
   href?: string;
   hasDropdown?: boolean;
-  items?: { label: string; description: string }[];
-  promo?: { title: string; description: string; href: string };
+  items?: { label: string; description: string; href: string }[];
 };
 
 const navLinks: NavItem[] = [
   {
-    label: "Personal",
+    label: "Services",
     hasDropdown: true,
     items: [
-      { label: "Accounts", description: "Everyday spending and savings" },
-      { label: "Cards", description: "Virtual and physical cards" },
-      { label: "Transfers", description: "Send money globally, instantly" },
-      { label: "Crypto", description: "Buy, sell, and hold crypto" },
+      {
+        label: "Financial Planning",
+        description: "Comprehensive planning built around your actual goals",
+        href: "/services/financial-planning",
+      },
+      {
+        label: "Retirement Planning",
+        description: "Turn decades of accumulation into sustainable income",
+        href: "/services/retirement-planning",
+      },
+      {
+        label: "Investment Management",
+        description: "Tax-aware portfolio management for your full picture",
+        href: "/services/investment-management",
+      },
+      {
+        label: "Tax Planning",
+        description: "Proactive strategies to reduce your lifetime tax burden",
+        href: "/services/tax-planning",
+      },
+      {
+        label: "Tax Preparation",
+        description: "Returns prepared by professionals who know your story",
+        href: "/services/tax-preparation",
+      },
     ],
-    promo: {
-      title: "Get your free card",
-      description:
-        "Open an account in minutes and get a free debit card delivered.",
-      href: "#",
-    },
   },
   {
-    label: "Business",
-    hasDropdown: true,
-    items: [
-      { label: "Business Accounts", description: "Manage company finances" },
-      { label: "Corporate Cards", description: "Employee expense cards" },
-      { label: "Invoicing", description: "Create and send invoices" },
-      { label: "Payroll", description: "Pay your team worldwide" },
-    ],
-    promo: {
-      title: "Business banking",
-      description: "Open a business account with no monthly fees.",
-      href: "#",
-    },
+    label: "About",
+    href: "/about",
   },
   {
-    label: "Pricing",
-    href: "#",
+    label: "FAQ",
+    href: "/faq",
   },
   {
-    label: "Company",
-    hasDropdown: true,
-    items: [
-      { label: "About us", description: "Our story and mission" },
-      { label: "Careers", description: "Join our growing team" },
-      { label: "Press", description: "News and media resources" },
-      { label: "Security", description: "How we keep you safe" },
-    ],
-    promo: {
-      title: "We're hiring",
-      description: "Join 8,000+ people building the future of finance.",
-      href: "#",
-    },
+    label: "Contact",
+    href: "/contact",
   },
 ];
 
@@ -108,14 +101,12 @@ function HamburgerIcon({
 function DesktopDropdown({
   label,
   items,
-  promo,
   isOpen,
   onOpen,
   onClose,
 }: {
   label: string;
-  items: { label: string; description: string }[];
-  promo: { title: string; description: string; href: string } | undefined;
+  items: { label: string; description: string; href: string }[];
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
@@ -173,54 +164,27 @@ function DesktopDropdown({
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 8, scale: 0.96 }}
                   transition={{ duration: 0.2, ease }}
-                  className="flex items-stretch bg-background border border-border rounded-2xl shadow-lg overflow-hidden p-2 gap-2"
+                  className="bg-background border border-border rounded-2xl shadow-lg overflow-hidden p-2 min-w-72"
                 >
-                  <div className="min-w-56">
-                    {items.map((item) => (
-                      <a
-                        key={item.label}
-                        href="#"
-                        className="block px-4 py-4 rounded-xl hover:bg-muted transition-colors"
-                      >
-                        <div className="text-sm font-medium text-foreground">
-                          {item.label}
-                        </div>
-                        <div className="text-xs text-muted-foreground mt-0.5">
-                          {item.description}
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                  {promo && (
-                    <a
-                      href={promo.href}
-                      className="group flex flex-col w-56 bg-muted text-foreground rounded-xl overflow-hidden"
+                  {items.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block px-4 py-4 rounded-xl hover:bg-muted transition-colors"
                     >
-                      <div className="relative flex-1 flex items-center justify-center overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="w-40 h-40 rounded-full border border-foreground/10" />
-                          <div className="absolute w-28 h-28 rounded-full border border-foreground/15" />
-                          <div className="absolute w-16 h-16 rounded-full border border-foreground/20" />
-                        </div>
+                      <div className="text-sm font-medium text-foreground">
+                        {item.label}
                       </div>
-                      <div className="flex flex-col p-4 pt-2">
-                        <h3 className="text-sm font-semibold">{promo.title}</h3>
-                        <p className="text-xs text-foreground/70 mt-1 leading-relaxed">
-                          {promo.description}
-                        </p>
-                        <div className="flex justify-start mt-3">
-                          <div className="w-8 h-8 rounded-full border border-foreground/20 flex items-center justify-center group-hover:bg-background/10 transition-colors">
-                            <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                          </div>
-                        </div>
+                      <div className="text-xs text-muted-foreground mt-0.5">
+                        {item.description}
                       </div>
-                    </a>
-                  )}
+                    </Link>
+                  ))}
                 </motion.div>
               </div>
             )}
           </AnimatePresence>,
-          document.body
+          document.body,
         )}
     </div>
   );
@@ -234,7 +198,7 @@ function MobileExpandable({
   onClose,
 }: {
   label: string;
-  items: { label: string; description: string }[];
+  items: { label: string; description: string; href: string }[];
   isExpanded: boolean;
   onToggle: () => void;
   onClose: () => void;
@@ -268,14 +232,14 @@ function MobileExpandable({
           >
             <div className="pb-2 space-y-1">
               {items.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href="#"
+                  href={item.href}
                   className="block py-2 text-sm text-foreground/80 hover:text-foreground"
                   onClick={onClose}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>
@@ -334,20 +298,21 @@ export function Header(): ReactNode {
 
       <header className="hidden lg:block fixed top-0 left-0 right-0 z-1003 mix-blend-exclusion">
         <div className="mx-auto flex h-20 w-full items-center justify-between px-6 sm:px-8">
-          <motion.a
-            href="#"
-            className="flex items-center gap-2"
-            aria-label="Home"
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease }}
           >
-            <div
-              className="w-6 h-6 rounded-full bg-white"
-              aria-hidden="true"
-            />
-            <span className="text-lg font-semibold text-white">finaro</span>
-          </motion.a>
+            <Link
+              href="/"
+              className="flex items-center gap-2"
+              aria-label="Home"
+            >
+              <span className="text-lg font-semibold text-white tracking-tight">
+                United FPG
+              </span>
+            </Link>
+          </motion.div>
 
           <motion.nav
             className="flex items-center gap-1 absolute left-1/2 -translate-x-1/2"
@@ -362,20 +327,19 @@ export function Header(): ReactNode {
                   key={link.label}
                   label={link.label}
                   items={link.items}
-                  promo={link.promo}
                   isOpen={activeMenu === link.label}
                   onOpen={() => handleMenuOpen(link.label)}
                   onClose={handleMenuClose}
                 />
               ) : (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  href={link.href ?? "#"}
                   className="px-4 py-2 text-sm font-semibold tracking-tight text-white/80 hover:text-white transition-colors"
                 >
                   {link.label}
-                </a>
-              )
+                </Link>
+              ),
             )}
           </motion.nav>
 
@@ -385,38 +349,34 @@ export function Header(): ReactNode {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease }}
           >
-            <a
-              href="#"
-              className="px-5 py-2.5 text-sm font-semibold tracking-tighter text-black bg-white rounded-full hover:bg-white/90 transition-colors"
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold tracking-tight text-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
-              Log in
-            </a>
-            <a
-              href="#"
-              className="px-5 py-2.5 text-sm font-semibold tracking-tighter text-white border border-white rounded-full hover:bg-white/10 transition-colors"
-            >
-              Sign up
-            </a>
+              Schedule a Conversation
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
           </motion.div>
         </div>
       </header>
 
       <header className="lg:hidden fixed top-0 left-0 right-0 z-1003 mix-blend-exclusion">
         <div className="mx-auto flex h-16 w-full items-center justify-between px-6 sm:px-8">
-          <motion.a
-            href="#"
-            className="flex items-center gap-2"
-            aria-label="Home"
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease }}
           >
-            <div
-              className="w-6 h-6 rounded-full bg-white"
-              aria-hidden="true"
-            />
-            <span className="text-lg font-semibold text-white">finaro</span>
-          </motion.a>
+            <Link
+              href="/"
+              className="flex items-center gap-2"
+              aria-label="Home"
+            >
+              <span className="text-lg font-semibold text-white tracking-tight">
+                United FPG
+              </span>
+            </Link>
+          </motion.div>
           <motion.button
             className="p-2 -mr-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -441,20 +401,16 @@ export function Header(): ReactNode {
             className="lg:hidden fixed top-0 left-0 right-0 z-1004 bg-background"
           >
             <div className="flex h-16 w-full items-center justify-between px-6 sm:px-8">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="flex items-center gap-2"
                 aria-label="Home"
                 onClick={closeMobileMenu}
               >
-                <div
-                  className="w-6 h-6 rounded-full bg-foreground"
-                  aria-hidden="true"
-                />
-                <span className="text-lg font-semibold text-foreground">
-                  finaro
+                <span className="text-lg font-semibold text-foreground tracking-tight">
+                  United FPG
                 </span>
-              </a>
+              </Link>
               <button
                 className="p-2 -mr-2"
                 onClick={() => setMobileMenuOpen(false)}
@@ -477,38 +433,31 @@ export function Header(): ReactNode {
                     isExpanded={mobileExpanded === link.label}
                     onToggle={() =>
                       setMobileExpanded(
-                        mobileExpanded === link.label ? null : link.label
+                        mobileExpanded === link.label ? null : link.label,
                       )
                     }
                     onClose={closeMobileMenu}
                   />
                 ) : (
-                  <a
+                  <Link
                     key={link.label}
-                    href={link.href}
+                    href={link.href ?? "#"}
                     className="block py-4 text-base font-medium text-foreground border-b border-border"
                     onClick={closeMobileMenu}
                   >
                     {link.label}
-                  </a>
-                )
+                  </Link>
+                ),
               )}
 
               <div className="flex flex-col gap-3 pt-6">
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="w-full py-3 text-center text-sm font-medium tracking-tight text-background bg-foreground rounded-full hover:bg-foreground/90 transition-colors"
                   onClick={closeMobileMenu}
                 >
-                  Log in
-                </a>
-                <a
-                  href="#"
-                  className="w-full py-3 text-center text-sm font-medium tracking-tight text-foreground border border-border rounded-full hover:bg-muted transition-colors"
-                  onClick={closeMobileMenu}
-                >
-                  Sign up
-                </a>
+                  Schedule a Conversation
+                </Link>
               </div>
             </nav>
           </motion.div>

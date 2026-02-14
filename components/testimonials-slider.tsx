@@ -1,12 +1,18 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef, useLayoutEffect, type ReactNode } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+  useLayoutEffect,
+  type ReactNode,
+} from "react";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const AUTO_SCROLL_INTERVAL = 4000;
+const AUTO_SCROLL_INTERVAL = 5000;
 const TRANSITION_DURATION = 600;
 const CLONE_COUNT = 3;
 const GAP_PX = 24;
@@ -14,46 +20,39 @@ const GAP_PX = 24;
 type Testimonial = {
   name: string;
   role: string;
-  company: string;
-  image: string;
-  linkedIn?: string;
+  quote: string;
 };
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah Mitchell",
-    role: "CFO",
-    company: "TechFlow Inc",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop&crop=face",
-    linkedIn: "#",
+    name: "Margaret T.",
+    role: "Retired Executive",
+    quote:
+      "For years I had a financial advisor and a separate CPA who never spoke to each other. United changed everything — my Roth conversion strategy alone saved us six figures.",
   },
   {
-    name: "Marcus Chen",
-    role: "Head of Finance",
-    company: "Nexus Ventures",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face",
-    linkedIn: "#",
+    name: "David & Karen L.",
+    role: "Pre-Retirees",
+    quote:
+      "We were five years from retirement and had no idea if we were on track. United gave us a plan that connected our investments, Social Security timing, and tax strategy. We finally feel confident.",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Treasury Director",
-    company: "Global Dynamics",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face",
-    linkedIn: "#",
+    name: "Brian S.",
+    role: "Business Owner",
+    quote:
+      "Between my S-corp, personal taxes, and investment accounts, I needed someone who could see the whole picture. United's team handles all of it — and they actually talk to each other.",
   },
   {
-    name: "James Wright",
-    role: "VP of Operations",
-    company: "Summit Capital",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face",
-    linkedIn: "#",
+    name: "Jennifer M.",
+    role: "Tech Executive, RSUs & ISOs",
+    quote:
+      "My equity compensation was incredibly complex. United modeled every scenario for exercising my options and saved me tens of thousands in taxes I didn't know I could avoid.",
   },
   {
-    name: "Alexandra Kim",
-    role: "Finance Manager",
-    company: "Horizon Labs",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop&crop=face",
-    linkedIn: "#",
+    name: "Robert & Susan K.",
+    role: "High-Net-Worth Couple",
+    quote:
+      "We've worked with several advisory firms over the years. United is the only one that truly integrates everything — investments, taxes, estate planning — into one coordinated strategy.",
   },
 ];
 
@@ -72,14 +71,6 @@ function useVisibleCount() {
   }, []);
 
   return visibleCount;
-}
-
-function LinkedInIcon() {
-  return (
-    <svg className="w-4 h-4 fill-foreground/60" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  );
 }
 
 export function TestimonialsSlider(): ReactNode {
@@ -186,25 +177,37 @@ export function TestimonialsSlider(): ReactNode {
     }, AUTO_SCROLL_INTERVAL);
 
     return () => {
-      if (autoPlayTimeoutRef.current) clearInterval(autoPlayTimeoutRef.current);
+      if (autoPlayTimeoutRef.current)
+        clearInterval(autoPlayTimeoutRef.current);
     };
   }, [isPaused]);
 
   const totalGapPx = GAP_PX * (visibleCount - 1);
-  const cardWidthPx = containerWidth > 0 ? (containerWidth - totalGapPx) / visibleCount : 0;
-  const cardWidth = cardWidthPx > 0 ? `${cardWidthPx}px` : `calc((100% - ${totalGapPx}px) / ${visibleCount})`;
+  const cardWidthPx =
+    containerWidth > 0 ? (containerWidth - totalGapPx) / visibleCount : 0;
+  const cardWidth =
+    cardWidthPx > 0
+      ? `${cardWidthPx}px`
+      : `calc((100% - ${totalGapPx}px) / ${visibleCount})`;
 
-  const offsetPx = containerWidth > 0
-    ? (containerWidth / 2) - (cardWidthPx / 2) - (currentIndex * (cardWidthPx + GAP_PX))
-    : 0;
-  const transform = containerWidth > 0 ? `translateX(${offsetPx}px)` : "translateX(0)";
+  const offsetPx =
+    containerWidth > 0
+      ? containerWidth / 2 -
+        cardWidthPx / 2 -
+        currentIndex * (cardWidthPx + GAP_PX)
+      : 0;
+  const transform =
+    containerWidth > 0 ? `translateX(${offsetPx}px)` : "translateX(0)";
 
-  const maskStyle = visibleCount === 1
-    ? { maskImage: "none", WebkitMaskImage: "none" }
-    : {
-        maskImage: "linear-gradient(to right, transparent, black 30%, black 70%, transparent)",
-        WebkitMaskImage: "linear-gradient(to right, transparent, black 30%, black 70%, transparent)",
-      };
+  const maskStyle =
+    visibleCount === 1
+      ? { maskImage: "none", WebkitMaskImage: "none" }
+      : {
+          maskImage:
+            "linear-gradient(to right, transparent, black 30%, black 70%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent, black 30%, black 70%, transparent)",
+        };
 
   return (
     <section
@@ -221,16 +224,22 @@ export function TestimonialsSlider(): ReactNode {
             transition={{ duration: 0.6, ease }}
             className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground text-center mb-16"
           >
-            Trusted by Finance Leaders
+            What Our Clients Say
           </motion.h2>
 
           <div className="relative">
-            <div ref={containerRef} className="overflow-hidden" style={maskStyle}>
+            <div
+              ref={containerRef}
+              className="overflow-hidden"
+              style={maskStyle}
+            >
               <div
                 className="flex gap-6"
                 style={{
                   transform,
-                  transition: enableTransition ? `transform ${TRANSITION_DURATION}ms cubic-bezier(0.16, 1, 0.3, 1)` : "none",
+                  transition: enableTransition
+                    ? `transform ${TRANSITION_DURATION}ms cubic-bezier(0.16, 1, 0.3, 1)`
+                    : "none",
                   willChange: "transform",
                 }}
               >
@@ -242,37 +251,21 @@ export function TestimonialsSlider(): ReactNode {
                       className="shrink-0 transition-all duration-500"
                       style={{
                         width: cardWidth,
-                        filter: isActive ? "grayscale(0)" : "grayscale(1)",
-                        opacity: isActive ? 1 : 0.7,
+                        opacity: isActive ? 1 : 0.6,
                       }}
                     >
-                      <div className="group">
-                        <div className="relative aspect-4/5 overflow-hidden bg-muted rounded-sm mb-4">
-                          <Image
-                            src={testimonial.image}
-                            alt={testimonial.name}
-                            fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="flex items-start justify-between gap-3">
-                          <div className="flex-1">
-                            <h3 className="text-lg font-medium text-foreground">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground/60 mt-1">
-                              {testimonial.role} at {testimonial.company}
-                            </p>
-                          </div>
-                          {testimonial.linkedIn && (
-                            <a
-                              href={testimonial.linkedIn}
-                              className="shrink-0 p-2 border border-foreground/20 rounded-full hover:bg-foreground/5 transition-colors"
-                              aria-label={`${testimonial.name}'s LinkedIn`}
-                            >
-                              <LinkedInIcon />
-                            </a>
-                          )}
+                      <div className="flex flex-col p-8 bg-muted/50 border border-border rounded-sm h-full">
+                        <Quote className="w-8 h-8 text-foreground/15 mb-4" />
+                        <p className="text-foreground/80 leading-relaxed flex-1 text-sm">
+                          &ldquo;{testimonial.quote}&rdquo;
+                        </p>
+                        <div className="mt-6 pt-4 border-t border-border">
+                          <p className="text-sm font-medium text-foreground">
+                            {testimonial.name}
+                          </p>
+                          <p className="text-xs text-foreground/50 mt-0.5">
+                            {testimonial.role}
+                          </p>
                         </div>
                       </div>
                     </div>

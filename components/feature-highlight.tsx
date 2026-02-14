@@ -1,99 +1,32 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { ArrowRight, TrendingUp, MessageSquare, Zap } from "lucide-react";
+import { ArrowRight, Users, FileText, TrendingUp } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const features = [
+const highlights = [
   {
-    icon: <TrendingUp className="w-4 h-4" />,
-    text: "See exactly where your money goes each month.",
+    icon: <Users className="w-5 h-5" />,
+    text: "CFPs, CPAs, and Enrolled Agents work side by side — not across town.",
   },
   {
-    icon: <Zap className="w-4 h-4" />,
-    text: "Get instant alerts for unusual spending patterns.",
+    icon: <FileText className="w-5 h-5" />,
+    text: "The person managing your portfolio understands exactly how it impacts your tax return.",
   },
   {
-    icon: <MessageSquare className="w-4 h-4" />,
-    text: "Ask questions about your finances in plain English.",
+    icon: <TrendingUp className="w-5 h-5" />,
+    text: "Every recommendation accounts for both sides of the equation.",
   },
 ];
-
-function PhoneInCard(): ReactNode {
-  return (
-    <div className="relative bg-accent/5 rounded-md border border-accent/10 pt-10 px-16 overflow-hidden h-full flex flex-col">
-      <div className="relative w-full max-w-70 mx-auto flex-1 flex flex-col">
-        <div className="relative bg-neutral-900 rounded-t-4xl pt-1 px-1 flex-1 flex flex-col">
-          <div className="bg-background rounded-t-[1.75rem] pt-6 flex-1">
-            <div className="px-5 pb-6">
-              <p className="text-[10px] text-muted-foreground mb-1">Total Balance</p>
-              <p className="text-2xl font-semibold tracking-tight text-foreground mb-1">$12,458.32</p>
-              <p className="text-xs text-emerald-500 font-medium mb-6">+$842.50 this month</p>
-
-              <div className="h-20 mb-6">
-                <svg viewBox="0 0 200 80" className="w-full h-full" preserveAspectRatio="none">
-                  <defs>
-                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stopColor="#10b981" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M0,60 Q20,55 40,50 T80,45 T120,35 T160,40 T200,20 V80 H0 Z"
-                    fill="url(#chartGradient)"
-                  />
-                  <path
-                    d="M0,60 Q20,55 40,50 T80,45 T120,35 T160,40 T200,20"
-                    fill="none"
-                    stroke="#10b981"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </div>
-
-              <div className="space-y-2.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
-                      <span className="text-blue-500 text-xs">↑</span>
-                    </div>
-                    <div>
-                      <p className="text-xs font-medium text-foreground">Income</p>
-                      <p className="text-[10px] text-muted-foreground">Today</p>
-                    </div>
-                  </div>
-                  <p className="text-xs font-medium text-foreground">+$2,400</p>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-full bg-rose-500/10 flex items-center justify-center">
-                      <span className="text-rose-500 text-xs">↓</span>
-                    </div>
-                    <div>
-                      <p className="text-xs font-medium text-foreground">Expenses</p>
-                      <p className="text-[10px] text-muted-foreground">Yesterday</p>
-                    </div>
-                  </div>
-                  <p className="text-xs font-medium text-foreground">-$180</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-linear-to-t from-accent/5 to-transparent pointer-events-none" />
-    </div>
-  );
-}
 
 export function FeatureHighlight(): ReactNode {
   return (
     <section className="relative w-full bg-background pb-24 sm:pb-32 overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="flex flex-col justify-center">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -102,9 +35,8 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.6, ease }}
               className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
             >
-              Make smarter
-              <br />
-              <span className="italic">financial decisions</span>
+              What Changes When{" "}
+              <span className="italic">Everything Works Together</span>
             </motion.h2>
 
             <motion.p
@@ -114,7 +46,10 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.5, delay: 0.1, ease }}
               className="mt-6 text-foreground/70 leading-relaxed max-w-lg"
             >
-              AI is woven throughout your entire Finaro experience. Access real-time insights and personalized recommendations.
+              Most advisory firms do one thing well and outsource the rest. We
+              took a different approach. At United Financial Planning Group, your
+              investment decisions, retirement timeline, and tax planning
+              reinforce each other instead of working at cross purposes.
             </motion.p>
 
             <motion.ul
@@ -124,27 +59,30 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.5, delay: 0.2, ease }}
               className="mt-8 space-y-4"
             >
-              {features.map((feature, index) => (
+              {highlights.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="shrink-0 mt-0.5 text-foreground/60">
-                    {feature.icon}
+                    {item.icon}
                   </span>
-                  <span className="text-foreground/80">{feature.text}</span>
+                  <span className="text-foreground/80">{item.text}</span>
                 </li>
               ))}
             </motion.ul>
 
-            <motion.a
-              href="#"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3, ease }}
-              className="group inline-flex items-center gap-2 mt-10 text-foreground font-medium hover:opacity-70 transition-opacity"
             >
-              Learn more
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </motion.a>
+              <Link
+                href="/services"
+                className="group inline-flex items-center gap-2 mt-10 text-foreground font-medium hover:opacity-70 transition-opacity"
+              >
+                Explore how we work together
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </motion.div>
           </div>
 
           <motion.div
@@ -152,9 +90,32 @@ export function FeatureHighlight(): ReactNode {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="flex justify-center lg:justify-end h-full"
+            className="relative bg-muted/50 border border-border rounded-sm p-8 sm:p-10"
           >
-            <PhoneInCard />
+            <p className="text-foreground/80 leading-relaxed text-lg">
+              &ldquo;The result: strategies that actually compound — where your
+              investment decisions, retirement timeline, and tax planning
+              reinforce each other instead of working at cross purposes.&rdquo;
+            </p>
+            <div className="mt-8 pt-6 border-t border-border">
+              <p className="text-sm font-medium text-foreground">
+                The Cost of Disconnected Advice
+              </p>
+              <ul className="mt-4 space-y-3">
+                <li className="text-sm text-foreground/60 leading-relaxed">
+                  Your advisor rebalances in December — triggering capital gains
+                  your CPA didn&apos;t expect and can&apos;t offset.
+                </li>
+                <li className="text-sm text-foreground/60 leading-relaxed">
+                  You convert to a Roth based on a rule of thumb — without
+                  modeling the impact on your Medicare premiums.
+                </li>
+                <li className="text-sm text-foreground/60 leading-relaxed">
+                  You exercise stock options on your own timeline — unaware that
+                  waiting three months would have saved you $40,000.
+                </li>
+              </ul>
+            </div>
           </motion.div>
         </div>
       </div>
