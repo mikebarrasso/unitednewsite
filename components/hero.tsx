@@ -93,7 +93,7 @@ const fragmentShader = `
     vec2 displacement = toMouse * influence / (dist + 0.1);
     vec2 displacedUv = uv + displacement;
     
-    vec3 col = vec3(0.02, 0.02, 0.06);
+    vec3 col = vec3(0.02, 0.03, 0.08);
     
     float beam1 = snoise(vec3(displacedUv.x * 1.5 + t * 0.5, displacedUv.y * 0.8 - t * 0.2, t * 0.3));
     float beam2 = snoise(vec3(displacedUv.x * 2.0 - t * 0.3, displacedUv.y * 0.6 + t * 0.1, t * 0.2 + 10.0));
@@ -106,23 +106,23 @@ const fragmentShader = `
     float light2 = smoothstep(0.0, 0.7, beam2 * verticalFade);
     float light3 = smoothstep(0.0, 0.6, beam3 * verticalFade2);
     
-    // Warm navy / gold spectrum for financial trust
-    vec3 gold = vec3(0.85, 0.65, 0.25);
-    vec3 amber = vec3(0.75, 0.45, 0.15);
-    vec3 navy = vec3(0.1, 0.15, 0.35);
-    vec3 blue = vec3(0.15, 0.25, 0.55);
-    vec3 slate = vec3(0.2, 0.3, 0.45);
+    // United blue spectrum — professional, trustworthy
+    vec3 unitedBlue = vec3(0.118, 0.431, 0.682);
+    vec3 deepNavy = vec3(0.06, 0.15, 0.35);
+    vec3 lightBlue = vec3(0.24, 0.55, 0.78);
+    vec3 iceBlue = vec3(0.4, 0.65, 0.85);
+    vec3 slate = vec3(0.15, 0.25, 0.45);
     
     float xPos = uv.x / (iResolution.x / iResolution.y);
     
-    col += gold * light1 * 0.5 * smoothstep(0.6, 0.2, xPos);
-    col += amber * light1 * 0.4 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
-    col += navy * light2 * 0.5 * smoothstep(0.4, 0.6, xPos);
-    col += blue * light3 * 0.5 * smoothstep(0.5, 0.8, xPos);
+    col += deepNavy * light1 * 0.6 * smoothstep(0.6, 0.2, xPos);
+    col += unitedBlue * light1 * 0.5 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
+    col += lightBlue * light2 * 0.45 * smoothstep(0.4, 0.6, xPos);
+    col += iceBlue * light3 * 0.35 * smoothstep(0.5, 0.8, xPos);
     col += slate * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
     
     float centerGlow = exp(-pow((xPos - 0.5) * 2.0, 2.0)) * verticalFade2;
-    col += vec3(0.7, 0.55, 0.25) * centerGlow * 0.25;
+    col += vec3(0.15, 0.45, 0.7) * centerGlow * 0.3;
     
     float vignette = 1.0 - pow(length(uv - vec2(0.5 * iResolution.x / iResolution.y, 0.5)) * 0.8, 2.0);
     col *= max(vignette, 0.3);

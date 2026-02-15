@@ -50,11 +50,11 @@ function PlanningVisual(): ReactNode {
     <div className="w-full h-full flex items-end justify-center p-6">
       <div className="w-full max-w-xs">
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-2 h-2 rounded-full bg-emerald-500" />
+          <div className="w-2 h-2 rounded-full bg-[#1e6eae]" />
           <span className="text-xs font-medium text-foreground">
             Plan Health
           </span>
-          <span className="text-xs text-emerald-500 ml-auto font-semibold">
+          <span className="text-xs text-[#1e6eae] ml-auto font-semibold">
             On Track
           </span>
         </div>
@@ -97,7 +97,7 @@ function InvestingVisual(): ReactNode {
             <span className="text-xl sm:text-2xl font-semibold text-foreground">
               8.4%
             </span>
-            <span className="text-xs text-emerald-500 font-medium">
+            <span className="text-xs text-[#1e6eae] font-medium">
               +1.7% vs pre-tax only
             </span>
           </div>
@@ -189,7 +189,7 @@ function TaxVisual(): ReactNode {
                 {row.savings}
               </span>
               <span
-                className={`w-16 text-right text-xs ${row.status === "Executed" ? "text-emerald-500" : "text-muted-foreground"}`}
+                className={`w-16 text-right text-xs ${row.status === "Executed" ? "text-[#1e6eae]" : "text-muted-foreground"}`}
               >
                 {row.status}
               </span>

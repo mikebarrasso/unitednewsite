@@ -14,7 +14,7 @@ type Stat = {
 
 const stats: Stat[] = [
   { value: 30, suffix: "+", label: "Years of integrated experience" },
-  { value: 3, suffix: "", label: "Disciplines under one roof" },
+  { value: 350, suffix: "M", prefix: "$", label: "Under management" },
   { value: 50, suffix: "", label: "States served nationwide" },
 ];
 
@@ -78,7 +78,7 @@ function AnimatedCounter({
 
 export function Stats(): ReactNode {
   return (
-    <section className="relative w-full bg-muted pb-16 sm:pb-20 overflow-hidden">
+    <section className="relative w-full bg-muted py-24 sm:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

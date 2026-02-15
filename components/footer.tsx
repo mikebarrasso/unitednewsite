@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = {
@@ -61,9 +62,13 @@ export function Footer(): ReactNode {
             <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
               <div className="lg:max-w-xs">
                 <Link href="/" className="inline-block">
-                  <span className="text-lg font-semibold text-foreground tracking-tight">
-                    United FPG
-                  </span>
+                  <Image
+                    src="/logo.webp"
+                    alt="United Financial Planning Group"
+                    width={160}
+                    height={45}
+                    className="h-9 w-auto"
+                  />
                 </Link>
                 <p className="mt-4 text-sm text-foreground/50 max-w-xs leading-relaxed">
                   Fee-only financial planning, investment management, tax

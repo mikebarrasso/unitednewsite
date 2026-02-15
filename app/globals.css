@@ -5,11 +5,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --muted: oklch(0.97 0 0);
+  --united-blue: oklch(0.524 0.125 247.8);
+  --united-blue-light: oklch(0.618 0.120 244.3);
+  --united-blue-dark: oklch(0.427 0.117 251.7);
+  --united-blue-muted: oklch(0.933 0.026 248.2);
+  --muted: oklch(0.965 0.005 248);
   --muted-foreground: oklch(0.556 0 0);
-  --border: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --accent: oklch(0.97 0 0);
+  --border: oklch(0.922 0.005 248);
+  --ring: var(--united-blue);
+  --accent: var(--united-blue);
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --radius: 0.625rem;
@@ -19,60 +23,60 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: var(--united-blue);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.965 0.005 248);
   --secondary-foreground: oklch(0.205 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --input: oklch(0.922 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
+  --input: oklch(0.922 0.005 248);
+  --chart-1: var(--united-blue);
+  --chart-2: var(--united-blue-light);
+  --chart-3: var(--united-blue-dark);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
+  --sidebar: oklch(0.985 0.003 248);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: var(--united-blue);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.965 0.005 248);
   --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-border: oklch(0.922 0.005 248);
+  --sidebar-ring: var(--united-blue);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: oklch(0.145 0.005 248);
   --foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
+  --muted: oklch(0.22 0.01 248);
   --muted-foreground: oklch(0.708 0 0);
   --border: oklch(1 0 0 / 10%);
-  --ring: oklch(0.556 0 0);
-  --accent: oklch(0.269 0 0);
-  --card: oklch(0.205 0 0);
+  --ring: var(--united-blue-light);
+  --accent: var(--united-blue);
+  --card: oklch(0.19 0.008 248);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(0.19 0.008 248);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
+  --primary: var(--united-blue-light);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.22 0.01 248);
   --secondary-foreground: oklch(0.985 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --input: oklch(1 0 0 / 15%);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-1: var(--united-blue-light);
+  --chart-2: var(--united-blue);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
+  --sidebar: oklch(0.19 0.008 248);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: var(--united-blue-light);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent: oklch(0.22 0.01 248);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-ring: var(--united-blue-light);
 }
 
 @theme inline {
@@ -135,7 +139,7 @@ body {
 
 /* Custom text selection */
 ::selection {
-  background-color: var(--accent);
+  background-color: var(--united-blue);
   color: white;
 }
 

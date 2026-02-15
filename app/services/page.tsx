@@ -1,5 +1,6 @@
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { ServiceHero } from "@/components/service-hero";
 import { createMetadata } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -56,20 +57,15 @@ export default function ServicesPage(): ReactNode {
   return (
     <>
       <main id="main-content" className="flex-1">
-        {/* Hero */}
-        <section className="relative w-full bg-muted pt-40 pb-24 sm:pb-32">
-          <div className="mx-auto max-w-4xl px-6 sm:px-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
-              Every Part of Your Financial Life.{" "}
-              <span className="italic">One Team. One Strategy.</span>
-            </h1>
-            <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
-              Most people cobble together advice from a financial advisor, a CPA,
-              and maybe an estate attorney — none of whom see the full picture. We
-              bring it all together so every decision reinforces the others.
-            </p>
-          </div>
-        </section>
+        <ServiceHero
+          eyebrow="All Services"
+          title="Every Part of Your Financial Life. One Team. One Strategy."
+          subtitle="Most people cobble together advice from a financial advisor, a CPA, and maybe an estate attorney. We bring it all together so every decision reinforces the others."
+          imageUrl="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1740&auto=format&fit=crop"
+          imageAlt="Collaborative financial advisory team meeting"
+          secondaryCtaHref="/contact"
+          secondaryCtaLabel="Talk With Our Team"
+        />
 
         {/* Services Grid */}
         <section className="relative w-full bg-background py-24 sm:py-32">

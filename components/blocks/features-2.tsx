@@ -155,7 +155,7 @@ export function Features2() {
       case "Complete":
       case "Optimized":
       case "Current":
-        return "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400";
+        return "bg-sky-100 dark:bg-sky-900/30 text-sky-800 dark:text-sky-400";
       case "In Progress":
       case "In Review":
       case "Active":
@@ -164,7 +164,7 @@ export function Features2() {
       case "On Track":
       case "Ready":
       case "Monitoring":
-        return "bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-400";
+        return "bg-slate-100 dark:bg-slate-800/30 text-slate-700 dark:text-slate-400";
       default:
         return "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400";
     }

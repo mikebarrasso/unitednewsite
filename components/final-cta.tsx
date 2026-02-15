@@ -99,44 +99,44 @@ const fragmentShader = `
     vec3 col;
     
     if (isDark > 0.5) {
-      col = vec3(0.02, 0.02, 0.06);
+      col = vec3(0.02, 0.03, 0.08);
       
-      vec3 gold = vec3(0.85, 0.65, 0.25);
-      vec3 amber = vec3(0.75, 0.45, 0.15);
-      vec3 navy = vec3(0.1, 0.15, 0.35);
-      vec3 blue = vec3(0.15, 0.25, 0.55);
-      vec3 slate = vec3(0.2, 0.3, 0.45);
+      vec3 unitedBlue = vec3(0.118, 0.431, 0.682);
+      vec3 deepNavy = vec3(0.06, 0.15, 0.35);
+      vec3 lightBlue = vec3(0.24, 0.55, 0.78);
+      vec3 iceBlue = vec3(0.4, 0.65, 0.85);
+      vec3 slate = vec3(0.15, 0.25, 0.45);
       
-      col += gold * light1 * 0.5 * smoothstep(0.6, 0.2, xPos);
-      col += amber * light1 * 0.4 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
-      col += navy * light2 * 0.5 * smoothstep(0.4, 0.6, xPos);
-      col += blue * light3 * 0.5 * smoothstep(0.5, 0.8, xPos);
+      col += deepNavy * light1 * 0.6 * smoothstep(0.6, 0.2, xPos);
+      col += unitedBlue * light1 * 0.5 * smoothstep(0.3, 0.5, xPos) * smoothstep(0.7, 0.5, xPos);
+      col += lightBlue * light2 * 0.45 * smoothstep(0.4, 0.6, xPos);
+      col += iceBlue * light3 * 0.35 * smoothstep(0.5, 0.8, xPos);
       col += slate * light2 * 0.3 * smoothstep(0.7, 1.0, xPos);
-      col += vec3(0.7, 0.55, 0.25) * centerGlow * 0.25;
+      col += vec3(0.15, 0.45, 0.7) * centerGlow * 0.3;
       
       float vignette = 1.0 - pow(length(uv - vec2(0.5 * iResolution.x / iResolution.y, 0.5)) * 0.8, 2.0);
       col *= max(vignette, 0.3);
       col = pow(col, vec3(0.9));
     } else {
-      col = vec3(0.98, 0.98, 0.97);
+      col = vec3(0.98, 0.98, 1.0);
       
-      vec3 warmBeige = vec3(0.96, 0.92, 0.85);
-      vec3 softGold = vec3(0.95, 0.88, 0.72);
-      vec3 paleBlue = vec3(0.88, 0.92, 0.96);
-      vec3 lightSlate = vec3(0.85, 0.88, 0.92);
+      vec3 paleSky = vec3(0.92, 0.95, 0.98);
+      vec3 softBlue = vec3(0.85, 0.91, 0.97);
+      vec3 iceWash = vec3(0.90, 0.94, 0.98);
+      vec3 coolGray = vec3(0.93, 0.94, 0.96);
       
       float blobIntensity = light1 * 0.5 + light2 * 0.3 + centerGlow * 0.8;
       blobIntensity = smoothstep(0.0, 1.0, blobIntensity);
       
-      vec3 gradientColor = mix(warmBeige, softGold, smoothstep(0.3, 0.5, xPos));
-      gradientColor = mix(gradientColor, paleBlue, smoothstep(0.5, 0.7, xPos));
-      gradientColor = mix(gradientColor, lightSlate, smoothstep(0.7, 0.9, xPos));
+      vec3 gradientColor = mix(paleSky, softBlue, smoothstep(0.3, 0.5, xPos));
+      gradientColor = mix(gradientColor, iceWash, smoothstep(0.5, 0.7, xPos));
+      gradientColor = mix(gradientColor, coolGray, smoothstep(0.7, 0.9, xPos));
       
       col = mix(col, gradientColor, blobIntensity * 0.7);
       
       float radialFade = 1.0 - length(vec2(xPos - 0.5, uv.y - 0.3) * vec2(1.2, 1.5));
       radialFade = smoothstep(0.0, 0.8, radialFade);
-      col = mix(vec3(0.98, 0.98, 0.97), col, radialFade);
+      col = mix(vec3(0.98, 0.98, 1.0), col, radialFade);
     }
     
     gl_FragColor = vec4(col, 1.0);

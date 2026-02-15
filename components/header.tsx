@@ -2,6 +2,7 @@
 
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   useState,
@@ -49,7 +50,16 @@ const navLinks: NavItem[] = [
         description: "Returns prepared by professionals who know your story",
         href: "/services/tax-preparation",
       },
+      {
+        label: "Equity Compensation",
+        description: "Stock options and equity comp planning with tax coordination",
+        href: "/services/equity-compensation",
+      },
     ],
+  },
+  {
+    label: "Why United?",
+    href: "/why-united",
   },
   {
     label: "About",
@@ -287,6 +297,8 @@ export function Header(): ReactNode {
       <div
         className="fixed top-0 left-0 w-full h-25 z-1001 pointer-events-none"
         style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.25) 50%, transparent 100%)",
           backdropFilter: "blur(15px)",
           WebkitBackdropFilter: "blur(15px)",
           maskImage: "linear-gradient(black 0%, black 40%, transparent 100%)",
@@ -296,7 +308,7 @@ export function Header(): ReactNode {
         aria-hidden="true"
       />
 
-      <header className="hidden lg:block fixed top-0 left-0 right-0 z-1003 mix-blend-exclusion">
+      <header className="hidden lg:block fixed top-0 left-0 right-0 z-1003">
         <div className="mx-auto flex h-20 w-full items-center justify-between px-6 sm:px-8">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -308,9 +320,14 @@ export function Header(): ReactNode {
               className="flex items-center gap-2"
               aria-label="Home"
             >
-              <span className="text-lg font-semibold text-white tracking-tight">
-                United FPG
-              </span>
+              <Image
+                src="/logo.webp"
+                alt="United Financial Planning Group"
+                width={121}
+                height={63}
+                className="h-10 w-auto brightness-0 invert"
+                priority
+              />
             </Link>
           </motion.div>
 
@@ -360,7 +377,7 @@ export function Header(): ReactNode {
         </div>
       </header>
 
-      <header className="lg:hidden fixed top-0 left-0 right-0 z-1003 mix-blend-exclusion">
+      <header className="lg:hidden fixed top-0 left-0 right-0 z-1003">
         <div className="mx-auto flex h-16 w-full items-center justify-between px-6 sm:px-8">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -372,9 +389,14 @@ export function Header(): ReactNode {
               className="flex items-center gap-2"
               aria-label="Home"
             >
-              <span className="text-lg font-semibold text-white tracking-tight">
-                United FPG
-              </span>
+              <Image
+                src="/logo.webp"
+                alt="United Financial Planning Group"
+                width={121}
+                height={63}
+                className="h-9 w-auto brightness-0 invert"
+                priority
+              />
             </Link>
           </motion.div>
           <motion.button
@@ -407,9 +429,13 @@ export function Header(): ReactNode {
                 aria-label="Home"
                 onClick={closeMobileMenu}
               >
-                <span className="text-lg font-semibold text-foreground tracking-tight">
-                  United FPG
-                </span>
+                <Image
+                  src="/logo.webp"
+                  alt="United Financial Planning Group"
+                  width={121}
+                  height={63}
+                  className="h-9 w-auto"
+                />
               </Link>
               <button
                 className="p-2 -mr-2"
