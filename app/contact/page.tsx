@@ -1,6 +1,6 @@
 import { Footer } from "@/components/footer";
-import { ContactForm } from "./contact-form";
-import { MapPin } from "lucide-react";
+import { TallyContactForm } from "@/components/tally-contact-form";
+import { MapPin, Mail, Phone, Printer } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -12,34 +12,16 @@ export const metadata: Metadata = createMetadata({
   path: "/contact",
 });
 
-const offices = [
-  {
-    name: "Hauppauge, NY (Headquarters)",
-    address: "350 Motor Parkway, Suite 105",
-    city: "Hauppauge, NY 11788",
-  },
-  {
-    name: "Manhattan, NY",
-    address: "14 Penn Plaza",
-    city: "New York, NY 10122",
-  },
-  {
-    name: "Lake Success, NY",
-    address: "1979 Marcus Avenue, Suite 210",
-    city: "Lake Success, NY 11042",
-  },
-];
-
 export default function ContactPage(): ReactNode {
   return (
     <>
       <main id="main-content" className="flex-1">
-        <section className="relative w-full bg-muted pt-40 pb-24 sm:pb-32">
-          <div className="mx-auto max-w-4xl px-6 sm:px-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
+        <section className="relative w-full bg-muted pt-40 pb-2 sm:pb-4">
+          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground leading-tight">
               Let&apos;s Start With a Conversation
             </h1>
-            <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
+            <p className="mt-3 text-base sm:text-lg text-foreground/60 max-w-2xl leading-relaxed">
               No sales pitch. No obligation. Just a chance to talk about
               what&apos;s on your mind financially — and see if we&apos;re the
               right fit.
@@ -47,48 +29,147 @@ export default function ContactPage(): ReactNode {
           </div>
         </section>
 
-        <section className="relative w-full bg-background py-24 sm:py-32">
+        <section className="relative w-full bg-background pt-6 sm:pt-8 pb-16">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Contact Form */}
-              <div>
-                <p className="text-foreground/60 leading-relaxed mb-8">
-                  Whether you have a specific question about your retirement
-                  plan, your tax situation, or your equity compensation — or
-                  you&apos;re just tired of feeling like nobody has the full
-                  picture — we&apos;re here to listen.
-                </p>
-                <ContactForm />
+              <div className="min-w-0">
+                <TallyContactForm />
               </div>
 
-              {/* Offices */}
-              <div>
-                <h2 className="text-2xl font-medium font-serif text-foreground mb-8">
-                  Our Offices
-                </h2>
-                <div className="space-y-6">
-                  {offices.map((office) => (
-                    <div
-                      key={office.name}
-                      className="flex items-start gap-4 p-6 bg-muted/50 border border-border rounded-sm"
-                    >
-                      <MapPin className="w-5 h-5 text-foreground/40 shrink-0 mt-0.5" />
-                      <div>
-                        <h3 className="text-sm font-medium text-foreground">
-                          {office.name}
-                        </h3>
-                        <p className="text-sm text-foreground/60 mt-1">
-                          {office.address}
-                          <br />
-                          {office.city}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+              {/* Contact Info */}
+              <div className="min-w-0 pt-12 sm:pt-14">
+                <div className="space-y-4">
+                  <a
+                    href="tel:+16312340871"
+                    className="flex items-center gap-4 p-4 bg-muted/50 border border-border rounded-lg hover:bg-muted/70 transition-colors"
+                  >
+                    <Phone className="w-5 h-5 text-primary shrink-0" />
+                    <span className="text-sm font-medium text-foreground">
+                      (631) 234-0871
+                    </span>
+                  </a>
+                  <a
+                    href="mailto:info@unitedfpg.com"
+                    className="flex items-center gap-4 p-4 bg-muted/50 border border-border rounded-lg hover:bg-muted/70 transition-colors"
+                  >
+                    <Mail className="w-5 h-5 text-primary shrink-0" />
+                    <span className="text-sm font-medium text-foreground">
+                      info@unitedfpg.com
+                    </span>
+                  </a>
+                  <div className="flex items-center gap-4 p-4 bg-muted/50 border border-border rounded-lg">
+                    <MapPin className="w-5 h-5 text-primary shrink-0" />
+                    <span className="text-sm font-medium text-foreground">
+                      Service Nationwide
+                    </span>
+                  </div>
                 </div>
-                <p className="mt-6 text-sm text-foreground/50">
-                  Nationwide service available via video consultation.
+                <p className="mt-6 text-foreground/70 leading-relaxed">
+                  We offer a no-obligation consultation to discuss your
+                  financial situation and how we can help. Please fill out the
+                  form or give us a call to get started.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Locations */}
+        <section className="relative w-full bg-muted py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <h2 className="text-2xl sm:text-3xl font-medium font-serif text-foreground mb-10">
+              Our Locations
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-background border border-border rounded-xl p-6">
+                <h3 className="text-base font-semibold text-foreground mb-1">
+                  Hauppauge, NY
+                </h3>
+                <p className="text-xs font-medium text-primary mb-4">
+                  Headquarters
+                </p>
+                <div className="space-y-3 text-sm text-foreground/60">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-foreground/40 shrink-0 mt-0.5" />
+                    <span>
+                      350 Motor Parkway, Suite 105
+                      <br />
+                      Hauppauge, NY 11788
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <a
+                      href="tel:+16312340871"
+                      className="hover:text-foreground transition-colors"
+                    >
+                      (631) 234-0871
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Printer className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <span>(631) 584-3763</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-background border border-border rounded-xl p-6">
+                <h3 className="text-base font-semibold text-foreground mb-5">
+                  Manhattan, NY
+                </h3>
+                <div className="space-y-3 text-sm text-foreground/60">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-foreground/40 shrink-0 mt-0.5" />
+                    <span>
+                      14 Penn Plaza
+                      <br />
+                      New York, NY 10122
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <a
+                      href="tel:+16312340871"
+                      className="hover:text-foreground transition-colors"
+                    >
+                      (631) 234-0871
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Printer className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <span>(631) 584-3763</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-background border border-border rounded-xl p-6">
+                <h3 className="text-base font-semibold text-foreground mb-5">
+                  Lake Success, NY
+                </h3>
+                <div className="space-y-3 text-sm text-foreground/60">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-foreground/40 shrink-0 mt-0.5" />
+                    <span>
+                      1979 Marcus Avenue, Suite 210
+                      <br />
+                      Lake Success, NY 11042
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <a
+                      href="tel:+16312340871"
+                      className="hover:text-foreground transition-colors"
+                    >
+                      (631) 234-0871
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Printer className="w-4 h-4 text-foreground/40 shrink-0" />
+                    <span>(631) 584-3763</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

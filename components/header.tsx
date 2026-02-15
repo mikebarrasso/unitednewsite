@@ -58,16 +58,33 @@ const navLinks: NavItem[] = [
     ],
   },
   {
-    label: "Why United?",
-    href: "/why-united",
-  },
-  {
     label: "About",
-    href: "/about",
+    hasDropdown: true,
+    items: [
+      {
+        label: "Why United",
+        description: "What sets us apart as your financial partner",
+        href: "/why-united",
+      },
+      {
+        label: "About Us",
+        description: "Our story, team, and approach",
+        href: "/about",
+      },
+      {
+        label: "Meet The Team",
+        description: "The people behind your financial plan",
+        href: "/team",
+      },
+    ],
   },
   {
-    label: "FAQ",
-    href: "/faq",
+    label: "Client Testimonials",
+    href: "/testimonials",
+  },
+  {
+    label: "Blog",
+    href: "/blog",
   },
   {
     label: "Contact",

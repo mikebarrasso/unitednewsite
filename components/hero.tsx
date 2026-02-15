@@ -259,14 +259,14 @@ export function Hero(): ReactNode {
 
             <StaggeredText
               as="h1"
-              text="Your Financial Life Is Complex.|Your Advisory Team Shouldn't Make It Harder."
+              text="Integrated Financial Planning, Wealth Management & Tax"
               separator="|"
               segmentBy="words"
               direction="bottom"
               delay={60}
               duration={0.7}
               blur={true}
-              className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center leading-tighter tracking-tight max-w-4xl"
+              className="w-full text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center justify-start lg:justify-center leading-tighter tracking-tight max-w-4xl"
             />
 
             <motion.p
