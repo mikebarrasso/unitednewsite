@@ -2,6 +2,7 @@
 
 import { type ReactNode } from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { LogoLoop, type LogoItem } from "@/components/logo-loop";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -9,51 +10,86 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const logos: LogoItem[] = [
   {
     node: (
-      <span className="text-lg sm:text-xl font-serif font-medium text-foreground/40 whitespace-nowrap select-none">
-        The Wall Street Journal
-      </span>
+      <Image
+        src="/forbes.svg"
+        alt="Forbes"
+        width={120}
+        height={36}
+        className="h-7 sm:h-8 w-auto grayscale opacity-70"
+      />
     ),
   },
   {
     node: (
-      <span className="text-lg sm:text-xl font-serif font-bold italic text-foreground/40 whitespace-nowrap select-none">
-        Forbes
-      </span>
+      <Image
+        src="/Fortune_magazine_logo_2016.webp"
+        alt="Fortune"
+        width={120}
+        height={36}
+        className="h-7 sm:h-8 w-auto grayscale opacity-70"
+      />
     ),
   },
   {
     node: (
-      <span className="text-lg sm:text-xl font-serif font-bold text-foreground/40 whitespace-nowrap select-none tracking-tight">
-        FORTUNE
-      </span>
+      <Image
+        src="/MarketWatch-Logo-PNG-Grayscale.webp"
+        alt="MarketWatch"
+        width={160}
+        height={36}
+        className="h-6 sm:h-7 w-auto grayscale opacity-70"
+      />
     ),
   },
   {
     node: (
-      <span className="text-lg sm:text-xl font-serif font-medium text-foreground/40 whitespace-nowrap select-none">
-        MarketWatch
-      </span>
+      <Image
+        src="/napfa-logo-3.webp"
+        alt="NAPFA"
+        width={120}
+        height={36}
+        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+      />
     ),
   },
   {
     node: (
-      <span className="text-lg sm:text-xl font-medium text-foreground/40 whitespace-nowrap select-none tracking-tight uppercase">
-        NAPFA
-      </span>
+      <Image
+        src="/AltColorLarge1000x240-1.webp"
+        alt="AICPA"
+        width={160}
+        height={36}
+        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+      />
     ),
   },
   {
     node: (
-      <span className="text-lg sm:text-xl font-medium text-foreground/40 whitespace-nowrap select-none tracking-tight uppercase">
-        AICPA
-      </span>
+      <Image
+        src="/Garrett-Planning-Network-logo-med.webp"
+        alt="Garrett Planning Network"
+        width={140}
+        height={36}
+        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+      />
+    ),
+  },
+  {
+    node: (
+      <Image
+        src="/Logo_1200x630.webp"
+        alt="Fee Only Network"
+        width={140}
+        height={36}
+        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+      />
     ),
   },
 ];
 
 export function TrustedBy(): ReactNode {
   return (
-    <section className="relative w-full bg-background py-16 sm:py-20">
+    <section className="relative w-full bg-background pt-6 pb-16 sm:pt-8 sm:pb-20">
       <div className="flex flex-col items-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +107,7 @@ export function TrustedBy(): ReactNode {
           transition={{ duration: 0.6, delay: 0.2, ease }}
           className="w-full"
         >
-          <LogoLoop logos={logos} speed={40} logoHeight={36} gap={80} />
+          <LogoLoop logos={logos} speed={40} logoHeight={40} gap={80} />
         </motion.div>
       </div>
     </section>

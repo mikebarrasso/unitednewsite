@@ -342,7 +342,7 @@ export function Header(): ReactNode {
                 alt="United Financial Planning Group"
                 width={121}
                 height={63}
-                className="h-14 w-auto [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
+                className="h-16 w-auto -translate-y-1 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
                 priority
               />
             </Link>
@@ -411,7 +411,7 @@ export function Header(): ReactNode {
                 alt="United Financial Planning Group"
                 width={121}
                 height={63}
-                className="h-12 w-auto [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
+                className="h-14 w-auto -translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
                 priority
               />
             </Link>
@@ -451,14 +451,14 @@ export function Header(): ReactNode {
                   alt="United Financial Planning Group"
                   width={121}
                   height={63}
-                  className="h-12 w-auto dark:hidden [filter:drop-shadow(0_2px_8px_rgba(0,0,0,0.72))]"
+                  className="h-14 w-auto -translate-y-0.5 dark:hidden [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.55))]"
                 />
                 <Image
                   src="/logo-white-cropped.png"
                   alt="United Financial Planning Group"
                   width={121}
                   height={63}
-                  className="h-12 w-auto hidden dark:block [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
+                  className="h-14 w-auto -translate-y-0.5 hidden dark:block [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
                 />
               </Link>
               <button
