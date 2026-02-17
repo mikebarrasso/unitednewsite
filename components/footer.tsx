@@ -24,22 +24,24 @@ const footerLinks = {
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
+      { label: "Compliance", href: "/compliance" },
     ],
   },
   offices: {
     title: "Offices",
     links: [
-      { label: "Hauppauge, NY (HQ)", href: "/contact" },
-      { label: "Manhattan, NY", href: "/contact" },
-      { label: "Lake Success, NY", href: "/contact" },
+      { label: "Hauppauge, NY (HQ)", href: "/locations/hauppauge-ny" },
+      { label: "Manhattan, NY", href: "/locations/manhattan-ny" },
+      { label: "Lake Success, NY", href: "/locations/lake-success-ny" },
     ],
   },
 };
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
-  { label: "Form ADV", href: "#" },
+  { label: "Privacy Policy", href: "/2021-UFPG-PRIVACY-POLICY.pdf" },
+  { label: "Form ADV Part 2A", href: "/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf" },
+  { label: "Form ADV Part 2B", href: "/2025-03-21-UFPG-Form-ADV-Part-2B-1.pdf" },
+  { label: "Form CRS", href: "/2023-08-17-UFPG-Form-CRS-1.pdf" },
 ];
 
 export function Footer(): ReactNode {
@@ -66,11 +68,18 @@ export function Footer(): ReactNode {
               <div className="lg:max-w-xs">
                 <Link href="/" className="inline-block">
                   <Image
-                    src="/logo.webp"
+                    src="/logo-black-cropped.png"
                     alt="United Financial Planning Group"
                     width={160}
                     height={45}
-                    className="h-9 w-auto"
+                    className="h-14 w-auto dark:hidden"
+                  />
+                  <Image
+                    src="/logo-white-cropped.png"
+                    alt="United Financial Planning Group"
+                    width={160}
+                    height={45}
+                    className="h-14 w-auto hidden dark:block"
                   />
                 </Link>
                 <p className="mt-4 text-sm text-foreground/50 max-w-xs leading-relaxed">

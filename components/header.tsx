@@ -338,11 +338,11 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo.webp"
+                src="/logo-white-cropped.png"
                 alt="United Financial Planning Group"
                 width={121}
                 height={63}
-                className="h-10 w-auto brightness-0 invert"
+                className="h-14 w-auto [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
                 priority
               />
             </Link>
@@ -407,11 +407,11 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo.webp"
+                src="/logo-white-cropped.png"
                 alt="United Financial Planning Group"
                 width={121}
                 height={63}
-                className="h-9 w-auto brightness-0 invert"
+                className="h-12 w-auto [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
                 priority
               />
             </Link>
@@ -447,11 +447,18 @@ export function Header(): ReactNode {
                 onClick={closeMobileMenu}
               >
                 <Image
-                  src="/logo.webp"
+                  src="/logo-black-cropped.png"
                   alt="United Financial Planning Group"
                   width={121}
                   height={63}
-                  className="h-9 w-auto"
+                  className="h-12 w-auto dark:hidden [filter:drop-shadow(0_2px_8px_rgba(0,0,0,0.72))]"
+                />
+                <Image
+                  src="/logo-white-cropped.png"
+                  alt="United Financial Planning Group"
+                  width={121}
+                  height={63}
+                  className="h-12 w-auto hidden dark:block [filter:drop-shadow(0_3px_10px_rgba(0,0,0,0.98))]"
                 />
               </Link>
               <button
