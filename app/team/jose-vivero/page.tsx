@@ -1,5 +1,6 @@
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -7,7 +8,7 @@ import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
   title:
-    "Jose Vivero, CFP\u00AE, ChFC\u00AE, CLU\u00AE, RICP\u00AE — United Financial Planning Group",
+    "Jose Vivero, CFP®, ChFC®, CLU®, RICP® — United Financial Planning Group",
   description:
     "Jose Vivero is a Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning.",
   path: "/team/jose-vivero",
@@ -16,12 +17,29 @@ export const metadata: Metadata = createMetadata({
 export default function JoseViveroPage(): ReactNode {
   return (
     <>
+      <PersonSchema
+        name="Jose Vivero"
+        jobTitle="Financial Advisor"
+        description="Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning."
+        image="/1600274056286.jpeg"
+        credentials={["CFP®", "ChFC®", "CLU®", "RICP®"]}
+        url="/team/jose-vivero"
+        alumniOf={["Western Connecticut State University"]}
+        knowsAbout={[
+          "Financial Planning",
+          "Retirement Income Planning",
+          "Insurance Planning",
+          "Estate Coordination",
+          "Wealth Management",
+        ]}
+      />
       <main id="main-content" className="flex-1">
         <TeamProfile
           name="Jose Vivero"
-          credentials="CFP\u00AE, ChFC\u00AE, CLU\u00AE, RICP\u00AE"
+          credentials="CFP®, ChFC®, CLU®, RICP®"
           title="Financial Advisor"
           initials="JV"
+          image="/1600274056286.jpeg"
           summary="A dedicated financial professional with over a decade of experience, committed to helping clients achieve their financial goals. Originally from Quito, Ecuador, Jose is a first-generation immigrant who came to the United States to pursue his education and career."
           location="Norwalk, CT"
           sections={[
@@ -35,7 +53,7 @@ export default function JoseViveroPage(): ReactNode {
             {
               title: "Commitment to Excellence",
               content:
-                "In 2022, Jose earned his CERTIFIED FINANCIAL PLANNER\u2122 (CFP\u00AE) certification, a testament to his commitment to upholding the highest standards in financial planning. He also holds multiple designations from the American College of Financial Services, reflecting the depth and breadth of his financial expertise.",
+                "In 2022, Jose earned his CERTIFIED FINANCIAL PLANNER™ (CFP®) certification, a testament to his commitment to upholding the highest standards in financial planning. He also holds multiple designations from the American College of Financial Services, reflecting the depth and breadth of his financial expertise.",
             },
             {
               title: "Personal",
@@ -44,10 +62,10 @@ export default function JoseViveroPage(): ReactNode {
             },
           ]}
           designations={[
-            "CERTIFIED FINANCIAL PLANNER\u2122 (CFP\u00AE)",
-            "Chartered Financial Consultant\u00AE (ChFC\u00AE)",
-            "Chartered Life Underwriter\u00AE (CLU\u00AE)",
-            "Retirement Income Certified Professional\u00AE (RICP\u00AE)",
+            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
+            "Chartered Financial Consultant® (ChFC®)",
+            "Chartered Life Underwriter® (CLU®)",
+            "Retirement Income Certified Professional® (RICP®)",
           ]}
           education={[
             "Bachelor\u2019s in Finance \u2014 Western Connecticut State University",

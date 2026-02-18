@@ -15,12 +15,13 @@ export const metadata: Metadata = createMetadata({
 const teamMembers = [
   {
     name: "Gerry Barrasso",
-    credentials: "CPA, CFP\u00AE, PFS",
+    credentials: "CFP®, CPA, PFS",
     title: "President & Founder",
-    bio: "With over 30 years of experience as both a CPA and CFP\u00AE, Gerry built United around a simple idea: financial planning, investments, and taxes shouldn\u2019t live in separate offices with professionals who never compare notes.",
+    bio: "With over 30 years of experience as both a CPA and CFP®, Gerry built United around a simple idea: financial planning, investments, and taxes shouldn't live in separate offices with professionals who never compare notes.",
     initials: "GB",
     accentColor: "oklch(0.524 0.125 247.8)",
     href: "/team/gerry-barrasso",
+    image: "/240710_AJ3385-scaled%20(2).jpg",
   },
   {
     name: "Michael Barrasso",
@@ -30,24 +31,27 @@ const teamMembers = [
     initials: "MB",
     accentColor: "oklch(0.618 0.120 244.3)",
     href: "/team/michael-barrasso",
+    image: "/SHOT_04_051-scaled%20(4).jpg",
   },
   {
     name: "Ryan Derousseau",
-    credentials: "CFP\u00AE, EA",
+    credentials: "CFP®, EA",
     title: "Financial Advisor",
-    bio: "As both a Certified Financial Planner\u2122 and Enrolled Agent, Ryan brings a rare dual perspective \u2014 aligning your financial plan with tax-efficient strategies that work in practice, not just on paper.",
+    bio: "As both a Certified Financial Planner™ and Enrolled Agent, Ryan brings a rare dual perspective — aligning your financial plan with tax-efficient strategies that work in practice, not just on paper.",
     initials: "RD",
     accentColor: "oklch(0.524 0.125 247.8)",
     href: "/team/ryan-derousseau",
+    image: "/SHOT_02_003-scaled.jpg",
   },
   {
     name: "Jose Vivero",
-    credentials: "CFP\u00AE, ChFC\u00AE, CLU\u00AE, RICP\u00AE",
+    credentials: "CFP®, ChFC®, CLU®, RICP®",
     title: "Financial Advisor",
-    bio: "Jose\u2019s deep roster of designations reflects his commitment to mastering every dimension of financial planning \u2014 from retirement income strategies to insurance and estate coordination.",
+    bio: "Jose's deep roster of designations reflects his commitment to mastering every dimension of financial planning — from retirement income strategies to insurance and estate coordination.",
     initials: "JV",
     accentColor: "oklch(0.618 0.120 244.3)",
     href: "/team/jose-vivero",
+    image: "/1600274056286.jpeg",
   },
   {
     name: "Diana David",
@@ -56,22 +60,25 @@ const teamMembers = [
     bio: "Diana is the connective tissue of the firm. She ensures every client interaction is seamless, every question gets answered, and every detail is handled with care and precision.",
     initials: "DD",
     accentColor: "oklch(0.524 0.125 247.8)",
+    image: "/Diana_David_6J2A2747L-1024x1024.jpg",
   },
   {
     name: "Petr Perecinsky",
     credentials: "EA",
     title: "Tax Preparer",
-    bio: "As an Enrolled Agent, Petr brings specialized tax expertise to the team \u2014 preparing returns with the full context of each client\u2019s financial picture, not just the numbers on a form.",
+    bio: "As an Enrolled Agent, Petr brings specialized tax expertise to the team — preparing returns with the full context of each client's financial picture, not just the numbers on a form.",
     initials: "PP",
     accentColor: "oklch(0.618 0.120 244.3)",
+    image: "/SHOT_03_006-1024x1024.jpg",
   },
   {
     name: "Christine Backel",
-    credentials: "CPA, CFP\u00AE",
+    credentials: "CPA, CFP®",
     title: "Consultant",
-    bio: "Christine combines CPA and CFP\u00AE expertise as a consultant, providing targeted guidance on complex tax and financial planning questions that require both disciplines working together.",
+    bio: "Christine combines CPA and CFP® expertise as a consultant, providing targeted guidance on complex tax and financial planning questions that require both disciplines working together.",
     initials: "CB",
     accentColor: "oklch(0.524 0.125 247.8)",
+    image: "/240710_AJ4473-1024x1024.jpg",
   },
 ];
 
@@ -96,6 +103,7 @@ export default function TeamPage(): ReactNode {
         {/* Team Grid */}
         <section className="relative w-full bg-background py-24 sm:py-32">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <h2 className="sr-only">Our Advisory Team</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {teamMembers.map((member) => (
                 <TeamCard key={member.name} member={member} />

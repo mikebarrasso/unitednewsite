@@ -1,5 +1,6 @@
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { WealthtenderReviews } from "@/components/wealthtender-reviews";
 import { createMetadata } from "@/lib/metadata";
@@ -7,7 +8,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Ryan Derousseau, CFP\u00AE, EA — United Financial Planning Group",
+  title: "Ryan Derousseau, CFP®, EA — United Financial Planning Group",
   description:
     "Ryan Derousseau is a Certified Financial Planner\u2122 and Enrolled Agent at United Financial Planning Group, specializing in working with growing families, career changers, therapists, and the self-employed.",
   path: "/team/ryan-derousseau",
@@ -16,12 +17,30 @@ export const metadata: Metadata = createMetadata({
 export default function RyanDerousseauPage(): ReactNode {
   return (
     <>
+      <PersonSchema
+        name="Ryan Derousseau"
+        jobTitle="Financial Advisor"
+        description="Certified Financial Planner\u2122 and Enrolled Agent at United Financial Planning Group, specializing in working with growing families, career changers, therapists, and the self-employed."
+        image="/SHOT_02_003-scaled.jpg"
+        credentials={["CFP®", "EA"]}
+        url="/team/ryan-derousseau"
+        alumniOf={["New York University", "Boston University"]}
+        knowsAbout={[
+          "Financial Planning",
+          "Tax Planning",
+          "Cash Flow Management",
+          "Investment Strategy",
+          "Retirement Planning",
+          "Small Business Finance",
+        ]}
+      />
       <main id="main-content" className="flex-1">
         <TeamProfile
           name="Ryan Derousseau"
-          credentials="CFP\u00AE, EA"
+          credentials="CFP®, EA"
           title="Financial Advisor"
           initials="RD"
+          image="/SHOT_02_003-scaled.jpg"
           summary="Ryan specializes in working with growing families, career changers, mid-to-late career professionals, therapists, private and group practitioners, and the self-employed \u2014 enabling them to thrive financially so they can focus on other life goals."
           location="Hauppauge & Huntington, NY (also serves clients virtually nationwide)"
           sections={[
@@ -50,7 +69,7 @@ export default function RyanDerousseauPage(): ReactNode {
             },
           ]}
           designations={[
-            "CERTIFIED FINANCIAL PLANNER\u2122 (CFP\u00AE)",
+            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
             "Enrolled Agent (EA)",
           ]}
           education={[

@@ -1,5 +1,6 @@
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { WealthtenderReviews } from "@/components/wealthtender-reviews";
 import { createMetadata } from "@/lib/metadata";
@@ -7,7 +8,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Gerry Barrasso, CPA, CFP\u00AE, PFS — United Financial Planning Group",
+  title: "Gerry Barrasso, CFP®, CPA, PFS — United Financial Planning Group",
   description:
     "Gerry Barrasso is the Founder and President of United Financial Planning Group, with over 30 years of experience in comprehensive wealth management, financial planning, and tax services.",
   path: "/team/gerry-barrasso",
@@ -16,12 +17,31 @@ export const metadata: Metadata = createMetadata({
 export default function GerryBarrassoPage(): ReactNode {
   return (
     <>
+      <PersonSchema
+        name="Gerry Barrasso"
+        jobTitle="President & Founder"
+        description="Founder and President of United Financial Planning Group, with over 30 years of experience in comprehensive wealth management, financial planning, and tax services."
+        image="/240710_AJ3385-scaled%20(2).jpg"
+        credentials={["CFP®", "CPA", "PFS"]}
+        url="/team/gerry-barrasso"
+        linkedIn="https://www.linkedin.com/in/gerrybarrasso/"
+        alumniOf={["Hofstra University", "St. John\u2019s University", "Fordham University"]}
+        knowsAbout={[
+          "Wealth Management",
+          "Financial Planning",
+          "Tax Planning",
+          "Tax Preparation",
+          "Retirement Planning",
+          "Investment Management",
+        ]}
+      />
       <main id="main-content" className="flex-1">
         <TeamProfile
           name="Gerry Barrasso"
-          credentials="CPA, CFP\u00AE, PFS"
+          credentials="CFP®, CPA, PFS"
           title="President & Founder"
           initials="GB"
+          image="/240710_AJ3385-scaled%20(2).jpg"
           summary="Founder and President of United Financial Planning Group, a fee-only Registered Investment Advisory (RIA) firm. With over 30 years of finance experience, Gerry specializes in providing comprehensive wealth management, integrated financial planning, and advanced tax planning and preparation services."
           location="Smithtown, NY"
           linkedIn="https://www.linkedin.com/in/gerrybarrasso/"
@@ -48,7 +68,7 @@ export default function GerryBarrassoPage(): ReactNode {
           ]}
           designations={[
             "Certified Public Accountant (CPA)",
-            "CERTIFIED FINANCIAL PLANNER\u2122 (CFP\u00AE)",
+            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
             "Personal Financial Specialist (PFS)",
           ]}
           education={[

@@ -7,7 +7,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "About — United Financial Planning Group",
   description:
-    "Founded by Gerry Barrasso, CPA, CFP®, United Financial Planning Group brings 30+ years of integrated financial planning and tax expertise to clients nationwide.",
+    "Founded by Gerry Barrasso, CFP®, CPA, United Financial Planning Group brings 30+ years of integrated financial planning and tax expertise to clients nationwide.",
   path: "/about",
 });
 
@@ -66,7 +66,7 @@ export default function AboutPage(): ReactNode {
         <section className="relative w-full bg-background py-24 sm:py-32">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <h2 className="text-3xl sm:text-4xl font-medium font-serif text-foreground mb-8">
-              Meet Gerry Barrasso, CPA, CFP®, PFS
+              Meet Gerry Barrasso, CFP®, CPA, PFS
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
               <p>
@@ -107,7 +107,7 @@ export default function AboutPage(): ReactNode {
                 that.&rdquo;
               </p>
               <cite className="block mt-4 text-sm font-medium text-foreground not-italic">
-                — Gerry Barrasso, CPA, CFP®, PFS
+                — Gerry Barrasso, CFP®, CPA, PFS
               </cite>
             </blockquote>
           </div>
