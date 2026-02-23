@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 
@@ -13,6 +14,7 @@ interface TeamMember {
   initials: string;
   accentColor: string;
   href?: string;
+  image?: string;
 }
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -21,7 +23,7 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardContent = (
-    <div className="relative bg-background rounded-3xl shadow-lg overflow-hidden border border-border">
+    <div className="group relative bg-background rounded-3xl shadow-lg overflow-hidden border border-border">
         {/* Expanded Background on Hover */}
         <motion.div
           className="absolute inset-0 z-0"
@@ -46,23 +48,33 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
           {/* Profile Avatar */}
           <div className="mb-4">
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-muted">
-              <div
-                className="absolute inset-0 flex items-center justify-center"
-                style={{
-                  background: `linear-gradient(135deg, ${member.accentColor}22, ${member.accentColor}08)`,
-                }}
-              >
-                <motion.span
-                  className="text-6xl sm:text-7xl font-serif font-medium select-none"
-                  style={{ color: member.accentColor }}
-                  animate={{
-                    scale: isHovered ? 1.05 : 1,
+              {member.image ? (
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <div
+                  className="absolute inset-0 flex items-center justify-center"
+                  style={{
+                    background: `linear-gradient(135deg, ${member.accentColor}22, ${member.accentColor}08)`,
                   }}
-                  transition={{ duration: 0.4, ease }}
                 >
-                  {member.initials}
-                </motion.span>
-              </div>
+                  <motion.span
+                    className="text-6xl sm:text-7xl font-serif font-medium select-none"
+                    style={{ color: member.accentColor }}
+                    animate={{
+                      scale: isHovered ? 1.05 : 1,
+                    }}
+                    transition={{ duration: 0.4, ease }}
+                  >
+                    {member.initials}
+                  </motion.span>
+                </div>
+              )}
               {/* Bottom gradient fade */}
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
             </div>

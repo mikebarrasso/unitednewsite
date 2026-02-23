@@ -2,6 +2,7 @@
 
 import { ArrowRight, Calendar } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { type ReactNode } from "react";
 
@@ -104,10 +105,13 @@ export function ServiceHero({
               </div>
             ) : (
               <div className="relative w-full h-full min-h-[280px] sm:min-h-[520px] rounded-4xl bg-muted overflow-hidden border border-border/60">
-                <img
-                  src={imageUrl}
+                <Image
+                  src={imageUrl ?? ""}
                   alt={imageAlt}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
               </div>

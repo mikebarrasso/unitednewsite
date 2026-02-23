@@ -70,6 +70,7 @@ export default function ServicesPage(): ReactNode {
         {/* Services Grid */}
         <section className="relative w-full bg-background py-24 sm:py-32">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <h2 className="sr-only">Our Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service) => (
                 <Link
@@ -114,6 +115,12 @@ export default function ServicesPage(): ReactNode {
                 </li>
               ))}
             </ul>
+            <p className="text-[11px] text-foreground/40 leading-relaxed mb-8">
+              The scenarios above are hypothetical illustrations for educational
+              purposes only. They do not represent actual client outcomes. Dollar
+              figures are examples only — individual results vary based on
+              personal circumstances, tax situation, and applicable law.
+            </p>
             <p className="text-foreground font-medium text-lg">
               At United, they share a hallway.
             </p>

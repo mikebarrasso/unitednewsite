@@ -16,7 +16,6 @@ import {
   BarChart3,
   Briefcase,
   Layers,
-  Shield,
   Target,
 } from "lucide-react";
 import Link from "next/link";
@@ -297,6 +296,9 @@ export function ProblemSection() {
             managed in service of your financial and tax plan — always.
           </p>
         </motion.div>
+        <p className="text-[11px] text-muted-foreground/50 text-center mt-4 max-w-3xl mx-auto">
+          The scenarios above are hypothetical illustrations and do not represent actual client results. Dollar amounts shown are for illustrative purposes only. Individual outcomes vary based on personal circumstances.
+        </p>
       </div>
     </section>
   );
@@ -309,7 +311,7 @@ const philosophyTabs = [
     icon: Layers,
     title: "Low-Cost Index Investing",
     description:
-      "We build globally diversified portfolios using low-cost index funds and ETFs. The evidence is clear — over the long term, most active managers fail to beat the index after fees. We'd rather put that fee savings back in your pocket and let compounding do the work.",
+      "We build globally diversified portfolios using low-cost index funds and ETFs. The evidence is clear — according to the S&P SPIVA Scorecard, the majority of actively managed funds have underperformed their benchmark over 15- and 20-year periods. We'd rather put that fee savings back in your pocket and let compounding do the work.",
     features: [
       "Globally diversified index fund portfolios",
       "Evidence-based asset allocation",
@@ -461,20 +463,21 @@ export function PhilosophySection() {
                 <div className="mb-8">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1e6eae]/[0.08] mb-6">
                     {(() => {
-                      const Icon = philosophyTabs[activeTab].icon;
+                      const Icon = philosophyTabs[activeTab]?.icon;
+                      if (!Icon) return null;
                       return <Icon className="w-8 h-8 text-[#1e6eae]" />;
                     })()}
                   </div>
                   <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
-                    {philosophyTabs[activeTab].title}
+                    {philosophyTabs[activeTab]?.title}
                   </h3>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    {philosophyTabs[activeTab].description}
+                    {philosophyTabs[activeTab]?.description}
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  {philosophyTabs[activeTab].features.map((feature, index) => (
+                  {philosophyTabs[activeTab]?.features.map((feature, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: 20 }}

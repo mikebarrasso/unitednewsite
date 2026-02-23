@@ -15,6 +15,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/financial-advisor-:slug",
+        destination: "/towns/:slug",
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -228,6 +228,9 @@ export function ProblemSection() {
                 compounds silently.
               </p>
             </motion.div>
+            <p className="text-[11px] text-muted-foreground/50 text-center mt-3">
+              The scenarios above are hypothetical illustrations and do not represent actual client results. Individual outcomes vary based on personal circumstances.
+            </p>
           </div>
         </div>
       </div>
@@ -394,7 +397,7 @@ function LivingPlanVisual() {
     return () => clearInterval(interval);
   }, []);
 
-  const event = lifeEvents[activeEvent];
+  const event = lifeEvents[activeEvent]!;
   const EventIcon = event.icon;
 
   const recentActions = [

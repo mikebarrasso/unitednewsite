@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
-import { TestimonialsSlider } from "@/components/testimonials-slider";
+import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -30,7 +30,7 @@ function OrganizationSchema() {
       "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services — integrated for clients nationwide.",
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
-    foundingDate: "1991",
+    foundingDate: "2008",
     founder: {
       "@type": "Person",
       name: "Gerry Barrasso",
@@ -107,7 +107,14 @@ export default function HomePage(): ReactNode {
         <FeatureCards />
         <Features2 />
         <Stats />
-        <TestimonialsSlider />
+        <section className="relative w-full bg-background py-24 sm:py-32 overflow-hidden">
+          <div className="mx-auto max-w-5xl px-6 sm:px-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground text-center mb-16">
+              What Our Clients Say
+            </h2>
+            <WealthtenderFirmReviews firmId="36778" />
+          </div>
+        </section>
         <FAQ />
         <FinalCTA />
       </main>

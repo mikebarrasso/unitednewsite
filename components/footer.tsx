@@ -134,6 +134,23 @@ export function Footer(): ReactNode {
                 ))}
               </div>
             </div>
+            <p className="mt-6 text-[11px] text-foreground/30 leading-relaxed max-w-4xl">
+              United Financial Planning Group is a registered investment advisor
+              with the U.S. Securities and Exchange Commission (SEC).
+              Registration does not imply a certain level of skill or training.
+              Information presented on this website is for educational purposes
+              and does not constitute investment advice, a solicitation, or a
+              recommendation to buy or sell any security. Past performance is
+              not indicative of future results. All investing involves risk,
+              including the potential loss of principal. Please review our{" "}
+              <Link
+                href="/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf"
+                className="underline hover:text-foreground/50 transition-colors"
+              >
+                Form ADV Part 2A
+              </Link>{" "}
+              for important disclosures.
+            </p>
           </div>
         </div>
       </div>

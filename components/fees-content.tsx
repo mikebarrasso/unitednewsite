@@ -14,7 +14,6 @@ import {
   FileCheck,
   FileText,
   Briefcase,
-  TrendingUp,
   MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
@@ -96,73 +95,67 @@ const subscriptionFeatures = [
    HERO VISUAL — 3-step preview for ServiceHero customVisual
    ═══════════════════════════════════════════════════════════════ */
 
-const heroSteps = [
-  { num: "01", label: "Introductory Call", price: "Free", icon: Phone },
-  { num: "02", label: "Financial Plan", price: "$400/hr", icon: FileText },
-  {
-    num: "03",
-    label: "Wealth Management",
-    price: "0.50\u20131.00%",
-    icon: TrendingUp,
-  },
-];
-
-export function FeesHeroVisual() {
+export function FeesHero() {
   return (
-    <div className="relative w-full h-full flex items-center justify-center p-6 sm:p-10">
-      <div className="w-full max-w-xs space-y-0">
-        {heroSteps.map((step, i) => {
-          const Icon = step.icon;
-          return (
-            <div key={i}>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + i * 0.15, ease }}
-                className="flex items-center gap-4 p-4 rounded-xl bg-background/80 dark:bg-background/40 backdrop-blur-sm border border-border"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#1e6eae]/10 flex items-center justify-center shrink-0">
-                  <Icon className="w-5 h-5 text-[#1e6eae]" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
-                    Step {step.num}
-                  </p>
-                  <p className="text-sm font-semibold text-foreground truncate">
-                    {step.label}
-                  </p>
-                </div>
-                <p className="text-sm font-bold text-[#1e6eae] whitespace-nowrap">
-                  {step.price}
-                </p>
-              </motion.div>
-              {i < heroSteps.length - 1 && (
-                <motion.div
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{
-                    duration: 0.4,
-                    delay: 0.55 + i * 0.15,
-                    ease,
-                  }}
-                  className="ml-9 w-px h-4 bg-gradient-to-b from-[#1e6eae]/30 to-[#1e6eae]/10 origin-top"
-                />
-              )}
-            </div>
-          );
-        })}
+    <section className="w-full flex items-center justify-center pt-40 pb-20 sm:pt-48 sm:pb-28 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="max-w-3xl mx-auto text-center flex flex-col items-center space-y-6 sm:space-y-8">
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.5 }}
-          className="mt-5 p-3 rounded-xl bg-[#1e6eae]/[0.05] border border-[#1e6eae]/15 text-center"
+          transition={{ duration: 0.5, delay: 0.1, ease }}
+          className="flex items-center gap-2 sm:gap-3 rounded-full border border-border p-1 w-fit"
         >
-          <p className="text-[11px] text-[#1e6eae] font-medium">
-            Planning fees credited toward wealth management
-          </p>
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs sm:text-sm font-medium">
+            United
+          </span>
+          <span className="text-sm sm:text-base text-foreground/80 mr-2">
+            Our Fees
+          </span>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2, ease }}
+          className="text-4xl sm:text-5xl md:text-6xl tracking-tight font-medium font-serif text-foreground leading-[1.1]"
+        >
+          Transparent Pricing. No Surprises. No Hidden Fees.
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3, ease }}
+          className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-2xl"
+        >
+          You should know exactly what you&apos;re paying and exactly what
+          you&apos;re getting &mdash; before we start working together.
+          Here&apos;s how it works.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4, ease }}
+          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4"
+        >
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm sm:text-base hover:opacity-90 transition-opacity"
+          >
+            <Calendar className="w-4 h-4" />
+            Schedule Your Introductory Call
+          </Link>
+          <Link
+            href="/services"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium text-sm sm:text-base hover:bg-muted transition-colors"
+          >
+            Explore Services
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

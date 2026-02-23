@@ -7,11 +7,13 @@ export function WealthtenderFirmReviews({
 }: {
   firmId: string;
 }): ReactNode {
+  const MIN_HEIGHT = 400;
+  const MAX_HEIGHT = 900;
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
-  const [height, setHeight] = useState(400);
+  const [height, setHeight] = useState(MIN_HEIGHT);
 
   useEffect(() => {
     const iframe = iframeRef.current;
@@ -19,7 +21,7 @@ export function WealthtenderFirmReviews({
 
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !loaded) {
+        if (entries[0]?.isIntersecting && !loaded) {
           iframe.src = `https://wealthtender.com/embed/?type=reviews&id=${firmId}&view=list`;
           setLoaded(true);
           observer.disconnect();
@@ -38,7 +40,7 @@ export function WealthtenderFirmReviews({
       ) {
         const msgHeight = parseInt(event.data[1], 10);
         if (!isNaN(msgHeight)) {
-          setHeight(Math.max(msgHeight, 400));
+          setHeight(Math.min(Math.max(msgHeight, MIN_HEIGHT), MAX_HEIGHT));
         }
       }
     }
@@ -54,8 +56,8 @@ export function WealthtenderFirmReviews({
   return (
     <div
       ref={containerRef}
-      className="relative w-full mx-auto max-w-5xl"
-      style={{ minHeight: 400, height }}
+      className="relative w-full mx-auto max-w-5xl overflow-auto rounded-xl"
+      style={{ minHeight: MIN_HEIGHT, height }}
     >
       {/* Loading indicator */}
       {!iframeLoaded && loaded && (

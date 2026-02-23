@@ -1,5 +1,6 @@
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -15,11 +16,26 @@ export const metadata: Metadata = createMetadata({
 export default function MichaelBarrassoPage(): ReactNode {
   return (
     <>
+      <PersonSchema
+        name="Michael Barrasso"
+        jobTitle="Director of Business Development"
+        description="Director of Business Development at United Financial Planning Group, specializing in strategic growth initiatives and operational excellence."
+        image="/SHOT_04_051-scaled%20(4).jpg"
+        url="/team/michael-barrasso"
+        alumniOf={["Providence College"]}
+        knowsAbout={[
+          "Business Development",
+          "Strategic Growth",
+          "Financial Services",
+          "Client Relationship Management",
+        ]}
+      />
       <main id="main-content" className="flex-1">
         <TeamProfile
           name="Michael Barrasso"
           title="Director of Business Development"
           initials="MB"
+          image="/SHOT_04_051-scaled%20(4).jpg"
           summary="Director of Business Development at United Financial Planning Group, specializing in strategic growth initiatives and optimizing the firm\u2019s operations to support this growth. In his first year, Michael contributed to the firm\u2019s most successful year yet, supporting the addition of $50M in net new assets under management while streamlining operations to enhance efficiency and client service."
           sections={[
             {

@@ -17,7 +17,7 @@ export function WealthtenderReviews({
     if (!iframe) return;
 
     const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && !loaded) {
+      if (entries[0]?.isIntersecting && !loaded) {
         iframe.src = `https://wealthtender.com/embed/?type=reviews-block&id=${profileId}`;
         setLoaded(true);
         observer.disconnect();

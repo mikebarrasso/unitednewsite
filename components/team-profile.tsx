@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 
@@ -27,9 +28,8 @@ interface TeamProfileProps {
   location?: string;
   linkedIn?: string;
   extraTabs?: ProfileTab[];
+  image?: string;
 }
-
-const ease = [0.16, 1, 0.3, 1] as const;
 
 export function TeamProfile({
   name,
@@ -43,6 +43,7 @@ export function TeamProfile({
   location,
   linkedIn,
   extraTabs,
+  image,
 }: TeamProfileProps): ReactNode {
   const [activeTab, setActiveTab] = useState("profile");
   const hasTabs = extraTabs && extraTabs.length > 0;
@@ -59,9 +60,9 @@ export function TeamProfile({
           key={section.title}
           className="bg-muted/50 rounded-xl p-4 sm:p-5"
         >
-          <h3 className="text-base font-semibold text-foreground mb-3">
+          <h2 className="text-base font-semibold text-foreground mb-3">
             {section.title}
-          </h3>
+          </h2>
           {typeof section.content === "string" ? (
             <p className="text-sm text-foreground/60 leading-relaxed">
               {section.content}
@@ -85,9 +86,9 @@ export function TeamProfile({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {designations && (
             <div className="bg-muted/50 rounded-xl p-4 sm:p-5">
-              <h3 className="text-sm font-semibold text-foreground mb-3">
+              <h2 className="text-sm font-semibold text-foreground mb-3">
                 Designations
-              </h3>
+              </h2>
               <div className="flex flex-wrap gap-2">
                 {designations.map((d) => (
                   <span
@@ -103,9 +104,9 @@ export function TeamProfile({
 
           {education && (
             <div className="bg-muted/50 rounded-xl p-4 sm:p-5">
-              <h3 className="text-sm font-semibold text-foreground mb-3">
+              <h2 className="text-sm font-semibold text-foreground mb-3">
                 Education
-              </h3>
+              </h2>
               <ul className="space-y-2">
                 {education.map((e) => (
                   <li
@@ -124,9 +125,9 @@ export function TeamProfile({
 
       {location && (
         <div className="bg-muted/50 rounded-xl p-4 sm:p-5">
-          <h3 className="text-sm font-semibold text-foreground mb-3">
+          <h2 className="text-sm font-semibold text-foreground mb-3">
             Location
-          </h3>
+          </h2>
           <p className="text-sm text-foreground/60">{location}</p>
         </div>
       )}
@@ -183,9 +184,19 @@ export function TeamProfile({
                 >
                   <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-foreground p-1.5 shadow-xl">
                     <div className="relative w-full h-full rounded-full overflow-hidden bg-muted flex items-center justify-center">
-                      <span className="text-3xl sm:text-4xl font-serif font-medium text-foreground/70 select-none">
-                        {initials}
-                      </span>
+                      {image ? (
+                        <Image
+                          src={image}
+                          alt={name}
+                          fill
+                          sizes="128px"
+                          className="object-cover"
+                        />
+                      ) : (
+                        <span className="text-3xl sm:text-4xl font-serif font-medium text-foreground/70 select-none">
+                          {initials}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </motion.div>

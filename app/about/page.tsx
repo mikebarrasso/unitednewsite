@@ -53,7 +53,7 @@ export default function AboutPage(): ReactNode {
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
               One Firm. Every Discipline.{" "}
-              <span className="italic">Thirty Years of Doing It Differently.</span>
+              <span className="italic">Three Decades of Experience.</span>
             </h1>
             <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
               United Financial Planning Group was founded on a simple conviction:

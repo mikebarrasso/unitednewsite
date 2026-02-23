@@ -123,6 +123,11 @@ function InvestingVisual(): ReactNode {
             </span>
           </div>
         </div>
+        <p className="text-[9px] text-muted-foreground/50 leading-relaxed mt-3">
+          Hypothetical illustration only. Not actual client results. Past
+          performance does not guarantee future results. Investing involves
+          risk, including possible loss of principal.
+        </p>
       </div>
     </div>
   );
@@ -210,6 +215,10 @@ function TaxVisual(): ReactNode {
             $80,700
           </span>
         </motion.div>
+        <p className="text-[9px] text-muted-foreground/50 leading-relaxed mt-3">
+          Hypothetical illustration only. Dollar figures do not represent actual
+          client results. Individual outcomes vary based on circumstances.
+        </p>
       </div>
     </div>
   );

@@ -197,7 +197,8 @@ export function Features4({
                 <div className="mb-8">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1e6eae]/[0.08] mb-6">
                     {(() => {
-                      const Icon = tabs[activeTab].icon;
+                      const Icon = tabs[activeTab]?.icon;
+                      if (!Icon) return null;
                       return (
                         <Icon className="w-8 h-8 text-[#1e6eae]" />
                       );
@@ -205,17 +206,17 @@ export function Features4({
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
-                    {tabs[activeTab].title}
+                    {tabs[activeTab]?.title}
                   </h3>
 
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    {tabs[activeTab].description}
+                    {tabs[activeTab]?.description}
                   </p>
                 </div>
 
                 {/* Feature List */}
                 <div className="space-y-4">
-                  {tabs[activeTab].features.map((feature, index) => (
+                  {tabs[activeTab]?.features.map((feature, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: 20 }}

@@ -263,8 +263,8 @@ export function Features2() {
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeIndex}
-                  src={features[activeIndex].image}
-                  alt={features[activeIndex].title}
+                  src={features[activeIndex]?.image}
+                  alt={features[activeIndex]?.title ?? ""}
                   initial={{ opacity: 0, scale: 1.1 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
@@ -291,11 +291,11 @@ export function Features2() {
                       <div className="bg-background/80 backdrop-blur-md rounded-2xl p-1 shadow-lg">
                         <div className="bg-background rounded-xl p-6">
                           <h3 className="text-lg font-semibold text-foreground mb-4">
-                            {features[activeIndex].card.title}
+                            {features[activeIndex]?.card.title}
                           </h3>
 
                           <div className="space-y-3">
-                            {features[activeIndex].card.items.map(
+                            {features[activeIndex]?.card.items.map(
                               (item, idx) => (
                                 <div
                                   key={idx}
@@ -320,6 +320,11 @@ export function Features2() {
                               ),
                             )}
                           </div>
+                          <p className="text-[9px] text-muted-foreground/50 leading-relaxed mt-4 pt-3 border-t border-border/40">
+                            Hypothetical illustration only. Dollar figures do
+                            not represent actual client results. Individual
+                            outcomes vary based on personal circumstances.
+                          </p>
                         </div>
                       </div>
                     </motion.div>

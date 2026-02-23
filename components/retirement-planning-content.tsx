@@ -279,20 +279,21 @@ export function ApproachSection() {
                 <div className="mb-8">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1e6eae]/[0.08] mb-6">
                     {(() => {
-                      const Icon = approachTabs[activeTab].icon;
+                      const Icon = approachTabs[activeTab]?.icon;
+                      if (!Icon) return null;
                       return <Icon className="w-8 h-8 text-[#1e6eae]" />;
                     })()}
                   </div>
                   <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
-                    {approachTabs[activeTab].title}
+                    {approachTabs[activeTab]?.title}
                   </h3>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    {approachTabs[activeTab].description}
+                    {approachTabs[activeTab]?.description}
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  {approachTabs[activeTab].features.map((feature, index) => (
+                  {approachTabs[activeTab]?.features.map((feature, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: 20 }}

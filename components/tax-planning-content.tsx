@@ -11,7 +11,6 @@ import {
 import {
   ArrowRight,
   ArrowDown,
-  AlertTriangle,
   DollarSign,
   Briefcase,
   HeartPulse,
@@ -29,7 +28,7 @@ import {
   XCircle,
 } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -171,9 +170,12 @@ export function ProblemSection() {
               className="p-4 rounded-2xl bg-destructive/[0.04] border border-destructive/15 text-center"
             >
               <p className="text-sm text-destructive/80 font-semibold">
-                Total cost of disconnected advice: six figures over a retirement
+                The cost of disconnected advice can compound significantly over a retirement.
               </p>
             </motion.div>
+            <p className="text-[11px] text-muted-foreground/50 text-center mt-3">
+              The scenarios above are hypothetical illustrations and do not represent actual client results. Individual outcomes vary based on personal circumstances.
+            </p>
           </div>
         </div>
       </div>
@@ -500,7 +502,7 @@ export function YearRoundSection() {
     return () => clearInterval(interval);
   }, []);
 
-  const evt = monitorEvents[active];
+  const evt = monitorEvents[active]!;
   const EvtIcon = evt.icon;
 
   return (
@@ -591,7 +593,7 @@ export function YearRoundSection() {
               <p className="text-xs font-semibold text-foreground mb-3">Proactive Actions This Quarter</p>
               {[
                 "Modeled SECURE Act impact on RMD schedule",
-                "Harvested $23K in losses during March dip",
+                "Harvested losses during March dip",
                 "Adjusted Q3 estimated payments for bonus income",
                 "Identified optimal QCD window for charitable giving",
               ].map((action, i) => (

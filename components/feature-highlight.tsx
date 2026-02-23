@@ -154,9 +154,9 @@ function ServiceFlow({
   }
 
   const pairs = [
-    { from: nodes[0], to: nodes[1] },
-    { from: nodes[1], to: nodes[2] },
-    { from: nodes[2], to: nodes[0] },
+    { from: nodes[0]!, to: nodes[1]! },
+    { from: nodes[1]!, to: nodes[2]! },
+    { from: nodes[2]!, to: nodes[0]! },
   ];
 
   return (

@@ -2,7 +2,6 @@
 
 import {
   motion,
-  AnimatePresence,
   useMotionValue,
   useSpring,
   useTransform,
@@ -11,7 +10,6 @@ import {
 import {
   ArrowRight,
   ArrowDown,
-  AlertTriangle,
   DollarSign,
   TrendingDown,
   Briefcase,
@@ -27,7 +25,6 @@ import {
   XCircle,
 } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
