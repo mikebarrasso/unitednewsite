@@ -23,7 +23,7 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardContent = (
-    <div className="group relative bg-background rounded-3xl shadow-lg overflow-hidden border border-border">
+    <div className="group relative bg-background rounded-3xl shadow-lg overflow-hidden border border-border h-full flex flex-col">
         {/* Expanded Background on Hover */}
         <motion.div
           className="absolute inset-0 z-0"
@@ -44,7 +44,7 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
         </motion.div>
 
         {/* Card Content */}
-        <div className="relative z-10 p-2">
+        <div className="relative z-10 p-2 flex flex-col flex-1">
           {/* Profile Avatar */}
           <div className="mb-4">
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-muted">
@@ -91,18 +91,15 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
               </p>
             )}
             <p
-              className="text-sm font-medium mb-3"
+              className="text-sm font-medium"
               style={{ color: member.accentColor }}
             >
               {member.title}
             </p>
-            <p className="text-sm text-foreground/60 leading-relaxed">
-              {member.bio}
-            </p>
           </div>
 
           {/* Bottom section */}
-          <div className="px-4 pb-4">
+          <div className="px-4 pb-4 mt-auto">
             {member.href ? (
               <div className="flex items-center justify-between">
                 <motion.div
@@ -148,7 +145,7 @@ export function TeamCard({ member }: { member: TeamMember }): ReactNode {
       transition={{ duration: 0.5, ease }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="relative w-full"
+      className="relative w-full h-full"
     >
       {member.href ? (
         <Link href={member.href} className="block">

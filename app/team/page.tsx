@@ -104,7 +104,7 @@ export default function TeamPage(): ReactNode {
         <section className="relative w-full bg-background py-24 sm:py-32">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
             <h2 className="sr-only">Our Advisory Team</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
               {teamMembers.map((member) => (
                 <TeamCard key={member.name} member={member} />
               ))}
