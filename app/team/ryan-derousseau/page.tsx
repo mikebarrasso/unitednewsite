@@ -3,14 +3,15 @@ import { Footer } from "@/components/footer";
 import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { WealthtenderReviews } from "@/components/wealthtender-reviews";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Ryan Derousseau, CFP®, EA — United Financial Planning Group",
+  title: "Ryan Derousseau, CFP®, EA",
   description:
-    "Ryan Derousseau is a Certified Financial Planner\u2122 and Enrolled Agent at United Financial Planning Group, specializing in working with growing families, career changers, therapists, and the self-employed.",
+    "Ryan Derousseau is a CFP\u00ae and Enrolled Agent specializing in growing families, career changers, therapists, and the self-employed.",
   path: "/team/ryan-derousseau",
 });
 
@@ -35,8 +36,15 @@ export default function RyanDerousseauPage(): ReactNode {
         ]}
       />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Team", href: "/team" },
+            { label: "Ryan Derousseau" },
+          ]}
+        />
         <TeamProfile
           name="Ryan Derousseau"
+          hasBreadcrumb
           credentials="CFP®, EA"
           title="Financial Advisor"
           initials="RD"

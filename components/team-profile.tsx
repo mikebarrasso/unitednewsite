@@ -29,6 +29,7 @@ interface TeamProfileProps {
   linkedIn?: string;
   extraTabs?: ProfileTab[];
   image?: string;
+  hasBreadcrumb?: boolean;
 }
 
 export function TeamProfile({
@@ -44,6 +45,7 @@ export function TeamProfile({
   linkedIn,
   extraTabs,
   image,
+  hasBreadcrumb = false,
 }: TeamProfileProps): ReactNode {
   const [activeTab, setActiveTab] = useState("profile");
   const hasTabs = extraTabs && extraTabs.length > 0;
@@ -135,7 +137,7 @@ export function TeamProfile({
   );
 
   return (
-    <section className="w-full flex items-start py-12 px-4 sm:px-6 lg:px-8 pt-32 sm:pt-36">
+    <section className={`w-full flex items-start py-12 px-4 sm:px-6 lg:px-8 ${hasBreadcrumb ? "pt-6 sm:pt-8" : "pt-32 sm:pt-36"}`}>
       <div className="max-w-[1400px] mx-auto w-full flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

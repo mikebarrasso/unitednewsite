@@ -2,10 +2,11 @@ import { Footer } from "@/components/footer";
 import { FileText, ExternalLink } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Compliance — United Financial Planning Group",
+  title: "Compliance",
   description:
     "Access United Financial Planning Group's regulatory documents including Form ADV, Form CRS, and Privacy Policy.",
   path: "/compliance",
@@ -97,12 +98,12 @@ export default function CompliancePage(): ReactNode {
               United Financial Planning Group is a fee-only Registered
               Investment Advisory (RIA) firm. If you have any questions about
               these documents or our regulatory obligations, please{" "}
-              <a
+              <Link
                 href="/contact"
                 className="underline hover:text-foreground transition-colors"
               >
                 contact us
-              </a>
+              </Link>
               .
             </p>
           </div>

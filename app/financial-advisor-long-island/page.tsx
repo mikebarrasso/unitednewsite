@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { LocalFAQ } from "@/components/local-faq";
 import { LocalHero } from "@/components/local-hero";
 import { LocalValueProp } from "@/components/local-value-prop";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
@@ -14,10 +15,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title:
-    "Fee-Only Financial Advisor on Long Island, NY",
+  title: "Financial Advisor on Long Island",
   description:
-    "Long Island fee-only financial advisor with CFPs, CPAs, and Enrolled Agents under one roof. Integrated financial planning, tax strategy, and investment management in Hauppauge and Lake Success.",
+    "Long Island fee-only financial advisor with CFPs, CPAs, and Enrolled Agents. Integrated financial planning, tax, and investment management.",
   path: "/financial-advisor-long-island",
 });
 
@@ -167,7 +167,7 @@ const localFaqs = [
   {
     question: "What does 'fee-only' mean?",
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest common in the financial industry and ensures our only incentive is to give you the best advice we can.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest common in the financial industry and ensures our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question: "Who are your typical Long Island clients?",
@@ -181,6 +181,12 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
     <>
       <LongIslandSchema />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Locations", href: "/locations" },
+            { label: "Long Island, NY" },
+          ]}
+        />
         <LocalHero
           headline="Fee-Only Financial Advisor on Long Island"
           subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — with offices in Hauppauge and Lake Success serving Long Island families."

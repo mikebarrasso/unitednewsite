@@ -3,12 +3,13 @@ import { Footer } from "@/components/footer";
 import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
 import { WealthtenderReviews } from "@/components/wealthtender-reviews";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Gerry Barrasso, CFP®, CPA, PFS — United Financial Planning Group",
+  title: "Gerry Barrasso, CFP®, CPA, PFS",
   description:
     "Gerry Barrasso is the Founder and President of United Financial Planning Group, with over 30 years of experience in comprehensive wealth management, financial planning, and tax services.",
   path: "/team/gerry-barrasso",
@@ -36,8 +37,15 @@ export default function GerryBarrassoPage(): ReactNode {
         ]}
       />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Team", href: "/team" },
+            { label: "Gerry Barrasso" },
+          ]}
+        />
         <TeamProfile
           name="Gerry Barrasso"
+          hasBreadcrumb
           credentials="CFP®, CPA, PFS"
           title="President & Founder"
           initials="GB"

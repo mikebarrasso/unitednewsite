@@ -83,12 +83,14 @@ export const baseMetadata: Metadata = {
 
 export function createMetadata({
   title,
+  absoluteTitle,
   description,
   path = "/",
   image,
   noIndex = false,
 }: {
   title?: string;
+  absoluteTitle?: string;
   description?: string;
   path?: string;
   image?: string;
@@ -96,15 +98,17 @@ export function createMetadata({
 }): Metadata {
   const url = `${siteConfig.url}${path}`;
   const ogImage = image ?? siteConfig.ogImage;
+  const resolvedTitle = absoluteTitle ? { absolute: absoluteTitle } : title;
+  const ogTitle = absoluteTitle ?? title ?? siteConfig.name;
 
   return {
-    title,
+    title: resolvedTitle,
     description,
     alternates: {
       canonical: path,
     },
     openGraph: {
-      title: title ?? siteConfig.name,
+      title: ogTitle,
       description: description ?? siteConfig.description,
       url,
       images: [
@@ -112,12 +116,12 @@ export function createMetadata({
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: title ?? siteConfig.name,
+          alt: ogTitle,
         },
       ],
     },
     twitter: {
-      title: title ?? siteConfig.name,
+      title: ogTitle,
       description: description ?? siteConfig.description,
       images: [ogImage],
     },

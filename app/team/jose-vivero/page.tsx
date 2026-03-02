@@ -2,13 +2,13 @@ import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title:
-    "Jose Vivero, CFP®, ChFC®, CLU®, RICP® — United Financial Planning Group",
+  title: "Jose Vivero, CFP®",
   description:
     "Jose Vivero is a Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning.",
   path: "/team/jose-vivero",
@@ -34,8 +34,15 @@ export default function JoseViveroPage(): ReactNode {
         ]}
       />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Team", href: "/team" },
+            { label: "Jose Vivero" },
+          ]}
+        />
         <TeamProfile
           name="Jose Vivero"
+          hasBreadcrumb
           credentials="CFP®, ChFC®, CLU®, RICP®"
           title="Financial Advisor"
           initials="JV"

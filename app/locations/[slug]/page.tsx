@@ -3,6 +3,7 @@ import { createMetadata } from "@/lib/metadata";
 import { locations, getLocationBySlug, getOtherLocations } from "@/lib/locations";
 import { ServiceHero } from "@/components/service-hero";
 import { LocationContent } from "@/components/location-content";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import type { Metadata } from "next";
@@ -155,6 +156,12 @@ export default async function LocationPage({
       <LocationSchema location={location} />
       <BreadcrumbSchema location={location} />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Locations", href: "/locations" },
+            { label: `${location.city}, ${location.stateAbbr}` },
+          ]}
+        />
         <ServiceHero
           eyebrow={`${location.city}, ${location.stateAbbr}`}
           title={location.headline}
@@ -165,6 +172,7 @@ export default async function LocationPage({
           primaryCtaLabel="Schedule a Conversation"
           secondaryCtaHref="/locations"
           secondaryCtaLabel="All Locations"
+          hasBreadcrumb
         />
         <LocationContent
           location={location}

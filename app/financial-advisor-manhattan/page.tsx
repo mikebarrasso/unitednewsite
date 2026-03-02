@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { LocalFAQ } from "@/components/local-faq";
 import { LocalHero } from "@/components/local-hero";
 import { LocalValueProp } from "@/components/local-value-prop";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
@@ -14,7 +15,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Fee-Only Financial Advisor in Manhattan, NYC",
+  title: "Financial Advisor in Manhattan",
   description:
     "Manhattan fee-only financial advisor with CFPs and CPAs under one roof. Equity compensation planning, tax strategy, and investment management for NYC professionals at 14 Penn Plaza.",
   path: "/financial-advisor-manhattan",
@@ -162,6 +163,12 @@ export default function FinancialAdvisorManhattanPage(): ReactNode {
     <>
       <ManhattanSchema />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Locations", href: "/locations" },
+            { label: "Manhattan, NYC" },
+          ]}
+        />
         <LocalHero
           headline="Fee-Only Financial Advisor in Manhattan"
           subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — built for the financial complexity of working and living in New York City."

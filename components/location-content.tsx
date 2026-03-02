@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { Location } from "@/lib/locations";
+import { towns } from "@/lib/towns";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -295,14 +296,31 @@ function NearbyAreas({ location }: { location: Location }): ReactNode {
           transition={{ duration: 0.5, delay: 0.1, ease }}
           className="flex flex-wrap gap-3"
         >
-          {location.nearbyAreas.map((area) => (
-            <span
-              key={area}
-              className="inline-flex items-center px-4 py-2 rounded-full bg-background border border-border text-sm text-foreground/70"
-            >
-              {area}, {location.stateAbbr}
-            </span>
-          ))}
+          {location.nearbyAreas.map((area) => {
+            const matchedTown = towns.find(
+              (t) => t.name.toLowerCase() === area.toLowerCase()
+            );
+            const label = `${area}, ${location.stateAbbr}`;
+            if (matchedTown) {
+              return (
+                <Link
+                  key={area}
+                  href={`/financial-advisor-${matchedTown.slug}`}
+                  className="inline-flex items-center px-4 py-2 rounded-full bg-background border border-border text-sm text-foreground/70 hover:border-foreground/30 hover:text-foreground transition-colors"
+                >
+                  {label}
+                </Link>
+              );
+            }
+            return (
+              <span
+                key={area}
+                className="inline-flex items-center px-4 py-2 rounded-full bg-background border border-border text-sm text-foreground/70"
+              >
+                {label}
+              </span>
+            );
+          })}
         </motion.div>
       </div>
     </section>

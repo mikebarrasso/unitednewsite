@@ -8,12 +8,13 @@ import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
-import { createMetadata, siteConfig } from "@/lib/metadata";
+import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: `${siteConfig.name} — Financial Planning, Tax & Investment Management Under One Roof`,
+  absoluteTitle:
+    "United Financial Planning Group | Fee-Only Financial Advisor",
   description:
     "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services — integrated for clients nationwide.",
   path: "/",
@@ -84,8 +85,17 @@ function OrganizationSchema() {
     ],
     sameAs: [
       "https://www.linkedin.com/company/united-financial-planning-group",
+      "https://wealthtender.com/financial-advisors/united-financial-planning-group",
     ],
     priceRange: "$$",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "25",
+      reviewCount: "25",
+    },
   };
 
   return (

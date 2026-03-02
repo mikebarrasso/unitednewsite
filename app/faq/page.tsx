@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "FAQ — United Financial Planning Group",
+  title: "FAQ",
   description:
     "Frequently asked questions about fee-only financial planning, fiduciary advisors, integrated tax and investment services, and working with United Financial Planning Group.",
   path: "/faq",
@@ -16,7 +16,7 @@ const faqItems = [
   {
     question: 'What does "fee-only" mean, and why does it matter?',
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates the conflicts of interest common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you the best advice we can.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates the conflicts of interest common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question:

@@ -17,6 +17,7 @@ type ServiceHeroProps = {
   primaryCtaLabel?: string;
   secondaryCtaHref?: string;
   secondaryCtaLabel?: string;
+  hasBreadcrumb?: boolean;
 };
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -32,9 +33,10 @@ export function ServiceHero({
   primaryCtaLabel = "Schedule a Conversation",
   secondaryCtaHref = "/services",
   secondaryCtaLabel = "Explore Services",
+  hasBreadcrumb = false,
 }: ServiceHeroProps): ReactNode {
   return (
-    <section className="w-full flex items-start lg:items-center pt-32 pb-20 sm:pt-36 sm:pb-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className={`w-full flex items-start lg:items-center ${hasBreadcrumb ? "pt-6 pb-20 sm:pt-8 sm:pb-24" : "pt-32 pb-20 sm:pt-36 sm:pb-24"} px-4 sm:px-6 lg:px-8 bg-background`}>
       <div className="max-w-[1400px] mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           <div className="flex flex-col space-y-6 sm:space-y-8">

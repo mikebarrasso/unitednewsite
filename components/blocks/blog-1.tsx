@@ -1,97 +1,50 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const articles = [
-  {
-    id: 1,
-    title: "5 Tax Planning Strategies to Consider Before Year-End",
-    date: "Dec 15, 2024",
-    category: "Tax Planning",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-  },
-  {
-    id: 2,
-    title: "Why Integrated Financial Planning Beats the Siloed Approach",
-    date: "Dec 10, 2024",
-    category: "Financial Planning",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Roth vs. Traditional IRA: Making the Right Choice for Your Retirement",
-    date: "Dec 05, 2024",
-    category: "Retirement",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop",
-  },
-  {
-    id: 4,
-    title: "Stock Options and Equity Compensation: What High Earners Need to Know",
-    date: "Nov 28, 2024",
-    category: "Equity Compensation",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop",
-  },
-  {
-    id: 5,
-    title: "Building a Tax-Efficient Investment Portfolio",
-    date: "Nov 20, 2024",
-    category: "Investments",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-  },
-  {
-    id: 6,
-    title: "When to Start Social Security: A Framework for Decision-Making",
-    date: "Nov 15, 2024",
-    category: "Retirement",
-    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=400&fit=crop",
-  },
-];
+import Link from "next/link";
+import { getAllPosts, formatDate, type BlogPost } from "@/lib/blog";
 
 function ArticleCard({
-  title,
-  date,
-  category,
-  image,
+  post,
   delay = 0,
 }: {
-  title: string;
-  date: string;
-  category: string;
-  image: string;
+  post: BlogPost;
   delay?: number;
 }) {
   return (
-    <motion.a
-      href="#"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
-      className="group flex flex-col gap-3 cursor-pointer"
-    >
-        <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-muted">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <span className="absolute top-3 right-3 px-3 py-1 bg-background text-foreground text-xs font-medium rounded-full shadow-sm border border-border">
-          {category}
-        </span>
-      </div>
+    <Link href={`/blog/${post.slug}`}>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay }}
+        className="flex flex-col gap-3 group"
+      >
+        <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-muted flex items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-foreground/10" />
+          <span className="text-4xl font-serif text-foreground/10 select-none">
+            UFPG
+          </span>
+          <span className="absolute top-3 right-3 px-3 py-1 bg-background text-foreground text-xs font-medium rounded-full shadow-sm border border-border">
+            {post.category}
+          </span>
+        </div>
 
-      <div className="flex flex-col gap-1.5">
-        <h3 className="text-sm sm:text-base font-medium text-foreground leading-snug line-clamp-2 group-hover:text-primary transition-colors">
-          {title}
-        </h3>
-        <span className="text-xs text-muted-foreground">
-          {date}
-        </span>
-      </div>
-    </motion.a>
+        <div className="flex flex-col gap-1.5">
+          <h3 className="text-sm sm:text-base font-medium text-foreground leading-snug line-clamp-2 group-hover:text-foreground/70 transition-colors">
+            {post.title}
+          </h3>
+          <span className="text-xs text-muted-foreground">
+            {formatDate(post.date)}
+          </span>
+        </div>
+      </motion.div>
+    </Link>
   );
 }
 
 export function Blog1() {
+  const posts = getAllPosts();
+
   return (
     <section className="w-full pb-8 sm:pb-12 bg-background">
       <motion.div
@@ -127,13 +80,10 @@ export function Blog1() {
             </motion.h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {articles.map((article, idx) => (
+              {posts.map((post, idx) => (
                 <ArticleCard
-                  key={article.id}
-                  title={article.title}
-                  date={article.date}
-                  category={article.category}
-                  image={article.image}
+                  key={post.slug}
+                  post={post}
                   delay={0.15 + idx * 0.05}
                 />
               ))}

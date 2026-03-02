@@ -3,6 +3,7 @@
 import { type ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -92,8 +93,8 @@ function PricingCard({ plan, index }: { plan: PricingPlan; index: number }): Rea
         {plan.description}
       </p>
       <div className="flex flex-col gap-3 mb-8">
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className={`group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-150 active:scale-[0.97] ${
             plan.featured
               ? "bg-foreground text-background hover:bg-foreground/90"
@@ -102,14 +103,14 @@ function PricingCard({ plan, index }: { plan: PricingPlan; index: number }): Rea
         >
           {plan.cta}
           <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-        </a>
+        </Link>
         {plan.ctaSecondary && (
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors text-center"
           >
             {plan.ctaSecondary}
-          </a>
+          </Link>
         )}
       </div>
       <div className="pt-6 border-t border-border">

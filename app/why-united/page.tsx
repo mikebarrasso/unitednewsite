@@ -13,7 +13,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Why United? — United Financial Planning Group",
+  title: "Why Choose United?",
   description:
     "Most advisory firms do one thing. We integrate four — financial planning, investment management, tax planning, and tax preparation — under one roof.",
   path: "/why-united",

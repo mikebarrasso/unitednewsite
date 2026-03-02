@@ -6,15 +6,68 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact — United Financial Planning Group",
+  title: "Contact Us",
   description:
     "Schedule a complimentary consultation with United Financial Planning Group. Fee-only financial planning, tax planning, and investment management for complex financial lives.",
   path: "/contact",
 });
 
+function ContactSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    name: "United Financial Planning Group",
+    url: "https://unitedfpg.com",
+    telephone: "(631) 234-0871",
+    email: "info@unitedfpg.com",
+    faxNumber: "(631) 584-3763",
+    address: [
+      {
+        "@type": "PostalAddress",
+        streetAddress: "350 Motor Parkway, Suite 105",
+        addressLocality: "Hauppauge",
+        addressRegion: "NY",
+        postalCode: "11788",
+        addressCountry: "US",
+      },
+      {
+        "@type": "PostalAddress",
+        streetAddress: "14 Penn Plaza",
+        addressLocality: "New York",
+        addressRegion: "NY",
+        postalCode: "10122",
+        addressCountry: "US",
+      },
+      {
+        "@type": "PostalAddress",
+        streetAddress: "1979 Marcus Avenue, Suite 210",
+        addressLocality: "Lake Success",
+        addressRegion: "NY",
+        postalCode: "11042",
+        addressCountry: "US",
+      },
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "(631) 234-0871",
+      contactType: "customer service",
+      email: "info@unitedfpg.com",
+      availableLanguage: "English",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function ContactPage(): ReactNode {
   return (
     <>
+      <ContactSchema />
       <main id="main-content" className="flex-1">
         <section className="relative w-full bg-muted pt-40 pb-2 sm:pb-4">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">

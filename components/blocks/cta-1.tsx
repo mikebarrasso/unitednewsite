@@ -237,21 +237,6 @@ export default function CTA1() {
             </div>
           </motion.form>
 
-          {/* Login Link */}
-          <motion.p
-            className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            Already have an account?{" "}
-            <a
-              href="#"
-              className="text-neutral-900 dark:text-white font-medium hover:underline transition-all duration-200"
-            >
-              Log in
-            </a>
-          </motion.p>
         </div>
       </div>
     </section>

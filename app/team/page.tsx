@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Meet The Team — United Financial Planning Group",
+  title: "Meet The Team",
   description:
     "Meet the team of CFPs, CPAs, and Enrolled Agents at United Financial Planning Group. Every discipline under one roof.",
   path: "/team",

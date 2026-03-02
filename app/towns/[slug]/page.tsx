@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { LocalFAQ } from "@/components/local-faq";
 import { LocalHero } from "@/components/local-hero";
 import { LocalValueProp } from "@/components/local-value-prop";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
@@ -107,6 +108,12 @@ function TownSchema({ slug }: { slug: string }) {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Locations",
+        item: `${baseUrl}/locations`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: `Financial Advisor in ${town.name}, NY`,
         item: pageUrl,
       },
@@ -207,6 +214,12 @@ export default async function TownPage({
     <>
       <TownSchema slug={slug} />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Locations", href: "/locations" },
+            { label: `Financial Advisor in ${town.name}, NY` },
+          ]}
+        />
         <LocalHero
           headline={town.h1}
           subtitle={town.heroSubtitle}

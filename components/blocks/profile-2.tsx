@@ -257,30 +257,14 @@ export default function Profile2() {
                         </h3>
                         <div className="flex items-center gap-3">
                           <a
-                            href="#"
-                            className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
-                            aria-label="Facebook"
-                          >
-                            <span className="text-white text-sm font-bold">
-                              f
-                            </span>
-                          </a>
-                          <a
-                            href="#"
+                            href="https://www.linkedin.com/company/united-financial-planning-group"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-8 h-8 rounded-lg bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-colors duration-200"
                             aria-label="LinkedIn"
                           >
                             <span className="text-white text-sm font-bold">
                               in
-                            </span>
-                          </a>
-                          <a
-                            href="#"
-                            className="w-8 h-8 rounded-lg bg-linear-to-br from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center hover:opacity-90 transition-opacity duration-200"
-                            aria-label="Instagram"
-                          >
-                            <span className="text-white text-sm font-bold">
-                              📷
                             </span>
                           </a>
                         </div>

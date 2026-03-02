@@ -9,9 +9,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Offices & Locations — United Financial Planning Group",
+  title: "Our Offices & Locations",
   description:
-    "United Financial Planning Group has offices in Hauppauge, Manhattan, and Lake Success, New York. Fee-only financial planning, tax, and investment management with in-person and virtual meetings available nationwide.",
+    "Offices in Hauppauge, Manhattan, and Lake Success, NY. Fee-only financial planning, tax, and investment management — in-person and virtual meetings nationwide.",
   path: "/locations",
 });
 
@@ -131,6 +131,56 @@ export default function LocationsPage(): ReactNode {
               >
                 Schedule a Conversation
                 <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full bg-background py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <h2 className="text-2xl sm:text-3xl font-medium font-serif text-foreground mb-3">
+              Find a Financial Advisor Near You
+            </h2>
+            <p className="text-foreground/60 mb-8 max-w-2xl">
+              Learn more about how we serve clients across the New York
+              metropolitan area.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <Link
+                href="/financial-advisor-long-island"
+                className="group flex items-center justify-between rounded-xl border border-border bg-muted/50 p-5 hover:border-foreground/20 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-primary shrink-0" />
+                  <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Long Island, NY
+                  </span>
+                </div>
+                <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-primary transition-colors" />
+              </Link>
+              <Link
+                href="/financial-advisor-manhattan"
+                className="group flex items-center justify-between rounded-xl border border-border bg-muted/50 p-5 hover:border-foreground/20 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-primary shrink-0" />
+                  <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Manhattan, NYC
+                  </span>
+                </div>
+                <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-primary transition-colors" />
+              </Link>
+              <Link
+                href="/financial-advisor-nyc"
+                className="group flex items-center justify-between rounded-xl border border-border bg-muted/50 p-5 hover:border-foreground/20 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-primary shrink-0" />
+                  <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                    New York City
+                  </span>
+                </div>
+                <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-primary transition-colors" />
               </Link>
             </div>
           </div>

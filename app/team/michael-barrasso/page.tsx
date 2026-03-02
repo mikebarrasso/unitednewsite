@@ -2,12 +2,13 @@ import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { PersonSchema } from "@/components/person-schema";
 import { TeamProfile } from "@/components/team-profile";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Michael Barrasso — United Financial Planning Group",
+  title: "Michael Barrasso",
   description:
     "Michael Barrasso is the Director of Business Development at United Financial Planning Group, specializing in strategic growth initiatives and operational excellence.",
   path: "/team/michael-barrasso",
@@ -31,8 +32,15 @@ export default function MichaelBarrassoPage(): ReactNode {
         ]}
       />
       <main id="main-content" className="flex-1">
+        <Breadcrumb
+          items={[
+            { label: "Team", href: "/team" },
+            { label: "Michael Barrasso" },
+          ]}
+        />
         <TeamProfile
           name="Michael Barrasso"
+          hasBreadcrumb
           title="Director of Business Development"
           initials="MB"
           image="/SHOT_04_051-scaled%20(4).jpg"

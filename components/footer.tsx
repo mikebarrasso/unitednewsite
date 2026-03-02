@@ -13,6 +13,7 @@ const footerLinks = {
       { label: "Investment Management", href: "/services/investment-management" },
       { label: "Tax Planning", href: "/services/tax-planning" },
       { label: "Tax Preparation", href: "/services/tax-preparation" },
+      { label: "Equity Compensation", href: "/services/equity-compensation" },
     ],
   },
   company: {
@@ -22,6 +23,7 @@ const footerLinks = {
       { label: "Meet The Team", href: "/team" },
       { label: "Client Testimonials", href: "/testimonials" },
       { label: "Blog", href: "/blog" },
+      { label: "In The Media", href: "/in-the-media" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
       { label: "Compliance", href: "/compliance" },

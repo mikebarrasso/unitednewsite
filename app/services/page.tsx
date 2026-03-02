@@ -8,7 +8,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Services — United Financial Planning Group",
+  title: "Our Services",
   description:
     "Comprehensive fee-only financial services including financial planning, retirement planning, investment management, tax planning, and tax preparation — all in-house.",
   path: "/services",

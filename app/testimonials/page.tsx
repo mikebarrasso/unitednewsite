@@ -6,15 +6,40 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Client Testimonials — United Financial Planning Group",
+  title: "Client Testimonials",
   description:
     "Read verified client reviews of United Financial Planning Group. See what clients say about our integrated financial planning, tax, and investment management services.",
   path: "/testimonials",
 });
 
+function ReviewsSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    name: "United Financial Planning Group",
+    url: "https://unitedfpg.com",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "25",
+      reviewCount: "25",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function TestimonialsPage(): ReactNode {
   return (
     <>
+      <ReviewsSchema />
       <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="relative w-full bg-muted pt-40 pb-24 sm:pb-32">
