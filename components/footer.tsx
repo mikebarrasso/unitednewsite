@@ -84,7 +84,7 @@ export function Footer(): ReactNode {
                     className="h-14 w-auto hidden dark:block"
                   />
                 </Link>
-                <p className="mt-4 text-sm text-foreground/50 max-w-xs leading-relaxed">
+                <p className="mt-4 text-sm text-foreground/50 dark:text-white max-w-xs leading-relaxed">
                   Fee-only financial planning, investment management, tax
                   planning, and tax preparation — integrated under one roof for
                   clients nationwide.
@@ -93,7 +93,7 @@ export function Footer(): ReactNode {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-16">
                 {Object.values(footerLinks).map((section) => (
                   <div key={section.title}>
-                    <h3 className="text-xs font-medium uppercase tracking-wider text-foreground/40 mb-5">
+                    <h3 className="text-xs font-medium uppercase tracking-wider text-foreground/40 dark:text-white mb-5">
                       {section.title}
                     </h3>
                     <ul className="space-y-3">
@@ -101,7 +101,7 @@ export function Footer(): ReactNode {
                         <li key={link.label}>
                           <Link
                             href={link.href}
-                            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+                            className="text-sm text-foreground/70 dark:text-white hover:text-foreground dark:hover:text-white transition-colors"
                           >
                             {link.label}
                           </Link>
@@ -120,7 +120,7 @@ export function Footer(): ReactNode {
         <div className="relative w-full max-w-270">
           <div className="pt-8 px-8 sm:px-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <p className="text-sm text-foreground/50">
+              <p className="text-sm text-foreground/50 dark:text-white">
                 © {new Date().getFullYear()} United Financial Planning Group.
                 All rights reserved.
               </p>
@@ -129,14 +129,14 @@ export function Footer(): ReactNode {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="text-sm text-foreground/50 hover:text-foreground transition-colors"
+                    className="text-sm text-foreground/50 dark:text-white hover:text-foreground dark:hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
                 ))}
               </div>
             </div>
-            <p className="mt-6 text-[11px] text-foreground/30 leading-relaxed max-w-4xl">
+            <p className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
               United Financial Planning Group is a registered investment advisor
               with the U.S. Securities and Exchange Commission (SEC).
               Registration does not imply a certain level of skill or training.
@@ -147,7 +147,7 @@ export function Footer(): ReactNode {
               including the potential loss of principal. Please review our{" "}
               <Link
                 href="/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf"
-                className="underline hover:text-foreground/50 transition-colors"
+                className="underline hover:text-foreground/50 dark:hover:text-white transition-colors"
               >
                 Form ADV Part 2A
               </Link>{" "}

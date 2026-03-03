@@ -52,7 +52,7 @@ function FlowBeam({
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
-        className="text-[#1e6eae]/12"
+        className="text-black/20 dark:text-white/20"
       />
       {/* Three dots staggered along the path */}
       <circle r="3.5" fill="#1e6eae" opacity="0.8">
@@ -193,7 +193,7 @@ function ServiceFlow({
           stroke="currentColor"
           strokeWidth="1"
           strokeDasharray="3 8"
-          className="text-foreground/[0.06]"
+          className="text-black/15 dark:text-white/15"
         />
 
         {/* Connecting beams with flowing dots */}
@@ -314,7 +314,9 @@ function ServiceFlow({
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1"
-                className={isActive ? "text-[#1e6eae]" : "text-foreground/10"}
+                className={
+                  isActive ? "text-[#1e6eae]" : "text-black/20 dark:text-white/20"
+                }
               />
 
               {/* Node inner label */}
@@ -357,7 +359,7 @@ export function FeatureHighlight(): ReactNode {
   const activeService = services.find((s) => s.id === activeId);
 
   return (
-    <section className="relative w-full bg-background pb-24 sm:pb-32">
+    <section className="relative w-full bg-background pt-6 sm:pt-8 pb-24 sm:pb-32">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Text content */}

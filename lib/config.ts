@@ -52,7 +52,7 @@ export const principlesConfig = {
 
 export const statsConfig = {
   stats: [
-    { value: 30, suffix: "+", label: "Years of integrated experience" },
+    { value: 30, suffix: "+", label: "Years of experience" },
     { value: 3, suffix: "", label: "Disciplines under one roof" },
     { value: 50, suffix: "+", prefix: "", label: "States served nationwide" },
   ],

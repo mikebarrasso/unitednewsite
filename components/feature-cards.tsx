@@ -47,7 +47,7 @@ function PlanningVisual(): ReactNode {
   ];
 
   return (
-    <div className="w-full h-full flex items-end justify-center p-6">
+    <div className="w-full h-full flex items-center justify-center p-6">
       <div className="w-full max-w-xs">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-2 h-2 rounded-full bg-[#1e6eae]" />
@@ -89,19 +89,6 @@ function InvestingVisual(): ReactNode {
   return (
     <div className="w-full h-full flex items-center justify-center p-8 sm:p-6">
       <div className="relative w-full max-w-xs">
-        <div className="mb-3">
-          <div className="text-xs text-muted-foreground">
-            After-Tax Return (10yr)
-          </div>
-          <div className="flex items-baseline gap-2">
-            <span className="text-xl sm:text-2xl font-semibold text-foreground">
-              8.4%
-            </span>
-            <span className="text-xs text-[#1e6eae] font-medium">
-              +1.7% vs pre-tax only
-            </span>
-          </div>
-        </div>
         <div className="flex items-end justify-between gap-1.5 h-24 sm:h-32">
           {bars.map((height, i) => (
             <motion.div
@@ -163,7 +150,7 @@ function TaxVisual(): ReactNode {
 
   return (
     <div className="w-full h-full flex items-end justify-center p-6">
-      <div className="w-full max-w-xs">
+      <div className="w-full max-w-xs translate-y-2">
         <div className="flex items-center justify-between text-xs text-muted-foreground pb-2 border-b border-border mb-1">
           <span>Strategy</span>
           <div className="flex gap-8">
