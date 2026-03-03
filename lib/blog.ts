@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
 
 <blockquote>"Ask your fiduciary advisor if you need life insurance. If you do, have them recommend an insurance agent and make sure they aren't collecting commissions off the back end. An easy way to do this is to work with a fee-only advisor."</blockquote>
 
-<p>This recommendation underscores Gerry's commitment to transparent, client-centered <a href="/services/financial-planning">financial planning</a>. By advocating for fee-only advisory services, he highlights the necessity of eliminating potential conflicts of interest\u2014ensuring clients receive advice that is truly in their best interest.</p>
+<p>This recommendation underscores Gerry's commitment to transparent, client-centered <a href="/services/financial-planning">financial planning</a>. By advocating for fee-only advisory services, he highlights the importance of avoiding the conflicts of interest that arise when advisors earn commissions\u2014ensuring clients receive advice that is truly in their best interest.</p>
 
 <p>The GOBankingRates article explores several key strategies used by high-net-worth families to build and preserve generational wealth:</p>
 
@@ -115,7 +115,7 @@ export const blogPosts: BlogPost[] = [
 <h2>The Value of Working with an Advisor</h2>
 
 <ul>
-<li><strong>Fiduciary Standard:</strong> Advisors operating under a fiduciary standard are legally obligated to act in your best interest, free from conflicts of interest.</li>
+<li><strong>Fiduciary Standard:</strong> Advisors operating under a fiduciary standard are legally obligated to act in your best interest, with a duty to disclose and manage conflicts of interest.</li>
 <li><strong>Expertise and Planning:</strong> Advisors bring expertise in <a href="/services/financial-planning">financial planning</a>, <a href="/services/investment-management">investment management</a>, and <a href="/services/tax-planning">tax strategies</a>.</li>
 <li><strong>Behavioral Coaching:</strong> Advisors help investors stay disciplined and focused on the long term, bridging the "Behavior Gap."</li>
 <li><strong>Objective Guidance:</strong> An advisor provides objective advice aligned with your goals, risk tolerance, and time horizon.</li>
@@ -753,7 +753,7 @@ export const blogPosts: BlogPost[] = [
 <p>Fee-only <a href="/services/financial-planning">financial planners</a>, like those at United Financial Planning Group, are compensated solely by their clients. This model offers:</p>
 
 <ul>
-<li><strong>Eliminating Conflicts of Interest:</strong> No commissions or incentives for recommending specific products.</li>
+<li><strong>Avoiding Commission-Based Conflicts:</strong> No commissions or incentives for recommending specific products.</li>
 <li><strong>Transparent Costs:</strong> You know exactly what you're paying for.</li>
 <li><strong>Dedication to Your Goals:</strong> Without outside commissions, the primary focus is crafting strategies tailored to your unique financial aspirations.</li>
 </ul>

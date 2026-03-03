@@ -324,7 +324,7 @@ function ServiceFlow({
                 textAnchor="middle"
                 dominantBaseline="central"
                 className={`text-[11px] font-semibold pointer-events-none transition-colors duration-300 ${
-                  isActive ? "fill-[#1e6eae]" : "fill-foreground/60"
+                  isActive ? "fill-[#1e6eae]" : "fill-foreground/60 dark:fill-foreground"
                 }`}
               >
                 {node.short}
@@ -339,7 +339,7 @@ function ServiceFlow({
                 className={`text-[10px] font-medium pointer-events-none transition-colors duration-300 ${
                   isActive
                     ? "fill-[#1e6eae]"
-                    : "fill-foreground/30"
+                    : "fill-black dark:fill-foreground"
                 }`}
               >
                 {node.label}
@@ -378,7 +378,7 @@ export function FeatureHighlight(): ReactNode {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="mt-6 text-foreground/70 leading-relaxed max-w-lg"
+              className="mt-6 text-foreground/70 dark:text-foreground leading-relaxed max-w-lg"
             >
               Most advisory firms do one thing well and outsource the rest. At
               United Financial Planning Group, your investment decisions,
@@ -420,7 +420,7 @@ export function FeatureHighlight(): ReactNode {
                     transition={{ duration: 0.2 }}
                     className="p-5 rounded-xl border border-border bg-muted/30"
                   >
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground dark:text-foreground">
                       CFPs, CPAs, and Enrolled Agents work side by side — not
                       across town. Hover over a service to see how it connects
                       to your complete financial picture.

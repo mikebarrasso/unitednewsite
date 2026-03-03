@@ -16,7 +16,7 @@ const faqItems = [
   {
     question: 'What does "fee-only" mean, and why does it matter?',
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates the conflicts of interest common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you objective advice that serves your best interests.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products — common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question:

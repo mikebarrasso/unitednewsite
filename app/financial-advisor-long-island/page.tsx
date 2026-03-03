@@ -167,7 +167,7 @@ const localFaqs = [
   {
     question: "What does 'fee-only' mean?",
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest common in the financial industry and ensures our only incentive is to give you objective advice that serves your best interests.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question: "Who are your typical Long Island clients?",

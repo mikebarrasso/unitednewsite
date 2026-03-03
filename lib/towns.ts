@@ -106,7 +106,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest and ensures our only incentive is to give you the best advice possible.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you the best advice possible.",
       },
       {
         question: "Can you help with property tax grievance savings reinvestment?",
@@ -207,7 +207,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -302,7 +302,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -873,7 +873,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This eliminates conflicts of interest and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -1063,7 +1063,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. For ultra-HNW families, this is especially important because it eliminates any incentive for us to recommend products.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. For ultra-HNW families, this is especially important because it removes the incentive to recommend products that pay commissions.",
       },
     ],
     areaServed: [
@@ -1524,7 +1524,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does it mean that you're a fee-only financial advisor?",
-        answer: "Fee-only means we are compensated solely by our clients — never by commissions, referral fees, or product sales. This eliminates the conflicts of interest that plague commission-based advisors and ensures that every recommendation we make is driven by what's best for you, not by what generates revenue for us."
+        answer: "Fee-only means we are compensated solely by our clients — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that plague commission-based advisors and ensures that every recommendation we make is driven by what's best for you, not by what generates revenue for us."
       }
     ],
     faqHeading: "Common Questions from Southampton Residents",
@@ -1605,7 +1605,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only mean and why does it matter?",
-        answer: "Fee-only means we receive compensation exclusively from our clients — never from product manufacturers, insurance companies, or brokerage firms. This matters because it eliminates every financial incentive to recommend one product over another. In East Hampton, where the financial stakes are exceptionally high, knowing your advisor has zero conflicts of interest isn't just nice to have — it's essential."
+        answer: "Fee-only means we receive compensation exclusively from our clients — never from product manufacturers, insurance companies, or brokerage firms. This matters because it removes the incentive to recommend products that pay commissions. In East Hampton, where the financial stakes are exceptionally high, knowing your advisor isn't compensated by product sales isn't just nice to have — it's essential."
       }
     ],
     faqHeading: "Common Questions from East Hampton Residents",
@@ -1743,7 +1743,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "We don't earn commissions, sell insurance products, or receive referral fees. Our compensation comes directly from you, which means our advice is never influenced by anything other than your best interest."
+        description: "We don't earn commissions, sell insurance products, or receive referral fees. Our compensation comes directly from you, which means our compensation structure means our advice isn't influenced by product commissions or referral fees."
       }
     ],
     insightHeading: "Why Woodbury Families Choose UFPG",
@@ -1755,7 +1755,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only financial planning mean for Woodbury clients?",
-        answer: "Fee-only means we are compensated solely by our clients — never by commissions, product sales, or referral arrangements. For Woodbury's high-income households, this eliminates conflicts of interest and ensures every recommendation is made with your financial goals as the only consideration."
+        answer: "Fee-only means we are compensated solely by our clients — never by commissions, product sales, or referral arrangements. For Woodbury's high-income households, this avoids the commission-based conflicts of interest and ensures every recommendation is made with your financial goals as the only consideration."
       },
       {
         question: "Do you work with executives relocating to Woodbury?",
@@ -2010,7 +2010,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only mean and why does it matter?",
-        answer: "Fee-only means we are compensated directly by our clients — not through commissions, product sales, or referral fees from financial companies. This eliminates the conflicts of interest that can lead advisors to recommend products that benefit them rather than you. Combined with our fiduciary obligation, it means every recommendation is made solely in your interest."
+        answer: "Fee-only means we are compensated directly by our clients — not through commissions, product sales, or referral fees from financial companies. This avoids the conflicts of interest that can lead advisors to recommend products that benefit them rather than you. Combined with our fiduciary obligation, it means every recommendation is made solely in your interest."
       }
     ],
     faqHeading: "Common Questions from East Norwich Residents",
@@ -2229,7 +2229,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "At Brookville's wealth levels, the cost of conflicted advice is measured in millions. Our fee-only model eliminates every financial incentive except one: delivering the best possible outcome for your family."
+        description: "At Brookville's wealth levels, the cost of conflicted advice is measured in millions. Our fee-only model removes commission and product-sales incentives — our only incentive is delivering the best possible outcome for your family."
       }
     ],
     insightHeading: "Why Brookville Families Trust UFPG",
@@ -2310,7 +2310,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "Old Westbury families have earned their wealth through discipline and discernment. Our fee-only structure reflects those same values — no hidden incentives, no product commissions, no conflicts that could compromise the advice your family depends on."
+        description: "Old Westbury families have earned their wealth through discipline and discernment. Our fee-only structure reflects those same values — no hidden incentives, no product commissions — and no incentive to recommend products that pay us, so the advice your family depends on isn't compromised by sales incentives."
       }
     ],
     insightHeading: "Why Old Westbury Families Choose UFPG",
@@ -2391,7 +2391,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "For families stewarding inherited wealth, trust in your advisor is everything. Our fee-only model means we have no financial incentive other than the growth and preservation of your assets. No commissions, no product sales, no conflicts."
+        description: "For families stewarding inherited wealth, trust in your advisor is everything. Our fee-only model means we have no financial incentive other than the growth and preservation of your assets. No commissions, no product sales — and no incentive to recommend products that pay us."
       }
     ],
     insightHeading: "Why Locust Valley Families Choose UFPG",
@@ -2534,7 +2534,7 @@ export const towns: Town[] = [
     heroBadge: "Serving Glen Cove, NY",
     heroLabel: "20 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Planning Built for Glen Cove's Unique Landscape",
-    valuePropSubheading: "From the Lattingtown border to the Garvies Point waterfront, Glen Cove's established homeowners and business owners are navigating rising property values, evolving tax exposure, and retirement planning decisions that demand sophisticated, conflict-free advice.",
+    valuePropSubheading: "From the Lattingtown border to the Garvies Point waterfront, Glen Cove's established homeowners and business owners are navigating rising property values, evolving tax exposure, and retirement planning decisions that demand sophisticated, fee-only advice without commission incentives.",
     valueProps: [
       {
         title: "Real Estate Equity Strategies for Longtime Homeowners",
@@ -2578,7 +2578,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only mean and why should it matter to me?",
-        answer: "Fee-only means we are paid directly by our clients, not through commissions or product sales. This matters because it eliminates the conflicts of interest that can lead advisors to recommend products that benefit themselves rather than you. Combined with our fiduciary duty, it ensures every recommendation we make is in your best interest."
+        answer: "Fee-only means we are paid directly by our clients, not through commissions or product sales. This matters because it avoids the conflicts of interest that can lead advisors to recommend products that benefit themselves rather than you. Combined with our fiduciary duty, it ensures every recommendation we make is in your best interest."
       }
     ],
     faqHeading: "Questions From Glen Cove Clients",
@@ -2693,7 +2693,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Muttontown, NY",
     metaDescription: "Tailored wealth advisory for Muttontown's estate community. Family partnerships, equestrian tax strategies, and intergenerational planning. Fee-only.",
     h1: "Tailored Wealth Advisory for Muttontown's Country Estate Community",
-    heroSubtitle: "Muttontown is Nassau County's rural enclave — a community of equestrian estates, conservation land, and families whose wealth spans generations. United Financial Planning Group provides the sophisticated, conflict-free advisory that Muttontown's estate owners require to preserve and grow their legacy.",
+    heroSubtitle: "Muttontown is Nassau County's rural enclave — a community of equestrian estates, conservation land, and families whose wealth spans generations. United Financial Planning Group provides the sophisticated, fee-only advisory without commission incentives that Muttontown's estate owners require to preserve and grow their legacy.",
     heroBadge: "Serving Muttontown, NY",
     heroLabel: "20 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Strategies for Muttontown's Estate Owners",
@@ -2799,7 +2799,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Independence for Unbiased Counsel",
-        description: "Oyster Bay Cove families deserve advice that serves their legacy — not an advisor's sales quota. Our fee-only structure eliminates conflicts of interest entirely, ensuring every recommendation we make is grounded in your family's long-term objectives."
+        description: "Oyster Bay Cove families deserve advice that serves their legacy — not an advisor's sales quota. Our fee-only structure avoids the commission-based conflicts of interest, ensuring every recommendation we make is grounded in your family's long-term objectives."
       }
     ],
     insightHeading: "Stewardship Over Generations in Oyster Bay Cove",
@@ -2963,7 +2963,7 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Fiduciary Commitment",
-        description: "Upper Brookville families have no shortage of advisors seeking their business. Our distinction is structural: as fee-only fiduciaries, we have no proprietary products, no commission incentives, and no conflicts. Your wealth plan reflects your goals — period."
+        description: "Upper Brookville families have no shortage of advisors seeking their business. Our distinction is structural: as fee-only fiduciaries, we have no proprietary products and no commission incentives — avoiding the conflicts that arise from product sales. Your wealth plan reflects your goals — period."
       }
     ],
     insightHeading: "Wealth Planning in the Shadow of Planting Fields",
@@ -3808,7 +3808,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only mean for a Kings Point client?",
-        answer: "It means we are compensated solely by the fees you pay us — never by commissions, referral payments, or product sales. For Kings Point families managing complex portfolios, this removes the conflicts of interest that plague commission-based advisory models. You get advice that is legally required to prioritize your financial wellbeing."
+        answer: "It means we are compensated solely by the fees you pay us — never by commissions, referral payments, or product sales. For Kings Point families managing complex portfolios, this avoids the conflicts of interest that plague commission-based advisory models. You get advice that is legally required to prioritize your financial wellbeing."
       },
       {
         question: "Can you coordinate planning with the USMMA community?",
