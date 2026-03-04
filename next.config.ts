@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Disable source maps in production to protect code
+  trailingSlash: false,
   productionBrowserSourceMaps: false,
   // Remove console.log in production
   compiler: {

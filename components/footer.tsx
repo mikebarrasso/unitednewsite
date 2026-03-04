@@ -32,6 +32,7 @@ const footerLinks = {
   offices: {
     title: "Offices",
     links: [
+      { label: "All Locations", href: "/locations" },
       { label: "Hauppauge, NY (HQ)", href: "/locations/hauppauge-ny" },
       { label: "Manhattan, NY", href: "/locations/manhattan-ny" },
       { label: "Lake Success, NY", href: "/locations/lake-success-ny" },

@@ -3,6 +3,7 @@ import { ServiceHero } from "@/components/service-hero";
 import { TaxPlanningVisual } from "@/components/tax-planning-visual";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedServices } from "@/components/related-services";
+import { ServiceCrossLinks } from "@/components/service-cross-links";
 import { ServiceSchema } from "@/components/service-schema";
 import {
   ProblemSection,
@@ -78,6 +79,8 @@ export default function TaxPlanningPage(): ReactNode {
             },
           ]}
         />
+
+        <ServiceCrossLinks />
 
         <TaxPlanningCTA />
       </main>

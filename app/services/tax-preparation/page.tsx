@@ -2,6 +2,7 @@ import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedServices } from "@/components/related-services";
+import { ServiceCrossLinks } from "@/components/service-cross-links";
 import { ServiceSchema } from "@/components/service-schema";
 import {
   ProblemSection,
@@ -72,6 +73,8 @@ export default function TaxPreparationPage(): ReactNode {
             },
           ]}
         />
+
+        <ServiceCrossLinks />
 
         <TaxPrepCTA />
       </main>

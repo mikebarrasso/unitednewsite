@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Footer } from "@/components/footer";
 import { TallyContactForm } from "@/components/tally-contact-form";
 import { MapPin, Mail, Phone, Printer } from "lucide-react";
@@ -69,7 +70,8 @@ export default function ContactPage(): ReactNode {
     <>
       <ContactSchema />
       <main id="main-content" className="flex-1">
-        <section className="relative w-full bg-muted pt-40 pb-2 sm:pb-4">
+        <Breadcrumb items={[{ label: "Contact" }]} />
+        <section className="relative w-full bg-muted pt-6 pb-2 sm:pt-8 sm:pb-4">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground leading-tight">
               Let&apos;s Start With a Conversation

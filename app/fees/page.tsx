@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import {
   BookkeepingSection,
   FeesClosingSection,
@@ -21,6 +22,7 @@ export default function FeesPage(): ReactNode {
   return (
     <>
       <main id="main-content" className="flex-1">
+        <Breadcrumb items={[{ label: "Our Fees" }]} />
         <FeesHero />
         <ProcessSection />
         <SubscriptionSection />

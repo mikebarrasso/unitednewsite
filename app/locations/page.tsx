@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import { createMetadata } from "@/lib/metadata";
 import { locations } from "@/lib/locations";
 import { Footer } from "@/components/footer";
@@ -49,7 +50,8 @@ export default function LocationsPage(): ReactNode {
     <>
       <LocationsSchema />
       <main id="main-content" className="flex-1">
-        <section className="relative w-full bg-muted pt-40 pb-24 sm:pb-32">
+        <Breadcrumb items={[{ label: "Locations" }]} />
+        <section className="relative w-full bg-muted pt-6 pb-24 sm:pt-8 sm:pb-32">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground leading-tight">
               Our Offices
@@ -124,12 +126,19 @@ export default function LocationsPage(): ReactNode {
               access to integrated financial planning, investment management, and
               tax services.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity"
               >
                 Schedule a Conversation
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
+              >
+                View All Services
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

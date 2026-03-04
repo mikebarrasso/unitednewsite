@@ -11,6 +11,7 @@ import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedServices } from "@/components/related-services";
+import { ServiceCrossLinks } from "@/components/service-cross-links";
 import { ServiceSchema } from "@/components/service-schema";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -89,6 +90,8 @@ export default function FinancialPlanningPage(): ReactNode {
             },
           ]}
         />
+
+        <ServiceCrossLinks />
 
         {/* CTA */}
         <FinalCTA />

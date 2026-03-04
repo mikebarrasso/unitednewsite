@@ -97,7 +97,7 @@ const subscriptionFeatures = [
 
 export function FeesHero() {
   return (
-    <section className="w-full flex items-center justify-center pt-40 pb-20 sm:pt-48 sm:pb-28 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="w-full flex items-center justify-center pt-6 pb-20 sm:pt-8 sm:pb-28 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center space-y-6 sm:space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

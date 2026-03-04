@@ -92,6 +92,10 @@ const navLinks: NavItem[] = [
     href: "/blog",
   },
   {
+    label: "Locations",
+    href: "/locations",
+  },
+  {
     label: "Contact",
     href: "/contact",
   },

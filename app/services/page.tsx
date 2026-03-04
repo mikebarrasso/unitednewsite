@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
@@ -45,6 +46,12 @@ const services = [
       "Accurate, thorough tax preparation by CPAs and Enrolled Agents who already understand your investments, your retirement plan, and your goals.",
     href: "/services/tax-preparation",
   },
+  {
+    title: "Equity Compensation",
+    description:
+      "Navigate stock options, RSUs, and equity awards with tax-coordinated planning that aligns vesting schedules with your broader financial strategy.",
+    href: "/services/equity-compensation",
+  },
 ];
 
 const blindSpots = [
@@ -57,6 +64,7 @@ export default function ServicesPage(): ReactNode {
   return (
     <>
       <main id="main-content" className="flex-1">
+        <Breadcrumb items={[{ label: "Services" }]} />
         <ServiceHero
           eyebrow="All Services"
           title="Every Part of Your Financial Life. One Team. One Strategy."
@@ -65,6 +73,7 @@ export default function ServicesPage(): ReactNode {
           imageAlt="Collaborative financial advisory team meeting"
           secondaryCtaHref="/contact"
           secondaryCtaLabel="Talk With Our Team"
+          hasBreadcrumb
         />
 
         {/* Services Grid */}

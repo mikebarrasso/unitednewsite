@@ -83,49 +83,6 @@ export const finalCtaConfig = {
   },
 } as const;
 
-export const footerConfig = {
-  description:
-    "The fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, tax planning, and tax preparation — integrated for clients nationwide.",
-  cta: {
-    text: "Schedule a Conversation",
-    href: "/contact",
-  },
-  links: {
-    services: [
-      { label: "Financial Planning", href: "/services/financial-planning" },
-      { label: "Retirement Planning", href: "/services/retirement-planning" },
-      { label: "Investment Management", href: "/services/investment-management" },
-      { label: "Tax Planning", href: "/services/tax-planning" },
-      { label: "Tax Preparation", href: "/services/tax-preparation" },
-    ],
-    company: [
-      { label: "About", href: "/about" },
-      { label: "FAQ", href: "/faq" },
-      { label: "Contact", href: "/contact" },
-    ],
-    legal: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Form ADV", href: "#" },
-    ],
-  },
-  offices: [
-    {
-      name: "Hauppauge, NY (Headquarters)",
-      address: "350 Motor Parkway, Suite 105\nHauppauge, NY 11788",
-    },
-    {
-      name: "Manhattan, NY",
-      address: "14 Penn Plaza\nNew York, NY 10122",
-    },
-    {
-      name: "Lake Success, NY",
-      address: "1979 Marcus Avenue, Suite 210\nLake Success, NY 11042",
-    },
-  ],
-  copyright: `© ${new Date().getFullYear()} United Financial Planning Group. All rights reserved.`,
-} as const;
-
 /**
  * ============================================================================
  * FEATURE FLAGS

@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import { FAQ } from "@/components/faq";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
@@ -78,7 +79,8 @@ export default function FAQPage(): ReactNode {
     <>
       <FAQPageSchema />
       <main id="main-content" className="flex-1">
-        <section className="relative w-full bg-muted pt-40 pb-12 sm:pb-16">
+        <Breadcrumb items={[{ label: "FAQ" }]} />
+        <section className="relative w-full bg-muted pt-6 pb-12 sm:pt-8 sm:pb-16">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
               Questions We Hear Often

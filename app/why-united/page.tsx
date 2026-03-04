@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
 import {
@@ -23,6 +24,7 @@ export default function WhyUnitedPage(): ReactNode {
   return (
     <>
       <main id="main-content" className="flex-1">
+        <Breadcrumb items={[{ label: "Why United" }]} />
         <ServiceHero
           eyebrow="Why United?"
           title="What's the Value of an Advisor Who Sees Everything?"
@@ -31,6 +33,7 @@ export default function WhyUnitedPage(): ReactNode {
           imageAlt="The United Financial Planning Group team"
           secondaryCtaHref="/services"
           secondaryCtaLabel="Explore Services"
+          hasBreadcrumb
         />
 
         {/* Disclosure */}
