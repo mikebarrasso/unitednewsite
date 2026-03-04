@@ -40,7 +40,7 @@ export const locations: Location[] = [
     phone: "(631) 234-0871",
     fax: "(631) 584-3763",
     mapQuery: "350+Motor+Parkway+Suite+105+Hauppauge+NY+11788",
-    heroImage: "/SHOT_02_003-scaled.jpg",
+    heroImage: "/240710_AJ8700-scaled (1).jpg",
     heroImageAlt: "United Financial Planning Group Hauppauge headquarters",
     headline: "Fee-Only Financial Planning in Hauppauge, Long Island",
     subtitle:
@@ -103,7 +103,7 @@ export const locations: Location[] = [
     phone: "(631) 234-0871",
     fax: "(631) 584-3763",
     mapQuery: "14+Penn+Plaza+New+York+NY+10122",
-    heroImage: "/SHOT_04_051-scaled (4).jpg",
+    heroImage: "/240710_AJ8700-scaled (1).jpg",
     heroImageAlt: "United Financial Planning Group Manhattan office",
     headline: "Fee-Only Financial Advisor in Manhattan, NYC",
     subtitle:

@@ -42,8 +42,8 @@ export default function RetirementPlanningPage(): ReactNode {
           eyebrow="Retirement Planning"
           title="You've Spent Decades Building Wealth. The Next Chapter Is About Making It Last."
           subtitle="Most retirement plans ignore the single biggest variable: taxes. Ours is built around it — because the difference between a good retirement and a great one is often what you keep, not what you earn."
-          imageUrl="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1740&auto=format&fit=crop"
-          imageAlt="Couple reviewing retirement plan together"
+          imageUrl="/retirees.png"
+          imageAlt="Retired couple walking on the beach at sunset"
           hasBreadcrumb
         />
 
