@@ -46,15 +46,16 @@ export function TallyContactForm(): ReactNode {
       />
       <iframe
         ref={iframeRef}
-        data-tally-src="https://tally.so/embed/npzjWy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        data-tally-src="https://tally.so/embed/npzjWy?alignLeft=1&hideTitle=1&transparentBackground=1"
         loading="lazy"
         width="100%"
-        height="695"
+        height="1100"
         frameBorder="0"
         marginHeight={0}
         marginWidth={0}
+        scrolling="no"
         title="Contact Us"
-        className="min-h-[400px]"
+        className="min-h-[900px] md:min-h-[1000px] lg:min-h-[1100px]"
       />
     </>
   );

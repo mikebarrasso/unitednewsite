@@ -72,7 +72,7 @@ export default function ContactPage(): ReactNode {
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Contact" }]} />
         <section className="relative w-full bg-muted pt-6 pb-2 sm:pt-8 sm:pb-4">
-          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground leading-tight">
               Let&apos;s Start With a Conversation
             </h1>
@@ -85,16 +85,10 @@ export default function ContactPage(): ReactNode {
         </section>
 
         <section className="relative w-full bg-background pt-6 sm:pt-8 pb-16">
-          <div className="mx-auto max-w-6xl px-6 sm:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-              {/* Contact Form */}
-              <div className="min-w-0">
-                <TallyContactForm />
-              </div>
-
-              {/* Contact Info */}
-              <div className="min-w-0 pt-12 sm:pt-14">
-                <div className="space-y-4">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
+            <div className="space-y-10">
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <a
                     href="tel:+16312340871"
                     className="flex items-center gap-4 p-4 bg-muted/50 border border-border rounded-lg hover:bg-muted/70 transition-colors"
@@ -120,11 +114,10 @@ export default function ContactPage(): ReactNode {
                     </span>
                   </div>
                 </div>
-                <p className="mt-6 text-foreground/70 leading-relaxed">
-                  We offer a no-obligation consultation to discuss your
-                  financial situation and how we can help. Please fill out the
-                  form or give us a call to get started.
-                </p>
+              </div>
+
+              <div className="min-w-0">
+                <TallyContactForm />
               </div>
             </div>
           </div>

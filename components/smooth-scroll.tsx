@@ -3,6 +3,7 @@
 import { useEffect, type ReactNode } from "react";
 import Lenis from "lenis";
 import { features } from "@/lib/config";
+import { usePathname } from "next/navigation";
 
 /**
  * Lenis configuration options.
@@ -19,8 +20,11 @@ const LENIS_OPTIONS = {
 };
 
 export function SmoothScroll({ children }: { children: ReactNode }): ReactNode {
+  const pathname = usePathname();
+
   useEffect(() => {
     if (!features.smoothScroll) return;
+    if (pathname === "/contact") return;
 
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia(
@@ -60,7 +64,7 @@ export function SmoothScroll({ children }: { children: ReactNode }): ReactNode {
       document.removeEventListener('click', handleAnchorClick);
       lenis.destroy();
     };
-  }, []);
+  }, [pathname]);
 
   return <>{children}</>;
 }

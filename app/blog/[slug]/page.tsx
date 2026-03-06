@@ -3,6 +3,7 @@ import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import {
   getAllPosts,
+  getPostLastModified,
   getPostBySlug,
   getRelatedPosts,
   formatDate,
@@ -34,13 +35,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBySlug>> }) {
+  const dateModified = getPostLastModified(post);
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified,
     author: {
       "@type": "Organization",
       name: "United Financial Planning Group",

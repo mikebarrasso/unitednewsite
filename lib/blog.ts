@@ -2,6 +2,7 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  updatedDate?: string;
   category: string;
   excerpt: string;
   author: string;
@@ -19,6 +20,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Gerry Barrasso Featured in GOBankingRates Article on Generational Wealth Strategies",
     date: "2025-04-10",
+    updatedDate: "2026-03-03",
     category: "In The Media",
     excerpt:
       "Gerry Barrasso, CPA, CFP\u00ae, was featured in GOBankingRates discussing strategies high-net-worth families use to build generational wealth, including the importance of fee-only advisory services.",
@@ -63,6 +65,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Market Volatility Got You Worried? Why Having a Plan (and an Advisor) Is Key",
     date: "2025-04-09",
+    updatedDate: "2026-03-03",
     category: "Investment Management",
     excerpt:
       "Recent market turbulence, driven by tariff announcements and economic uncertainty, underscores why having a sound financial plan and a trusted advisor is crucial for long-term investment success.",
@@ -138,6 +141,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Ryan Derousseau CFP\u00ae, EA, Quoted in The Wall Street Journal: A Deep Dive into High-Yield Savings Accounts",
     date: "2025-03-28",
+    updatedDate: "2026-03-02",
     category: "In The Media",
     excerpt:
       "Ryan Derousseau was quoted in The Wall Street Journal, offering critical insights on what savers should know before opening high-yield savings accounts, including hidden requirements that can affect actual returns.",
@@ -200,6 +204,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Is Your Portfolio Built to Withstand a Recession? A Retiree's Comprehensive Guide to Risk Management",
     date: "2025-03-18",
+    updatedDate: "2026-03-02",
     category: "Retirement Planning",
     excerpt:
       "A comprehensive guide for retirees on building recession-resistant portfolios, covering sequence of returns risk, withdrawal strategies, tax efficiency, and behavioral coaching.",
@@ -272,6 +277,7 @@ export const blogPosts: BlogPost[] = [
     slug: "gerry-barrasso-quoted-in-fortune",
     title: "Gerry Barrasso CPA, CFP\u00ae, PFS Quoted in Fortune",
     date: "2025-02-27",
+    updatedDate: "2026-03-02",
     category: "In The Media",
     excerpt:
       "Gerry Barrasso was quoted in Fortune discussing the importance of liquidity in emergency funds amid the rising trend of 'doomspending' and the savings shortfall facing Gen Z.",
@@ -310,6 +316,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Five Key Strategies for a More Secure Retirement: Expert Tips in Wealth and Investment Management",
     date: "2024-12-09",
+    updatedDate: "2026-03-02",
     category: "Retirement Planning",
     excerpt:
       "Five essential strategies retirees and near-retirees can implement to strengthen their financial footing, from comprehensive wealth assessments to tax-efficient distribution planning.",
@@ -359,6 +366,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "The Power of Passive Income Streams for High-Net-Worth Individuals",
     date: "2024-10-30",
+    updatedDate: "2026-03-02",
     category: "Investment Management",
     excerpt:
       "For high-net-worth individuals, passive income streams provide ongoing cash flow, stability, and diversification. Explore dividend stocks, bonds, REITs, and tax-efficient strategies.",
@@ -410,6 +418,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Investment Management Strategies for High-Net-Worth Individuals",
     date: "2024-09-10",
+    updatedDate: "2026-03-02",
     category: "Investment Management",
     excerpt:
       "A comprehensive guide to investment management for high-net-worth individuals, covering financial planning, diversification, tax-efficient investing, risk management, and multi-generational wealth planning.",
@@ -461,6 +470,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Navigating Financial Challenges as a Business Owner in New York",
     date: "2024-08-28",
+    updatedDate: "2026-03-02",
     category: "Financial Planning",
     excerpt:
       "A guide for New York's self-employed professionals on managing irregular income, retirement planning, tax optimization, health insurance, and business succession planning.",
@@ -509,6 +519,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "United Financial Planning Group's Ryan Derousseau Featured in NAPFA Advisor Magazine",
     date: "2024-08-19",
+    updatedDate: "2026-03-02",
     category: "In The Media",
     excerpt:
       "Ryan Derousseau, CFP\u00ae, was featured in NAPFA Advisor magazine discussing how he found success serving private practice therapists as a financial advisor niche.",
@@ -546,6 +557,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "2 Crucial Questions to Ask When Interviewing a Financial Advisor",
     date: "2024-08-07",
+    updatedDate: "2026-03-02",
     category: "Financial Planning",
     excerpt:
       "The two most important questions to ask a financial advisor: their compensation model and business structure. Learn the difference between fee-only, fee-based, and commission-based advisors.",
@@ -604,6 +616,7 @@ export const blogPosts: BlogPost[] = [
     slug: "investing-for-major-financial-goals",
     title: "Investing for Major Financial Goals",
     date: "2024-07-19",
+    updatedDate: "2026-03-02",
     category: "Financial Planning",
     excerpt:
       "Setting clear investment goals is the foundation of financial success. Learn strategies for retirement savings, college planning, and major purchases with specific timelines.",
@@ -647,6 +660,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "High Net Worth Financial Planning: Tailored Strategies for Distinctive Needs",
     date: "2024-07-19",
+    updatedDate: "2026-03-02",
     category: "Financial Planning",
     excerpt:
       "High-net-worth individuals face unique financial challenges requiring a holistic approach. Explore tailored strategies for asset protection, estate planning, and tax-efficient advising.",
@@ -690,6 +704,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Balancing the Ebbs and Flows: A Financial Guide for Hybrid Earners",
     date: "2024-07-19",
+    updatedDate: "2026-03-02",
     category: "Financial Planning",
     excerpt:
       "Professionals with base salary plus commission face unique financial challenges. Learn strategies for budgeting, investing, and retirement planning with a dual-income structure.",
@@ -733,6 +748,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Why a Fee-Only Fiduciary Financial Planner is Crucial for Your Wealth Management",
     date: "2024-07-19",
+    updatedDate: "2026-03-03",
     category: "Financial Planning",
     excerpt:
       "Understanding the difference between fee-only, fee-based, and commission-based financial planners is essential for protecting your wealth and ensuring unbiased advice.",
@@ -781,6 +797,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Financial Tips for Business Owners: Navigating Wealth, Taxes, and Succession Planning",
     date: "2024-07-19",
+    updatedDate: "2026-03-02",
     category: "Tax Planning",
     excerpt:
       "Essential financial strategies for business owners covering integrated financial planning, tax optimization, retirement planning, and business succession.",
@@ -851,4 +868,8 @@ export function formatDate(dateStr: string): string {
     month: "long",
     day: "numeric",
   });
+}
+
+export function getPostLastModified(post: BlogPost): string {
+  return post.updatedDate ?? post.date;
 }
