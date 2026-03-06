@@ -168,7 +168,7 @@ export default function Comparison1() {
           className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#1e6eae]/[0.04] border border-[#1e6eae]/20"
         >
           <p className="text-foreground leading-relaxed text-center text-base sm:text-lg">
-            Over a 20- or 30-year retirement, the difference in fees alone can
+            Over a 20- or 30-year retirement, the difference in fees alone may
             amount to{" "}
             <strong>hundreds of thousands of dollars</strong> that either stay in
             your portfolio or quietly disappear into someone else&apos;s.

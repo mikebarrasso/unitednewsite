@@ -93,8 +93,8 @@ function OrganizationSchema() {
       ratingValue: "5.0",
       bestRating: "5",
       worstRating: "1",
-      ratingCount: "25",
-      reviewCount: "25",
+      ratingCount: "46",
+      reviewCount: "46",
     },
   };
 
