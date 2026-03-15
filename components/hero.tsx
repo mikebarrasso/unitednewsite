@@ -309,7 +309,7 @@ export function Hero(): ReactNode {
               className="flex items-center gap-2 mt-6 text-sm text-white/60"
             >
               <Shield className="w-4 h-4" />
-              CFPs, CPAs, and Enrolled Agents working together in-house.
+              Fee-Only, Fiduciary. No commissions, ever.
             </motion.p>
           </div>
         </motion.div>

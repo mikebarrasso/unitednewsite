@@ -72,33 +72,52 @@ export default function AboutPage(): ReactNode {
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
               <p>
-                Most financial advisors chose one lane early in their career —
-                investments or taxes. Gerry chose both.
+                Gerry started his career as a tax preparer — sitting across the
+                table from clients, reviewing their returns, and getting an
+                unusually complete view of their financial lives. That work
+                brought him into regular contact with the investment advisors
+                those same clients were working with, and what he saw troubled
+                him.
               </p>
               <p>
-                With over 30 years of experience, Gerry Barrasso built United
-                Financial Planning Group around an idea the industry still
-                hasn&apos;t fully embraced: that financial planning, investment
-                management, tax planning, and tax preparation shouldn&apos;t live
-                in separate offices with separate professionals who never compare
-                notes.
+                Too many of those advisors had no fiduciary obligation to their
+                clients. Their compensation was tied to the products they sold,
+                not the outcomes they delivered. When an advisor&apos;s income
+                depends on commissions, the incentive structure doesn&apos;t
+                always point in the same direction as the client&apos;s best
+                interest. Gerry knew he could do better.
               </p>
               <p>
-                As both a Certified Financial Planner™ and Certified Public
-                Accountant, Gerry saw firsthand how disconnected advice costs
-                people money. The retirement plan that triggers an unexpected tax
-                bill. The investment portfolio built without considering the
-                owner&apos;s bracket. The tax return filed by someone who has no
-                idea what the client&apos;s financial goals are.
+                He built United Financial Planning Group around a fee-only,
+                fiduciary model. No commissions. No product sales. Clients pay
+                us directly, and that&apos;s the only way we get paid — which
+                means our focus stays on giving the best advice we can.
+              </p>
+              <p>
+                But the fee-only structure was only part of the vision. As both
+                a Certified Financial Planner™ and Certified Public Accountant,
+                Gerry had seen something else the industry was getting wrong:
+                the way financial advice was fragmented across separate
+                professionals who rarely spoke to each other. Your investment
+                advisor didn&apos;t know your tax situation. Your accountant
+                didn&apos;t know your retirement timeline. Your estate attorney
+                didn&apos;t know any of it.
+              </p>
+              <p>
+                The consequences were real and costly. Retirement distributions
+                taken in the wrong order. Tax-loss harvesting done without
+                considering the full portfolio. Roth conversions that made
+                mathematical sense in isolation but created unexpected tax bills
+                in practice. Good decisions made in silos that turned into bad
+                outcomes in combination.
               </p>
               <p className="font-medium text-foreground">
-                He built United to eliminate those gaps.
-              </p>
-              <p>
-                Today, Gerry leads a team of CFPs, CPAs, and Enrolled Agents who
-                share a single mission: give clients one place where every aspect
-                of their financial life is understood, coordinated, and
-                optimized.
+                Gerry built United to solve both problems at once — a firm
+                where the advice is genuinely client-focused, and where the
+                people giving it actually talk to each other. Today, that means
+                a team of CFPs, CPAs, and Enrolled Agents working together
+                under one roof, treating your financial life as the
+                interconnected system it actually is.
               </p>
             </div>
             <blockquote className="mt-12 p-8 bg-muted/50 border border-border rounded-sm">
