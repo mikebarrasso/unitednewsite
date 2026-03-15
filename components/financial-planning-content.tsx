@@ -30,7 +30,7 @@ const scenarios = [
     icon: Clock,
     title: "Withdrawal Sequencing",
     problem: "Started taking retirement withdrawals in the wrong order",
-    cost: "Thousands in unnecessary taxes — every year",
+    cost: "Thousands in unnecessary taxes, every year",
     color: "text-amber-500",
     bg: "bg-amber-500/10",
   },
@@ -54,7 +54,7 @@ const scenarios = [
 
 const taxPractice = [
   {
-    text: "Multi-year tax projection modeling that looks 5, 10, and 20+ years ahead — not just next April.",
+    text: "Multi-year tax projection modeling that looks 5, 10, and 20+ years ahead, not just next April.",
   },
   {
     text: "Capital gains and bracket management coordinated with your portfolio, not after the fact.",
@@ -70,7 +70,7 @@ const taxPractice = [
 const differentiators = [
   {
     icon: Users,
-    text: "CFPs and CPAs working together from day one — your plan is stress-tested against real tax scenarios, not theoretical ones.",
+    text: "CFPs and CPAs working together from day one. Your plan is stress-tested against real tax scenarios, not theoretical ones.",
   },
   {
     icon: ShieldCheck,
@@ -82,11 +82,11 @@ const differentiators = [
   },
   {
     icon: HeartPulse,
-    text: "Insurance, retirement income, and tax decisions coordinated together — because a Roth conversion in the wrong year can raise your Medicare premiums for two years running.",
+    text: "Insurance, retirement income, and tax decisions coordinated together, because a Roth conversion in the wrong year can raise your Medicare premiums for two years running.",
   },
   {
     icon: FileCheck,
-    text: "Not a 100-page binder you'll never open — but a living strategy that evolves with your life and gives you confidence that the pieces fit together.",
+    text: "Not a 100-page binder you'll never open, but a living strategy that evolves with your life and gives you confidence that the pieces fit together.",
   },
 ];
 
@@ -95,7 +95,7 @@ export function ProblemSection() {
     <section className="relative w-full bg-muted/30 py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — text */}
+          {/* Left - text */}
           <div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -124,7 +124,7 @@ export function ProblemSection() {
             >
               <p>
                 These aren&apos;t edge cases. They&apos;re what happens when
-                financial planning and tax planning live in different offices —
+                financial planning and tax planning live in different offices,
                 or when your advisor builds a plan that looks great on paper but
                 ignores what happens when the IRS gets involved.
               </p>
@@ -140,13 +140,13 @@ export function ProblemSection() {
               <p className="text-foreground font-medium leading-relaxed">
                 You don&apos;t need another pie chart. You need a planning
                 process that coordinates your income, investments, taxes, and
-                long-term goals — and stress-tests every recommendation before
+                long-term goals, and stress-tests every recommendation before
                 you act on it.
               </p>
             </motion.div>
           </div>
 
-          {/* Right — animated scenario cascade */}
+          {/* Right - animated scenario cascade */}
           <div className="flex flex-col gap-3">
             {scenarios.map((s, i) => {
               const Icon = s.icon;
@@ -262,7 +262,7 @@ export function TaxIntegrationSection() {
           <p className="text-lg">
             This is where United is fundamentally different. Because our team
             includes CFPs and CPAs working side by side, your financial plan is
-            built against real tax scenarios from day one — not handed off to a
+            built against real tax scenarios from day one, not handed off to a
             separate firm to &ldquo;review.&rdquo;
           </p>
           <p className="text-base font-medium text-foreground">
@@ -373,17 +373,17 @@ const ongoingItems = [
   {
     icon: Bell,
     title: "Proactive outreach when something changes",
-    description: "When a new tax provision passes, we model the impact on your situation and reach out with a recommendation — we don't wait for you to call.",
+    description: "When a new tax provision passes, we model the impact on your situation and reach out with a recommendation. We don't wait for you to call.",
   },
   {
     icon: RefreshCw,
     title: "Year-round coordination",
-    description: "Financial plan, portfolio, and tax strategy working together all year — not a once-a-year meeting followed by eleven months of silence.",
+    description: "Financial plan, portfolio, and tax strategy working together all year, not a once-a-year meeting followed by eleven months of silence.",
   },
   {
     icon: UserCheck,
     title: "A team that already knows your story",
-    description: "Your history, goals, and full financial picture live with us — you'll never re-explain your situation to a new associate.",
+    description: "Your history, goals, and full financial picture live with us. You'll never re-explain your situation to a new associate.",
   },
 ];
 
@@ -580,7 +580,7 @@ export function LivingPlanSection() {
     <section className="relative w-full bg-background py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — text */}
+          {/* Left - text */}
           <div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -609,13 +609,13 @@ export function LivingPlanSection() {
             >
               <p>
                 Most financial plans are built once and forgotten. Someone hands
-                you a thick document full of projections, and then life happens —
+                you a thick document full of projections, and then life happens,
                 and that document is already out of date. That&apos;s not
                 planning. That&apos;s a snapshot.
               </p>
               <p>
                 At United, your financial plan is a living strategy that evolves
-                alongside your life — because every piece of your financial life
+                alongside your life, because every piece of your financial life
                 is managed under one roof, in real time, with full context.
               </p>
             </motion.div>
@@ -650,7 +650,7 @@ export function LivingPlanSection() {
             </div>
           </div>
 
-          {/* Right — animated living plan visual */}
+          {/* Right - animated living plan visual */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

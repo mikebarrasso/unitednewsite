@@ -47,7 +47,7 @@ export default function Stats2() {
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 When your withdrawal plan, Roth conversions, and tax return are
                 managed by the same team, every decision is modeled together.
-                Separate advisors mean separate assumptions — and costly
+                Separate advisors mean separate assumptions, and costly
                 surprises in retirement.
               </p>
 

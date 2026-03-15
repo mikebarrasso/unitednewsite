@@ -20,13 +20,13 @@ export function Features3() {
       icon: HandCoins,
       title: "Wealth Coordination",
       description:
-        "Map income, assets, and liquidity across every account so you can see the full picture — and so every dollar has a purpose.",
+        "Map income, assets, and liquidity across every account so you can see the full picture, and so every dollar has a purpose.",
     },
     {
       icon: Target,
       title: "Goal & Milestone Tracking",
       description:
-        "Set measurable benchmarks and adjust as life changes — not just once a year during a review meeting.",
+        "Set measurable benchmarks and adjust as life changes, not just once a year during a review meeting.",
     },
     {
       icon: ShieldCheck,
@@ -50,7 +50,7 @@ export function Features3() {
       icon: TrendingDown,
       title: "Concentrated Position & Diversification",
       description:
-        "For those with significant holdings in a single stock — thoughtful, tax-aware diversification on your timeline.",
+        "For those with significant holdings in a single stock: thoughtful, tax-aware diversification on your timeline.",
     },
   ];
 

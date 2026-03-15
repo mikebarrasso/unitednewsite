@@ -78,7 +78,7 @@ export default function ContactPage(): ReactNode {
             </h1>
             <p className="mt-3 text-base sm:text-lg text-foreground/60 max-w-2xl leading-relaxed">
               No sales pitch. No obligation. Just a chance to talk about
-              what&apos;s on your mind financially — and see if we&apos;re the
+              what&apos;s on your mind financially, and see if we&apos;re the
               right fit.
             </p>
           </div>

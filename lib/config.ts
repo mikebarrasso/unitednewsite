@@ -3,14 +3,14 @@
  * SITE CONFIGURATION
  * ============================================================================
  *
- * United Financial Planning Group — brand configuration
+ * United Financial Planning Group - brand configuration
  */
 
 export const siteConfig = {
   name: "United Financial Planning Group",
   tagline: "Financial Planning, Tax, & Investment Management Under One Roof",
   description:
-    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services — integrated for clients nationwide.",
+    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: "https://unitedfpg.com",
   twitter: "@unitedfpg",
 
@@ -25,7 +25,7 @@ export const siteConfig = {
 export const heroConfig = {
   headline: "Your Financial Life Is Complex. Your Advisory Team Shouldn't Make It Harder.",
   description:
-    "United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — so every decision works in concert, not in conflict.",
+    "United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, so every decision works in concert, not in conflict.",
   cta: {
     primary: {
       text: "Schedule a Conversation",

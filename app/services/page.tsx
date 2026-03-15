@@ -11,7 +11,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Our Services",
   description:
-    "Comprehensive fee-only financial services including financial planning, retirement planning, investment management, tax planning, and tax preparation — all in-house.",
+    "Comprehensive fee-only financial services including financial planning, retirement planning, investment management, tax planning, and tax preparation, all in-house.",
   path: "/services",
 });
 
@@ -19,25 +19,25 @@ const services = [
   {
     title: "Financial Planning",
     description:
-      "A comprehensive roadmap for your financial future — built around your actual goals, not a generic questionnaire.",
+      "A comprehensive roadmap for your financial future, built around your actual goals, not a generic questionnaire.",
     href: "/services/financial-planning",
   },
   {
     title: "Retirement Planning",
     description:
-      "Turn decades of accumulation into sustainable income — with a clear strategy for Social Security, withdrawals, Roth conversions, and healthcare costs.",
+      "Turn decades of accumulation into sustainable income, with a clear strategy for Social Security, withdrawals, Roth conversions, and healthcare costs.",
     href: "/services/retirement-planning",
   },
   {
     title: "Investment Management",
     description:
-      "Portfolio management that goes beyond asset allocation — integrating tax efficiency, risk management, and your complete financial picture.",
+      "Portfolio management that goes beyond asset allocation, integrating tax efficiency, risk management, and your complete financial picture.",
     href: "/services/investment-management",
   },
   {
     title: "Tax Planning",
     description:
-      "Proactive strategies to minimize your lifetime tax burden — not just this year's return, but across decades of wealth-building decisions.",
+      "Proactive strategies to minimize your lifetime tax burden, not just this year's return, but across decades of wealth-building decisions.",
     href: "/services/tax-planning",
   },
   {
@@ -55,9 +55,9 @@ const services = [
 ];
 
 const blindSpots = [
-  "Your advisor rebalances your portfolio in December — triggering capital gains your CPA didn't expect and can't offset.",
-  "You convert to a Roth IRA based on a rule of thumb — without modeling how it impacts your Medicare premiums two years later.",
-  "You exercise stock options on your own timeline — unaware that waiting three months would have saved you $40,000 in taxes.",
+  "Your advisor rebalances your portfolio in December, triggering capital gains your CPA didn't expect and can't offset.",
+  "You convert to a Roth IRA based on a rule of thumb, without modeling how it impacts your Medicare premiums two years later.",
+  "You exercise stock options on your own timeline, unaware that waiting three months would have saved you $40,000 in taxes.",
 ];
 
 export default function ServicesPage(): ReactNode {
@@ -127,7 +127,7 @@ export default function ServicesPage(): ReactNode {
             <p className="text-[11px] text-foreground/40 leading-relaxed mb-8">
               The scenarios above are hypothetical illustrations for educational
               purposes only. They do not represent actual client outcomes. Dollar
-              figures are examples only — individual results vary based on
+              figures are examples only; individual results vary based on
               personal circumstances, tax situation, and applicable law.
             </p>
             <p className="text-foreground font-medium text-lg">

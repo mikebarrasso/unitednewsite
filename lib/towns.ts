@@ -32,7 +32,7 @@ export type Town = {
 };
 
 export const towns: Town[] = [
-  // ─── SUFFOLK COUNTY — HAUPPAUGE OFFICE RADIUS ───
+  // ─── SUFFOLK COUNTY - HAUPPAUGE OFFICE RADIUS ───
   {
     slug: "smithtown-ny",
     name: "Smithtown",
@@ -47,20 +47,20 @@ export const towns: Town[] = [
     avgHomeValue: "$650K–$850K",
     seoTitle: "Financial Advisor in Smithtown, NY",
     metaDescription:
-      "Fee-only financial advisor in Smithtown, NY — 5 minutes from our Hauppauge office. Retirement distribution strategies, business succession planning, and integrated tax strategy for high-net-worth Smithtown families.",
-    h1: "Financial Planning for Smithtown — Retirement, Business Succession, and Tax Strategy",
+      "Fee-only financial advisor in Smithtown, NY, 5 minutes from our Hauppauge office. Retirement distribution strategies, business succession planning, and integrated tax strategy for high-net-worth Smithtown families.",
+    h1: "Financial Planning for Smithtown: Retirement, Business Succession, and Tax Strategy",
     heroSubtitle:
-      "United Financial Planning Group is just 5 minutes from Smithtown — bringing financial planning, tax preparation, and investment management together under one roof for families across the Smithtown community.",
+      "United Financial Planning Group is just 5 minutes from Smithtown, bringing financial planning, tax preparation, and investment management together under one roof for families across the Smithtown community.",
     heroBadge: "5 Min from Smithtown · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Smithtown families.",
     valuePropHeading: "Why Smithtown Families Choose United",
     valuePropSubheading:
-      "Smithtown's established business owners, retiring executives, and high-net-worth families need financial planning that addresses complex tax situations, business transitions, and retirement income — not cookie-cutter advice.",
+      "Smithtown's established business owners, retiring executives, and high-net-worth families need financial planning that addresses complex tax situations, business transitions, and retirement income, not cookie-cutter advice.",
     valueProps: [
       {
         title: "Retirement income distribution planning",
         description:
-          "For Smithtown residents approaching or in retirement, we build withdrawal strategies across IRAs, 401(k)s, Social Security, and taxable accounts — sequencing distributions to minimize taxes and maximize the longevity of your portfolio.",
+          "For Smithtown residents approaching or in retirement, we build withdrawal strategies across IRAs, 401(k)s, Social Security, and taxable accounts, sequencing distributions to minimize taxes and maximize the longevity of your portfolio.",
       },
       {
         title: "Business succession and exit planning",
@@ -70,12 +70,12 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Most Smithtown families use a separate CPA and financial advisor who never talk to each other. Our team includes both — so your investment strategy, Roth conversions, and tax return are all coordinated.",
+          "Most Smithtown families use a separate CPA and financial advisor who never talk to each other. Our team includes both, so your investment strategy, Roth conversions, and tax return are all coordinated.",
       },
       {
         title: "5 minutes from Smithtown on Motor Parkway",
         description:
-          "Our Hauppauge headquarters is a quick drive down the 347 or Northern State. Meet with us in person or virtually — whatever works for your schedule.",
+          "Our Hauppauge headquarters is a quick drive down the 347 or Northern State. Meet with us in person or virtually, whatever works for your schedule.",
       },
       {
         title: "Fee-only, always",
@@ -91,27 +91,27 @@ export const towns: Town[] = [
       {
         question: "How far is your office from Smithtown?",
         answer:
-          "Our Hauppauge headquarters at 350 Motor Parkway is about 5 minutes from downtown Smithtown — a quick drive down Route 347 or via the Northern State Parkway. We also offer virtual meetings for clients who prefer them.",
+          "Our Hauppauge headquarters at 350 Motor Parkway is about 5 minutes from downtown Smithtown, a quick drive down Route 347 or via the Northern State Parkway. We also offer virtual meetings for clients who prefer them.",
       },
       {
         question: "How do you help with retirement income planning?",
         answer:
-          "We build a tax-efficient withdrawal strategy across all your accounts — IRAs, 401(k)s, Roth accounts, and taxable investments — coordinated with Social Security timing and your full tax picture to maximize after-tax retirement income.",
+          "We build a tax-efficient withdrawal strategy across all your accounts (IRAs, 401(k)s, Roth accounts, and taxable investments) coordinated with Social Security timing and your full tax picture to maximize after-tax retirement income.",
       },
       {
         question: "Do you work with small business owners on Route 111?",
         answer:
-          "Yes. We work with many business owners along the Route 111 corridor — helping with S-corp tax planning, SEP and SIMPLE IRA strategies, business succession planning, and coordinating business and personal finances.",
+          "Yes. We work with many business owners along the Route 111 corridor, helping with S-corp tax planning, SEP and SIMPLE IRA strategies, business succession planning, and coordinating business and personal finances.",
       },
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you the best advice possible.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you the best advice possible.",
       },
       {
         question: "Can you help with property tax grievance savings reinvestment?",
         answer:
-          "Yes. Many Smithtown homeowners successfully grieve their property taxes and receive refunds or reductions. We help you put those savings to work — whether that means accelerating retirement contributions, funding a Roth conversion, or strengthening your investment portfolio.",
+          "Yes. Many Smithtown homeowners successfully grieve their property taxes and receive refunds or reductions. We help you put those savings to work, whether that means accelerating retirement contributions, funding a Roth conversion, or strengthening your investment portfolio.",
       },
     ],
     areaServed: [
@@ -146,12 +146,12 @@ export const towns: Town[] = [
       "Fee-only financial advisor near Stony Brook, NY. 403(b) and TIAA optimization for university employees, equity comp for biotech professionals, and integrated tax planning. 12 min from our Hauppauge office.",
     h1: "Smart Financial Planning for Stony Brook's University & Medical Community",
     heroSubtitle:
-      "United Financial Planning Group serves Stony Brook's university faculty, medical professionals, and biotech community with integrated financial planning, tax preparation, and investment management — all from our Hauppauge office 12 minutes away.",
+      "United Financial Planning Group serves Stony Brook's university faculty, medical professionals, and biotech community with integrated financial planning, tax preparation, and investment management, all from our Hauppauge office 12 minutes away.",
     heroBadge: "12 Min from Stony Brook · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Stony Brook community.",
     valuePropHeading: "Why Stony Brook Professionals Choose United",
     valuePropSubheading:
-      "Stony Brook University and Medical Center anchor this community — creating a concentration of faculty, researchers, and healthcare professionals with specialized financial planning needs.",
+      "Stony Brook University and Medical Center anchor this community, creating a concentration of faculty, researchers, and healthcare professionals with specialized financial planning needs.",
     valueProps: [
       {
         title: "403(b) and TIAA-CREF optimization",
@@ -171,7 +171,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your investment decisions, Roth conversions, and tax return are all coordinated — no more paying two professionals who never talk to each other.",
+          "Our team includes both CFPs and CPAs, so your investment decisions, Roth conversions, and tax return are all coordinated, so you're not paying two professionals who never talk to each other.",
       },
       {
         title: "Fee-only, always",
@@ -181,7 +181,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "The University Employee Advantage",
     insight:
-      "Stony Brook University and Medical Center employees have access to retirement plans that most advisors don't fully understand — including TIAA traditional annuities, CREF variable accounts, and supplemental 403(b) options. The difference between optimal and default allocation can mean hundreds of thousands of dollars over a career. Our team specializes in modeling these options alongside your full tax picture.",
+      "Stony Brook University and Medical Center employees have access to retirement plans that most advisors don't fully understand, including TIAA traditional annuities, CREF variable accounts, and supplemental 403(b) options. The difference between optimal and default allocation can mean hundreds of thousands of dollars over a career. Our team specializes in modeling these options alongside your full tax picture.",
     faqHeading: "Questions From Stony Brook Clients",
     faqs: [
       {
@@ -207,7 +207,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -241,17 +241,17 @@ export const towns: Town[] = [
       "Fee-only financial advisor near Setauket, NY. Estate planning, retirement transition, and integrated tax strategy for Three Village families. CFPs and CPAs under one roof, 15 min from our Hauppauge office.",
     h1: "Preserving Wealth Across Generations in the Three Village Community",
     heroSubtitle:
-      "United Financial Planning Group serves Setauket's established families and professionals with estate planning, retirement transition strategies, and integrated tax services — from our Hauppauge office 15 minutes away.",
+      "United Financial Planning Group serves Setauket's established families and professionals with estate planning, retirement transition strategies, and integrated tax services, from our Hauppauge office 15 minutes away.",
     heroBadge: "15 Min from Setauket · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Three Village area.",
     valuePropHeading: "Why Three Village Families Choose United",
     valuePropSubheading:
-      "The Three Village community — Setauket, East Setauket, and Old Field — is one of Long Island's most historically significant areas. Families here tend to have deep roots, multi-generational wealth, and complex planning needs.",
+      "The Three Village community (Setauket, East Setauket, and Old Field) is one of Long Island's most historically significant areas. Families here tend to have deep roots, multi-generational wealth, and complex planning needs.",
     valueProps: [
       {
         title: "Legacy and estate planning",
         description:
-          "Many Setauket families have built wealth over decades — through real estate appreciation, careers, and family businesses. We help structure trusts, gifting strategies, and estate plans that protect what you've built for the next generation.",
+          "Many Setauket families have built wealth over decades, through real estate appreciation, careers, and family businesses. We help structure trusts, gifting strategies, and estate plans that protect what you've built for the next generation.",
       },
       {
         title: "Retirement transition for hybrid commuters",
@@ -261,7 +261,7 @@ export const towns: Town[] = [
       {
         title: "Charitable giving strategies",
         description:
-          "Setauket's historically-minded residents often support local preservation efforts, the Ward Melville Heritage Organization, and community institutions. We help structure charitable giving for maximum tax benefit — including donor-advised funds and qualified charitable distributions.",
+          "Setauket's historically-minded residents often support local preservation efforts, the Ward Melville Heritage Organization, and community institutions. We help structure charitable giving for maximum tax benefit, including donor-advised funds and qualified charitable distributions.",
       },
       {
         title: "Tax planning and investing under one roof",
@@ -276,7 +276,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Planning for Three Village's Multi-Generational Families",
     insight:
-      "The Three Village area has an unusually high concentration of families who have lived in the community for 20, 30, even 50+ years. That longevity creates specific financial planning challenges: significant unrealized gains in real estate, complex estate tax exposure, and the need to coordinate wealth transfer across multiple generations. Our integrated approach addresses all of these — connecting your investment strategy, tax planning, and estate documents in one cohesive plan.",
+      "The Three Village area has an unusually high concentration of families who have lived in the community for 20, 30, even 50+ years. That longevity creates specific financial planning challenges: significant unrealized gains in real estate, complex estate tax exposure, and the need to coordinate wealth transfer across multiple generations. Our integrated approach addresses all of these, connecting your investment strategy, tax planning, and estate documents in one cohesive plan.",
     faqHeading: "Questions From Setauket Clients",
     faqs: [
       {
@@ -302,7 +302,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -337,12 +337,12 @@ export const towns: Town[] = [
       "Fee-only wealth management for Nissequogue, NY residents. Concentrated stock diversification, waterfront estate planning, and integrated tax strategy. 10 min from our Hauppauge office.",
     h1: "Personalized Wealth Management for Nissequogue's Waterfront Community",
     heroSubtitle:
-      "United Financial Planning Group serves Nissequogue's affluent waterfront community with comprehensive wealth management, estate planning, and integrated tax services — from our Hauppauge office 10 minutes away.",
+      "United Financial Planning Group serves Nissequogue's affluent waterfront community with comprehensive wealth management, estate planning, and integrated tax services, from our Hauppauge office 10 minutes away.",
     heroBadge: "10 Min from Nissequogue · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Nissequogue families.",
     valuePropHeading: "Why Nissequogue Residents Choose United",
     valuePropSubheading:
-      "Nissequogue is one of Suffolk County's most exclusive villages — with waterfront estates along the Long Island Sound, 2+ acre zoning minimums, and a community of roughly 1,600 residents who value privacy and personalized service.",
+      "Nissequogue is one of Suffolk County's most exclusive villages, with waterfront estates along the Long Island Sound, 2+ acre zoning minimums, and a community of roughly 1,600 residents who value privacy and personalized service.",
     valueProps: [
       {
         title: "Concentrated stock position diversification",
@@ -362,7 +362,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your investment strategy, estate plan, and tax return are all coordinated — no more paying two professionals who never communicate.",
+          "Our team includes both CFPs and CPAs. Your investment strategy, estate plan, and tax return are all coordinated, so you're not paying two professionals who never communicate.",
       },
       {
         title: "Fee-only, always",
@@ -372,7 +372,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Estate Planning for Waterfront Properties",
     insight:
-      "Nissequogue's waterfront estates often represent the largest single asset in a family's portfolio — and they come with unique planning challenges. Property values can fluctuate with environmental regulations, flood zone designations, and insurance costs. Our team helps you plan around these realities while structuring your estate to minimize tax exposure and ensure your property passes to the next generation according to your wishes.",
+      "Nissequogue's waterfront estates often represent the largest single asset in a family's portfolio, and they come with unique planning challenges. Property values can fluctuate with environmental regulations, flood zone designations, and insurance costs. Our team helps you plan around these realities while structuring your estate to minimize tax exposure and ensure your property passes to the next generation according to your wishes.",
     faqHeading: "Questions From Nissequogue Clients",
     faqs: [
       {
@@ -383,12 +383,12 @@ export const towns: Town[] = [
       {
         question: "Can you help with flood insurance and property planning?",
         answer:
-          "While we don't sell insurance, we factor flood zone considerations into your overall financial plan — including insurance cost projections, property value impacts on estate planning, and whether flood insurance savings are better deployed elsewhere in your portfolio.",
+          "While we don't sell insurance, we factor flood zone considerations into your overall financial plan, including insurance cost projections, property value impacts on estate planning, and whether flood insurance savings are better deployed elsewhere in your portfolio.",
       },
       {
         question: "Do you work with estate attorneys?",
         answer:
-          "Yes. We collaborate with your estate attorney to make sure your financial plan and legal documents are aligned — including trust funding, beneficiary designations, and gifting strategies. If you need an attorney referral, we can recommend several who specialize in high-net-worth estate planning on Long Island.",
+          "Yes. We collaborate with your estate attorney to make sure your financial plan and legal documents are aligned, including trust funding, beneficiary designations, and gifting strategies. If you need an attorney referral, we can recommend several who specialize in high-net-worth estate planning on Long Island.",
       },
       {
         question: "How far is your office from Nissequogue?",
@@ -398,7 +398,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -432,12 +432,12 @@ export const towns: Town[] = [
       "Ultra-high-net-worth wealth management for Head of the Harbor, NY. Estate and trust planning, philanthropic advisory, and integrated tax strategy. CFPs and CPAs, 10 min from our Hauppauge office.",
     h1: "Comprehensive Wealth Management for Head of the Harbor's Distinguished Families",
     heroSubtitle:
-      "United Financial Planning Group serves Head of the Harbor's ultra-affluent families with multi-generational estate planning, trust administration, and integrated tax services — from our Hauppauge office 10 minutes away.",
+      "United Financial Planning Group serves Head of the Harbor's ultra-affluent families with multi-generational estate planning, trust administration, and integrated tax services, from our Hauppauge office 10 minutes away.",
     heroBadge: "10 Min from Head of the Harbor · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Head of the Harbor.",
     valuePropHeading: "Why Head of the Harbor Families Choose United",
     valuePropSubheading:
-      "Head of the Harbor is one of Suffolk County's wealthiest villages — with 2-acre zoning minimums, Stony Brook Harbor frontage, and families who have lived here for decades. The planning needs here go well beyond a standard portfolio review.",
+      "Head of the Harbor is one of Suffolk County's wealthiest villages, with 2-acre zoning minimums, Stony Brook Harbor frontage, and families who have lived here for decades. The planning needs here go well beyond a standard portfolio review.",
     valueProps: [
       {
         title: "Multi-generational estate planning",
@@ -452,7 +452,7 @@ export const towns: Town[] = [
       {
         title: "Concentrated wealth management",
         description:
-          "When a significant portion of your net worth is in a single asset — whether that's real estate, a business, or a concentrated stock position — diversification becomes critical. We build systematic plans to reduce risk without creating unnecessary tax events.",
+          "When a significant portion of your net worth is in a single asset (whether that's real estate, a business, or a concentrated stock position), diversification becomes critical. We build systematic plans to reduce risk without creating unnecessary tax events.",
       },
       {
         title: "Philanthropic advisory",
@@ -467,7 +467,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Planning for $30K–$50K+ Property Tax Bills",
     insight:
-      "Head of the Harbor's estate-sized properties come with annual property tax bills that can exceed $30,000 to $50,000. With the SALT deduction capped at $10,000, families here absorb significant tax impact. Our team builds your investment strategy and retirement plan around this reality — including strategies for managing cash flow, optimizing deductions, and ensuring your property tax burden doesn't derail your long-term financial goals.",
+      "Head of the Harbor's estate-sized properties come with annual property tax bills that can exceed $30,000 to $50,000. With the SALT deduction capped at $10,000, families here absorb significant tax impact. Our team builds your investment strategy and retirement plan around this reality, including strategies for managing cash flow, optimizing deductions, and ensuring your property tax burden doesn't derail your long-term financial goals.",
     faqHeading: "Questions From Head of the Harbor Clients",
     faqs: [
       {
@@ -493,7 +493,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -525,9 +525,9 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Dix Hills, NY",
     metaDescription:
       "Fee-only financial advisor near Dix Hills, NY. Executive compensation, retirement planning, and integrated tax strategy for one of America's wealthiest suburbs. 8 min from our Hauppauge office.",
-    h1: "Financial Strategies for Dix Hills Families — Where Elite Schools Meet Executive Lifestyles",
+    h1: "Financial Strategies for Dix Hills Families: Where Elite Schools Meet Executive Lifestyles",
     heroSubtitle:
-      "United Financial Planning Group serves Dix Hills families with executive compensation planning, retirement distribution strategies, and integrated tax services — from our Hauppauge office just 8 minutes away.",
+      "United Financial Planning Group serves Dix Hills families with executive compensation planning, retirement distribution strategies, and integrated tax services, from our Hauppauge office just 8 minutes away.",
     heroBadge: "8 Min from Dix Hills · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Dix Hills families.",
     valuePropHeading: "Why Dix Hills Families Choose United",
@@ -547,7 +547,7 @@ export const towns: Town[] = [
       {
         title: "Real estate equity strategies",
         description:
-          "With average home values between $700K and $1.2M, Dix Hills homeowners often have significant equity tied up in their primary residence. We help you think strategically about that equity — whether it's funding retirement, downsizing, or leveraging it within your overall plan.",
+          "With average home values between $700K and $1.2M, Dix Hills homeowners often have significant equity tied up in their primary residence. We help you think strategically about that equity, whether it's funding retirement, downsizing, or leveraging it within your overall plan.",
       },
       {
         title: "Tax planning and investing under one roof",
@@ -562,7 +562,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "The Route 110 Corridor Advantage",
     insight:
-      "Dix Hills sits adjacent to the Route 110 corporate corridor — Long Island's largest concentration of corporate headquarters including Canon, Nikon, Henry Schein, and Estée Lauder. Many Dix Hills families have complex employer-sponsored retirement plans, deferred compensation arrangements, and equity compensation packages. Our team specializes in coordinating these employer benefits with your personal tax planning and investment strategy.",
+      "Dix Hills sits adjacent to the Route 110 corporate corridor: Long Island's largest concentration of corporate headquarters including Canon, Nikon, Henry Schein, and Estée Lauder. Many Dix Hills families have complex employer-sponsored retirement plans, deferred compensation arrangements, and equity compensation packages. Our team specializes in coordinating these employer benefits with your personal tax planning and investment strategy.",
     faqHeading: "Questions From Dix Hills Clients",
     faqs: [
       {
@@ -578,7 +578,7 @@ export const towns: Town[] = [
       {
         question: "How do you help with real estate equity decisions?",
         answer:
-          "We model scenarios for downsizing, refinancing, or staying put — factoring in your tax bracket, capital gains exposure, retirement timeline, and income needs. The goal is to make your home equity work as part of your overall financial strategy, not sit idle.",
+          "We model scenarios for downsizing, refinancing, or staying put, factoring in your tax bracket, capital gains exposure, retirement timeline, and income needs. The goal is to make your home equity work as part of your overall financial strategy, not sit idle.",
       },
       {
         question: "How far is your office from Dix Hills?",
@@ -588,7 +588,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -622,17 +622,17 @@ export const towns: Town[] = [
       "Fee-only financial advisor near Melville, NY. 401(k) optimization, executive comp, and small business retirement planning for Route 110 professionals. CFPs and CPAs, 5 min from our Hauppauge office.",
     h1: "Financial Planning for Melville's Corporate Corridor Professionals",
     heroSubtitle:
-      "United Financial Planning Group serves Melville's corporate executives, business owners, and dual-income professionals with integrated financial planning, tax preparation, and investment management — just 5 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Melville's corporate executives, business owners, and dual-income professionals with integrated financial planning, tax preparation, and investment management, just 5 minutes from our Hauppauge office.",
     heroBadge: "5 Min from Melville · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Melville professionals.",
     valuePropHeading: "Why Melville Professionals Choose United",
     valuePropSubheading:
-      "Route 110 is Long Island's corporate corridor — home to Canon, Nikon, Henry Schein, Estée Lauder, and hundreds of other companies. That creates a concentration of professionals with complex employer benefits and retirement plans.",
+      "Route 110 is Long Island's corporate corridor, home to Canon, Nikon, Henry Schein, Estée Lauder, and hundreds of other companies. That creates a concentration of professionals with complex employer benefits and retirement plans.",
     valueProps: [
       {
         title: "401(k) optimization and employer match strategies",
         description:
-          "Many Route 110 employers offer generous retirement plans — but most employees leave money on the table. We analyze your plan's fund options, fee structure, and matching formula to maximize your retirement savings.",
+          "Many Route 110 employers offer generous retirement plans, but most employees leave money on the table. We analyze your plan's fund options, fee structure, and matching formula to maximize your retirement savings.",
       },
       {
         title: "RSU and deferred compensation planning",
@@ -642,12 +642,12 @@ export const towns: Town[] = [
       {
         title: "Small business retirement plans",
         description:
-          "For Melville entrepreneurs and small business owners, we help evaluate SEP IRAs, SIMPLE IRAs, solo 401(k)s, and defined benefit plans — choosing the structure that maximizes your tax deduction while building retirement wealth.",
+          "For Melville entrepreneurs and small business owners, we help evaluate SEP IRAs, SIMPLE IRAs, solo 401(k)s, and defined benefit plans, choosing the structure that maximizes your tax deduction while building retirement wealth.",
       },
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your employer benefits, personal investments, and tax return are all coordinated — not managed in silos by different professionals.",
+          "Our team includes both CFPs and CPAs. Your employer benefits, personal investments, and tax return are all coordinated, not managed in silos by different professionals.",
       },
       {
         title: "Fee-only, always",
@@ -657,7 +657,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "The Corporate Corridor Tax Advantage",
     insight:
-      "Route 110 professionals often have the most complex employer benefit packages on Long Island — 401(k) plans with multiple fund families, RSU vesting schedules, deferred compensation elections, and HSAs. Each of these has tax implications that most advisors treat in isolation. Our integrated approach coordinates every employer benefit with your personal tax strategy, investment portfolio, and retirement timeline to minimize your lifetime tax burden.",
+      "Route 110 professionals often have the most complex employer benefit packages on Long Island: 401(k) plans with multiple fund families, RSU vesting schedules, deferred compensation elections, and HSAs. Each of these has tax implications that most advisors treat in isolation. Our integrated approach coordinates every employer benefit with your personal tax strategy, investment portfolio, and retirement timeline to minimize your lifetime tax burden.",
     faqHeading: "Questions From Melville Clients",
     faqs: [
       {
@@ -683,7 +683,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -715,9 +715,9 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Commack, NY",
     metaDescription:
       "Fee-only financial advisor near Commack, NY. Retirement planning, estate strategies, and integrated tax planning for established families. CFPs and CPAs, 5 min from our Hauppauge office.",
-    h1: "Comprehensive Financial Planning for Commack — Retirement, Tax Strategy, and Wealth Preservation",
+    h1: "Comprehensive Financial Planning for Commack: Retirement, Tax Strategy, and Wealth Preservation",
     heroSubtitle:
-      "United Financial Planning Group is right next door to Commack — bringing retirement planning, estate strategies, and integrated tax services from our Hauppauge office just 5 minutes away.",
+      "United Financial Planning Group is right next door to Commack, bringing retirement planning, estate strategies, and integrated tax services from our Hauppauge office just 5 minutes away.",
     heroBadge: "5 Min from Commack · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Commack families.",
     valuePropHeading: "Why Commack Families Choose United",
@@ -737,7 +737,7 @@ export const towns: Town[] = [
       {
         title: "Business owner tax and retirement planning",
         description:
-          "Commack's Jericho Turnpike corridor supports a thriving business community. We help owners maximize retirement contributions through SEP-IRAs, solo 401(k)s, and defined benefit plans — while coordinating business and personal tax strategy.",
+          "Commack's Jericho Turnpike corridor supports a thriving business community. We help owners maximize retirement contributions through SEP-IRAs, solo 401(k)s, and defined benefit plans, while coordinating business and personal tax strategy.",
       },
       {
         title: "Property tax planning",
@@ -752,7 +752,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Your Neighbor on Motor Parkway",
     insight:
-      "Being 5 minutes from Commack means our relationship doesn't feel distant or transactional. Many of our Commack clients pop into the office for a quick check-in, drop off tax documents in person, or stop by on their way home from work. That accessibility — combined with our integrated team of CFPs, CPAs, and Enrolled Agents — is what makes the relationship work.",
+      "Being 5 minutes from Commack means our relationship doesn't feel distant or transactional. Many of our Commack clients pop into the office for a quick check-in, drop off tax documents in person, or stop by on their way home from work. That accessibility, combined with our integrated team of CFPs, CPAs, and Enrolled Agents, is what makes the relationship work.",
     faqHeading: "Questions From Commack Clients",
     faqs: [
       {
@@ -768,17 +768,17 @@ export const towns: Town[] = [
       {
         question: "Do you offer insurance reviews?",
         answer:
-          "While we don't sell insurance, we review your coverage as part of your financial plan — including life, disability, umbrella, and long-term care insurance. We help you identify gaps and ensure your coverage matches your actual needs.",
+          "While we don't sell insurance, we review your coverage as part of your financial plan, including life, disability, umbrella, and long-term care insurance. We help you identify gaps and ensure your coverage matches your actual needs.",
       },
       {
         question: "How far is your office from Commack?",
         answer:
-          "Our Hauppauge office at 350 Motor Parkway is about 5 minutes from Commack — right off the LIE or Northern State Parkway.",
+          "Our Hauppauge office at 350 Motor Parkway is about 5 minutes from Commack, right off the LIE or Northern State Parkway.",
       },
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -810,9 +810,9 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Huntington, NY",
     metaDescription:
       "Fee-only financial advisor in Huntington, NY. Planning for village professionals, commuter tax optimization, and small business succession. CFPs and CPAs, 15 min from our Hauppauge office.",
-    h1: "Financial Planning That Matches Huntington's Energy — From Village Life to Wall Street Commutes",
+    h1: "Financial Planning That Matches Huntington's Energy: From Village Life to Wall Street Commutes",
     heroSubtitle:
-      "United Financial Planning Group serves Huntington's village professionals, small business owners, and NYC commuters with integrated financial planning, tax preparation, and investment management — 15 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Huntington's village professionals, small business owners, and NYC commuters with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Huntington · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Huntington community.",
     valuePropHeading: "Why Huntington Residents Choose United",
@@ -822,7 +822,7 @@ export const towns: Town[] = [
       {
         title: "Executive compensation for Wall Street commuters",
         description:
-          "Huntington's LIRR express draws finance professionals, corporate executives, and tech leaders. We help navigate RSUs, stock options, deferred compensation, and concentrated equity positions — coordinating every element with your annual tax plan.",
+          "Huntington's LIRR express draws finance professionals, corporate executives, and tech leaders. We help navigate RSUs, stock options, deferred compensation, and concentrated equity positions, coordinating every element with your annual tax plan.",
       },
       {
         title: "Business succession planning for village shop owners",
@@ -837,7 +837,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs working together. Your investment strategy, business income, and tax return are all coordinated — especially important for Huntington residents juggling commuter income and side businesses.",
+          "Our team includes both CFPs and CPAs working together. Your investment strategy, business income, and tax return are all coordinated, which is especially important for Huntington residents juggling commuter income and side businesses.",
       },
       {
         title: "Fee-only, always",
@@ -847,7 +847,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Huntington Village's Entrepreneurial Spirit",
     insight:
-      "Huntington Village is one of Long Island's most vibrant downtowns — packed with independently owned restaurants, boutiques, and service businesses. That entrepreneurial energy creates a community where established business owners and commuter executives coexist with longtime families approaching retirement. Financial planning here needs to be as dynamic as the village itself — balancing business succession with personal wealth management, and commuter tax complexity with retirement distribution strategy.",
+      "Huntington Village is one of Long Island's most vibrant downtowns, packed with independently owned restaurants, boutiques, and service businesses. That entrepreneurial energy creates a community where established business owners and commuter executives coexist with longtime families approaching retirement. Financial planning here needs to be as dynamic as the village itself, balancing business succession with personal wealth management, and commuter tax complexity with retirement distribution strategy.",
     faqHeading: "Questions From Huntington Clients",
     faqs: [
       {
@@ -858,12 +858,12 @@ export const towns: Town[] = [
       {
         question: "I own a small business in Huntington Village. Can you help with succession planning?",
         answer:
-          "Absolutely. We work with village business owners to create succession plans that include business valuation, buy-sell agreements, retirement funding from business proceeds, and tax-efficient transition strategies — whether you're passing it to family or selling to a third party.",
+          "Absolutely. We work with village business owners to create succession plans that include business valuation, buy-sell agreements, retirement funding from business proceeds, and tax-efficient transition strategies, whether you're passing it to family or selling to a third party.",
       },
       {
         question: "How do you help executives with equity compensation?",
         answer:
-          "We model the tax implications of RSU vesting, stock option exercises, and deferred compensation elections — then coordinate the timing with your overall tax plan. For Huntington commuters with concentrated employer stock positions, we also build systematic diversification strategies to manage risk.",
+          "We model the tax implications of RSU vesting, stock option exercises, and deferred compensation elections, then coordinate the timing with your overall tax plan. For Huntington commuters with concentrated employer stock positions, we also build systematic diversification strategies to manage risk.",
       },
       {
         question: "How far is your office from Huntington?",
@@ -873,7 +873,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our advice is always in your best interest.",
       },
     ],
     areaServed: [
@@ -905,14 +905,14 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Cold Spring Harbor, NY",
     metaDescription:
       "Fee-only financial advisor near Cold Spring Harbor, NY. Equity compensation for biotech executives, estate planning for waterfront properties, and integrated tax strategy. 18 min from Hauppauge.",
-    h1: "Wealth Management for Cold Spring Harbor — Where Scientific Innovation Meets Financial Strategy",
+    h1: "Wealth Management for Cold Spring Harbor: Where Scientific Innovation Meets Financial Strategy",
     heroSubtitle:
-      "United Financial Planning Group serves Cold Spring Harbor Laboratory scientists, biotech executives, and affluent families with equity compensation planning, estate strategy, and integrated tax services — 18 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Cold Spring Harbor Laboratory scientists, biotech executives, and affluent families with equity compensation planning, estate strategy, and integrated tax services, 18 minutes from our Hauppauge office.",
     heroBadge: "18 Min from CSH · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Cold Spring Harbor.",
     valuePropHeading: "Why Cold Spring Harbor Families Choose United",
     valuePropSubheading:
-      "Cold Spring Harbor Laboratory — birthplace of modern DNA research and home to Nobel laureates — defines this community. The biotech ecosystem it has cultivated creates financial planning needs that most advisors aren't equipped to handle.",
+      "Cold Spring Harbor Laboratory (birthplace of modern DNA research and home to Nobel laureates) defines this community. The biotech ecosystem it has cultivated creates financial planning needs that most advisors aren't equipped to handle.",
     valueProps: [
       {
         title: "Equity compensation for biotech and pharma executives",
@@ -932,7 +932,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your equity compensation, royalty income, and estate strategy are all coordinated with your annual tax return — critical when you have multiple complex income streams.",
+          "Our team includes both CFPs and CPAs, so your equity compensation, royalty income, and estate strategy are all coordinated with your annual tax return. That's critical when you have multiple complex income streams.",
       },
       {
         title: "Fee-only, always",
@@ -942,7 +942,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "The Cold Spring Harbor Laboratory Effect",
     insight:
-      "Cold Spring Harbor Laboratory is one of the world's premier research institutions — its contributions to DNA research, cancer biology, and neuroscience have produced multiple Nobel laureates. The laboratory's presence has fostered a community of scientists, biotech executives, and pharmaceutical professionals with highly specialized financial planning needs: equity compensation from pre-revenue startups, royalty income from patents, and the challenge of building wealth outside a single company's stock.",
+      "Cold Spring Harbor Laboratory is one of the world's premier research institutions. Its contributions to DNA research, cancer biology, and neuroscience have produced multiple Nobel laureates. The laboratory's presence has fostered a community of scientists, biotech executives, and pharmaceutical professionals with highly specialized financial planning needs: equity compensation from pre-revenue startups, royalty income from patents, and the challenge of building wealth outside a single company's stock.",
     faqHeading: "Questions From Cold Spring Harbor Clients",
     faqs: [
       {
@@ -968,7 +968,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This ensures our advice is always aligned with your best interest.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This ensures our advice is always aligned with your best interest.",
       },
     ],
     areaServed: [
@@ -1002,7 +1002,7 @@ export const towns: Town[] = [
       "Ultra-high-net-worth wealth management for Lloyd Harbor, NY. Family office services, concentrated stock strategies, and integrated tax planning. CFPs and CPAs under one roof.",
     h1: "Bespoke Wealth Management for Lloyd Harbor's Most Distinguished Families",
     heroSubtitle:
-      "United Financial Planning Group serves one of Long Island's wealthiest communities with family office-level wealth management, estate planning, and integrated tax services — all from our Hauppauge office.",
+      "United Financial Planning Group serves one of Long Island's wealthiest communities with family office-level wealth management, estate planning, and integrated tax services, all from our Hauppauge office.",
     heroBadge: "Serving Lloyd Harbor · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Lloyd Harbor families.",
     valuePropHeading: "Why Lloyd Harbor Families Choose United",
@@ -1012,7 +1012,7 @@ export const towns: Town[] = [
       {
         title: "Ultra-HNW family office services",
         description:
-          "Lloyd Harbor families often need coordination across investments, tax, estate, insurance, and philanthropy that goes beyond traditional advisory. We provide family office-level oversight — managing the full picture so nothing falls through the cracks.",
+          "Lloyd Harbor families often need coordination across investments, tax, estate, insurance, and philanthropy that goes beyond traditional advisory. We provide family office-level oversight, managing the full picture so nothing falls through the cracks.",
       },
       {
         title: "Intergenerational wealth transfer",
@@ -1022,7 +1022,7 @@ export const towns: Town[] = [
       {
         title: "Alternative investment due diligence",
         description:
-          "Many Lloyd Harbor families hold alternative investments — private equity, real estate funds, hedge funds, and venture capital. We evaluate these holdings for fees, liquidity, and fit within your overall allocation to make sure they're earning their place in your portfolio.",
+          "Many Lloyd Harbor families hold alternative investments: private equity, real estate funds, hedge funds, and venture capital. We evaluate these holdings for fees, liquidity, and fit within your overall allocation to make sure they're earning their place in your portfolio.",
       },
       {
         title: "Concentrated stock strategies for finance executives",
@@ -1037,18 +1037,18 @@ export const towns: Town[] = [
     ],
     insightHeading: "Planning for Lloyd Harbor's Exclusive Community",
     insight:
-      "Lloyd Harbor is home to the former Marshall Field estate — now Caumsett State Historic Park — and its legacy of quiet wealth continues today. With a population of roughly 3,500 and a mean household income exceeding $351K, the village draws senior executives, finance professionals, and multigenerational families who value privacy and discretion. Financial planning here often involves coordinating seven-figure investment portfolios, complex estate structures, and alternative holdings that require institutional-grade oversight.",
+      "Lloyd Harbor is home to the former Marshall Field estate (now Caumsett State Historic Park), and its legacy of quiet wealth continues today. With a population of roughly 3,500 and a mean household income exceeding $351K, the village draws senior executives, finance professionals, and multigenerational families who value privacy and discretion. Financial planning here often involves coordinating seven-figure investment portfolios, complex estate structures, and alternative holdings that require institutional-grade oversight.",
     faqHeading: "Questions From Lloyd Harbor Clients",
     faqs: [
       {
         question: "What does family office-level service include?",
         answer:
-          "It means coordinating every dimension of your financial life — investments, tax planning, estate strategy, insurance review, charitable giving, and alternative investments — through a single team. We quarterback the relationship across your attorneys, CPAs (or our in-house team), and other professionals.",
+          "It means coordinating every dimension of your financial life (investments, tax planning, estate strategy, insurance review, charitable giving, and alternative investments) through a single team. We quarterback the relationship across your attorneys, CPAs (or our in-house team), and other professionals.",
       },
       {
         question: "Can you help with concentrated stock positions from my employer?",
         answer:
-          "Yes. We build multi-year diversification strategies that reduce concentration risk using tax-efficient methods — including systematic selling, charitable remainder trusts, exchange funds, and coordinated tax-loss harvesting. Every move is timed with your annual tax plan.",
+          "Yes. We build multi-year diversification strategies that reduce concentration risk using tax-efficient methods, including systematic selling, charitable remainder trusts, exchange funds, and coordinated tax-loss harvesting. Every move is timed with your annual tax plan.",
       },
       {
         question: "How do you handle art and collectibles in estate planning?",
@@ -1063,7 +1063,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. For ultra-HNW families, this is especially important because it removes the incentive to recommend products that pay commissions.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. For ultra-HNW families, this is especially important because it removes the incentive to recommend products that pay commissions.",
       },
     ],
     areaServed: [
@@ -1097,7 +1097,7 @@ export const towns: Town[] = [
       "Fee-only financial advisor near Northport, NY. Retirement planning, home equity strategies, and small business planning for harbor village families. 15 min from our Hauppauge office.",
     h1: "Financial Planning Rooted in Northport's Harbor Village Community",
     heroSubtitle:
-      "United Financial Planning Group serves Northport's village families, retirees with significant home equity, and maritime small business owners with integrated financial planning, tax preparation, and investment management — 15 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Northport's village families, retirees with significant home equity, and maritime small business owners with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Northport · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Northport community.",
     valuePropHeading: "Why Northport Families Choose United",
@@ -1107,7 +1107,7 @@ export const towns: Town[] = [
       {
         title: "Retirement planning for homeowners with significant equity",
         description:
-          "Many Northport residents bought their homes decades ago and are now sitting on $300K–$600K in equity. We help you figure out how to turn that equity into retirement income — whether through downsizing, a reverse mortgage analysis, or incorporating it into your broader withdrawal strategy.",
+          "Many Northport residents bought their homes decades ago and are now sitting on $300K–$600K in equity. We help you figure out how to turn that equity into retirement income, whether through downsizing, a reverse mortgage analysis, or incorporating it into your broader withdrawal strategy.",
       },
       {
         title: "Downsizing strategies for empty nesters",
@@ -1132,13 +1132,13 @@ export const towns: Town[] = [
     ],
     insightHeading: "Northport's Home Equity Opportunity",
     insight:
-      "Northport has a unique mix of modest cottages and larger waterfront homes — but even the cottages have appreciated dramatically over the past two decades. Long-time homeowners are often sitting on more equity than they realize, and that equity represents an untapped planning opportunity. Whether you're considering downsizing to free up cash, using a HELOC strategically, or simply factoring your home into your retirement income plan, coordinating that decision with your tax situation and investment portfolio is essential.",
+      "Northport has a unique mix of modest cottages and larger waterfront homes, but even the cottages have appreciated dramatically over the past two decades. Long-time homeowners are often sitting on more equity than they realize, and that equity represents an untapped planning opportunity. Whether you're considering downsizing to free up cash, using a HELOC strategically, or simply factoring your home into your retirement income plan, coordinating that decision with your tax situation and investment portfolio is essential.",
     faqHeading: "Questions From Northport Clients",
     faqs: [
       {
         question: "How do I know if I should downsize or stay in my Northport home?",
         answer:
-          "We model both scenarios — factoring in your mortgage balance, property taxes, capital gains exclusion, cost of a new home, and the investment returns on freed-up equity. The right answer depends on your retirement income needs, healthcare costs, and personal preferences.",
+          "We model both scenarios, factoring in your mortgage balance, property taxes, capital gains exclusion, cost of a new home, and the investment returns on freed-up equity. The right answer depends on your retirement income needs, healthcare costs, and personal preferences.",
       },
       {
         question: "I own a seasonal business in Northport. Can you help with retirement planning?",
@@ -1148,7 +1148,7 @@ export const towns: Town[] = [
       {
         question: "Can you help me figure out what my home equity means for retirement?",
         answer:
-          "Absolutely. We treat your home equity as part of your overall retirement picture — modeling what happens if you sell, rent, downsize, or stay. The goal is to make sure your largest asset is working for you, not just sitting idle.",
+          "Absolutely. We treat your home equity as part of your overall retirement picture, modeling what happens if you sell, rent, downsize, or stay. The goal is to make sure your largest asset is working for you, not just sitting idle.",
       },
       {
         question: "How far is your office from Northport?",
@@ -1158,7 +1158,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -1192,12 +1192,12 @@ export const towns: Town[] = [
       "Fee-only financial advisor near Port Jefferson, NY. Planning for healthcare professionals at Mather Hospital, cross-state planning for CT ferry commuters. 20 min from our Hauppauge office.",
     h1: "Smart Financial Planning for Port Jefferson's Healthcare & Maritime Community",
     heroSubtitle:
-      "United Financial Planning Group serves Port Jefferson's Mather Hospital professionals, CT ferry commuters, and village merchants with integrated financial planning, tax preparation, and investment management — 20 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Port Jefferson's Mather Hospital professionals, CT ferry commuters, and village merchants with integrated financial planning, tax preparation, and investment management, 20 minutes from our Hauppauge office.",
     heroBadge: "20 Min from Port Jeff · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving Port Jefferson.",
     valuePropHeading: "Why Port Jefferson Residents Choose United",
     valuePropSubheading:
-      "Port Jefferson sits at the end of the LIRR Port Jeff Branch and the Bridgeport & Port Jefferson ferry route — creating a unique community of healthcare professionals, cross-state commuters, and village entrepreneurs with distinct financial planning needs.",
+      "Port Jefferson sits at the end of the LIRR Port Jeff Branch and the Bridgeport & Port Jefferson ferry route, creating a unique community of healthcare professionals, cross-state commuters, and village entrepreneurs with distinct financial planning needs.",
     valueProps: [
       {
         title: "Cross-state planning for CT ferry commuters",
@@ -1212,12 +1212,12 @@ export const towns: Town[] = [
       {
         title: "Small business owner planning for village merchants",
         description:
-          "Port Jefferson Village's thriving waterfront economy includes restaurants, galleries, and specialty retail. We help business owners with tax-efficient entity structuring, retirement plan selection, and succession planning — coordinating business income with personal wealth strategy.",
+          "Port Jefferson Village's thriving waterfront economy includes restaurants, galleries, and specialty retail. We help business owners with tax-efficient entity structuring, retirement plan selection, and succession planning, coordinating business income with personal wealth strategy.",
       },
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your hospital retirement plan, cross-state income, and personal investments are all coordinated with your tax return — especially important when multiple state filings are involved.",
+          "Our team includes both CFPs and CPAs. Your hospital retirement plan, cross-state income, and personal investments are all coordinated with your tax return. That's especially important when multiple state filings are involved.",
       },
       {
         title: "Fee-only, always",
@@ -1243,7 +1243,7 @@ export const towns: Town[] = [
       {
         question: "I own a business in Port Jefferson Village. Can you help with retirement planning?",
         answer:
-          "Absolutely. We help village business owners select the right retirement plan — SEP-IRA, solo 401(k), or defined benefit — based on your income, employees, and tax situation. We also coordinate business succession planning with your personal retirement income strategy.",
+          "Absolutely. We help village business owners select the right retirement plan (SEP-IRA, solo 401(k), or defined benefit) based on your income, employees, and tax situation. We also coordinate business succession planning with your personal retirement income strategy.",
       },
       {
         question: "How far is your office from Port Jefferson?",
@@ -1253,7 +1253,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -1285,9 +1285,9 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor near Centerport, NY",
     metaDescription:
       "Fee-only financial advisor near Centerport, NY. Retirement planning, waterfront property estate strategies, and integrated tax planning for Harborfields families. 15 min from Hauppauge.",
-    h1: "Financial Planning for Centerport — From Harborfields Families to Harbor Retirees",
+    h1: "Financial Planning for Centerport: From Harborfields Families to Harbor Retirees",
     heroSubtitle:
-      "United Financial Planning Group serves Centerport's Harborfields School District families, waterfront homeowners, and retirees with integrated financial planning, tax preparation, and investment management — 15 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves Centerport's Harborfields School District families, waterfront homeowners, and retirees with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Centerport · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Centerport community.",
     valuePropHeading: "Why Centerport Families Choose United",
@@ -1297,7 +1297,7 @@ export const towns: Town[] = [
       {
         title: "Retirement planning for long-term homeowners",
         description:
-          "Many Centerport residents have lived in their homes for 20–30+ years and have built substantial equity. We help you plan around that asset — modeling retirement income scenarios that incorporate your home value, Social Security timing, and investment withdrawals.",
+          "Many Centerport residents have lived in their homes for 20–30+ years and have built substantial equity. We help you plan around that asset, modeling retirement income scenarios that incorporate your home value, Social Security timing, and investment withdrawals.",
       },
       {
         title: "Downsizing vs. aging in place analysis",
@@ -1307,12 +1307,12 @@ export const towns: Town[] = [
       {
         title: "Waterfront property estate planning",
         description:
-          "Centerport's harbor-front homes carry unique estate planning challenges — from flood insurance costs to environmental easements. We work with your estate attorney to structure ownership and succession plans that account for these property-specific factors.",
+          "Centerport's harbor-front homes carry unique estate planning challenges, from flood insurance costs to environmental easements. We work with your estate attorney to structure ownership and succession plans that account for these property-specific factors.",
       },
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your retirement distributions, property decisions, and investment strategy are all coordinated with your tax return — no more managing separate professionals.",
+          "Our team includes both CFPs and CPAs. Your retirement distributions, property decisions, and investment strategy are all coordinated with your tax return, so you're not managing separate professionals.",
       },
       {
         title: "Fee-only, always",
@@ -1322,13 +1322,13 @@ export const towns: Town[] = [
     ],
     insightHeading: "Centerport's Diverse Housing Landscape",
     insight:
-      "Centerport is anchored by the Vanderbilt Museum and Planetarium and served by the highly regarded Harborfields School District — two facts that keep property values strong across the community. But what makes Centerport interesting from a planning perspective is its housing diversity: a well-maintained home a few blocks from the harbor might be worth $650K while a waterfront estate down the road lists for $2M+. Whether you're a longtime homeowner preparing for retirement or a high-net-worth family planning intergenerational wealth transfer, the planning challenges here reward an advisor who understands the North Shore's distinct real estate and tax landscape.",
+      "Centerport is anchored by the Vanderbilt Museum and Planetarium and served by the highly regarded Harborfields School District, two facts that keep property values strong across the community. But what makes Centerport interesting from a planning perspective is its housing diversity: a well-maintained home a few blocks from the harbor might be worth $650K while a waterfront estate down the road lists for $2M+. Whether you're a longtime homeowner preparing for retirement or a high-net-worth family planning intergenerational wealth transfer, the planning challenges here reward an advisor who understands the North Shore's distinct real estate and tax landscape.",
     faqHeading: "Questions From Centerport Clients",
     faqs: [
       {
         question: "I've lived in my Centerport home for 25 years. How do I plan around my home equity?",
         answer:
-          "We treat your home equity as part of your total retirement picture. We model scenarios — selling, downsizing, renting out, or staying — and show how each option affects your retirement income, tax bracket, and long-term financial security.",
+          "We treat your home equity as part of your total retirement picture. We model scenarios (selling, downsizing, renting out, or staying) and show how each option affects your retirement income, tax bracket, and long-term financial security.",
       },
       {
         question: "Should I downsize or age in place?",
@@ -1338,7 +1338,7 @@ export const towns: Town[] = [
       {
         question: "Can you help with estate planning for a waterfront property?",
         answer:
-          "Yes. Waterfront homes in Centerport come with specific considerations — flood zone designations, insurance costs, and environmental factors. We coordinate with your estate attorney to structure ownership and succession plans that address these unique elements.",
+          "Yes. Waterfront homes in Centerport come with specific considerations: flood zone designations, insurance costs, and environmental factors. We coordinate with your estate attorney to structure ownership and succession plans that address these unique elements.",
       },
       {
         question: "How far is your office from Centerport?",
@@ -1348,7 +1348,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -1380,19 +1380,19 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor near St. James, NY",
     metaDescription:
       "Fee-only financial advisor near St. James, NY. Small business planning, retirement strategies, and integrated tax services. CFPs and CPAs, 10 min from our Hauppauge office.",
-    h1: "Financial Planning for St. James — Where Artisan Character Meets Thoughtful Wealth Building",
+    h1: "Financial Planning for St. James: Where Artisan Character Meets Thoughtful Wealth Building",
     heroSubtitle:
-      "United Financial Planning Group serves St. James artisan business owners, families in the Smithtown School District, and late-career professionals with integrated financial planning, tax preparation, and investment management — just 10 minutes from our Hauppauge office.",
+      "United Financial Planning Group serves St. James artisan business owners, families in the Smithtown School District, and late-career professionals with integrated financial planning, tax preparation, and investment management, just 10 minutes from our Hauppauge office.",
     heroBadge: "10 Min from St. James · Hauppauge Office",
     heroLabel: "CFPs, CPAs, and Enrolled Agents serving St. James.",
     valuePropHeading: "Why St. James Residents Choose United",
     valuePropSubheading:
-      "St. James is home to the oldest continuously operating general store in the United States — and that artisan, small-town character carries through the entire community. Financial planning here reflects that independence: practical, grounded, and built for the long haul.",
+      "St. James is home to the oldest continuously operating general store in the United States, and that artisan, small-town character carries through the entire community. Financial planning here reflects that independence: practical, grounded, and built for the long haul.",
     valueProps: [
       {
         title: "Small business and artisan business planning",
         description:
-          "St. James has a strong tradition of independent businesses — from specialty shops to craft producers. We help small business owners set up retirement plans, manage cash flow, plan for succession, and separate personal finances from business finances in a tax-efficient way.",
+          "St. James has a strong tradition of independent businesses, from specialty shops to craft producers. We help small business owners set up retirement plans, manage cash flow, plan for succession, and separate personal finances from business finances in a tax-efficient way.",
       },
       {
         title: "Retirement strategies for late-career professionals",
@@ -1402,12 +1402,12 @@ export const towns: Town[] = [
       {
         title: "Home equity optimization",
         description:
-          "With home values ranging from $550K to $900K, St. James homeowners carry meaningful equity. We help you decide how to use that asset — whether it's downsizing to fund retirement, leveraging equity for a rental property, or simply making sure it's factored into your overall financial plan.",
+          "With home values ranging from $550K to $900K, St. James homeowners carry meaningful equity. We help you decide how to use that asset, whether it's downsizing to fund retirement, leveraging equity for a rental property, or simply making sure it's factored into your overall financial plan.",
       },
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your small business income, retirement contributions, and personal investments are all coordinated with your tax return — important when you're juggling W-2 and 1099 income.",
+          "Our team includes both CFPs and CPAs. Your small business income, retirement contributions, and personal investments are all coordinated with your tax return. That's important when you're juggling W-2 and 1099 income.",
       },
       {
         title: "Fee-only, always",
@@ -1417,7 +1417,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "St. James: Small-Town Character, Real Planning Needs",
     insight:
-      "St. James is defined by its artisan character — the St. James General Store has operated continuously since 1857, and Deepwells Farm hosts community events that draw families from across the North Shore. The Smithtown Central School District serves the area, and the LIRR station on the Port Jeff Branch gives residents a direct Manhattan connection. Underneath that small-town charm are real financial planning needs: business owners without retirement plans, late-career professionals with catching up to do, and homeowners sitting on equity they haven't incorporated into a strategy.",
+      "St. James is defined by its artisan character: the St. James General Store has operated continuously since 1857, and Deepwells Farm hosts community events that draw families from across the North Shore. The Smithtown Central School District serves the area, and the LIRR station on the Port Jeff Branch gives residents a direct Manhattan connection. Underneath that small-town charm are real financial planning needs: business owners without retirement plans, late-career professionals with catching up to do, and homeowners sitting on equity they haven't incorporated into a strategy.",
     faqHeading: "Questions From St. James Clients",
     faqs: [
       {
@@ -1428,7 +1428,7 @@ export const towns: Town[] = [
       {
         question: "I'm 55 and feel behind on retirement savings. Can you help me catch up?",
         answer:
-          "Yes. Late-career catch-up strategies can be surprisingly powerful — maximizing catch-up contributions, optimizing Social Security timing, and restructuring your investment allocation for the decade ahead can make a meaningful difference. The key is building a plan now rather than waiting.",
+          "Yes. Late-career catch-up strategies can be surprisingly powerful. Maximizing catch-up contributions, optimizing Social Security timing, and restructuring your investment allocation for the decade ahead can make a meaningful difference. The key is building a plan now rather than waiting.",
       },
       {
         question: "How do I factor my home equity into my retirement plan?",
@@ -1443,7 +1443,7 @@ export const towns: Town[] = [
       {
         question: "What does fee-only mean?",
         answer:
-          "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales.",
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales.",
       },
     ],
     areaServed: [
@@ -1460,7 +1460,7 @@ export const towns: Town[] = [
       "Investment Management",
     ],
   },
-  // ─── HAMPTONS — HAUPPAUGE OFFICE (EXTENDED RADIUS) ───
+  // ─── HAMPTONS - HAUPPAUGE OFFICE (EXTENDED RADIUS) ───
   {
     slug: "southampton-ny",
     name: "Southampton",
@@ -1474,13 +1474,13 @@ export const towns: Town[] = [
     medianIncome: "$150K+",
     avgHomeValue: "$2M–$10M+",
     seoTitle: "Financial Advisor for Southampton, NY",
-    metaDescription: "Hamptons wealth management for Southampton residents — multi-state residency planning, seasonal property strategies, and estate planning from a fee-only fiduciary advisor.",
+    metaDescription: "Hamptons wealth management for Southampton residents: multi-state residency planning, seasonal property strategies, and estate planning from a fee-only fiduciary advisor.",
     h1: "Sophisticated Financial Planning for Southampton's Year-Round and Seasonal Residents",
-    heroSubtitle: "Southampton's population swells from 60,000 to over 300,000 each summer — and so does the complexity of managing wealth across multiple residences, states, and tax jurisdictions. Our fee-only fiduciary team helps you navigate it all.",
+    heroSubtitle: "Southampton's population swells from 60,000 to over 300,000 each summer, and so does the complexity of managing wealth across multiple residences, states, and tax jurisdictions. Our fee-only fiduciary team helps you navigate it all.",
     heroBadge: "Serving Southampton & the Western Hamptons",
     heroLabel: "55 min from our Hauppauge office",
     valuePropHeading: "Why Southampton Residents Choose United Financial Planning Group",
-    valuePropSubheading: "From Coopers Beach to Water Mill, we understand the unique financial landscape of Southampton — where seasonal living creates year-round planning challenges.",
+    valuePropSubheading: "From Coopers Beach to Water Mill, we understand the unique financial landscape of Southampton, where seasonal living creates year-round planning challenges.",
     valueProps: [
       {
         title: "Multi-State Residency & Domicile Planning",
@@ -1488,23 +1488,23 @@ export const towns: Town[] = [
       },
       {
         title: "Seasonal Property Tax Strategies",
-        description: "Owning property in Southampton comes with significant tax implications — from STAR exemptions to capital gains on appreciation. We develop strategies that account for seasonal use, rental income, and the interplay between primary and secondary residence classifications."
+        description: "Owning property in Southampton comes with significant tax implications, from STAR exemptions to capital gains on appreciation. We develop strategies that account for seasonal use, rental income, and the interplay between primary and secondary residence classifications."
       },
       {
         title: "Art Collection & Estate Planning",
-        description: "Southampton is home to the Parrish Art Museum and a thriving collector community. We coordinate with appraisers and estate attorneys to plan for art collections — addressing valuation, charitable donation strategies, and transfer tax implications for high-value holdings."
+        description: "Southampton is home to the Parrish Art Museum and a thriving collector community. We coordinate with appraisers and estate attorneys to plan for art collections, addressing valuation, charitable donation strategies, and transfer tax implications for high-value holdings."
       },
       {
         title: "Trust Structures for Vacation Property Succession",
-        description: "Passing a cherished Southampton estate to the next generation requires careful trust planning. We help families create structures — such as QPRTs and family LLCs — that preserve the property, reduce transfer taxes, and prevent disputes among heirs."
+        description: "Passing a cherished Southampton estate to the next generation requires careful trust planning. We help families create structures (such as QPRTs and family LLCs) that preserve the property, reduce transfer taxes, and prevent disputes among heirs."
       },
       {
-        title: "Fee-Only, Fiduciary — Always",
-        description: "We don't earn commissions or sell products. As fee-only fiduciaries, our advice is built entirely around your interests — whether you're here year-round or only for the season."
+        title: "Fee-Only, Fiduciary - Always",
+        description: "We don't earn commissions or sell products. As fee-only fiduciaries, our advice is built entirely around your interests, whether you're here year-round or only for the season."
       }
     ],
     insightHeading: "The Dual-Residence Tax Trap That Catches Southampton Homeowners",
-    insight: "If you own homes in both Southampton and another state, your domicile decision has enormous tax consequences. New York aggressively audits high-income residents who claim domicile elsewhere, and the 183-day rule is only the starting point — auditors examine where your doctors, dentists, and dogs are located. We help Southampton clients make informed NY vs. FL vs. CT domicile decisions, maintain contemporaneous documentation, and build an audit-defense file that holds up under scrutiny. The difference between getting this right and getting it wrong can be hundreds of thousands of dollars in state income tax.",
+    insight: "If you own homes in both Southampton and another state, your domicile decision has enormous tax consequences. New York aggressively audits high-income residents who claim domicile elsewhere, and the 183-day rule is only the starting point. Auditors examine where your doctors, dentists, and dogs are located. We help Southampton clients make informed NY vs. FL vs. CT domicile decisions, maintain contemporaneous documentation, and build an audit-defense file that holds up under scrutiny. The difference between getting this right and getting it wrong can be hundreds of thousands of dollars in state income tax.",
     faqs: [
       {
         question: "How does seasonal residency in Southampton affect my state taxes?",
@@ -1512,11 +1512,11 @@ export const towns: Town[] = [
       },
       {
         question: "Can you help with financial planning for my art collection?",
-        answer: "Absolutely. Art collections in the Hamptons often represent a significant portion of a family's net worth. We coordinate with qualified appraisers and estate attorneys to address valuation for estate tax purposes, evaluate charitable donation strategies such as gifts to museums, and plan for the orderly transfer or sale of collections — ensuring your art enhances rather than complicates your financial plan."
+        answer: "Absolutely. Art collections in the Hamptons often represent a significant portion of a family's net worth. We coordinate with qualified appraisers and estate attorneys to address valuation for estate tax purposes, evaluate charitable donation strategies such as gifts to museums, and plan for the orderly transfer or sale of collections, ensuring your art enhances rather than complicates your financial plan."
       },
       {
         question: "What's the best way to pass our Southampton vacation property to our children?",
-        answer: "There are several approaches depending on your goals and tax situation. A Qualified Personal Residence Trust (QPRT) can transfer the property at a reduced gift tax value, while a family LLC provides flexibility for shared use and management. We analyze the trade-offs of each structure — including income tax basis considerations — and recommend the approach that best fits your family's dynamics and financial picture."
+        answer: "There are several approaches depending on your goals and tax situation. A Qualified Personal Residence Trust (QPRT) can transfer the property at a reduced gift tax value, while a family LLC provides flexibility for shared use and management. We analyze the trade-offs of each structure (including income tax basis considerations) and recommend the approach that best fits your family's dynamics and financial picture."
       },
       {
         question: "Who are your typical clients in the Southampton area?",
@@ -1524,7 +1524,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does it mean that you're a fee-only financial advisor?",
-        answer: "Fee-only means we are compensated solely by our clients — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that plague commission-based advisors and ensures that every recommendation we make is driven by what's best for you, not by what generates revenue for us."
+        answer: "Fee-only means we are compensated solely by our clients, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that plague commission-based advisors and ensures that every recommendation we make is driven by what's best for you, not by what generates revenue for us."
       }
     ],
     faqHeading: "Common Questions from Southampton Residents",
@@ -1555,17 +1555,17 @@ export const towns: Town[] = [
     medianIncome: "$140K+",
     avgHomeValue: "$2.5M–$15M+",
     seoTitle: "Financial Advisor for East Hampton, NY",
-    metaDescription: "Private wealth management for East Hampton families — discretion-first financial planning, entertainment income strategies, and estate tax mitigation from a fee-only fiduciary advisor.",
+    metaDescription: "Private wealth management for East Hampton families: discretion-first financial planning, entertainment income strategies, and estate tax mitigation from a fee-only fiduciary advisor.",
     h1: "Discreet Wealth Management for East Hampton's Most Private Families",
-    heroSubtitle: "East Hampton is one of the most recognizable — and most expensive — addresses in America. The families who call it home expect a level of discretion, sophistication, and personalized attention that most advisory firms simply cannot provide. We can.",
+    heroSubtitle: "East Hampton is one of the most recognizable (and most expensive) addresses in America. The families who call it home expect a level of discretion, sophistication, and personalized attention that most advisory firms simply cannot provide. We can.",
     heroBadge: "Serving East Hampton & the Eastern Hamptons",
     heroLabel: "65 min from our Hauppauge office",
     valuePropHeading: "Why East Hampton Families Trust United Financial Planning Group",
-    valuePropSubheading: "From the celebrity estates along Further Lane to the creative community around Guild Hall, our clients value one thing above all else — an advisor who protects both their wealth and their privacy.",
+    valuePropSubheading: "From the celebrity estates along Further Lane to the creative community around Guild Hall, our clients value one thing above all else: an advisor who protects both their wealth and their privacy.",
     valueProps: [
       {
         title: "Privacy-Focused Wealth Management",
-        description: "East Hampton clients often have public profiles and private financial lives. We operate with strict confidentiality protocols, limit information sharing to need-to-know professionals, and structure financial plans to minimize public disclosure — because in East Hampton, discretion isn't a luxury, it's a requirement."
+        description: "East Hampton clients often have public profiles and private financial lives. We operate with strict confidentiality protocols, limit information sharing to need-to-know professionals, and structure financial plans to minimize public disclosure. In East Hampton,, discretion isn't a luxury, it's a requirement."
       },
       {
         title: "Media & Entertainment Income Planning",
@@ -1577,35 +1577,35 @@ export const towns: Town[] = [
       },
       {
         title: "Life Insurance for Estate Tax Mitigation",
-        description: "With East Hampton property values routinely exceeding $10M, estate tax exposure is a real concern. We evaluate irrevocable life insurance trusts (ILITs) and second-to-die policies as tools to provide liquidity for estate tax obligations — ensuring heirs don't need to sell the family compound to settle a tax bill."
+        description: "With East Hampton property values routinely exceeding $10M, estate tax exposure is a real concern. We evaluate irrevocable life insurance trusts (ILITs) and second-to-die policies as tools to provide liquidity for estate tax obligations, ensuring heirs don't need to sell the family compound to settle a tax bill."
       },
       {
-        title: "Fee-Only, Fiduciary — Always",
+        title: "Fee-Only, Fiduciary - Always",
         description: "In a town where everyone has an angle, we don't. No commissions, no product sales, no hidden incentives. Our fee-only structure means our only obligation is to you."
       }
     ],
     insightHeading: "Why East Hampton Requires a Different Kind of Advisor",
-    insight: "The concentration of wealth in East Hampton is extraordinary — but so is the concentration of financial risk. Clients here often have complex income from entertainment, finance, or entrepreneurial ventures that doesn't arrive in predictable paychecks. They face intense media scrutiny that makes financial privacy essential. Their estate plans must account for properties worth tens of millions, art collections, and family dynamics that span coasts. A cookie-cutter financial plan doesn't work here. We build bespoke strategies that reflect the reality of how wealth is earned, protected, and transferred in East Hampton — with the discretion that our clients' lives demand.",
+    insight: "The concentration of wealth in East Hampton is extraordinary, but so is the concentration of financial risk. Clients here often have complex income from entertainment, finance, or entrepreneurial ventures that doesn't arrive in predictable paychecks. They face intense media scrutiny that makes financial privacy essential. Their estate plans must account for properties worth tens of millions, art collections, and family dynamics that span coasts. A cookie-cutter financial plan doesn't work here. We build bespoke strategies that reflect the reality of how wealth is earned, protected, and transferred in East Hampton, with the discretion that our clients' lives demand.",
     faqs: [
       {
         question: "How do you handle privacy and discretion for high-profile clients?",
-        answer: "Confidentiality is foundational to how we operate. We use secure communication channels, limit information sharing to essential professional partners, and never discuss client relationships publicly. Our office procedures are designed so that client identities and financial details remain strictly protected — because many of our East Hampton clients have public careers that make financial privacy genuinely critical."
+        answer: "Confidentiality is foundational to how we operate. We use secure communication channels, limit information sharing to essential professional partners, and never discuss client relationships publicly. Our office procedures are designed so that client identities and financial details remain strictly protected, because many of our East Hampton clients have public careers that make financial privacy genuinely critical."
       },
       {
         question: "Can you help with financial planning for entertainment industry income?",
-        answer: "Yes — we have experience working with the variable and complex income structures common in media and entertainment. This includes planning around residuals, backend participation, production company revenue, and intellectual property licensing. We coordinate with entertainment attorneys and industry-specialized CPAs to build cash flow projections, manage tax obligations across jurisdictions, and plan for the inherent income volatility of creative careers."
+        answer: "Yes. We have experience working with the variable and complex income structures common in media and entertainment. This includes planning around residuals, backend participation, production company revenue, and intellectual property licensing. We coordinate with entertainment attorneys and industry-specialized CPAs to build cash flow projections, manage tax obligations across jurisdictions, and plan for the inherent income volatility of creative careers."
       },
       {
         question: "What are Alternative Minimum Tax strategies for high earners?",
-        answer: "The AMT is a parallel tax system that eliminates many deductions available under the regular tax code. For East Hampton residents with large ISO exercises, significant SALT deductions, or private activity bond income, AMT exposure can be substantial. We model your tax position under both systems, then time income recognition events — such as stock option exercises and asset sales — to minimize the cumulative AMT impact across multiple tax years."
+        answer: "The AMT is a parallel tax system that eliminates many deductions available under the regular tax code. For East Hampton residents with large ISO exercises, significant SALT deductions, or private activity bond income, AMT exposure can be substantial. We model your tax position under both systems, then time income recognition events (such as stock option exercises and asset sales) to minimize the cumulative AMT impact across multiple tax years."
       },
       {
         question: "How can life insurance help with estate taxes on expensive property?",
-        answer: "When an estate includes East Hampton real estate worth $10M or more, the federal estate tax bill can exceed 40% of the value above the exemption. An irrevocable life insurance trust (ILIT) holding a properly structured policy can provide the liquidity needed to pay that tax — preventing a forced sale of the property. We evaluate whether this strategy fits your overall estate plan and coordinate with estate attorneys on trust design."
+        answer: "When an estate includes East Hampton real estate worth $10M or more, the federal estate tax bill can exceed 40% of the value above the exemption. An irrevocable life insurance trust (ILIT) holding a properly structured policy can provide the liquidity needed to pay that tax, preventing a forced sale of the property. We evaluate whether this strategy fits your overall estate plan and coordinate with estate attorneys on trust design."
       },
       {
         question: "What does fee-only mean and why does it matter?",
-        answer: "Fee-only means we receive compensation exclusively from our clients — never from product manufacturers, insurance companies, or brokerage firms. This matters because it removes the incentive to recommend products that pay commissions. In East Hampton, where the financial stakes are exceptionally high, knowing your advisor isn't compensated by product sales isn't just nice to have — it's essential."
+        answer: "Fee-only means we receive compensation exclusively from our clients, never from product manufacturers, insurance companies, or brokerage firms. This matters because it removes the incentive to recommend products that pay commissions. In East Hampton, where the financial stakes are exceptionally high, knowing your advisor isn't compensated by product sales isn't just nice to have; it's essential."
       }
     ],
     faqHeading: "Common Questions from East Hampton Residents",
@@ -1636,41 +1636,41 @@ export const towns: Town[] = [
     medianIncome: "$110K+",
     avgHomeValue: "$800K–$3M",
     seoTitle: "Financial Advisor in Westhampton, NY",
-    metaDescription: "Gateway to the Hamptons financial planning — year-round vs. seasonal residency tax optimization, property investment strategies, and retirement planning from a fee-only fiduciary advisor.",
-    h1: "Financial Planning at the Gateway to the Hamptons — Year-Round Wealth Strategies",
-    heroSubtitle: "Westhampton sits at the threshold of the Hamptons — where year-round families build lasting wealth and seasonal buyers make their first significant East End investment. Whether you're putting down permanent roots or testing the waters, the financial decisions you make here set the trajectory for everything that follows.",
+    metaDescription: "Gateway to the Hamptons financial planning: year-round vs. seasonal residency tax optimization, property investment strategies, and retirement planning from a fee-only fiduciary advisor.",
+    h1: "Financial Planning at the Gateway to the Hamptons: Year-Round Wealth Strategies",
+    heroSubtitle: "Westhampton sits at the threshold of the Hamptons, where year-round families build lasting wealth and seasonal buyers make their first significant East End investment. Whether you're putting down permanent roots or testing the waters, the financial decisions you make here set the trajectory for everything that follows.",
     heroBadge: "Serving Westhampton, Westhampton Beach & Quogue",
     heroLabel: "40 min from our Hauppauge office",
     valuePropHeading: "Why Westhampton Residents Choose United Financial Planning Group",
-    valuePropSubheading: "From the Westhampton Beach Performing Arts Center to the private aviation hub at Gabreski Airport, Westhampton blends Hamptons prestige with a genuine year-round community — and your financial plan should reflect that balance.",
+    valuePropSubheading: "From the Westhampton Beach Performing Arts Center to the private aviation hub at Gabreski Airport, Westhampton blends Hamptons prestige with a genuine year-round community, and your financial plan should reflect that balance.",
     valueProps: [
       {
         title: "Strategic Hamptons Property Investment Planning",
-        description: "Westhampton is often the first Hamptons community where buyers invest — and getting the financial structure right from the start matters enormously. We analyze purchase financing, rental income potential, property tax implications, and long-term appreciation scenarios to ensure your East End real estate investment strengthens your overall financial position."
+        description: "Westhampton is often the first Hamptons community where buyers invest, and getting the financial structure right from the start matters enormously. We analyze purchase financing, rental income potential, property tax implications, and long-term appreciation scenarios to ensure your East End real estate investment strengthens your overall financial position."
       },
       {
         title: "Private Aviation Cost Planning",
-        description: "With Gabreski Airport serving as a hub for private flights to and from Manhattan, aviation costs can quietly become one of the largest line items in a Westhampton family's budget. We incorporate fractional ownership, jet card programs, and charter costs into your comprehensive financial plan — and evaluate whether the tax deductibility of business-use aviation is properly structured."
+        description: "With Gabreski Airport serving as a hub for private flights to and from Manhattan, aviation costs can quietly become one of the largest line items in a Westhampton family's budget. We incorporate fractional ownership, jet card programs, and charter costs into your comprehensive financial plan, and evaluate whether the tax deductibility of business-use aviation is properly structured."
       },
       {
         title: "Year-Round vs. Seasonal Residency Tax Optimization",
-        description: "The tax consequences of how you classify your Westhampton home — primary residence, secondary residence, or rental property — ripple across your income taxes, property taxes, and eventual capital gains. We model each scenario and help you make the classification decision that aligns with both your lifestyle and your long-term financial goals."
+        description: "The tax consequences of how you classify your Westhampton home (primary residence, secondary residence, or rental property) ripple across your income taxes, property taxes, and eventual capital gains. We model each scenario and help you make the classification decision that aligns with both your lifestyle and your long-term financial goals."
       },
       {
         title: "Retirement Property Planning",
-        description: "Many Westhampton clients plan to convert their seasonal home into a full-time retirement residence. That transition involves reclassifying the property, adjusting your tax domicile, restructuring income sources for retirement cash flow, and updating your estate plan. We build a roadmap that makes the shift seamless — financially and personally."
+        description: "Many Westhampton clients plan to convert their seasonal home into a full-time retirement residence. That transition involves reclassifying the property, adjusting your tax domicile, restructuring income sources for retirement cash flow, and updating your estate plan. We build a roadmap that makes the shift seamless, financially and personally."
       },
       {
-        title: "Fee-Only, Fiduciary — Always",
-        description: "We earn our compensation directly from our clients and never accept commissions or referral fees. That means when we recommend a strategy for your Westhampton property or investment portfolio, it's because it's right for you — not because it pays us more."
+        title: "Fee-Only, Fiduciary - Always",
+        description: "We earn our compensation directly from our clients and never accept commissions or referral fees. That means when we recommend a strategy for your Westhampton property or investment portfolio, it's because it's right for you, not because it pays us more."
       }
     ],
     insightHeading: "The Financial Inflection Point of Buying in Westhampton",
-    insight: "Westhampton is where many families make their first significant Hamptons real estate investment — and the financial decisions surrounding that purchase are more consequential than most buyers realize. How you title the property, whether you structure it as a primary or secondary residence, how you handle rental income during the weeks you're not there, and what entity (if any) holds the deed all have cascading effects on your taxes, your liability exposure, and your estate plan. We've seen clients save — or lose — tens of thousands of dollars based solely on how these structural decisions were made at the point of purchase. Getting it right from day one is the single most valuable thing a financial advisor can do for a new Westhampton homeowner.",
+    insight: "Westhampton is where many families make their first significant Hamptons real estate investment, and the financial decisions surrounding that purchase are more consequential than most buyers realize. How you title the property, whether you structure it as a primary or secondary residence, how you handle rental income during the weeks you're not there, and what entity (if any) holds the deed all have cascading effects on your taxes, your liability exposure, and your estate plan. We've seen clients save (or lose) tens of thousands of dollars based solely on how these structural decisions were made at the point of purchase. Getting it right from day one is the single most valuable thing a financial advisor can do for a new Westhampton homeowner.",
     faqs: [
       {
         question: "Is Westhampton a good place to invest in Hamptons real estate?",
-        answer: "Westhampton offers a compelling entry point to the Hamptons market — with property values that are more accessible than Southampton or East Hampton but with strong long-term appreciation potential. The key is structuring your purchase correctly from a financial and tax perspective. We help you evaluate the investment within the context of your complete financial picture, including financing options, rental income projections, and the impact on your overall portfolio allocation."
+        answer: "Westhampton offers a compelling entry point to the Hamptons market, with property values that are more accessible than Southampton or East Hampton but with strong long-term appreciation potential. The key is structuring your purchase correctly from a financial and tax perspective. We help you evaluate the investment within the context of your complete financial picture, including financing options, rental income projections, and the impact on your overall portfolio allocation."
       },
       {
         question: "Can I deduct private aviation costs if I fly out of Gabreski Airport?",
@@ -1686,7 +1686,7 @@ export const towns: Town[] = [
       },
       {
         question: "How is a fee-only advisor different from other financial advisors?",
-        answer: "Most financial advisors earn commissions when they sell you insurance policies, annuities, or proprietary investment products. That creates an inherent conflict — they have a financial incentive to recommend products that pay them the most, not products that serve you the best. As fee-only advisors, we receive no commissions whatsoever. Our revenue comes entirely from the fees our clients pay us directly, which means our recommendations are never influenced by outside compensation."
+        answer: "Most financial advisors earn commissions when they sell you insurance policies, annuities, or proprietary investment products. That creates an inherent conflict: they have a financial incentive to recommend products that pay them the most, not products that serve you the best. As fee-only advisors, we receive no commissions whatsoever. Our revenue comes entirely from the fees our clients pay us directly, which means our recommendations are never influenced by outside compensation."
       }
     ],
     faqHeading: "Common Questions from Westhampton Residents",
@@ -1718,8 +1718,8 @@ export const towns: Town[] = [
     avgHomeValue: "$850K–$1.5M",
     seoTitle: "Financial Advisor in Woodbury, NY",
     metaDescription: "Fee-only financial planning for Woodbury families. Executive compensation, retirement strategies, and tax-efficient investing from our Lake Success office.",
-    h1: "Financial Planning for Woodbury Families — Navigating Elite Education and Executive Wealth",
-    heroSubtitle: "Woodbury families in the Syosset Central School District area include corporate executives and high-earning professionals with complex compensation packages. We help ensure your financial plan keeps pace — from equity comp strategies to retirement distribution planning.",
+    h1: "Financial Planning for Woodbury Families: Navigating Elite Education and Executive Wealth",
+    heroSubtitle: "Woodbury families in the Syosset Central School District area include corporate executives and high-earning professionals with complex compensation packages. We help ensure your financial plan keeps pace, from equity comp strategies to retirement distribution planning.",
     heroBadge: "Serving Woodbury, NY",
     heroLabel: "15 minutes from our Lake Success office",
     valuePropHeading: "Financial Planning Built for Woodbury's Ambitions",
@@ -1731,7 +1731,7 @@ export const towns: Town[] = [
       },
       {
         title: "Executive Relocation Financial Planning",
-        description: "Woodbury attracts corporate executives relocating for Long Island's quality of life. We coordinate the financial complexity of relocation packages — stock option timing, home sale exclusions, and cost-of-living adjustments — so your move strengthens your balance sheet."
+        description: "Woodbury attracts corporate executives relocating for Long Island's quality of life. We coordinate the financial complexity of relocation packages (stock option timing, home sale exclusions, and cost-of-living adjustments) so your move strengthens your balance sheet."
       },
       {
         title: "Tax-Efficient Strategies for High-Bracket Households",
@@ -1739,7 +1739,7 @@ export const towns: Town[] = [
       },
       {
         title: "Tax and Investing Under One Roof",
-        description: "Most advisors manage investments while your CPA handles taxes — and neither talks to the other. At UFPG, we integrate tax planning directly into your investment strategy so every decision is made with your full financial picture in view."
+        description: "Most advisors manage investments while your CPA handles taxes, and neither talks to the other. At UFPG, we integrate tax planning directly into your investment strategy so every decision is made with your full financial picture in view."
       },
       {
         title: "Fee-Only, Fiduciary Always",
@@ -1747,19 +1747,19 @@ export const towns: Town[] = [
       }
     ],
     insightHeading: "Why Woodbury Families Choose UFPG",
-    insight: "Woodbury sits at the intersection of educational excellence and executive wealth — a community where the Syosset school district drives home values and families routinely invest six figures in their children's trajectories before college even begins. The financial planning challenges here are distinct: balancing aggressive education spending with retirement timelines, managing concentrated stock positions from corporate careers, and navigating property taxes on homes that have appreciated dramatically. Our Lake Success office is fifteen minutes away, and we've built deep familiarity with the financial patterns unique to this community.",
+    insight: "Woodbury sits at the intersection of educational excellence and executive wealth, a community where the Syosset school district drives home values and families routinely invest six figures in their children's trajectories before college even begins. The financial planning challenges here are distinct: balancing aggressive education spending with retirement timelines, managing concentrated stock positions from corporate careers, and navigating property taxes on homes that have appreciated dramatically. Our Lake Success office is fifteen minutes away, and we've built deep familiarity with the financial patterns unique to this community.",
     faqs: [
       {
         question: "How do you help Woodbury executives with equity compensation?",
-        answer: "We analyze your full compensation package — RSUs, stock options, deferred compensation, and bonuses — and build a multi-year tax strategy that coordinates vesting schedules, exercise timing, and diversification. For Woodbury executives, even small timing adjustments can produce significant tax savings."
+        answer: "We analyze your full compensation package (RSUs, stock options, deferred compensation, and bonuses) and build a multi-year tax strategy that coordinates vesting schedules, exercise timing, and diversification. For Woodbury executives, even small timing adjustments can produce significant tax savings."
       },
       {
         question: "What does fee-only financial planning mean for Woodbury clients?",
-        answer: "Fee-only means we are compensated solely by our clients — never by commissions, product sales, or referral arrangements. For Woodbury's high-income households, this avoids the commission-based conflicts of interest and ensures every recommendation is made with your financial goals as the only consideration."
+        answer: "Fee-only means we are compensated solely by our clients, never by commissions, product sales, or referral arrangements. For Woodbury's high-income households, this avoids the commission-based conflicts of interest and ensures every recommendation is made with your financial goals as the only consideration."
       },
       {
         question: "Do you work with executives relocating to Woodbury?",
-        answer: "Yes. We regularly work with professionals moving to Woodbury for its schools and proximity to Manhattan. We help coordinate the financial aspects of relocation — from stock option exercise timing to mortgage structuring and property tax planning in Nassau County."
+        answer: "Yes. We regularly work with professionals moving to Woodbury for its schools and proximity to Manhattan. We help coordinate the financial aspects of relocation, from stock option exercise timing to mortgage structuring and property tax planning in Nassau County."
       },
       {
         question: "How do you help dual-income households reduce their tax burden?",
@@ -1799,20 +1799,20 @@ export const towns: Town[] = [
     avgHomeValue: "$1.5M–$4M+",
     seoTitle: "Wealth Advisor in Laurel Hollow, NY",
     metaDescription: "Private wealth advisory for Laurel Hollow residents. Estate planning, tax-loss harvesting, and QPRT strategies for one of New York's most affluent villages.",
-    h1: "Private Wealth Advisory for Laurel Hollow — One of New York's Most Affluent Villages",
+    h1: "Private Wealth Advisory for Laurel Hollow: One of New York's Most Affluent Villages",
     heroSubtitle: "With average household incomes approaching half a million dollars and home values reaching well into the millions, Laurel Hollow demands wealth advisory that operates at the highest level of sophistication.",
     heroBadge: "Serving Laurel Hollow, NY",
     heroLabel: "20 minutes from our Lake Success office",
     valuePropHeading: "Wealth Management Calibrated for Laurel Hollow",
-    valuePropSubheading: "One of New York's top ten wealthiest villages requires planning that goes far beyond the basics — from estate freeze techniques to qualified personal residence trusts for multi-million-dollar properties.",
+    valuePropSubheading: "One of New York's top ten wealthiest villages requires planning that goes far beyond the basics, from estate freeze techniques to qualified personal residence trusts for multi-million-dollar properties.",
     valueProps: [
       {
         title: "Concentrated Wealth Advisory",
-        description: "Laurel Hollow residents often hold wealth in concentrated forms — a single company's equity, a family business, or real estate holdings that dwarf liquid assets. We build diversification strategies that reduce risk without triggering unnecessary tax events."
+        description: "Laurel Hollow residents often hold wealth in concentrated forms: a single company's equity, a family business, or real estate holdings that dwarf liquid assets. We build diversification strategies that reduce risk without triggering unnecessary tax events."
       },
       {
         title: "Tax-Loss Harvesting for Large Portfolios",
-        description: "Portfolios at the scale common in Laurel Hollow generate substantial opportunities for tax-loss harvesting — but only if monitored systematically. We identify and execute harvesting opportunities throughout the year, not just in December."
+        description: "Portfolios at the scale common in Laurel Hollow generate substantial opportunities for tax-loss harvesting, but only if monitored systematically. We identify and execute harvesting opportunities throughout the year, not just in December."
       },
       {
         title: "Estate Freeze Techniques",
@@ -1824,11 +1824,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "At the wealth levels common in Laurel Hollow, conflicted advice is extraordinarily expensive. Our fee-only model ensures that every recommendation — from asset allocation to estate structure — serves your interests alone."
+        description: "At the wealth levels common in Laurel Hollow, conflicted advice is extraordinarily expensive. Our fee-only model ensures that every recommendation (from asset allocation to estate structure) serves your interests alone."
       }
     ],
     insightHeading: "Why Laurel Hollow Trusts UFPG",
-    insight: "Laurel Hollow is a place where privacy and discretion aren't preferences — they're expectations. Nestled among the wooded former Gold Coast estates near Cold Spring Harbor, this village of roughly 1,900 residents ranks among New York's wealthiest by household income. Many residents hold leadership positions at Cold Spring Harbor Laboratory, run family enterprises, or have built substantial wealth through careers in finance and medicine. The financial planning needs here involve layered complexity: multi-generational estate structures, concentrated equity positions, homes valued in the millions, and tax obligations that require year-round strategic attention. Our Lake Success office serves Laurel Hollow clients with the confidentiality and depth this community expects.",
+    insight: "Laurel Hollow is a place where privacy and discretion aren't preferences; they're expectations. Nestled among the wooded former Gold Coast estates near Cold Spring Harbor, this village of roughly 1,900 residents ranks among New York's wealthiest by household income. Many residents hold leadership positions at Cold Spring Harbor Laboratory, run family enterprises, or have built substantial wealth through careers in finance and medicine. The financial planning needs here involve layered complexity: multi-generational estate structures, concentrated equity positions, homes valued in the millions, and tax obligations that require year-round strategic attention. Our Lake Success office serves Laurel Hollow clients with the confidentiality and depth this community expects.",
     faqs: [
       {
         question: "What is a QPRT and why is it relevant to Laurel Hollow homeowners?",
@@ -1880,7 +1880,7 @@ export const towns: Town[] = [
     avgHomeValue: "$600K–$1M",
     seoTitle: "Financial Advisor in Oyster Bay, NY",
     metaDescription: "Financial planning for Oyster Bay families and business owners. Small business retirement plans, municipal bonds, and fee-only advice near the harbor.",
-    h1: "Financial Planning in Oyster Bay — Honoring Tradition While Building Your Future",
+    h1: "Financial Planning in Oyster Bay: Honoring Tradition While Building Your Future",
     heroSubtitle: "Oyster Bay blends historic waterfront charm with a thriving local business community. Whether you're running a shop on South Street or commuting to the city from the LIRR terminus, your financial plan should reflect the life you've built here.",
     heroBadge: "Serving Oyster Bay, NY",
     heroLabel: "25 minutes from our Lake Success office",
@@ -1889,7 +1889,7 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "Small Business Retirement Plans for Village Merchants",
-        description: "Oyster Bay's downtown is powered by independent restaurants, boutiques, and service businesses. We help owners choose and manage the right retirement plan — SEP-IRAs, SIMPLE IRAs, or solo 401(k)s — so you build personal wealth while running your business."
+        description: "Oyster Bay's downtown is powered by independent restaurants, boutiques, and service businesses. We help owners choose and manage the right retirement plan (SEP-IRAs, SIMPLE IRAs, or solo 401(k)s) so you build personal wealth while running your business."
       },
       {
         title: "Historical Property Maintenance Budgeting",
@@ -1905,11 +1905,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "We don't sell products or earn commissions. As fee-only fiduciaries, our advice is aligned with your goals — whether that's growing a business, preserving a family home, or planning for retirement on the harbor."
+        description: "We don't sell products or earn commissions. As fee-only fiduciaries, our advice is aligned with your goals, whether that's growing a business, preserving a family home, or planning for retirement on the harbor."
       }
     ],
     insightHeading: "Why Oyster Bay Residents Choose UFPG",
-    insight: "Oyster Bay occupies a singular place on Long Island — a working waterfront community with deep historical roots and a downtown that still feels like a village. Theodore Roosevelt made it famous, but today's residents are drawn by the sailing clubs, the annual Oyster Festival, and neighborhoods where families stay for generations. The financial landscape here is different from the Gold Coast estates nearby: more small business owners, more families balancing harbor lifestyle costs with retirement planning, more homeowners maintaining properties with genuine historical character. We understand these dynamics and bring planning that respects Oyster Bay's distinct identity.",
+    insight: "Oyster Bay occupies a singular place on Long Island, a working waterfront community with deep historical roots and a downtown that still feels like a village. Theodore Roosevelt made it famous, but today's residents are drawn by the sailing clubs, the annual Oyster Festival, and neighborhoods where families stay for generations. The financial landscape here is different from the Gold Coast estates nearby: more small business owners, more families balancing harbor lifestyle costs with retirement planning, more homeowners maintaining properties with genuine historical character. We understand these dynamics and bring planning that respects Oyster Bay's distinct identity.",
     faqs: [
       {
         question: "What retirement plan is best for a small business owner in Oyster Bay?",
@@ -1921,7 +1921,7 @@ export const towns: Town[] = [
       },
       {
         question: "Are municipal bonds a good investment for Oyster Bay residents?",
-        answer: "For residents in higher tax brackets, New York municipal bonds can provide triple-tax-free income — exempt from federal, state, and local taxes. We evaluate credit quality, duration, and your overall portfolio to determine the right allocation."
+        answer: "For residents in higher tax brackets, New York municipal bonds can provide triple-tax-free income, exempt from federal, state, and local taxes. We evaluate credit quality, duration, and your overall portfolio to determine the right allocation."
       },
       {
         question: "Do you work with residents who own historic homes?",
@@ -1962,7 +1962,7 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in East Norwich, NY",
     metaDescription: "Fee-only financial planning for East Norwich. Retirement distribution strategies, tax-efficient investing, and business succession planning. 22 min from Lake Success.",
     h1: "Comprehensive Financial Planning for East Norwich's North Shore Families",
-    heroSubtitle: "East Norwich sits at the heart of the North Shore corridor between Oyster Bay and Syosset — a community where established professionals, business owners, and families approaching retirement seek sophisticated financial planning that matches the complexity of their financial lives.",
+    heroSubtitle: "East Norwich sits at the heart of the North Shore corridor between Oyster Bay and Syosset, a community where established professionals, business owners, and families approaching retirement seek sophisticated financial planning that matches the complexity of their financial lives.",
     heroBadge: "Serving East Norwich, NY",
     heroLabel: "22 minutes from our Lake Success office",
     valuePropHeading: "Financial Planning for East Norwich's Next Chapter",
@@ -1970,15 +1970,15 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "Retirement Income Distribution Planning",
-        description: "For East Norwich families approaching or in retirement, the challenge shifts from accumulation to distribution. We build tax-efficient withdrawal strategies across IRAs, 401(k)s, brokerage accounts, and Social Security — sequencing distributions to minimize your lifetime tax burden while maintaining the lifestyle you've earned on the North Shore."
+        description: "For East Norwich families approaching or in retirement, the challenge shifts from accumulation to distribution. We build tax-efficient withdrawal strategies across IRAs, 401(k)s, brokerage accounts, and Social Security, sequencing distributions to minimize your lifetime tax burden while maintaining the lifestyle you've earned on the North Shore."
       },
       {
         title: "Tax-Efficient Investment Strategies for High Earners",
-        description: "East Norwich's high-earning professionals face a layered tax burden — federal, New York State, and the SALT cap's impact on substantial property tax deductions. We structure portfolios using tax-loss harvesting, asset location optimization, and strategic Roth conversions to keep more of what you earn."
+        description: "East Norwich's high-earning professionals face a layered tax burden: federal, New York State, and the SALT cap's impact on substantial property tax deductions. We structure portfolios using tax-loss harvesting, asset location optimization, and strategic Roth conversions to keep more of what you earn."
       },
       {
         title: "Business Owner Exit and Succession Planning",
-        description: "The Route 106 and 107 corridor is lined with established businesses whose owners are approaching transition. We help East Norwich business owners plan for succession — whether selling to a partner, transitioning to the next generation, or executing an outright sale — while coordinating the tax and retirement implications."
+        description: "The Route 106 and 107 corridor is lined with established businesses whose owners are approaching transition. We help East Norwich business owners plan for succession (whether selling to a partner, transitioning to the next generation, or executing an outright sale) while coordinating the tax and retirement implications."
       },
       {
         title: "Estate Planning for North Shore Homeowners",
@@ -1986,15 +1986,15 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "When your financial life involves retirement distributions, business interests, and estate considerations, conflicts of interest are the last thing you need. Our fee-only model means no commissions, no product sales — just fiduciary advice aligned entirely with your family's financial well-being."
+        description: "When your financial life involves retirement distributions, business interests, and estate considerations, conflicts of interest are the last thing you need. Our fee-only model means no commissions, no product sales, just fiduciary advice aligned entirely with your family's financial well-being."
       }
     ],
     insightHeading: "Why East Norwich Families Work with UFPG",
-    insight: "East Norwich occupies a distinctive position on the North Shore — nestled between the Gold Coast estates of Oyster Bay and the affluent professional community of Syosset. Residents here have typically built substantial wealth through careers in finance, law, medicine, and business ownership rather than inheritance. As these families approach retirement or navigate business transitions, their financial planning needs become more complex: coordinating retirement distributions across multiple accounts, managing the tax impact of selling a business, and structuring estates that protect assets accumulated over a lifetime. The concentration of established professionals and business owners along the 106 corridor means East Norwich households benefit from advisors who understand sophisticated tax planning, retirement income sequencing, and business succession — not entry-level wealth building.",
+    insight: "East Norwich occupies a distinctive position on the North Shore, nestled between the Gold Coast estates of Oyster Bay and the affluent professional community of Syosset. Residents here have typically built substantial wealth through careers in finance, law, medicine, and business ownership rather than inheritance. As these families approach retirement or navigate business transitions, their financial planning needs become more complex: coordinating retirement distributions across multiple accounts, managing the tax impact of selling a business, and structuring estates that protect assets accumulated over a lifetime. The concentration of established professionals and business owners along the 106 corridor means East Norwich households benefit from advisors who understand sophisticated tax planning, retirement income sequencing, and business succession, not entry-level wealth building.",
     faqs: [
       {
         question: "How do you create a tax-efficient retirement distribution plan?",
-        answer: "We analyze all of your retirement accounts — traditional IRAs, Roth IRAs, 401(k)s, brokerage accounts, and Social Security — and build a withdrawal sequence that minimizes taxes over your entire retirement. This often involves strategic Roth conversions in lower-income years, careful timing of Social Security benefits, and managing capital gains to stay within favorable tax brackets."
+        answer: "We analyze all of your retirement accounts (traditional IRAs, Roth IRAs, 401(k)s, brokerage accounts, and Social Security) and build a withdrawal sequence that minimizes taxes over your entire retirement. This often involves strategic Roth conversions in lower-income years, careful timing of Social Security benefits, and managing capital gains to stay within favorable tax brackets."
       },
       {
         question: "What tax strategies work best for high-earning East Norwich households?",
@@ -2002,7 +2002,7 @@ export const towns: Town[] = [
       },
       {
         question: "How do you help business owners plan for succession?",
-        answer: "We start by establishing the business's value and your personal financial independence number — the amount you need to retire comfortably regardless of the sale outcome. From there, we evaluate sale structures, tax implications of different exit strategies, and timing to coordinate the business transition with your broader retirement plan."
+        answer: "We start by establishing the business's value and your personal financial independence number, the amount you need to retire comfortably regardless of the sale outcome. From there, we evaluate sale structures, tax implications of different exit strategies, and timing to coordinate the business transition with your broader retirement plan."
       },
       {
         question: "What estate planning strategies do you recommend for North Shore families?",
@@ -2010,7 +2010,7 @@ export const towns: Town[] = [
       },
       {
         question: "What does fee-only mean and why does it matter?",
-        answer: "Fee-only means we are compensated directly by our clients — not through commissions, product sales, or referral fees from financial companies. This avoids the conflicts of interest that can lead advisors to recommend products that benefit them rather than you. Combined with our fiduciary obligation, it means every recommendation is made solely in your interest."
+        answer: "Fee-only means we are compensated directly by our clients, not through commissions, product sales, or referral fees from financial companies. This avoids the conflicts of interest that can lead advisors to recommend products that benefit them rather than you. Combined with our fiduciary obligation, it means every recommendation is made solely in your interest."
       }
     ],
     faqHeading: "Common Questions from East Norwich Residents",
@@ -2043,7 +2043,7 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Syosset, NY",
     metaDescription: "Fee-only financial planning for Syosset families. Equity compensation, cross-border investing, and multi-generational wealth strategies near Jericho Turnpike.",
     h1: "Financial Planning for Syosset's Achievement-Oriented Families",
-    heroSubtitle: "Syosset families invest deeply in career advancement, wealth building, and the next generation. Your financial plan should be built with the same ambition — optimizing every dollar across equity compensation, cross-border investments, and tax-efficient strategies.",
+    heroSubtitle: "Syosset families invest deeply in career advancement, wealth building, and the next generation. Your financial plan should be built with the same ambition, optimizing every dollar across equity compensation, cross-border investments, and tax-efficient strategies.",
     heroBadge: "Serving Syosset, NY",
     heroLabel: "15 minutes from our Lake Success office",
     valuePropHeading: "Financial Strategies That Match Syosset's Drive",
@@ -2055,7 +2055,7 @@ export const towns: Town[] = [
       },
       {
         title: "H-1B and Immigration-Related Financial Planning",
-        description: "Syosset's large professional immigrant community faces unique financial planning challenges — from restrictions on business ownership to uncertainty around green card timelines. We build plans that account for visa-related constraints and optimize finances through each stage of the immigration process."
+        description: "Syosset's large professional immigrant community faces unique financial planning challenges, from restrictions on business ownership to uncertainty around green card timelines. We build plans that account for visa-related constraints and optimize finances through each stage of the immigration process."
       },
       {
         title: "Cross-Border Investment Strategies",
@@ -2063,15 +2063,15 @@ export const towns: Town[] = [
       },
       {
         title: "Multi-Generational Household Planning",
-        description: "Many Syosset families support parents, fund children's education, and save for their own retirement simultaneously. We build financial plans that balance these competing priorities and identify strategies — like dependent care credits and gifting — that serve the entire household."
+        description: "Many Syosset families support parents, fund children's education, and save for their own retirement simultaneously. We build financial plans that balance these competing priorities and identify strategies (like dependent care credits and gifting) that serve the entire household."
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "In a community that values transparency and merit, our fee-only model fits naturally. No commissions, no product sales — just straightforward financial advice aligned with your family's goals."
+        description: "In a community that values transparency and merit, our fee-only model fits naturally. No commissions, no product sales, just straightforward financial advice aligned with your family's goals."
       }
     ],
     insightHeading: "Why Syosset Families Choose UFPG",
-    insight: "Syosset is defined by ambition. Its school district consistently ranks among New York's best, and the community's large South Asian and East Asian professional population brings a level of financial sophistication and educational investment that's uncommon anywhere on Long Island. Families here often manage multi-generational financial obligations — supporting aging parents while funding children's paths through elite schools and universities. Many are navigating U.S. financial systems with income or assets spanning international borders. The corporate corridor along Jericho Turnpike adds another layer: equity compensation, deferred comp plans, and career transitions that demand careful tax planning. We serve Syosset from our Lake Success office fifteen minutes away, with deep experience in the specific challenges this community faces.",
+    insight: "Syosset is defined by ambition. Its school district consistently ranks among New York's best, and the community's large South Asian and East Asian professional population brings a level of financial sophistication and educational investment that's uncommon anywhere on Long Island. Families here often manage multi-generational financial obligations, supporting aging parents while funding children's paths through elite schools and universities. Many are navigating U.S. financial systems with income or assets spanning international borders. The corporate corridor along Jericho Turnpike adds another layer: equity compensation, deferred comp plans, and career transitions that demand careful tax planning. We serve Syosset from our Lake Success office fifteen minutes away, with deep experience in the specific challenges this community faces.",
     faqs: [
       {
         question: "How do you help Syosset executives with equity compensation?",
@@ -2087,7 +2087,7 @@ export const towns: Town[] = [
       },
       {
         question: "How do you plan for families supporting multiple generations?",
-        answer: "We map out every financial obligation — elder care, children's education, mortgage, retirement — and build a unified plan that allocates resources intentionally. This often reveals opportunities for tax deductions, gifting strategies, and insurance solutions that benefit the entire household."
+        answer: "We map out every financial obligation (elder care, children's education, mortgage, retirement) and build a unified plan that allocates resources intentionally. This often reveals opportunities for tax deductions, gifting strategies, and insurance solutions that benefit the entire household."
       },
       {
         question: "How far is your office from Syosset?",
@@ -2136,10 +2136,10 @@ export const towns: Town[] = [
       },
       {
         title: "Backdoor Roth Strategies",
-        description: "If your income exceeds Roth IRA limits — as it does for most Jericho professionals — backdoor and mega-backdoor Roth strategies can still get tax-free growth into your retirement plan. We handle the execution and ensure compliance with pro-rata rules."
+        description: "If your income exceeds Roth IRA limits (as it does for most Jericho professionals), backdoor and mega-backdoor Roth strategies can still get tax-free growth into your retirement plan. We handle the execution and ensure compliance with pro-rata rules."
       },
       {
-        title: "Equity Compensation Planning — RSUs and ISOs",
+        title: "Equity Compensation Planning: RSUs and ISOs",
         description: "Jericho's growing tech and corporate professional community increasingly receives compensation in RSUs, ISOs, and stock options. We build vesting-aware tax strategies that coordinate exercise timing, diversification, and 83(b) elections."
       },
       {
@@ -2152,7 +2152,7 @@ export const towns: Town[] = [
       }
     ],
     insightHeading: "Why Jericho Professionals Choose UFPG",
-    insight: "Jericho sits at a geographic and economic crossroads — close enough to the Hicksville LIRR hub for easy Manhattan commutes, close enough to the Long Island Expressway for corporate campuses, and home to one of New York's best school districts. The community attracts analytically minded professionals who earn substantial incomes and expect their financial planning to be equally rigorous. Many are in technology, medicine, or finance, often with complex compensation structures that include restricted stock, incentive options, and deferred compensation. Tax efficiency isn't an afterthought here — it's the primary lens through which financial decisions should be evaluated. Our Lake Success office is just twelve minutes from Jericho, and we specialize in the kind of detail-oriented, tax-first planning this community demands.",
+    insight: "Jericho sits at a geographic and economic crossroads, close enough to the Hicksville LIRR hub for easy Manhattan commutes, close enough to the Long Island Expressway for corporate campuses, and home to one of New York's best school districts. The community attracts analytically minded professionals who earn substantial incomes and expect their financial planning to be equally rigorous. Many are in technology, medicine, or finance, often with complex compensation structures that include restricted stock, incentive options, and deferred compensation. Tax efficiency isn't an afterthought here; it's the primary lens through which financial decisions should be evaluated. Our Lake Success office is just twelve minutes from Jericho, and we specialize in the kind of detail-oriented, tax-first planning this community demands.",
     faqs: [
       {
         question: "What is a backdoor Roth IRA and who should use one?",
@@ -2164,15 +2164,15 @@ export const towns: Town[] = [
       },
       {
         question: "When should I start planning for long-term care costs?",
-        answer: "The ideal time is in your late 40s or early 50s, when you're healthy enough to qualify for coverage and premiums are still reasonable. Waiting until your 60s can double or triple costs — or make coverage unavailable. We help Jericho professionals evaluate their options well before they need them."
+        answer: "The ideal time is in your late 40s or early 50s, when you're healthy enough to qualify for coverage and premiums are still reasonable. Waiting until your 60s can double or triple costs, or make coverage unavailable. We help Jericho professionals evaluate their options well before they need them."
       },
       {
         question: "What makes tax-efficient investing different from regular investing?",
-        answer: "Tax-efficient investing places assets strategically across account types — holding tax-inefficient investments in tax-deferred accounts and tax-efficient investments in taxable accounts. It also involves loss harvesting, minimizing turnover, and selecting funds with low distributions. Over decades, these decisions can add hundreds of thousands in after-tax value."
+        answer: "Tax-efficient investing places assets strategically across account types, holding tax-inefficient investments in tax-deferred accounts and tax-efficient investments in taxable accounts. It also involves loss harvesting, minimizing turnover, and selecting funds with low distributions. Over decades, these decisions can add hundreds of thousands in after-tax value."
       },
       {
         question: "How close is your office to Jericho?",
-        answer: "Our Lake Success office at 1979 Marcus Avenue is only about twelve minutes from Jericho — one of the shortest drives in our service area. We're also available for virtual meetings."
+        answer: "Our Lake Success office at 1979 Marcus Avenue is only about twelve minutes from Jericho, one of the shortest drives in our service area. We're also available for virtual meetings."
       }
     ],
     faqHeading: "Common Questions from Jericho Residents",
@@ -2204,19 +2204,19 @@ export const towns: Town[] = [
     avgHomeValue: "$2M–$5M+",
     seoTitle: "Wealth Advisor in Brookville, NY",
     metaDescription: "Family office-level wealth management for Brookville residents. Alternative investments, generation-skipping trusts, and luxury asset planning on Long Island.",
-    h1: "Family Office-Level Wealth Management for Brookville — Long Island's Most Affluent Address",
-    heroSubtitle: "Brookville's mean household income exceeds $617,000 and estates routinely surpass $3M. At this level of wealth, you need advisory that operates with the depth and discretion of a family office — without the overhead of building one yourself.",
+    h1: "Family Office-Level Wealth Management for Brookville: Long Island's Most Affluent Address",
+    heroSubtitle: "Brookville's mean household income exceeds $617,000 and estates routinely surpass $3M. At this level of wealth, you need advisory that operates with the depth and discretion of a family office, without the overhead of building one yourself.",
     heroBadge: "Serving Brookville, NY",
     heroLabel: "18 minutes from our Lake Success office",
     valuePropHeading: "Wealth Advisory at the Level Brookville Requires",
-    valuePropSubheading: "Long Island's wealthiest address demands planning that goes beyond portfolios — into alternative investments, complex trusts, and the specialized needs of equestrian estates and luxury properties.",
+    valuePropSubheading: "Long Island's wealthiest address demands planning that goes beyond portfolios, into alternative investments, complex trusts, and the specialized needs of equestrian estates and luxury properties.",
     valueProps: [
       {
         title: "Family Office and Concierge Wealth Management",
-        description: "Brookville families often have financial lives that span multiple entities, properties, and generations. We serve as the central coordinator — overseeing investments, tax strategy, estate structures, and advisor relationships — delivering family office capabilities without the seven-figure overhead."
+        description: "Brookville families often have financial lives that span multiple entities, properties, and generations. We serve as the central coordinator (overseeing investments, tax strategy, estate structures, and advisor relationships), delivering family office capabilities without the seven-figure overhead."
       },
       {
-        title: "Alternative Investments — Private Equity and Hedge Funds",
+        title: "Alternative Investments: Private Equity and Hedge Funds",
         description: "At Brookville's wealth level, diversification beyond public markets becomes essential. We evaluate private equity, hedge fund, real estate fund, and venture capital opportunities, conducting due diligence and ensuring proper portfolio fit before any commitment."
       },
       {
@@ -2225,19 +2225,19 @@ export const towns: Town[] = [
       },
       {
         title: "Equestrian and Luxury Asset Planning",
-        description: "Brookville's equestrian estates involve unique financial considerations — from horse ownership and stable operations to property tax treatment and insurance for high-value animals. We integrate these specialized assets into your comprehensive financial plan."
+        description: "Brookville's equestrian estates involve unique financial considerations, from horse ownership and stable operations to property tax treatment and insurance for high-value animals. We integrate these specialized assets into your comprehensive financial plan."
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "At Brookville's wealth levels, the cost of conflicted advice is measured in millions. Our fee-only model removes commission and product-sales incentives — our only incentive is delivering the best possible outcome for your family."
+        description: "At Brookville's wealth levels, the cost of conflicted advice is measured in millions. Our fee-only model removes commission and product-sales incentives. Our only incentive is delivering the best possible outcome for your family."
       }
     ],
     insightHeading: "Why Brookville Families Trust UFPG",
-    insight: "Brookville holds a distinction few communities can claim — it was once identified as the wealthiest town in America. Today it remains Long Island's most affluent address, a place where multi-acre equestrian estates sit alongside the LIU Post campus and wealth is measured in generations rather than years. The financial planning needs here are categorically different from typical high-net-worth advisory. Brookville families deal with private equity commitments, family limited partnerships, generation-skipping trust structures, and the operational complexity of maintaining estate properties that function as small enterprises. Many residents have built wealth through business ownership, finance, or medicine and need an advisor who can quarterback the full team of attorneys, CPAs, and insurance specialists their situation demands. Our Lake Success office is eighteen minutes away, and we bring the depth of knowledge Brookville's financial complexity requires.",
+    insight: "Brookville holds a distinction few communities can claim: it was once identified as the wealthiest town in America. Today it remains Long Island's most affluent address, a place where multi-acre equestrian estates sit alongside the LIU Post campus and wealth is measured in generations rather than years. The financial planning needs here are categorically different from typical high-net-worth advisory. Brookville families deal with private equity commitments, family limited partnerships, generation-skipping trust structures, and the operational complexity of maintaining estate properties that function as small enterprises. Many residents have built wealth through business ownership, finance, or medicine and need an advisor who can quarterback the full team of attorneys, CPAs, and insurance specialists their situation demands. Our Lake Success office is eighteen minutes away, and we bring the depth of knowledge Brookville's financial complexity requires.",
     faqs: [
       {
         question: "What is family office-level wealth management?",
-        answer: "It means providing the comprehensive coordination that ultra-high-net-worth families typically get from a dedicated family office — investment oversight, tax strategy, estate planning, risk management, and advisor coordination — without requiring you to hire a full internal staff. We serve as the central hub for your entire financial life."
+        answer: "It means providing the comprehensive coordination that ultra-high-net-worth families typically get from a dedicated family office (investment oversight, tax strategy, estate planning, risk management, and advisor coordination) without requiring you to hire a full internal staff. We serve as the central hub for your entire financial life."
       },
       {
         question: "How do you evaluate alternative investments like private equity?",
@@ -2249,7 +2249,7 @@ export const towns: Town[] = [
       },
       {
         question: "Can you help with the financial side of equestrian estate ownership?",
-        answer: "Yes. We work with clients who own equestrian properties and understand the financial complexities — from horse purchase and maintenance costs to stable operations, insurance, property tax implications, and potential agricultural exemptions."
+        answer: "Yes. We work with clients who own equestrian properties and understand the financial complexities, from horse purchase and maintenance costs to stable operations, insurance, property tax implications, and potential agricultural exemptions."
       },
       {
         question: "How do you maintain confidentiality for ultra-high-net-worth clients?",
@@ -2286,7 +2286,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Old Westbury, NY",
     metaDescription: "Multigenerational wealth planning for Old Westbury families. ILITs, dynastic trusts, and private school budgeting from our nearby Lake Success office.",
     h1: "Multigenerational Wealth Strategies for Old Westbury's Distinguished Families",
-    heroSubtitle: "Old Westbury's families think in generations — not quarters. From Old Westbury Gardens to Friends Academy, this community's commitment to legacy demands financial planning built to endure across decades and heirs.",
+    heroSubtitle: "Old Westbury's families think in generations, not quarters. From Old Westbury Gardens to Friends Academy, this community's commitment to legacy demands financial planning built to endure across decades and heirs.",
     heroBadge: "Serving Old Westbury, NY",
     heroLabel: "15 minutes from our Lake Success office",
     valuePropHeading: "Wealth Planning Built to Last Generations",
@@ -2298,7 +2298,7 @@ export const towns: Town[] = [
       },
       {
         title: "Irrevocable Life Insurance Trusts (ILITs)",
-        description: "For Old Westbury families with estate tax exposure, an ILIT removes life insurance proceeds from your taxable estate — providing liquidity to pay estate taxes without forcing the sale of real estate or business interests. We coordinate structure and funding with your estate attorney."
+        description: "For Old Westbury families with estate tax exposure, an ILIT removes life insurance proceeds from your taxable estate, providing liquidity to pay estate taxes without forcing the sale of real estate or business interests. We coordinate structure and funding with your estate attorney."
       },
       {
         title: "Private School and Boarding School Budgeting",
@@ -2310,15 +2310,15 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "Old Westbury families have earned their wealth through discipline and discernment. Our fee-only structure reflects those same values — no hidden incentives, no product commissions — and no incentive to recommend products that pay us, so the advice your family depends on isn't compromised by sales incentives."
+        description: "Old Westbury families have earned their wealth through discipline and discernment. Our fee-only structure reflects those same values: no hidden incentives, no product commissions, and no incentive to recommend products that pay us, so the advice your family depends on isn't compromised by sales incentives."
       }
     ],
     insightHeading: "Why Old Westbury Families Choose UFPG",
-    insight: "Old Westbury is Gold Coast legacy at its most refined — a village where the Phipps estate became Old Westbury Gardens, where polo is still played, and where families send children to Friends Academy and Green Vale before the nation's most competitive boarding schools and universities. The mean household income exceeds $412,000, and real estate values routinely surpass $3M. But the true financial complexity lies beneath the surface: irrevocable trust structures that need ongoing management, concentrated real estate positions, multi-generational gifting strategies, and the challenge of preparing heirs to manage significant inherited wealth. This is planning that operates on a timeline measured in decades, and it requires an advisor who thinks the same way. Our Lake Success office is fifteen minutes from Old Westbury, and we bring the patience and sophistication this community's financial lives demand.",
+    insight: "Old Westbury is Gold Coast legacy at its most refined, a village where the Phipps estate became Old Westbury Gardens, where polo is still played, and where families send children to Friends Academy and Green Vale before the nation's most competitive boarding schools and universities. The mean household income exceeds $412,000, and real estate values routinely surpass $3M. But the true financial complexity lies beneath the surface: irrevocable trust structures that need ongoing management, concentrated real estate positions, multi-generational gifting strategies, and the challenge of preparing heirs to manage significant inherited wealth. This is planning that operates on a timeline measured in decades, and it requires an advisor who thinks the same way. Our Lake Success office is fifteen minutes from Old Westbury, and we bring the patience and sophistication this community's financial lives demand.",
     faqs: [
       {
         question: "What is dynastic wealth planning?",
-        answer: "Dynastic wealth planning structures your assets to pass efficiently across multiple generations — using dynasty trusts, family limited partnerships, and strategic gifting to minimize taxes at each generational transfer. For Old Westbury families, this means your grandchildren and great-grandchildren benefit from the wealth you've built."
+        answer: "Dynastic wealth planning structures your assets to pass efficiently across multiple generations, using dynasty trusts, family limited partnerships, and strategic gifting to minimize taxes at each generational transfer. For Old Westbury families, this means your grandchildren and great-grandchildren benefit from the wealth you've built."
       },
       {
         question: "How does an ILIT work and why would I need one?",
@@ -2326,7 +2326,7 @@ export const towns: Town[] = [
       },
       {
         question: "Can you help budget for private school across multiple children?",
-        answer: "Yes. We build multi-year education budgets that project total costs across K–12, including tuition inflation, activity fees, and boarding school expenses. We then identify the optimal funding sources — 529s, taxable accounts, or trust distributions — and ensure education spending doesn't compromise your retirement or estate plans."
+        answer: "Yes. We build multi-year education budgets that project total costs across K–12, including tuition inflation, activity fees, and boarding school expenses. We then identify the optimal funding sources (529s, taxable accounts, or trust distributions) and ensure education spending doesn't compromise your retirement or estate plans."
       },
       {
         question: "How do you handle art and collectibles in a financial plan?",
@@ -2366,12 +2366,12 @@ export const towns: Town[] = [
     avgHomeValue: "$800K–$1.8M",
     seoTitle: "Financial Advisor in Locust Valley, NY",
     metaDescription: "Financial advisory for Locust Valley's legacy families. Trust administration, equestrian tax strategies, and charitable giving from our Lake Success office.",
-    h1: "Stewarding Inherited Wealth — Financial Advisory for Locust Valley's Legacy Families",
-    heroSubtitle: "Locust Valley's old-money character is unmistakable — from the Piping Rock Club to Portledge School, this community has stewarded wealth for generations. We help ensure the next chapter is as financially sound as the last.",
+    h1: "Stewarding Inherited Wealth: Financial Advisory for Locust Valley's Legacy Families",
+    heroSubtitle: "Locust Valley's old-money character is unmistakable, from the Piping Rock Club to Portledge School, this community has stewarded wealth for generations. We help ensure the next chapter is as financially sound as the last.",
     heroBadge: "Serving Locust Valley, NY",
     heroLabel: "25 minutes from our Lake Success office",
     valuePropHeading: "Wealth Stewardship for Locust Valley's Traditions",
-    valuePropSubheading: "Locust Valley families often inherit both assets and obligations — trusts that need administration, properties that require upkeep, and philanthropic commitments that span generations.",
+    valuePropSubheading: "Locust Valley families often inherit both assets and obligations: trusts that need administration, properties that require upkeep, and philanthropic commitments that span generations.",
     valueProps: [
       {
         title: "Trust and Estate Administration for Inherited Wealth",
@@ -2379,7 +2379,7 @@ export const towns: Town[] = [
       },
       {
         title: "Equestrian and Hobby Farm Tax Strategies",
-        description: "Locust Valley's equestrian culture — centered around the Piping Rock Club and nearby stables — creates unique tax planning opportunities. We evaluate whether your horse-related activities qualify as a business for tax purposes and structure operations to maximize legitimate deductions."
+        description: "Locust Valley's equestrian culture (centered around the Piping Rock Club and nearby stables) creates unique tax planning opportunities. We evaluate whether your horse-related activities qualify as a business for tax purposes and structure operations to maximize legitimate deductions."
       },
       {
         title: "Private School Financial Planning Across K–12",
@@ -2391,11 +2391,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "For families stewarding inherited wealth, trust in your advisor is everything. Our fee-only model means we have no financial incentive other than the growth and preservation of your assets. No commissions, no product sales — and no incentive to recommend products that pay us."
+        description: "For families stewarding inherited wealth, trust in your advisor is everything. Our fee-only model means we have no financial incentive other than the growth and preservation of your assets. No commissions, no product sales, and no incentive to recommend products that pay us."
       }
     ],
     insightHeading: "Why Locust Valley Families Choose UFPG",
-    insight: "Locust Valley carries a reputation that precedes it — a Gold Coast village where old money meets equestrian culture, where the Piping Rock Club has anchored social life for over a century, and where families often inherit wealth along with the responsibility of maintaining it. The financial planning challenges here are less about building wealth and more about preserving it across generations: administering trusts that were created decades ago, managing the costs of historic properties, budgeting for private schooling at Portledge or boarding schools farther afield, and maintaining charitable commitments that reflect family values. We approach Locust Valley clients with the understanding that wealth stewardship is as much about honoring what came before as it is about planning what comes next.",
+    insight: "Locust Valley carries a reputation that precedes it, a Gold Coast village where old money meets equestrian culture, where the Piping Rock Club has anchored social life for over a century, and where families often inherit wealth along with the responsibility of maintaining it. The financial planning challenges here are less about building wealth and more about preserving it across generations: administering trusts that were created decades ago, managing the costs of historic properties, budgeting for private schooling at Portledge or boarding schools farther afield, and maintaining charitable commitments that reflect family values. We approach Locust Valley clients with the understanding that wealth stewardship is as much about honoring what came before as it is about planning what comes next.",
     faqs: [
       {
         question: "How can you help me understand a trust I've inherited?",
@@ -2411,7 +2411,7 @@ export const towns: Town[] = [
       },
       {
         question: "How do you plan for private school costs over thirteen years?",
-        answer: "We project the total cost of K–12 private education including tuition inflation, fees, and extracurriculars. Then we identify the optimal funding approach — whether that's a dedicated investment account, 529 withdrawals for qualifying expenses, or trust distributions — and stress-test the plan against your other financial goals."
+        answer: "We project the total cost of K–12 private education including tuition inflation, fees, and extracurriculars. Then we identify the optimal funding approach, whether that's a dedicated investment account, 529 withdrawals for qualifying expenses, or trust distributions) and stress-test the plan against your other financial goals."
       },
       {
         question: "How far is your office from Locust Valley?",
@@ -2448,7 +2448,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Matinecock, NY",
     metaDescription: "Confidential wealth advisory for Matinecock estate owners. GRATs, family limited partnerships, and estate tax planning from our Lake Success office.",
     h1: "Confidential Wealth Advisory for Matinecock's Most Private Estate Owners",
-    heroSubtitle: "Matinecock is a village of five-acre minimums, eight hundred residents, and absolute privacy. Your wealth advisory should operate with the same discretion — delivering sophisticated strategies behind closed doors.",
+    heroSubtitle: "Matinecock is a village of five-acre minimums, eight hundred residents, and absolute privacy. Your wealth advisory should operate with the same discretion, delivering sophisticated strategies behind closed doors.",
     heroBadge: "Serving Matinecock, NY",
     heroLabel: "25 minutes from our Lake Success office",
     valuePropHeading: "Sophisticated Planning for Matinecock's Private Estates",
@@ -2464,7 +2464,7 @@ export const towns: Town[] = [
       },
       {
         title: "Private Placement Life Insurance",
-        description: "For Matinecock's ultra-high-net-worth families, private placement life insurance provides tax-advantaged access to alternative investment strategies — hedge funds, private equity, and managed futures — inside an insurance wrapper that grows tax-deferred and passes tax-free to heirs."
+        description: "For Matinecock's ultra-high-net-worth families, private placement life insurance provides tax-advantaged access to alternative investment strategies (hedge funds, private equity, and managed futures) inside an insurance wrapper that grows tax-deferred and passes tax-free to heirs."
       },
       {
         title: "Estate Tax Exemption Planning Under Changing Thresholds",
@@ -2472,15 +2472,15 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Always",
-        description: "Matinecock residents expect their advisors to operate with integrity and discretion. Our fee-only, fiduciary model means we never profit from product sales or referral arrangements — your wealth is managed solely in your interest."
+        description: "Matinecock residents expect their advisors to operate with integrity and discretion. Our fee-only, fiduciary model means we never profit from product sales or referral arrangements. Your wealth is managed solely in your interest."
       }
     ],
     insightHeading: "Why Matinecock Estate Owners Trust UFPG",
-    insight: "Matinecock is not a community that appears on most financial advisors' radar — and that's precisely the point. With a population of roughly eight hundred, five-acre minimum lot sizes, and no commercial district of any kind, this village is designed for privacy. The former estates of the Pratt and Tiffany families set the tone, and today's residents maintain that legacy of exclusivity. The financial complexities here are substantial: properties valued at $3M–$6M or more, concentrated business wealth, and estate tax exposure that demands proactive planning — particularly with federal exemption thresholds poised to change. We serve Matinecock from our Lake Success office with the confidentiality and strategic depth that ultra-high-net-worth families require, coordinating seamlessly with the attorneys and CPAs who complete your advisory team.",
+    insight: "Matinecock is not a community that appears on most financial advisors' radar, and that's precisely the point. With a population of roughly eight hundred, five-acre minimum lot sizes, and no commercial district of any kind, this village is designed for privacy. The former estates of the Pratt and Tiffany families set the tone, and today's residents maintain that legacy of exclusivity. The financial complexities here are substantial: properties valued at $3M–$6M or more, concentrated business wealth, and estate tax exposure that demands proactive planning, particularly with federal exemption thresholds poised to change. We serve Matinecock from our Lake Success office with the confidentiality and strategic depth that ultra-high-net-worth families require, coordinating seamlessly with the attorneys and CPAs who complete your advisory team.",
     faqs: [
       {
         question: "What is a family limited partnership and how does it reduce estate taxes?",
-        answer: "A family limited partnership holds family assets — real estate, investments, or business interests — and allows the senior generation to gift limited partnership interests to heirs at discounted valuations. The discount reflects the lack of control and marketability of minority interests, reducing the gift and estate tax impact of the transfer."
+        answer: "A family limited partnership holds family assets (real estate, investments, or business interests) and allows the senior generation to gift limited partnership interests to heirs at discounted valuations. The discount reflects the lack of control and marketability of minority interests, reducing the gift and estate tax impact of the transfer."
       },
       {
         question: "How does a GRAT work?",
@@ -2514,7 +2514,7 @@ export const towns: Town[] = [
       "Trust Administration"
     ]
   },
-  // ─── NASSAU COUNTY — LAKE SUCCESS OFFICE (NORTH SHORE) ───
+  // ─── NASSAU COUNTY - LAKE SUCCESS OFFICE (NORTH SHORE) ───
   {
     slug: "glen-cove-ny",
     name: "Glen Cove",
@@ -2530,7 +2530,7 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Glen Cove, NY",
     metaDescription: "Fee-only wealth management for Glen Cove. Retirement planning, real estate equity strategies, and tax-efficient investing. 20 min from Lake Success.",
     h1: "Wealth Management for Glen Cove's Evolving North Shore Economy",
-    heroSubtitle: "Glen Cove's transformation — anchored by the Garvies Point redevelopment — is creating significant wealth effects for established homeowners and business owners across the city. United Financial Planning Group helps Glen Cove's high-net-worth families, retirees, and entrepreneurs manage this moment with independent, fee-only financial guidance.",
+    heroSubtitle: "Glen Cove's transformation (anchored by the Garvies Point redevelopment) is creating significant wealth effects for established homeowners and business owners across the city. United Financial Planning Group helps Glen Cove's high-net-worth families, retirees, and entrepreneurs manage this moment with independent, fee-only financial guidance.",
     heroBadge: "Serving Glen Cove, NY",
     heroLabel: "20 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Planning Built for Glen Cove's Unique Landscape",
@@ -2538,7 +2538,7 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "Real Estate Equity Strategies for Longtime Homeowners",
-        description: "The Garvies Point redevelopment has accelerated property appreciation across Glen Cove, and longtime homeowners are sitting on substantial equity gains. We help you evaluate whether to harvest that equity through downsizing, restructure your portfolio to reduce concentration risk, or leverage your position for retirement income — all while managing the tax consequences."
+        description: "The Garvies Point redevelopment has accelerated property appreciation across Glen Cove, and longtime homeowners are sitting on substantial equity gains. We help you evaluate whether to harvest that equity through downsizing, restructure your portfolio to reduce concentration risk, or leverage your position for retirement income, all while managing the tax consequences."
       },
       {
         title: "Retirement Income Planning for the Appreciation Era",
@@ -2546,7 +2546,7 @@ export const towns: Town[] = [
       },
       {
         title: "Business Owner Financial Planning",
-        description: "Glen Cove's growing waterfront economy and established downtown corridor support a range of business owners — from professional practices to retail and hospitality. We help entrepreneurs with cash flow optimization, retirement plan design, tax-efficient entity structuring, and the eventual exit or succession plan that converts business value into personal wealth."
+        description: "Glen Cove's growing waterfront economy and established downtown corridor support a range of business owners, from professional practices to retail and hospitality. We help entrepreneurs with cash flow optimization, retirement plan design, tax-efficient entity structuring, and the eventual exit or succession plan that converts business value into personal wealth."
       },
       {
         title: "Tax-Efficient Investing for High-Bracket Households",
@@ -2554,19 +2554,19 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Fiduciary Advice",
-        description: "When your financial decisions involve real estate equity, business interests, and retirement timing, you need an advisor whose only incentive is your financial well-being. Our fee-only model means no commissions, no product sales — just fiduciary guidance aligned with your goals."
+        description: "When your financial decisions involve real estate equity, business interests, and retirement timing, you need an advisor whose only incentive is your financial well-being. Our fee-only model means no commissions, no product sales, just fiduciary guidance aligned with your goals."
       }
     ],
     insightHeading: "Why Glen Cove's Transformation Demands Proactive Planning",
-    insight: "Glen Cove is experiencing a generational wealth event. The Garvies Point redevelopment has transformed former industrial waterfront into luxury residences and retail, and the ripple effects are being felt across the city — from the historic Glen Cove Mansion area near the Lattingtown border to the established neighborhoods above the harbor. For longtime homeowners, this means substantial unrealized gains in their most significant asset. For business owners in the downtown and waterfront economy, it means growing revenue and rising commercial property values. And for retirees managing fixed incomes, it means navigating the tax impact of climbing assessments. Each of these situations demands proactive financial planning — not the generic advice that treats Glen Cove like any other suburb, but strategies calibrated to a North Shore city in the middle of a meaningful economic shift.",
+    insight: "Glen Cove is experiencing a generational wealth event. The Garvies Point redevelopment has transformed former industrial waterfront into luxury residences and retail, and the ripple effects are being felt across the city, from the historic Glen Cove Mansion area near the Lattingtown border to the established neighborhoods above the harbor. For longtime homeowners, this means substantial unrealized gains in their most significant asset. For business owners in the downtown and waterfront economy, it means growing revenue and rising commercial property values. And for retirees managing fixed incomes, it means navigating the tax impact of climbing assessments. Each of these situations demands proactive financial planning, not the generic advice that treats Glen Cove like any other suburb, but strategies calibrated to a North Shore city in the middle of a meaningful economic shift.",
     faqs: [
       {
         question: "How should I think about the equity gains in my Glen Cove home?",
-        answer: "Rising property values create opportunity but also concentration risk — if most of your net worth is tied up in your home, you're exposed to a single asset class in a single market. We help you evaluate whether to stay, downsize, or restructure your portfolio to diversify, and we model the tax implications of each scenario so you can make a fully informed decision."
+        answer: "Rising property values create opportunity but also concentration risk: if most of your net worth is tied up in your home, you're exposed to a single asset class in a single market. We help you evaluate whether to stay, downsize, or restructure your portfolio to diversify, and we model the tax implications of each scenario so you can make a fully informed decision."
       },
       {
         question: "How do you build a retirement income plan that accounts for rising property values?",
-        answer: "We integrate your real estate equity into your overall retirement income strategy alongside investment accounts, Social Security, and any business interests. This means modeling scenarios where you stay in your home, sell and downsize, or use a reverse mortgage — and comparing the tax-adjusted income each approach generates over a 25–30 year retirement."
+        answer: "We integrate your real estate equity into your overall retirement income strategy alongside investment accounts, Social Security, and any business interests. This means modeling scenarios where you stay in your home, sell and downsize, or use a reverse mortgage, and comparing the tax-adjusted income each approach generates over a 25–30 year retirement."
       },
       {
         question: "What financial planning do Glen Cove business owners need?",
@@ -2574,7 +2574,7 @@ export const towns: Town[] = [
       },
       {
         question: "What tax strategies work for high-bracket Glen Cove households?",
-        answer: "We use a combination of tax-loss harvesting, strategic asset placement across taxable and tax-advantaged accounts, Roth conversion timing, charitable giving strategies, and municipal bond allocation. The specific mix depends on your income sources, tax bracket, and long-term goals — we build a custom approach rather than applying a template."
+        answer: "We use a combination of tax-loss harvesting, strategic asset placement across taxable and tax-advantaged accounts, Roth conversion timing, charitable giving strategies, and municipal bond allocation. The specific mix depends on your income sources, tax bracket, and long-term goals. We build a custom approach rather than applying a template."
       },
       {
         question: "What does fee-only mean and why should it matter to me?",
@@ -2610,8 +2610,8 @@ export const towns: Town[] = [
     avgHomeValue: "$500K–$800K",
     seoTitle: "Financial Advisor in Bayville, NY",
     metaDescription: "Fee-only financial planning for Bayville residents. Flood zone strategies, waterfront property planning, and retirement guidance near Long Island Sound.",
-    h1: "Financial Planning for Bayville's Waterfront Living — From Flood Insurance to Retirement",
-    heroSubtitle: "Life on Bayville's barrier peninsula comes with rewards and risks that most financial advisors overlook. United Financial Planning Group understands the unique costs of coastal living — from FEMA flood zones to marine assets — and builds plans that protect what you've built along the Sound.",
+    h1: "Financial Planning for Bayville's Waterfront Living: From Flood Insurance to Retirement",
+    heroSubtitle: "Life on Bayville's barrier peninsula comes with rewards and risks that most financial advisors overlook. United Financial Planning Group understands the unique costs of coastal living, from FEMA flood zones to marine assets, and builds plans that protect what you've built along the Sound.",
     heroBadge: "Serving Bayville, NY",
     heroLabel: "25 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Guidance Designed for Coastal Bayville Living",
@@ -2627,7 +2627,7 @@ export const towns: Town[] = [
       },
       {
         title: "Boat and Marine Asset Planning",
-        description: "For many Bayville families, boats, dock slips, and marine equipment represent meaningful assets. We help you account for depreciation, storage costs, insurance, and the decision of whether to own or lease — integrating marine assets into your net worth picture realistically."
+        description: "For many Bayville families, boats, dock slips, and marine equipment represent meaningful assets. We help you account for depreciation, storage costs, insurance, and the decision of whether to own or lease, integrating marine assets into your net worth picture realistically."
       },
       {
         title: "Retirement in a Coastal Community with Climate Considerations",
@@ -2635,11 +2635,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Fiduciary Advice You Can Trust",
-        description: "We don't sell insurance policies or investment products. Our fee-only model means the flood insurance strategy we recommend is based on your actual risk profile — not on a commission we'd earn from placing a policy."
+        description: "We don't sell insurance policies or investment products. Our fee-only model means the flood insurance strategy we recommend is based on your actual risk profile, not on a commission we'd earn from placing a policy."
       }
     ],
     insightHeading: "The Financial Realities of Living on a Barrier Peninsula",
-    insight: "Bayville occupies a narrow strip of land between Oyster Bay Harbor and Long Island Sound — a geography that defines daily life and financial planning alike. FEMA's Risk Rating 2.0 has changed how flood insurance is priced, and many Bayville homeowners are seeing premiums climb significantly. Meanwhile, the tight-knit beach community that draws families here — the Adventure Park, the summer crowds at Bayville Beach, the boat launches — also means limited housing inventory and unique maintenance costs. If you're buying in Bayville, retiring here, or simply trying to protect a home you've owned for decades, your financial plan needs to reflect these peninsula-specific dynamics. Generic suburban planning simply doesn't account for what coastal living actually costs.",
+    insight: "Bayville occupies a narrow strip of land between Oyster Bay Harbor and Long Island Sound, a geography that defines daily life and financial planning alike. FEMA's Risk Rating 2.0 has changed how flood insurance is priced, and many Bayville homeowners are seeing premiums climb significantly. Meanwhile, the tight-knit beach community that draws families here (the Adventure Park, the summer crowds at Bayville Beach, the boat launches) also means limited housing inventory and unique maintenance costs. If you're buying in Bayville, retiring here, or simply trying to protect a home you've owned for decades, your financial plan needs to reflect these peninsula-specific dynamics. Generic suburban planning simply doesn't account for what coastal living actually costs.",
     faqs: [
       {
         question: "How will FEMA's Risk Rating 2.0 affect my flood insurance costs in Bayville?",
@@ -2650,12 +2650,12 @@ export const towns: Town[] = [
         answer: "Yes. Coastal property carries real long-term considerations including rising insurance costs, potential erosion, and shifting buyer sentiment. We help you weigh these factors against Bayville's genuine lifestyle appeal and build a purchase plan that accounts for realistic downside scenarios."
       },
       {
-        question: "I own a boat and a dock slip — how does that fit into financial planning?",
+        question: "I own a boat and a dock slip: how does that fit into financial planning?",
         answer: "Marine assets are often overlooked in financial plans but can represent significant ongoing costs. We account for insurance, maintenance, slip fees, and depreciation so your net worth picture and retirement projections reflect what you're actually spending on waterfront recreation."
       },
       {
         question: "Can I retire comfortably in Bayville on a fixed income?",
-        answer: "It depends on your housing costs, insurance exposure, and income sources. We model retirement scenarios specific to Bayville's cost structure — including flood insurance, property taxes, and home maintenance premiums that come with coastal properties."
+        answer: "It depends on your housing costs, insurance exposure, and income sources. We model retirement scenarios specific to Bayville's cost structure, including flood insurance, property taxes, and home maintenance premiums that come with coastal properties."
       },
       {
         question: "How do I get to your office from Bayville?",
@@ -2693,7 +2693,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Muttontown, NY",
     metaDescription: "Tailored wealth advisory for Muttontown's estate community. Family partnerships, equestrian tax strategies, and intergenerational planning. Fee-only.",
     h1: "Tailored Wealth Advisory for Muttontown's Country Estate Community",
-    heroSubtitle: "Muttontown is Nassau County's rural enclave — a community of equestrian estates, conservation land, and families whose wealth spans generations. United Financial Planning Group provides the sophisticated, fee-only advisory without commission incentives that Muttontown's estate owners require to preserve and grow their legacy.",
+    heroSubtitle: "Muttontown is Nassau County's rural enclave, a community of equestrian estates, conservation land, and families whose wealth spans generations. United Financial Planning Group provides the sophisticated, fee-only advisory without commission incentives that Muttontown's estate owners require to preserve and grow their legacy.",
     heroBadge: "Serving Muttontown, NY",
     heroLabel: "20 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Strategies for Muttontown's Estate Owners",
@@ -2705,7 +2705,7 @@ export const towns: Town[] = [
       },
       {
         title: "Equestrian Business Tax Strategies",
-        description: "Many Muttontown properties include active or semi-active equestrian operations. We work with you to ensure your horse farm or riding facility qualifies for appropriate business deductions, agricultural exemptions, and depreciation schedules — while staying well within IRS guidelines on hobby-loss rules."
+        description: "Many Muttontown properties include active or semi-active equestrian operations. We work with you to ensure your horse farm or riding facility qualifies for appropriate business deductions, agricultural exemptions, and depreciation schedules, while staying well within IRS guidelines on hobby-loss rules."
       },
       {
         title: "Land Conservation Easement Planning",
@@ -2717,11 +2717,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Advisory with No Product Sales",
-        description: "Muttontown families are frequently targeted by advisors selling insurance-wrapped investment products. As fee-only fiduciaries, we have no inventory to move — our recommendations are driven solely by what serves your family's wealth preservation goals."
+        description: "Muttontown families are frequently targeted by advisors selling insurance-wrapped investment products. As fee-only fiduciaries, we have no inventory to move. Our recommendations are driven solely by what serves your family's wealth preservation goals."
       }
     ],
     insightHeading: "Planning for Wealth That's Measured in Acres, Not Just Assets",
-    insight: "Muttontown stands apart from its Gold Coast neighbors in one critical respect: the land itself is often the legacy. While communities like Manhasset or Great Neck derive wealth primarily from professional income, Muttontown's value is tied to sprawling estate properties — many with equestrian facilities, wooded preserves, and structures that date to the original Gold Coast era. The ruins of King Zog of Albania's intended estate still sit within the Muttontown Preserve, a reminder of just how long these properties have carried significance. For today's Muttontown families, the planning challenge is layered. How do you transfer a $3 million estate property to the next generation without forcing a sale? How do you manage the tax implications of land that's appreciated for decades? And how do you keep equestrian operations running in a way that satisfies both the IRS and your family's goals? These are the questions that require a wealth advisor who understands estates measured in acres, not just account balances.",
+    insight: "Muttontown stands apart from its Gold Coast neighbors in one critical respect: the land itself is often the legacy. While communities like Manhasset or Great Neck derive wealth primarily from professional income, Muttontown's value is tied to sprawling estate properties, many with equestrian facilities, wooded preserves, and structures that date to the original Gold Coast era. The ruins of King Zog of Albania's intended estate still sit within the Muttontown Preserve, a reminder of just how long these properties have carried significance. For today's Muttontown families, the planning challenge is layered. How do you transfer a $3 million estate property to the next generation without forcing a sale? How do you manage the tax implications of land that's appreciated for decades? And how do you keep equestrian operations running in a way that satisfies both the IRS and your family's goals? These are the questions that require a wealth advisor who understands estates measured in acres, not just account balances.",
     faqs: [
       {
         question: "How can a family limited partnership help with my Muttontown estate?",
@@ -2733,7 +2733,7 @@ export const towns: Town[] = [
       },
       {
         question: "What's the benefit of a conservation easement on my property?",
-        answer: "A qualified conservation easement can provide a significant income tax deduction based on the reduction in your property's development value. For Muttontown landowners with acreage, the deduction can be substantial — but the easement is permanent, so the decision requires careful analysis."
+        answer: "A qualified conservation easement can provide a significant income tax deduction based on the reduction in your property's development value. For Muttontown landowners with acreage, the deduction can be substantial, but the easement is permanent, so the decision requires careful analysis."
       },
       {
         question: "How do you help with wealth transfer across generations?",
@@ -2741,7 +2741,7 @@ export const towns: Town[] = [
       },
       {
         question: "Why should a Muttontown family choose a fee-only advisor?",
-        answer: "High-net-worth families are prime targets for commission-driven advisors selling expensive products. Fee-only means our compensation comes directly from you — never from a product manufacturer — so our advice is always aligned with your family's interests rather than our own revenue."
+        answer: "High-net-worth families are prime targets for commission-driven advisors selling expensive products. Fee-only means our compensation comes directly from you, never from a product manufacturer, so our advice is always aligned with your family's interests rather than our own revenue."
       }
     ],
     faqHeading: "Questions From Muttontown Families",
@@ -2775,7 +2775,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Oyster Bay Cove, NY",
     metaDescription: "Wealth preservation and legacy planning for Oyster Bay Cove families. Charitable strategies, family foundations, and succession planning. Fee-only.",
     h1: "Preserving and Growing Wealth for Oyster Bay Cove's Distinguished Families",
-    heroSubtitle: "Nestled between Oyster Bay hamlet and Cold Spring Harbor, Oyster Bay Cove is home to families whose wealth — and responsibility — spans generations. With mean household incomes exceeding $403,000 and estates behind gated private roads, our fee-only advisory team provides the discreet, comprehensive planning this community requires.",
+    heroSubtitle: "Nestled between Oyster Bay hamlet and Cold Spring Harbor, Oyster Bay Cove is home to families whose wealth (and responsibility) spans generations. With mean household incomes exceeding $403,000 and estates behind gated private roads, our fee-only advisory team provides the discreet, comprehensive planning this community requires.",
     heroBadge: "Serving Oyster Bay Cove, NY",
     heroLabel: "22 Minutes from Our Lake Success Office",
     valuePropHeading: "Comprehensive Wealth Planning for Oyster Bay Cove",
@@ -2791,7 +2791,7 @@ export const towns: Town[] = [
       },
       {
         title: "Family Foundation Establishment and Management",
-        description: "For families whose charitable ambitions exceed what a donor-advised fund can accommodate, we guide the creation of private family foundations — including governance structure, distribution requirements, and investment policy — so your philanthropy reflects your family's values for generations."
+        description: "For families whose charitable ambitions exceed what a donor-advised fund can accommodate, we guide the creation of private family foundations, including governance structure, distribution requirements, and investment policy, so your philanthropy reflects your family's values for generations."
       },
       {
         title: "Succession Planning for Family Businesses",
@@ -2799,11 +2799,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Independence for Unbiased Counsel",
-        description: "Oyster Bay Cove families deserve advice that serves their legacy — not an advisor's sales quota. Our fee-only structure avoids the commission-based conflicts of interest, ensuring every recommendation we make is grounded in your family's long-term objectives."
+        description: "Oyster Bay Cove families deserve advice that serves their legacy, not an advisor's sales quota. Our fee-only structure avoids the commission-based conflicts of interest, ensuring every recommendation we make is grounded in your family's long-term objectives."
       }
     ],
     insightHeading: "Stewardship Over Generations in Oyster Bay Cove",
-    insight: "Oyster Bay Cove exists in a rare category — a community where wealth is not merely accumulated but curated across generations. The gated private roads, the country club memberships, the proximity to Theodore Roosevelt's Sagamore Hill — these aren't status symbols but reflections of a community that values continuity and stewardship. Financial planning in this context goes well beyond portfolio management. It means anticipating how estate tax changes could force a property sale, how a family business transition might strain relationships, and how charitable commitments can be structured to outlast any single generation. With mean household incomes above $403,000 and estate values frequently exceeding $3 million, the margin for planning error is slim and the cost of poor advice is enormous. That's why independent, fee-only counsel isn't a luxury for Oyster Bay Cove families — it's a necessity.",
+    insight: "Oyster Bay Cove exists in a rare category, a community where wealth is not merely accumulated but curated across generations. The gated private roads, the country club memberships, the proximity to Theodore Roosevelt's Sagamore Hill: these aren't status symbols but reflections of a community that values continuity and stewardship. Financial planning in this context goes well beyond portfolio management. It means anticipating how estate tax changes could force a property sale, how a family business transition might strain relationships, and how charitable commitments can be structured to outlast any single generation. With mean household incomes above $403,000 and estate values frequently exceeding $3 million, the margin for planning error is slim and the cost of poor advice is enormous. That's why independent, fee-only counsel isn't a luxury for Oyster Bay Cove families; it's a necessity.",
     faqs: [
       {
         question: "How do you help protect family wealth during market downturns?",
@@ -2861,11 +2861,11 @@ export const towns: Town[] = [
     heroBadge: "Serving Mill Neck, NY",
     heroLabel: "25 Minutes from Our Lake Success Office",
     valuePropHeading: "Estate and Wealth Planning for Mill Neck Residents",
-    valuePropSubheading: "Mill Neck's small population and high net worth per household mean that estate planning, tax efficiency, and legacy preservation aren't abstract concepts — they're immediate priorities for nearly every family here.",
+    valuePropSubheading: "Mill Neck's small population and high net worth per household mean that estate planning, tax efficiency, and legacy preservation aren't abstract concepts; they're immediate priorities for nearly every family here.",
     valueProps: [
       {
         title: "Estate Planning for an Aging Wealthy Population",
-        description: "Mill Neck's demographic skews older and wealthier than most Nassau County communities. We design estate plans that address the full spectrum of concerns — from minimizing federal and New York estate tax exposure to ensuring smooth fiduciary transitions and updated beneficiary designations."
+        description: "Mill Neck's demographic skews older and wealthier than most Nassau County communities. We design estate plans that address the full spectrum of concerns, from minimizing federal and New York estate tax exposure to ensuring smooth fiduciary transitions and updated beneficiary designations."
       },
       {
         title: "Qualified Personal Residence Trusts (QPRTs)",
@@ -2873,7 +2873,7 @@ export const towns: Town[] = [
       },
       {
         title: "Charitable Land and Conservation Donations",
-        description: "Mill Neck's identity is tied to its natural landscape — Shu Swamp Preserve and the harbor frontage define the community. For property owners considering donating land or conservation easements, we quantify the income and estate tax benefits and coordinate with land trusts to structure gifts properly."
+        description: "Mill Neck's identity is tied to its natural landscape: Shu Swamp Preserve and the harbor frontage define the community. For property owners considering donating land or conservation easements, we quantify the income and estate tax benefits and coordinate with land trusts to structure gifts properly."
       },
       {
         title: "Medicaid Planning That Preserves Estate Assets",
@@ -2881,11 +2881,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Advice with Complete Discretion",
-        description: "In a community as small and private as Mill Neck, discretion matters as much as competence. Our fee-only model ensures we have no reason to share your information with product companies or third-party distributors — your financial life stays between us."
+        description: "In a community as small and private as Mill Neck, discretion matters as much as competence. Our fee-only model ensures we have no reason to share your information with product companies or third-party distributors. Your financial life stays between us."
       }
     ],
     insightHeading: "Why Mill Neck's Small Scale Demands Precision Planning",
-    insight: "Mill Neck is a community where nearly everyone knows their neighbors — and where the financial stakes per household are among the highest in Nassau County. With a mean income above $376,000 and over 78% of adults holding bachelor's degrees or higher, residents here tend to be sophisticated, private, and deliberate about their financial decisions. The challenge is that Mill Neck's tiny population means there's no local financial services infrastructure. Most residents drive to surrounding communities for professional advice, and many end up with advisors who don't understand the nuances of ultra-low-density waterfront estate planning. Mill Neck Manor — the historic school for the deaf — and Shu Swamp Nature Preserve give the community a distinct charitable and conservation identity. Planning here means understanding QPRTs for $2 million homes, conservation gifts for harbor-adjacent land, and Medicaid strategies for residents who want to age in place without sacrificing estates built over lifetimes.",
+    insight: "Mill Neck is a community where nearly everyone knows their neighbors, and where the financial stakes per household are among the highest in Nassau County. With a mean income above $376,000 and over 78% of adults holding bachelor's degrees or higher, residents here tend to be sophisticated, private, and deliberate about their financial decisions. The challenge is that Mill Neck's tiny population means there's no local financial services infrastructure. Most residents drive to surrounding communities for professional advice, and many end up with advisors who don't understand the nuances of ultra-low-density waterfront estate planning. Mill Neck Manor (the historic school for the deaf) and Shu Swamp Nature Preserve give the community a distinct charitable and conservation identity. Planning here means understanding QPRTs for $2 million homes, conservation gifts for harbor-adjacent land, and Medicaid strategies for residents who want to age in place without sacrificing estates built over lifetimes.",
     faqs: [
       {
         question: "What is a QPRT and why is it relevant for Mill Neck homeowners?",
@@ -2939,7 +2939,7 @@ export const towns: Town[] = [
     seoTitle: "Wealth Advisor in Upper Brookville, NY",
     metaDescription: "Wealth management honoring Upper Brookville's preservation legacy. Estate tax planning, conservation strategies, and family governance. Fee-only.",
     h1: "Wealth Management That Honors Upper Brookville's Legacy of Preservation",
-    heroSubtitle: "Upper Brookville is defined by Planting Fields Arboretum — 409 acres of the former Coe estate preserved as public parkland — and by families who carry that same ethic of stewardship into their personal wealth planning. United Financial Planning Group provides fee-only advisory that aligns your financial strategy with Upper Brookville's preservation-first values.",
+    heroSubtitle: "Upper Brookville is defined by Planting Fields Arboretum (409 acres of the former Coe estate preserved as public parkland) and by families who carry that same ethic of stewardship into their personal wealth planning. United Financial Planning Group provides fee-only advisory that aligns your financial strategy with Upper Brookville's preservation-first values.",
     heroBadge: "Serving Upper Brookville, NY",
     heroLabel: "22 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Strategies for Upper Brookville's Preservation-Minded Families",
@@ -2951,7 +2951,7 @@ export const towns: Town[] = [
       },
       {
         title: "Conservation Easement Strategies",
-        description: "The preservation ethic that saved Planting Fields extends to private landowners throughout Upper Brookville. We help families evaluate conservation easements as both a legacy tool and a tax planning mechanism — quantifying deductions, coordinating appraisals, and ensuring compliance with IRS requirements."
+        description: "The preservation ethic that saved Planting Fields extends to private landowners throughout Upper Brookville. We help families evaluate conservation easements as both a legacy tool and a tax planning mechanism, quantifying deductions, coordinating appraisals, and ensuring compliance with IRS requirements."
       },
       {
         title: "Family Governance Structures",
@@ -2959,15 +2959,15 @@ export const towns: Town[] = [
       },
       {
         title: "Philanthropic Planning for Preservation-Oriented Families",
-        description: "Many Upper Brookville families direct their charitable giving toward land conservation, historic preservation, and environmental causes. We structure giving programs — including charitable remainder trusts and private foundations — that maximize impact while generating meaningful tax advantages."
+        description: "Many Upper Brookville families direct their charitable giving toward land conservation, historic preservation, and environmental causes. We structure giving programs, including charitable remainder trusts and private foundations that maximize impact while generating meaningful tax advantages."
       },
       {
         title: "Fee-Only Fiduciary Commitment",
-        description: "Upper Brookville families have no shortage of advisors seeking their business. Our distinction is structural: as fee-only fiduciaries, we have no proprietary products and no commission incentives — avoiding the conflicts that arise from product sales. Your wealth plan reflects your goals — period."
+        description: "Upper Brookville families have no shortage of advisors seeking their business. Our distinction is structural: as fee-only fiduciaries, we have no proprietary products and no commission incentives, avoiding the conflicts that arise from product sales. Your wealth plan reflects your goals. Period."
       }
     ],
     insightHeading: "Wealth Planning in the Shadow of Planting Fields",
-    insight: "Upper Brookville's character was shaped by the Gold Coast families who built grand estates here a century ago — and by the conservation decisions that preserved many of those properties as public lands. Planting Fields Arboretum, the 409-acre former estate of William Robertson Coe, stands as the most visible example, but the preservation ethic runs through the entire community. Private roads wind through wooded lots measured in acres, equestrian fences line the landscape, and the population of roughly 1,500 maintains the lowest density in the area. For families here, wealth planning isn't about accumulation — it's about preservation in every sense. How do you maintain a $4 million estate property without liquidating investments? How do you structure a conservation easement that actually delivers the promised tax benefit? How do you keep three generations aligned on the family's financial direction? These are the questions Upper Brookville families bring to us, and they're questions that demand an advisor who takes preservation as seriously as performance.",
+    insight: "Upper Brookville's character was shaped by the Gold Coast families who built grand estates here a century ago, and by the conservation decisions that preserved many of those properties as public lands. Planting Fields Arboretum, the 409-acre former estate of William Robertson Coe, stands as the most visible example, but the preservation ethic runs through the entire community. Private roads wind through wooded lots measured in acres, equestrian fences line the landscape, and the population of roughly 1,500 maintains the lowest density in the area. For families here, wealth planning isn't about accumulation; it's about preservation in every sense. How do you maintain a $4 million estate property without liquidating investments? How do you structure a conservation easement that actually delivers the promised tax benefit? How do you keep three generations aligned on the family's financial direction? These are the questions Upper Brookville families bring to us, and they're questions that demand an advisor who takes preservation as seriously as performance.",
     faqs: [
       {
         question: "How do you help families with estates above the New York exemption threshold?",
@@ -2975,7 +2975,7 @@ export const towns: Town[] = [
       },
       {
         question: "Is a conservation easement reversible?",
-        answer: "No — a qualified conservation easement is permanent, which is precisely why careful planning is essential before committing. We help you model the long-term financial impact and ensure the easement terms align with your family's future use of the property before any irreversible decisions are made."
+        answer: "No. A qualified conservation easement is permanent, which is precisely why careful planning is essential before committing. We help you model the long-term financial impact and ensure the easement terms align with your family's future use of the property before any irreversible decisions are made."
       },
       {
         question: "What does family governance look like in practice?",
@@ -2983,7 +2983,7 @@ export const towns: Town[] = [
       },
       {
         question: "Can you coordinate with our existing estate attorney and CPA?",
-        answer: "Absolutely. For Upper Brookville families with established professional teams, we serve as the financial quarterback — ensuring your investment strategy, estate plan, and tax approach are all working in concert rather than in silos."
+        answer: "Absolutely. For Upper Brookville families with established professional teams, we serve as the financial quarterback, ensuring your investment strategy, estate plan, and tax approach are all working in concert rather than in silos."
       },
       {
         question: "How accessible is your office from Upper Brookville?",
@@ -3025,7 +3025,7 @@ export const towns: Town[] = [
     heroBadge: "Serving Old Brookville, NY",
     heroLabel: "20 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Planning for Old Brookville's Executive Households",
-    valuePropSubheading: "Old Brookville's families often include senior executives, business owners, and retired professionals who have accumulated substantial wealth over distinguished careers. Your planning needs to reflect where you are now — and protect what comes next.",
+    valuePropSubheading: "Old Brookville's families often include senior executives, business owners, and retired professionals who have accumulated substantial wealth over distinguished careers. Your planning needs to reflect where you are now, and protect what comes next.",
     valueProps: [
       {
         title: "Legacy Estate Planning",
@@ -3033,7 +3033,7 @@ export const towns: Town[] = [
       },
       {
         title: "Tax-Efficient Gifting Strategies",
-        description: "Annual and lifetime gifting can dramatically reduce your taxable estate — but only if executed strategically. We design gifting programs using trusts, Crummey powers, and direct educational or medical payments to transfer wealth while preserving your lifetime exclusion for higher-value assets."
+        description: "Annual and lifetime gifting can dramatically reduce your taxable estate, but only if executed strategically. We design gifting programs using trusts, Crummey powers, and direct educational or medical payments to transfer wealth while preserving your lifetime exclusion for higher-value assets."
       },
       {
         title: "Blended Family Estate Planning",
@@ -3049,7 +3049,7 @@ export const towns: Town[] = [
       }
     ],
     insightHeading: "Planning Beyond the Corner Office",
-    insight: "Old Brookville attracts a specific kind of resident — accomplished professionals who have spent decades building wealth and now want to preserve it in a community that values privacy and low density. The private roads, the gated entrances, the wooded lots adjoining Upper Brookville and Muttontown — these aren't just real estate features but reflections of a community that prioritizes discretion. What makes planning here distinct is the concentration of executive-level wealth. Many Old Brookville families carry complex compensation packages with deferred components, stock positions that need unwinding, and corporate benefit structures that change dramatically at retirement. Add in the frequency of blended families — where second marriages intersect with children from first marriages — and the estate planning alone requires precision that most advisors underestimate. The De Seversky Conference Center on the NYIT campus may be Old Brookville's most public landmark, but the real story is the private wealth behind those gates — and the planning required to keep it intact across generations.",
+    insight: "Old Brookville attracts a specific kind of resident: accomplished professionals who have spent decades building wealth and now want to preserve it in a community that values privacy and low density. The private roads, the gated entrances, the wooded lots adjoining Upper Brookville and Muttontown: these aren't just real estate features but reflections of a community that prioritizes discretion. What makes planning here distinct is the concentration of executive-level wealth. Many Old Brookville families carry complex compensation packages with deferred components, stock positions that need unwinding, and corporate benefit structures that change dramatically at retirement. Add in the frequency of blended families (where second marriages intersect with children from first marriages) and the estate planning alone requires precision that most advisors underestimate. The De Seversky Conference Center on the NYIT campus may be Old Brookville's most public landmark, but the real story is the private wealth behind those gates, and the planning required to keep it intact across generations.",
     faqs: [
       {
         question: "How should I handle deferred compensation when I leave my executive role?",
@@ -3057,14 +3057,14 @@ export const towns: Town[] = [
       },
       {
         question: "What's the best way to handle estate planning with a blended family?",
-        answer: "QTIP trusts are often the cornerstone — they provide for your surviving spouse while preserving the remainder for children from a prior marriage. We coordinate these trusts with beneficiary designations, joint property titling, and prenuptial agreements to ensure everyone is protected."
+        answer: "QTIP trusts are often the cornerstone: they provide for your surviving spouse while preserving the remainder for children from a prior marriage. We coordinate these trusts with beneficiary designations, joint property titling, and prenuptial agreements to ensure everyone is protected."
       },
       {
         question: "Can you help me reduce my estate tax exposure through gifting?",
         answer: "Yes. We design multi-year gifting strategies using annual exclusions, irrevocable trusts, and direct payments for education or medical expenses. The key is starting early enough to move meaningful assets out of your estate while the lifetime exemption remains high."
       },
       {
-        question: "I'm retiring from a Fortune 500 company — where do I start?",
+        question: "I'm retiring from a Fortune 500 company: where do I start?",
         answer: "Start with a full inventory of your compensation components: pension, 401(k), deferred compensation, stock options, RSUs, and retiree benefits. We then build a distribution timeline that sequences payouts across tax brackets and coordinates with your investment portfolio for sustainable income."
       },
       {
@@ -3103,11 +3103,11 @@ export const towns: Town[] = [
     seoTitle: "Wealth Planning in Lattingtown, NY",
     metaDescription: "Legacy wealth planning for Lattingtown's historic estate community. Wealth transfers, CRTs, art valuation, and inherited property planning. Fee-only.",
     h1: "Legacy Wealth Planning for Lattingtown's Historic Estate Community",
-    heroSubtitle: "Lattingtown sits on former J.P. Morgan estate territory, where Bailey Arboretum now preserves a fraction of the original Gold Coast grandeur. Today's Lattingtown families — roughly 1,700 residents with a mean income above $300,000 — need wealth planning that's as thoughtful and enduring as the community itself.",
+    heroSubtitle: "Lattingtown sits on former J.P. Morgan estate territory, where Bailey Arboretum now preserves a fraction of the original Gold Coast grandeur. Today's Lattingtown families (roughly 1,700 residents with a mean income above $300,000) need wealth planning that's as thoughtful and enduring as the community itself.",
     heroBadge: "Serving Lattingtown, NY",
     heroLabel: "25 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Transfer and Estate Strategies for Lattingtown",
-    valuePropSubheading: "Lattingtown's combination of historic estate properties, horse farms, and the Locust Valley school district creates a specific financial planning profile — one centered on inherited wealth, real property transfers, and legacy preservation.",
+    valuePropSubheading: "Lattingtown's combination of historic estate properties, horse farms, and the Locust Valley school district creates a specific financial planning profile, one centered on inherited wealth, real property transfers, and legacy preservation.",
     valueProps: [
       {
         title: "Wealth Transfer Strategies for Estate Owners",
@@ -3115,7 +3115,7 @@ export const towns: Town[] = [
       },
       {
         title: "Charitable Remainder Trusts (CRTs)",
-        description: "For Lattingtown families with highly appreciated assets — whether real estate, securities, or collectibles — a CRT can provide income during your lifetime, a charitable deduction at funding, and a legacy gift to the organization of your choice. We model the trust economics and coordinate implementation."
+        description: "For Lattingtown families with highly appreciated assets (whether real estate, securities, or collectibles), a CRT can provide income during your lifetime, a charitable deduction at funding, and a legacy gift to the organization of your choice. We model the trust economics and coordinate implementation."
       },
       {
         title: "Art and Collectibles Valuation for Estate Purposes",
@@ -3123,22 +3123,22 @@ export const towns: Town[] = [
       },
       {
         title: "Tax Planning for Inherited Real Estate",
-        description: "Inheriting a Lattingtown estate can trigger complex tax questions — from stepped-up basis calculations to decisions about keeping, selling, or renting the property. We help heirs navigate these decisions with clear financial modeling so the inheritance builds wealth rather than creating a burden."
+        description: "Inheriting a Lattingtown estate can trigger complex tax questions, from stepped-up basis calculations to decisions about keeping, selling, or renting the property. We help heirs navigate these decisions with clear financial modeling so the inheritance builds wealth rather than creating a burden."
       },
       {
         title: "Fee-Only Guidance Without Product Agendas",
-        description: "Lattingtown families have generational experience with financial advisors, and many have learned the hard way that commission-driven advice doesn't serve their interests. Our fee-only structure ensures our recommendations reflect your family's goals — not our revenue needs."
+        description: "Lattingtown families have generational experience with financial advisors, and many have learned the hard way that commission-driven advice doesn't serve their interests. Our fee-only structure ensures our recommendations reflect your family's goals, not our revenue needs."
       }
     ],
     insightHeading: "Where Gold Coast History Meets Modern Wealth Planning",
-    insight: "Lattingtown carries its history lightly — Bailey Arboretum sits on what was once part of the sprawling Morgan family holdings, and many current residents live on properties that were carved from original Gold Coast estates a century ago. Horse farms still dot the landscape, the Locust Valley school district remains one of Nassau County's most sought-after, and the population hovers around 1,700 — barely larger than it was decades ago. What this means for financial planning is that wealth in Lattingtown tends to be inherited, property-heavy, and complex. A typical client might have a $2.5 million home with a basis of $400,000 from a parent's estate, a collection of art acquired over decades, and a desire to set up the next generation without triggering a massive tax event. These aren't problems you solve with a standard retirement calculator. They require a planner who understands basis step-ups, CRT mechanics, and the real cost of maintaining a historic property in a community where character matters as much as returns.",
+    insight: "Lattingtown carries its history lightly. Bailey Arboretum sits on what was once part of the sprawling Morgan family holdings, and many current residents live on properties that were carved from original Gold Coast estates a century ago. Horse farms still dot the landscape, the Locust Valley school district remains one of Nassau County's most sought-after, and the population hovers around 1,700, barely larger than it was decades ago. What this means for financial planning is that wealth in Lattingtown tends to be inherited, property-heavy, and complex. A typical client might have a $2.5 million home with a basis of $400,000 from a parent's estate, a collection of art acquired over decades, and a desire to set up the next generation without triggering a massive tax event. These aren't problems you solve with a standard retirement calculator. They require a planner who understands basis step-ups, CRT mechanics, and the real cost of maintaining a historic property in a community where character matters as much as returns.",
     faqs: [
       {
         question: "How does a charitable remainder trust work for a Lattingtown family?",
-        answer: "You transfer appreciated assets into the trust, receive an income stream for a set period, and the remainder goes to your chosen charity. You get an upfront charitable deduction and avoid capital gains on the transferred assets — making it especially effective for highly appreciated real estate or securities."
+        answer: "You transfer appreciated assets into the trust, receive an income stream for a set period, and the remainder goes to your chosen charity. You get an upfront charitable deduction and avoid capital gains on the transferred assets, making it especially effective for highly appreciated real estate or securities."
       },
       {
-        question: "I inherited my parents' Lattingtown home — what should I do?",
+        question: "I inherited my parents' Lattingtown home: what should I do?",
         answer: "Start by establishing the stepped-up basis as of the date of death, which may significantly reduce your capital gains exposure if you sell. We help you evaluate whether to keep, rent, or sell the property based on your financial goals, tax situation, and attachment to the community."
       },
       {
@@ -3184,12 +3184,12 @@ export const towns: Town[] = [
     avgHomeValue: "$1.2M–$3M+",
     seoTitle: "Financial Advisor in Manhasset, NY",
     metaDescription: "Executive wealth strategies for Manhasset residents. Compensation planning, Northwell benefits optimization, and high-income tax strategies. Fee-only.",
-    h1: "Executive Wealth Strategies for Manhasset — Where Wall Street Meets the Gold Coast",
-    heroSubtitle: "Manhasset combines express LIRR access to Penn Station, a top-ranked school district, and the luxury retail of Americana Manhasset into one of Long Island's most desirable communities. United Financial Planning Group — just five minutes away in Lake Success — provides the sophisticated, fee-only advisory that Manhasset's high-earning professionals demand.",
+    h1: "Executive Wealth Strategies for Manhasset: Where Wall Street Meets the Gold Coast",
+    heroSubtitle: "Manhasset combines express LIRR access to Penn Station, a top-ranked school district, and the luxury retail of Americana Manhasset into one of Long Island's most desirable communities. United Financial Planning Group, just five minutes away in Lake Success, provides the sophisticated, fee-only advisory that Manhasset's high-earning professionals demand.",
     heroBadge: "Serving Manhasset, NY",
     heroLabel: "5 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Management for Manhasset's Executive Community",
-    valuePropSubheading: "Manhasset's residents include Wall Street professionals, Northwell Health executives, and dual-income households earning well into six figures. Your financial plan needs to match that level of complexity — from deferred compensation to AMT exposure.",
+    valuePropSubheading: "Manhasset's residents include Wall Street professionals, Northwell Health executives, and dual-income households earning well into six figures. Your financial plan needs to match that level of complexity, from deferred compensation to AMT exposure.",
     valueProps: [
       {
         title: "Executive Compensation for Finance Industry Commuters",
@@ -3197,31 +3197,31 @@ export const towns: Town[] = [
       },
       {
         title: "Northwell Health Employee Benefits Optimization",
-        description: "North Shore University Hospital — Northwell's flagship — is right in Manhasset, employing thousands of physicians, nurses, and administrators. We help Northwell employees navigate their 403(b), pension options, deferred compensation, and group benefits to ensure nothing is left on the table."
+        description: "North Shore University Hospital (Northwell's flagship) is right in Manhasset, employing thousands of physicians, nurses, and administrators. We help Northwell employees navigate their 403(b), pension options, deferred compensation, and group benefits to ensure nothing is left on the table."
       },
       {
         title: "Luxury Asset and Lifestyle Financial Planning",
-        description: "The Americana Manhasset isn't just shopping — it reflects a community whose lifestyle expenses require deliberate planning. We help high-earning families budget for private school tuition, luxury travel, home renovations, and discretionary spending without undermining long-term wealth building."
+        description: "The Americana Manhasset isn't just shopping. It reflects a community whose lifestyle expenses require deliberate planning. We help high-earning families budget for private school tuition, luxury travel, home renovations, and discretionary spending without undermining long-term wealth building."
       },
       {
         title: "Tax Strategies for Very High W-2 Income",
         description: "Manhasset households frequently face combined federal, state, and local tax rates exceeding 50% on marginal income. We deploy strategies including municipal bond allocation, tax-loss harvesting, charitable giving timing, and retirement account maximization to reduce your effective rate."
       },
       {
-        title: "Fee-Only Planning — No Commission Incentives",
-        description: "Manhasset's affluent population attracts no shortage of financial salespeople. Our fee-only model means we'll never recommend a product because it pays us a commission. Your plan is built around your career trajectory and family goals — nothing else."
+        title: "Fee-Only Planning: No Commission Incentives",
+        description: "Manhasset's affluent population attracts no shortage of financial salespeople. Our fee-only model means we'll never recommend a product because it pays us a commission. Your plan is built around your career trajectory and family goals, nothing else."
       }
     ],
     insightHeading: "The Financial Complexity Behind Manhasset's Polished Surface",
-    insight: "From the outside, Manhasset looks effortless — the Miracle Mile of luxury retail, the manicured neighborhoods, the express train that puts you in Midtown in 35 minutes. But behind that polish is real financial complexity. Many Manhasset families are dual-income households where both spouses earn in the high six figures, creating layered tax exposure across multiple compensation structures. Northwell Health's flagship campus employs thousands of residents, from attending physicians to senior administrators, each with benefit packages that require careful optimization. And the cost of living here — property taxes that can exceed $30,000, private school tuition, and the social expectations that come with the Americana Manhasset zip code — means even very high earners can find themselves cash-flow constrained without proper planning. The families who thrive financially in Manhasset aren't necessarily the highest earners. They're the ones who plan deliberately — coordinating their compensation, tax strategy, investment allocation, and spending into a coherent system. That's what we build.",
+    insight: "From the outside, Manhasset looks effortless: the Miracle Mile of luxury retail, the manicured neighborhoods, the express train that puts you in Midtown in 35 minutes. But behind that polish is real financial complexity. Many Manhasset families are dual-income households where both spouses earn in the high six figures, creating layered tax exposure across multiple compensation structures. Northwell Health's flagship campus employs thousands of residents, from attending physicians to senior administrators, each with benefit packages that require careful optimization. And the cost of living here (property taxes that can exceed $30,000, private school tuition, and the social expectations that come with the Americana Manhasset zip code) means even very high earners can find themselves cash-flow constrained without proper planning. The families who thrive financially in Manhasset aren't necessarily the highest earners. They're the ones who plan deliberately, coordinatingnating their compensation, tax strategy, investment allocation, and spending into a coherent system. That's what we build.",
     faqs: [
       {
         question: "How do you help Wall Street professionals with compensation planning?",
-        answer: "We analyze your full compensation package — base salary, bonus, RSUs, stock options, deferred compensation, and carried interest — and build a tax-efficient strategy for each component. This includes timing elections, managing concentration risk, and coordinating with your employer's equity plan administrator."
+        answer: "We analyze your full compensation package (base salary, bonus, RSUs, stock options, deferred compensation, and carried interest) and build a tax-efficient strategy for each component. This includes timing elections, managing concentration risk, and coordinating with your employer's equity plan administrator."
       },
       {
         question: "Can you help Northwell Health employees specifically?",
-        answer: "Yes. We work with Northwell employees at multiple levels — from physicians to administrators — and understand the 403(b), pension, deferred comp, and group benefit structures. We help you maximize contributions, choose appropriate investments, and coordinate employer benefits with your personal financial plan."
+        answer: "Yes. We work with Northwell employees at multiple levels (from physicians to administrators) and understand the 403(b), pension, deferred comp, and group benefit structures. We help you maximize contributions, choose appropriate investments, and coordinate employer benefits with your personal financial plan."
       },
       {
         question: "What can I do about my high tax bill as a Manhasset resident?",
@@ -3229,7 +3229,7 @@ export const towns: Town[] = [
       },
       {
         question: "How close is your office to Manhasset?",
-        answer: "We're five minutes away in Lake Success at 1979 Marcus Avenue, Suite 210. It's one of the closest advisor-to-client relationships on the North Shore — no need to drive to Manhattan for quality wealth management."
+        answer: "We're five minutes away in Lake Success at 1979 Marcus Avenue, Suite 210. It's one of the closest advisor-to-client relationships on the North Shore, so there's no need to drive to Manhattan for quality wealth management."
       },
       {
         question: "Do you work with families where both spouses have complex compensation?",
@@ -3267,11 +3267,11 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in Great Neck, NY",
     metaDescription: "Culturally informed financial planning for Great Neck's global community. International asset reporting, multi-currency strategies, and real estate planning.",
     h1: "Culturally Informed Financial Planning for Great Neck's Global Professional Community",
-    heroSubtitle: "Great Neck — the real-life inspiration for F. Scott Fitzgerald's 'East Egg' — is today one of Long Island's most culturally diverse affluent communities. With large Persian, Korean, and Chinese professional populations spanning multiple villages, United Financial Planning Group provides financial planning that respects cultural context while navigating the complexities of international assets and cross-border wealth.",
+    heroSubtitle: "Great Neck (the real-life inspiration for F. Scott Fitzgerald's 'East Egg') is today one of Long Island's most culturally diverse affluent communities. With large Persian, Korean, and Chinese professional populations spanning multiple villages, United Financial Planning Group provides financial planning that respects cultural context while navigating the complexities of international assets and cross-border wealth.",
     heroBadge: "Serving Great Neck, NY",
     heroLabel: "5 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Planning for Great Neck's Global Professionals",
-    valuePropSubheading: "Great Neck's diversity is its strength — and its planning complexity. When your financial life spans countries, currencies, and cultural expectations about family wealth, you need an advisor who understands all of it.",
+    valuePropSubheading: "Great Neck's diversity is its strength, and its planning complexity. When your financial life spans countries, currencies, and cultural expectations about family wealth, you need an advisor who understands all of it.",
     valueProps: [
       {
         title: "Cross-Cultural Financial Planning",
@@ -3287,19 +3287,19 @@ export const towns: Town[] = [
       },
       {
         title: "Real Estate Investment for International-Background Families",
-        description: "Real estate often holds outsized importance for families with international roots — both as investment and as stability. We help Great Neck families evaluate property purchases, rental income strategies, and the tax implications of owning real estate in multiple jurisdictions."
+        description: "Real estate often holds outsized importance for families with international roots, both as investment and as stability. We help Great Neck families evaluate property purchases, rental income strategies, and the tax implications of owning real estate in multiple jurisdictions."
       },
       {
         title: "Fee-Only Advice That Serves Your Family First",
-        description: "In a community where trust is paramount and financial relationships often span family networks, our fee-only model provides a critical assurance: we will never recommend a product because it benefits us. Our loyalty is to your family's financial wellbeing — exclusively."
+        description: "In a community where trust is paramount and financial relationships often span family networks, our fee-only model provides a critical assurance: we will never recommend a product because it benefits us. Our loyalty is to your family's financial wellbeing, exclusively."
       }
     ],
     insightHeading: "Why Great Neck's Global Wealth Needs Local Expertise",
-    insight: "Great Neck isn't one community — it's a constellation of villages (Estates, Plaza, Kings Point, and more), each with its own character, and together forming one of Long Island's most internationally connected enclaves. The Persian-Jewish community has deep roots here. Korean and Chinese professionals have established significant presence. And across all of these groups, the financial planning needs share a common thread: wealth that crosses borders. A typical Great Neck client might own a home in Kings Point, rental property in Great Neck Plaza, a bank account in Seoul or Tehran, and a business interest that generates income in multiple currencies. FBAR filing thresholds are $10,000 in aggregate foreign accounts — a number that's easily exceeded when families maintain overseas connections. The penalties for non-compliance can reach tens of thousands of dollars per account per year. Beyond compliance, the real challenge is integration. How do you build a coherent financial plan when your assets, income, and family obligations span multiple countries and cultures? That requires an advisor who's five minutes away, understands the local community, and has the technical sophistication to handle international complexity.",
+    insight: "Great Neck isn't one community; it's a constellation of villages (Estates, Plaza, Kings Point, and more), each with its own character, and together forming one of Long Island's most internationally connected enclaves. The Persian-Jewish community has deep roots here. Korean and Chinese professionals have established significant presence. And across all of these groups, the financial planning needs share a common thread: wealth that crosses borders. A typical Great Neck client might own a home in Kings Point, rental property in Great Neck Plaza, a bank account in Seoul or Tehran, and a business interest that generates income in multiple currencies. FBAR filing thresholds are $10,000 in aggregate foreign accounts, a number that's easily exceeded when families maintain overseas connections. The penalties for non-compliance can reach tens of thousands of dollars per account per year. Beyond compliance, the real challenge is integration. How do you build a coherent financial plan when your assets, income, and family obligations span multiple countries and cultures? That requires an advisor who's five minutes away, understands the local community, and has the technical sophistication to handle international complexity.",
     faqs: [
       {
         question: "Do I need to file an FBAR if I have overseas bank accounts?",
-        answer: "If your aggregate foreign financial accounts exceeded $10,000 at any point during the year, yes — you must file FinCEN Form 114. FATCA may impose additional reporting requirements. We help you identify reportable accounts and ensure timely, accurate filing to avoid penalties that can be severe."
+        answer: "If your aggregate foreign financial accounts exceeded $10,000 at any point during the year, yes. You must file FinCEN Form 114. FATCA may impose additional reporting requirements. We help you identify reportable accounts and ensure timely, accurate filing to avoid penalties that can be severe."
       },
       {
         question: "How do you handle cultural differences in financial planning approaches?",
@@ -3351,12 +3351,12 @@ export const towns: Town[] = [
     avgHomeValue: "$900K–$2M",
     seoTitle: "Financial Advisor in Port Washington, NY",
     metaDescription: "Wealth management for Port Washington's finance professionals. Stock option planning, deferred comp strategies, and retirement transitions. Fee-only.",
-    h1: "Wall Street Close to Home — Wealth Management for Port Washington's Finance Professionals",
-    heroSubtitle: "Port Washington sits at the terminus of the LIRR's fastest and most reliable line — making it the preferred home for Wall Street professionals who want harbor views without sacrificing their commute. United Financial Planning Group, just eight minutes away in Lake Success, provides the fee-only wealth management that Port Washington's finance community deserves.",
+    h1: "Wall Street Close to Home: Wealth Management for Port Washington's Finance Professionals",
+    heroSubtitle: "Port Washington sits at the terminus of the LIRR's fastest and most reliable line, making it the preferred home for Wall Street professionals who want harbor views without sacrificing their commute. United Financial Planning Group, just eight minutes away in Lake Success, provides the fee-only wealth management that Port Washington's finance community deserves.",
     heroBadge: "Serving Port Washington, NY",
     heroLabel: "8 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Strategies for Port Washington's Wall Street Commuters",
-    valuePropSubheading: "When your income includes RSUs, deferred compensation, and year-end bonuses that rival most people's salaries, you need an advisor who understands the mechanics — not just the math. Port Washington's finance professionals get that from our Lake Success office down the road.",
+    valuePropSubheading: "When your income includes RSUs, deferred compensation, and year-end bonuses that rival most people's salaries, you need an advisor who understands the mechanics, not just the math. Port Washington's finance professionals get that from our Lake Success office down the road.",
     valueProps: [
       {
         title: "Commuter Tax Optimization for Wall Street Professionals",
@@ -3368,31 +3368,31 @@ export const towns: Town[] = [
       },
       {
         title: "RSU and Stock Option Strategies for Finance Industry",
-        description: "Concentrated equity positions are one of the biggest risks for finance professionals. We build systematic diversification plans, evaluate when to exercise options versus hold, and manage the tax implications of vesting schedules — all while keeping your portfolio aligned with your risk tolerance."
+        description: "Concentrated equity positions are one of the biggest risks for finance professionals. We build systematic diversification plans, evaluate when to exercise options versus hold, and manage the tax implications of vesting schedules, all while keeping your portfolio aligned with your risk tolerance."
       },
       {
         title: "Retirement Planning for Former Traders Transitioning Out",
         description: "Leaving the trading floor or a managing director role means a dramatic income shift. We help Port Washington's finance professionals model the transition from peak earning to retirement, including health insurance gaps, Social Security timing, and sustainable withdrawal rates from portfolios built during high-earning years."
       },
       {
-        title: "Fee-Only — Aligned with Your Interests, Not a Broker-Dealer's",
-        description: "You work in finance. You understand conflicts of interest better than anyone. Our fee-only model ensures we're on the same side of the table — recommending strategies based on your financial situation, not on what generates commissions for us."
+        title: "Fee-Only: Aligned with Your Interests, Not a Broker-Dealer's",
+        description: "You work in finance. You understand conflicts of interest better than anyone. Our fee-only model ensures we're on the same side of the table, recommending strategies based on your financial situation, not on what generates commissions for us."
       }
     ],
     insightHeading: "Why Port Washington's Fastest Commute Creates Unique Planning Needs",
-    insight: "The Port Washington Branch is the LIRR's crown jewel — 38 minutes to Penn Station with the system's best on-time performance. That reliability has made Port Washington the North Shore's unofficial Wall Street bedroom community. Walk through the village on any weekday morning and you'll see the proof: finance professionals heading to the station in numbers that rival any Manhattan-bound suburb in the tristate area. This concentration of finance industry wealth creates planning dynamics you won't find in most Long Island communities. Deferred compensation plans from bulge-bracket banks, RSU vesting schedules from asset managers, carried interest from private equity — these compensation structures require planning that most local advisors have never encountered. Meanwhile, the lifestyle in Port Washington — harbor access, Sands Point Preserve nearby, Beacon Hill and Baxter Estates neighborhoods — means housing costs and property taxes that demand careful cash-flow management even for seven-figure earners. The families who manage this well treat their financial plan like they treat their portfolios: with discipline, sophistication, and an advisor who speaks their language.",
+    insight: "The Port Washington Branch is the LIRR's crown jewel: 38 minutes to Penn Station with the system's best on-time performance. That reliability has made Port Washington the North Shore's unofficial Wall Street bedroom community. Walk through the village on any weekday morning and you'll see the proof: finance professionals heading to the station in numbers that rival any Manhattan-bound suburb in the tristate area. This concentration of finance industry wealth creates planning dynamics you won't find in most Long Island communities. Deferred compensation plans from bulge-bracket banks, RSU vesting schedules from asset managers, carried interest from private equity. These compensation structures require planning that most local advisors have never encountered. Meanwhile, the lifestyle in Port Washington (harbor access, Sands Point Preserve nearby, Beacon Hill and Baxter Estates neighborhoods) means housing costs and property taxes that demand careful cash-flow management even for seven-figure earners. The families who manage this well treat their financial plan like they treat their portfolios: with discipline, sophistication, and an advisor who speaks their language.",
     faqs: [
       {
         question: "How do you help with RSU concentration risk?",
-        answer: "We build scheduled diversification plans that sell vested shares systematically, balancing tax efficiency with risk reduction. For finance professionals, we also consider how your employer equity correlates with your career risk — since a downturn could hit both your stock and your job simultaneously."
+        answer: "We build scheduled diversification plans that sell vested shares systematically, balancing tax efficiency with risk reduction. For finance professionals, we also consider how your employer equity correlates with your career risk, since a downturn could hit both your stock and your job simultaneously."
       },
       {
         question: "Should I defer my bonus or take it now?",
         answer: "It depends on your current tax rate versus your expected rate when the deferred amount pays out. We model both scenarios, factor in the credit risk of your employer's deferred compensation plan, and evaluate whether the tax deferral benefit outweighs the risk of leaving money inside the company."
       },
       {
-        question: "I'm a managing director thinking about early retirement — can you help plan?",
-        answer: "This is one of our core specialties. We model the transition from peak MD compensation to retirement income, addressing deferred compensation timing, health insurance before Medicare, portfolio withdrawal sequencing, and lifestyle adjustment — all tailored to finance industry retirement patterns."
+        question: "I'm a managing director thinking about early retirement: can you help plan?",
+        answer: "This is one of our core specialties. We model the transition from peak MD compensation to retirement income, addressing deferred compensation timing, health insurance before Medicare, portfolio withdrawal sequencing, and lifestyle adjustment, all tailored to finance industry retirement patterns."
       },
       {
         question: "Do you understand the tax implications of carried interest?",
@@ -3434,8 +3434,8 @@ export const towns: Town[] = [
     avgHomeValue: "$2.5M–$8M+",
     seoTitle: "Private Wealth Advisor in Sands Point, NY",
     metaDescription: "Private wealth advisory for Sands Point's ultra-high-net-worth families. Trust companies, family governance, and philanthropic planning. Fee-only.",
-    h1: "Private Wealth Advisory for Sands Point — The Real Great Gatsby Coast",
-    heroSubtitle: "Sands Point is Fitzgerald's real-life East Egg — where the Guggenheim family's Castlegould, Hempstead House, and Falaise still stand as monuments to American wealth. Today, with a mean household income exceeding $428,000 and median home sales at $3.1 million, Sands Point remains one of the most affluent communities in the nation. United Financial Planning Group provides the private, fee-only advisory that this community's wealth demands.",
+    h1: "Private Wealth Advisory for Sands Point: The Real Great Gatsby Coast",
+    heroSubtitle: "Sands Point is Fitzgerald's real-life East Egg, where the Guggenheim family's Castlegould, Hempstead House, and Falaise still stand as monuments to American wealth. Today, with a mean household income exceeding $428,000 and median home sales at $3.1 million, Sands Point remains one of the most affluent communities in the nation. United Financial Planning Group provides the private, fee-only advisory that this community's wealth demands.",
     heroBadge: "Serving Sands Point, NY",
     heroLabel: "10 Minutes from Our Lake Success Office",
     valuePropHeading: "Ultra-High-Net-Worth Advisory for Sands Point",
@@ -3451,7 +3451,7 @@ export const towns: Town[] = [
       },
       {
         title: "Family Governance and Succession Planning",
-        description: "Sands Point families often span multiple generations, business interests, and philanthropic commitments. We design governance frameworks — including family councils, investment policy statements, and next-generation education programs — that keep wealth management organized and reduce the friction that can tear families apart."
+        description: "Sands Point families often span multiple generations, business interests, and philanthropic commitments. We design governance frameworks (including family councils, investment policy statements, and next-generation education programs) that keep wealth management organized and reduce the friction that can tear families apart."
       },
       {
         title: "Philanthropic Advisory for Preservation Families",
@@ -3459,27 +3459,27 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Fiduciary for the Most Discerning Clients",
-        description: "At this level of wealth, the cost of conflicted advice isn't measured in basis points — it's measured in millions. Our fee-only model ensures that every recommendation we make exists solely to serve your family's objectives, free from any product-driven agenda."
+        description: "At this level of wealth, the cost of conflicted advice isn't measured in basis points; it's measured in millions. Our fee-only model ensures that every recommendation we make exists solely to serve your family's objectives, free from any product-driven agenda."
       }
     ],
     insightHeading: "Planning at the Scale of Sands Point",
-    insight: "Sands Point occupies a unique position in American wealth — the literal inspiration for Fitzgerald's depiction of old money, and still home to families whose financial lives operate at a scale most advisors never encounter. The Sands Point Preserve, with Castlegould and Hempstead House still standing from the Guggenheim era, serves as a daily reminder that wealth here is measured in legacy, not just liquidity. With roughly 2,700 residents and a median home sale price of $3.1 million, Sands Point is small enough to be private and wealthy enough to demand the highest caliber of financial counsel. The planning challenges here aren't about saving enough for retirement — they're about structuring wealth across trusts, foundations, operating businesses, and real estate holdings that collectively may exceed $20 million or more per family. A private trust company might make sense where a standard revocable trust falls short. A qualified opportunity zone investment might absorb gains from a business sale. A family governance structure might prevent the kind of inheritance disputes that have destroyed wealthier families. These are the planning conversations that Sands Point families need — and they require an advisor who operates at that level while remaining genuinely independent.",
+    insight: "Sands Point occupies a unique position in American wealth, the literal inspiration for Fitzgerald's depiction of old money, and still home to families whose financial lives operate at a scale most advisors never encounter. The Sands Point Preserve, with Castlegould and Hempstead House still standing from the Guggenheim era, serves as a daily reminder that wealth here is measured in legacy, not just liquidity. With roughly 2,700 residents and a median home sale price of $3.1 million, Sands Point is small enough to be private and wealthy enough to demand the highest caliber of financial counsel. The planning challenges here aren't about saving enough for retirement; they're about structuring wealth across trusts, foundations, operating businesses, and real estate holdings that collectively may exceed $20 million or more per family. A private trust company might make sense where a standard revocable trust falls short. A qualified opportunity zone investment might absorb gains from a business sale. A family governance structure might prevent the kind of inheritance disputes that have destroyed wealthier families. These are the planning conversations that Sands Point families need, and they require an advisor who operates at that level while remaining genuinely independent.",
     faqs: [
       {
         question: "What is a qualified opportunity zone investment and who should consider it?",
-        answer: "A QOZ investment allows you to defer and potentially reduce capital gains taxes by investing realized gains into designated opportunity zones. It's most relevant for Sands Point families with large gain events — such as a business sale or concentrated stock liquidation — who have a long enough time horizon to benefit."
+        answer: "A QOZ investment allows you to defer and potentially reduce capital gains taxes by investing realized gains into designated opportunity zones. It's most relevant for Sands Point families with large gain events (such as a business sale or concentrated stock liquidation) who have a long enough time horizon to benefit."
       },
       {
         question: "When does a private trust company make sense?",
-        answer: "When your family's trust assets exceed roughly $50 million or when you need governance structures that no institutional trustee can provide. A private trust company gives your family control over investment decisions, trustee selection, and distribution policies — essentially becoming your own trust institution."
+        answer: "When your family's trust assets exceed roughly $50 million or when you need governance structures that no institutional trustee can provide. A private trust company gives your family control over investment decisions, trustee selection, and distribution policies, essentially becoming your own trust institution."
       },
       {
         question: "How do you prepare the next generation to manage wealth?",
-        answer: "We incorporate next-generation education into our family governance work — including financial literacy programs, guided participation in investment decisions, and structured roles within family foundations or family meetings. The goal is to build competence and responsibility before significant wealth transfers occur."
+        answer: "We incorporate next-generation education into our family governance work, including financial literacy programs, guided participation in investment decisions, and structured roles within family foundations or family meetings. The goal is to build competence and responsibility before significant wealth transfers occur."
       },
       {
         question: "Can you work alongside our family office team?",
-        answer: "Absolutely. For Sands Point families with existing family offices, attorneys, and CPAs, we function as the independent financial planning voice — ensuring investment strategy, estate planning, and tax approach are integrated and that no single professional's perspective dominates decision-making."
+        answer: "Absolutely. For Sands Point families with existing family offices, attorneys, and CPAs, we function as the independent financial planning voice, ensuring investment strategy, estate planning, and tax approach are integrated and that no single professional's perspective dominates decision-making."
       },
       {
         question: "How close are you to Sands Point?",
@@ -3516,8 +3516,8 @@ export const towns: Town[] = [
     avgHomeValue: "$800K–$1.5M",
     seoTitle: "Financial Advisor in Roslyn, NY",
     metaDescription: "Financial planning for Roslyn residents. Historic home budgeting, school-district real estate investment, and retirement equity strategies. Fee-only.",
-    h1: "Financial Planning in Roslyn — Where Historic Charm Meets Modern Wealth Strategy",
-    heroSubtitle: "Roslyn's historic village — with the Ellen Ward Clock Tower, Duck Pond, and centuries-old architecture — attracts families who value character alongside financial growth. United Financial Planning Group, just eight minutes away in Lake Success, provides fee-only financial guidance for Roslyn residents across the Heights, Harbor, and Estates.",
+    h1: "Financial Planning in Roslyn: Where Historic Charm Meets Modern Wealth Strategy",
+    heroSubtitle: "Roslyn's historic village (with the Ellen Ward Clock Tower, Duck Pond, and centuries-old architecture) attracts families who value character alongside financial growth. United Financial Planning Group, just eight minutes away in Lake Success, provides fee-only financial guidance for Roslyn residents across the Heights, Harbor, and Estates.",
     heroBadge: "Serving Roslyn, NY",
     heroLabel: "8 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Guidance for Roslyn's Homeowners and Families",
@@ -3525,7 +3525,7 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "Historic Home Renovation Budgeting",
-        description: "Roslyn's older homes — some dating to the colonial era — often require significant renovation investment. We help you budget for restoration costs, evaluate how renovations affect resale value in a historic district, and determine whether a HELOC or cash reserve strategy makes more financial sense."
+        description: "Roslyn's older homes (some dating to the colonial era) often require significant renovation investment. We help you budget for restoration costs, evaluate how renovations affect resale value in a historic district, and determine whether a HELOC or cash reserve strategy makes more financial sense."
       },
       {
         title: "Estate Planning in Historic Districts",
@@ -3537,15 +3537,15 @@ export const towns: Town[] = [
       },
       {
         title: "Retirement Planning for Long-Tenured Homeowners with Equity",
-        description: "Many Roslyn families purchased homes decades ago and now sit on substantial equity gains. We help you evaluate whether to downsize, take a reverse mortgage, or use home equity strategically — all while building a retirement income plan that doesn't depend on selling the family home."
+        description: "Many Roslyn families purchased homes decades ago and now sit on substantial equity gains. We help you evaluate whether to downsize, take a reverse mortgage, or use home equity strategically, all while building a retirement income plan that doesn't depend on selling the family home."
       },
       {
         title: "Fee-Only Planning with No Hidden Agendas",
-        description: "Roslyn's families deserve straightforward advice. We don't sell insurance, annuities, or proprietary funds. Our fee-only model means every recommendation we make is based on your financial situation and goals — not on what generates revenue for us."
+        description: "Roslyn's families deserve straightforward advice. We don't sell insurance, annuities, or proprietary funds. Our fee-only model means every recommendation we make is based on your financial situation and goals, not on what generates revenue for us."
       }
     ],
     insightHeading: "The Intersection of History and Equity in Roslyn",
-    insight: "Roslyn occupies an unusual niche on Long Island — a village where genuine 18th-century history coexists with modern suburban wealth. The Ellen Ward Clock Tower, the William Cullen Bryant Preserve, and the Duck Pond district give Roslyn a visual identity that sets it apart from nearby communities. But that character comes with financial implications. Historic homes require renovation investments that generic suburban houses don't. The Roslyn School District's reputation drives property values higher than comparable homes in adjacent districts, which is great for existing owners but creates affordability pressure for buyers. And the community's geographic spread — from Roslyn Heights to Roslyn Harbor to Roslyn Estates — means financial planning looks different depending on which Roslyn you call home. What's consistent is the opportunity: families who bought here 15 or 20 years ago are often sitting on $300,000 to $500,000 in home equity appreciation. The question is what to do with it — and that's where planning makes the difference between wealth that grows and wealth that's trapped in your foundation.",
+    insight: "Roslyn occupies an unusual niche on Long Island, a village where genuine 18th-century history coexists with modern suburban wealth. The Ellen Ward Clock Tower, the William Cullen Bryant Preserve, and the Duck Pond district give Roslyn a visual identity that sets it apart from nearby communities. But that character comes with financial implications. Historic homes require renovation investments that generic suburban houses don't. The Roslyn School District's reputation drives property values higher than comparable homes in adjacent districts, which is great for existing owners but creates affordability pressure for buyers. And the community's geographic spread (from Roslyn Heights to Roslyn Harbor to Roslyn Estates) means financial planning looks different depending on which Roslyn you call home. What's consistent is the opportunity: families who bought here 15 or 20 years ago are often sitting on $300,000 to $500,000 in home equity appreciation. The question is what to do with it, and that's where planning makes the difference between wealth that grows and wealth that's trapped in your foundation.",
     faqs: [
       {
         question: "Should I renovate my historic Roslyn home or buy something newer?",
@@ -3556,7 +3556,7 @@ export const towns: Town[] = [
         answer: "Roslyn's school district consistently ranks among Nassau County's best, which directly supports property values. Homes in the Roslyn district typically command a premium over comparable properties in adjacent districts. We factor this into both purchase decisions and long-term wealth projections."
       },
       {
-        question: "I've owned my home for 25 years — how should I use my equity?",
+        question: "I've owned my home for 25 years: how should I use my equity?",
         answer: "Options include downsizing to free up cash for retirement, taking a HELOC for strategic investments, or simply holding the equity as a component of your net worth. We evaluate each option against your income needs, tax situation, and whether you want to age in place."
       },
       {
@@ -3601,12 +3601,12 @@ export const towns: Town[] = [
     avgHomeValue: "$550K–$750K",
     seoTitle: "Financial Advisor in Mineola, NY",
     metaDescription: "Financial planning for Mineola's legal professionals and executives. Practice succession, retirement distribution, and tax-efficient wealth strategies. Fee-only.",
-    h1: "Financial Planning for Mineola — Serving Nassau County's Legal Professionals and Business Owners",
-    heroSubtitle: "As Nassau County's seat of government, Mineola is home to the courthouse and a dense concentration of legal professionals, established practices, and executives who commute through its LIRR hub. United Financial Planning Group — ten minutes away in Lake Success — provides fee-only financial planning tailored to attorneys planning succession, physicians at NYU Langone, and high-net-worth families building multigenerational wealth.",
+    h1: "Financial Planning for Mineola: Serving Nassau County's Legal Professionals and Business Owners",
+    heroSubtitle: "As Nassau County's seat of government, Mineola is home to the courthouse and a dense concentration of legal professionals, established practices, and executives who commute through its LIRR hub. United Financial Planning Group, ten minutes away in Lake Success, provides fee-only financial planning tailored to attorneys planning succession, physicians at NYU Langone, and high-net-worth families building multigenerational wealth.",
     heroBadge: "Serving Mineola, NY",
     heroLabel: "10 Minutes from Our Lake Success Office",
     valuePropHeading: "Financial Planning for Mineola's Professional Community",
-    valuePropSubheading: "Mineola's identity as Nassau County's legal hub means its residents face planning challenges centered on practice succession, retirement distribution optimization, and tax-efficient wealth transfer — areas where specialized advice makes a measurable difference.",
+    valuePropSubheading: "Mineola's identity as Nassau County's legal hub means its residents face planning challenges centered on practice succession, retirement distribution optimization, and tax-efficient wealth transfer, areas where specialized advice makes a measurable difference.",
     valueProps: [
       {
         title: "Retirement Distribution and Income Planning",
@@ -3614,7 +3614,7 @@ export const towns: Town[] = [
       },
       {
         title: "Legal Professional Practice Succession",
-        description: "Mineola's courthouse presence supports a concentration of solo and small-firm attorneys. We help legal professionals plan for practice succession — whether that means selling to a partner, transitioning clients gradually, or winding down — while coordinating the financial impact with your retirement plan."
+        description: "Mineola's courthouse presence supports a concentration of solo and small-firm attorneys. We help legal professionals plan for practice succession (whether that means selling to a partner, transitioning clients gradually, or winding down) while coordinating the financial impact with your retirement plan."
       },
       {
         title: "Disability and Malpractice Insurance Planning",
@@ -3626,23 +3626,23 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Advice for Working Professionals",
-        description: "Whether you're a county employee, an attorney, or a nurse at NYU Langone, you deserve financial advice that's built for your budget — not designed to sell you products. Our fee-only model keeps your costs transparent and our recommendations unbiased."
+        description: "Whether you're a county employee, an attorney, or a nurse at NYU Langone, you deserve financial advice that's built for your budget, not designed to sell you products. Our fee-only model keeps your costs transparent and our recommendations unbiased."
       }
     ],
     insightHeading: "Mineola: Where Public Service Meets Private Financial Planning",
-    insight: "Mineola doesn't have the name recognition of Garden City next door or the waterfront appeal of Port Washington. What it has is infrastructure — the Nassau County courthouse, a major LIRR hub with express service to Penn Station, and NYU Langone Hospital. This infrastructure supports a community of established professionals whose financial planning needs are sophisticated and specific: How do I structure my law practice sale to minimize capital gains? When should I start Roth conversions before retirement? How do I coordinate deferred compensation with my other retirement assets? These questions require an advisor who understands professional practice economics, executive compensation structures, and the high-income tax landscape of Nassau County. Whether you're an attorney planning succession, a physician navigating hospital benefit structures, or an executive commuting through Mineola's LIRR hub, the planning challenges here reward specialized, fee-only advice.",
+    insight: "Mineola doesn't have the name recognition of Garden City next door or the waterfront appeal of Port Washington. What it has is infrastructure: the Nassau County courthouse, a major LIRR hub with express service to Penn Station, and NYU Langone Hospital. This infrastructure supports a community of established professionals whose financial planning needs are sophisticated and specific: How do I structure my law practice sale to minimize capital gains? When should I start Roth conversions before retirement? How do I coordinate deferred compensation with my other retirement assets? These questions require an advisor who understands professional practice economics, executive compensation structures, and the high-income tax landscape of Nassau County. Whether you're an attorney planning succession, a physician navigating hospital benefit structures, or an executive commuting through Mineola's LIRR hub, the planning challenges here reward specialized, fee-only advice.",
     faqs: [
       {
         question: "How do I plan for retirement as a high-income professional in Mineola?",
-        answer: "We build a comprehensive retirement income plan that coordinates all your sources — pension benefits, 401(k)/403(b) distributions, Social Security timing, and taxable investments. The key is managing the sequence of withdrawals and Roth conversions to minimize your lifetime tax burden while maintaining the income you need."
+        answer: "We build a comprehensive retirement income plan that coordinates all your sources (pension benefits, 401(k)/403(b) distributions, Social Security timing, and taxable investments). The key is managing the sequence of withdrawals and Roth conversions to minimize your lifetime tax burden while maintaining the income you need."
       },
       {
-        question: "I'm a solo attorney in Mineola — how do I plan for retirement without a partner?",
-        answer: "Solo practice retirement planning requires building a succession strategy — whether that means finding a buyer for your client relationships, gradually transitioning cases, or establishing a wind-down timeline. We coordinate the practice transition with your personal retirement income plan so one doesn't undermine the other."
+        question: "I'm a solo attorney in Mineola: how do I plan for retirement without a partner?",
+        answer: "Solo practice retirement planning requires building a succession strategy (whether that means finding a buyer for your client relationships, gradually transitioning cases, or establishing a wind-down timeline). We coordinate the practice transition with your personal retirement income plan so one doesn't undermine the other."
       },
       {
         question: "How do you help attorneys plan for practice succession?",
-        answer: "We coordinate the financial side of your practice transition — whether you're selling to a partner, merging with another firm, or winding down. This includes valuation guidance, deal structure optimization, and ensuring the sale proceeds integrate smoothly with your retirement income plan and tax strategy."
+        answer: "We coordinate the financial side of your practice transition (whether you're selling to a partner, merging with another firm, or winding down). This includes valuation guidance, deal structure optimization, and ensuring the sale proceeds integrate smoothly with your retirement income plan and tax strategy."
       },
       {
         question: "Do you work with physicians and executives at NYU Langone?",
@@ -3683,8 +3683,8 @@ export const towns: Town[] = [
     avgHomeValue: "$1M–$1.8M",
     seoTitle: "Financial Advisor in Garden City, NY",
     metaDescription: "Financial strategies for Garden City's high-income families. Dual-income tax planning, home equity strategies, and charitable giving guidance. Fee-only.",
-    h1: "Financial Strategies for Garden City — Planning with Purpose in One of America's Finest Suburbs",
-    heroSubtitle: "Garden City has been one of America's premier planned communities since A.T. Stewart laid it out in the 1860s — and today it ranks among the nation's 50 wealthiest suburbs. With a median household income above $200,000, exceptional schools, and the Cathedral of the Incarnation anchoring community life, Garden City families need financial planning that's as deliberate as the community itself.",
+    h1: "Financial Strategies for Garden City: Planning with Purpose in One of America's Finest Suburbs",
+    heroSubtitle: "Garden City has been one of America's premier planned communities since A.T. Stewart laid it out in the 1860s, and today it ranks among the nation's 50 wealthiest suburbs. With a median household income above $200,000, exceptional schools, and the Cathedral of the Incarnation anchoring community life, Garden City families need financial planning that's as deliberate as the community itself.",
     heroBadge: "Serving Garden City, NY",
     heroLabel: "12 Minutes from Our Lake Success Office",
     valuePropHeading: "Wealth Strategies for Garden City's High-Achieving Families",
@@ -3692,7 +3692,7 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "High-Income Tax Planning for Dual-Professional Households",
-        description: "When both spouses earn six figures, the combined tax burden — federal, New York State, and the SALT cap's impact on property tax deductions — can claim more than half of marginal income. We deploy strategies across retirement contributions, investment structure, and charitable timing to reduce your effective rate."
+        description: "When both spouses earn six figures, the combined tax burden (federal, New York State, and the SALT cap's impact on property tax deductions) can claim more than half of marginal income. We deploy strategies across retirement contributions, investment structure, and charitable timing to reduce your effective rate."
       },
       {
         title: "Adelphi University Employee Benefits Optimization",
@@ -3700,7 +3700,7 @@ export const towns: Town[] = [
       },
       {
         title: "Catholic Community Charitable Giving Strategies",
-        description: "The Cathedral of the Incarnation and Garden City's Catholic schools are central to community identity, and many families give generously to parish and diocesan causes. We structure charitable contributions — including bunching strategies and donor-advised funds — to maximize both spiritual impact and tax efficiency."
+        description: "The Cathedral of the Incarnation and Garden City's Catholic schools are central to community identity, and many families give generously to parish and diocesan causes. We structure charitable contributions (including bunching strategies and donor-advised funds) to maximize both spiritual impact and tax efficiency."
       },
       {
         title: "Home Equity Strategies in Premium School Districts",
@@ -3708,11 +3708,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Advice Aligned with Your Values",
-        description: "Garden City families value integrity and community. Our fee-only model reflects those principles — we earn no commissions, sell no products, and serve no interest other than helping your family make sound financial decisions for the long term."
+        description: "Garden City families value integrity and community. Our fee-only model reflects those principles: we earn no commissions, sell no products, and serve no interest other than helping your family make sound financial decisions for the long term."
       }
     ],
     insightHeading: "Planning in a Community Built on Planning",
-    insight: "Garden City was literally designed with intention — Alexander Turney Stewart's 19th-century vision created one of America's first planned suburban communities, and that deliberate character persists today. The tree-lined streets, the Cathedral of the Incarnation, the Garden City Hotel, and the school system that consistently ranks among Long Island's finest all reflect a community that doesn't leave things to chance. Financial planning here needs to match that standard. Garden City's dual-income households often face combined incomes in the $300,000–$500,000 range, which sounds comfortable until you account for property taxes that can exceed $25,000, private school or enrichment costs, and the social expectations that come with living in one of America's 50 wealthiest suburbs. The families who manage this successfully are the ones who plan with the same intentionality that defines their community — coordinating their tax strategy, investment allocation, charitable giving, and spending into a coherent system. Roosevelt Field Mall may be adjacent, but Garden City's financial culture is about building wealth, not just spending it.",
+    insight: "Garden City was literally designed with intention. Alexander Turney Stewart's 19th-century vision created one of America's first planned suburban communities, and that deliberate character persists today. The tree-lined streets, the Cathedral of the Incarnation, the Garden City Hotel, and the school system that consistently ranks among Long Island's finest all reflect a community that doesn't leave things to chance. Financial planning here needs to match that standard. Garden City's dual-income households often face combined incomes in the $300,000–$500,000 range, which sounds comfortable until you account for property taxes that can exceed $25,000, private school or enrichment costs, and the social expectations that come with living in one of America's 50 wealthiest suburbs. The families who manage this successfully are the ones who plan with the same intentionality that defines their community, coordinating their tax strategy, investment allocation, charitable giving, and spending into a coherent system. Roosevelt Field Mall may be adjacent, but Garden City's financial culture is about building wealth, not just spending it.",
     faqs: [
       {
         question: "How can dual-income Garden City families reduce their tax burden?",
@@ -3724,11 +3724,11 @@ export const towns: Town[] = [
       },
       {
         question: "What's the best way to give to my parish or Catholic school for tax purposes?",
-        answer: "Bunching two years of charitable contributions into a single tax year — often through a donor-advised fund — can allow you to itemize deductions in the bunching year while taking the standard deduction the next year. For gifts of appreciated stock, the tax benefit is even greater."
+        answer: "Bunching two years of charitable contributions into a single tax year (often through a donor-advised fund) can allow you to itemize deductions in the bunching year while taking the standard deduction the next year. For gifts of appreciated stock, the tax benefit is even greater."
       },
       {
         question: "Should I be concerned that most of my wealth is in my Garden City home?",
-        answer: "Concentration in any single asset — even a Garden City home — creates risk. If property values soften or your financial needs change, illiquid home equity is hard to access quickly. We evaluate your overall asset allocation and determine whether diversifying some equity through downsizing or a HELOC strategy makes sense."
+        answer: "Concentration in any single asset (even a Garden City home) creates risk. If property values soften or your financial needs change, illiquid home equity is hard to access quickly. We evaluate your overall asset allocation and determine whether diversifying some equity through downsizing or a HELOC strategy makes sense."
       },
       {
         question: "How far is your office from Garden City?",
@@ -3767,8 +3767,8 @@ export const towns: Town[] = [
     avgHomeValue: "$2M–$5M+",
     seoTitle: "Financial Advisor in Kings Point, NY",
     metaDescription: "Fee-only financial advisors serving Kings Point's Gold Coast estates. Waterfront succession planning, international wealth management, and tax strategy near you.",
-    h1: "Wealth Advisory for Kings Point — Where the Gold Coast Meets the Sound",
-    heroSubtitle: "Kings Point families steward some of the most significant waterfront estates on Long Island's Gold Coast. Our Lake Success office — eight minutes away — delivers fiduciary wealth planning built for the complexity that comes with generational property, international holdings, and high-net-worth tax exposure.",
+    h1: "Wealth Advisory for Kings Point: Where the Gold Coast Meets the Sound",
+    heroSubtitle: "Kings Point families steward some of the most significant waterfront estates on Long Island's Gold Coast. Our Lake Success office, eight minutes away, delivers fiduciary wealth planning built for the complexity that comes with generational property, international holdings, and high-net-worth tax exposure.",
     heroBadge: "Serving Kings Point's Gold Coast Families",
     heroLabel: "8 min from our Lake Success office",
     valuePropHeading: "Why Kings Point Residents Choose UFPG",
@@ -3788,15 +3788,15 @@ export const towns: Town[] = [
       },
       {
         title: "Tax-Efficient Strategies for Very High Net Worth Estates",
-        description: "With home values routinely exceeding $3M and total estates well into eight figures, Kings Point families face layered federal and New York estate tax exposure. We deploy advanced techniques — charitable remainder trusts, GRATs, and strategic Roth conversions — to preserve wealth."
+        description: "With home values routinely exceeding $3M and total estates well into eight figures, Kings Point families face layered federal and New York estate tax exposure. We deploy advanced techniques (charitable remainder trusts, GRATs, and strategic Roth conversions) to preserve wealth."
       },
       {
         title: "Fee-Only, Fiduciary Advice",
-        description: "We don't earn commissions or sell products. Every recommendation we make is legally required to serve your interest alone — a standard Kings Point families expect and deserve."
+        description: "We don't earn commissions or sell products. Every recommendation we make is legally required to serve your interest alone, a standard Kings Point families expect and deserve."
       }
     ],
     insightHeading: "Understanding Kings Point's Unique Financial Landscape",
-    insight: "Kings Point occupies the peninsula that F. Scott Fitzgerald immortalized as 'West Egg' — and nearly a century later, the concentration of wealth here remains extraordinary. With roughly 5,000 residents, waterfront estates that regularly trade above $5M, and deep ties to both Wall Street and international commerce, the planning needs are anything but ordinary. Many households juggle multi-property portfolios, foreign income streams, and complex family structures that demand coordinated tax, estate, and investment oversight. Our proximity in Lake Success means we understand the local tax landscape, the North Shore real estate cycle, and the professional networks Kings Point families rely on — context that national firms simply cannot replicate.",
+    insight: "Kings Point occupies the peninsula that F. Scott Fitzgerald immortalized as 'West Egg', and nearly a century later, the concentration of wealth here remains extraordinary. With roughly 5,000 residents, waterfront estates that regularly trade above $5M, and deep ties to both Wall Street and international commerce, the planning needs are anything but ordinary. Many households juggle multi-property portfolios, foreign income streams, and complex family structures that demand coordinated tax, estate, and investment oversight. Our proximity in Lake Success means we understand the local tax landscape, the North Shore real estate cycle, and the professional networks Kings Point families rely on, context that national firms simply cannot replicate.",
     faqs: [
       {
         question: "How do you help Kings Point families with waterfront estate planning?",
@@ -3804,11 +3804,11 @@ export const towns: Town[] = [
       },
       {
         question: "Do you work with clients who have international financial obligations?",
-        answer: "Yes — Kings Point's globally connected community is one reason we developed deep expertise in cross-border planning. We coordinate with international tax counsel to ensure FBAR and FATCA compliance, optimize foreign tax credit usage, and integrate overseas assets into your domestic wealth plan. Our goal is a single, coherent strategy regardless of where your assets are held."
+        answer: "Yes. Kings Point's globally connected community is one reason we developed deep expertise in cross-border planning. We coordinate with international tax counsel to ensure FBAR and FATCA compliance, optimize foreign tax credit usage, and integrate overseas assets into your domestic wealth plan. Our goal is a single, coherent strategy regardless of where your assets are held."
       },
       {
         question: "What does fee-only mean for a Kings Point client?",
-        answer: "It means we are compensated solely by the fees you pay us — never by commissions, referral payments, or product sales. For Kings Point families managing complex portfolios, this avoids the conflicts of interest that plague commission-based advisory models. You get advice that is legally required to prioritize your financial wellbeing."
+        answer: "It means we are compensated solely by the fees you pay us, never by commissions, referral payments, or product sales. For Kings Point families managing complex portfolios, this avoids the conflicts of interest that plague commission-based advisory models. You get advice that is legally required to prioritize your financial wellbeing."
       },
       {
         question: "Can you coordinate planning with the USMMA community?",
@@ -3842,8 +3842,8 @@ export const towns: Town[] = [
     avgHomeValue: "$2.5M–$4M+",
     seoTitle: "Financial Advisor in Plandome, NY",
     metaDescription: "Fee-only wealth planning for Plandome's high-income professionals. Tax optimization, estate strategy, and retirement planning from our Lake Success office nearby.",
-    h1: "Precision Financial Planning for Plandome — Serving One of Long Island's Wealthiest Villages",
-    heroSubtitle: "With a mean household income above $450K and median home sales near $3.1M, Plandome ranks among the most affluent communities in the entire New York metro area. Our Lake Success office — eight minutes from your front door — provides the fiduciary, fee-only planning this level of wealth demands.",
+    h1: "Precision Financial Planning for Plandome: Serving One of Long Island's Wealthiest Villages",
+    heroSubtitle: "With a mean household income above $450K and median home sales near $3.1M, Plandome ranks among the most affluent communities in the entire New York metro area. Our Lake Success office, eight minutes from your front door, provides the fiduciary, fee-only planning this level of wealth demands.",
     heroBadge: "Trusted by Plandome's Top Earners",
     heroLabel: "8 min from our Lake Success office",
     valuePropHeading: "Why Plandome Residents Choose UFPG",
@@ -3867,19 +3867,19 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, Fiduciary Commitment",
-        description: "In a village where 84.5% of adults hold a bachelor's degree or higher, our clients appreciate the transparency of fee-only advice. No commissions, no product sales — just planning aligned entirely with your goals."
+        description: "In a village where 84.5% of adults hold a bachelor's degree or higher, our clients appreciate the transparency of fee-only advice. No commissions, no product sales, just planning aligned entirely with your goals."
       }
     ],
     insightHeading: "Inside Plandome's Exceptional Financial Profile",
-    insight: "Plandome is a statistical outlier even among Long Island's wealthiest enclaves. Barely 1,450 residents occupy a village where 99.2% of homes are owner-occupied, mean household income exceeds $450K, and the typical home trades above $3M. The overwhelming majority of working residents commute to Manhattan via the Plandome LIRR station — one of the fastest rides on the entire Long Island Rail Road — placing them in industries like investment banking, corporate law, and private equity. This creates a remarkably concentrated demand for sophisticated tax planning, deferred compensation strategies, and estate preservation. Our Lake Success team understands the nuances of Plandome life — from Manhasset UFSD school funding decisions to the real estate tax implications of North Shore property assessments — and we bring that context to every engagement.",
+    insight: "Plandome is a statistical outlier even among Long Island's wealthiest enclaves. Barely 1,450 residents occupy a village where 99.2% of homes are owner-occupied, mean household income exceeds $450K, and the typical home trades above $3M. The overwhelming majority of working residents commute to Manhattan via the Plandome LIRR station (one of the fastest rides on the entire Long Island Rail Road), placing them in industries like investment banking, corporate law, and private equity. This creates a remarkably concentrated demand for sophisticated tax planning, deferred compensation strategies, and estate preservation. Our Lake Success team understands the nuances of Plandome life, from Manhasset UFSD school funding decisions to the real estate tax implications of North Shore property assessments, and we bring that context to every engagement.",
     faqs: [
       {
         question: "How do you help Plandome commuters optimize taxes on Wall Street compensation?",
-        answer: "We analyze your full compensation package — base salary, bonuses, restricted stock units, deferred comp elections, and carried interest if applicable — and build a multi-year projection that times income recognition for maximum tax efficiency. For Plandome households earning $450K+, even modest timing adjustments can produce five-figure annual savings. We also coordinate with your employer's benefits team to ensure elections align with your broader plan."
+        answer: "We analyze your full compensation package (base salary, bonuses, restricted stock units, deferred comp elections, and carried interest if applicable) and build a multi-year projection that times income recognition for maximum tax efficiency. For Plandome households earning $450K+, even modest timing adjustments can produce five-figure annual savings. We also coordinate with your employer's benefits team to ensure elections align with your broader plan."
       },
       {
         question: "Is a Roth conversion worth it at Plandome income levels?",
-        answer: "It depends on your current marginal rate versus your projected retirement rate, but for many Plandome professionals the answer is yes — especially in transition years between roles or in early retirement before Social Security begins. We model each conversion scenario against Medicare IRMAA surcharges, state tax exposure, and estate planning goals. The result is a year-by-year conversion schedule that minimizes lifetime taxes."
+        answer: "It depends on your current marginal rate versus your projected retirement rate, but for many Plandome professionals the answer is yes, especially in transition years between roles or in early retirement before Social Security begins. We model each conversion scenario against Medicare IRMAA surcharges, state tax exposure, and estate planning goals. The result is a year-by-year conversion schedule that minimizes lifetime taxes."
       },
       {
         question: "What estate planning strategies do you recommend for $3M+ homes?",
@@ -3887,7 +3887,7 @@ export const towns: Town[] = [
       },
       {
         question: "How does your fee-only model benefit a high-income household?",
-        answer: "Commission-based advisors earn more when they place you into certain products — a conflict that becomes especially costly at high asset levels. Our fee-only structure means your cost is transparent and our incentive is to grow your portfolio as efficiently as possible. For Plandome families with complex portfolios, this alignment has meaningful, compounding value over time."
+        answer: "Commission-based advisors earn more when they place you into certain products, a conflict that becomes especially costly at high asset levels. Our fee-only structure means your cost is transparent and our incentive is to grow your portfolio as efficiently as possible. For Plandome families with complex portfolios, this alignment has meaningful, compounding value over time."
       },
       {
         question: "How far is your office from Plandome?",
@@ -3917,8 +3917,8 @@ export const towns: Town[] = [
     avgHomeValue: "$1.5M–$2.5M",
     seoTitle: "Financial Advisor in Munsey Park, NY",
     metaDescription: "Fee-only financial planning for Munsey Park families. Executive comp strategies, estate planning, and tax optimization just 5 minutes from your neighborhood.",
-    h1: "Financial Planning for Munsey Park — Forbes-Ranked Wealth Meets Daily Manhattan Access",
-    heroSubtitle: "Munsey Park earned its place on Forbes' list of America's wealthiest communities through a combination of high-earning professionals, exceptional schools, and prime North Shore real estate. Our Lake Success office sits just five minutes away — closer than any other fiduciary advisory firm to your neighborhood.",
+    h1: "Financial Planning for Munsey Park: Forbes-Ranked Wealth Meets Daily Manhattan Access",
+    heroSubtitle: "Munsey Park earned its place on Forbes' list of America's wealthiest communities through a combination of high-earning professionals, exceptional schools, and prime North Shore real estate. Our Lake Success office sits just five minutes away, closer than any other fiduciary advisory firm to your neighborhood.",
     heroBadge: "5 Minutes From Munsey Park",
     heroLabel: "Closest fiduciary advisor to Munsey Park",
     valuePropHeading: "Why Munsey Park Families Choose UFPG",
@@ -3926,11 +3926,11 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "High-Income Commuter Planning",
-        description: "Munsey Park's walkable proximity to the Manhasset LIRR station — just 30 minutes from Penn — means most households earn their income in Manhattan's highest-paying sectors. We build integrated plans that account for city and state tax exposure, commuter benefit elections, and the timing of performance-based compensation."
+        description: "Munsey Park's walkable proximity to the Manhasset LIRR station, just 30 minutes from Penn, means most households earn their income in Manhattan's highest-paying sectors. We build integrated plans that account for city and state tax exposure, commuter benefit elections, and the timing of performance-based compensation."
       },
       {
         title: "School District–Driven Home Investment Strategy",
-        description: "Families move to Munsey Park largely for Manhasset UFSD, one of Long Island's top-ranked districts. We factor the premium you pay for school quality into your long-term real estate and liquidity planning so your home investment supports — rather than strains — your broader financial goals."
+        description: "Families move to Munsey Park largely for Manhasset UFSD, one of Long Island's top-ranked districts. We factor the premium you pay for school quality into your long-term real estate and liquidity planning so your home investment supports (rather than strains) your broader financial goals."
       },
       {
         title: "Executive Bonus & Deferred Compensation Planning",
@@ -3942,19 +3942,19 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only Transparency",
-        description: "Munsey Park residents expect straightforward relationships built on competence and trust. As fee-only fiduciaries, we charge a transparent fee for our advice and never earn commissions — ensuring every recommendation reflects your interest, not ours."
+        description: "Munsey Park residents expect straightforward relationships built on competence and trust. As fee-only fiduciaries, we charge a transparent fee for our advice and never earn commissions, ensuring every recommendation reflects your interest, not ours."
       }
     ],
     insightHeading: "What Makes Munsey Park Financially Distinct",
-    insight: "Munsey Park is a village of roughly 2,700 residents nestled between the Americana Manhasset shopping district and the Manhasset LIRR station, creating a rare blend of walkable luxury and rapid Manhattan access. The community's appearance on Forbes' list of richest cities reflects household incomes well above $300K and home values that have climbed steadily on the strength of the Manhasset school district. Most working residents hold executive or senior professional roles in finance, law, or medicine, generating complex compensation packages that require careful, year-round tax coordination. The village's private security detail and tight-knit character also mean families tend to stay for decades — making long-term estate and retirement planning especially important. Our five-minute proximity in Lake Success lets us serve as the kind of accessible, ongoing partner that this planning complexity demands.",
+    insight: "Munsey Park is a village of roughly 2,700 residents nestled between the Americana Manhasset shopping district and the Manhasset LIRR station, creating a rare blend of walkable luxury and rapid Manhattan access. The community's appearance on Forbes' list of richest cities reflects household incomes well above $300K and home values that have climbed steadily on the strength of the Manhasset school district. Most working residents hold executive or senior professional roles in finance, law, or medicine, generating complex compensation packages that require careful, year-round tax coordination. The village's private security detail and tight-knit character also mean families tend to stay for decades, making long-term estate and retirement planning especially important. Our five-minute proximity in Lake Success lets us serve as the kind of accessible, ongoing partner that this planning complexity demands.",
     faqs: [
       {
         question: "How does Munsey Park's proximity to Manhasset LIRR affect financial planning?",
-        answer: "The 30-minute commute to Penn Station means most Munsey Park earners work in Manhattan's financial district, Midtown law firms, or major medical centers — industries with complex compensation structures. We build plans around bonus cycles, RSU vesting, and deferred comp elections that are common in these roles. The result is a strategy calibrated to how Munsey Park households actually earn and spend."
+        answer: "The 30-minute commute to Penn Station means most Munsey Park earners work in Manhattan's financial district, Midtown law firms, or major medical centers, industries with complex compensation structures. We build plans around bonus cycles, RSU vesting, and deferred comp elections that are common in these roles. The result is a strategy calibrated to how Munsey Park households actually earn and spend."
       },
       {
         question: "Can you help with planning around Manhasset school district costs?",
-        answer: "The Manhasset UFSD premium is baked into every Munsey Park home price, and property taxes reflect that quality. We integrate education-related costs — school taxes, 529 contributions, private enrichment, and eventually college funding — into your cash flow and investment plan so you can enjoy the district's benefits without compromising long-term wealth building."
+        answer: "The Manhasset UFSD premium is baked into every Munsey Park home price, and property taxes reflect that quality. We integrate education-related costs (school taxes, 529 contributions, private enrichment, and eventually college funding) into your cash flow and investment plan so you can enjoy the district's benefits without compromising long-term wealth building."
       },
       {
         question: "What is your approach to executive deferred compensation?",
@@ -3993,7 +3993,7 @@ export const towns: Town[] = [
     seoTitle: "Financial Advisor in East Hills, NY",
     metaDescription: "Fee-only financial advisors for East Hills business owners and professionals. Business succession, tax planning, and wealth management from Lake Success.",
     h1: "Wealth Planning for East Hills' Entrepreneurial Professionals",
-    heroSubtitle: "East Hills is one of the wealthiest suburbs in the New York metro area — not because of old money, but because its residents build things. With a mean household income above $372K driven largely by business ownership and professional practice, East Hills demands a planning firm that understands entrepreneurial wealth. Our Lake Success office is ten minutes away.",
+    heroSubtitle: "East Hills is one of the wealthiest suburbs in the New York metro area, not because of old money, but because its residents build things. With a mean household income above $372K driven largely by business ownership and professional practice, East Hills demands a planning firm that understands entrepreneurial wealth. Our Lake Success office is ten minutes away.",
     heroBadge: "Built for East Hills Business Owners",
     heroLabel: "10 min from our Lake Success office",
     valuePropHeading: "Why East Hills Professionals Choose UFPG",
@@ -4001,11 +4001,11 @@ export const towns: Town[] = [
     valueProps: [
       {
         title: "Business Owner Wealth Planning",
-        description: "East Hills is home to a disproportionate number of business owners — from medical practices and law firms to construction companies and tech startups. We build integrated plans that coordinate business cash flow, owner compensation, retirement contributions, and personal investment strategy into a unified framework."
+        description: "East Hills is home to a disproportionate number of business owners, from medical practices and law firms to construction companies and tech startups. We build integrated plans that coordinate business cash flow, owner compensation, retirement contributions, and personal investment strategy into a unified framework."
       },
       {
         title: "Buy-Sell Agreement Funding",
-        description: "If you have a business partner, a properly funded buy-sell agreement protects both families in the event of death, disability, or departure. We design and stress-test funding structures — typically using life insurance or installment notes — that ensure the agreement actually works when triggered."
+        description: "If you have a business partner, a properly funded buy-sell agreement protects both families in the event of death, disability, or departure. We design and stress-test funding structures (typically using life insurance or installment notes) that ensure the agreement actually works when triggered."
       },
       {
         title: "Key Person Insurance Planning",
@@ -4017,11 +4017,11 @@ export const towns: Town[] = [
       },
       {
         title: "Fee-Only, No Product Sales",
-        description: "Business owners are accustomed to spotting conflicts of interest — and they don't tolerate them in an advisor. Our fee-only model means we never profit from recommending a particular insurance carrier, investment product, or lending relationship."
+        description: "Business owners are accustomed to spotting conflicts of interest, and they don't tolerate them in an advisor. Our fee-only model means we never profit from recommending a particular insurance carrier, investment product, or lending relationship."
       }
     ],
     insightHeading: "The Entrepreneurial Engine Behind East Hills' Wealth",
-    insight: "East Hills defies the stereotype of the sleepy suburban enclave. With a mean household income around $372K, the village consistently ranks among the wealthiest in the New York metro area — but unlike many Gold Coast communities, this wealth is overwhelmingly active and earned rather than inherited. Residents tend to be business owners, managing partners, and senior professionals who still have significant working years ahead of them. That entrepreneurial character creates planning needs centered on business succession, liability protection, and the efficient extraction of value from closely held entities. The community also invests heavily in quality of life — private sanitation, a dedicated security force, and well-maintained parks — which reflects a mindset that values long-term stewardship. Our Lake Success team brings that same long-view approach to every client relationship.",
+    insight: "East Hills defies the stereotype of the sleepy suburban enclave. With a mean household income around $372K, the village consistently ranks among the wealthiest in the New York metro area, but unlike many Gold Coast communities, this wealth is overwhelmingly active and earned rather than inherited. Residents tend to be business owners, managing partners, and senior professionals who still have significant working years ahead of them. That entrepreneurial character creates planning needs centered on business succession, liability protection, and the efficient extraction of value from closely held entities. The community also invests heavily in quality of life (private sanitation, a dedicated security force, and well-maintained parks), which reflects a mindset that values long-term stewardship. Our Lake Success team brings that same long-view approach to every client relationship.",
     faqs: [
       {
         question: "How do you help East Hills business owners plan differently than salaried professionals?",
@@ -4029,15 +4029,15 @@ export const towns: Town[] = [
       },
       {
         question: "What is a buy-sell agreement and why does my East Hills practice need one?",
-        answer: "A buy-sell agreement is a binding contract that dictates what happens to a partner's ownership interest upon death, disability, retirement, or voluntary departure. Without one, a partner's estate could introduce an unwanted new owner — or trigger a forced liquidation. We help East Hills practice owners structure and fund these agreements so that transitions happen on your terms and at a fair, pre-established price."
+        answer: "A buy-sell agreement is a binding contract that dictates what happens to a partner's ownership interest upon death, disability, retirement, or voluntary departure. Without one, a partner's estate could introduce an unwanted new owner, or trigger a forced liquidation. We help East Hills practice owners structure and fund these agreements so that transitions happen on your terms and at a fair, pre-established price."
       },
       {
         question: "Can you help me set up a retirement plan for my small business?",
-        answer: "Yes — and the right plan depends on your entity structure, number of employees, and income level. For many East Hills business owners earning $372K or more, options like cash balance plans, defined benefit plans, or solo 401(k)s with profit-sharing allow far greater annual contributions than a standard 401(k). We model each option against your tax situation to find the most efficient fit."
+        answer: "Yes. And the right plan depends on your entity structure, number of employees, and income level. For many East Hills business owners earning $372K or more, options like cash balance plans, defined benefit plans, or solo 401(k)s with profit-sharing allow far greater annual contributions than a standard 401(k). We model each option against your tax situation to find the most efficient fit."
       },
       {
         question: "How does fee-only advice benefit a business owner specifically?",
-        answer: "Business owners are frequently targeted by commission-based advisors selling captive insurance, proprietary investment products, or overpriced group benefit plans. Our fee-only structure removes that noise entirely — we evaluate products objectively and recommend only what advances your financial position. For business owners making consequential decisions about insurance, retirement plans, and succession, that objectivity is invaluable."
+        answer: "Business owners are frequently targeted by commission-based advisors selling captive insurance, proprietary investment products, or overpriced group benefit plans. Our fee-only structure removes that noise entirely. We evaluate products objectively and recommend only what advances your financial position. For business owners making consequential decisions about insurance, retirement plans, and succession, that objectivity is invaluable."
       },
       {
         question: "How accessible is your Lake Success office from East Hills?",

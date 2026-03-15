@@ -26,21 +26,21 @@ const audiences: AudienceCard[] = [
     icon: <Building2 className="w-10 h-10" strokeWidth={1} />,
     title: "Business Owners",
     description:
-      "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board — succession planning, tax-efficient compensation, and personal wealth building.",
+      "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board: succession planning, tax-efficient compensation, and personal wealth building.",
     href: "/services/tax-planning",
   },
   {
     icon: <BarChart3 className="w-10 h-10" strokeWidth={1} />,
     title: "Executives with Equity Compensation",
     description:
-      "ISOs, NSOs, RSUs, ESPP shares — each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
+      "ISOs, NSOs, RSUs, ESPP shares: each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
     href: "/services/investment-management",
   },
   {
     icon: <Gem className="w-10 h-10" strokeWidth={1} />,
     title: "High-Net-Worth Individuals",
     description:
-      "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity — not a cookie-cutter model.",
+      "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
     href: "/services/financial-planning",
   },
 ];

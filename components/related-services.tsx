@@ -25,7 +25,7 @@ export function RelatedServices({
         </h2>
         <p className="text-foreground/60 mb-10 max-w-2xl">
           At United Financial Planning Group, every service is informed by the
-          others. No silos — just one integrated team working across your entire
+          others. No silos, just one integrated team working across your entire
           financial picture.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

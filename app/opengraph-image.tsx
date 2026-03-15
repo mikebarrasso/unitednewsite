@@ -58,7 +58,7 @@ export default function OGImage() {
               maxWidth: "750px",
             }}
           >
-            Fee-Only Financial Planning, Investment Management & Tax Services — Integrated Under One Roof
+            Fee-Only Financial Planning, Investment Management & Tax Services, Integrated Under One Roof
           </div>
           <div
             style={{

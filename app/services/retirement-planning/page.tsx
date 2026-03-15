@@ -19,7 +19,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Retirement Planning",
   description:
-    "Most retirement plans ignore the single biggest variable: taxes. Ours is built around it — because the difference between a good retirement and a great one is often what you keep, not what you earn.",
+    "Most retirement plans ignore the single biggest variable: taxes. Ours is built around it, because the difference between a good retirement and a great one is often what you keep, not what you earn.",
   path: "/services/retirement-planning",
 });
 
@@ -28,7 +28,7 @@ export default function RetirementPlanningPage(): ReactNode {
     <>
       <ServiceSchema
         name="Retirement Planning"
-        description="Retirement planning built around taxes — because the difference between a good retirement and a great one is what you keep."
+        description="Retirement planning built around taxes, because the difference between a good retirement and a great one is what you keep."
         url="/services/retirement-planning"
       />
       <main id="main-content" className="flex-1">
@@ -41,7 +41,7 @@ export default function RetirementPlanningPage(): ReactNode {
         <ServiceHero
           eyebrow="Retirement Planning"
           title="You've Spent Decades Building Wealth. The Next Chapter Is About Making It Last."
-          subtitle="Most retirement plans ignore the single biggest variable: taxes. Ours is built around it — because the difference between a good retirement and a great one is often what you keep, not what you earn."
+          subtitle="Most retirement plans ignore the single biggest variable: taxes. Ours is built around it, because the difference between a good retirement and a great one is often what you keep, not what you earn."
           imageUrl="/retirees.png"
           imageAlt="Retired couple walking on the beach at sunset"
           hasBreadcrumb
@@ -62,7 +62,7 @@ export default function RetirementPlanningPage(): ReactNode {
             {
               label: "Tax Planning",
               description:
-                "Roth conversions, RMD strategies, and Social Security timing — all built around your tax bracket.",
+                "Roth conversions, RMD strategies, and Social Security timing, all built around your tax bracket.",
               href: "/services/tax-planning",
             },
             {

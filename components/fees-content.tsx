@@ -25,7 +25,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
    ═══════════════════════════════════════════════════════════════ */
 
 const step1Details = [
-  { icon: Phone, text: "Phone or Zoom — whichever you prefer" },
+  { icon: Phone, text: "Phone or Zoom, whichever you prefer" },
   { icon: Clock, text: "30 minutes" },
   {
     icon: MessageCircle,
@@ -59,13 +59,13 @@ const wealthServices = [
     icon: BarChart3,
     title: "Tax-Efficient Investment Management",
     description:
-      "Low-cost, globally diversified portfolios built on index investing. Every trade, rebalance, and allocation decision is made with your tax situation in mind \u2014 because your CPA and your portfolio manager are on the same team.",
+      "Low-cost, globally diversified portfolios built on index investing. Every trade, rebalance, and allocation decision is made with your tax situation in mind, because your CPA and your portfolio manager are on the same team.",
   },
   {
     icon: RefreshCw,
     title: "Unlimited Ongoing Financial Planning",
     description:
-      "Your financial plan isn\u2019t a one-time deliverable. It\u2019s a living strategy that\u2019s reviewed, stress-tested, and updated as your life changes \u2014 at no additional cost.",
+      "Your financial plan isn\u2019t a one-time deliverable. It\u2019s a living strategy that\u2019s reviewed, stress-tested, and updated as your life changes, at no additional cost.",
   },
   {
     icon: Calculator,
@@ -75,9 +75,9 @@ const wealthServices = [
   },
   {
     icon: FileCheck,
-    title: "Tax Preparation and Filing \u2014 Included",
+    title: "Tax Preparation and Filing (Included)",
     description:
-      "Your personal tax return, prepared and filed by our in-house CPAs and Enrolled Agents. No more playing middleman between your accountant and your financial advisor \u2014 because they\u2019re the same team.",
+      "Your personal tax return, prepared and filed by our in-house CPAs and Enrolled Agents. No more playing middleman between your accountant and your financial advisor, because they\u2019re the same team.",
   },
 ];
 
@@ -92,7 +92,7 @@ const subscriptionFeatures = [
 ];
 
 /* ═══════════════════════════════════════════════════════════════
-   HERO VISUAL — 3-step preview for ServiceHero customVisual
+   HERO VISUAL - 3-step preview for ServiceHero customVisual
    ═══════════════════════════════════════════════════════════════ */
 
 export function FeesHero() {
@@ -160,7 +160,7 @@ export function FeesHero() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   STEP CONNECTOR — animated line between steps
+   STEP CONNECTOR - animated line between steps
    ═══════════════════════════════════════════════════════════════ */
 
 function StepConnector() {
@@ -189,7 +189,7 @@ function StepConnector() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   STEP BADGE — shared numbered circle for each step
+   STEP BADGE - shared numbered circle for each step
    ═══════════════════════════════════════════════════════════════ */
 
 function StepBadge({
@@ -223,7 +223,7 @@ function StepBadge({
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   PROCESS SECTION — Steps 1-3 with animated connectors
+   PROCESS SECTION - Steps 1-3 with animated connectors
    ═══════════════════════════════════════════════════════════════ */
 
 export function ProcessSection() {
@@ -554,7 +554,7 @@ export function ProcessSection() {
             </motion.div>
           </div>
 
-          {/* What's included — 4 service cards */}
+          {/* What's included - 4 service cards */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -596,7 +596,7 @@ export function ProcessSection() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SUBSCRIPTION SECTION — for high-earning professionals
+   SUBSCRIPTION SECTION - for high-earning professionals
    ═══════════════════════════════════════════════════════════════ */
 
 export function SubscriptionSection() {
@@ -772,7 +772,7 @@ export function BookkeepingSection() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   CLOSING SECTION — "Questions About Pricing?"
+   CLOSING SECTION - "Questions About Pricing?"
    ═══════════════════════════════════════════════════════════════ */
 
 export function FeesClosingSection() {

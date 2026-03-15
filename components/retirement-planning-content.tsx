@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-/* ─── Problem Section — animated question cards ─── */
+/* ─── Problem Section - animated question cards ─── */
 
 const questions = [
-  { icon: Clock, text: "When should I claim Social Security — and what does that decision actually cost me over 20 years?" },
+  { icon: Clock, text: "When should I claim Social Security, and what does that decision actually cost me over 20 years?" },
   { icon: Scale, text: "Am I withdrawing from the right accounts in the right order?" },
   { icon: HelpCircle, text: "Should I be doing Roth conversions now, and how much is too much?" },
   { icon: HeartPulse, text: "What happens to my Medicare premiums if my income spikes in one year?" },
@@ -21,7 +21,7 @@ export function ProblemSection() {
     <section className="relative w-full bg-muted/30 py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — question cards */}
+          {/* Left - question cards */}
           <div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -66,7 +66,7 @@ export function ProblemSection() {
             </div>
           </div>
 
-          {/* Right — explanation + callout */}
+          {/* Right - explanation + callout */}
           <div className="lg:pt-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -77,7 +77,7 @@ export function ProblemSection() {
             >
               <p>
                 These aren&apos;t abstract planning questions. They&apos;re real
-                decisions with real tax consequences — and getting the sequence
+                decisions with real tax consequences, and getting the sequence
                 wrong can quietly cost you tens or even hundreds of thousands of
                 dollars over the course of retirement.
               </p>
@@ -101,7 +101,7 @@ export function ProblemSection() {
               </p>
               <p className="mt-3 text-muted-foreground leading-relaxed">
                 Every retirement decision at United is modeled as a connected
-                system — income, taxes, Medicare, and portfolio, together.
+                system: income, taxes, Medicare, and portfolio, together.
               </p>
             </motion.div>
           </div>
@@ -111,7 +111,7 @@ export function ProblemSection() {
   );
 }
 
-/* ─── Approach Section — features-4 style tabbed interface ─── */
+/* ─── Approach Section - features-4 style tabbed interface ─── */
 
 import { useState, useEffect, useRef } from "react";
 import { AnimatePresence } from "motion/react";
@@ -146,7 +146,7 @@ const approachTabs = [
     icon: MedicareIcon,
     title: "Real-Time Strategy Adjustment",
     description:
-      "When market conditions shift, we adjust your plan and your tax strategy together — not separately, not after the fact.",
+      "When market conditions shift, we adjust your plan and your tax strategy together, not separately, not after the fact.",
     features: [
       "Market drops trigger Roth conversion opportunity reviews",
       "Tax law changes reflected in projections immediately",
@@ -212,7 +212,7 @@ export function ApproachSection() {
             Retirement planning at United isn&apos;t a projection spreadsheet
             you review once a year. It&apos;s an ongoing, actively managed
             strategy where your income plan, your portfolio, and your tax return
-            are coordinated by the same team — in real time.
+            are coordinated by the same team, in real time.
           </motion.p>
         </div>
 
@@ -331,7 +331,7 @@ export function ApproachSection() {
   );
 }
 
-/* ─── Differentiator Section — bento-style cards ─── */
+/* ─── Differentiator Section - bento-style cards ─── */
 
 const diffPoints = [
   {
@@ -340,7 +340,7 @@ const diffPoints = [
   },
   {
     span: "",
-    text: "When tax law shifts, we update your projections immediately — not at your next annual review.",
+    text: "When tax law shifts, we update your projections immediately, not at your next annual review.",
   },
   {
     span: "",
@@ -407,8 +407,8 @@ export function DifferentiatorSection() {
           className="mt-6 p-6 sm:p-8 rounded-2xl border border-[#1e6eae]/20 bg-[#1e6eae]/[0.04]"
         >
           <p className="text-foreground font-medium leading-relaxed text-center text-lg">
-            Your retirement plan, your investment strategy, and your tax return
-            — built and managed by one team that sees the full picture.
+            Your retirement plan, your investment strategy, and your tax return,
+            built and managed by one team that sees the full picture.
           </p>
         </motion.div>
       </div>
@@ -416,7 +416,7 @@ export function DifferentiatorSection() {
   );
 }
 
-/* ─── CTA Section — with parallax floating cards ─── */
+/* ─── CTA Section - with parallax floating cards ─── */
 
 const floatingCards = [
   { x: "8%", y: "15%", rotation: -10, intensity: 0.03 },

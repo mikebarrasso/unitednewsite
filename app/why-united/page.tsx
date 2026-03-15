@@ -16,7 +16,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Why Choose United?",
   description:
-    "Most advisory firms do one thing. We integrate four — financial planning, investment management, tax planning, and tax preparation — under one roof.",
+    "Most advisory firms do one thing. We integrate four (financial planning, investment management, tax planning, and tax preparation) under one roof.",
   path: "/why-united",
 });
 
@@ -28,7 +28,7 @@ export default function WhyUnitedPage(): ReactNode {
         <ServiceHero
           eyebrow="Why United?"
           title="What's the Value of an Advisor Who Sees Everything?"
-          subtitle="Most advisory firms do one thing. We integrate four — financial planning, investment management, tax planning, and tax preparation — under one roof, for one reason: disconnected advice can be costly."
+          subtitle="Most advisory firms do one thing. We integrate four (financial planning, investment management, tax planning, and tax preparation) under one roof, for one reason: disconnected advice can be costly."
           imageUrl="/240710_AJ8700-scaled%20(1).jpg"
           imageAlt="The United Financial Planning Group team"
           secondaryCtaHref="/services"

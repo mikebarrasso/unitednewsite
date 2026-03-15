@@ -74,7 +74,7 @@ export default function Comparison1() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8"
           >
-            Not all financial advisors are compensated the same way — and the
+            Not all financial advisors are compensated the same way, and the
             difference directly affects what ends up in your portfolio. United is
             fee-only: we don&apos;t earn commissions, sell products, or receive
             referral fees. The only people who pay us are our clients.

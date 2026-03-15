@@ -31,7 +31,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const gaps = [
   { icon: AlertTriangle, title: "No context on Roth conversion", detail: "Preparer didn't know about the June conversion", color: "text-amber-500", bg: "bg-amber-500/10" },
   { icon: FileQuestion, title: "Stock options timing unknown", detail: "Nobody explained why Q3 instead of Q4", color: "text-rose-500", bg: "bg-rose-500/10" },
-  { icon: XCircle, title: "Year-end rebalance missed", detail: "Portfolio rebalanced two weeks before year-end — preparer unaware", color: "text-red-500", bg: "bg-red-500/10" },
+  { icon: XCircle, title: "Year-end rebalance missed", detail: "Portfolio rebalanced two weeks before year-end, preparer unaware", color: "text-red-500", bg: "bg-red-500/10" },
 ];
 
 export function ProblemSection() {
@@ -64,7 +64,7 @@ export function ProblemSection() {
             </motion.div>
           </div>
 
-          {/* Right — gap cascade */}
+          {/* Right - gap cascade */}
           <div className="flex flex-col gap-3">
             <div className="p-5 rounded-2xl bg-card border border-border mb-1">
               <p className="text-xs font-semibold text-foreground mb-1">Typical Tax Season</p>
@@ -105,13 +105,13 @@ export function ProblemSection() {
   );
 }
 
-/* ═══════ What You Can Expect — features-4 style tabs ═══════ */
+/* ═══════ What You Can Expect - features-4 style tabs ═══════ */
 
 const expectTabs = [
   {
     icon: FileText,
     title: "Personal Tax Returns",
-    description: "Prepared by CPAs and Enrolled Agents who understand your investments, retirement income strategy, Roth conversions, and charitable giving — because they were involved in those decisions throughout the year.",
+    description: "Prepared by CPAs and Enrolled Agents who understand your investments, retirement income strategy, Roth conversions, and charitable giving, because they were involved in those decisions throughout the year.",
     features: [
       "Full context from your financial and investment plan",
       "Roth conversions, harvested losses already documented",
@@ -122,7 +122,7 @@ const expectTabs = [
   {
     icon: Building2,
     title: "Business Tax Returns",
-    description: "S-corps, partnerships, LLCs, and sole proprietorships — prepared in coordination with your personal return so entity structure, compensation strategy, and retirement contributions are optimized across both.",
+    description: "S-corps, partnerships, LLCs, and sole proprietorships, prepared in coordination with your personal return so entity structure, compensation strategy, and retirement contributions are optimized across both.",
     features: [
       "Business and personal returns prepared together",
       "Entity structure and compensation reviewed annually",
@@ -144,7 +144,7 @@ const expectTabs = [
   {
     icon: MessageCircle,
     title: "Year-Round Access",
-    description: "You won't hear from us only during filing season. Questions come up in July, October, and December too — and your team is available when they do.",
+    description: "You won't hear from us only during filing season. Questions come up in July, October, and December too, and your team is available when they do.",
     features: [
       "Questions answered any time of year",
       "Mid-year tax situation check-ins",
@@ -252,13 +252,13 @@ export function ExpectationsSection() {
 
 import { useRef } from "react";
 
-/* ═══════ Differentiator — animated return timeline ═══════ */
+/* ═══════ Differentiator - animated return timeline ═══════ */
 
 const returnSteps = [
   { month: "Sep", label: "CFP recommends Roth conversion", status: "Accounted for" },
   { month: "Nov", label: "Portfolio manager harvests losses", status: "Documented" },
   { month: "Q3", label: "Estimated payments adjusted for income", status: "Reflected" },
-  { month: "Mar", label: "Return prepared — no surprises", status: "Filed" },
+  { month: "Mar", label: "Return prepared, no surprises", status: "Filed" },
 ];
 
 export function DifferentiatorSection() {
@@ -271,7 +271,7 @@ export function DifferentiatorSection() {
               The United Difference
             </motion.p>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground mb-6">
-              The Return Is the Last Step — Not the Only Step
+              The Return Is the Last Step, Not the Only Step
             </motion.h2>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="space-y-5 text-foreground/70 leading-relaxed text-base sm:text-lg">
               <p>
@@ -283,14 +283,14 @@ export function DifferentiatorSection() {
               <p>
                 At United, the return is just where everything comes together.
                 By the time we sit down to prepare your return, there are no
-                surprises — because we&apos;ve been managing your tax situation
+                surprises, because we&apos;ve been managing your tax situation
                 all year. The return is simply the final expression of a strategy
                 that&apos;s been running for twelve months.
               </p>
             </motion.div>
           </div>
 
-          {/* Right — animated year timeline */}
+          {/* Right - animated year timeline */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="p-6 rounded-2xl bg-card border border-border">
             <p className="text-xs font-semibold text-foreground mb-5 uppercase tracking-wider">
               Your tax year at United
@@ -330,7 +330,7 @@ export function DifferentiatorSection() {
   );
 }
 
-/* ═══════ Hero Visual — tax return dashboard ═══════ */
+/* ═══════ Hero Visual - tax return dashboard ═══════ */
 
 const returnItems = [
   { label: "Roth Conversion", value: "Documented", done: true },

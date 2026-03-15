@@ -25,7 +25,7 @@ function LongIslandSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "United Financial Planning Group — Long Island",
+    name: "United Financial Planning Group - Long Island",
     url: "https://unitedfpg.com/financial-advisor-long-island",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
@@ -122,12 +122,12 @@ const valueProps = [
   {
     title: "Tax planning and investing under one roof",
     description:
-      "Most Long Island families use a separate CPA and financial advisor who never talk to each other. Our team includes both — so your investment strategy, Roth conversions, and tax return are all coordinated.",
+      "Most Long Island families use a separate CPA and financial advisor who never talk to each other. Our team includes both, so your investment strategy, Roth conversions, and tax return are all coordinated.",
   },
   {
     title: "Built for NY's tax complexity",
     description:
-      "New York State's combined tax burden is among the highest in the country. We build every financial plan around that reality — from SALT deduction strategies to retirement withdrawal sequencing.",
+      "New York State's combined tax burden is among the highest in the country. We build every financial plan around that reality, from SALT deduction strategies to retirement withdrawal sequencing.",
   },
   {
     title: "Two Long Island offices",
@@ -156,18 +156,18 @@ const localFaqs = [
     question:
       "How does New York's tax burden affect my financial plan?",
     answer:
-      "New York has some of the highest state income taxes and property taxes in the country. Our integrated approach coordinates your investment decisions, Roth conversion strategies, and retirement timing with your full New York State and federal tax picture — something most advisors miss because they don't do taxes.",
+      "New York has some of the highest state income taxes and property taxes in the country. Our integrated approach coordinates your investment decisions, Roth conversion strategies, and retirement timing with your full New York State and federal tax picture. Something most advisors miss because they don't do taxes.",
   },
   {
     question:
       "I already have a CPA and a financial advisor. Why would I switch?",
     answer:
-      "When your CPA and advisor work in silos, opportunities fall through the cracks — tax-loss harvesting that doesn't happen, Roth conversions timed poorly, charitable giving that isn't structured for maximum benefit. By bringing both disciplines under one roof, we eliminate those gaps.",
+      "When your CPA and advisor work in silos, opportunities fall through the cracks: tax-loss harvesting that doesn't happen, Roth conversions timed poorly, charitable giving that isn't structured for maximum benefit. By bringing both disciplines under one roof, we eliminate those gaps.",
   },
   {
     question: "What does 'fee-only' mean?",
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you objective advice that serves your best interests.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products, and ensures our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question: "Who are your typical Long Island clients?",
@@ -189,7 +189,7 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
         />
         <LocalHero
           headline="Fee-Only Financial Advisor on Long Island"
-          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — with offices in Hauppauge and Lake Success serving Long Island families."
+          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, with offices in Hauppauge and Lake Success serving Long Island families."
           badge="Serving Suffolk & Nassau County"
           locationLabel="CFPs, CPAs, and Enrolled Agents in Hauppauge & Lake Success."
         />
@@ -197,10 +197,10 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
         <FeatureHighlight />
         <LocalValueProp
           heading="Why Long Island Families Choose United"
-          subheading="Long Island's financial landscape is uniquely complex — high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
+          subheading="Long Island's financial landscape is uniquely complex: high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
           items={valueProps}
           insightHeading="The Long Island Tax Advantage"
-          insight="For Long Island residents, smart tax planning isn't optional — it's essential. Between New York State income tax, high property taxes, and the SALT deduction cap, the financial decisions that matter most are the ones that reduce your lifetime tax burden. Our team handles your investment strategy, Roth conversions, charitable giving, and tax return preparation — all coordinated to keep more of what you've earned."
+          insight="For Long Island residents, smart tax planning isn't optional; it's essential. Between New York State income tax, high property taxes, and the SALT deduction cap, the financial decisions that matter most are the ones that reduce your lifetime tax burden. Our team handles your investment strategy, Roth conversions, charitable giving, and tax return preparation, all coordinated to keep more of what you've earned."
         />
         <FeatureCards />
         <Features2 />

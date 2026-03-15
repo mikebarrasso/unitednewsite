@@ -50,7 +50,7 @@ export function PortfolioVisual(): ReactNode {
         })}
       </motion.div>
 
-      {/* Chart section — fee savings over time */}
+      {/* Chart section - fee savings over time */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}

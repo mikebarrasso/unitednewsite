@@ -32,7 +32,7 @@ import { useState, useEffect } from "react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-/* ═══════ Problem Section — tax mistake cascade ═══════ */
+/* ═══════ Problem Section - tax mistake cascade ═══════ */
 
 const mistakes = [
   {
@@ -96,7 +96,7 @@ export function ProblemSection() {
                 These aren&apos;t careless mistakes. They&apos;re the
                 predictable result of a system where your financial advisor
                 doesn&apos;t think about taxes and your CPA only sees your
-                financial life once a year — after every decision has already
+                financial life once a year, after every decision has already
                 been made.
               </p>
             </motion.div>
@@ -114,7 +114,7 @@ export function ProblemSection() {
             </motion.div>
           </div>
 
-          {/* Right — animated mistake cascade */}
+          {/* Right - animated mistake cascade */}
           <div className="flex flex-col gap-3">
             {mistakes.map((m, i) => {
               const Icon = m.icon;
@@ -183,7 +183,7 @@ export function ProblemSection() {
   );
 }
 
-/* ═══════ Prep vs Planning — side-by-side comparison ═══════ */
+/* ═══════ Prep vs Planning - side-by-side comparison ═══════ */
 
 const prepItems = [
   "Happens after decisions are made",
@@ -231,7 +231,7 @@ export function PrepVsPlanningSection() {
             transition={{ duration: 0.5, delay: 0.1, ease }}
             className="text-base sm:text-lg text-muted-foreground leading-relaxed"
           >
-            There&apos;s a difference between tax preparation and tax planning —
+            There&apos;s a difference between tax preparation and tax planning,
             and most people are only getting one. At United, tax planning
             isn&apos;t a separate service. It&apos;s woven into every financial
             and investment decision we make with you.
@@ -312,15 +312,15 @@ export function PrepVsPlanningSection() {
   );
 }
 
-/* ═══════ Grid — 6 tiles (features-5 style) ═══════ */
+/* ═══════ Grid - 6 tiles (features-5 style) ═══════ */
 
 const tiles = [
-  { icon: Calendar, title: "Multi-Year Tax Projections", description: "We model the tax impact of today's decisions across 5, 10, and 20+ year horizons — because a move that saves you $5,000 this year might cost you $50,000 over the next decade if nobody runs the numbers forward." },
-  { icon: Replace, title: "Roth Conversion Planning", description: "We identify narrow conversion windows — between retirement and RMDs, or during low-income years — size conversions to stay within optimal brackets, and coordinate with your investment team so the money moves efficiently." },
-  { icon: Briefcase, title: "Equity Compensation Strategies", description: "ISOs, NSOs, RSUs, and ESPP shares each come with different tax treatment and timing risks. We model exercise strategies against your full income picture — because the difference between November and January can be five figures." },
-  { icon: Building2, title: "Business & Personal Coordination", description: "We handle both sides — business bookkeeping, business returns, and personal returns — so entity structure, compensation strategy, and retirement contributions are all optimized together." },
-  { icon: Heart, title: "Charitable Giving Optimization", description: "DAFs, QCDs from IRAs, bunching strategies, appreciated stock donations — the right approach depends on your income, bracket, and broader plan. We maximize impact and tax benefit simultaneously." },
-  { icon: BarChart3, title: "Capital Gains & Bracket Management", description: "We monitor taxable income throughout the year and coordinate with your portfolio manager — because they're down the hall, not across town — to time sales, harvest losses, and manage distributions." },
+  { icon: Calendar, title: "Multi-Year Tax Projections", description: "We model the tax impact of today's decisions across 5, 10, and 20+ year horizons, because a move that saves you $5,000 this year might cost you $50,000 over the next decade if nobody runs the numbers forward." },
+  { icon: Replace, title: "Roth Conversion Planning", description: "We identify narrow conversion windows (between retirement and RMDs, or during low-income years), size conversions to stay within optimal brackets, and coordinate with your investment team so the money moves efficiently." },
+  { icon: Briefcase, title: "Equity Compensation Strategies", description: "ISOs, NSOs, RSUs, and ESPP shares each come with different tax treatment and timing risks. We model exercise strategies against your full income picture, because the difference between November and January can be five figures." },
+  { icon: Building2, title: "Business & Personal Coordination", description: "We handle both sides (business bookkeeping, business returns, and personal returns) so entity structure, compensation strategy, and retirement contributions are all optimized together." },
+  { icon: Heart, title: "Charitable Giving Optimization", description: "DAFs, QCDs from IRAs, bunching strategies, appreciated stock donations: the right approach depends on your income, bracket, and broader plan. We maximize impact and tax benefit simultaneously." },
+  { icon: BarChart3, title: "Capital Gains & Bracket Management", description: "We monitor taxable income throughout the year and coordinate with your portfolio manager (because they're down the hall, not across town) to time sales, harvest losses, and manage distributions." },
 ];
 
 export function TaxStrategyGrid() {
@@ -369,7 +369,7 @@ export function TaxStrategyGrid() {
   );
 }
 
-/* ═══════ Implementation — animated flow ═══════ */
+/* ═══════ Implementation - animated flow ═══════ */
 
 const flowSteps = [
   { icon: Users, label: "CPA identifies conversion window", color: "bg-[#1e6eae]" },
@@ -387,7 +387,7 @@ export function ImplementationSection() {
               What Changes When Tax Planning Shares a Roof
             </motion.p>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground mb-6">
-              Strategies That Get Implemented — Not Just Recommended
+              Strategies That Get Implemented, Not Just Recommended
             </motion.h2>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="space-y-5 text-foreground/70 leading-relaxed text-base sm:text-lg">
               <p>
@@ -405,7 +405,7 @@ export function ImplementationSection() {
             </motion.div>
           </div>
 
-          {/* Right — animated implementation flow */}
+          {/* Right - animated implementation flow */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -483,7 +483,7 @@ export function ImplementationSection() {
   );
 }
 
-/* ═══════ Year-Round Monitoring — live feed visual ═══════ */
+/* ═══════ Year-Round Monitoring - live feed visual ═══════ */
 
 const monitorEvents = [
   { icon: Zap, label: "New tax legislation passed", action: "Modeling impact on your Roth strategy…", color: "text-[#1e6eae]", bg: "bg-[#1e6eae]/10" },
@@ -530,7 +530,7 @@ export function YearRoundSection() {
             </motion.div>
           </div>
 
-          {/* Right — monitoring dashboard */}
+          {/* Right - monitoring dashboard */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -610,7 +610,7 @@ export function YearRoundSection() {
   );
 }
 
-/* ═══════ CTA — parallax floating cards ═══════ */
+/* ═══════ CTA - parallax floating cards ═══════ */
 
 const floatingCards = [
   { x: "8%", y: "15%", rotation: -10, intensity: 0.03 },

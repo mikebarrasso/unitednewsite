@@ -137,7 +137,7 @@ function ServicesSection({ location }: { location: Location }): ReactNode {
           className="mt-4 text-foreground/60 max-w-2xl leading-relaxed"
         >
           Every service is delivered by an integrated team of CFPs, CPAs, and
-          Enrolled Agents — so your financial plan, investment strategy, and tax
+          Enrolled Agents, so your financial plan, investment strategy, and tax
           return all work together.
         </motion.p>
 
@@ -228,7 +228,7 @@ function WhoWeServe({ location }: { location: Location }): ReactNode {
 function WhyIntegrated(): ReactNode {
   const reasons = [
     "Your CPA and financial planner are on the same team",
-    "Tax implications are considered before investment decisions — not after",
+    "Tax implications are considered before investment decisions, not after",
     "One firm prepares your return and manages your portfolio",
     "No referrals, no coordination gaps, no surprises at tax time",
   ];
@@ -254,7 +254,7 @@ function WhyIntegrated(): ReactNode {
         >
           Most advisory firms manage your investments. We manage the
           relationship between your investments, your taxes, and your financial
-          plan — because those decisions are inseparable.
+          plan, because those decisions are inseparable.
         </motion.p>
         <div className="mt-10 flex flex-col items-start max-w-lg mx-auto gap-4">
           {reasons.map((reason, index) => (

@@ -25,7 +25,7 @@ function NYCSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "United Financial Planning Group — New York City",
+    name: "United Financial Planning Group - New York City",
     url: "https://unitedfpg.com/financial-advisor-nyc",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
@@ -119,12 +119,12 @@ const valueProps = [
   {
     title: "Integrated tax and financial planning",
     description:
-      "Most NYC advisors focus on investments and refer out for tax. We built our firm differently — CFPs and CPAs working side-by-side so your portfolio, Roth conversions, and tax return are all coordinated under one roof.",
+      "Most NYC advisors focus on investments and refer out for tax. We built our firm differently: CFPs and CPAs working side-by-side so your portfolio, Roth conversions, and tax return are all coordinated under one roof.",
   },
   {
     title: "Designed for New York's tax complexity",
     description:
-      "Federal, state, and city income taxes create a combined burden that can exceed 50% for high earners. We build every strategy — from equity compensation timing to retirement withdrawals — around that reality.",
+      "Federal, state, and city income taxes create a combined burden that can exceed 50% for high earners. We build every strategy (from equity compensation timing to retirement withdrawals) around that reality.",
   },
   {
     title: "Equity compensation expertise",
@@ -152,7 +152,7 @@ const localFaqs = [
   {
     question: "How do New York taxes affect my retirement planning?",
     answer:
-      "New York's high tax rates make retirement planning decisions especially consequential. Roth conversion timing, Social Security claiming strategy, pension distribution elections, and withdrawal sequencing all interact with your state and city tax burden. Our team models these scenarios together because we manage your investments and prepare your tax returns — so the recommendations aren't theoretical, they're executed.",
+      "New York's high tax rates make retirement planning decisions especially consequential. Roth conversion timing, Social Security claiming strategy, pension distribution elections, and withdrawal sequencing all interact with your state and city tax burden. Our team models these scenarios together because we manage your investments and prepare your tax returns, so the recommendations aren't theoretical, they're executed.",
   },
   {
     question: "I have stock options from my company. Can you help?",
@@ -162,12 +162,12 @@ const localFaqs = [
   {
     question: "What makes you different from a big bank's wealth management division?",
     answer:
-      "Big banks and wirehouses typically earn revenue through commissions and proprietary products. As a fee-only firm, we have no products to sell and no commissions to earn. Every recommendation is legally required to be in your best interest. Additionally, most large firms don't do tax preparation — we do, which means your investment and planning decisions are always coordinated with your actual tax situation.",
+      "Big banks and wirehouses typically earn revenue through commissions and proprietary products. As a fee-only firm, we have no products to sell and no commissions to earn. Every recommendation is legally required to be in your best interest. Additionally, most large firms don't do tax preparation. We do, which means your investment and planning decisions are always coordinated with your actual tax situation.",
   },
   {
     question: "What does a fee-only fiduciary mean?",
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — no commissions, referral fees, or product sales. Fiduciary means we are legally obligated to act in your best interest at all times. Combined, this means you can trust that every recommendation we make is designed to benefit you, not us.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us, no commissions, referral fees, or product sales. Fiduciary means we are legally obligated to act in your best interest at all times. Combined, this means you can trust that every recommendation we make is designed to benefit you, not us.",
   },
 ];
 
@@ -184,7 +184,7 @@ export default function FinancialAdvisorNYCPage(): ReactNode {
         />
         <LocalHero
           headline="Fee-Only Financial Advisor in New York City"
-          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — serving professionals and families across all five boroughs and the greater NYC metro area."
+          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, serving professionals and families across all five boroughs and the greater NYC metro area."
           badge="NYC Metro · Manhattan & Long Island Offices"
           locationLabel="CFPs, CPAs, and Enrolled Agents serving the New York City metro area."
         />
@@ -195,7 +195,7 @@ export default function FinancialAdvisorNYCPage(): ReactNode {
           subheading="New York City is one of the most financially complex environments in the world. Between triple-layer taxation, equity compensation, real estate decisions, and the demands of high-earning households, you need advisors who coordinate everything."
           items={valueProps}
           insightHeading="The NYC Financial Planning Difference"
-          insight="For New York City residents, the gap between good and great financial planning often comes down to tax coordination. When your advisor doesn't talk to your CPA — or worse, doesn't understand tax at all — you're leaving money on the table. We close that gap by keeping financial planning, investment management, tax planning, and tax preparation all under one roof. One team. One strategy. No silos."
+          insight="For New York City residents, the gap between good and great financial planning often comes down to tax coordination. When your advisor doesn't talk to your CPA (or worse, doesn't understand tax at all), you're leaving money on the table. We close that gap by keeping financial planning, investment management, tax planning, and tax preparation all under one roof. One team. One strategy. No silos."
         />
         <FeatureCards />
         <Features2 />

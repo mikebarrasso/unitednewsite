@@ -20,7 +20,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Equity Compensation Planning",
   description:
-    "Equity compensation comes with complex tax timing decisions that most financial advisors won't touch — and most CPAs only see after it's too late. We handle both sides, together.",
+    "Equity compensation comes with complex tax timing decisions that most financial advisors won't touch. Most CPAs only see them after it's too late. We handle both sides, together.",
   path: "/services/equity-compensation",
 });
 
@@ -42,7 +42,7 @@ export default function EquityCompensationPage(): ReactNode {
         <ServiceHero
           eyebrow="Equity Compensation"
           title="Your Stock Options Are Worth What You Keep After Taxes"
-          subtitle="Equity compensation comes with complex tax timing decisions that most financial advisors won't touch — and most CPAs only see after it's too late. We handle both sides, together."
+          subtitle="Equity compensation comes with complex tax timing decisions that most financial advisors won't touch. Most CPAs only see them after it's too late. We handle both sides, together."
           customVisual={<EquityCompVisual />}
           hasBreadcrumb
         />

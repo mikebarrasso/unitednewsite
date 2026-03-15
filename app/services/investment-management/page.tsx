@@ -20,7 +20,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Investment Management",
   description:
-    "Low-cost, tax-efficient portfolio management built on index investing, guided by your financial plan and tax situation — because the most effective portfolio is the one you actually keep after taxes.",
+    "Low-cost, tax-efficient portfolio management built on index investing, guided by your financial plan and tax situation, because the most effective portfolio is the one you actually keep after taxes.",
   path: "/services/investment-management",
 });
 
@@ -42,8 +42,8 @@ export default function InvestmentManagementPage(): ReactNode {
         {/* Hero */}
         <ServiceHero
           eyebrow="Investment Management"
-          title="Investment Management That Answers to Your Financial Plan — Not the Other Way Around"
-          subtitle="Low-cost, tax-efficient portfolio management built on index investing, guided by your financial plan and tax situation — because the most effective portfolio is the one you actually keep after taxes."
+          title="Investment Management That Answers to Your Financial Plan, Not the Other Way Around"
+          subtitle="Low-cost, tax-efficient portfolio management built on index investing, guided by your financial plan and tax situation, because the most effective portfolio is the one you actually keep after taxes."
           customVisual={<PortfolioVisual />}
           hasBreadcrumb
         />
@@ -69,7 +69,7 @@ export default function InvestmentManagementPage(): ReactNode {
             {
               label: "Tax Planning",
               description:
-                "Tax-loss harvesting, asset location, and Roth conversion strategies — managed alongside your portfolio.",
+                "Tax-loss harvesting, asset location, and Roth conversion strategies, managed alongside your portfolio.",
               href: "/services/tax-planning",
             },
             {
@@ -81,7 +81,7 @@ export default function InvestmentManagementPage(): ReactNode {
             {
               label: "Equity Compensation",
               description:
-                "RSUs, ISOs, and NQSOs require specialized investment and tax coordination — handled in-house.",
+                "RSUs, ISOs, and NQSOs require specialized investment and tax coordination, handled in-house.",
               href: "/services/equity-compensation",
             },
           ]}

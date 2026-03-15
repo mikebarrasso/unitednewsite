@@ -107,7 +107,7 @@ export function ProblemSection() {
                 These are high-stakes decisions being made every day by smart,
                 successful professionals who are either guessing, Googling, or
                 getting advice from an advisor who understands the investment
-                side but has never filed an AMT calculation — and a CPA who
+                side but has never filed an AMT calculation, and a CPA who
                 files accurate returns but has no visibility into the financial
                 plan.
               </p>
@@ -147,11 +147,11 @@ export function ProblemSection() {
   );
 }
 
-/* ═══════ Why Different — side-by-side comparison ═══════ */
+/* ═══════ Why Different - side-by-side comparison ═══════ */
 
 const standardItems = [
   "Advisor says \"diversify\" without modeling tax cost",
-  "CPA sees equity comp at filing — months too late",
+  "CPA sees equity comp at filing, months too late",
   "AMT calculated after exercise, not before",
   "No one coordinates across grant types",
 ];
@@ -212,14 +212,14 @@ export function WhyDifferentSection() {
   );
 }
 
-/* ═══════ Grid — 5 tiles (features-5 style) ═══════ */
+/* ═══════ Grid - 5 tiles (features-5 style) ═══════ */
 
 const tiles = [
-  { icon: Briefcase, title: "ISO Exercise Strategy", description: "We model the optimal number of shares to exercise each year — factoring in your other income, your bracket, your AMT crossover point, and your broader financial plan — so you capture the spread without the surprise." },
+  { icon: Briefcase, title: "ISO Exercise Strategy", description: "We model the optimal number of shares to exercise each year, factoring in your other income, your bracket, your AMT crossover point, and your broader financial plan, so you capture the spread without the surprise." },
   { icon: DollarSign, title: "NSO Tax Planning", description: "Non-qualified options are taxed as ordinary income at exercise. We model scenarios against your full tax picture so you know exactly what you'll net, before you make the decision." },
-  { icon: PieChart, title: "RSU Diversification Planning", description: "We build diversification timelines that balance your risk tolerance, your tax situation, and your overall portfolio allocation — so you're not making sell decisions in a vacuum." },
+  { icon: PieChart, title: "RSU Diversification Planning", description: "We build diversification timelines that balance your risk tolerance, your tax situation, and your overall portfolio allocation, so you're not making sell decisions in a vacuum." },
   { icon: CreditCard, title: "ESPP Optimization", description: "We track your lots, model the optimal sale timing, and ensure you're not accidentally converting long-term capital gains into ordinary income by selling before the qualifying disposition window." },
-  { icon: Calculator, title: "AMT Modeling & Management", description: "We run AMT projections alongside regular tax projections throughout the year — not just at filing time — so you can make exercise decisions with full visibility into both tax systems." },
+  { icon: Calculator, title: "AMT Modeling & Management", description: "We run AMT projections alongside regular tax projections throughout the year, not just at filing time, so you can make exercise decisions with full visibility into both tax systems." },
 ];
 
 export function EquityStrategyGrid() {
@@ -261,7 +261,7 @@ export function EquityStrategyGrid() {
   );
 }
 
-/* ═══════ Integration — animated decision flow ═══════ */
+/* ═══════ Integration - animated decision flow ═══════ */
 
 const lenses = [
   { label: "Portfolio concentration impact", icon: PieChart },
@@ -283,13 +283,13 @@ export function IntegrationSection() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="space-y-5 text-foreground/70 leading-relaxed text-base sm:text-lg">
               <p>
                 A decision about when to exercise isn&apos;t just a tax question
-                — it&apos;s a financial planning question, an investment
+                : it&apos;s a financial planning question, an investment
                 question, and a tax question all at once. At United, that&apos;s
                 how we treat it.
               </p>
               <p>
                 That&apos;s what&apos;s possible when your financial planner,
-                portfolio manager, and CPA are in the same firm — and
+                portfolio manager, and CPA are in the same firm, and
                 it&apos;s nearly impossible when they&apos;re not.
               </p>
             </motion.div>
@@ -323,12 +323,12 @@ export function IntegrationSection() {
   );
 }
 
-/* ═══════ Who This Is For — bento grid ═══════ */
+/* ═══════ Who This Is For - bento grid ═══════ */
 
 const personas = [
-  { icon: Building2, title: "Corporate Executives", description: "Vesting schedules across multiple grant types — ISOs, NSOs, and RSUs accumulating simultaneously — who need a coordinated strategy, not piecemeal advice." },
+  { icon: Building2, title: "Corporate Executives", description: "Vesting schedules across multiple grant types (ISOs, NSOs, and RSUs accumulating simultaneously) who need a coordinated strategy, not piecemeal advice." },
   { icon: Rocket, title: "Startup Employees", description: "Navigating the decision of when to exercise, how many shares, and how to plan around a company that may or may not go public." },
-  { icon: PieChart, title: "Concentrated Positions", description: "You know you should diversify but need a tax-efficient plan to get there — not a generic \"sell and reallocate\" recommendation." },
+  { icon: PieChart, title: "Concentrated Positions", description: "You know you should diversify but need a tax-efficient plan to get there, not a generic \"sell and reallocate\" recommendation." },
   { icon: CreditCard, title: "Anyone With Equity on a W-2", description: "Your standard financial advisor and your standard CPA aren't talking to each other about your equity compensation. We fix that." },
 ];
 
@@ -392,7 +392,7 @@ export function EquityCompCTA() {
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="text-lg text-muted-foreground leading-relaxed mb-10">
           Schedule a no-pressure conversation. We&apos;ll look at what
           you&apos;re holding, what&apos;s vesting, and what decisions are
-          coming up — and help you understand what a coordinated approach could
+          coming up, and help you understand what a coordinated approach could
           mean for your net outcome.
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2, ease }}>

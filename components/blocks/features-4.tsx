@@ -21,7 +21,7 @@ export function Features4({
       icon: Clock,
       title: "Retirement & Income Strategy",
       description:
-        "Coordinate withdrawal sequencing, Social Security timing, Roth conversions, and portfolio decisions into one cohesive blueprint — modeled against your actual tax situation, not rules of thumb.",
+        "Coordinate withdrawal sequencing, Social Security timing, Roth conversions, and portfolio decisions into one cohesive blueprint, modeled against your actual tax situation, not rules of thumb.",
       features: [
         "Tax-aware withdrawal sequencing across account types",
         "Social Security claiming scenario modeling",
@@ -33,7 +33,7 @@ export function Features4({
       icon: BarChart3,
       title: "Tax-Integrated Investment Planning",
       description:
-        "Your portfolio shouldn't be managed in isolation from your tax return. We build investment strategies that account for asset location, capital gains timing, and bracket management — because after-tax returns are the only returns that matter.",
+        "Your portfolio shouldn't be managed in isolation from your tax return. We build investment strategies that account for asset location, capital gains timing, and bracket management, because after-tax returns are the only returns that matter.",
       features: [
         "Asset location optimization across taxable, IRA, and Roth accounts",
         "Capital gains timing coordinated with your tax bracket",
@@ -45,7 +45,7 @@ export function Features4({
       icon: Briefcase,
       title: "Equity Compensation & Complex Assets",
       description:
-        "ISOs, NSOs, RSUs, ESPP shares, concentrated positions — each one carries different tax treatment and timing risk. We model strategies across your full financial picture so nothing is decided in a vacuum.",
+        "ISOs, NSOs, RSUs, ESPP shares, concentrated positions: each one carries different tax treatment and timing risk. We model strategies across your full financial picture so nothing is decided in a vacuum.",
       features: [
         "ISO/NSO exercise timing and AMT impact modeling",
         "RSU vesting tax strategy and withholding adjustments",

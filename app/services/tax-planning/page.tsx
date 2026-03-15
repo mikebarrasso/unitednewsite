@@ -20,7 +20,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Tax Planning",
   description:
-    "Proactive tax strategies to reduce your lifetime tax burden — not just this year's bill. Built by CPAs and CFPs under one roof.",
+    "Proactive tax strategies to reduce your lifetime tax burden, not just this year's bill. Built by CPAs and CFPs under one roof.",
   path: "/services/tax-planning",
 });
 
@@ -42,7 +42,7 @@ export default function TaxPlanningPage(): ReactNode {
         <ServiceHero
           eyebrow="Tax Planning"
           title="Tax Planning That Goes Far Beyond April 15th"
-          subtitle="Proactive, year-round tax strategies designed to reduce your lifetime tax burden — not just this year's bill. Built by CPAs and CFPs who manage your investments, your financial plan, and your tax return under one roof."
+          subtitle="Proactive, year-round tax strategies designed to reduce your lifetime tax burden, not just this year's bill. Built by CPAs and CFPs who manage your investments, your financial plan, and your tax return under one roof."
           customVisual={<TaxPlanningVisual />}
           hasBreadcrumb
         />
@@ -74,7 +74,7 @@ export default function TaxPlanningPage(): ReactNode {
             {
               label: "Equity Compensation",
               description:
-                "RSU and stock option tax planning requires year-round coordination — we specialize in both.",
+                "RSU and stock option tax planning requires year-round coordination. We specialize in both.",
               href: "/services/equity-compensation",
             },
           ]}

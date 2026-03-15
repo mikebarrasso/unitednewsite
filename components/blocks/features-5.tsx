@@ -15,31 +15,31 @@ export function Features5() {
       icon: HandCoins,
       title: "Withdrawal Sequencing & Income Strategy",
       description:
-        "Which accounts do you draw from first — and when do you switch? We design a withdrawal plan across taxable, tax-deferred, and tax-free accounts that minimizes your lifetime tax burden, not just this year's bracket.",
+        "Which accounts do you draw from first, and when do you switch? We design a withdrawal plan across taxable, tax-deferred, and tax-free accounts that minimizes your lifetime tax burden, not just this year's bracket.",
     },
     {
       icon: ChartLine,
       title: "Social Security Optimization",
       description:
-        "The difference between the best and worst claiming strategy for a married couple can be six figures over a lifetime. We model your specific situation — factoring in your tax picture, your other income sources, and your longevity assumptions — so you make this irreversible decision with confidence.",
+        "The difference between the best and worst claiming strategy for a married couple can be six figures over a lifetime. We model your specific situation (factoring in your tax picture, your other income sources, and your longevity assumptions) so you make this irreversible decision with confidence.",
     },
     {
       icon: FileSpreadsheet,
       title: "Roth Conversion Planning",
       description:
-        "There's often a window — especially in the years between retirement and RMDs — where strategic Roth conversions can dramatically reduce your future tax burden. We identify those windows and size the conversions to stay within optimal brackets year by year.",
+        "There's often a window (especially in the years between retirement and RMDs) where strategic Roth conversions can dramatically reduce your future tax burden. We identify those windows and size the conversions to stay within optimal brackets year by year.",
     },
     {
       icon: HeartPulse,
       title: "Medicare & Healthcare Cost Planning",
       description:
-        "IRMAA surcharges can quietly add thousands to your annual healthcare costs if your income crosses certain thresholds. We model retirement income decisions with Medicare brackets in mind — so a smart tax move in one year doesn't become an expensive healthcare surprise two years later.",
+        "IRMAA surcharges can quietly add thousands to your annual healthcare costs if your income crosses certain thresholds. We model retirement income decisions with Medicare brackets in mind, so a smart tax move in one year doesn't become an expensive healthcare surprise two years later.",
     },
     {
       icon: ShieldCheck,
       title: "RMD Management",
       description:
-        "Required minimum distributions force taxable income whether you need it or not. We build strategies to reduce the impact of RMDs before they begin — through Roth conversions, charitable giving, and bracket management — and manage them tax-efficiently once they start.",
+        "Required minimum distributions force taxable income whether you need it or not. We build strategies to reduce the impact of RMDs before they begin (through Roth conversions, charitable giving, and bracket management) and manage them tax-efficiently once they start.",
     },
   ];
 
@@ -89,7 +89,7 @@ export function Features5() {
             className="text-base tracking-tight sm:text-lg text-muted-foreground mb-2 max-w-3xl"
           >
             Five interconnected decisions that determine how long your money
-            lasts — and how much you keep after taxes.
+            lasts, and how much you keep after taxes.
           </motion.p>
         </div>
 

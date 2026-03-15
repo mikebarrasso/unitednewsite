@@ -13,7 +13,7 @@ const services = [
     label: "Tax Planning & Preparation",
     short: "Tax",
     description:
-      "Year-round strategies to reduce your lifetime tax burden — prepared by CPAs and Enrolled Agents who already know your full story.",
+      "Year-round strategies to reduce your lifetime tax burden, prepared by CPAs and Enrolled Agents who already know your full story.",
     angle: 0,
   },
   {
@@ -29,7 +29,7 @@ const services = [
     label: "Financial Planning",
     short: "Planning",
     description:
-      "A roadmap built around your real life — retirement, education, estate, and risk — informed by deep tax expertise most planners don't have.",
+      "A roadmap built around your real life: retirement, education, estate, and risk. It's informed by deep tax expertise most planners don't have.",
     angle: 240,
   },
 ];
@@ -384,7 +384,7 @@ export function FeatureHighlight(): ReactNode {
             >
               Most advisory firms do one thing well and outsource the rest. At
               United Financial Planning Group, your investment decisions,
-              retirement timeline, and tax planning reinforce each other —
+              retirement timeline, and tax planning reinforce each other,
               because the same team handles all three.
             </motion.p>
 
@@ -423,7 +423,7 @@ export function FeatureHighlight(): ReactNode {
                     className="p-5 rounded-xl border border-border bg-muted/30"
                   >
                     <p className="text-sm text-muted-foreground dark:text-foreground">
-                      CFPs, CPAs, and Enrolled Agents work side by side — not
+                      CFPs, CPAs, and Enrolled Agents work side by side, not
                       across town. Hover over a service to see how it connects
                       to your complete financial picture.
                     </p>

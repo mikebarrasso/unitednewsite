@@ -55,7 +55,7 @@ export function TaxPlanningVisual(): ReactNode {
       >
         <div className="flex items-center justify-between mb-4">
           <span className="text-xs font-semibold text-foreground">
-            Tax Strategies — Current Year
+            Tax Strategies, Current Year
           </span>
           <span className="text-[10px] text-[#1e6eae] font-medium bg-[#1e6eae]/10 px-2 py-0.5 rounded-full">
             Year-round

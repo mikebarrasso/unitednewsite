@@ -12,7 +12,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Our Offices & Locations",
   description:
-    "Offices in Hauppauge, Manhattan, and Lake Success, NY. Fee-only financial planning, tax, and investment management — in-person and virtual meetings nationwide.",
+    "Offices in Hauppauge, Manhattan, and Lake Success, NY. Fee-only financial planning, tax, and investment management, with in-person and virtual meetings nationwide.",
   path: "/locations",
 });
 
@@ -24,7 +24,7 @@ function LocationsSchema() {
     url: "https://unitedfpg.com",
     location: locations.map((loc) => ({
       "@type": "Place",
-      name: `United Financial Planning Group — ${loc.city}`,
+      name: `United Financial Planning Group - ${loc.city}`,
       address: {
         "@type": "PostalAddress",
         streetAddress: loc.address,
@@ -57,7 +57,7 @@ export default function LocationsPage(): ReactNode {
               Our Offices
             </h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/60 max-w-2xl leading-relaxed">
-              Three locations across the New York metro area — plus nationwide
+              Three locations across the New York metro area, plus nationwide
               virtual service. Every office is staffed by the same integrated
               team of Certified Financial Planners, CPAs, and Enrolled Agents.
             </p>

@@ -18,7 +18,7 @@ const services: ServiceCard[] = [
   {
     title: "Financial Planning",
     description:
-      "A comprehensive roadmap for your financial future — built around your actual life, informed by deep tax expertise most planners simply don't have.",
+      "A comprehensive roadmap for your financial future, built around your actual life and informed by deep tax expertise most planners simply don't have.",
     href: "/services/financial-planning",
     visual: "planning",
   },
@@ -32,7 +32,7 @@ const services: ServiceCard[] = [
   {
     title: "Tax Planning & Preparation",
     description:
-      "Proactive, year-round strategies to reduce your lifetime tax burden — prepared by CPAs and Enrolled Agents who already know your financial story.",
+      "Proactive, year-round strategies to reduce your lifetime tax burden, prepared by CPAs and Enrolled Agents who already know your financial story.",
     href: "/services/tax-planning",
     visual: "tax",
   },

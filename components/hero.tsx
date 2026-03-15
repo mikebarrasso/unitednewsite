@@ -106,7 +106,7 @@ const fragmentShader = `
     float light2 = smoothstep(0.0, 0.7, beam2 * verticalFade);
     float light3 = smoothstep(0.0, 0.6, beam3 * verticalFade2);
     
-    // United blue spectrum — professional, trustworthy
+    // United blue spectrum - professional, trustworthy
     vec3 unitedBlue = vec3(0.118, 0.431, 0.682);
     vec3 deepNavy = vec3(0.06, 0.15, 0.35);
     vec3 lightBlue = vec3(0.24, 0.55, 0.78);
@@ -277,7 +277,7 @@ export function Hero(): ReactNode {
             >
               United Financial Planning Group brings financial planning,
               investment management, tax planning, and tax preparation together
-              under one roof — so every decision works in concert, not in
+              under one roof, so every decision works in concert, not in
               conflict.
             </motion.p>
 

@@ -87,7 +87,7 @@ export function Footer(): ReactNode {
                 </Link>
                 <p className="mt-4 text-sm text-foreground/50 dark:text-white max-w-xs leading-relaxed">
                   Fee-only financial planning, investment management, tax
-                  planning, and tax preparation — integrated under one roof for
+                  planning, and tax preparation, integrated under one roof for
                   clients nationwide.
                 </p>
               </div>

@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     name: "Margaret T.",
     role: "Retired Executive",
     quote:
-      "For years I had a financial advisor and a separate CPA who never spoke to each other. United changed everything — my Roth conversion strategy alone saved us six figures.",
+      "For years I had a financial advisor and a separate CPA who never spoke to each other. United changed everything. My Roth conversion strategy alone saved us six figures.",
   },
   {
     name: "David & Karen L.",
@@ -40,7 +40,7 @@ const testimonials: Testimonial[] = [
     name: "Brian S.",
     role: "Business Owner",
     quote:
-      "Between my S-corp, personal taxes, and investment accounts, I needed someone who could see the whole picture. United's team handles all of it — and they actually talk to each other.",
+      "Between my S-corp, personal taxes, and investment accounts, I needed someone who could see the whole picture. United's team handles all of it, and they actually talk to each other.",
   },
   {
     name: "Jennifer M.",
@@ -52,7 +52,7 @@ const testimonials: Testimonial[] = [
     name: "Robert & Susan K.",
     role: "High-Net-Worth Couple",
     quote:
-      "We've worked with several advisory firms over the years. United is the only one that truly integrates everything — investments, taxes, estate planning — into one coordinated strategy.",
+      "We've worked with several advisory firms over the years. United is the only one that truly integrates everything (investments, taxes, estate planning) into one coordinated strategy.",
   },
 ];
 

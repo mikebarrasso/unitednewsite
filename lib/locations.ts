@@ -44,18 +44,18 @@ export const locations: Location[] = [
     heroImageAlt: "United Financial Planning Group Hauppauge headquarters",
     headline: "Fee-Only Financial Planning in Hauppauge, Long Island",
     subtitle:
-      "Our headquarters on Motor Parkway brings together Certified Financial Planners, CPAs, and Enrolled Agents — all working side-by-side to coordinate your investments, tax strategy, and long-term plan.",
+      "Our headquarters on Motor Parkway brings together Certified Financial Planners, CPAs, and Enrolled Agents, all working side-by-side to coordinate your investments, tax strategy, and long-term plan.",
     description:
-      "Our Hauppauge office is where United Financial Planning Group began — the center of our practice and the place where our team of financial planners, CPAs, and tax professionals collaborate daily on behalf of clients across Suffolk County, Nassau County, and far beyond.",
+      "Our Hauppauge office is where United Financial Planning Group began: the center of our practice and the place where our team of financial planners, CPAs, and tax professionals collaborate daily on behalf of clients across Suffolk County, Nassau County, and far beyond.",
     metaTitle: "Financial Advisor in Hauppauge, NY",
     metaDescription:
       "Fee-only financial advisor in Hauppauge, NY. Financial planning, investment management, and tax preparation by CFPs, CPAs, and Enrolled Agents.",
     areaDescription:
-      "Hauppauge sits at the commercial heart of Suffolk County, home to one of the largest industrial parks on the East Coast. Many of our Long Island clients are business owners, corporate professionals commuting to Manhattan, and retirees who have spent decades building wealth in the area. The financial lives of Long Island families tend to be layered — multiple income streams, real estate holdings, and complex tax situations that benefit from having a CPA and CFP working together.",
+      "Hauppauge sits at the commercial heart of Suffolk County, home to one of the largest industrial parks on the East Coast. Many of our Long Island clients are business owners, corporate professionals commuting to Manhattan, and retirees who have spent decades building wealth in the area. The financial lives of Long Island families tend to be layered: multiple income streams, real estate holdings, and complex tax situations that benefit from having a CPA and CFP working together.",
     clientProfile:
-      "Clients visiting our Hauppauge office often include business owners navigating S-corp and partnership tax planning, executives with equity compensation from public companies, and retirees managing required minimum distributions alongside Social Security timing. Many have spent years working with separate advisors and accountants who don't communicate — and that's exactly the problem we solve.",
+      "Clients visiting our Hauppauge office often include business owners navigating S-corp and partnership tax planning, executives with equity compensation from public companies, and retirees managing required minimum distributions alongside Social Security timing. Many have spent years working with separate advisors and accountants who don't communicate. That's exactly the problem we solve.",
     localInsight:
-      "New York State has some of the highest combined state and local tax burdens in the country. For Long Island residents, smart tax planning isn't optional — it's essential. Our integrated approach means your investment decisions, Roth conversion strategies, and retirement timeline are all coordinated with your federal and New York State tax return.",
+      "New York State has some of the highest combined state and local tax burdens in the country. For Long Island residents, smart tax planning isn't optional; it's essential. Our integrated approach means your investment decisions, Roth conversion strategies, and retirement timeline are all coordinated with your federal and New York State tax return.",
     nearbyAreas: [
       "Smithtown",
       "Commack",
@@ -107,7 +107,7 @@ export const locations: Location[] = [
     heroImageAlt: "United Financial Planning Group Manhattan office",
     headline: "Fee-Only Financial Advisor in Manhattan, NYC",
     subtitle:
-      "Located steps from Penn Station, our Manhattan office gives New York City professionals direct access to integrated financial planning, investment management, and tax services — all under one roof.",
+      "Located steps from Penn Station, our Manhattan office gives New York City professionals direct access to integrated financial planning, investment management, and tax services, all under one roof.",
     description:
       "Our Manhattan office at 14 Penn Plaza sits in the center of Midtown, making it easy for professionals across the city to meet with their advisory team in person. Whether you work in finance, tech, media, or law, our team of CFPs and CPAs understands the unique financial pressures of building wealth in New York City.",
     metaTitle: "Financial Advisor in Manhattan, NYC",
@@ -116,9 +116,9 @@ export const locations: Location[] = [
     areaDescription:
       "Manhattan is one of the most financially complex environments in the world. Between high state and city income taxes, expensive real estate decisions, concentrated stock positions from publicly traded employers, and the demands of dual-income professional households, the financial planning needs here are rarely simple. Professionals in the city often find themselves underserved by advisors who don't account for the full tax picture.",
     clientProfile:
-      "Our Manhattan clients include corporate executives with RSUs, ISOs, and deferred compensation plans, partners at professional services firms, startup founders navigating liquidity events, and high-net-worth individuals managing multi-state tax exposure. Many come to us after realizing their investment advisor and CPA were making decisions in silos — costing them money in the process.",
+      "Our Manhattan clients include corporate executives with RSUs, ISOs, and deferred compensation plans, partners at professional services firms, startup founders navigating liquidity events, and high-net-worth individuals managing multi-state tax exposure. Many come to us after realizing their investment advisor and CPA were making decisions in silos, costing them money in the process.",
     localInsight:
-      "New York City residents face a triple layer of taxation: federal, New York State, and New York City income tax. Combined marginal rates can exceed 50% for high earners. That makes proactive tax planning — Roth conversions, charitable giving strategies, equity compensation timing, and estimated tax optimization — not just valuable, but critical. Our team handles both the planning and the return, so nothing falls through the cracks.",
+      "New York City residents face a triple layer of taxation: federal, New York State, and New York City income tax. Combined marginal rates can exceed 50% for high earners. That makes proactive tax planning (Roth conversions, charitable giving strategies, equity compensation timing, and estimated tax optimization) not just valuable, but critical. Our team handles both the planning and the return, so nothing falls through the cracks.",
     nearbyAreas: [
       "Midtown",
       "Chelsea",
@@ -133,7 +133,7 @@ export const locations: Location[] = [
       {
         title: "Equity Compensation Planning",
         description:
-          "Strategic guidance for ISOs, NSOs, RSUs, and ESPPs — modeling exercise timing, AMT exposure, and 10b5-1 plans.",
+          "Strategic guidance for ISOs, NSOs, RSUs, and ESPPs: modeling exercise timing, AMT exposure, and 10b5-1 plans.",
         href: "/services/equity-compensation",
       },
       {
@@ -170,7 +170,7 @@ export const locations: Location[] = [
     heroImageAlt: "United Financial Planning Group Lake Success office",
     headline: "Fee-Only Financial Advisor in Lake Success, Nassau County",
     subtitle:
-      "Our Lake Success office on Marcus Avenue serves clients across Nassau County and western Long Island — offering the same integrated team of CFPs, CPAs, and Enrolled Agents you'll find at every United location.",
+      "Our Lake Success office on Marcus Avenue serves clients across Nassau County and western Long Island, offering the same integrated team of CFPs, CPAs, and Enrolled Agents you'll find at every United location.",
     description:
       "Situated on the border of Queens and Nassau County, our Lake Success office is ideally positioned for clients across the North Shore, Great Neck, Manhasset, and the surrounding communities. It provides a convenient meeting point for families and professionals who want hands-on financial planning without traveling into the city.",
     metaTitle: "Financial Advisor in Lake Success, NY",

@@ -16,7 +16,7 @@ const beliefs = [
   {
     title: "Integration over fragmentation.",
     description:
-      "Your investments affect your taxes. Your taxes affect your retirement timeline. Your retirement timeline affects your estate plan. We treat your financial life as one interconnected system — because that's what it is.",
+      "Your investments affect your taxes. Your taxes affect your retirement timeline. Your retirement timeline affects your estate plan. We treat your financial life as one interconnected system, because that's what it is.",
   },
   {
     title: "Transparency over complexity.",
@@ -26,7 +26,7 @@ const beliefs = [
   {
     title: "Alignment over salesmanship.",
     description:
-      "As a fee-only fiduciary, we earn our living by giving good advice — not by selling financial products. Our incentives are simple: when you do well, we do well.",
+      "As a fee-only fiduciary, we earn our living by giving good advice, not by selling financial products. Our incentives are simple: when you do well, we do well.",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function AboutPage(): ReactNode {
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
               <p>
-                Gerry started his career as a tax preparer — sitting across the
+                Gerry started his career as a tax preparer, sitting across the
                 table from clients, reviewing their returns, and getting an
                 unusually complete view of their financial lives. That work
                 brought him into regular contact with the investment advisors
@@ -90,7 +90,7 @@ export default function AboutPage(): ReactNode {
               <p>
                 He built United Financial Planning Group around a fee-only,
                 fiduciary model. No commissions. No product sales. Clients pay
-                us directly, and that&apos;s the only way we get paid — which
+                us directly, and that&apos;s the only way we get paid, which
                 means our focus stays on giving the best advice we can.
               </p>
               <p>
@@ -112,7 +112,7 @@ export default function AboutPage(): ReactNode {
                 outcomes in combination.
               </p>
               <p className="font-medium text-foreground">
-                Gerry built United to solve both problems at once — a firm
+                Gerry built United to solve both problems at once: a firm
                 where the advice is genuinely client-focused, and where the
                 people giving it actually talk to each other. Today, that means
                 a team of CFPs, CPAs, and Enrolled Agents working together
@@ -128,7 +128,7 @@ export default function AboutPage(): ReactNode {
                 that.&rdquo;
               </p>
               <cite className="block mt-4 text-sm font-medium text-foreground not-italic">
-                — Gerry Barrasso, CFP®, CPA, PFS
+                - Gerry Barrasso, CFP®, CPA, PFS
               </cite>
             </blockquote>
           </div>

@@ -56,7 +56,7 @@ export default function TaxPreparationPage(): ReactNode {
             {
               label: "Tax Planning",
               description:
-                "Tax preparation is reactive. Tax planning is proactive. We do both — and they inform each other.",
+                "Tax preparation is reactive. Tax planning is proactive. We do both, and they inform each other.",
               href: "/services/tax-planning",
             },
             {
@@ -68,7 +68,7 @@ export default function TaxPreparationPage(): ReactNode {
             {
               label: "Investment Management",
               description:
-                "The CPAs who file your return also manage your portfolio — tax-aware investing by design.",
+                "The CPAs who file your return also manage your portfolio. Tax-aware investing by design.",
               href: "/services/investment-management",
             },
           ]}

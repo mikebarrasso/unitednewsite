@@ -25,7 +25,7 @@ function ManhattanSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "United Financial Planning Group — Manhattan",
+    name: "United Financial Planning Group - Manhattan",
     url: "https://unitedfpg.com/financial-advisor-manhattan",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
@@ -116,7 +116,7 @@ const valueProps = [
   {
     title: "Your CPA and advisor in one team",
     description:
-      "Most Manhattan professionals use separate advisors and CPAs who make decisions in silos — costing real money. Our CFPs and CPAs work side-by-side so your investments, tax strategy, and financial plan are always in sync.",
+      "Most Manhattan professionals use separate advisors and CPAs who make decisions in silos, costing real money. Our CFPs and CPAs work side-by-side so your investments, tax strategy, and financial plan are always in sync.",
   },
   {
     title: "Steps from Penn Station",
@@ -134,12 +134,12 @@ const localFaqs = [
   {
     question: "How does the NYC tax situation affect my financial plan?",
     answer:
-      "New York City residents face a triple layer of taxation: federal, New York State, and New York City income tax. Combined marginal rates can exceed 50% for high earners. That makes proactive tax planning — Roth conversions, charitable giving strategies, equity compensation timing, and estimated tax optimization — not just valuable, but critical. Our team handles both the planning and the return, so nothing falls through the cracks.",
+      "New York City residents face a triple layer of taxation: federal, New York State, and New York City income tax. Combined marginal rates can exceed 50% for high earners. That makes proactive tax planning (Roth conversions, charitable giving strategies, equity compensation timing, and estimated tax optimization) not just valuable, but critical. Our team handles both the planning and the return, so nothing falls through the cracks.",
   },
   {
     question: "Do you specialize in stock options and RSUs?",
     answer:
-      "Yes — equity compensation is one of our core strengths. We work with executives and employees at public and pre-IPO companies who hold ISOs, NSOs, RSUs, and ESPPs. Because we manage both the financial planning and tax preparation, we can model exercise strategies, manage AMT exposure, build 10b5-1 plans, and coordinate equity decisions with your overall financial and tax plan.",
+      "Yes. Equity compensation is one of our core strengths. We work with executives and employees at public and pre-IPO companies who hold ISOs, NSOs, RSUs, and ESPPs. Because we manage both the financial planning and tax preparation, we can model exercise strategies, manage AMT exposure, build 10b5-1 plans, and coordinate equity decisions with your overall financial and tax plan.",
   },
   {
     question: "I work in Manhattan but live in another state. Can you help?",
@@ -171,7 +171,7 @@ export default function FinancialAdvisorManhattanPage(): ReactNode {
         />
         <LocalHero
           headline="Fee-Only Financial Advisor in Manhattan"
-          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof — built for the financial complexity of working and living in New York City."
+          subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, built for the financial complexity of working and living in New York City."
           badge="Midtown · 14 Penn Plaza"
           locationLabel="CFPs and CPAs in Midtown Manhattan, steps from Penn Station."
         />
@@ -182,7 +182,7 @@ export default function FinancialAdvisorManhattanPage(): ReactNode {
           subheading="Manhattan is one of the most financially complex environments in the world. Between triple-layer taxation, concentrated stock positions, and the demands of dual-income households, you need advisors who see the full picture."
           items={valueProps}
           insightHeading="The NYC Tax Reality"
-          insight="New York City residents can face combined marginal tax rates exceeding 50%. That makes every financial decision — when to exercise stock options, whether to convert to Roth, how to structure charitable giving, when to take capital gains — a tax decision. Our team doesn't just build your financial plan and manage your investments. We prepare your tax return too. That means every strategy we recommend is built with full knowledge of your tax picture, not assumptions about it."
+          insight="New York City residents can face combined marginal tax rates exceeding 50%. That makes every financial decision (when to exercise stock options, whether to convert to Roth, how to structure charitable giving, when to take capital gains) is a tax decision. Our team doesn't just build your financial plan and manage your investments. We prepare your tax return too. That means every strategy we recommend is built with full knowledge of your tax picture, not assumptions about it."
         />
         <FeatureCards />
         <Features2 />

@@ -22,7 +22,7 @@ export function Features2() {
           {
             label: "Social Security timing optimized",
             status: "Complete",
-            detail: "Claiming at 67 — $4,200/mo",
+            detail: "Claiming at 67, $4,200/mo",
           },
           {
             label: "Roth conversion strategy",
@@ -41,7 +41,7 @@ export function Features2() {
       title: "Business Owners",
       icon: Building2,
       description:
-        "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board — succession planning, tax-efficient compensation, and personal wealth building.",
+        "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board: succession planning, tax-efficient compensation, and personal wealth building.",
       image:
         "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
       card: {
@@ -69,7 +69,7 @@ export function Features2() {
       title: "Executives with Equity Compensation",
       icon: BarChart3,
       description:
-        "ISOs, NSOs, RSUs, ESPP shares — each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
+        "ISOs, NSOs, RSUs, ESPP shares: each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
       image:
         "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1200&auto=format&fit=crop",
       card: {
@@ -97,7 +97,7 @@ export function Features2() {
       title: "High-Net-Worth Individuals",
       icon: Gem,
       description:
-        "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity — not a cookie-cutter model.",
+        "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
       image:
         "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
       card: {
@@ -106,7 +106,7 @@ export function Features2() {
           {
             label: "Charitable giving strategy",
             status: "Executing",
-            detail: "DAF funded — $250K tax benefit",
+            detail: "DAF funded, $250K tax benefit",
           },
           {
             label: "Estate plan coordinated",

@@ -17,18 +17,18 @@ const faqItems = [
   {
     question: 'What does "fee-only" mean, and why does it matter?',
     answer:
-      "Fee-only means we are compensated exclusively by the fees our clients pay us — never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products — common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you objective advice that serves your best interests.",
+      "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This avoids the conflicts of interest that arise when advisors earn commissions or sell products. That's common in the financial industry. When an advisor earns a commission for recommending a particular product, it's difficult to know whether that recommendation is truly in your best interest. With a fee-only model, our only incentive is to give you objective advice that serves your best interests.",
   },
   {
     question:
       "How is United Financial Planning Group different from other financial advisors?",
     answer:
-      "Most advisory firms focus on one piece of the puzzle — usually investment management. If you need tax planning, they refer you out. We built our firm differently. Our team includes Certified Financial Planners, CPAs, and Enrolled Agents working together under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily.",
+      "Most advisory firms focus on one piece of the puzzle, usually investment management. If you need tax planning, they refer you out. We built our firm differently. Our team includes Certified Financial Planners, CPAs, and Enrolled Agents working together under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily.",
   },
   {
     question: "What does it mean that you're a fiduciary?",
     answer:
-      'As a registered investment advisor, we are legally obligated to act in your best interest at all times. This is known as a fiduciary duty. Not all financial professionals are held to this standard — many operate under a lower "suitability" standard, which only requires that recommendations be suitable for you, not necessarily the best option available.',
+      'As a registered investment advisor, we are legally obligated to act in your best interest at all times. This is known as a fiduciary duty. Not all financial professionals are held to this standard; many operate under a lower "suitability" standard, which only requires that recommendations be suitable for you, not necessarily the best option available.',
   },
   {
     question: "Who are your typical clients?",
@@ -43,12 +43,12 @@ const faqItems = [
   {
     question: "How does the planning process work?",
     answer:
-      "It starts with a conversation. We'll spend time understanding your financial situation, your concerns, and your goals. From there, we develop a comprehensive plan that addresses your investments, retirement timeline, tax situation, and anything else that's relevant. The plan isn't a one-time deliverable — it's an ongoing relationship where we monitor, adjust, and coordinate as your life evolves.",
+      "It starts with a conversation. We'll spend time understanding your financial situation, your concerns, and your goals. From there, we develop a comprehensive plan that addresses your investments, retirement timeline, tax situation, and anything else that's relevant. The plan isn't a one-time deliverable. It's an ongoing relationship where we monitor, adjust, and coordinate as your life evolves.",
   },
   {
     question: "Do you help with stock options and equity compensation?",
     answer:
-      "Yes — this is one of our core strengths. Equity compensation (ISOs, NSOs, RSUs, ESPPs) involves complex tax timing decisions that can significantly impact your net outcome. Because we handle both the financial planning and tax preparation side, we can model exercise strategies, manage AMT exposure, and coordinate equity decisions with your overall financial plan.",
+      "Yes. This is one of our core strengths. Equity compensation (ISOs, NSOs, RSUs, ESPPs) involves complex tax timing decisions that can significantly impact your net outcome. Because we handle both the financial planning and tax preparation side, we can model exercise strategies, manage AMT exposure, and coordinate equity decisions with your overall financial plan.",
   },
 ];
 

@@ -15,21 +15,21 @@ export const metadata: Metadata = createMetadata({
 
 const documents = [
   {
-    title: "Form ADV Part 2A — Firm Brochure",
+    title: "Form ADV Part 2A - Firm Brochure",
     description:
       "Our firm brochure describes our advisory services, fees, business practices, and any conflicts of interest.",
     href: "/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf",
     date: "March 21, 2025",
   },
   {
-    title: "Form ADV Part 2B — Brochure Supplement",
+    title: "Form ADV Part 2B - Brochure Supplement",
     description:
       "Supplemental information about the supervised persons who provide advisory services on behalf of our firm.",
     href: "/2025-03-21-UFPG-Form-ADV-Part-2B-1.pdf",
     date: "March 21, 2025",
   },
   {
-    title: "Form CRS — Client Relationship Summary",
+    title: "Form CRS - Client Relationship Summary",
     description:
       "A summary of the types of services we provide, fees, costs, conflicts of interest, and disciplinary history.",
     href: "/2023-08-17-UFPG-Form-CRS-1.pdf",

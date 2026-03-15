@@ -45,7 +45,7 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: `United Financial Planning Group — ${location.city}`,
+    name: `United Financial Planning Group - ${location.city}`,
     description: location.metaDescription,
     url: `https://unitedfpg.com/locations/${location.slug}`,
     telephone: location.phone,

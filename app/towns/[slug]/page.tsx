@@ -74,7 +74,7 @@ function TownSchema({ slug }: { slug: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: `United Financial Planning Group — ${town.name}`,
+    name: `United Financial Planning Group - ${town.name}`,
     url: pageUrl,
     logo: `${baseUrl}/logo-black-cropped.png`,
     description: town.metaDescription,

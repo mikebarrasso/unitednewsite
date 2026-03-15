@@ -97,7 +97,7 @@ function DisconnectedVisual() {
           </span>
         </div>
         <p className="text-[10px] text-muted-foreground ml-8">
-          Too late to offset — no losses harvested
+          Too late to offset, no losses harvested
         </p>
       </motion.div>
 
@@ -211,7 +211,7 @@ function CoordinatedVisual() {
         className="p-3 rounded-lg bg-[#1e6eae]/[0.05] border border-[#1e6eae]/20 text-center"
       >
         <p className="text-xs text-[#1e6eae] font-semibold">
-          Tax saved: $12,400 — portfolio on target
+          Tax saved: $12,400, portfolio on target
         </p>
       </motion.div>
     </div>
@@ -225,7 +225,7 @@ export function ProblemSection() {
     <section className="relative w-full bg-muted/30 py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — text */}
+          {/* Left - text */}
           <div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -256,7 +256,7 @@ export function ProblemSection() {
               <p>
                 Your advisor rebalances in December without asking your CPA how
                 it&apos;ll hit your return. You&apos;re paying capital gains
-                taxes that could have been offset — if anyone had been paying
+                taxes that could have been offset, if anyone had been paying
                 attention.
               </p>
               <p>
@@ -267,7 +267,7 @@ export function ProblemSection() {
             </motion.div>
           </div>
 
-          {/* Right — animated comparison visual */}
+          {/* Right - animated comparison visual */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -293,7 +293,7 @@ export function ProblemSection() {
         >
           <p className="text-foreground font-medium leading-relaxed text-lg sm:text-xl text-center">
             At United, your portfolio is never managed in isolation. It&apos;s
-            managed in service of your financial and tax plan — always.
+            managed in service of your financial and tax plan, always.
           </p>
         </motion.div>
         <p className="text-[11px] text-muted-foreground/50 text-center mt-4 max-w-3xl mx-auto">
@@ -304,14 +304,14 @@ export function ProblemSection() {
   );
 }
 
-/* ═══════ Philosophy Section — features-4 style tabs ═══════ */
+/* ═══════ Philosophy Section - features-4 style tabs ═══════ */
 
 const philosophyTabs = [
   {
     icon: Layers,
     title: "Low-Cost Index Investing",
     description:
-      "We build globally diversified portfolios using low-cost index funds and ETFs. The evidence is clear — according to the S&P SPIVA Scorecard, the majority of actively managed funds have underperformed their benchmark over 15- and 20-year periods. We'd rather put that fee savings back in your pocket and let compounding do the work.",
+      "We build globally diversified portfolios using low-cost index funds and ETFs. The evidence is clear: according to the S&P SPIVA Scorecard, the majority of actively managed funds have underperformed their benchmark over 15- and 20-year periods. We'd rather put that fee savings back in your pocket and let compounding do the work.",
     features: [
       "Globally diversified index fund portfolios",
       "Evidence-based asset allocation",
@@ -323,7 +323,7 @@ const philosophyTabs = [
     icon: Map,
     title: "Tax-Efficient Portfolio Management",
     description:
-      "Where you hold an investment matters almost as much as what you hold. We optimize asset location — placing tax-inefficient investments in tax-advantaged accounts and tax-efficient holdings in taxable accounts — so you minimize the drag that taxes create on long-term growth.",
+      "Where you hold an investment matters almost as much as what you hold. We optimize asset location (placing tax-inefficient investments in tax-advantaged accounts and tax-efficient holdings in taxable accounts) so you minimize the drag that taxes create on long-term growth.",
     features: [
       "Asset location optimization across account types",
       "Tax-inefficient holdings placed in IRAs and 401(k)s",
@@ -335,7 +335,7 @@ const philosophyTabs = [
     icon: Target,
     title: "Your Plan Drives Your Portfolio",
     description:
-      "Every investment decision at United is informed by your financial plan and your tax situation. We don't build a portfolio and hope it fits your life. We start with your life — your retirement timeline, your income needs, your tax brackets, your goals — and build a portfolio that serves it.",
+      "Every investment decision at United is informed by your financial plan and your tax situation. We don't build a portfolio and hope it fits your life. We start with your life (your retirement timeline, your income needs, your tax brackets, your goals) and build a portfolio that serves it.",
     features: [
       "Portfolio constructed from your financial plan",
       "Risk aligned to your retirement timeline",
@@ -515,7 +515,7 @@ export function PhilosophySection() {
   );
 }
 
-/* ═══════ Tax-Aware Grid (features-5 style, 6 tiles — 3×2) ═══════ */
+/* ═══════ Tax-Aware Grid (features-5 style, 6 tiles - 3×2) ═══════ */
 
 import { DollarSign } from "lucide-react";
 
@@ -524,7 +524,7 @@ const taxTiles = [
     icon: TrendingDown,
     title: "Tax-Loss Harvesting",
     description:
-      "When positions decline, we strategically realize losses to offset gains elsewhere — coordinated with your actual tax situation, because a loss that saves you 37 cents on the dollar is worth a lot more than one that saves you 12.",
+      "When positions decline, we strategically realize losses to offset gains elsewhere, coordinated with your actual tax situation, because a loss that saves you 37 cents on the dollar is worth a lot more than one that saves you 12.",
   },
   {
     icon: Map,
@@ -536,25 +536,25 @@ const taxTiles = [
     icon: RefreshCw,
     title: "Rebalancing With Tax Consequences in Mind",
     description:
-      "We rebalance strategically — using new contributions, dividends, and tax-loss harvesting opportunities to bring your portfolio back to target without creating avoidable tax bills.",
+      "We rebalance strategically, using new contributions, dividends, and tax-loss harvesting opportunities to bring your portfolio back to target without creating avoidable tax bills.",
   },
   {
     icon: BarChart3,
     title: "Capital Gains & Bracket Management",
     description:
-      "We monitor your taxable income throughout the year and time investment decisions accordingly — because the same team managing your portfolio is also managing your tax plan.",
+      "We monitor your taxable income throughout the year and time investment decisions accordingly, because the same team managing your portfolio is also managing your tax plan.",
   },
   {
     icon: Briefcase,
     title: "Equity Compensation & Concentrated Positions",
     description:
-      "ISOs, NSOs, RSUs, or a concentrated single-stock position — we integrate equity compensation into your overall allocation and model exercise and diversification strategies with tax consequences in mind.",
+      "ISOs, NSOs, RSUs, or a concentrated single-stock position: we integrate equity compensation into your overall allocation and model exercise and diversification strategies with tax consequences in mind.",
   },
   {
     icon: DollarSign,
     title: "Withdrawal & Distribution Coordination",
     description:
-      "Which account you pull from — and when — can dramatically change your tax bill in retirement. We sequence withdrawals across taxable, tax-deferred, and Roth accounts to keep you in the lowest bracket possible, year after year.",
+      "Which account you pull from, and when, can dramatically change your tax bill in retirement. We sequence withdrawals across taxable, tax-deferred, and Roth accounts to keep you in the lowest bracket possible, year after year.",
   },
 ];
 
@@ -656,7 +656,7 @@ export function TaxAwareGrid() {
   );
 }
 
-/* ═══════ Differentiator — bento grid ═══════ */
+/* ═══════ Differentiator - bento grid ═══════ */
 
 const diffPoints = [
   {
@@ -665,7 +665,7 @@ const diffPoints = [
   },
   {
     span: "",
-    text: "We do — because the people managing your portfolio are the same people managing your financial plan and preparing your tax return.",
+    text: "We do, because the people managing your portfolio are the same people managing your financial plan and preparing your tax return.",
   },
   {
     span: "",
@@ -673,7 +673,7 @@ const diffPoints = [
   },
   {
     span: "",
-    text: "Your investments, your tax plan, and your financial plan — one team, one strategy.",
+    text: "Your investments, your tax plan, and your financial plan: one team, one strategy.",
   },
 ];
 
@@ -727,7 +727,7 @@ export function DifferentiatorSection() {
   );
 }
 
-/* ═══════ CTA — parallax floating cards ═══════ */
+/* ═══════ CTA - parallax floating cards ═══════ */
 
 const floatingCards = [
   { x: "8%", y: "15%", rotation: -10, intensity: 0.03 },
@@ -809,7 +809,7 @@ export function InvestmentCTA() {
           className="text-lg text-muted-foreground leading-relaxed mb-10"
         >
           Schedule a no-pressure conversation. We&apos;ll listen to how your
-          portfolio is currently managed, what&apos;s working, what isn&apos;t —
+          portfolio is currently managed, what&apos;s working, what isn&apos;t,
           and whether a more coordinated approach could make a meaningful
           difference.
         </motion.p>

@@ -79,7 +79,7 @@ export default function FinancialPlanningPage(): ReactNode {
             {
               label: "Investment Management",
               description:
-                "Portfolio decisions driven by your financial plan — not the other way around.",
+                "Portfolio decisions driven by your financial plan, not the other way around.",
               href: "/services/investment-management",
             },
             {

@@ -20,18 +20,18 @@ import { useState, useEffect, useRef } from "react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-/* ═══════ Opening Section — coordination visual ═══════ */
+/* ═══════ Opening Section - coordination visual ═══════ */
 
 const disconnectedSteps = [
   { label: "Advisor suggests Roth conversion", who: "Advisor" },
-  { label: "CPA pushes back — missing context", who: "CPA" },
+  { label: "CPA pushes back, missing context", who: "CPA" },
   { label: "Nobody follows through", who: "You" },
-  { label: "Window closes. Opportunity gone.", who: "—" },
+  { label: "Window closes. Opportunity gone.", who: "-" },
 ];
 
 const coordinatedSteps = [
   { label: "CFP identifies conversion window" },
-  { label: "CPA confirms tax impact — same day" },
+  { label: "CPA confirms tax impact, same day" },
   { label: "Portfolio manager moves the assets" },
   { label: "Strategy implemented. You're informed." },
 ];
@@ -56,7 +56,7 @@ export function OpeningSection() {
             </motion.div>
           </div>
 
-          {/* Right — disconnected vs coordinated */}
+          {/* Right - disconnected vs coordinated */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="p-4 rounded-2xl border border-border bg-card">
               <div className="flex items-center justify-between mb-4">
@@ -107,13 +107,13 @@ export function OpeningSection() {
   );
 }
 
-/* ═══════ Value Pillars — features-5 style bordered grid (6 tiles) ═══════ */
+/* ═══════ Value Pillars - features-5 style bordered grid (6 tiles) ═══════ */
 
 const pillars = [
-  { icon: BarChart3, title: "Tax-Aware Investing", subtitle: "Keeping More of What You Earn", description: "When your portfolio manager and tax team are on the same team, investment decisions can be evaluated with tax consequences in mind — tax-loss harvesting, rebalancing timing, and asset location coordinated to help reduce unnecessary tax drag." },
+  { icon: BarChart3, title: "Tax-Aware Investing", subtitle: "Keeping More of What You Earn", description: "When your portfolio manager and tax team are on the same team, investment decisions can be evaluated with tax consequences in mind: tax-loss harvesting, rebalancing timing, and asset location coordinated to help reduce unnecessary tax drag." },
   { icon: Calendar, title: "Proactive Tax Planning", subtitle: "Planning Before April", description: "Multi-year projections, scenario analysis before major decisions, and proactive outreach when tax laws change. The value shows up in decisions made at the right time, with the right information." },
-  { icon: Clock, title: "Retirement Income Strategy", subtitle: "Making Your Money Last", description: "Which accounts to tap first, when to claim Social Security, whether Roth conversions make sense, how to manage RMDs — modeled as a connected, multi-year strategy, not a series of isolated decisions." },
-  { icon: Brain, title: "Behavioral Guidance", subtitle: "Avoiding Expensive Mistakes", description: "Markets drop. Headlines get scary. Our job isn't just to build a plan — it's to help you stick to it when the world gets noisy. The best financial decision is often the one you don't make." },
+  { icon: Clock, title: "Retirement Income Strategy", subtitle: "Making Your Money Last", description: "Which accounts to tap first, when to claim Social Security, whether Roth conversions make sense, how to manage RMDs: modeled as a connected, multi-year strategy, not a series of isolated decisions." },
+  { icon: Brain, title: "Behavioral Guidance", subtitle: "Avoiding Expensive Mistakes", description: "Markets drop. Headlines get scary. Our job isn't just to build a plan; it's to help you stick to it when the world gets noisy. The best financial decision is often the one you don't make." },
   { icon: Shield, title: "Fee-Only & Fiduciary", subtitle: "Aligning Incentives", description: "No commissions. No proprietary products. No revenue sharing. Low-cost index funds and ETFs. When incentives are aligned, the advice is simpler, clearer, and more focused on your goals." },
   { icon: Link2, title: "One Firm, One Strategy", subtitle: "No More Playing Middleman", description: "Your CFP, CPA, and portfolio manager work together directly. Opportunities are evaluated with shared context, and implementation is faster because the people responsible are aligned." },
 ];
@@ -178,7 +178,7 @@ export function TaxAwareSection() {
               The Return Your Statement Doesn&apos;t Show You
             </motion.h2>
             <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Your investment return is a number on a screen. Your after-tax return is what you actually keep — and the gap between those two numbers is where many investors lose money without realizing it.
+              Your investment return is a number on a screen. Your after-tax return is what you actually keep, and the gap between those two numbers is where many investors lose money without realizing it.
             </motion.p>
             <div className="space-y-3">
               {taxAwarePoints.map((p, i) => (
@@ -191,7 +191,7 @@ export function TaxAwareSection() {
             <p className="mt-6 text-xs text-muted-foreground italic">Tax strategies involve complexities and risks, including the risk that expected tax benefits are not realized. Results vary.</p>
           </div>
 
-          {/* Visual — tax coordination coverage */}
+          {/* Visual - tax coordination coverage */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="p-6 rounded-2xl bg-card border border-border">
             <div className="flex items-center justify-between mb-5">
               <p className="text-xs font-semibold text-foreground">Tax-Aware Coordination Coverage</p>
@@ -228,7 +228,7 @@ export function TaxAwareSection() {
 
 /* 2. Proactive Tax Planning */
 const taxPlanPoints = [
-  "Multi-year tax projections — not just next April",
+  "Multi-year tax projections, not just next April",
   "Scenario analysis before exercising options or taking distributions",
   "Proactive outreach when tax laws change",
   "Conversion strategies implemented when they fit your broader picture",
@@ -239,14 +239,14 @@ export function ProactiveTaxSection() {
     <section className="relative w-full bg-background py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — animated timeline */}
+          {/* Left - animated timeline */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="p-6 rounded-2xl bg-card border border-border order-2 lg:order-1">
             <p className="text-xs font-semibold text-foreground mb-5 uppercase tracking-wider">Proactive vs. Reactive</p>
             {[
               { month: "Jan", label: "Tax projections built for the year", reactive: "CPA not involved yet" },
               { month: "Jun", label: "Roth conversion window identified", reactive: "Nobody looking" },
               { month: "Oct", label: "Year-end strategy adjusted", reactive: "Still waiting for March" },
-              { month: "Mar", label: "Return filed — no surprises", reactive: "Surprises discovered at filing" },
+              { month: "Mar", label: "Return filed, no surprises", reactive: "Surprises discovered at filing" },
             ].map((step, i) => (
               <motion.div key={i} initial={{ opacity: 0, x: -15 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.3 + i * 0.12 }} className="flex items-center gap-4 p-3 rounded-xl bg-muted/40 mb-3 last:mb-0">
                 <div className="shrink-0 w-10 h-10 rounded-xl bg-[#1e6eae]/10 flex items-center justify-center">
@@ -261,7 +261,7 @@ export function ProactiveTaxSection() {
             ))}
           </motion.div>
 
-          {/* Right — text */}
+          {/* Right - text */}
           <div className="order-1 lg:order-2">
             <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-[#1e6eae] font-medium mb-4">2. Proactive Tax Planning</motion.p>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground mb-6">
@@ -292,18 +292,18 @@ const remainingPillars = [
   {
     icon: Clock,
     title: "Retirement Income Strategy",
-    description: "How you draw down — which accounts first, when to claim Social Security, whether Roth conversions make sense, how to manage RMDs — modeled as a connected, multi-year strategy.",
+    description: "How you draw down (which accounts first, when to claim Social Security, whether Roth conversions make sense, how to manage RMDs) modeled as a connected, multi-year strategy.",
     features: [
       "Social Security claiming scenarios modeled against broader income",
       "Roth conversion windows evaluated year by year",
       "RMD planning to help manage tax impact proactively",
-      "Plan adjusts when life changes — because it always does",
+      "Plan adjusts when life changes, because it always does",
     ],
   },
   {
     icon: Brain,
     title: "Behavioral Guidance",
-    description: "Markets drop. Headlines get scary. Our job isn't just to build a plan — it's to help you stick to it when the world gets noisy.",
+    description: "Markets drop. Headlines get scary. Our job isn't just to build a plan; it's to help you stick to it when the world gets noisy.",
     features: [
       "Guidance through multiple market cycles and tax law changes",
       "Helping avoid panic-driven selling or speculative bets",
@@ -316,7 +316,7 @@ const remainingPillars = [
     title: "Fee-Only & Fiduciary",
     description: "No commissions. No proprietary products. No revenue sharing. As a registered investment adviser held to a fiduciary standard, our recommendations are required to be in your best interest.",
     features: [
-      "Low-cost index funds and ETFs — not commissionable products",
+      "Low-cost index funds and ETFs, not commissionable products",
       "No 12b-1 fees or third-party payments",
       "Transparent, client-only compensation",
       "Incentives aligned with your goals, not product sales",
@@ -327,7 +327,7 @@ const remainingPillars = [
     title: "One Firm, One Strategy",
     description: "Your CFP, CPA, and portfolio manager work together directly. No more playing middleman between your advisor and your accountant.",
     features: [
-      "One coordinated team — one phone call when something comes up",
+      "One coordinated team, one phone call when something comes up",
       "Opportunities evaluated with shared context",
       "Implementation faster because the responsible people are aligned",
       "Peace of mind that every part of your financial life is connected",
@@ -427,7 +427,7 @@ export function ClosingSection() {
             If your advisor has never talked to your CPA. If your tax return is
             prepared by someone who has no idea what your financial plan says. If
             you&apos;re the one connecting the dots between professionals who
-            should be coordinating — there can be a cost to that.
+            should be coordinating, there can be a cost to that.
           </p>
           <p>
             We built United to reduce those gaps through integrated planning,

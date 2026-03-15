@@ -10,7 +10,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "In The Media",
   description:
-    "United Financial Planning Group in the media — features and quotes in The Wall Street Journal, Fortune, GOBankingRates, NAPFA Advisor Magazine, and more.",
+    "United Financial Planning Group in the media: features and quotes in The Wall Street Journal, Fortune, GOBankingRates, NAPFA Advisor Magazine, and more.",
   path: "/in-the-media",
 });
 

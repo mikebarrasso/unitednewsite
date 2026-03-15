@@ -14,7 +14,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Our Fees & Pricing",
   description:
-    "Transparent, fee-only pricing with no hidden fees. Comprehensive financial planning, tax planning, and wealth management — see exactly what you'll pay before we start working together.",
+    "Transparent, fee-only pricing with no hidden fees. Comprehensive financial planning, tax planning, and wealth management. See exactly what you'll pay before we start working together.",
   path: "/fees",
 });
 
