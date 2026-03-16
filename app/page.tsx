@@ -16,7 +16,7 @@ export const metadata: Metadata = createMetadata({
   absoluteTitle:
     "United Financial Planning Group | Fee-Only Financial Advisor",
   description:
-    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
+    "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   path: "/",
 });
 
@@ -28,7 +28,7 @@ function OrganizationSchema() {
     url: "https://unitedfpg.com",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
-      "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
+      "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     foundingDate: "2008",

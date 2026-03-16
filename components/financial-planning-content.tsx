@@ -70,7 +70,7 @@ const taxPractice = [
 const differentiators = [
   {
     icon: Users,
-    text: "CFPs and CPAs working together from day one. Your plan is stress-tested against real tax scenarios, not theoretical ones.",
+    text: "CFP® professionals and CPAs working together from day one. Your plan is stress-tested against real tax scenarios, not theoretical ones.",
   },
   {
     icon: ShieldCheck,
@@ -261,7 +261,7 @@ export function TaxIntegrationSection() {
         >
           <p className="text-lg">
             This is where United is fundamentally different. Because our team
-            includes CFPs and CPAs working side by side, your financial plan is
+            includes CFP® professionals and CPAs working side by side, your financial plan is
             built against real tax scenarios from day one, not handed off to a
             separate firm to &ldquo;review.&rdquo;
           </p>

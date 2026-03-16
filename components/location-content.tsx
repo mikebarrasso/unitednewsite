@@ -136,7 +136,7 @@ function ServicesSection({ location }: { location: Location }): ReactNode {
           transition={{ duration: 0.5, delay: 0.1, ease }}
           className="mt-4 text-foreground/60 max-w-2xl leading-relaxed"
         >
-          Every service is delivered by an integrated team of CFPs, CPAs, and
+          Every service is delivered by an integrated team of CFP® professionals, CPAs, and
           Enrolled Agents, so your financial plan, investment strategy, and tax
           return all work together.
         </motion.p>

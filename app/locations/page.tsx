@@ -59,7 +59,7 @@ export default function LocationsPage(): ReactNode {
             <p className="mt-4 text-base sm:text-lg text-foreground/60 max-w-2xl leading-relaxed">
               Three locations across the New York metro area, plus nationwide
               virtual service. Every office is staffed by the same integrated
-              team of Certified Financial Planners, CPAs, and Enrolled Agents.
+              team of CFP® professionals, CPAs, and Enrolled Agents.
             </p>
           </div>
         </section>

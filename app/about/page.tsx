@@ -31,7 +31,7 @@ const beliefs = [
 ];
 
 const capabilities = [
-  "Certified Financial Planners (CFP®) for comprehensive financial and retirement planning",
+  "CFP® professionals for comprehensive financial and retirement planning",
   "Certified Public Accountants (CPA) for advanced tax planning and preparation",
   "Enrolled Agents (EA) for tax representation and specialized tax guidance",
   "Personal Financial Specialist (PFS) designation combining accounting and financial planning expertise",
@@ -95,7 +95,7 @@ export default function AboutPage(): ReactNode {
               </p>
               <p>
                 But the fee-only structure was only part of the vision. As both
-                a Certified Financial Planner™ and Certified Public Accountant,
+                a CFP® professional and Certified Public Accountant,
                 Gerry had seen something else the industry was getting wrong:
                 the way financial advice was fragmented across separate
                 professionals who rarely spoke to each other. Your investment
@@ -115,7 +115,7 @@ export default function AboutPage(): ReactNode {
                 Gerry built United to solve both problems at once: a firm
                 where the advice is genuinely client-focused, and where the
                 people giving it actually talk to each other. Today, that means
-                a team of CFPs, CPAs, and Enrolled Agents working together
+                a team of CFP® professionals, CPAs, and Enrolled Agents working together
                 under one roof, treating your financial life as the
                 interconnected system it actually is.
               </p>

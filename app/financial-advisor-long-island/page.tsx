@@ -17,7 +17,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Financial Advisor on Long Island",
   description:
-    "Long Island fee-only financial advisor with CFPs, CPAs, and Enrolled Agents. Integrated financial planning, tax, and investment management.",
+    "Long Island fee-only financial advisor with CFP® professionals, CPAs, and Enrolled Agents. Integrated financial planning, tax, and investment management.",
   path: "/financial-advisor-long-island",
 });
 
@@ -29,7 +29,7 @@ function LongIslandSchema() {
     url: "https://unitedfpg.com/financial-advisor-long-island",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
-      "Fee-only financial advisory firm serving Long Island families and professionals. CFPs, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services from offices in Hauppauge and Lake Success.",
+      "Fee-only financial advisory firm serving Long Island families and professionals. CFP® professionals, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services from offices in Hauppauge and Lake Success.",
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     address: [
@@ -191,7 +191,7 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
           headline="Fee-Only Financial Advisor on Long Island"
           subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, with offices in Hauppauge and Lake Success serving Long Island families."
           badge="Serving Suffolk & Nassau County"
-          locationLabel="CFPs, CPAs, and Enrolled Agents in Hauppauge & Lake Success."
+          locationLabel="CFP® professionals, CPAs, and Enrolled Agents in Hauppauge & Lake Success."
         />
         <TrustedBy />
         <FeatureHighlight />

@@ -17,7 +17,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Financial Advisor in Manhattan",
   description:
-    "Manhattan fee-only financial advisor with CFPs and CPAs under one roof. Equity compensation planning, tax strategy, and investment management for NYC professionals at 14 Penn Plaza.",
+    "Manhattan fee-only financial advisor with CFP® professionals and CPAs under one roof. Equity compensation planning, tax strategy, and investment management for NYC professionals at 14 Penn Plaza.",
   path: "/financial-advisor-manhattan",
 });
 
@@ -29,7 +29,7 @@ function ManhattanSchema() {
     url: "https://unitedfpg.com/financial-advisor-manhattan",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
-      "Fee-only financial advisory firm in Midtown Manhattan. CFPs and CPAs providing integrated financial planning, equity compensation planning, investment management, and tax services for NYC professionals.",
+      "Fee-only financial advisory firm in Midtown Manhattan. CFP® professionals and CPAs providing integrated financial planning, equity compensation planning, investment management, and tax services for NYC professionals.",
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     address: {
@@ -116,7 +116,7 @@ const valueProps = [
   {
     title: "Your CPA and advisor in one team",
     description:
-      "Most Manhattan professionals use separate advisors and CPAs who make decisions in silos, costing real money. Our CFPs and CPAs work side-by-side so your investments, tax strategy, and financial plan are always in sync.",
+      "Most Manhattan professionals use separate advisors and CPAs who make decisions in silos, costing real money. Our CFP® professionals and CPAs work side-by-side so your investments, tax strategy, and financial plan are always in sync.",
   },
   {
     title: "Steps from Penn Station",
@@ -149,7 +149,7 @@ const localFaqs = [
   {
     question: "How is United different from a typical wealth management firm?",
     answer:
-      "Most firms focus on investment management and refer out for tax work. We built our firm with CFPs, CPAs, and Enrolled Agents under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily. For Manhattan professionals with complex finances, that coordination can save thousands of dollars annually.",
+      "Most firms focus on investment management and refer out for tax work. We built our firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily. For Manhattan professionals with complex finances, that coordination can save thousands of dollars annually.",
   },
   {
     question: "Do I need to visit your Manhattan office?",
@@ -173,7 +173,7 @@ export default function FinancialAdvisorManhattanPage(): ReactNode {
           headline="Fee-Only Financial Advisor in Manhattan"
           subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, built for the financial complexity of working and living in New York City."
           badge="Midtown · 14 Penn Plaza"
-          locationLabel="CFPs and CPAs in Midtown Manhattan, steps from Penn Station."
+          locationLabel="CFP® professionals and CPAs in Midtown Manhattan, steps from Penn Station."
         />
         <TrustedBy />
         <FeatureHighlight />

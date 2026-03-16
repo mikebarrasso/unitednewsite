@@ -60,7 +60,7 @@ export default function JoseViveroPage(): ReactNode {
             {
               title: "Commitment to Excellence",
               content:
-                "In 2022, Jose earned his CERTIFIED FINANCIAL PLANNER™ (CFP®) certification, a testament to his commitment to upholding the highest standards in financial planning. He also holds multiple designations from the American College of Financial Services, reflecting the depth and breadth of his financial expertise.",
+                "In 2022, Jose earned his CERTIFIED FINANCIAL PLANNER® (CFP®) certification, a testament to his commitment to upholding the highest standards in financial planning. He also holds multiple designations from the American College of Financial Services, reflecting the depth and breadth of his financial expertise.",
             },
             {
               title: "Personal",
@@ -69,7 +69,7 @@ export default function JoseViveroPage(): ReactNode {
             },
           ]}
           designations={[
-            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
+            "CERTIFIED FINANCIAL PLANNER® (CFP®)",
             "Chartered Financial Consultant® (ChFC®)",
             "Chartered Life Underwriter® (CLU®)",
             "Retirement Income Certified Professional® (RICP®)",

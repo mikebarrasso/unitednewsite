@@ -17,7 +17,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Financial Advisor in NYC",
   description:
-    "NYC fee-only financial advisor with CFPs, CPAs, and Enrolled Agents. Integrated financial planning, tax strategy, and investment management for New York City professionals and families.",
+    "NYC fee-only financial advisor with CFP® professionals, CPAs, and Enrolled Agents. Integrated financial planning, tax strategy, and investment management for New York City professionals and families.",
   path: "/financial-advisor-nyc",
 });
 
@@ -29,7 +29,7 @@ function NYCSchema() {
     url: "https://unitedfpg.com/financial-advisor-nyc",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
     description:
-      "Fee-only financial advisory firm serving New York City. CFPs, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services across all five boroughs and the NYC metro area.",
+      "Fee-only financial advisory firm serving New York City. CFP® professionals, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services across all five boroughs and the NYC metro area.",
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     address: [
@@ -119,7 +119,7 @@ const valueProps = [
   {
     title: "Integrated tax and financial planning",
     description:
-      "Most NYC advisors focus on investments and refer out for tax. We built our firm differently: CFPs and CPAs working side-by-side so your portfolio, Roth conversions, and tax return are all coordinated under one roof.",
+      "Most NYC advisors focus on investments and refer out for tax. We built our firm differently: CFP® professionals and CPAs working side-by-side so your portfolio, Roth conversions, and tax return are all coordinated under one roof.",
   },
   {
     title: "Designed for New York's tax complexity",
@@ -186,7 +186,7 @@ export default function FinancialAdvisorNYCPage(): ReactNode {
           headline="Fee-Only Financial Advisor in New York City"
           subtitle="United Financial Planning Group brings financial planning, investment management, tax planning, and tax preparation together under one roof, serving professionals and families across all five boroughs and the greater NYC metro area."
           badge="NYC Metro · Manhattan & Long Island Offices"
-          locationLabel="CFPs, CPAs, and Enrolled Agents serving the New York City metro area."
+          locationLabel="CFP® professionals, CPAs, and Enrolled Agents serving the New York City metro area."
         />
         <TrustedBy />
         <FeatureHighlight />

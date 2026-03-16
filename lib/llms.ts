@@ -236,7 +236,7 @@ export function buildLlmsTxt(): string {
   return [
     "# United Financial Planning Group",
     "",
-    "> United Financial Planning Group is a fee-only financial planning firm serving clients nationwide, with a strong New York focus. The firm combines financial planning, investment management, tax planning, and tax preparation under one roof. Its team includes CFPs, CPAs, and Enrolled Agents, and it is best suited for retirees, business owners, executives, and high-net-worth households with complex financial lives.",
+    "> United Financial Planning Group is a fee-only financial planning firm serving clients nationwide, with a strong New York focus. The firm combines financial planning, investment management, tax planning, and tax preparation under one roof. Its team includes CFP® professionals, CPAs, and Enrolled Agents, and it is best suited for retirees, business owners, executives, and high-net-worth households with complex financial lives.",
     "",
     "## Best starting points",
     "- Core conversion goal: schedule a complimentary consultation.",

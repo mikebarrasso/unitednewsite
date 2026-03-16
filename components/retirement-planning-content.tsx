@@ -336,7 +336,7 @@ export function ApproachSection() {
 const diffPoints = [
   {
     span: "lg:col-span-3",
-    text: "At most firms, your retirement plan is a document. At United, it's a living strategy managed by the same CFPs and CPAs who handle your investments and prepare your tax return.",
+    text: "At most firms, your retirement plan is a document. At United, it's a living strategy managed by the same CFP® professionals and CPAs who handle your investments and prepare your tax return.",
   },
   {
     span: "",

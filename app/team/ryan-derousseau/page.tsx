@@ -21,7 +21,7 @@ export default function RyanDerousseauPage(): ReactNode {
       <PersonSchema
         name="Ryan Derousseau"
         jobTitle="Financial Advisor"
-        description="Certified Financial Planner\u2122 and Enrolled Agent at United Financial Planning Group, specializing in working with growing families, career changers, therapists, and the self-employed."
+        description="CFP® professional and Enrolled Agent at United Financial Planning Group, specializing in working with growing families, career changers, therapists, and the self-employed."
         image="/SHOT_02_003-scaled.jpg"
         credentials={["CFP®", "EA"]}
         url="/team/ryan-derousseau"
@@ -77,7 +77,7 @@ export default function RyanDerousseauPage(): ReactNode {
             },
           ]}
           designations={[
-            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
+            "CERTIFIED FINANCIAL PLANNER® (CFP®)",
             "Enrolled Agent (EA)",
           ]}
           education={[

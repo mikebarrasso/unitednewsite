@@ -30,7 +30,7 @@ const disconnectedSteps = [
 ];
 
 const coordinatedSteps = [
-  { label: "CFP identifies conversion window" },
+  { label: "CFP® professional identifies conversion window" },
   { label: "CPA confirms tax impact, same day" },
   { label: "Portfolio manager moves the assets" },
   { label: "Strategy implemented. You're informed." },

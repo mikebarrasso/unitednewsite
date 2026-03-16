@@ -255,7 +255,7 @@ import { useRef } from "react";
 /* ═══════ Differentiator - animated return timeline ═══════ */
 
 const returnSteps = [
-  { month: "Sep", label: "CFP recommends Roth conversion", status: "Accounted for" },
+  { month: "Sep", label: "CFP® professional recommends Roth conversion", status: "Accounted for" },
   { month: "Nov", label: "Portfolio manager harvests losses", status: "Documented" },
   { month: "Q3", label: "Estimated payments adjusted for income", status: "Reflected" },
   { month: "Mar", label: "Return prepared, no surprises", status: "Filed" },

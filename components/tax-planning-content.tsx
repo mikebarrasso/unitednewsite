@@ -373,7 +373,7 @@ export function TaxStrategyGrid() {
 
 const flowSteps = [
   { icon: Users, label: "CPA identifies conversion window", color: "bg-[#1e6eae]" },
-  { icon: CheckCircle, label: "CFP confirms alignment with retirement plan", color: "bg-[#1e6eae]" },
+  { icon: CheckCircle, label: "CFP® professional confirms alignment with retirement plan", color: "bg-[#1e6eae]" },
   { icon: BarChart3, label: "Portfolio manager moves the assets", color: "bg-[#1e6eae]" },
 ];
 

@@ -10,7 +10,7 @@ export const siteConfig = {
   name: "United Financial Planning Group",
   tagline: "Financial Planning, Tax, & Investment Management Under One Roof",
   description:
-    "United Financial Planning Group is a fee-only advisory firm with CFPs, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
+    "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: "https://unitedfpg.com",
   twitter: "@unitedfpg",
 

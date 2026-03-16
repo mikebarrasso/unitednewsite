@@ -52,7 +52,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group is just 5 minutes from Smithtown, bringing financial planning, tax preparation, and investment management together under one roof for families across the Smithtown community.",
     heroBadge: "5 Min from Smithtown · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Smithtown families.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Smithtown families.",
     valuePropHeading: "Why Smithtown Families Choose United",
     valuePropSubheading:
       "Smithtown's established business owners, retiring executives, and high-net-worth families need financial planning that addresses complex tax situations, business transitions, and retirement income, not cookie-cutter advice.",
@@ -148,7 +148,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Stony Brook's university faculty, medical professionals, and biotech community with integrated financial planning, tax preparation, and investment management, all from our Hauppauge office 12 minutes away.",
     heroBadge: "12 Min from Stony Brook · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Stony Brook community.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving the Stony Brook community.",
     valuePropHeading: "Why Stony Brook Professionals Choose United",
     valuePropSubheading:
       "Stony Brook University and Medical Center anchor this community, creating a concentration of faculty, researchers, and healthcare professionals with specialized financial planning needs.",
@@ -171,7 +171,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your investment decisions, Roth conversions, and tax return are all coordinated, so you're not paying two professionals who never talk to each other.",
+          "Our team includes both CFP® professionals and CPAs, so your investment decisions, Roth conversions, and tax return are all coordinated, so you're not paying two professionals who never talk to each other.",
       },
       {
         title: "Fee-only, always",
@@ -238,12 +238,12 @@ export const towns: Town[] = [
     avgHomeValue: "$600K–$900K",
     seoTitle: "Financial Advisor in Setauket, NY",
     metaDescription:
-      "Fee-only financial advisor near Setauket, NY. Estate planning, retirement transition, and integrated tax strategy for Three Village families. CFPs and CPAs under one roof, 15 min from our Hauppauge office.",
+      "Fee-only financial advisor near Setauket, NY. Estate planning, retirement transition, and integrated tax strategy for Three Village families. CFP® professionals and CPAs under one roof, 15 min from our Hauppauge office.",
     h1: "Preserving Wealth Across Generations in the Three Village Community",
     heroSubtitle:
       "United Financial Planning Group serves Setauket's established families and professionals with estate planning, retirement transition strategies, and integrated tax services, from our Hauppauge office 15 minutes away.",
     heroBadge: "15 Min from Setauket · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Three Village area.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving the Three Village area.",
     valuePropHeading: "Why Three Village Families Choose United",
     valuePropSubheading:
       "The Three Village community (Setauket, East Setauket, and Old Field) is one of Long Island's most historically significant areas. Families here tend to have deep roots, multi-generational wealth, and complex planning needs.",
@@ -266,7 +266,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs working side-by-side. Your investment strategy, estate plan, and tax return are all coordinated to minimize your lifetime tax burden.",
+          "Our team includes both CFP® professionals and CPAs working side-by-side. Your investment strategy, estate plan, and tax return are all coordinated to minimize your lifetime tax burden.",
       },
       {
         title: "Fee-only, always",
@@ -339,7 +339,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Nissequogue's affluent waterfront community with comprehensive wealth management, estate planning, and integrated tax services, from our Hauppauge office 10 minutes away.",
     heroBadge: "10 Min from Nissequogue · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Nissequogue families.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Nissequogue families.",
     valuePropHeading: "Why Nissequogue Residents Choose United",
     valuePropSubheading:
       "Nissequogue is one of Suffolk County's most exclusive villages, with waterfront estates along the Long Island Sound, 2+ acre zoning minimums, and a community of roughly 1,600 residents who value privacy and personalized service.",
@@ -362,7 +362,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your investment strategy, estate plan, and tax return are all coordinated, so you're not paying two professionals who never communicate.",
+          "Our team includes both CFP® professionals and CPAs. Your investment strategy, estate plan, and tax return are all coordinated, so you're not paying two professionals who never communicate.",
       },
       {
         title: "Fee-only, always",
@@ -429,12 +429,12 @@ export const towns: Town[] = [
     avgHomeValue: "$1.2M–$3M+",
     seoTitle: "Wealth Management in Head of the Harbor, NY",
     metaDescription:
-      "Ultra-high-net-worth wealth management for Head of the Harbor, NY. Estate and trust planning, philanthropic advisory, and integrated tax strategy. CFPs and CPAs, 10 min from our Hauppauge office.",
+      "Ultra-high-net-worth wealth management for Head of the Harbor, NY. Estate and trust planning, philanthropic advisory, and integrated tax strategy. CFP® professionals and CPAs, 10 min from our Hauppauge office.",
     h1: "Comprehensive Wealth Management for Head of the Harbor's Distinguished Families",
     heroSubtitle:
       "United Financial Planning Group serves Head of the Harbor's ultra-affluent families with multi-generational estate planning, trust administration, and integrated tax services, from our Hauppauge office 10 minutes away.",
     heroBadge: "10 Min from Head of the Harbor · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Head of the Harbor.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Head of the Harbor.",
     valuePropHeading: "Why Head of the Harbor Families Choose United",
     valuePropSubheading:
       "Head of the Harbor is one of Suffolk County's wealthiest villages, with 2-acre zoning minimums, Stony Brook Harbor frontage, and families who have lived here for decades. The planning needs here go well beyond a standard portfolio review.",
@@ -529,7 +529,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Dix Hills families with executive compensation planning, retirement distribution strategies, and integrated tax services, from our Hauppauge office just 8 minutes away.",
     heroBadge: "8 Min from Dix Hills · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Dix Hills families.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Dix Hills families.",
     valuePropHeading: "Why Dix Hills Families Choose United",
     valuePropSubheading:
       "Named one of America's 50 wealthiest suburbs, Dix Hills combines top-rated schools in the Half Hollow Hills district with a concentration of executive professionals along the Route 110 corridor.",
@@ -552,7 +552,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your investment strategy, equity compensation, and tax return are all coordinated. No more silos.",
+          "Our team includes both CFP® professionals and CPAs, so your investment strategy, equity compensation, and tax return are all coordinated. No more silos.",
       },
       {
         title: "Fee-only, always",
@@ -619,12 +619,12 @@ export const towns: Town[] = [
     avgHomeValue: "$650K–$1M",
     seoTitle: "Financial Advisor in Melville, NY",
     metaDescription:
-      "Fee-only financial advisor near Melville, NY. 401(k) optimization, executive comp, and small business retirement planning for Route 110 professionals. CFPs and CPAs, 5 min from our Hauppauge office.",
+      "Fee-only financial advisor near Melville, NY. 401(k) optimization, executive comp, and small business retirement planning for Route 110 professionals. CFP® professionals and CPAs, 5 min from our Hauppauge office.",
     h1: "Financial Planning for Melville's Corporate Corridor Professionals",
     heroSubtitle:
       "United Financial Planning Group serves Melville's corporate executives, business owners, and dual-income professionals with integrated financial planning, tax preparation, and investment management, just 5 minutes from our Hauppauge office.",
     heroBadge: "5 Min from Melville · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Melville professionals.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Melville professionals.",
     valuePropHeading: "Why Melville Professionals Choose United",
     valuePropSubheading:
       "Route 110 is Long Island's corporate corridor, home to Canon, Nikon, Henry Schein, Estée Lauder, and hundreds of other companies. That creates a concentration of professionals with complex employer benefits and retirement plans.",
@@ -647,7 +647,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your employer benefits, personal investments, and tax return are all coordinated, not managed in silos by different professionals.",
+          "Our team includes both CFP® professionals and CPAs. Your employer benefits, personal investments, and tax return are all coordinated, not managed in silos by different professionals.",
       },
       {
         title: "Fee-only, always",
@@ -714,12 +714,12 @@ export const towns: Town[] = [
     avgHomeValue: "$600K–$850K",
     seoTitle: "Financial Advisor in Commack, NY",
     metaDescription:
-      "Fee-only financial advisor near Commack, NY. Retirement planning, estate strategies, and integrated tax planning for established families. CFPs and CPAs, 5 min from our Hauppauge office.",
+      "Fee-only financial advisor near Commack, NY. Retirement planning, estate strategies, and integrated tax planning for established families. CFP® professionals and CPAs, 5 min from our Hauppauge office.",
     h1: "Comprehensive Financial Planning for Commack: Retirement, Tax Strategy, and Wealth Preservation",
     heroSubtitle:
       "United Financial Planning Group is right next door to Commack, bringing retirement planning, estate strategies, and integrated tax services from our Hauppauge office just 5 minutes away.",
     heroBadge: "5 Min from Commack · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Commack families.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Commack families.",
     valuePropHeading: "Why Commack Families Choose United",
     valuePropSubheading:
       "Commack's established homeowners, retiring professionals, and business owners along the Jericho Turnpike corridor need sophisticated planning that goes beyond the basics. Our Hauppauge office is practically next door.",
@@ -752,7 +752,7 @@ export const towns: Town[] = [
     ],
     insightHeading: "Your Neighbor on Motor Parkway",
     insight:
-      "Being 5 minutes from Commack means our relationship doesn't feel distant or transactional. Many of our Commack clients pop into the office for a quick check-in, drop off tax documents in person, or stop by on their way home from work. That accessibility, combined with our integrated team of CFPs, CPAs, and Enrolled Agents, is what makes the relationship work.",
+      "Being 5 minutes from Commack means our relationship doesn't feel distant or transactional. Many of our Commack clients pop into the office for a quick check-in, drop off tax documents in person, or stop by on their way home from work. That accessibility, combined with our integrated team of CFP® professionals, CPAs, and Enrolled Agents, is what makes the relationship work.",
     faqHeading: "Questions From Commack Clients",
     faqs: [
       {
@@ -809,12 +809,12 @@ export const towns: Town[] = [
     avgHomeValue: "$600K–$900K",
     seoTitle: "Financial Advisor in Huntington, NY",
     metaDescription:
-      "Fee-only financial advisor in Huntington, NY. Planning for village professionals, commuter tax optimization, and small business succession. CFPs and CPAs, 15 min from our Hauppauge office.",
+      "Fee-only financial advisor in Huntington, NY. Planning for village professionals, commuter tax optimization, and small business succession. CFP® professionals and CPAs, 15 min from our Hauppauge office.",
     h1: "Financial Planning That Matches Huntington's Energy: From Village Life to Wall Street Commutes",
     heroSubtitle:
       "United Financial Planning Group serves Huntington's village professionals, small business owners, and NYC commuters with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Huntington · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Huntington community.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving the Huntington community.",
     valuePropHeading: "Why Huntington Residents Choose United",
     valuePropSubheading:
       "Huntington Village's entrepreneurs, Wall Street commuters, and established families create a community where business succession, executive compensation, and retirement planning intersect. We built our practice to handle that complexity.",
@@ -837,7 +837,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs working together. Your investment strategy, business income, and tax return are all coordinated, which is especially important for Huntington residents juggling commuter income and side businesses.",
+          "Our team includes both CFP® professionals and CPAs working together. Your investment strategy, business income, and tax return are all coordinated, which is especially important for Huntington residents juggling commuter income and side businesses.",
       },
       {
         title: "Fee-only, always",
@@ -909,7 +909,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Cold Spring Harbor Laboratory scientists, biotech executives, and affluent families with equity compensation planning, estate strategy, and integrated tax services, 18 minutes from our Hauppauge office.",
     heroBadge: "18 Min from CSH · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Cold Spring Harbor.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Cold Spring Harbor.",
     valuePropHeading: "Why Cold Spring Harbor Families Choose United",
     valuePropSubheading:
       "Cold Spring Harbor Laboratory (birthplace of modern DNA research and home to Nobel laureates) defines this community. The biotech ecosystem it has cultivated creates financial planning needs that most advisors aren't equipped to handle.",
@@ -932,7 +932,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your equity compensation, royalty income, and estate strategy are all coordinated with your annual tax return. That's critical when you have multiple complex income streams.",
+          "Our team includes both CFP® professionals and CPAs, so your equity compensation, royalty income, and estate strategy are all coordinated with your annual tax return. That's critical when you have multiple complex income streams.",
       },
       {
         title: "Fee-only, always",
@@ -999,12 +999,12 @@ export const towns: Town[] = [
     avgHomeValue: "$1.5M–$4M+",
     seoTitle: "Wealth Management in Lloyd Harbor, NY",
     metaDescription:
-      "Ultra-high-net-worth wealth management for Lloyd Harbor, NY. Family office services, concentrated stock strategies, and integrated tax planning. CFPs and CPAs under one roof.",
+      "Ultra-high-net-worth wealth management for Lloyd Harbor, NY. Family office services, concentrated stock strategies, and integrated tax planning. CFP® professionals and CPAs under one roof.",
     h1: "Bespoke Wealth Management for Lloyd Harbor's Most Distinguished Families",
     heroSubtitle:
       "United Financial Planning Group serves one of Long Island's wealthiest communities with family office-level wealth management, estate planning, and integrated tax services, all from our Hauppauge office.",
     heroBadge: "Serving Lloyd Harbor · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Lloyd Harbor families.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Lloyd Harbor families.",
     valuePropHeading: "Why Lloyd Harbor Families Choose United",
     valuePropSubheading:
       "Lloyd Harbor's 2-acre minimum zoning, historic Caumsett State Park, and mean household income exceeding $350K make it one of the most exclusive communities on Long Island. The financial planning needs here require a team, not a single advisor.",
@@ -1099,7 +1099,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Northport's village families, retirees with significant home equity, and maritime small business owners with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Northport · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Northport community.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving the Northport community.",
     valuePropHeading: "Why Northport Families Choose United",
     valuePropSubheading:
       "Northport's harbor village charm attracts longtime homeowners, retirees, and small business owners who have built their lives around this community. Financial planning here means understanding the intersection of deep home equity, modest pensions, and village commerce.",
@@ -1122,7 +1122,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs, so your home equity decisions, business income, and retirement distributions are all coordinated with your tax return. No more juggling separate professionals.",
+          "Our team includes both CFP® professionals and CPAs, so your home equity decisions, business income, and retirement distributions are all coordinated with your tax return. No more juggling separate professionals.",
       },
       {
         title: "Fee-only, always",
@@ -1194,7 +1194,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Port Jefferson's Mather Hospital professionals, CT ferry commuters, and village merchants with integrated financial planning, tax preparation, and investment management, 20 minutes from our Hauppauge office.",
     heroBadge: "20 Min from Port Jeff · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving Port Jefferson.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Port Jefferson.",
     valuePropHeading: "Why Port Jefferson Residents Choose United",
     valuePropSubheading:
       "Port Jefferson sits at the end of the LIRR Port Jeff Branch and the Bridgeport & Port Jefferson ferry route, creating a unique community of healthcare professionals, cross-state commuters, and village entrepreneurs with distinct financial planning needs.",
@@ -1217,7 +1217,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your hospital retirement plan, cross-state income, and personal investments are all coordinated with your tax return. That's especially important when multiple state filings are involved.",
+          "Our team includes both CFP® professionals and CPAs. Your hospital retirement plan, cross-state income, and personal investments are all coordinated with your tax return. That's especially important when multiple state filings are involved.",
       },
       {
         title: "Fee-only, always",
@@ -1289,7 +1289,7 @@ export const towns: Town[] = [
     heroSubtitle:
       "United Financial Planning Group serves Centerport's Harborfields School District families, waterfront homeowners, and retirees with integrated financial planning, tax preparation, and investment management, 15 minutes from our Hauppauge office.",
     heroBadge: "15 Min from Centerport · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving the Centerport community.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving the Centerport community.",
     valuePropHeading: "Why Centerport Families Choose United",
     valuePropSubheading:
       "Centerport is a quiet harbor community defined by the Harborfields School District, the Vanderbilt Museum, and a housing stock that ranges from modest ranch homes to multi-million dollar waterfront estates. That range creates diverse planning needs within a single zip code.",
@@ -1312,7 +1312,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your retirement distributions, property decisions, and investment strategy are all coordinated with your tax return, so you're not managing separate professionals.",
+          "Our team includes both CFP® professionals and CPAs. Your retirement distributions, property decisions, and investment strategy are all coordinated with your tax return, so you're not managing separate professionals.",
       },
       {
         title: "Fee-only, always",
@@ -1379,12 +1379,12 @@ export const towns: Town[] = [
     avgHomeValue: "$550K–$900K",
     seoTitle: "Financial Advisor near St. James, NY",
     metaDescription:
-      "Fee-only financial advisor near St. James, NY. Small business planning, retirement strategies, and integrated tax services. CFPs and CPAs, 10 min from our Hauppauge office.",
+      "Fee-only financial advisor near St. James, NY. Small business planning, retirement strategies, and integrated tax services. CFP® professionals and CPAs, 10 min from our Hauppauge office.",
     h1: "Financial Planning for St. James: Where Artisan Character Meets Thoughtful Wealth Building",
     heroSubtitle:
       "United Financial Planning Group serves St. James artisan business owners, families in the Smithtown School District, and late-career professionals with integrated financial planning, tax preparation, and investment management, just 10 minutes from our Hauppauge office.",
     heroBadge: "10 Min from St. James · Hauppauge Office",
-    heroLabel: "CFPs, CPAs, and Enrolled Agents serving St. James.",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving St. James.",
     valuePropHeading: "Why St. James Residents Choose United",
     valuePropSubheading:
       "St. James is home to the oldest continuously operating general store in the United States, and that artisan, small-town character carries through the entire community. Financial planning here reflects that independence: practical, grounded, and built for the long haul.",
@@ -1407,7 +1407,7 @@ export const towns: Town[] = [
       {
         title: "Tax planning and investing under one roof",
         description:
-          "Our team includes both CFPs and CPAs. Your small business income, retirement contributions, and personal investments are all coordinated with your tax return. That's important when you're juggling W-2 and 1099 income.",
+          "Our team includes both CFP® professionals and CPAs. Your small business income, retirement contributions, and personal investments are all coordinated with your tax return. That's important when you're juggling W-2 and 1099 income.",
       },
       {
         title: "Fee-only, always",

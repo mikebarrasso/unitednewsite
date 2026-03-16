@@ -157,7 +157,7 @@ const standardItems = [
 ];
 const unitedItems = [
   "Every exercise modeled against AGI, AMT, and Medicare",
-  "CFP and CPA collaborate before decisions are made",
+  "CFP® professional and CPA collaborate before decisions are made",
   "AMT projections run throughout the year",
   "All grant types coordinated in one strategy",
 ];
@@ -195,7 +195,7 @@ export function WhyDifferentSection() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="p-6 sm:p-8 rounded-2xl border border-[#1e6eae]/20 bg-[#1e6eae]/[0.03]">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#1e6eae]/10 flex items-center justify-center"><Users className="w-5 h-5 text-[#1e6eae]" /></div>
-              <div><p className="text-base font-semibold text-foreground">United FPG</p><p className="text-xs text-[#1e6eae]">CFP + CPA together</p></div>
+              <div><p className="text-base font-semibold text-foreground">United FPG</p><p className="text-xs text-[#1e6eae]">CFP® + CPA together</p></div>
             </div>
             <div className="space-y-3">
               {unitedItems.map((item, i) => (

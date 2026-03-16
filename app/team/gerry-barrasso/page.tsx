@@ -76,7 +76,7 @@ export default function GerryBarrassoPage(): ReactNode {
           ]}
           designations={[
             "Certified Public Accountant (CPA)",
-            "CERTIFIED FINANCIAL PLANNER™ (CFP®)",
+            "CERTIFIED FINANCIAL PLANNER® (CFP®)",
             "Personal Financial Specialist (PFS)",
           ]}
           education={[

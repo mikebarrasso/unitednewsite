@@ -44,14 +44,14 @@ export const locations: Location[] = [
     heroImageAlt: "United Financial Planning Group Hauppauge headquarters",
     headline: "Fee-Only Financial Planning in Hauppauge, Long Island",
     subtitle:
-      "Our headquarters on Motor Parkway brings together Certified Financial Planners, CPAs, and Enrolled Agents, all working side-by-side to coordinate your investments, tax strategy, and long-term plan.",
+      "Our headquarters on Motor Parkway brings together CFP® professionals, CPAs, and Enrolled Agents, all working side-by-side to coordinate your investments, tax strategy, and long-term plan.",
     description:
       "Our Hauppauge office is where United Financial Planning Group began: the center of our practice and the place where our team of financial planners, CPAs, and tax professionals collaborate daily on behalf of clients across Suffolk County, Nassau County, and far beyond.",
     metaTitle: "Financial Advisor in Hauppauge, NY",
     metaDescription:
-      "Fee-only financial advisor in Hauppauge, NY. Financial planning, investment management, and tax preparation by CFPs, CPAs, and Enrolled Agents.",
+      "Fee-only financial advisor in Hauppauge, NY. Financial planning, investment management, and tax preparation by CFP® professionals, CPAs, and Enrolled Agents.",
     areaDescription:
-      "Hauppauge sits at the commercial heart of Suffolk County, home to one of the largest industrial parks on the East Coast. Many of our Long Island clients are business owners, corporate professionals commuting to Manhattan, and retirees who have spent decades building wealth in the area. The financial lives of Long Island families tend to be layered: multiple income streams, real estate holdings, and complex tax situations that benefit from having a CPA and CFP working together.",
+      "Hauppauge sits at the commercial heart of Suffolk County, home to one of the largest industrial parks on the East Coast. Many of our Long Island clients are business owners, corporate professionals commuting to Manhattan, and retirees who have spent decades building wealth in the area. The financial lives of Long Island families tend to be layered: multiple income streams, real estate holdings, and complex tax situations that benefit from having a CPA and CFP® professional working together.",
     clientProfile:
       "Clients visiting our Hauppauge office often include business owners navigating S-corp and partnership tax planning, executives with equity compensation from public companies, and retirees managing required minimum distributions alongside Social Security timing. Many have spent years working with separate advisors and accountants who don't communicate. That's exactly the problem we solve.",
     localInsight:
@@ -109,7 +109,7 @@ export const locations: Location[] = [
     subtitle:
       "Located steps from Penn Station, our Manhattan office gives New York City professionals direct access to integrated financial planning, investment management, and tax services, all under one roof.",
     description:
-      "Our Manhattan office at 14 Penn Plaza sits in the center of Midtown, making it easy for professionals across the city to meet with their advisory team in person. Whether you work in finance, tech, media, or law, our team of CFPs and CPAs understands the unique financial pressures of building wealth in New York City.",
+      "Our Manhattan office at 14 Penn Plaza sits in the center of Midtown, making it easy for professionals across the city to meet with their advisory team in person. Whether you work in finance, tech, media, or law, our team of CFP® professionals and CPAs understands the unique financial pressures of building wealth in New York City.",
     metaTitle: "Financial Advisor in Manhattan, NYC",
     metaDescription:
       "Fee-only financial advisor in Manhattan, NY. Integrated financial planning, tax strategy, and investment management for NYC professionals.",
@@ -170,7 +170,7 @@ export const locations: Location[] = [
     heroImageAlt: "United Financial Planning Group Lake Success office",
     headline: "Fee-Only Financial Advisor in Lake Success, Nassau County",
     subtitle:
-      "Our Lake Success office on Marcus Avenue serves clients across Nassau County and western Long Island, offering the same integrated team of CFPs, CPAs, and Enrolled Agents you'll find at every United location.",
+      "Our Lake Success office on Marcus Avenue serves clients across Nassau County and western Long Island, offering the same integrated team of CFP® professionals, CPAs, and Enrolled Agents you'll find at every United location.",
     description:
       "Situated on the border of Queens and Nassau County, our Lake Success office is ideally positioned for clients across the North Shore, Great Neck, Manhasset, and the surrounding communities. It provides a convenient meeting point for families and professionals who want hands-on financial planning without traveling into the city.",
     metaTitle: "Financial Advisor in Lake Success, NY",

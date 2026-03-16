@@ -23,7 +23,7 @@ const faqItems = [
     question:
       "How is United Financial Planning Group different from other financial advisors?",
     answer:
-      "Most advisory firms focus on one piece of the puzzle, usually investment management. If you need tax planning, they refer you out. We built our firm differently. Our team includes Certified Financial Planners, CPAs, and Enrolled Agents working together under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily.",
+      "Most advisory firms focus on one piece of the puzzle, usually investment management. If you need tax planning, they refer you out. We built our firm differently. Our team includes CFP® professionals, CPAs, and Enrolled Agents working together under one roof. Your financial plan, investment strategy, tax plan, and tax return are all created and managed by people who talk to each other daily.",
   },
   {
     question: "What does it mean that you're a fiduciary?",

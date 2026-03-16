@@ -9,7 +9,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Meet The Team",
   description:
-    "Meet the team of CFPs, CPAs, and Enrolled Agents at United Financial Planning Group. Every discipline under one roof.",
+    "Meet the team of CFP® professionals, CPAs, and Enrolled Agents at United Financial Planning Group. Every discipline under one roof.",
   path: "/team",
 });
 
@@ -38,7 +38,7 @@ const teamMembers = [
     name: "Ryan Derousseau",
     credentials: "CFP®, EA",
     title: "Financial Advisor",
-    bio: "As both a Certified Financial Planner™ and Enrolled Agent, Ryan brings a rare dual perspective, aligning your financial plan with tax-efficient strategies that work in practice, not just on paper.",
+    bio: "As both a CFP® professional and Enrolled Agent, Ryan brings a rare dual perspective, aligning your financial plan with tax-efficient strategies that work in practice, not just on paper.",
     initials: "RD",
     accentColor: "oklch(0.524 0.125 247.8)",
     href: "/team/ryan-derousseau",
@@ -95,7 +95,7 @@ export default function TeamPage(): ReactNode {
               Meet The Team
             </h1>
             <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
-              CFPs, CPAs, and Enrolled Agents working together under one roof
+              CFP® professionals, CPAs, and Enrolled Agents working together under one roof
               &mdash; so every aspect of your financial life is understood,
               coordinated, and optimized.
             </p>

@@ -423,7 +423,7 @@ export function FeatureHighlight(): ReactNode {
                     className="p-5 rounded-xl border border-border bg-muted/30"
                   >
                     <p className="text-sm text-muted-foreground dark:text-foreground">
-                      CFPs, CPAs, and Enrolled Agents work side by side, not
+                      CFP® professionals, CPAs, and Enrolled Agents work side by side, not
                       across town. Hover over a service to see how it connects
                       to your complete financial picture.
                     </p>
