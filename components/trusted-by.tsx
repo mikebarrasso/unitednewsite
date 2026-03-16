@@ -89,17 +89,8 @@ const logos: LogoItem[] = [
 
 export function TrustedBy(): ReactNode {
   return (
-    <section className="relative w-full bg-background pt-6 pb-16 sm:pt-8 sm:pb-20">
+    <section className="relative w-full bg-background pt-6 pb-12 sm:pt-8 sm:pb-16">
       <div className="flex flex-col items-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1, ease }}
-          className="text-sm font-medium uppercase tracking-wider text-foreground/40 mb-10"
-        >
-          As seen in
-        </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

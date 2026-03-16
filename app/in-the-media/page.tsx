@@ -68,9 +68,6 @@ export default function InTheMediaPage(): ReactNode {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-xs font-medium uppercase tracking-wider text-foreground/40 mb-8">
-                As Seen In
-              </h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {Object.entries(publicationLogos).map(([name, abbr]) => (
                   <div

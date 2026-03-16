@@ -38,10 +38,6 @@ export const heroConfig = {
   },
 } as const;
 
-export const trustedByConfig = {
-  title: "As seen in",
-} as const;
-
 export const featureCardsConfig = {
   title: "Sound Familiar?",
 } as const;
