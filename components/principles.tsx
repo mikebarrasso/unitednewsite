@@ -1,7 +1,7 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { Clock, Building2, BarChart3, Gem } from "lucide-react";
+import { Clock, Building2, Rocket, Code2, BarChart3, Gem } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 
@@ -30,6 +30,20 @@ const audiences: AudienceCard[] = [
     href: "/services/tax-planning",
   },
   {
+    icon: <Rocket className="w-10 h-10" strokeWidth={1} />,
+    title: "Founders",
+    description:
+      "From early equity grants and 83(b) elections to liquidity events and what comes after, we help you translate cap-table complexity into a personal balance sheet you can actually plan around.",
+    href: "/services/equity-compensation",
+  },
+  {
+    icon: <Code2 className="w-10 h-10" strokeWidth={1} />,
+    title: "Software Engineers",
+    description:
+      "Heavy RSU vests, refreshers, and a compensation stack that changes every year deserve more than a spreadsheet. We align withholding, diversification, and savings rate with where your career is headed.",
+    href: "/services/equity-compensation",
+  },
+  {
     icon: <BarChart3 className="w-10 h-10" strokeWidth={1} />,
     title: "Executives with Equity Compensation",
     description:
@@ -38,7 +52,7 @@ const audiences: AudienceCard[] = [
   },
   {
     icon: <Gem className="w-10 h-10" strokeWidth={1} />,
-    title: "High-Net-Worth Individuals",
+    title: "High net worth families and individuals",
     description:
       "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
     href: "/services/financial-planning",

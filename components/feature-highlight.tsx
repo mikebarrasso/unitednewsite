@@ -12,6 +12,7 @@ const services = [
     id: "tax",
     label: "Tax Planning & Preparation",
     short: "Tax",
+    href: "/services/tax-planning",
     description:
       "Year-round strategies to reduce your lifetime tax burden, prepared by CPAs and Enrolled Agents who already know your full story.",
     angle: 0,
@@ -20,6 +21,7 @@ const services = [
     id: "investment",
     label: "Investment Management",
     short: "Investing",
+    href: "/services/investment-management",
     description:
       "Tax-aware portfolio management where every trade, rebalance, and distribution is evaluated through your complete financial picture.",
     angle: 120,
@@ -28,6 +30,7 @@ const services = [
     id: "financial",
     label: "Financial Planning",
     short: "Planning",
+    href: "/services/financial-planning",
     description:
       "A roadmap built around your real life: retirement, education, estate, and risk. It's informed by deep tax expertise most planners don't have.",
     angle: 240,
@@ -261,17 +264,13 @@ function ServiceFlow({
           const lp = labelPos(node);
 
           return (
-            <g
+            <a
               key={node.id}
+              href={node.href}
               onMouseEnter={() => onSelect(node.id)}
               onMouseLeave={() => onSelect(null)}
-              onClick={() =>
-                onSelect(activeId === node.id ? null : node.id)
-              }
-              className="cursor-pointer"
-              role="button"
-              tabIndex={0}
-              aria-label={node.label}
+              className="cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#1e6eae] focus-visible:ring-offset-2 focus-visible:rounded-full"
+              aria-label={`${node.label} — view service`}
             >
               {/* Hit area (larger invisible circle) */}
               <circle
@@ -346,7 +345,7 @@ function ServiceFlow({
               >
                 {node.label}
               </text>
-            </g>
+            </a>
           );
         })}
       </svg>

@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect, useRef } from "react";
-import { Clock, Building2, BarChart3, Gem } from "lucide-react";
+import { Clock, Building2, Rocket, Code2, BarChart3, Gem } from "lucide-react";
 
 export function Features2() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -14,8 +14,7 @@ export function Features2() {
       icon: Clock,
       description:
         "We coordinate your Social Security timing, Roth conversion strategies, required minimum distributions, and estate considerations into one cohesive plan.",
-      image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+      image: "/retirement-couple.png",
       card: {
         title: "Retirement Coordination",
         items: [
@@ -66,6 +65,62 @@ export function Features2() {
       },
     },
     {
+      title: "Founders",
+      icon: Rocket,
+      description:
+        "From early equity grants and 83(b) elections to liquidity events and what comes after, we help you translate cap-table complexity into a personal balance sheet you can actually plan around.",
+      image:
+        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1200&auto=format&fit=crop",
+      card: {
+        title: "Founder Equity & Exit Planning",
+        items: [
+          {
+            label: "QSBS & holding period tracked",
+            status: "Active",
+            detail: "Potential $10M+ exclusion modeled",
+          },
+          {
+            label: "Secondary / tender readiness",
+            status: "In Review",
+            detail: "Tax scenario before liquidity",
+          },
+          {
+            label: "Post-exit wealth structure",
+            status: "Planning",
+            detail: "Diversification & income plan drafted",
+          },
+        ],
+      },
+    },
+    {
+      title: "Software Engineers",
+      icon: Code2,
+      description:
+        "Heavy RSU vests, refreshers, and a compensation stack that changes every year deserve more than a spreadsheet. We align withholding, diversification, and savings rate with where your career is headed.",
+      image:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      card: {
+        title: "Tech Comp & Equity Rhythm",
+        items: [
+          {
+            label: "RSU vest calendar integrated",
+            status: "Complete",
+            detail: "Bracket & withholding tuned quarterly",
+          },
+          {
+            label: "Concentration vs. index glidepath",
+            status: "Active",
+            detail: "Target: tech exposure ≤ 25% NW",
+          },
+          {
+            label: "Mega-backdoor & deferred comp",
+            status: "On Track",
+            detail: "Retirement buckets tax-optimized",
+          },
+        ],
+      },
+    },
+    {
       title: "Executives with Equity Compensation",
       icon: BarChart3,
       description:
@@ -94,7 +149,7 @@ export function Features2() {
       },
     },
     {
-      title: "High-Net-Worth Individuals",
+      title: "High net worth families and individuals",
       icon: Gem,
       description:
         "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
@@ -164,6 +219,7 @@ export function Features2() {
       case "On Track":
       case "Ready":
       case "Monitoring":
+      case "Planning":
         return "bg-slate-100 dark:bg-slate-800/30 text-slate-700 dark:text-slate-400";
       default:
         return "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400";
