@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect, useRef } from "react";
-import { Clock, Building2, Rocket, Code2, BarChart3, Gem } from "lucide-react";
+import { Clock, Building2, Rocket, Code2, BarChart3, Gem, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function Features2() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,6 +13,7 @@ export function Features2() {
     {
       title: "Approaching or in Retirement",
       icon: Clock,
+      href: "/who-we-serve/retirees",
       description:
         "We coordinate your Social Security timing, Roth conversion strategies, required minimum distributions, and estate considerations into one cohesive plan.",
       image: "/retirement-couple.png",
@@ -39,6 +41,7 @@ export function Features2() {
     {
       title: "Business Owners",
       icon: Building2,
+      href: "/who-we-serve/business-owners",
       description:
         "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board: succession planning, tax-efficient compensation, and personal wealth building.",
       image:
@@ -67,6 +70,7 @@ export function Features2() {
     {
       title: "Founders",
       icon: Rocket,
+      href: "/who-we-serve/startup-founders",
       description:
         "From early equity grants and 83(b) elections to liquidity events and what comes after, we help you translate cap-table complexity into a personal balance sheet you can actually plan around.",
       image:
@@ -95,6 +99,7 @@ export function Features2() {
     {
       title: "Software Engineers",
       icon: Code2,
+      href: "/who-we-serve/software-engineers",
       description:
         "Heavy RSU vests, refreshers, and a compensation stack that changes every year deserve more than a spreadsheet. We align withholding, diversification, and savings rate with where your career is headed.",
       image:
@@ -123,6 +128,7 @@ export function Features2() {
     {
       title: "Executives with Equity Compensation",
       icon: BarChart3,
+      href: "/who-we-serve/executives",
       description:
         "ISOs, NSOs, RSUs, ESPP shares: each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
       image:
@@ -151,6 +157,7 @@ export function Features2() {
     {
       title: "High net worth families and individuals",
       icon: Gem,
+      href: "/who-we-serve/high-net-worth",
       description:
         "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
       image:
@@ -288,15 +295,25 @@ export function Features2() {
                       </span>
                       <AnimatePresence>
                         {isActive && (
-                          <motion.p
+                          <motion.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="text-sm text-muted-foreground leading-relaxed mt-1 overflow-hidden"
+                            className="overflow-hidden"
                           >
-                            {feature.description}
-                          </motion.p>
+                            <p className="text-sm text-muted-foreground leading-relaxed mt-1">
+                              {feature.description}
+                            </p>
+                            <Link
+                              href={feature.href}
+                              className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-[#1e6eae] hover:opacity-70 transition-opacity mt-2"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              Learn more
+                              <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
+                            </Link>
+                          </motion.div>
                         )}
                       </AnimatePresence>
                     </div>

@@ -9,6 +9,7 @@ import {
 import { Footer } from "@/components/footer";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
@@ -27,6 +28,24 @@ export default function FeesPage(): ReactNode {
         <ProcessSection />
         <SubscriptionSection />
         <BookkeepingSection />
+        <section className="relative w-full bg-background py-8 sm:py-12">
+          <div className="mx-auto max-w-5xl px-6 sm:px-8">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-border pt-6">
+              <p className="text-sm text-foreground/40">
+                Fee-only pricing with no commissions or hidden costs.{" "}
+                <Link
+                  href="/team"
+                  className="underline hover:text-foreground/60 transition-colors"
+                >
+                  Meet the team
+                </Link>
+              </p>
+              <p className="text-xs text-foreground/30">
+                Last updated: March 2026
+              </p>
+            </div>
+          </div>
+        </section>
         <FeesClosingSection />
       </main>
       <Footer />

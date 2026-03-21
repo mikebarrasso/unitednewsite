@@ -17,7 +17,11 @@ const crossLinks = [
   },
 ];
 
-export function ServiceCrossLinks(): ReactNode {
+export function ServiceCrossLinks({
+  lastUpdated = "March 2026",
+}: {
+  lastUpdated?: string;
+}): ReactNode {
   return (
     <section className="relative w-full bg-background py-12 sm:py-16">
       <div className="mx-auto max-w-5xl px-6 sm:px-8">
@@ -39,6 +43,21 @@ export function ServiceCrossLinks(): ReactNode {
               <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-[#1e6eae] group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5" />
             </Link>
           ))}
+        </div>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-border mt-8 pt-6">
+          <p className="text-sm text-foreground/40">
+            Guidance from our team of CFP® professionals, CPAs, and Enrolled
+            Agents.{" "}
+            <Link
+              href="/team"
+              className="underline hover:text-foreground/60 transition-colors"
+            >
+              Meet the team
+            </Link>
+          </p>
+          <p className="text-xs text-foreground/30">
+            Last updated: {lastUpdated}
+          </p>
         </div>
       </div>
     </section>

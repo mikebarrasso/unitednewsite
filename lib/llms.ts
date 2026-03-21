@@ -1,6 +1,7 @@
 import { getAllPosts } from "@/lib/blog";
 import { locations } from "@/lib/locations";
 import { siteConfig } from "@/lib/metadata";
+import { personas } from "@/lib/personas";
 import { towns } from "@/lib/towns";
 
 type LlmsLink = {
@@ -125,6 +126,20 @@ const servicePages: LlmsLink[] = [
   },
 ];
 
+const personaPages: LlmsLink[] = [
+  {
+    title: "Who We Serve",
+    path: "/who-we-serve",
+    description:
+      "Hub page for the firm's target audiences: retirees, business owners, startup founders, software engineers, executives, and high-net-worth families.",
+  },
+  ...personas.map((persona) => ({
+    title: persona.name,
+    path: `/who-we-serve/${persona.slug}`,
+    description: persona.metaDescription,
+  })),
+];
+
 const companyPages: LlmsLink[] = [
   {
     title: "Meet the Team",
@@ -247,6 +262,8 @@ export function buildLlmsTxt(): string {
     "",
     renderSection("Core Services", servicePages),
     "",
+    renderSection("Who We Serve (Persona Pages)", personaPages),
+    "",
     renderSection("Trust, Team, and Authority Pages", companyPages),
     "",
     renderSection("Office and Location Hubs", officePages),
@@ -271,6 +288,8 @@ export function buildLlmsFullTxt(): string {
     renderSection("Essential Pages", essentialPages),
     "",
     renderSection("Core Services", servicePages),
+    "",
+    renderSection("Who We Serve (Persona Pages)", personaPages),
     "",
     renderSection("Trust, Team, and Authority Pages", companyPages),
     "",

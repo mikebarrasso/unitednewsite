@@ -29,6 +29,17 @@ const footerLinks = {
       { label: "Compliance", href: "/compliance" },
     ],
   },
+  whoWeServe: {
+    title: "Who We Serve",
+    links: [
+      { label: "Retirees", href: "/who-we-serve/retirees" },
+      { label: "Business Owners", href: "/who-we-serve/business-owners" },
+      { label: "Founders", href: "/who-we-serve/startup-founders" },
+      { label: "Software Engineers", href: "/who-we-serve/software-engineers" },
+      { label: "Executives", href: "/who-we-serve/executives" },
+      { label: "High-Net-Worth", href: "/who-we-serve/high-net-worth" },
+    ],
+  },
   offices: {
     title: "Offices",
     links: [
@@ -91,7 +102,7 @@ export function Footer(): ReactNode {
                   clients nationwide.
                 </p>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-16">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12">
                 {Object.values(footerLinks).map((section) => (
                   <div key={section.title}>
                     <h3 className="text-xs font-medium uppercase tracking-wider text-foreground/40 dark:text-white mb-5">

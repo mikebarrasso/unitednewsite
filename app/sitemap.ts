@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { getAllPosts, getPostLastModified } from "@/lib/blog";
 import { locations } from "@/lib/locations";
 import { siteConfig } from "@/lib/metadata";
+import { personas } from "@/lib/personas";
 import { towns } from "@/lib/towns";
 
 type SitemapChangeFrequency =
@@ -134,6 +135,12 @@ const staticRoutes: StaticRoute[] = [
     priority: 0.3,
   },
   {
+    path: "/who-we-serve",
+    sources: ["app/who-we-serve/page.tsx", "lib/personas.ts"],
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
     path: "/locations",
     sources: ["app/locations/page.tsx", "lib/locations.ts"],
     changeFrequency: "monthly",
@@ -234,6 +241,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: town.tier === 1 ? 0.8 : town.tier === 2 ? 0.7 : 0.6,
   }));
 
+  const personaLastModified = getLatestModifiedDate([
+    "app/who-we-serve/[slug]/page.tsx",
+    "lib/personas.ts",
+  ]);
+  const personaPages: MetadataRoute.Sitemap = personas.map((persona) => ({
+    url: `${siteConfig.url}/who-we-serve/${persona.slug}`,
+    lastModified: personaLastModified,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   const blogPostPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
     url: `${siteConfig.url}/blog/${post.slug}`,
     lastModified: new Date(getPostLastModified(post)),
@@ -241,5 +259,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...locationPages, ...townPages, ...blogPostPages];
+  return [
+    ...staticPages,
+    ...locationPages,
+    ...personaPages,
+    ...townPages,
+    ...blogPostPages,
+  ];
 }
