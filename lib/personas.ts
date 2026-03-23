@@ -6,7 +6,7 @@ export type Persona = {
   h1: string;
   heroSubtitle: string;
   eyebrow: string;
-  icon: "Clock" | "Building2" | "Rocket" | "Code2" | "BarChart3" | "Gem";
+  icon: "Clock" | "Target" | "Building2" | "Rocket" | "Code2" | "BarChart3" | "Gem";
   imageUrl: string;
   imageAlt: string;
   problemsHeading: string;
@@ -26,14 +26,14 @@ export const personas: Persona[] = [
   // ─── RETIREES ───
   {
     slug: "retirees",
-    name: "Retirees & Pre-Retirees",
+    name: "Retirees",
     seoTitle: "Financial Advisor for Retirees",
     metaDescription:
-      "Fee-only financial planning for retirees. CFP®, CPA, and tax professionals coordinating your retirement income, RMDs, and estate plan under one roof.",
+      "Fee-only financial planning for retirees. CFP®, CPA, and tax professionals coordinating your retirement income, RMDs, withdrawal strategy, and estate plan under one roof.",
     h1: "Retirement Planning Where Your Advisor and Your CPA Are the Same Team",
     heroSubtitle:
-      "At United Financial Planning Group, CFP® professionals, CPAs, and Enrolled Agents work together on your retirement — so your investment strategy, tax plan, and estate considerations are built as one cohesive whole, not handed off between offices.",
-    eyebrow: "For Retirees & Those Approaching Retirement",
+      "At United Financial Planning Group, CFP® professionals, CPAs, and Enrolled Agents work together on your retirement — so your withdrawal strategy, tax plan, and estate considerations are built as one cohesive whole, not handed off between offices.",
+    eyebrow: "For Retirees",
     icon: "Clock",
     imageUrl:
       "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1200&auto=format&fit=crop",
@@ -55,14 +55,14 @@ export const personas: Persona[] = [
           "Which account do you pull from first — and when? The order in which you draw down taxable, tax-deferred, and Roth accounts has lasting consequences for your tax liability and how long your money lasts. Without a coordinated withdrawal strategy, you risk overpaying taxes or depleting assets faster than necessary.",
       },
       {
-        heading: "Social Security timing is more complicated than it looks",
+        heading: "RMDs can quietly erode your retirement income",
         description:
-          "Claiming at 62 versus 70 can mean significantly different lifetime income — but the right answer depends on your health, your spouse's situation, your other income sources, and how Social Security interacts with your tax bracket. It's not a decision that should be made in isolation.",
+          "Required minimum distributions can push you into a higher tax bracket, trigger Medicare surcharges, or increase the portion of your Social Security that's taxable. Without proactive planning, RMDs become a recurring source of tax surprises rather than a manageable part of your income strategy.",
       },
       {
-        heading: "RMDs and Roth conversions need to be coordinated",
+        heading: "IRMAA surcharges add up when no one is watching",
         description:
-          "Required minimum distributions can push you into a higher tax bracket, trigger Medicare surcharges, or affect how much of your Social Security is taxable. Proactive Roth conversion planning before RMDs begin can reduce that exposure — but only if your financial plan and tax plan are built together.",
+          "A single Roth conversion or capital gain in the wrong year can push your modified adjusted gross income above an IRMAA threshold, increasing your Medicare premiums for the following year. Managing that threshold requires your financial planner and tax professional to coordinate — not react after the fact.",
       },
     ],
     servicesHeading:
@@ -73,7 +73,7 @@ export const personas: Persona[] = [
       {
         title: "Retirement Planning",
         description:
-          "We build a retirement income plan that coordinates Social Security timing, Roth conversion opportunities, required minimum distributions, and estate considerations — pulling every lever together rather than one at a time.",
+          "We build a retirement income plan that coordinates withdrawal sequencing, required minimum distributions, Social Security optimization, and estate considerations — pulling every lever together rather than one at a time.",
         href: "/services/retirement-planning",
       },
       {
@@ -108,14 +108,15 @@ export const personas: Persona[] = [
           "Yes. As a fee-only Registered Investment Advisor, we are a fiduciary — legally and ethically obligated to act in your interest. We earn no commissions and receive no compensation from product sales, so our recommendations are based on your situation, not on what pays us.",
       },
       {
-        question: "When should I start working with a retirement planner?",
+        question:
+          "I'm already retired — is it too late to improve my financial plan?",
         answer:
-          "Ideally, five to ten years before you plan to retire. That window is when the highest-impact decisions get made — Roth conversion planning, Social Security strategy, and portfolio positioning ahead of decumulation. If you're already retired, it's not too late; coordinated planning still matters significantly for tax efficiency and longevity of assets.",
+          "Not at all. Many of our retired clients come to us after realizing their current advisors aren't coordinating effectively. Even well into retirement, there are meaningful opportunities — adjusting withdrawal sequencing, managing RMDs proactively, optimizing Social Security if a spouse hasn't claimed yet, and ensuring your estate plan reflects your current wishes.",
       },
       {
-        question: "How do you approach Social Security timing?",
+        question: "How do you manage withdrawal sequencing?",
         answer:
-          "We analyze your Social Security claiming options in the context of your full financial picture — your other income sources, your tax bracket, your spouse's benefit, and your health and longevity assumptions. The goal is a decision you understand and can commit to, not a generic rule of thumb.",
+          "We analyze which accounts to draw from and when — balancing taxable, tax-deferred, and Roth sources against your current bracket, your projected RMDs, and any IRMAA thresholds. The goal is to minimize your lifetime tax burden while preserving flexibility, not just default to drawing from whichever account is easiest.",
       },
       {
         question: "Do you handle both tax planning and tax preparation?",
@@ -125,7 +126,121 @@ export const personas: Persona[] = [
     ],
     faqHeading: "Common Questions About Retirement Planning",
     lastUpdated: "March 2026",
-    relatedPersonaSlugs: ["business-owners", "high-net-worth"],
+    relatedPersonaSlugs: ["pre-retirees", "high-net-worth"],
+    serviceTypes: [
+      "Retirement Planning",
+      "Tax Planning",
+      "Investment Management",
+      "Financial Planning",
+    ],
+  },
+
+  // ─── PRE-RETIREES ───
+  {
+    slug: "pre-retirees",
+    name: "Nearing Retirement",
+    seoTitle: "Financial Advisor for Pre-Retirees",
+    metaDescription:
+      "Fee-only financial planning for people nearing retirement. CFP®, CPA, and tax professionals working together to answer 'Can I retire?' with a plan you can trust.",
+    h1: "You're Close to Retirement. Let's Make Sure the Numbers Actually Work.",
+    heroSubtitle:
+      "At United Financial Planning Group, our CFP® professionals, CPAs, and Enrolled Agents work as one team to stress-test your retirement readiness — turning savings projections into an income plan you can commit to with confidence.",
+    eyebrow: "For Those Nearing Retirement",
+    icon: "Target",
+    imageUrl:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+    imageAlt:
+      "Pre-retiree reviewing retirement plan documents with a financial planner",
+    problemsHeading:
+      "The Decisions You Make Now Shape Every Year After You Stop Working",
+    problemsSubheading:
+      "The five to ten years before retirement are when the highest-impact financial decisions get made — and most of them can't easily be reversed once you've walked out the door.",
+    problems: [
+      {
+        heading: "You don't actually know if you can afford to retire",
+        description:
+          "A 401(k) balance isn't a retirement plan. Without a comprehensive projection that accounts for taxes, healthcare costs, inflation, and the income you'll actually need, 'Can I retire at 62?' remains an unanswered question. Most people nearing retirement are making one of the biggest financial decisions of their lives based on incomplete information.",
+      },
+      {
+        heading:
+          "Your financial advisor and CPA aren't building the same plan",
+        description:
+          "Your advisor is projecting retirement income. Your CPA is preparing last year's return. Neither knows what the other is recommending, which means your Roth conversion window, catch-up contribution strategy, and tax bracket management aren't coordinated — and the cost of that gap compounds as you approach retirement.",
+      },
+      {
+        heading:
+          "The Roth conversion window is closing faster than you think",
+        description:
+          "The years between your peak earning and the start of Social Security and RMDs are often the best window for Roth conversions — but only if someone is actively watching your tax brackets and modeling the impact. Once that window closes, the opportunity doesn't come back.",
+      },
+      {
+        heading: "Health insurance before Medicare is a blind spot",
+        description:
+          "If you want to retire before 65, you need a plan for the health insurance gap. The options — COBRA, the ACA marketplace, or private coverage — each have different costs, tax implications, and coverage trade-offs. This is one of the most common reasons people delay retirement, and one of the least planned-for.",
+      },
+    ],
+    servicesHeading:
+      "Your Retirement Readiness, Built by One Coordinated Team",
+    servicesSubheading:
+      "Our CFP® professionals, CPAs, and Enrolled Agents work together on your transition from accumulation to income — so your timeline, tax strategy, and investment positioning all move in the same direction.",
+    services: [
+      {
+        title: "Retirement Planning",
+        description:
+          "We build detailed retirement readiness projections that go beyond a savings target — modeling your income sources, tax liability, healthcare costs, and spending patterns to answer 'Can I retire?' with real clarity.",
+        href: "/services/retirement-planning",
+      },
+      {
+        title: "Tax Planning",
+        description:
+          "Our CPAs and Enrolled Agents work alongside your financial planner to identify Roth conversion opportunities, optimize catch-up contributions, and manage your tax bracket in the critical years before retirement income begins.",
+        href: "/services/tax-planning",
+      },
+      {
+        title: "Investment Management",
+        description:
+          "We begin repositioning your portfolio for the transition from growth to income — managing risk, improving tax efficiency, and building the account structure you'll draw from in retirement.",
+        href: "/services/investment-management",
+      },
+      {
+        title: "Financial Planning",
+        description:
+          "From Social Security timing and pension analysis to health insurance bridging and estate coordination, your financial plan accounts for the full picture — not just the investments.",
+        href: "/services/financial-planning",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "How far from retirement should I start working with a planner?",
+        answer:
+          "Ideally, five to ten years before you plan to retire. That's when the highest-impact decisions get made — Roth conversion planning, catch-up contribution strategy, Social Security timing, and portfolio positioning. The earlier we can model your retirement income, the more levers we have to optimize it.",
+      },
+      {
+        question: "How do you determine if I can afford to retire?",
+        answer:
+          "We build a comprehensive retirement readiness analysis that models your income sources, projected expenses, tax liability, healthcare costs, and inflation over a multi-decade horizon. We stress-test it across different market scenarios and Social Security claiming ages so you can see where you stand — not just in the best case, but across a range of outcomes.",
+      },
+      {
+        question: "Should I be doing Roth conversions before I retire?",
+        answer:
+          "In many cases, yes — the years before Social Security and RMDs begin are often the optimal window for Roth conversions. But the right amount depends on your current bracket, your projected retirement income, and how conversions interact with factors like IRMAA thresholds. Our team models this as part of your integrated tax and retirement plan.",
+      },
+      {
+        question:
+          "What makes your team different from other financial advisors?",
+        answer:
+          "Most firms separate financial planning from tax work — you get an advisor who sends you to your own CPA, and the two rarely coordinate. At United Financial Planning Group, CFP® professionals, CPAs, and Enrolled Agents work as one team. That integration is especially valuable near retirement, when every financial decision has a tax consequence and every tax decision affects your retirement timeline.",
+      },
+      {
+        question: "Are you a fiduciary?",
+        answer:
+          "Yes. As a fee-only Registered Investment Advisor, we are a fiduciary — legally and ethically obligated to act in your interest. We earn no commissions and receive no compensation from product sales, so our recommendations are based on your situation, not on what pays us.",
+      },
+    ],
+    faqHeading: "Common Questions About Pre-Retirement Planning",
+    lastUpdated: "March 2026",
+    relatedPersonaSlugs: ["retirees", "business-owners"],
     serviceTypes: [
       "Retirement Planning",
       "Tax Planning",
@@ -239,7 +354,7 @@ export const personas: Persona[] = [
     ],
     faqHeading: "Common Questions From Business Owners",
     lastUpdated: "March 2026",
-    relatedPersonaSlugs: ["retirees", "startup-founders"],
+    relatedPersonaSlugs: ["pre-retirees", "startup-founders"],
     serviceTypes: [
       "Financial Planning",
       "Tax Planning",

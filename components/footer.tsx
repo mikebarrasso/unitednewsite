@@ -33,6 +33,7 @@ const footerLinks = {
     title: "Who We Serve",
     links: [
       { label: "Retirees", href: "/who-we-serve/retirees" },
+      { label: "Nearing Retirement", href: "/who-we-serve/pre-retirees" },
       { label: "Business Owners", href: "/who-we-serve/business-owners" },
       { label: "Founders", href: "/who-we-serve/startup-founders" },
       { label: "Software Engineers", href: "/who-we-serve/software-engineers" },

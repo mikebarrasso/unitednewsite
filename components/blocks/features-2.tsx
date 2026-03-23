@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect, useRef } from "react";
-import { Clock, Building2, Rocket, Code2, BarChart3, Gem, ArrowRight } from "lucide-react";
+import { Clock, Target, Building2, Rocket, Code2, BarChart3, Gem, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export function Features2() {
@@ -11,19 +11,19 @@ export function Features2() {
 
   const features = [
     {
-      title: "Approaching or in Retirement",
-      icon: Clock,
-      href: "/who-we-serve/retirees",
+      title: "Nearing Retirement",
+      icon: Target,
+      href: "/who-we-serve/pre-retirees",
       description:
-        "We coordinate your Social Security timing, Roth conversion strategies, required minimum distributions, and estate considerations into one cohesive plan.",
+        "The five to ten years before retirement are when the highest-impact decisions get made — catch-up contributions, Roth conversion windows, and whether the numbers actually work.",
       image: "/retirement-couple.png",
       card: {
-        title: "Retirement Coordination",
+        title: "Retirement Readiness",
         items: [
           {
-            label: "Social Security timing optimized",
+            label: "Retirement income gap analysis",
             status: "Complete",
-            detail: "Claiming at 67, $4,200/mo",
+            detail: "On track for target at age 63",
           },
           {
             label: "Roth conversion strategy",
@@ -31,9 +31,38 @@ export function Features2() {
             detail: "$85K converted in low-bracket year",
           },
           {
+            label: "Health insurance bridge modeled",
+            status: "Planning",
+            detail: "ACA marketplace vs. COBRA",
+          },
+        ],
+      },
+    },
+    {
+      title: "In Retirement",
+      icon: Clock,
+      href: "/who-we-serve/retirees",
+      description:
+        "We coordinate your withdrawal sequencing, required minimum distributions, IRMAA management, and estate considerations into one cohesive retirement income plan.",
+      image:
+        "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1200&auto=format&fit=crop",
+      card: {
+        title: "Retirement Income Coordination",
+        items: [
+          {
+            label: "Withdrawal sequence optimized",
+            status: "Complete",
+            detail: "Taxable → tax-deferred → Roth",
+          },
+          {
             label: "RMD pre-planning active",
             status: "On Track",
             detail: "Projected savings: $142K",
+          },
+          {
+            label: "IRMAA threshold managed",
+            status: "Monitoring",
+            detail: "Income held below Tier 1",
           },
         ],
       },

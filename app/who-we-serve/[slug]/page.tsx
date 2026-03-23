@@ -15,6 +15,7 @@ import {
 import { ArrowRight } from "lucide-react";
 import {
   Clock,
+  Target,
   Building2,
   Rocket,
   Code2,
@@ -30,6 +31,7 @@ type Params = { slug: string };
 
 const iconMap = {
   Clock,
+  Target,
   Building2,
   Rocket,
   Code2,

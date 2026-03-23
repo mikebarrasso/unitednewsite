@@ -9,7 +9,7 @@ import {
   RemainingPillarsSection,
   ClosingSection,
 } from "@/components/why-united-content";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -20,9 +20,33 @@ export const metadata: Metadata = createMetadata({
   path: "/why-united",
 });
 
+function WhyUnitedPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Why United",
+        item: `${siteConfig.url}/why-united`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function WhyUnitedPage(): ReactNode {
   return (
     <>
+      <WhyUnitedPageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Why United" }]} />
         <ServiceHero

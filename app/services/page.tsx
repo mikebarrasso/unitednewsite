@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -60,9 +60,53 @@ const blindSpots = [
   "You exercise stock options on your own timeline, unaware that waiting three months would have saved you $40,000 in taxes.",
 ];
 
+function ServicesPageSchema() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Financial Services",
+      description:
+        "Comprehensive fee-only financial services including financial planning, retirement planning, investment management, tax planning, and tax preparation.",
+      itemListElement: services.map((service, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: service.title,
+        url: `${siteConfig.url}${service.href}`,
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: `${siteConfig.url}/services`,
+        },
+      ],
+    },
+  ];
+
+  return (
+    <>
+      {schema.map((s, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+        />
+      ))}
+    </>
+  );
+}
+
 export default function ServicesPage(): ReactNode {
   return (
     <>
+      <ServicesPageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Services" }]} />
         <ServiceHero

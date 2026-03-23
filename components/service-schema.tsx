@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/metadata";
 import { type ReactNode } from "react";
 
 type ServiceSchemaProps = {
@@ -16,11 +17,11 @@ export function ServiceSchema({
     "@type": "Service",
     name,
     description,
-    url: `https://unitedfpg.com${url}`,
+    url: `${siteConfig.url}${url}`,
     provider: {
       "@type": "FinancialService",
-      name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      name: siteConfig.name,
+      url: siteConfig.url,
       telephone: "(631) 234-0871",
       priceRange: "$$",
     },

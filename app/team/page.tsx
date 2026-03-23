@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { TeamCard } from "@/components/team-card";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -83,9 +83,33 @@ const teamMembers = [
   },
 ];
 
+function TeamPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Meet The Team",
+        item: `${siteConfig.url}/team`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function TeamPage(): ReactNode {
   return (
     <>
+      <TeamPageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Meet The Team" }]} />
         {/* Hero */}

@@ -1,10 +1,11 @@
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import { personas } from "@/lib/personas";
 import {
   Clock,
+  Target,
   Building2,
   Rocket,
   Code2,
@@ -19,12 +20,13 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Who We Serve",
   description:
-    "United Financial Planning Group works with retirees, business owners, startup founders, software engineers, executives, and high-net-worth families. See how our integrated approach fits your financial life.",
+    "United Financial Planning Group works with retirees, pre-retirees, business owners, startup founders, software engineers, executives, and high-net-worth families. See how our integrated approach fits your financial life.",
   path: "/who-we-serve",
 });
 
 const iconMap = {
   Clock,
+  Target,
   Building2,
   Rocket,
   Code2,
@@ -32,9 +34,33 @@ const iconMap = {
   Gem,
 } as const;
 
+function WhoWeServePageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Who We Serve",
+        item: `${siteConfig.url}/who-we-serve`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function WhoWeServePage(): ReactNode {
   return (
     <>
+      <WhoWeServePageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Who We Serve" }]} />
         <section className="relative w-full bg-background pt-6 pb-24 sm:pt-8 sm:pb-32">

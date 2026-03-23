@@ -7,7 +7,7 @@ import {
   SubscriptionSection,
 } from "@/components/fees-content";
 import { Footer } from "@/components/footer";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -19,9 +19,33 @@ export const metadata: Metadata = createMetadata({
   path: "/fees",
 });
 
+function FeesPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Our Fees",
+        item: `${siteConfig.url}/fees`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function FeesPage(): ReactNode {
   return (
     <>
+      <FeesPageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Our Fees" }]} />
         <FeesHero />

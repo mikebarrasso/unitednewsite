@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -45,9 +45,53 @@ const affiliations = [
   "XY Planning Network",
 ];
 
+function AboutPageSchema() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      name: "About United Financial Planning Group",
+      description:
+        "Founded by Gerry Barrasso, CFP®, CPA, United Financial Planning Group brings 30+ years of integrated financial planning and tax expertise to clients nationwide.",
+      url: `${siteConfig.url}/about`,
+      mainEntity: {
+        "@type": "FinancialService",
+        name: siteConfig.name,
+        url: siteConfig.url,
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "About",
+          item: `${siteConfig.url}/about`,
+        },
+      ],
+    },
+  ];
+
+  return (
+    <>
+      {schema.map((s, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+        />
+      ))}
+    </>
+  );
+}
+
 export default function AboutPage(): ReactNode {
   return (
     <>
+      <AboutPageSchema />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "About" }]} />
         {/* Hero */}

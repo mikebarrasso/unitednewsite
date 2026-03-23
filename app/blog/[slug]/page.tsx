@@ -45,9 +45,15 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
     datePublished: post.date,
     dateModified,
     author: {
-      "@type": "Organization",
-      name: "United Financial Planning Group",
-      url: siteConfig.url,
+      "@type": "Person",
+      name: "Michael Barrasso",
+      jobTitle: "Director of Business Development",
+      url: `${siteConfig.url}/team/michael-barrasso`,
+      worksFor: {
+        "@type": "Organization",
+        name: "United Financial Planning Group",
+        url: siteConfig.url,
+      },
     },
     publisher: {
       "@type": "Organization",
@@ -138,7 +144,7 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
         <article className="px-4 sm:px-6 lg:px-8 pt-8 pb-16">
           <div className="max-w-3xl mx-auto">
             <header className="mb-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="px-3 py-1 bg-muted text-foreground text-xs font-medium rounded-full border border-border">
                   {post.category}
                 </span>
@@ -148,6 +154,14 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                 >
                   {formatDate(post.date)}
                 </time>
+                {post.updatedDate && post.updatedDate !== post.date && (
+                  <span className="text-sm text-muted-foreground">
+                    · Updated{" "}
+                    <time dateTime={post.updatedDate}>
+                      {formatDate(post.updatedDate)}
+                    </time>
+                  </span>
+                )}
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground leading-tight">
@@ -157,6 +171,20 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
                 {post.excerpt}
               </p>
+
+              <div className="mt-4 flex items-center gap-3">
+                <Link
+                  href="/team/michael-barrasso"
+                  className="flex items-center gap-2.5 group"
+                >
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-muted text-xs font-medium text-foreground/60 border border-border">
+                    MB
+                  </span>
+                  <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    Michael Barrasso
+                  </span>
+                </Link>
+              </div>
 
               {post.type === "media" && post.externalUrl && (
                 <div className="mt-6 p-4 bg-muted/50 rounded-xl border border-border">
