@@ -5,6 +5,7 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { baseMetadata } from "@/lib/metadata";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           <Header />
           <ThemeSwitch />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>

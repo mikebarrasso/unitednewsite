@@ -113,8 +113,8 @@ export default function ServicesPage(): ReactNode {
           eyebrow="All Services"
           title="Every Part of Your Financial Life. One Team. One Strategy."
           subtitle="Most people cobble together advice from a financial advisor, a CPA, and maybe an estate attorney. We bring it all together so every decision reinforces the others."
-          imageUrl="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1740&auto=format&fit=crop"
-          imageAlt="Collaborative financial advisory team meeting"
+          imageUrl="/240710_AJ8700-scaled%20(1).jpg"
+          imageAlt="The United Financial Planning Group team"
           secondaryCtaHref="/contact"
           secondaryCtaLabel="Talk With Our Team"
           hasBreadcrumb
