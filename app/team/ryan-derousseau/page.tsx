@@ -86,6 +86,19 @@ export default function RyanDerousseauPage(): ReactNode {
           ]}
           extraTabs={[
             {
+              label: "Book a meeting",
+              content: (
+                <div className="rounded-xl border border-border overflow-hidden bg-muted/30">
+                  <iframe
+                    title="Schedule a coffee chat with Ryan Derousseau"
+                    src="https://calendly.com/ryan-derousseau-fp/coffee-chat"
+                    className="w-full min-h-[700px] border-0"
+                    loading="lazy"
+                  />
+                </div>
+              ),
+            },
+            {
               label: "Reviews",
               content: <WealthtenderReviews profileId="41366" />,
             },
