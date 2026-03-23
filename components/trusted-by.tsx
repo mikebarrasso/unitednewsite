@@ -15,7 +15,7 @@ const logos: LogoItem[] = [
         alt="Forbes"
         width={120}
         height={36}
-        className="h-7 sm:h-8 w-auto grayscale opacity-70"
+        className="h-7 sm:h-8 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -26,7 +26,7 @@ const logos: LogoItem[] = [
         alt="Fortune"
         width={120}
         height={36}
-        className="h-7 sm:h-8 w-auto grayscale opacity-70"
+        className="h-7 sm:h-8 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -37,7 +37,7 @@ const logos: LogoItem[] = [
         alt="MarketWatch"
         width={160}
         height={36}
-        className="h-6 sm:h-7 w-auto grayscale opacity-70"
+        className="h-6 sm:h-7 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -48,7 +48,7 @@ const logos: LogoItem[] = [
         alt="NAPFA"
         width={120}
         height={36}
-        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+        className="h-8 sm:h-10 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -59,7 +59,7 @@ const logos: LogoItem[] = [
         alt="AICPA"
         width={160}
         height={36}
-        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+        className="h-8 sm:h-10 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -70,7 +70,7 @@ const logos: LogoItem[] = [
         alt="Garrett Planning Network"
         width={140}
         height={36}
-        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+        className="h-8 sm:h-10 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
@@ -81,7 +81,7 @@ const logos: LogoItem[] = [
         alt="Fee Only Network"
         width={140}
         height={36}
-        className="h-8 sm:h-10 w-auto grayscale opacity-70"
+        className="h-8 sm:h-10 w-auto grayscale opacity-70 dark:brightness-200"
       />
     ),
   },
