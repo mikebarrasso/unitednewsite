@@ -135,6 +135,30 @@ const staticRoutes: StaticRoute[] = [
     priority: 0.3,
   },
   {
+    path: "/adv-part-2a",
+    sources: ["app/adv-part-2a/page.tsx"],
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    path: "/adv-part-2b",
+    sources: ["app/adv-part-2b/page.tsx"],
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    path: "/form-crs",
+    sources: ["app/form-crs/page.tsx"],
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    path: "/privacy-policy",
+    sources: ["app/privacy-policy/page.tsx"],
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
     path: "/who-we-serve",
     sources: ["app/who-we-serve/page.tsx", "lib/personas.ts"],
     changeFrequency: "monthly",

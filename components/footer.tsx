@@ -53,10 +53,10 @@ const footerLinks = {
 };
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "/2021-UFPG-PRIVACY-POLICY.pdf" },
-  { label: "Form ADV Part 2A", href: "/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf" },
-  { label: "Form ADV Part 2B", href: "/2025-03-21-UFPG-Form-ADV-Part-2B-1.pdf" },
-  { label: "Form CRS", href: "/2023-08-17-UFPG-Form-CRS-1.pdf" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Form ADV Part 2A", href: "/adv-part-2a" },
+  { label: "Form ADV Part 2B", href: "/adv-part-2b" },
+  { label: "Form CRS", href: "/form-crs" },
 ];
 
 export function Footer(): ReactNode {
@@ -159,7 +159,7 @@ export function Footer(): ReactNode {
               not indicative of future results. All investing involves risk,
               including the potential loss of principal. Please review our{" "}
               <Link
-                href="/2025-03-21-UFPG-Form-ADV-Part-2A-1.pdf"
+                href="/adv-part-2a"
                 className="underline hover:text-foreground/50 dark:hover:text-white transition-colors"
               >
                 Form ADV Part 2A

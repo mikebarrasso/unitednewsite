@@ -30,6 +30,33 @@ function sortByTitle<T extends { title: string }>(items: T[]): T[] {
   return [...items].sort((a, b) => a.title.localeCompare(b.title));
 }
 
+const complianceDocPages: LlmsLink[] = [
+  {
+    title: "Form ADV Part 2A – Firm Brochure",
+    path: "/adv-part-2a",
+    description:
+      "SEC-required firm brochure describing advisory services, fees, business practices, and conflicts of interest.",
+  },
+  {
+    title: "Form ADV Part 2B – Brochure Supplement",
+    path: "/adv-part-2b",
+    description:
+      "Supplemental disclosure about supervised persons who provide advisory services on behalf of the firm.",
+  },
+  {
+    title: "Form CRS – Client Relationship Summary",
+    path: "/form-crs",
+    description:
+      "Brief summary of services, fees, conflicts of interest, and disciplinary history required by the SEC.",
+  },
+  {
+    title: "Privacy Policy",
+    path: "/privacy-policy",
+    description:
+      "How United Financial Planning Group collects, uses, and protects client personal and financial information.",
+  },
+];
+
 const essentialPages: LlmsLink[] = [
   {
     title: "Home",
@@ -266,6 +293,8 @@ export function buildLlmsTxt(): string {
     "",
     renderSection("Trust, Team, and Authority Pages", companyPages),
     "",
+    renderSection("Compliance & Legal Documents", complianceDocPages),
+    "",
     renderSection("Office and Location Hubs", officePages),
     "",
     renderSection("Flagship Local SEO Pages", [
@@ -292,6 +321,8 @@ export function buildLlmsFullTxt(): string {
     renderSection("Who We Serve (Persona Pages)", personaPages),
     "",
     renderSection("Trust, Team, and Authority Pages", companyPages),
+    "",
+    renderSection("Compliance & Legal Documents", complianceDocPages),
     "",
     renderSection("Office and Location Hubs", officePages),
     "",
