@@ -56,7 +56,7 @@ const teamMembers = [
   },
   {
     name: "Diana David",
-    credentials: "",
+    credentials: "EA",
     title: "Client Services Manager",
     bio: "Diana is the connective tissue of the firm. She ensures every client interaction is seamless, every question gets answered, and every detail is handled with care and precision.",
     initials: "DD",
