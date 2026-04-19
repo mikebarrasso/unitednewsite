@@ -3,10 +3,12 @@ import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import {
   getAllPosts,
+  getAuthor,
   getPostLastModified,
   getPostBySlug,
   getRelatedPosts,
   formatDate,
+  type BlogPost,
 } from "@/lib/blog";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -34,29 +36,64 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
+// Strips HTML tags so we can compute a clean wordCount for schema.
+function htmlToWordCount(html: string): number {
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;|&#\d+;/gi, " ");
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  return words.length;
+}
+
 function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBySlug>> }) {
   const dateModified = getPostLastModified(post);
+  const author = getAuthor(post);
+  const isIndividualAuthor = author.url.startsWith("/team/");
+  // Falls back to the firm-wide dynamic OG image if the post has no custom image.
+  const imageUrl = `${siteConfig.url}/opengraph-image`;
+  const wordCount = htmlToWordCount(post.content);
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
     dateModified,
-    author: {
-      "@type": "Person",
-      name: "Michael Barrasso",
-      jobTitle: "Director of Business Development",
-      url: `${siteConfig.url}/team/michael-barrasso`,
-      worksFor: {
-        "@type": "Organization",
-        name: "United Financial Planning Group",
-        url: siteConfig.url,
-      },
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    wordCount,
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      width: 1200,
+      height: 630,
     },
+    author: isIndividualAuthor
+      ? {
+          "@type": "Person",
+          name: author.name,
+          jobTitle: author.jobTitle,
+          ...(author.credentials ? { honorificSuffix: author.credentials } : {}),
+          url: `${siteConfig.url}${author.url}`,
+          worksFor: {
+            "@type": "Organization",
+            "@id": `${siteConfig.url}/#organization`,
+            name: "United Financial Planning Group",
+            url: siteConfig.url,
+          },
+        }
+      : {
+          "@type": "Organization",
+          "@id": `${siteConfig.url}/#organization`,
+          name: "United Financial Planning Group",
+          url: siteConfig.url,
+        },
     publisher: {
       "@type": "Organization",
+      "@id": `${siteConfig.url}/#organization`,
       name: "United Financial Planning Group",
       url: siteConfig.url,
       logo: {
@@ -69,6 +106,54 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
       "@id": `${siteConfig.url}/blog/${post.slug}`,
     },
     articleSection: post.category,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+function FAQSchema({ faqs }: { faqs: NonNullable<BlogPost["faqs"]> }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+function HowToSchema({
+  howToSteps,
+}: {
+  howToSteps: NonNullable<BlogPost["howToSteps"]>;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howToSteps.name,
+    ...(howToSteps.description ? { description: howToSteps.description } : {}),
+    step: howToSteps.steps.map((step, idx) => ({
+      "@type": "HowToStep",
+      position: idx + 1,
+      name: step.name,
+      text: step.text,
+    })),
   };
 
   return (
@@ -128,11 +213,16 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
   if (!post) notFound();
 
   const relatedPosts = getRelatedPosts(post);
+  const author = getAuthor(post);
 
   return (
     <>
       <ArticleSchema post={post} />
       <BreadcrumbSchema post={post} />
+      {post.faqs && post.faqs.length > 0 && <FAQSchema faqs={post.faqs} />}
+      {post.howToSteps && post.howToSteps.steps.length > 0 && (
+        <HowToSchema howToSteps={post.howToSteps} />
+      )}
       <main id="main-content" className="flex-1">
         <Breadcrumb
           items={[
@@ -174,14 +264,15 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
 
               <div className="mt-4 flex items-center gap-3">
                 <Link
-                  href="/team/michael-barrasso"
+                  href={author.url}
                   className="flex items-center gap-2.5 group"
                 >
                   <span className="flex items-center justify-center w-8 h-8 rounded-full bg-muted text-xs font-medium text-foreground/60 border border-border">
-                    MB
+                    {author.initials}
                   </span>
                   <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                    Michael Barrasso
+                    {author.name}
+                    {author.credentials ? `, ${author.credentials}` : ""}
                   </span>
                 </Link>
               </div>
@@ -204,10 +295,86 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
               )}
             </header>
 
+            {post.type === "blog" && (
+              <aside
+                role="note"
+                aria-label="Educational article notice"
+                className="mb-8 rounded-xl border border-border bg-muted/40 p-5 text-sm leading-relaxed text-foreground/70"
+              >
+                <p className="font-medium text-foreground mb-1">
+                  Educational article — not personal advice
+                </p>
+                <p>
+                  This article is provided for general educational purposes and
+                  does not constitute investment, tax, legal, or accounting
+                  advice or a recommendation to buy or sell any security. See
+                  the{" "}
+                  <a
+                    href="#disclosures"
+                    className="underline underline-offset-4 hover:text-foreground transition-colors"
+                  >
+                    full disclosures
+                  </a>{" "}
+                  at the end.
+                </p>
+              </aside>
+            )}
+
             <div
-              className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-serif prose-headings:font-medium prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:leading-relaxed prose-p:text-foreground/80 prose-li:text-foreground/80 prose-a:text-foreground prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-foreground/70 prose-blockquote:border-l-foreground/20 prose-blockquote:text-foreground/70 prose-blockquote:italic prose-strong:text-foreground"
+              className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-serif prose-headings:font-medium prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:leading-relaxed prose-p:text-foreground/80 prose-li:text-foreground/80 prose-a:text-foreground prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-foreground/70 prose-blockquote:border-l-foreground/20 prose-blockquote:text-foreground/70 prose-blockquote:italic prose-strong:text-foreground prose-table:text-sm prose-th:text-foreground prose-th:font-medium prose-td:text-foreground/80 prose-td:align-top"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            {post.faqs && post.faqs.length > 0 && (
+              <div className="mt-14 pt-8 border-t border-border">
+                <h2 className="text-2xl font-serif font-medium text-foreground mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <dl className="space-y-6">
+                  {post.faqs.map((faq) => (
+                    <div key={faq.question}>
+                      <dt className="text-base font-medium text-foreground">
+                        {faq.question}
+                      </dt>
+                      <dd className="mt-2 text-foreground/70 leading-relaxed">
+                        {faq.answer}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+
+            {post.type === "blog" && (
+              <div className="mt-14 rounded-2xl border border-border bg-muted/40 p-8 sm:p-10">
+                <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  Talk it through
+                </p>
+                <h2 className="mt-2 text-2xl sm:text-3xl font-serif font-medium text-foreground">
+                  Want a second set of eyes on your situation?
+                </h2>
+                <p className="mt-3 text-foreground/70 leading-relaxed max-w-2xl">
+                  Schedule a complimentary conversation with our team of CFP
+                  &reg; professionals, CPAs, and Enrolled Agents. No obligation,
+                  no sales pitch &mdash; just a calm look at how recession risk
+                  fits into your specific plan.
+                </p>
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
+                  >
+                    Schedule a Conversation
+                  </Link>
+                  <Link
+                    href="/why-united"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-border text-foreground text-sm font-medium hover:bg-muted transition-colors"
+                  >
+                    Why United
+                  </Link>
+                </div>
+              </div>
+            )}
 
             {post.relatedServices.length > 0 && (
               <div className="mt-14 pt-8 border-t border-border">

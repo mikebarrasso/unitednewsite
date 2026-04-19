@@ -1,3 +1,69 @@
+export type AuthorSlug =
+  | "gerry-barrasso"
+  | "michael-barrasso"
+  | "ryan-derousseau"
+  | "jose-vivero"
+  | "firm";
+
+export type AuthorProfile = {
+  name: string;
+  /** Initials shown in the byline avatar. */
+  initials: string;
+  jobTitle: string;
+  /** Credential string for display, e.g. "CFP®, CPA, PFS". */
+  credentials?: string;
+  /** Path to the team page; "/" for firm posts that have no individual page. */
+  url: string;
+};
+
+export const authorProfiles: Record<AuthorSlug, AuthorProfile> = {
+  "gerry-barrasso": {
+    name: "Gerry Barrasso",
+    initials: "GB",
+    jobTitle: "President & Founder",
+    credentials: "CFP®, CPA, PFS",
+    url: "/team/gerry-barrasso",
+  },
+  "michael-barrasso": {
+    name: "Michael Barrasso",
+    initials: "MB",
+    jobTitle: "Director of Business Development",
+    url: "/team/michael-barrasso",
+  },
+  "ryan-derousseau": {
+    name: "Ryan Derousseau",
+    initials: "RD",
+    jobTitle: "Financial Advisor",
+    credentials: "CFP®, EA",
+    url: "/team/ryan-derousseau",
+  },
+  "jose-vivero": {
+    name: "Jose Vivero",
+    initials: "JV",
+    jobTitle: "Financial Advisor",
+    credentials: "CFP®, ChFC®, CLU®, RICP®",
+    url: "/team/jose-vivero",
+  },
+  firm: {
+    name: "United Financial Planning Group",
+    initials: "UF",
+    jobTitle: "United Financial Planning Group",
+    url: "/about",
+  },
+};
+
+export type BlogFAQ = {
+  question: string;
+  answer: string;
+};
+
+export type HowToStep = {
+  /** Short imperative title for the step. */
+  name: string;
+  /** Full description rendered into HowTo schema. */
+  text: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -5,16 +71,259 @@ export type BlogPost = {
   updatedDate?: string;
   category: string;
   excerpt: string;
+  /** Display string used as a fallback if `authorSlug` isn't supplied. */
   author: string;
+  /** Preferred way to attribute a post; drives the byline and Article schema. */
+  authorSlug?: AuthorSlug;
   type: "blog" | "media";
   externalUrl?: string;
   publication?: string;
   relatedServices: string[];
   relatedSlugs: string[];
+  /** Optional FAQ block rendered below the article and emitted as FAQPage schema. */
+  faqs?: BlogFAQ[];
+  /** Optional step list emitted as HowTo schema (steps should also appear in `content`). */
+  howToSteps?: {
+    /** Headline for the procedure (also rendered as the HowTo `name`). */
+    name: string;
+    /** One-sentence description of the procedure. */
+    description?: string;
+    steps: HowToStep[];
+  };
   content: string;
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "recession-2026-new-york-investors",
+    title: "Recession 2026: What New York Investors Should Actually Do",
+    date: "2026-04-18",
+    updatedDate: "2026-04-18",
+    category: "Investment Management",
+    excerpt:
+      "A calm, considered look at recession risk in 2026 — what history suggests, the costliest mistakes investors make, and the questions New York households should think through before reacting.",
+    author: "Gerry Barrasso, CFP\u00ae, CPA, PFS",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/investment-management",
+      "/services/financial-planning",
+      "/services/tax-planning",
+      "/services/retirement-planning",
+    ],
+    relatedSlugs: [
+      "market-volatility-financial-plan-advisor",
+      "retirement-portfolio-strategies-market-downturns",
+      "investment-management-strategies-high-net-worth",
+    ],
+    howToSteps: {
+      name: "How to think through a portfolio decision during recession headlines",
+      description:
+        "A five-step framework investors can use to evaluate whether a market-driven portfolio change actually reflects a change in their situation.",
+      steps: [
+        {
+          name: "Identify what actually changed",
+          text: "Write down what changed in your situation. If the answer is 'the news cycle,' that is a useful signal in itself. If something has actually changed in your income, time horizon, family situation, or goals, that is a different conversation.",
+        },
+        {
+          name: "Confirm near-term cash needs are covered",
+          text: "Confirm that the money you expect to spend in the next 12 to 36 months is funded from short-horizon assets, not from a portfolio whose value can move significantly. If short-term needs are covered, the long-term portion of the portfolio can be evaluated on its long-term merits.",
+        },
+        {
+          name: "Re-read your written plan",
+          text: "If you have a written investment policy or financial plan, review what it says about how to react to drawdowns. Most well-built plans already anticipate periods of significant volatility.",
+        },
+        {
+          name: "Quantify the after-tax cost of any move",
+          text: "Selling positions in taxable accounts can trigger capital gains, surtaxes, and (for New York residents) significant state tax. Sometimes the most sensible answer changes once the tax bill is on the page.",
+        },
+        {
+          name: "Decide against your plan, not the headlines",
+          text: "If the decision still makes sense after the prior steps, it is more likely to be a decision you will not regret. If it only makes sense in the context of today's headlines, that is a reason to pause.",
+        },
+      ],
+    },
+    faqs: [
+      {
+        question: "Is the U.S. officially in a recession in 2026?",
+        answer:
+          "A U.S. recession is formally declared by the National Bureau of Economic Research (NBER), which evaluates a range of indicators rather than relying on the popular \"two consecutive quarters of negative GDP\" shorthand. NBER declarations are typically made well after a recession has begun. Investors and policymakers often discuss recession risk in real time using leading indicators, but the official designation is retrospective.",
+      },
+      {
+        question: "Should I sell my stocks because of recession fears?",
+        answer:
+          "There is no general answer that fits every investor. Whether to adjust an allocation depends on your time horizon, cash needs over the next one to three years, tax situation, and how the position fits into a broader plan. Decisions driven primarily by news cycles or short-term price moves have historically been associated with worse long-term outcomes than decisions tied to a written plan. A fiduciary financial advisor can help evaluate trade-offs against your specific circumstances.",
+      },
+      {
+        question:
+          "How have U.S. stocks historically behaved around recessions?",
+        answer:
+          "Historical data published by sources such as the National Bureau of Economic Research and major asset managers shows that U.S. equity markets have experienced significant drawdowns around recessions, but have also recovered over multi-year periods following each post-war recession. Past performance does not guarantee future results, and the timing and magnitude of any future recovery cannot be predicted.",
+      },
+      {
+        question:
+          "What can New York investors do that doesn\u2019t depend on predicting the market?",
+        answer:
+          "Most of the highest-impact decisions are unrelated to market timing: maintaining an appropriate emergency reserve, aligning the equity portion of a portfolio with the actual time horizon for each goal, harvesting tax losses where appropriate, coordinating Roth conversion strategy with current and projected tax brackets, and confirming beneficiary designations and estate documents are current. New York residents should also factor in state and local tax exposure when planning withdrawals or realizations.",
+      },
+      {
+        question: "Does Long Island\u2019s high tax burden change the playbook?",
+        answer:
+          "It can affect how decisions are sequenced. Combined federal, New York State, and (for NYC residents) New York City income taxes, along with the federal cap on state and local tax deductions, mean that the after-tax impact of a portfolio decision can differ meaningfully from its pre-tax appearance. Coordinating investment decisions with tax preparation in the same engagement is one of the practical reasons families work with an integrated team.",
+      },
+      {
+        question:
+          "When should I talk to a financial advisor about recession risk?",
+        answer:
+          "Reasonable triggers include: planning to retire within the next one to five years, sitting on concentrated stock or significant cash that has not been allocated against a written plan, considering a major financial decision (selling a business, buying property, gifting), or noticing that headlines are driving emotionally significant changes to how you view your portfolio. A consultation does not commit you to a service relationship.",
+      },
+    ],
+    content: `<p>Recession concerns have moved to the front of the conversation in 2026. The questions we are hearing from clients and prospective clients &mdash; <em>Will there be a recession this year? Should I sell my stocks? How will tariffs affect my portfolio?</em> &mdash; are reasonable ones. Tariff policy, growth concerns, and persistent uncertainty about inflation and interest rates have made the path forward feel less predictable than it did even a year ago.</p>
+
+<p>I have been advising clients through markets since 1991. I have lived through the early-1990s recession, the dot-com bust, the 2008&ndash;2009 financial crisis, the 2020 pandemic shock, and the 2022 drawdown. Every cycle has its own narrative. The frameworks we have found most useful across those cycles have not been about predicting which narrative wins. They have been about controlling what is actually controllable, in the context of a written plan.</p>
+
+<p>This piece is intended as a calm framework for thinking about recession risk in 2026, not a prediction. Whenever something here touches on a personal financial decision, the appropriate next step is a conversation with a qualified advisor about your specific situation.</p>
+
+<h2>What &ldquo;recession&rdquo; actually means</h2>
+
+<p>In the United States, a recession is formally dated by the <a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener noreferrer">Business Cycle Dating Committee of the National Bureau of Economic Research (NBER)</a>. The committee evaluates a broad set of indicators &mdash; including real personal income, employment, consumer spending, and industrial production &mdash; rather than relying on a single rule of thumb.</p>
+
+<p>The popular shorthand of &ldquo;two consecutive quarters of negative GDP&rdquo; is not the official definition. It is also not how NBER decides. Official recession declarations are typically made <em>after</em> a recession has already begun, sometimes by many months. By the time a recession is named, markets have usually already reflected substantial information about it.</p>
+
+<p>The practical implication for an investor is straightforward: by the time you are certain a recession has arrived, large portfolio reactions have historically been associated with poorer outcomes for many investors than disciplined inaction.</p>
+
+<h2>What history suggests &mdash; and what it cannot tell us</h2>
+
+<p>Looking at U.S. equity markets across post-war recessions, a few observations have generally held. Per the <a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener noreferrer">NBER recession chronology</a> together with publicly available S&amp;P 500 historical return data:</p>
+
+<ul>
+<li>Equity drawdowns around recessions have been substantial. Bear markets &mdash; commonly defined as a peak-to-trough decline of 20% or more in a major index &mdash; have not been rare. They are an expected feature of long-term equity investing, not a malfunction.</li>
+<li>U.S. equity markets have, over multi-year horizons, recovered from each post-war recessionary drawdown. The length of those recoveries has varied widely, and the historical record does not guarantee that any future cycle will follow the same pattern.</li>
+<li>According to <a href="https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/guide-to-the-markets/" target="_blank" rel="noopener noreferrer">JPMorgan Asset Management&rsquo;s <em>Guide to the Markets</em></a>, in the 20-year period from January 2005 through December 2024, seven of the ten best trading days for the S&amp;P 500 occurred within two weeks of the ten worst days. Missing the ten best days during that period would have substantially reduced an investor&rsquo;s overall return. Strategies that try to step out and back in have, in that historical record, struggled to consistently capture those rebounds.</li>
+</ul>
+
+<p>None of this guarantees future outcomes. Past performance is not indicative of future results, and the next cycle does not have to look like any prior cycle. What history does provide is a baseline for setting expectations: meaningful drawdowns are normal, and reacting to them on conviction has, on average, been difficult to do profitably.</p>
+
+<h2>The decision that quietly costs the most</h2>
+
+<p>In our experience, the largest avoidable cost in a portfolio rarely comes from picking the &ldquo;wrong&rdquo; investment. It comes from the decision to abandon a long-term plan during a short-term drawdown and then re-enter the market after prices have recovered.</p>
+
+<p>The gap between an investment&rsquo;s reported return and the return investors actually earn &mdash; popularized by financial author <a href="https://behaviorgap.com/" target="_blank" rel="noopener noreferrer">Carl Richards as the <em>behavior gap</em></a> and quantified annually by <a href="https://www.morningstar.com/lp/mind-the-gap" target="_blank" rel="noopener noreferrer">Morningstar&rsquo;s <em>Mind the Gap</em> study</a> &mdash; is driven by well-documented cognitive biases. <em>Loss aversion</em> (originally documented by psychologists Daniel Kahneman and Amos Tversky in their work on prospect theory) describes the tendency to feel losses more acutely than equivalent gains. <em>Recency bias</em> leads us to extrapolate the recent past. <em>Herding</em> leads us to take cues from the people around us.</p>
+
+<p>Those biases are not character flaws. They are universal. Recognizing them in yourself is part of why a written plan exists in the first place &mdash; so that decisions made under pressure are constrained by decisions made calmly.</p>
+
+<h2>What you can actually control</h2>
+
+<p>You cannot control whether a recession is officially declared, when tariff policy changes, or how the market reacts on any given week. The decisions that genuinely move the needle for most households are the ones that don&rsquo;t depend on any of those things being known.</p>
+
+<table>
+<thead>
+<tr>
+<th>Things you cannot control</th>
+<th>Things you can control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whether NBER eventually dates a 2026 recession</td>
+<td>Whether your near-term spending is funded from short-horizon assets</td>
+</tr>
+<tr>
+<td>Tariff policy and legislative changes</td>
+<td>Your asset allocation relative to your actual time horizon</td>
+</tr>
+<tr>
+<td>Market direction in any single week, month, or quarter</td>
+<td>Whether you harvest available tax losses where appropriate</td>
+</tr>
+<tr>
+<td>Headlines, news cycles, and other investors&rsquo; reactions</td>
+<td>Whether you re-evaluate Roth conversion strategy in lower-value windows</td>
+</tr>
+<tr>
+<td>The exact bottom or top of any cycle</td>
+<td>Whether your beneficiary designations and estate documents are current</td>
+</tr>
+</tbody>
+</table>
+
+<h3>1. Cash needs over the next one to three years</h3>
+
+<p>Money you expect to spend in the next 12 to 36 months &mdash; living expenses for a near-retiree, a planned home purchase, an upcoming tuition payment &mdash; generally is not well suited to a portfolio whose value can move significantly over short periods. Confirming that short-horizon needs are funded from short-horizon assets is one of the most important pre-recession exercises an investor can do.</p>
+
+<h3>2. Asset allocation versus actual time horizon</h3>
+
+<p>The appropriate equity allocation for a 35-year-old funding retirement in 30 years is generally different from the appropriate equity allocation for a 65-year-old funding the next ten years. Many portfolios drift over time as some assets outperform others. A periodic rebalancing review &mdash; based on the original written plan, not on the current headlines &mdash; helps keep risk aligned with purpose.</p>
+
+<h3>3. Tax-aware decisions</h3>
+
+<p>Drawdowns can create planning opportunities. Tax-loss harvesting in taxable accounts, where appropriate, can be used to offset realized gains or a limited amount of ordinary income under current federal rules. Roth conversion windows may look different when account values are temporarily lower. None of this is one-size-fits-all; each requires modeling against your projected income, brackets, and goals, and should be evaluated with a qualified tax professional. For New York residents, those calculations should account for state (and where applicable, city) tax exposure, not just federal.</p>
+
+<h3>4. Diversification</h3>
+
+<p>A diversified portfolio is not a guarantee against losses. It is a strategy designed to reduce the impact of any single position or asset class on the overall outcome. The goal is not to eliminate volatility &mdash; it is to ensure that no single bad outcome can damage the plan beyond repair.</p>
+
+<h3>5. Estate, beneficiary, and insurance basics</h3>
+
+<p>Drawdowns are a useful prompt to confirm that beneficiary designations on retirement accounts are current, that wills and powers of attorney reflect current intent, and that life and disability insurance still match the family&rsquo;s actual needs. These are housekeeping items that have nothing to do with market direction and everything to do with whether a plan reflects current circumstances.</p>
+
+<h2>What this means specifically for New York investors</h2>
+
+<p>The financial picture for many of our Long Island and Manhattan clients has features that make the recession conversation different from the generic version you may read elsewhere.</p>
+
+<ul>
+<li><strong>High combined tax burden.</strong> New York&rsquo;s top marginal state income tax bracket sits among the highest in the country, and New York City residents pay an additional municipal income tax on top of that. A given pre-tax investment decision can have a meaningfully different after-tax outcome here than it would for a resident of a no-income-tax state.</li>
+<li><strong>State and local tax deduction limits.</strong> Federal limitations on the deductibility of state and local taxes have meaningfully shaped itemized deduction strategy for many New York households since 2018, and the specifics of those limitations have been the subject of ongoing legislative attention. Coordinating charitable giving, large realizations, and Roth conversions with the current rules in mind is a meaningful planning lever &mdash; and a topic where current-year guidance from a tax professional matters.</li>
+<li><strong>High property taxes.</strong> Long Island consistently ranks among the highest property tax jurisdictions in the United States. <a href="https://www.tax-rates.org/new_york/nassau_county_property_tax" target="_blank" rel="noopener noreferrer">Nassau County</a> ranks 2nd of 3,143 counties nationwide by median property tax bill, and <a href="https://www.tax-rates.org/new_york/suffolk_county_property_tax" target="_blank" rel="noopener noreferrer">Suffolk County</a> ranks 12th. For households who carry significant fixed property tax obligations, maintaining adequate liquid reserves takes on additional weight during periods of economic uncertainty.</li>
+<li><strong>Equity compensation and concentrated positions.</strong> A meaningful portion of NYC professionals hold a significant share of household wealth in employer stock through ISOs, NSOs, RSUs, ESPPs, or deferred compensation. Recession concerns do not change the underlying complexity, but they often make the trade-offs (diversification versus tax cost, AMT exposure, holding-period planning) feel more urgent. Those decisions warrant model-based analysis, not headline-driven reactions.</li>
+<li><strong>Multi-state filers.</strong> If you live in New Jersey or Connecticut and earn in New York, or vice versa, the state allocation of any realized gains or losses interacts with credits and reciprocity rules. This is a place where coordinating investment decisions with the actual tax return preparation matters.</li>
+</ul>
+
+<h2>A practical sequence before you act</h2>
+
+<p>If recession headlines are pushing you toward a major portfolio change, here is a short framework worth running before making one.</p>
+
+<ol>
+<li><strong>Write down what changed in your situation.</strong> If the answer is &ldquo;the news cycle,&rdquo; that is a useful signal in itself. If something has actually changed in your income, time horizon, family situation, or goals, that is a different conversation.</li>
+<li><strong>Confirm your near-term cash needs are covered without selling at depressed prices.</strong> If they are, the long-term portion of your portfolio can be evaluated on its long-term merits.</li>
+<li><strong>Re-read the original plan.</strong> If you have a written investment policy or financial plan, what does it say about how to react to drawdowns? Most well-built plans already anticipate them.</li>
+<li><strong>Quantify the after-tax cost of any move.</strong> Selling positions in taxable accounts can trigger capital gains, surtaxes, and (for New York residents) significant state tax. Sometimes the most sensible answer changes once the tax bill is on the page.</li>
+<li><strong>Make the decision against your plan, not against the headlines.</strong> If the decision still makes sense after steps one through four, it is more likely to be a decision you will not regret.</li>
+</ol>
+
+<h2>When working with an advisor genuinely matters</h2>
+
+<p>Most investors do not need an advisor to tell them what the market is going to do next, because no one knows. What a fiduciary, fee-only advisor typically focuses on, beyond the portfolio itself, is the structural and behavioral work that surrounds it:</p>
+
+<ul>
+<li>A written <a href="/services/financial-planning">financial plan</a> that defines what the money is actually for, by goal and by time horizon.</li>
+<li>An <a href="/services/investment-management">investment policy</a> built around that plan, with explicit guidance for how to react to drawdowns before they occur.</li>
+<li>Integrated <a href="/services/tax-planning">tax planning</a> and <a href="/services/tax-preparation">tax preparation</a>, so that investment decisions are evaluated against the actual after-tax outcome rather than a hypothetical pre-tax one.</li>
+<li>Behavioral coaching during periods of volatility &mdash; not because clients lack discipline, but because a second set of eyes is genuinely useful when the headlines are loud.</li>
+</ul>
+
+<p>At United Financial Planning Group, our team includes <a href="/team">CFP&reg; professionals, CPAs, and Enrolled Agents</a> working in the same firm. We are <a href="/why-united">fee-only</a>, which means we do not earn commissions or sell products, and we are held to a fiduciary standard. If you would like to talk through how recession risk fits your specific situation, you can <a href="/contact">schedule a complimentary conversation</a>. There is no obligation, and the goal of that first call is simply to determine whether working together would actually serve your needs.</p>
+
+<h2>The honest takeaway</h2>
+
+<p>No one can tell you whether a recession will be officially dated for 2026, how deep any associated drawdown might be, or how quickly any recovery would arrive. Anyone selling certainty on those questions is selling something else.</p>
+
+<p>What we can say with reasonable confidence is that the investors who tend to feel most prepared during periods like this are the ones who decided in advance how they would respond, sized their risk to their actual time horizon, kept short-term needs out of long-term assets, and made tax-aware decisions instead of headline-driven ones. That is a description of a process, not a prediction of returns.</p>
+
+<hr />
+
+<h2 id="disclosures">Important Disclosures</h2>
+
+<p><em>United Financial Planning Group is a registered investment advisor with the U.S. Securities and Exchange Commission (SEC). Registration with the SEC does not imply a certain level of skill or training.</em></p>
+
+<p><em>This article is for general informational and educational purposes only. It is not, and should not be construed as, personalized investment, tax, legal, or accounting advice or a recommendation to buy, sell, or hold any specific security or to adopt any specific investment strategy. Investment decisions should be made based on an individual&rsquo;s own goals, time horizon, and tolerance for risk, and only after consulting appropriately qualified professionals.</em></p>
+
+<p><em>All investing involves risk, including the possible loss of principal. Past performance is not indicative of future results. Diversification and asset allocation strategies do not guarantee a profit or protect against a loss. Statements regarding markets, the economy, or future events reflect our views as of the date of publication; those views may change without notice, and we are under no obligation to update them.</em></p>
+
+<p><em>Tax laws are complex and change frequently. Any references to tax topics are general in nature and may not apply to your specific situation. Please consult your tax professional regarding your particular circumstances. CERTIFIED FINANCIAL PLANNER&reg; and CFP&reg; are professional certification marks granted by Certified Financial Planner Board of Standards, Inc.</em></p>
+
+<p><em>United Financial Planning Group earns advisory fees from clients who engage the firm. Information in this article should be considered with that interest in mind. Please review our <a href="/adv-part-2a">Form ADV Part 2A</a> and <a href="/form-crs">Form CRS</a> for important disclosures about our advisory business, fees, and conflicts of interest.</em></p>`,
+  },
   {
     slug: "gerry-barrasso-generational-wealth-gobankingrates",
     title:
@@ -77,6 +386,7 @@ export const blogPosts: BlogPost[] = [
       "/services/retirement-planning",
     ],
     relatedSlugs: [
+      "recession-2026-new-york-investors",
       "retirement-portfolio-strategies-market-downturns",
       "secure-retirement-investment-management",
     ],
@@ -216,6 +526,7 @@ export const blogPosts: BlogPost[] = [
       "/services/tax-planning",
     ],
     relatedSlugs: [
+      "recession-2026-new-york-investors",
       "secure-retirement-investment-management",
       "market-volatility-financial-plan-advisor",
     ],
@@ -872,4 +1183,16 @@ export function formatDate(dateStr: string): string {
 
 export function getPostLastModified(post: BlogPost): string {
   return post.updatedDate ?? post.date;
+}
+
+/**
+ * Resolves the post's display author. Falls back to the firm profile if no
+ * `authorSlug` is set (which is the case for legacy posts and "In The Media"
+ * entries that are attributed to the firm rather than an individual).
+ */
+export function getAuthor(post: BlogPost): AuthorProfile {
+  if (post.authorSlug) {
+    return authorProfiles[post.authorSlug];
+  }
+  return authorProfiles.firm;
 }
