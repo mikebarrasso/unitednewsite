@@ -14,9 +14,12 @@ export const metadata: Metadata = createMetadata({
 });
 
 function ReviewsSchema() {
+  // Reference the same Organization @id minted on the home page so search
+  // engines treat the rating as a property of the canonical entity.
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
+    "@id": "https://unitedfpg.com/#organization",
     name: "United Financial Planning Group",
     url: "https://unitedfpg.com",
     aggregateRating: {

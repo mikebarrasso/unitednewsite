@@ -7,6 +7,7 @@ import {
   useTransform,
   MotionValue,
 } from "motion/react";
+import Image from "next/image";
 import { useState } from "react";
 
 const backgroundCards = [
@@ -116,11 +117,13 @@ function BackgroundCard({
       animate={{ opacity: card.opacity, scale: card.scale }}
       transition={{ duration: 0.8, delay: index * 0.1 }}
     >
-      <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl">
-        <img
+      <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl relative">
+        <Image
           src={card.image}
           alt=""
-          className="w-full h-full object-cover"
+          fill
+          sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+          className="object-cover"
           aria-hidden="true"
         />
       </div>

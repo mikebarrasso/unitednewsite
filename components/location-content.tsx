@@ -381,6 +381,55 @@ function OtherLocations({
   );
 }
 
+// Maps each office to its corresponding regional flagship hub. This lets the
+// office page link UP to the commercial hub instead of competing with it for
+// the same query intent.
+const FLAGSHIP_BY_SLUG: Record<
+  string,
+  { href: string; label: string; region: string } | undefined
+> = {
+  "hauppauge-ny": {
+    href: "/financial-advisor-long-island",
+    label: "See our Long Island services overview",
+    region: "Long Island",
+  },
+  "lake-success-ny": {
+    href: "/financial-advisor-long-island",
+    label: "See our Long Island services overview",
+    region: "Long Island",
+  },
+  "manhattan-ny": {
+    href: "/financial-advisor-manhattan",
+    label: "See our Manhattan services overview",
+    region: "Manhattan",
+  },
+};
+
+function FlagshipLink({ slug }: { slug: string }): ReactNode {
+  const flagship = FLAGSHIP_BY_SLUG[slug];
+  if (!flagship) return null;
+
+  return (
+    <section className="relative w-full bg-background py-10">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 rounded-2xl border border-border bg-muted/40 px-6 py-5">
+          <p className="text-sm text-foreground/70">
+            This is our office page. Looking for the full {flagship.region}{" "}
+            advisory overview?
+          </p>
+          <Link
+            href={flagship.href}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
+          >
+            {flagship.label}
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function LocationContent({
   location,
   otherLocations,
@@ -390,6 +439,7 @@ export function LocationContent({
 }): ReactNode {
   return (
     <>
+      <FlagshipLink slug={location.slug} />
       <OfficeDetails location={location} />
       <ServicesSection location={location} />
       <WhoWeServe location={location} />

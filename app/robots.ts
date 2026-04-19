@@ -2,35 +2,17 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/metadata";
 
 export default function robots(): MetadataRoute.Robots {
-  const disallow = ["/api/", "/private/", "/towns/"];
-  const allow = ["/", "/llms.txt", "/llms-full.txt"];
-  const host = new URL(siteConfig.url).host;
-  const aiCrawlers = [
-    "GPTBot",
-    "ChatGPT-User",
-    "OAI-SearchBot",
-    "PerplexityBot",
-    "ClaudeBot",
-    "anthropic-ai",
-    "Googlebot",
-    "Google-Extended",
-    "Bingbot",
-  ];
-
+  // Bots without a more-specific rule fall back to the wildcard, so we don't
+  // need to repeat the same allow/disallow for every named AI crawler.
   return {
     rules: [
       {
         userAgent: "*",
-        allow,
-        disallow,
+        allow: ["/", "/llms.txt", "/llms-full.txt"],
+        disallow: ["/api/", "/private/", "/towns/"],
       },
-      ...aiCrawlers.map((userAgent) => ({
-        userAgent,
-        allow,
-        disallow,
-      })),
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,
-    host,
+    host: new URL(siteConfig.url).host,
   };
 }

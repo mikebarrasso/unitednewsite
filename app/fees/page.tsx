@@ -20,7 +20,7 @@ export const metadata: Metadata = createMetadata({
 });
 
 function FeesPageSchema() {
-  const schema = {
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -34,11 +34,66 @@ function FeesPageSchema() {
     ],
   };
 
+  const financialServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    name: "United Financial Planning Group",
+    url: `${siteConfig.url}/fees`,
+    description:
+      "Transparent, fee-only pricing with no hidden fees. Comprehensive financial planning, tax planning, and wealth management. See exactly what you'll pay before we start working together.",
+    priceRange: "$$",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Financial Planning Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Financial Plan",
+          },
+          price: "400",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "400",
+            priceCurrency: "USD",
+            unitText: "hour",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Wealth Management",
+          },
+          description: "0.50%-1.00% of AUM",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Subscription Advisory",
+          },
+          description: "Starting at $500/month",
+        },
+      ],
+    },
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(financialServiceSchema),
+        }}
+      />
+    </>
   );
 }
 

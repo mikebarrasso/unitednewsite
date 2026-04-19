@@ -3,7 +3,7 @@ import { FeatureCards } from "@/components/feature-cards";
 import { FeatureHighlight } from "@/components/feature-highlight";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
-import { Hero } from "@/components/hero";
+import { LazyHero } from "@/components/hero-lazy";
 import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
@@ -22,9 +22,65 @@ export const metadata: Metadata = createMetadata({
 });
 
 function OrganizationSchema() {
-  const schema = {
+  const orgId = "https://unitedfpg.com/#organization";
+
+  // Single canonical Organization, with each office expressed as a separate
+  // FinancialService branch so Google can model them as discrete locations.
+  const branches = [
+    {
+      "@type": "FinancialService",
+      "@id": "https://unitedfpg.com/locations/hauppauge-ny#financialservice",
+      name: "United Financial Planning Group — Hauppauge",
+      url: "https://unitedfpg.com/locations/hauppauge-ny",
+      branchOf: { "@id": orgId },
+      telephone: "(631) 234-0871",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "350 Motor Parkway, Suite 105",
+        addressLocality: "Hauppauge",
+        addressRegion: "NY",
+        postalCode: "11788",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "FinancialService",
+      "@id": "https://unitedfpg.com/locations/manhattan-ny#financialservice",
+      name: "United Financial Planning Group — Manhattan",
+      url: "https://unitedfpg.com/locations/manhattan-ny",
+      branchOf: { "@id": orgId },
+      telephone: "(631) 234-0871",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "14 Penn Plaza",
+        addressLocality: "New York",
+        addressRegion: "NY",
+        postalCode: "10122",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "FinancialService",
+      "@id": "https://unitedfpg.com/locations/lake-success-ny#financialservice",
+      name: "United Financial Planning Group — Lake Success",
+      url: "https://unitedfpg.com/locations/lake-success-ny",
+      branchOf: { "@id": orgId },
+      telephone: "(631) 234-0871",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1979 Marcus Avenue, Suite 210",
+        addressLocality: "Lake Success",
+        addressRegion: "NY",
+        postalCode: "11042",
+        addressCountry: "US",
+      },
+    },
+  ];
+
+  const organization = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
+    "@id": orgId,
     name: "United Financial Planning Group",
     url: "https://unitedfpg.com",
     logo: "https://unitedfpg.com/logo-black-cropped.png",
@@ -38,36 +94,7 @@ function OrganizationSchema() {
       name: "Gerry Barrasso",
       jobTitle: "President & Founder",
     },
-    address: [
-      {
-        "@type": "PostalAddress",
-        streetAddress: "350 Motor Parkway, Suite 105",
-        addressLocality: "Hauppauge",
-        addressRegion: "NY",
-        postalCode: "11788",
-        addressCountry: "US",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "14 Penn Plaza",
-        addressLocality: "New York",
-        addressRegion: "NY",
-        postalCode: "10122",
-        addressCountry: "US",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "1979 Marcus Avenue, Suite 210",
-        addressLocality: "Lake Success",
-        addressRegion: "NY",
-        postalCode: "11042",
-        addressCountry: "US",
-      },
-    ],
-    areaServed: {
-      "@type": "Country",
-      name: "United States",
-    },
+    areaServed: { "@type": "Country", name: "United States" },
     serviceType: [
       "Financial Planning",
       "Investment Management",
@@ -97,13 +124,25 @@ function OrganizationSchema() {
       ratingCount: "46",
       reviewCount: "46",
     },
+    subOrganization: branches.map((b) => ({ "@id": b["@id"] })),
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+      />
+      {branches.map((branch) => (
+        <script
+          key={branch["@id"]}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({ "@context": "https://schema.org", ...branch }),
+          }}
+        />
+      ))}
+    </>
   );
 }
 
@@ -135,7 +174,7 @@ export default function HomePage(): ReactNode {
       <OrganizationSchema />
       <HomeFAQSchema />
       <main id="main-content" className="flex-1">
-        <Hero />
+        <LazyHero />
         <TrustedBy />
         <FeatureHighlight />
         <FeatureCards />

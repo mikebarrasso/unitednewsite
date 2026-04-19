@@ -11,7 +11,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Our Services",
   description:
-    "Comprehensive fee-only financial services including financial planning, retirement planning, investment management, tax planning, and tax preparation, all in-house.",
+    "Explore our fee-only services: financial planning, retirement planning, investment management, tax planning, tax preparation, and equity compensation guidance — all coordinated under one roof.",
   path: "/services",
 });
 

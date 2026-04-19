@@ -42,12 +42,15 @@ const footerLinks = {
     ],
   },
   offices: {
-    title: "Offices",
+    title: "Offices & Service Areas",
     links: [
       { label: "All Locations", href: "/locations" },
-      { label: "Hauppauge, NY (HQ)", href: "/locations/hauppauge-ny" },
-      { label: "Manhattan, NY", href: "/locations/manhattan-ny" },
-      { label: "Lake Success, NY", href: "/locations/lake-success-ny" },
+      { label: "Long Island Advisor", href: "/financial-advisor-long-island" },
+      { label: "Manhattan Advisor", href: "/financial-advisor-manhattan" },
+      { label: "NYC Advisor", href: "/financial-advisor-nyc" },
+      { label: "Hauppauge, NY Office (HQ)", href: "/locations/hauppauge-ny" },
+      { label: "Manhattan, NY Office", href: "/locations/manhattan-ny" },
+      { label: "Lake Success, NY Office", href: "/locations/lake-success-ny" },
     ],
   },
 };

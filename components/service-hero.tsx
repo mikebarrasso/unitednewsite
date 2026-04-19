@@ -27,7 +27,7 @@ export function ServiceHero({
   title,
   subtitle,
   imageUrl,
-  imageAlt = "",
+  imageAlt = "United Financial Planning Group",
   customVisual,
   primaryCtaHref = "/contact",
   primaryCtaLabel = "Schedule a Conversation",

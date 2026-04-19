@@ -29,7 +29,7 @@ function AnimatedCounter({
   prefix?: string;
   duration?: number;
 }): ReactNode {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const hasAnimated = useRef(false);
@@ -37,6 +37,7 @@ function AnimatedCounter({
   useEffect(() => {
     if (!isInView || hasAnimated.current) return;
     hasAnimated.current = true;
+    setCount(0);
 
     const startTime = performance.now();
     const isDecimal = value % 1 !== 0;

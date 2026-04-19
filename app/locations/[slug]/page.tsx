@@ -41,7 +41,15 @@ export async function generateMetadata({
   });
 }
 
+const geoCoordinates: Record<string, { lat: number; lng: number }> = {
+  "hauppauge-ny": { lat: 40.8168, lng: -73.2137 },
+  "manhattan-ny": { lat: 40.7506, lng: -73.9935 },
+  "lake-success-ny": { lat: 40.7701, lng: -73.7134 },
+};
+
 function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof getLocationBySlug>> }) {
+  const coords = geoCoordinates[location.slug];
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
@@ -51,6 +59,8 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
     telephone: location.phone,
     faxNumber: location.fax,
     email: "info@unitedfpg.com",
+    image: "https://unitedfpg.com/logo-black-cropped.png",
+    logo: "https://unitedfpg.com/logo-black-cropped.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: location.address,
@@ -59,9 +69,29 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
       postalCode: location.zip,
       addressCountry: "US",
     },
-    geo: undefined as undefined | object,
+    geo: coords
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: coords.lat,
+          longitude: coords.lng,
+        }
+      : undefined,
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:00",
+      },
+    ],
+    sameAs: [
+      "https://www.linkedin.com/company/united-financial-planning-group",
+      "https://wealthtender.com/financial-advisors/united-financial-planning-group",
+      "https://www.napfa.org/financial-planning/united-financial-planning-group",
+    ],
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://unitedfpg.com/#organization",
       name: "United Financial Planning Group",
       url: "https://unitedfpg.com",
     },
