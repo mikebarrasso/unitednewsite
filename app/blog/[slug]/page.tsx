@@ -1,13 +1,18 @@
+import { ArticleToc } from "@/components/article-toc";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import {
+  extractToc,
   getAllPosts,
   getAuthor,
   getPostLastModified,
   getPostBySlug,
   getRelatedPosts,
   formatDate,
+  injectHeadingIds,
+  readingTimeIso,
+  readingTimeMinutes,
   type BlogPost,
 } from "@/lib/blog";
 import { createMetadata, siteConfig } from "@/lib/metadata";
@@ -47,6 +52,25 @@ function htmlToWordCount(html: string): number {
   return words.length;
 }
 
+const serviceKeywordMap: Record<string, string> = {
+  "/services/financial-planning": "financial planning",
+  "/services/retirement-planning": "retirement planning",
+  "/services/investment-management": "investment management",
+  "/services/tax-planning": "tax planning",
+  "/services/tax-preparation": "tax preparation",
+  "/services/equity-compensation": "equity compensation planning",
+};
+
+function buildKeywords(post: NonNullable<ReturnType<typeof getPostBySlug>>): string[] {
+  const fromServices = post.relatedServices
+    .map((href) => serviceKeywordMap[href])
+    .filter((k): k is string => Boolean(k));
+  const baseline = ["fee-only financial advisor", "fiduciary financial advisor"];
+  return Array.from(
+    new Set([post.category.toLowerCase(), ...fromServices, ...baseline]),
+  );
+}
+
 function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBySlug>> }) {
   const dateModified = getPostLastModified(post);
   const author = getAuthor(post);
@@ -54,6 +78,33 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
   // Falls back to the firm-wide dynamic OG image if the post has no custom image.
   const imageUrl = `${siteConfig.url}/opengraph-image`;
   const wordCount = htmlToWordCount(post.content);
+
+  const authorEntity = isIndividualAuthor
+    ? {
+        "@type": "Person",
+        name: author.name,
+        jobTitle: author.jobTitle,
+        ...(author.credentials ? { honorificSuffix: author.credentials } : {}),
+        url: `${siteConfig.url}${author.url}`,
+        ...(author.sameAs && author.sameAs.length > 0
+          ? { sameAs: author.sameAs }
+          : {}),
+        ...(author.knowsAbout && author.knowsAbout.length > 0
+          ? { knowsAbout: author.knowsAbout }
+          : {}),
+        worksFor: {
+          "@type": "Organization",
+          "@id": `${siteConfig.url}/#organization`,
+          name: "United Financial Planning Group",
+          url: siteConfig.url,
+        },
+      }
+    : {
+        "@type": "Organization",
+        "@id": `${siteConfig.url}/#organization`,
+        name: "United Financial Planning Group",
+        url: siteConfig.url,
+      };
 
   const schema = {
     "@context": "https://schema.org",
@@ -65,32 +116,15 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
     inLanguage: "en-US",
     isAccessibleForFree: true,
     wordCount,
+    timeRequired: readingTimeIso(wordCount),
+    keywords: buildKeywords(post),
     image: {
       "@type": "ImageObject",
       url: imageUrl,
       width: 1200,
       height: 630,
     },
-    author: isIndividualAuthor
-      ? {
-          "@type": "Person",
-          name: author.name,
-          jobTitle: author.jobTitle,
-          ...(author.credentials ? { honorificSuffix: author.credentials } : {}),
-          url: `${siteConfig.url}${author.url}`,
-          worksFor: {
-            "@type": "Organization",
-            "@id": `${siteConfig.url}/#organization`,
-            name: "United Financial Planning Group",
-            url: siteConfig.url,
-          },
-        }
-      : {
-          "@type": "Organization",
-          "@id": `${siteConfig.url}/#organization`,
-          name: "United Financial Planning Group",
-          url: siteConfig.url,
-        },
+    author: authorEntity,
     publisher: {
       "@type": "Organization",
       "@id": `${siteConfig.url}/#organization`,
@@ -214,6 +248,12 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
 
   const relatedPosts = getRelatedPosts(post);
   const author = getAuthor(post);
+  // Inject heading IDs once at render time so the TOC anchors and the rendered
+  // article share the same slugs (avoids two passes that can drift over time).
+  const renderedContent = injectHeadingIds(post.content);
+  const tocItems = post.type === "blog" ? extractToc(renderedContent) : [];
+  const wordCount = htmlToWordCount(renderedContent);
+  const readingMinutes = readingTimeMinutes(wordCount);
 
   return (
     <>
@@ -234,7 +274,7 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
         <article className="px-4 sm:px-6 lg:px-8 pt-8 pb-16">
           <div className="max-w-3xl mx-auto">
             <header className="mb-10">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4">
                 <span className="px-3 py-1 bg-muted text-foreground text-xs font-medium rounded-full border border-border">
                   {post.category}
                 </span>
@@ -250,6 +290,11 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                     <time dateTime={post.updatedDate}>
                       {formatDate(post.updatedDate)}
                     </time>
+                  </span>
+                )}
+                {post.type === "blog" && (
+                  <span className="text-sm text-muted-foreground">
+                    · {readingMinutes} min read
                   </span>
                 )}
               </div>
@@ -320,9 +365,13 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
               </aside>
             )}
 
+            {post.type === "blog" && tocItems.length >= 3 && (
+              <ArticleToc items={tocItems} />
+            )}
+
             <div
-              className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-serif prose-headings:font-medium prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:leading-relaxed prose-p:text-foreground/80 prose-li:text-foreground/80 prose-a:text-foreground prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-foreground/70 prose-blockquote:border-l-foreground/20 prose-blockquote:text-foreground/70 prose-blockquote:italic prose-strong:text-foreground prose-table:text-sm prose-th:text-foreground prose-th:font-medium prose-td:text-foreground/80 prose-td:align-top"
-              dangerouslySetInnerHTML={{ __html: post.content }}
+              className="prose prose-lg prose-united max-w-none dark:prose-invert"
+              dangerouslySetInnerHTML={{ __html: renderedContent }}
             />
 
             {post.faqs && post.faqs.length > 0 && (

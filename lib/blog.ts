@@ -14,6 +14,10 @@ export type AuthorProfile = {
   credentials?: string;
   /** Path to the team page; "/" for firm posts that have no individual page. */
   url: string;
+  /** External profiles (LinkedIn, etc.) emitted as schema.org `sameAs`. */
+  sameAs?: string[];
+  /** Topical expertise; emitted as schema.org `knowsAbout` on the author. */
+  knowsAbout?: string[];
 };
 
 export const authorProfiles: Record<AuthorSlug, AuthorProfile> = {
@@ -23,6 +27,15 @@ export const authorProfiles: Record<AuthorSlug, AuthorProfile> = {
     jobTitle: "President & Founder",
     credentials: "CFP®, CPA, PFS",
     url: "/team/gerry-barrasso",
+    sameAs: ["https://www.linkedin.com/in/gerrybarrasso/"],
+    knowsAbout: [
+      "Wealth Management",
+      "Financial Planning",
+      "Tax Planning",
+      "Tax Preparation",
+      "Retirement Planning",
+      "Investment Management",
+    ],
   },
   "michael-barrasso": {
     name: "Michael Barrasso",
@@ -36,6 +49,11 @@ export const authorProfiles: Record<AuthorSlug, AuthorProfile> = {
     jobTitle: "Financial Advisor",
     credentials: "CFP®, EA",
     url: "/team/ryan-derousseau",
+    knowsAbout: [
+      "Financial Planning",
+      "Tax Planning",
+      "Investment Management",
+    ],
   },
   "jose-vivero": {
     name: "Jose Vivero",
@@ -43,6 +61,11 @@ export const authorProfiles: Record<AuthorSlug, AuthorProfile> = {
     jobTitle: "Financial Advisor",
     credentials: "CFP®, ChFC®, CLU®, RICP®",
     url: "/team/jose-vivero",
+    knowsAbout: [
+      "Financial Planning",
+      "Retirement Income Planning",
+      "Investment Management",
+    ],
   },
   firm: {
     name: "United Financial Planning Group",
@@ -1195,4 +1218,86 @@ export function getAuthor(post: BlogPost): AuthorProfile {
     return authorProfiles[post.authorSlug];
   }
   return authorProfiles.firm;
+}
+
+const HEADING_TAGS_FOR_TOC = ["h2"] as const;
+
+/** Slugifies heading text (and entity-decodes the common ones we use in posts). */
+function slugifyHeading(raw: string): string {
+  return raw
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/gi, "&")
+    .replace(/&(ldquo|rdquo|lsquo|rsquo);/gi, "")
+    .replace(/&mdash;|&ndash;/gi, "-")
+    .replace(/&[a-z]+;|&#\d+;/gi, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+/** Decodes the small set of entities we use in heading display strings. */
+function decodeHeadingText(raw: string): string {
+  return raw
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/gi, "&")
+    .replace(/&ldquo;|&rdquo;|&quot;/gi, '"')
+    .replace(/&lsquo;|&rsquo;|&#8217;/gi, "\u2019")
+    .replace(/&mdash;/gi, "\u2014")
+    .replace(/&ndash;/gi, "\u2013")
+    .replace(/&reg;/gi, "\u00ae")
+    .replace(/&trade;/gi, "\u2122")
+    .trim();
+}
+
+/**
+ * Adds a stable `id` to every <h2> in the rendered post HTML so deep-links and
+ * the table of contents work without authors hand-writing IDs. Existing IDs
+ * (e.g. the disclosures anchor) are preserved.
+ */
+export function injectHeadingIds(html: string): string {
+  return html.replace(
+    /<h2(\s[^>]*)?>([\s\S]*?)<\/h2>/gi,
+    (match, attrsRaw: string | undefined, inner: string) => {
+      const attrs = attrsRaw ?? "";
+      if (/\bid=["'][^"']+["']/i.test(attrs)) return match;
+      return `<h2${attrs} id="${slugifyHeading(inner)}">${inner}</h2>`;
+    },
+  );
+}
+
+export type TocItem = { id: string; text: string };
+
+/** Extracts an ordered list of <h2> headings for the in-article table of contents. */
+export function extractToc(html: string): TocItem[] {
+  const items: TocItem[] = [];
+  for (const tag of HEADING_TAGS_FOR_TOC) {
+    // Capture optional attributes so an explicit `id=""` (e.g. the disclosures
+    // section) wins over the auto-slugified one — otherwise TOC links 404.
+    const regex = new RegExp(
+      `<${tag}(\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`,
+      "gi",
+    );
+    for (const match of html.matchAll(regex)) {
+      const attrs = match[1] ?? "";
+      const inner = match[2] ?? "";
+      const text = decodeHeadingText(inner);
+      if (!text) continue;
+      const explicitId = attrs.match(/\bid=["']([^"']+)["']/i)?.[1];
+      const id = explicitId ?? slugifyHeading(inner);
+      items.push({ id, text });
+    }
+  }
+  return items;
+}
+
+/** Estimates reading time in minutes from a word count (220 wpm baseline). */
+export function readingTimeMinutes(wordCount: number): number {
+  return Math.max(1, Math.round(wordCount / 220));
+}
+
+/** Returns ISO 8601 duration for the schema.org `timeRequired` field. */
+export function readingTimeIso(wordCount: number): string {
+  return `PT${readingTimeMinutes(wordCount)}M`;
 }
