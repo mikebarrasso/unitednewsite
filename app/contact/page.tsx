@@ -25,7 +25,7 @@ function ContactSchema() {
     address: [
       {
         "@type": "PostalAddress",
-        streetAddress: "350 Motor Parkway, Suite 105",
+        streetAddress: "350 Motor Parkway, Suite 300",
         addressLocality: "Hauppauge",
         addressRegion: "NY",
         postalCode: "11788",
@@ -141,7 +141,7 @@ export default function ContactPage(): ReactNode {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 text-foreground/40 shrink-0 mt-0.5" />
                     <span>
-                      350 Motor Parkway, Suite 105
+                      350 Motor Parkway, Suite 300
                       <br />
                       Hauppauge, NY 11788
                     </span>

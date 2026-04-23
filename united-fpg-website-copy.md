@@ -521,7 +521,7 @@ Schedule a complimentary consultation and we'll spend time understanding your si
 ### Office Locations
 
 **Hauppauge, NY (Headquarters)**
-350 Motor Parkway, Suite 105
+350 Motor Parkway, Suite 300
 Hauppauge, NY 11788
 
 **Manhattan, NY**

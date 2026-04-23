@@ -36,7 +36,7 @@ function OrganizationSchema() {
       telephone: "(631) 234-0871",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "350 Motor Parkway, Suite 105",
+        streetAddress: "350 Motor Parkway, Suite 300",
         addressLocality: "Hauppauge",
         addressRegion: "NY",
         postalCode: "11788",
