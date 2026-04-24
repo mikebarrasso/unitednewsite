@@ -185,7 +185,7 @@ const legacyRedirects = [
       "/in-the-media/napfa-open-your-own-ria-or-join-a-firm-ryan-derousseaus-insightful-experience",
     destination: "/blog/ryan-derousseau-napfa-advisor-magazine",
   },
-  { source: "/in-the-media/:path*", destination: "/in-the-media" },
+  { source: "/in-the-media/:path+", destination: "/in-the-media" },
 
   // Blog: posts whose slugs changed in the migration. Keep these BEFORE the
   // dated-URL regex catch-all so they win for both the bare and dated forms.
@@ -293,7 +293,7 @@ const legacyRedirects = [
   // Generic catch-alls — keep these last.
   {
     source:
-      "/:slug((?!hauppauge-ny|lake-success-ny|manhattan-ny)[^/]+-ny)",
+      "/:slug((?!financial-advisor-|hauppauge-ny|lake-success-ny|manhattan-ny)[^/]+-ny)",
     destination: "/financial-advisor-:slug",
   },
   {
