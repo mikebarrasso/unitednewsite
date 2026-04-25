@@ -11,6 +11,7 @@ import {
 import { ServiceHero } from "@/components/service-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedServices } from "@/components/related-services";
+import { ServiceFAQ } from "@/components/service-faq";
 import { ServiceCrossLinks } from "@/components/service-cross-links";
 import { ServiceSchema } from "@/components/service-schema";
 import { createMetadata } from "@/lib/metadata";
@@ -23,6 +24,29 @@ export const metadata: Metadata = createMetadata({
     "Low-cost, tax-efficient portfolio management built on index investing, guided by your financial plan and tax situation, because the most effective portfolio is the one you actually keep after taxes.",
   path: "/services/investment-management",
 });
+
+const investmentManagementFaqs = [
+  {
+    question: "What is investment management?",
+    answer:
+      "Investment management is the ongoing process of designing, implementing, monitoring, and adjusting a portfolio based on your goals, time horizon, risk tolerance, income needs, tax situation, and broader financial plan.",
+  },
+  {
+    question: "How does United FPG approach investment management?",
+    answer:
+      "United FPG uses low-cost, globally diversified portfolios guided by each client's financial plan and tax situation. Portfolio decisions are coordinated with planning and tax considerations instead of being managed in isolation.",
+  },
+  {
+    question: "Why does tax efficiency matter in investment management?",
+    answer:
+      "Tax efficiency matters because pre-tax return is not the same as spendable wealth. Asset location, tax-loss harvesting, rebalancing, capital gains timing, and withdrawal sequencing can all affect what you keep after taxes.",
+  },
+  {
+    question: "Do you use active funds or index investing?",
+    answer:
+      "United FPG emphasizes disciplined, low-cost index investing rather than trying to time markets or rely on expensive active management. The portfolio is built to serve the client's plan, not to chase short-term performance.",
+  },
+];
 
 export default function InvestmentManagementPage(): ReactNode {
   return (
@@ -88,6 +112,8 @@ export default function InvestmentManagementPage(): ReactNode {
         />
 
         <ServiceCrossLinks />
+
+        <ServiceFAQ faqs={investmentManagementFaqs} />
 
         {/* CTA */}
         <InvestmentCTA />

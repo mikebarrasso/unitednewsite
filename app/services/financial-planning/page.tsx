@@ -11,6 +11,7 @@ import { Footer } from "@/components/footer";
 import { ServiceHero } from "@/components/service-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedServices } from "@/components/related-services";
+import { ServiceFAQ } from "@/components/service-faq";
 import { ServiceCrossLinks } from "@/components/service-cross-links";
 import { ServiceSchema } from "@/components/service-schema";
 import { createMetadata } from "@/lib/metadata";
@@ -23,6 +24,29 @@ export const metadata: Metadata = createMetadata({
     "A comprehensive financial plan built around what matters to you, informed by deep tax expertise most financial planners simply don't have.",
   path: "/services/financial-planning",
 });
+
+const financialPlanningFaqs = [
+  {
+    question: "What does financial planning include?",
+    answer:
+      "Financial planning can include retirement projections, cash flow planning, tax strategy, investment coordination, insurance review, estate planning coordination, education planning, business-owner planning, and decisions around major life transitions.",
+  },
+  {
+    question: "How is United FPG's financial planning different?",
+    answer:
+      "United FPG builds financial plans with CFP® professionals, CPAs, and tax professionals working together. That means recommendations are evaluated against your tax picture, portfolio, income needs, and long-term goals rather than treated as separate decisions.",
+  },
+  {
+    question: "Do I need financial planning if I already have investments?",
+    answer:
+      "Yes, many households benefit from financial planning even if they already have investments. A portfolio answers how money is invested, while a financial plan defines what the money is for, how much risk is appropriate, when income is needed, and how taxes affect each decision.",
+  },
+  {
+    question: "How often should a financial plan be updated?",
+    answer:
+      "A financial plan should be updated whenever your life, income, tax situation, goals, or market environment changes meaningfully. At United FPG, the plan is treated as a living strategy rather than a one-time document.",
+  },
+];
 
 export default function FinancialPlanningPage(): ReactNode {
   return (
@@ -92,6 +116,8 @@ export default function FinancialPlanningPage(): ReactNode {
         />
 
         <ServiceCrossLinks />
+
+        <ServiceFAQ faqs={financialPlanningFaqs} />
 
         {/* CTA */}
         <FinalCTA />

@@ -5,7 +5,7 @@ export const siteConfig = {
   shortName: "United FPG",
   description:
     "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
-  url: "https://unitedfpg.com",
+  url: "https://www.unitedfpg.com",
   // Resolved by Next from app/opengraph-image.tsx; no static fallback needed.
   creator: "@unitedfpg",
   authors: [
