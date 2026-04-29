@@ -19,28 +19,28 @@ const documents = [
     description:
       "Our firm brochure describes our advisory services, fees, business practices, and any conflicts of interest.",
     href: "/adv-part-2a",
-    date: "March 21, 2025",
+    date: "March 31, 2026",
   },
   {
     title: "Form ADV Part 2B - Brochure Supplement",
     description:
       "Supplemental information about the supervised persons who provide advisory services on behalf of our firm.",
     href: "/adv-part-2b",
-    date: "March 21, 2025",
+    date: "March 30, 2026",
   },
   {
     title: "Form CRS - Client Relationship Summary",
     description:
       "A summary of the types of services we provide, fees, costs, conflicts of interest, and disciplinary history.",
     href: "/form-crs",
-    date: "August 17, 2023",
+    date: "March 31, 2026",
   },
   {
     title: "Privacy Policy",
     description:
       "How we collect, use, and protect your personal and financial information.",
     href: "/privacy-policy",
-    date: "2021",
+    date: "April 27, 2026",
   },
 ];
 

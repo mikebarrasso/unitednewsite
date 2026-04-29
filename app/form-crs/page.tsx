@@ -12,7 +12,8 @@ export const metadata: Metadata = createMetadata({
   path: "/form-crs",
 });
 
-const PDF_URL = "/2023-08-17-UFPG-Form-CRS-1.pdf";
+const PDF_URL =
+  "/new_2026_compliance_docs_2/United%20Financial%20Planning%20Group%20Form%20CRS%20-%2003312026.pdf";
 
 function PageSchema() {
   const schema = {
@@ -58,7 +59,7 @@ export default function FormCrsPage(): ReactNode {
         <section className="relative w-full bg-muted pt-6 pb-12 sm:pt-8 sm:pb-16">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <p className="text-xs font-medium uppercase tracking-wider text-foreground/40 mb-3">
-              Last updated: August 17, 2023
+              Last updated: March 31, 2026
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
               Form CRS

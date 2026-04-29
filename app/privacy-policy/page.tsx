@@ -12,7 +12,8 @@ export const metadata: Metadata = createMetadata({
   path: "/privacy-policy",
 });
 
-const PDF_URL = "/2021-UFPG-PRIVACY-POLICY.pdf";
+const PDF_URL =
+  "/new_2026_compliance_docs_2/UFPG%20Privacy%20Policy%20-%2004272026.pdf";
 
 function PageSchema() {
   const schema = {
@@ -58,7 +59,7 @@ export default function PrivacyPolicyPage(): ReactNode {
         <section className="relative w-full bg-muted pt-6 pb-12 sm:pt-8 sm:pb-16">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <p className="text-xs font-medium uppercase tracking-wider text-foreground/40 mb-3">
-              Effective: 2021
+              Effective: April 27, 2026
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
               Privacy Policy

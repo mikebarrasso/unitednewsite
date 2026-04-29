@@ -12,7 +12,8 @@ export const metadata: Metadata = createMetadata({
   path: "/adv-part-2b",
 });
 
-const PDF_URL = "/2025-03-21-UFPG-Form-ADV-Part-2B-1.pdf";
+const PDF_URL =
+  "/new_2026_compliance_docs_2/UFPG%20Form%20ADV%20Part%202B%20-%2003302026.pdf";
 
 function PageSchema() {
   const schema = {
@@ -58,7 +59,7 @@ export default function AdvPart2BPage(): ReactNode {
         <section className="relative w-full bg-muted pt-6 pb-12 sm:pt-8 sm:pb-16">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <p className="text-xs font-medium uppercase tracking-wider text-foreground/40 mb-3">
-              Last updated: March 21, 2025
+              Last updated: March 30, 2026
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-foreground leading-tight">
               Form ADV Part 2B
