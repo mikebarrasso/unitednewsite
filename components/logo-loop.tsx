@@ -43,6 +43,7 @@ export function LogoLoop({
   const seqRef = useRef<HTMLUListElement>(null);
 
   const isHoveredRef = useRef(false);
+  const isVisibleRef = useRef(false);
   const rafRef = useRef<number | null>(null);
   const lastTimestampRef = useRef<number | null>(null);
   const offsetRef = useRef(0);
@@ -86,7 +87,8 @@ export function LogoLoop({
 
   useEffect(() => {
     const track = trackRef.current;
-    if (!track) return;
+    const container = containerRef.current;
+    if (!track || !container) return;
 
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -96,6 +98,14 @@ export function LogoLoop({
       track.style.transform = "translate3d(0, 0, 0)";
       return;
     }
+
+    const stopAnimation = () => {
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
+      lastTimestampRef.current = null;
+    };
 
     const animate = (timestamp: number) => {
       if (lastTimestampRef.current === null) {
@@ -121,14 +131,38 @@ export function LogoLoop({
       rafRef.current = requestAnimationFrame(animate);
     };
 
-    rafRef.current = requestAnimationFrame(animate);
+    const startAnimation = () => {
+      if (rafRef.current !== null) return;
+      rafRef.current = requestAnimationFrame(animate);
+    };
+
+    const syncAnimationState = () => {
+      if (document.hidden || !isVisibleRef.current) {
+        stopAnimation();
+        return;
+      }
+
+      startAnimation();
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = entry?.isIntersecting ?? false;
+        syncAnimationState();
+      },
+      { rootMargin: "100px" },
+    );
+
+    const handleVisibilityChange = () => syncAnimationState();
+
+    observer.observe(container);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    syncAnimationState();
 
     return () => {
-      if (rafRef.current !== null) {
-        cancelAnimationFrame(rafRef.current);
-        rafRef.current = null;
-      }
-      lastTimestampRef.current = null;
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      stopAnimation();
     };
   }, [targetVelocity, pauseOnHover]);
 

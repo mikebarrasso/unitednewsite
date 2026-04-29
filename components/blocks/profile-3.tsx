@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Users, FileText } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Profile3() {
@@ -32,10 +33,12 @@ export default function Profile3() {
             >
               {/* Background Image */}
               <div className="absolute inset-0">
-                <img
+                <Image
                   src="/svg/placeholder.svg"
                   alt="Background"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="384px"
+                  className="object-cover"
                 />
               </div>
               {/* Blur and Gradient Overlay */}
@@ -47,10 +50,12 @@ export default function Profile3() {
               {/* Profile Image */}
               <div className="mb-4">
                 <div className="relative w-full aspect-4/5 rounded-2xl overflow-hidden bg-neutral-200 dark:bg-neutral-800">
-                  <img
+                  <Image
                     src="/svg/placeholder.svg"
                     alt="Profile"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="384px"
+                    className="object-cover"
                   />
                   {/* Gradient overlay to fade out at bottom */}
                   <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-white dark:to-neutral-900 pointer-events-none" />

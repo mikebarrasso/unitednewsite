@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import Lenis from "lenis";
 import { features } from "@/lib/config";
 import { usePathname } from "next/navigation";
@@ -21,6 +21,7 @@ const LENIS_OPTIONS = {
 
 export function SmoothScroll({ children }: { children: ReactNode }): ReactNode {
   const pathname = usePathname();
+  const frameIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!features.smoothScroll) return;
@@ -37,10 +38,30 @@ export function SmoothScroll({ children }: { children: ReactNode }): ReactNode {
 
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      frameIdRef.current = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    function startRaf() {
+      if (frameIdRef.current !== null) return;
+      frameIdRef.current = requestAnimationFrame(raf);
+    }
+
+    function stopRaf() {
+      if (frameIdRef.current === null) return;
+      cancelAnimationFrame(frameIdRef.current);
+      frameIdRef.current = null;
+    }
+
+    function handleVisibilityChange() {
+      if (document.hidden) {
+        stopRaf();
+        return;
+      }
+
+      startRaf();
+    }
+
+    startRaf();
 
     // Handle anchor link clicks
     function handleAnchorClick(e: MouseEvent) {
@@ -59,9 +80,12 @@ export function SmoothScroll({ children }: { children: ReactNode }): ReactNode {
     }
 
     document.addEventListener('click', handleAnchorClick);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
+      stopRaf();
       document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       lenis.destroy();
     };
   }, [pathname]);

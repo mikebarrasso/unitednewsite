@@ -2,6 +2,7 @@
 
 import { ArrowRight, Play } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export function Hero1() {
   return (
@@ -116,10 +117,12 @@ export function Hero1() {
             className="relative w-full h-auto"
           >
             <div className="relative w-full h-full min-h-[250px] sm:min-h-[500px] rounded-4xl bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Visual content placeholder"
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
 
               {/* Decorative Circle */}

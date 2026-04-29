@@ -1,234 +1,259 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Clock, Target, Building2, Rocket, Code2, BarChart3, Gem, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+const features = [
+  {
+    title: "Nearing Retirement",
+    icon: Target,
+    href: "/who-we-serve/pre-retirees",
+    description:
+      "The five to ten years before retirement are when the highest-impact decisions get made — catch-up contributions, Roth conversion windows, and whether the numbers actually work.",
+    image: "/retirement-couple.png",
+    card: {
+      title: "Retirement Readiness",
+      items: [
+        {
+          label: "Retirement income gap analysis",
+          status: "Complete",
+          detail: "On track for target at age 63",
+        },
+        {
+          label: "Roth conversion strategy",
+          status: "In Progress",
+          detail: "$85K converted in low-bracket year",
+        },
+        {
+          label: "Health insurance bridge modeled",
+          status: "Planning",
+          detail: "ACA marketplace vs. COBRA",
+        },
+      ],
+    },
+  },
+  {
+    title: "In Retirement",
+    icon: Clock,
+    href: "/who-we-serve/retirees",
+    description:
+      "We coordinate your withdrawal sequencing, required minimum distributions, IRMAA management, and estate considerations into one cohesive retirement income plan.",
+    image:
+      "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Retirement Income Coordination",
+      items: [
+        {
+          label: "Withdrawal sequence optimized",
+          status: "Complete",
+          detail: "Taxable → tax-deferred → Roth",
+        },
+        {
+          label: "RMD pre-planning active",
+          status: "On Track",
+          detail: "Projected savings: $142K",
+        },
+        {
+          label: "IRMAA threshold managed",
+          status: "Monitoring",
+          detail: "Income held below Tier 1",
+        },
+      ],
+    },
+  },
+  {
+    title: "Business Owners",
+    icon: Building2,
+    href: "/who-we-serve/business-owners",
+    description:
+      "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board: succession planning, tax-efficient compensation, and personal wealth building.",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Business & Personal Integration",
+      items: [
+        {
+          label: "Entity structure reviewed",
+          status: "Optimized",
+          detail: "S-Corp election saving $38K/yr",
+        },
+        {
+          label: "Succession plan drafted",
+          status: "In Review",
+          detail: "Buy-sell agreement funded",
+        },
+        {
+          label: "Owner compensation strategy",
+          status: "Active",
+          detail: "Salary/distribution split optimized",
+        },
+      ],
+    },
+  },
+  {
+    title: "Founders",
+    icon: Rocket,
+    href: "/who-we-serve/startup-founders",
+    description:
+      "From early equity grants and 83(b) elections to liquidity events and what comes after, we help you translate cap-table complexity into a personal balance sheet you can actually plan around.",
+    image:
+      "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Founder Equity & Exit Planning",
+      items: [
+        {
+          label: "QSBS & holding period tracked",
+          status: "Active",
+          detail: "Potential $10M+ exclusion modeled",
+        },
+        {
+          label: "Secondary / tender readiness",
+          status: "In Review",
+          detail: "Tax scenario before liquidity",
+        },
+        {
+          label: "Post-exit wealth structure",
+          status: "Planning",
+          detail: "Diversification & income plan drafted",
+        },
+      ],
+    },
+  },
+  {
+    title: "Software Engineers",
+    icon: Code2,
+    href: "/who-we-serve/software-engineers",
+    description:
+      "Heavy RSU vests, refreshers, and a compensation stack that changes every year deserve more than a spreadsheet. We align withholding, diversification, and savings rate with where your career is headed.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Tech Comp & Equity Rhythm",
+      items: [
+        {
+          label: "RSU vest calendar integrated",
+          status: "Complete",
+          detail: "Bracket & withholding tuned quarterly",
+        },
+        {
+          label: "Concentration vs. index glidepath",
+          status: "Active",
+          detail: "Target: tech exposure ≤ 25% NW",
+        },
+        {
+          label: "Mega-backdoor & deferred comp",
+          status: "On Track",
+          detail: "Retirement buckets tax-optimized",
+        },
+      ],
+    },
+  },
+  {
+    title: "Executives with Equity Compensation",
+    icon: BarChart3,
+    href: "/who-we-serve/executives",
+    description:
+      "ISOs, NSOs, RSUs, ESPP shares: each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
+    image:
+      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Equity Comp Strategy",
+      items: [
+        {
+          label: "ISO exercise plan modeled",
+          status: "Ready",
+          detail: "AMT impact: $12K vs $47K naive",
+        },
+        {
+          label: "RSU vesting tax strategy",
+          status: "Active",
+          detail: "Withholding adjusted for bracket",
+        },
+        {
+          label: "Concentration risk managed",
+          status: "Monitoring",
+          detail: "Single-stock down to 18% of NW",
+        },
+      ],
+    },
+  },
+  {
+    title: "High net worth families and individuals",
+    icon: Gem,
+    href: "/who-we-serve/high-net-worth",
+    description:
+      "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
+    image:
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
+    card: {
+      title: "Wealth Preservation",
+      items: [
+        {
+          label: "Charitable giving strategy",
+          status: "Executing",
+          detail: "DAF funded, $250K tax benefit",
+        },
+        {
+          label: "Estate plan coordinated",
+          status: "Current",
+          detail: "Trust structures reviewed 2026",
+        },
+        {
+          label: "Multi-generational planning",
+          status: "Active",
+          detail: "529s & gifting strategy aligned",
+        },
+      ],
+    },
+  },
+] as const;
+
+const AUTOPLAY_INTERVAL_MS = 5000;
+const CAROUSEL_IMAGE_SIZES = "(max-width: 1024px) 100vw, 50vw";
+
 export function Features2() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const features = [
-    {
-      title: "Nearing Retirement",
-      icon: Target,
-      href: "/who-we-serve/pre-retirees",
-      description:
-        "The five to ten years before retirement are when the highest-impact decisions get made — catch-up contributions, Roth conversion windows, and whether the numbers actually work.",
-      image: "/retirement-couple.png",
-      card: {
-        title: "Retirement Readiness",
-        items: [
-          {
-            label: "Retirement income gap analysis",
-            status: "Complete",
-            detail: "On track for target at age 63",
-          },
-          {
-            label: "Roth conversion strategy",
-            status: "In Progress",
-            detail: "$85K converted in low-bracket year",
-          },
-          {
-            label: "Health insurance bridge modeled",
-            status: "Planning",
-            detail: "ACA marketplace vs. COBRA",
-          },
-        ],
-      },
-    },
-    {
-      title: "In Retirement",
-      icon: Clock,
-      href: "/who-we-serve/retirees",
-      description:
-        "We coordinate your withdrawal sequencing, required minimum distributions, IRMAA management, and estate considerations into one cohesive retirement income plan.",
-      image:
-        "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Retirement Income Coordination",
-        items: [
-          {
-            label: "Withdrawal sequence optimized",
-            status: "Complete",
-            detail: "Taxable → tax-deferred → Roth",
-          },
-          {
-            label: "RMD pre-planning active",
-            status: "On Track",
-            detail: "Projected savings: $142K",
-          },
-          {
-            label: "IRMAA threshold managed",
-            status: "Monitoring",
-            detail: "Income held below Tier 1",
-          },
-        ],
-      },
-    },
-    {
-      title: "Business Owners",
-      icon: Building2,
-      href: "/who-we-serve/business-owners",
-      description:
-        "Between personal finances, business cash flow, entity structuring, and your eventual exit, we see the whole board: succession planning, tax-efficient compensation, and personal wealth building.",
-      image:
-        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Business & Personal Integration",
-        items: [
-          {
-            label: "Entity structure reviewed",
-            status: "Optimized",
-            detail: "S-Corp election saving $38K/yr",
-          },
-          {
-            label: "Succession plan drafted",
-            status: "In Review",
-            detail: "Buy-sell agreement funded",
-          },
-          {
-            label: "Owner compensation strategy",
-            status: "Active",
-            detail: "Salary/distribution split optimized",
-          },
-        ],
-      },
-    },
-    {
-      title: "Founders",
-      icon: Rocket,
-      href: "/who-we-serve/startup-founders",
-      description:
-        "From early equity grants and 83(b) elections to liquidity events and what comes after, we help you translate cap-table complexity into a personal balance sheet you can actually plan around.",
-      image:
-        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Founder Equity & Exit Planning",
-        items: [
-          {
-            label: "QSBS & holding period tracked",
-            status: "Active",
-            detail: "Potential $10M+ exclusion modeled",
-          },
-          {
-            label: "Secondary / tender readiness",
-            status: "In Review",
-            detail: "Tax scenario before liquidity",
-          },
-          {
-            label: "Post-exit wealth structure",
-            status: "Planning",
-            detail: "Diversification & income plan drafted",
-          },
-        ],
-      },
-    },
-    {
-      title: "Software Engineers",
-      icon: Code2,
-      href: "/who-we-serve/software-engineers",
-      description:
-        "Heavy RSU vests, refreshers, and a compensation stack that changes every year deserve more than a spreadsheet. We align withholding, diversification, and savings rate with where your career is headed.",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Tech Comp & Equity Rhythm",
-        items: [
-          {
-            label: "RSU vest calendar integrated",
-            status: "Complete",
-            detail: "Bracket & withholding tuned quarterly",
-          },
-          {
-            label: "Concentration vs. index glidepath",
-            status: "Active",
-            detail: "Target: tech exposure ≤ 25% NW",
-          },
-          {
-            label: "Mega-backdoor & deferred comp",
-            status: "On Track",
-            detail: "Retirement buckets tax-optimized",
-          },
-        ],
-      },
-    },
-    {
-      title: "Executives with Equity Compensation",
-      icon: BarChart3,
-      href: "/who-we-serve/executives",
-      description:
-        "ISOs, NSOs, RSUs, ESPP shares: each with different tax treatment and timing decisions. We build exercise and diversification strategies that align with your broader financial picture.",
-      image:
-        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Equity Comp Strategy",
-        items: [
-          {
-            label: "ISO exercise plan modeled",
-            status: "Ready",
-            detail: "AMT impact: $12K vs $47K naive",
-          },
-          {
-            label: "RSU vesting tax strategy",
-            status: "Active",
-            detail: "Withholding adjusted for bracket",
-          },
-          {
-            label: "Concentration risk managed",
-            status: "Monitoring",
-            detail: "Single-stock down to 18% of NW",
-          },
-        ],
-      },
-    },
-    {
-      title: "High net worth families and individuals",
-      icon: Gem,
-      href: "/who-we-serve/high-net-worth",
-      description:
-        "Whether navigating a liquidity event, managing concentrated stock positions, or preserving significant wealth, you need advice that accounts for complexity, not a cookie-cutter model.",
-      image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
-      card: {
-        title: "Wealth Preservation",
-        items: [
-          {
-            label: "Charitable giving strategy",
-            status: "Executing",
-            detail: "DAF funded, $250K tax benefit",
-          },
-          {
-            label: "Estate plan coordinated",
-            status: "Current",
-            detail: "Trust structures reviewed 2026",
-          },
-          {
-            label: "Multi-generational planning",
-            status: "Active",
-            detail: "529s & gifting strategy aligned",
-          },
-        ],
-      },
-    },
-  ];
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry?.isIntersecting ?? false),
+      { rootMargin: "200px" },
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
-    const startAutoPlay = () => {
-      intervalRef.current = setInterval(() => {
-        setActiveIndex((prev) => (prev + 1) % features.length);
-      }, 5000);
-    };
+    if (!isInView) {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      return;
+    }
 
-    startAutoPlay();
+    intervalRef.current = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % features.length);
+    }, AUTOPLAY_INTERVAL_MS);
 
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
     };
-  }, [features.length]);
+  }, [isInView]);
 
   const handleFeatureClick = (index: number) => {
     setActiveIndex(index);
@@ -237,7 +262,7 @@ export function Features2() {
       clearInterval(intervalRef.current);
       intervalRef.current = setInterval(() => {
         setActiveIndex((prev) => (prev + 1) % features.length);
-      }, 5000);
+      }, AUTOPLAY_INTERVAL_MS);
     }
   };
 
@@ -262,8 +287,13 @@ export function Features2() {
     }
   };
 
+  const activeFeature = features[activeIndex] ?? features[0];
+
   return (
-    <section className="w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-background">
+    <section
+      ref={sectionRef}
+      className="w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-background"
+    >
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center">
           {/* Left Column */}
@@ -363,16 +393,22 @@ export function Features2() {
             >
               {/* Background Image */}
               <AnimatePresence mode="wait">
-                <motion.img
+                <motion.div
                   key={activeIndex}
-                  src={features[activeIndex]?.image}
-                  alt={features[activeIndex]?.title ?? ""}
                   initial={{ opacity: 0, scale: 1.1 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="absolute inset-0 w-full h-full object-cover opacity-50 dark:opacity-30"
-                />
+                  className="absolute inset-0 opacity-50 dark:opacity-30"
+                >
+                  <Image
+                    src={activeFeature.image}
+                    alt={activeFeature.title}
+                    fill
+                    sizes={CAROUSEL_IMAGE_SIZES}
+                    className="object-cover"
+                  />
+                </motion.div>
               </AnimatePresence>
 
               {/* Overlay Card */}
@@ -393,11 +429,11 @@ export function Features2() {
                       <div className="bg-background/80 backdrop-blur-md rounded-2xl p-1 shadow-lg">
                         <div className="bg-background rounded-xl p-6">
                           <h3 className="text-lg font-semibold text-foreground mb-4">
-                            {features[activeIndex]?.card.title}
+                            {activeFeature.card.title}
                           </h3>
 
                           <div className="space-y-3">
-                            {features[activeIndex]?.card.items.map(
+                            {activeFeature.card.items.map(
                               (item, idx) => (
                                 <div
                                   key={idx}

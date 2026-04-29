@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import {
   HandCoins,
   Target,
@@ -80,6 +81,8 @@ export function Features3() {
       url: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1740&auto=format&fit=crop",
     },
   ];
+
+  const marqueeImageSizes = "(max-width: 1024px) 50vw, 16vw";
 
   useEffect(() => {
     const marquee1 = marquee1Ref.current;
@@ -206,12 +209,14 @@ export function Features3() {
                   {[...images, ...images].map((image, index) => (
                     <div
                       key={`marquee1-${index}`}
-                      className="w-full aspect-square rounded-xl bg-muted border border-border flex items-center justify-center overflow-hidden"
+                      className="relative w-full aspect-square rounded-xl bg-muted border border-border flex items-center justify-center overflow-hidden"
                     >
-                      <img
+                      <Image
                         src={image.url}
                         alt={image.name}
-                        className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                        fill
+                        sizes={marqueeImageSizes}
+                        className="object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                       />
                     </div>
                   ))}
@@ -231,12 +236,14 @@ export function Features3() {
                   {[...images, ...images].map((image, index) => (
                     <div
                       key={`marquee2-${index}`}
-                      className="w-full aspect-square rounded-xl bg-muted border border-border flex items-center justify-center overflow-hidden"
+                      className="relative w-full aspect-square rounded-xl bg-muted border border-border flex items-center justify-center overflow-hidden"
                     >
-                      <img
+                      <Image
                         src={image.url}
                         alt={image.name}
-                        className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                        fill
+                        sizes={marqueeImageSizes}
+                        className="object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                       />
                     </div>
                   ))}

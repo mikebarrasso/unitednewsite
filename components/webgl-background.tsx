@@ -130,6 +130,8 @@ export function WebGLBackground(): ReactNode {
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const frameIdRef = useRef<number>(0);
+  const isAnimatingRef = useRef(false);
+  const isVisibleRef = useRef(true);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -175,6 +177,8 @@ export function WebGLBackground(): ReactNode {
 
     const startTime = Date.now();
     function animate() {
+      if (!isAnimatingRef.current) return;
+
       currentMouse.x += (targetMouse.x - currentMouse.x) * 0.08;
       currentMouse.y += (targetMouse.y - currentMouse.y) * 0.08;
       uniforms.iMouse.value.set(currentMouse.x, currentMouse.y);
@@ -183,7 +187,26 @@ export function WebGLBackground(): ReactNode {
       renderer.render(scene, camera);
       frameIdRef.current = requestAnimationFrame(animate);
     }
-    animate();
+
+    function startAnimation() {
+      if (isAnimatingRef.current) return;
+      isAnimatingRef.current = true;
+      frameIdRef.current = requestAnimationFrame(animate);
+    }
+
+    function stopAnimation() {
+      isAnimatingRef.current = false;
+      cancelAnimationFrame(frameIdRef.current);
+    }
+
+    function syncAnimationState() {
+      if (document.hidden || !isVisibleRef.current) {
+        stopAnimation();
+        return;
+      }
+
+      startAnimation();
+    }
 
     function handleResize() {
       const newWidth = container.clientWidth;
@@ -191,11 +214,29 @@ export function WebGLBackground(): ReactNode {
       renderer.setSize(newWidth, newHeight);
       uniforms.iResolution.value.set(newWidth, newHeight);
     }
+
+    function handleVisibilityChange() {
+      syncAnimationState();
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = entry?.isIntersecting ?? false;
+        syncAnimationState();
+      },
+      { rootMargin: "100px" },
+    );
+
+    observer.observe(container);
+    syncAnimationState();
     window.addEventListener("resize", handleResize);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
-      cancelAnimationFrame(frameIdRef.current);
+      stopAnimation();
+      observer.disconnect();
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       container.removeEventListener("mousemove", handleMouseMove);
       renderer.dispose();
       geometry.dispose();
