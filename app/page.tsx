@@ -4,7 +4,7 @@ import { FeatureHighlight } from "@/components/feature-highlight";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { LazyHero } from "@/components/hero-lazy";
-import { Features2 } from "@/components/blocks/features-2";
+import { LazyFeatures2 } from "@/components/blocks/features-2-lazy";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
@@ -178,7 +178,7 @@ export default function HomePage(): ReactNode {
         <TrustedBy />
         <FeatureHighlight />
         <FeatureCards />
-        <Features2 />
+        <LazyFeatures2 />
         <Stats />
         <section className="relative w-full bg-background py-24 sm:py-32 overflow-hidden">
           <div className="mx-auto max-w-5xl px-6 sm:px-8">
