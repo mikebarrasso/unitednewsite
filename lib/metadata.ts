@@ -40,6 +40,9 @@ export const baseMetadata: Metadata = {
   authors: [...siteConfig.authors],
   creator: siteConfig.creator,
   publisher: siteConfig.name,
+  verification: {
+    google: "B1nH_--m8YRYK7N9s2BLxDhXNOqVphubh54Jy28_EZE",
+  },
   robots: {
     index: true,
     follow: true,
