@@ -11,6 +11,7 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { createMetadata } from "@/lib/metadata";
+import { createOfferCatalog } from "@/lib/schema";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -54,13 +55,13 @@ function ManhattanSchema() {
       { "@type": "AdministrativeArea", name: "Upper West Side" },
       { "@type": "AdministrativeArea", name: "Upper East Side" },
     ],
-    serviceType: [
+    hasOfferCatalog: createOfferCatalog([
       "Equity Compensation Planning",
       "Financial Planning",
       "Investment Management",
       "Tax Planning",
       "Tax Preparation",
-    ],
+    ]),
     priceRange: "$$",
     parentOrganization: {
       "@type": "Organization",

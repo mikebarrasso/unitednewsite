@@ -2,6 +2,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { createMetadata, siteConfig } from "@/lib/metadata";
+import { officeAddresses } from "@/lib/schema";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -58,6 +59,7 @@ function AboutPageSchema() {
         "@type": "FinancialService",
         name: siteConfig.name,
         url: siteConfig.url,
+        address: officeAddresses,
       },
     },
     {
