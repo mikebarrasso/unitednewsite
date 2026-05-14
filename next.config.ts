@@ -303,7 +303,9 @@ const legacyRedirects = [
 ] satisfies Array<{ source: string; destination: string }>;
 
 const nextConfig: NextConfig = {
-  trailingSlash: false,
+  
+  allowedDevOrigins: ["*.vercel.run", "*.vercel.app"],
+trailingSlash: false,
   productionBrowserSourceMaps: false,
   // Remove console.log in production
   compiler: {
