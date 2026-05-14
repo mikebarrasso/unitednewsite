@@ -9,23 +9,42 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { faqItems } from "@/lib/faq-data";
-import { createMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-export const metadata: Metadata = createMetadata({
-  absoluteTitle:
-    "United Financial Planning Group | Fee-Only Financial Advisor",
+export const metadata: Metadata = {
+  title: {
+    absolute: "United Financial Planning Group | Fee-Only Fiduciary Advisor",
+  },
   description:
-    "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
-  path: "/",
-});
+    "Fee-only financial advisory firm with CFP® professionals, CPAs, and Enrolled Agents. Integrated financial planning, investment management, and tax services — in New York and nationwide.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title:
+      "United Financial Planning Group | Fee-Only Financial Advisor in New York",
+    description:
+      "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Serving New York City, Long Island, and clients nationwide.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: siteConfig.creator,
+    title:
+      "United Financial Planning Group | Fee-Only Financial Advisor in New York",
+    description:
+      "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Serving New York City, Long Island, and clients nationwide.",
+  },
+};
 
 function OrganizationSchema() {
   const orgId = "https://unitedfpg.com/#organization";
 
-  // Single canonical Organization, with each office expressed as a separate
-  // FinancialService branch so Google can model them as discrete locations.
   const branches = [
     {
       "@type": "FinancialService",
