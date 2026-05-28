@@ -453,7 +453,7 @@ export function ProcessSection() {
                   transition={{ duration: 0.5, delay: 0.4, ease }}
                 >
                   <p className="text-5xl sm:text-6xl font-serif font-medium text-foreground">
-                    $400
+                    $500
                   </p>
                   <p className="text-lg text-muted-foreground mt-1">/hour</p>
                 </motion.div>
