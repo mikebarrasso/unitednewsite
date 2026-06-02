@@ -52,11 +52,11 @@ function FeesPageSchema() {
             "@type": "Service",
             name: "Financial Plan",
           },
-          price: "500",
+          price: "400",
           priceCurrency: "USD",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: "500",
+            price: "400",
             priceCurrency: "USD",
             unitText: "hour",
           },
