@@ -53,10 +53,6 @@ export default function RootLayout({
           gtag('config', 'G-GN2NWJH73H');
         `}
       </Script>
-      <Script
-        src="https://engage-jade.vercel.app/api/embed/tracking?org=66cda7de-f229-44b7-b19e-5a18cb829f1b"
-        strategy="lazyOnload"
-      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
