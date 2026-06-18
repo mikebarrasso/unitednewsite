@@ -1,0 +1,71 @@
+{
+  "siteId": "fc1baa26-67fb-4bda-8df5-8a06ead90442",
+  "advisorId": "",
+  "leadsApiUrl": "https://app.wealthreach.com/api/attract/leads",
+  "firmName": "United Financial Planning Group",
+  "tagline": "Financial Planning, Tax, & Investment Management Under One Roof",
+  "phone": "",
+  "email": "",
+  "address": "",
+  "logoUrl": "/logo-black-cropped.png",
+  "analyticsEndpoint": "https://portal.wealthreach.com/api/analytics/events",
+  "analyticsApiKey": "",
+  "calendarUrl": "",
+  "theme": {
+    "typography": {
+      "headingFont": "ui-serif, Georgia, Cambria, Times New Roman, Times, serif",
+      "bodyFont": "Geist",
+      "scale": "default",
+      "headingWeight": 700
+    },
+    "color": {
+      "mode": "system",
+      "primary": "oklch(0.524 0.125 247.8)",
+      "accent": "oklch(0.524 0.125 247.8)",
+      "surface": "oklch(1 0 0)",
+      "foreground": "oklch(0.145 0 0)"
+    },
+    "layout": {
+      "maxWidth": "1200px",
+      "sectionSpacing": "relaxed",
+      "borderRadius": "0.625rem"
+    },
+    "motion": {
+      "entrance": "fade-up"
+    }
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Client Testimonials",
+      "href": "/testimonials"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/unitedfpg"
+    }
+  ],
+  "complianceDisclosures": [
+    "United Financial Planning Group is a registered investment advisor with the U.S. Securities and Exchange Commission (SEC). Registration does not imply a certain level of skill or training. Information presented on this website is for educational purposes and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. Past performance is not indicative of future results. All investing involves risk, including the potential loss of principal. Please review our Form ADV Part 2A for important disclosures."
+  ],
+  "framework": "nextjs_app_router",
+  "appRoot": "app",
+  "blogModel": "data-blog"
+}
