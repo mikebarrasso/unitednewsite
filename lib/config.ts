@@ -6,21 +6,24 @@
  * United Financial Planning Group - brand configuration
  */
 
+import siteConfigData from "../data/site-config.json";
+
 export const siteConfig = {
-  name: "United Financial Planning Group",
-  tagline: "Financial Planning, Tax, & Investment Management Under One Roof",
+  name: siteConfigData.firmName,
+  tagline: siteConfigData.tagline,
   description:
     "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: "https://unitedfpg.com",
-  twitter: "@unitedfpg",
+  twitter: siteConfigData.socialLinks.find(s => s.platform === "twitter")?.url || "@unitedfpg",
 
   nav: {
     cta: {
       text: "Schedule a Conversation",
-      href: "/contact",
+      href: siteConfigData.navigation.find(n => n.label.toLowerCase() === "contact")?.href || "/contact",
     },
+    links: siteConfigData.navigation,
   },
-} as const;
+};
 
 export const heroConfig = {
   headline: "Your Financial Life Is Complex. Your Advisory Team Shouldn't Make It Harder.",
@@ -29,20 +32,20 @@ export const heroConfig = {
   cta: {
     primary: {
       text: "Schedule a Conversation",
-      href: "/contact",
+      href: siteConfigData.navigation.find(n => n.label.toLowerCase() === "contact")?.href || "/contact",
     },
     secondary: {
       text: "Explore Our Services",
-      href: "/services",
+      href: siteConfigData.navigation.find(n => n.label.toLowerCase() === "services")?.href || "/services",
     },
   },
-} as const;
+};
 
 export const featureCardsConfig = {
   title: "Sound Familiar?",
 } as const;
 
-export const principlesConfig = {
+export const principlesConfig = { 
   title: "Built for Financial Lives That Don't Fit in a Template",
 } as const;
 
@@ -64,10 +67,10 @@ export const faqConfig = {
     text: "Still have questions?",
     cta: {
       text: "Get in Touch",
-      href: "/contact",
+      href: siteConfigData.navigation.find(n => n.label.toLowerCase() === "contact")?.href || "/contact",
     },
   },
-} as const;
+};
 
 export const finalCtaConfig = {
   headline: "Ready to Stop Coordinating Between Advisors?",
@@ -75,9 +78,9 @@ export const finalCtaConfig = {
     "Schedule a no-pressure conversation. We'll listen to what's going on in your financial life, answer your questions, and help you decide if working together makes sense.",
   cta: {
     text: "Book Your Complimentary Consultation",
-    href: "/contact",
+    href: siteConfigData.navigation.find(n => n.label.toLowerCase() === "contact")?.href || "/contact",
   },
-} as const;
+};
 
 /**
  * ============================================================================
