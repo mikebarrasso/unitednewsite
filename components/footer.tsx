@@ -3,6 +3,7 @@
 import { type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig as config } from "@/lib/site-config";
 
 const footerLinks = {
   services: {
@@ -87,14 +88,14 @@ export function Footer(): ReactNode {
                 <Link href="/" className="inline-block">
                   <Image
                     src="/logo-black-cropped.png"
-                    alt="United Financial Planning Group"
+                    alt={config.firmName}
                     width={160}
                     height={45}
                     className="h-14 w-auto dark:hidden"
                   />
                   <Image
-                    src="/logo-white-cropped.png"
-                    alt="United Financial Planning Group"
+                    src={config.logoUrl || "/logo-white-cropped.png"}
+                    alt={config.firmName}
                     width={160}
                     height={45}
                     className="h-14 w-auto hidden dark:block"
@@ -137,10 +138,20 @@ export function Footer(): ReactNode {
           <div className="pt-8 px-8 sm:px-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <p className="text-sm text-foreground/50 dark:text-white">
-                © {new Date().getFullYear()} United Financial Planning Group.
-                All rights reserved.
+                © {new Date().getFullYear()} {config.firmName}. All rights reserved.
               </p>
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-wrap gap-6 items-center">
+                {config.socialLinks?.map((link) => (
+                  <a
+                    key={link.platform}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-foreground/50 dark:text-white hover:text-foreground dark:hover:text-white transition-colors capitalize"
+                  >
+                    {link.platform}
+                  </a>
+                ))}
                 {legalLinks.map((link) => (
                   <Link
                     key={link.label}
@@ -152,23 +163,28 @@ export function Footer(): ReactNode {
                 ))}
               </div>
             </div>
-            <p className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
-              United Financial Planning Group is a registered investment advisor
-              with the U.S. Securities and Exchange Commission (SEC).
-              Registration does not imply a certain level of skill or training.
-              Information presented on this website is for educational purposes
-              and does not constitute investment advice, a solicitation, or a
-              recommendation to buy or sell any security. Past performance is
-              not indicative of future results. All investing involves risk,
-              including the potential loss of principal. Please review our{" "}
-              <Link
-                href="/adv-part-2a"
-                className="underline hover:text-foreground/50 dark:hover:text-white transition-colors"
-              >
-                Form ADV Part 2A
-              </Link>{" "}
-              for important disclosures.
-            </p>
+            {config.complianceDisclosures?.map((disclosure, index) => {
+              if (disclosure.includes("Form ADV Part 2A")) {
+                const parts = disclosure.split("Form ADV Part 2A");
+                return ( 
+                  <p key={index} className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
+                    {parts[0]}
+                    <Link
+                      href="/adv-part-2a"
+                      className="underline hover:text-foreground/50 dark:hover:text-white transition-colors"
+                    >
+                      Form ADV Part 2A
+                    </Link>
+                    {parts[1]}
+                  </p>
+                );
+              }
+              return (
+                <p key={index} className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
+                  {disclosure}
+                </p>
+              );
+            })}
           </div>
         </div>
       </div>

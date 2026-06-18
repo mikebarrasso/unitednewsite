@@ -12,90 +12,7 @@ import {
   type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
-
-type NavItem = {
-  label: string;
-  href?: string;
-  hasDropdown?: boolean;
-  items?: { label: string; description: string; href: string }[];
-};
-
-const navLinks: NavItem[] = [
-  {
-    label: "Services",
-    hasDropdown: true,
-    items: [
-      {
-        label: "Financial Planning",
-        description: "Comprehensive planning built around your actual goals",
-        href: "/services/financial-planning",
-      },
-      {
-        label: "Retirement Planning",
-        description: "Turn decades of accumulation into sustainable income",
-        href: "/services/retirement-planning",
-      },
-      {
-        label: "Investment Management",
-        description: "Tax-aware portfolio management for your full picture",
-        href: "/services/investment-management",
-      },
-      {
-        label: "Tax Planning",
-        description: "Proactive strategies to reduce your lifetime tax burden",
-        href: "/services/tax-planning",
-      },
-      {
-        label: "Tax Preparation",
-        description: "Returns prepared by professionals who know your story",
-        href: "/services/tax-preparation",
-      },
-      {
-        label: "Equity Compensation",
-        description: "Stock options and equity comp planning with tax coordination",
-        href: "/services/equity-compensation",
-      },
-    ],
-  },
-  {
-    label: "About",
-    hasDropdown: true,
-    items: [
-      {
-        label: "Why United",
-        description: "What sets us apart as your financial partner",
-        href: "/why-united",
-      },
-      {
-        label: "Our Fees",
-        description: "Transparent pricing with no hidden fees",
-        href: "/fees",
-      },
-      {
-        label: "About Us",
-        description: "Our story, team, and approach",
-        href: "/about",
-      },
-      {
-        label: "Meet The Team",
-        description: "The people behind your financial plan",
-        href: "/team",
-      },
-    ],
-  },
-  {
-    label: "Client Testimonials",
-    href: "/testimonials",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
-];
+import { siteConfig as config } from "@/lib/site-config";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -106,7 +23,7 @@ function HamburgerIcon({
   isOpen: boolean;
   color?: string;
 }): ReactNode {
-  return (
+  return ( 
     <div className="w-6 h-4 relative flex flex-col justify-between cursor-pointer">
       <motion.span
         className="block h-0.5 w-full origin-center rounded-full"
@@ -161,7 +78,7 @@ function DesktopDropdown({
     }
   }, [isOpen]);
 
-  return (
+  return ( 
     <div className="relative" onMouseEnter={onOpen} onMouseLeave={onClose}>
       <button
         ref={buttonRef}
@@ -222,7 +139,7 @@ function DesktopDropdown({
   );
 }
 
-function MobileExpandable({
+function MobileExpandable({ 
   label,
   items,
   isExpanded,
@@ -297,7 +214,7 @@ export function Header(): ReactNode {
       clearTimeout(closeTimeoutRef.current);
       closeTimeoutRef.current = null;
     }
-    setActiveMenu(label);
+    setActiveMenu(label); 
   };
 
   const handleMenuClose = () => {
@@ -343,8 +260,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo-white-cropped.png"
-                alt="United Financial Planning Group"
+                src={config.logoUrl || "/logo-white-cropped.png"}
+                alt={config.firmName}
                 width={121}
                 height={63}
                 className="h-14 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -360,8 +277,8 @@ export function Header(): ReactNode {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease }}
           >
-            {navLinks.map((link) =>
-              link.hasDropdown && link.items ? (
+            {config.navigation.map((link) =>
+              link.hasDropdown && link.items ? ( 
                 <DesktopDropdown
                   key={link.label}
                   label={link.label}
@@ -370,7 +287,7 @@ export function Header(): ReactNode {
                   onOpen={() => handleMenuOpen(link.label)}
                   onClose={handleMenuClose}
                 />
-              ) : (
+              ) : ( 
                 <Link
                   key={link.label}
                   href={link.href ?? "#"}
@@ -389,7 +306,7 @@ export function Header(): ReactNode {
             transition={{ duration: 0.5, delay: 0.3, ease }}
           >
             <Link
-              href="/contact"
+              href={config.calendarUrl || "/contact"}
               className="group inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold tracking-tight text-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
               Schedule a Conversation
@@ -412,8 +329,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo-white-cropped.png"
-                alt="United Financial Planning Group"
+                src={config.logoUrl || "/logo-white-cropped.png"}
+                alt={config.firmName}
                 width={121}
                 height={63}
                 className="h-12 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -453,14 +370,14 @@ export function Header(): ReactNode {
               >
                 <Image
                   src="/logo-black-cropped.png"
-                  alt="United Financial Planning Group"
+                  alt={config.firmName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 dark:hidden [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.55))]"
                 />
                 <Image
-                  src="/logo-white-cropped.png"
-                  alt="United Financial Planning Group"
+                  src={config.logoUrl || "/logo-white-cropped.png"}
+                  alt={config.firmName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 hidden dark:block [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -479,8 +396,8 @@ export function Header(): ReactNode {
               className="px-6 py-4 overflow-y-auto max-h-[calc(100vh-4rem)]"
               aria-label="Mobile navigation"
             >
-              {navLinks.map((link) =>
-                link.hasDropdown && link.items ? (
+              {config.navigation.map((link) =>
+                link.hasDropdown && link.items ? ( 
                   <MobileExpandable
                     key={link.label}
                     label={link.label}
@@ -493,7 +410,7 @@ export function Header(): ReactNode {
                     }
                     onClose={closeMobileMenu}
                   />
-                ) : (
+                ) : ( 
                   <Link
                     key={link.label}
                     href={link.href ?? "#"}
@@ -507,7 +424,7 @@ export function Header(): ReactNode {
 
               <div className="flex flex-col gap-3 pt-6">
                 <Link
-                  href="/contact"
+                  href={config.calendarUrl || "/contact"}
                   className="w-full py-3 text-center text-sm font-medium tracking-tight text-background bg-foreground rounded-full hover:bg-foreground/90 transition-colors"
                   onClick={closeMobileMenu}
                 >

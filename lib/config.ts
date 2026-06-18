@@ -6,9 +6,11 @@
  * United Financial Planning Group - brand configuration
  */
 
+import siteConfigData from "../data/site-config.json";
+
 export const siteConfig = {
-  name: "United Financial Planning Group",
-  tagline: "Financial Planning, Tax, & Investment Management Under One Roof",
+  name: siteConfigData.firmName,
+  tagline: siteConfigData.tagline,
   description:
     "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: "https://unitedfpg.com",
@@ -38,7 +40,7 @@ export const heroConfig = {
   },
 } as const;
 
-export const featureCardsConfig = {
+export const featureCardsConfig = { 
   title: "Sound Familiar?",
 } as const;
 
