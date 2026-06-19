@@ -12,6 +12,7 @@ import {
   type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
+import siteConfig from "../data/site-config.json";
 
 type NavItem = {
   label: string;
@@ -21,7 +22,7 @@ type NavItem = {
 };
 
 const navLinks: NavItem[] = [
-  {
+  { 
     label: "Services",
     hasDropdown: true,
     items: [
@@ -106,7 +107,7 @@ function HamburgerIcon({
   isOpen: boolean;
   color?: string;
 }): ReactNode {
-  return (
+  return ( 
     <div className="w-6 h-4 relative flex flex-col justify-between cursor-pointer">
       <motion.span
         className="block h-0.5 w-full origin-center rounded-full"
@@ -161,7 +162,7 @@ function DesktopDropdown({
     }
   }, [isOpen]);
 
-  return (
+  return ( 
     <div className="relative" onMouseEnter={onOpen} onMouseLeave={onClose}>
       <button
         ref={buttonRef}
@@ -180,7 +181,7 @@ function DesktopDropdown({
       {typeof window !== "undefined" &&
         createPortal(
           <AnimatePresence>
-            {isOpen && position && (
+            {isOpen && position && ( 
               <div
                 className="fixed pt-2 z-2000"
                 style={{
@@ -235,7 +236,7 @@ function MobileExpandable({
   onToggle: () => void;
   onClose: () => void;
 }): ReactNode {
-  return (
+  return ( 
     <div className="border-b border-foreground/10">
       <button
         className="flex items-center justify-between py-4 w-full text-base font-medium text-foreground"
@@ -254,7 +255,7 @@ function MobileExpandable({
         </motion.div>
       </button>
       <AnimatePresence>
-        {isExpanded && (
+        {isExpanded && ( 
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -314,7 +315,7 @@ export function Header(): ReactNode {
     };
   }, []);
 
-  return (
+  return ( 
     <>
       <div
         className="fixed top-0 left-0 w-full h-25 z-1001 pointer-events-none"
@@ -343,8 +344,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo-white-cropped.png"
-                alt="United Financial Planning Group"
+                src={siteConfig.logoUrl}
+                alt={siteConfig.firmName}
                 width={121}
                 height={63}
                 className="h-14 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -361,7 +362,7 @@ export function Header(): ReactNode {
             transition={{ duration: 0.5, delay: 0.2, ease }}
           >
             {navLinks.map((link) =>
-              link.hasDropdown && link.items ? (
+              link.hasDropdown && link.items ? ( 
                 <DesktopDropdown
                   key={link.label}
                   label={link.label}
@@ -370,7 +371,7 @@ export function Header(): ReactNode {
                   onOpen={() => handleMenuOpen(link.label)}
                   onClose={handleMenuClose}
                 />
-              ) : (
+              ) : ( 
                 <Link
                   key={link.label}
                   href={link.href ?? "#"}
@@ -412,8 +413,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src="/logo-white-cropped.png"
-                alt="United Financial Planning Group"
+                src={siteConfig.logoUrl}
+                alt={siteConfig.firmName}
                 width={121}
                 height={63}
                 className="h-12 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -436,7 +437,7 @@ export function Header(): ReactNode {
       </header>
 
       <AnimatePresence>
-        {mobileMenuOpen && (
+        {mobileMenuOpen && ( 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -453,14 +454,14 @@ export function Header(): ReactNode {
               >
                 <Image
                   src="/logo-black-cropped.png"
-                  alt="United Financial Planning Group"
+                  alt={siteConfig.firmName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 dark:hidden [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.55))]"
                 />
                 <Image
-                  src="/logo-white-cropped.png"
-                  alt="United Financial Planning Group"
+                  src={siteConfig.logoUrl}
+                  alt={siteConfig.firmName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 hidden dark:block [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -480,7 +481,7 @@ export function Header(): ReactNode {
               aria-label="Mobile navigation"
             >
               {navLinks.map((link) =>
-                link.hasDropdown && link.items ? (
+                link.hasDropdown && link.items ? ( 
                   <MobileExpandable
                     key={link.label}
                     label={link.label}
@@ -493,7 +494,7 @@ export function Header(): ReactNode {
                     }
                     onClose={closeMobileMenu}
                   />
-                ) : (
+                ) : ( 
                   <Link
                     key={link.label}
                     href={link.href ?? "#"}
