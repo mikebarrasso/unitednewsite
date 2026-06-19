@@ -1,3 +1,5 @@
+import siteConfigData from "../data/site-config.json";
+
 /**
  * ============================================================================
  * SITE CONFIGURATION
@@ -7,12 +9,12 @@
  */
 
 export const siteConfig = {
-  name: "United Financial Planning Group",
-  tagline: "Financial Planning, Tax, & Investment Management Under One Roof",
+  name: siteConfigData.firmName,
+  tagline: siteConfigData.tagline,
   description:
-    "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
+    `${siteConfigData.firmName} is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.`,
   url: "https://unitedfpg.com",
-  twitter: "@unitedfpg",
+  twitter: siteConfigData.socialLinks.find(s => s.platform === "twitter")?.url || "@unitedfpg",
 
   nav: {
     cta: {
