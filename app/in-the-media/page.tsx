@@ -63,7 +63,15 @@ export default function InTheMediaPage(): ReactNode {
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed max-w-2xl">
                 Our team&apos;s expertise has been recognized by leading
                 financial publications. Explore our media appearances and the
-                insights we&apos;ve shared with national audiences.
+                insights we&apos;ve shared with national audiences.{" "}
+                If you&apos;re looking for a{" "}
+                <Link
+                  href="/financial-advisor-nyc"
+                  className="underline underline-offset-2 hover:text-foreground transition-colors"
+                >
+                  fee-only financial advisor in New York City
+                </Link>
+                , learn more about how our team serves NYC professionals and families.
               </p>
             </div>
 
