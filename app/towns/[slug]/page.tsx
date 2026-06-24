@@ -10,7 +10,7 @@ import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import { towns, getTownBySlug, getNearbyTowns } from "@/lib/towns";
 import { ArrowRight, MapPin } from "lucide-react";
 import type { Metadata } from "next";
@@ -44,7 +44,7 @@ function TownSchema({ slug }: { slug: string }) {
   const town = getTownBySlug(slug);
   if (!town) return null;
 
-  const baseUrl = "https://unitedfpg.com";
+  const baseUrl = siteConfig.url;
   const pageUrl = `${baseUrl}/financial-advisor-${town.slug}`;
 
   const officeAddress =

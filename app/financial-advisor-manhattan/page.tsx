@@ -10,7 +10,7 @@ import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -22,12 +22,14 @@ export const metadata: Metadata = createMetadata({
 });
 
 function ManhattanSchema() {
+  const baseUrl = siteConfig.url;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: "United Financial Planning Group - Manhattan",
-    url: "https://unitedfpg.com/financial-advisor-manhattan",
-    logo: "https://unitedfpg.com/logo-black-cropped.png",
+    url: `${baseUrl}/financial-advisor-manhattan`,
+    logo: `${baseUrl}/logo-black-cropped.png`,
     description:
       "Fee-only financial advisory firm in Midtown Manhattan. CFP® professionals and CPAs providing integrated financial planning, equity compensation planning, investment management, and tax services for NYC professionals.",
     telephone: "(631) 234-0871",
@@ -65,7 +67,7 @@ function ManhattanSchema() {
     parentOrganization: {
       "@type": "Organization",
       name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      url: baseUrl,
     },
   };
 
@@ -77,13 +79,13 @@ function ManhattanSchema() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://unitedfpg.com",
+        item: baseUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Financial Advisor in Manhattan",
-        item: "https://unitedfpg.com/financial-advisor-manhattan",
+        item: `${baseUrl}/financial-advisor-manhattan`,
       },
     ],
   };

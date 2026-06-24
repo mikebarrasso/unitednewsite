@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -16,12 +16,13 @@ export const metadata: Metadata = createMetadata({
 function ReviewsSchema() {
   // Reference the same Organization @id minted on the home page so search
   // engines treat the rating as a property of the canonical entity.
+  const baseUrl = siteConfig.url;
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "@id": "https://unitedfpg.com/#organization",
+    "@id": `${baseUrl}/#organization`,
     name: "United Financial Planning Group",
-    url: "https://unitedfpg.com",
+    url: baseUrl,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/metadata";
 import type { ReactNode } from "react";
 
 type PersonSchemaProps = {
@@ -31,16 +32,16 @@ export function PersonSchema({
     name,
     jobTitle,
     description,
-    url: `https://unitedfpg.com${url}`,
+    url: `${siteConfig.url}${url}`,
     worksFor: {
       "@type": "Organization",
       name: worksFor,
-      url: "https://unitedfpg.com",
+      url: siteConfig.url,
     },
   };
 
   if (image) {
-    schema.image = `https://unitedfpg.com${image}`;
+    schema.image = `${siteConfig.url}${image}`;
   }
 
   if (credentials && credentials.length > 0) {

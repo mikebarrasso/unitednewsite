@@ -10,7 +10,7 @@ import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -22,12 +22,14 @@ export const metadata: Metadata = createMetadata({
 });
 
 function NYCSchema() {
+  const baseUrl = siteConfig.url;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: "United Financial Planning Group - New York City",
-    url: "https://unitedfpg.com/financial-advisor-nyc",
-    logo: "https://unitedfpg.com/logo-black-cropped.png",
+    url: `${baseUrl}/financial-advisor-nyc`,
+    logo: `${baseUrl}/logo-black-cropped.png`,
     description:
       "Fee-only financial advisory firm serving New York City. CFP® professionals, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services across all five boroughs and the NYC metro area.",
     telephone: "(631) 234-0871",
@@ -78,7 +80,7 @@ function NYCSchema() {
     parentOrganization: {
       "@type": "Organization",
       name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      url: baseUrl,
     },
   };
 
@@ -90,13 +92,13 @@ function NYCSchema() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://unitedfpg.com",
+        item: baseUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Financial Advisor in NYC",
-        item: "https://unitedfpg.com/financial-advisor-nyc",
+        item: `${baseUrl}/financial-advisor-nyc`,
       },
     ],
   };
