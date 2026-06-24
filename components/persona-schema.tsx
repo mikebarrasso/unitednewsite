@@ -1,5 +1,6 @@
 import type { Persona } from "@/lib/personas";
 import { siteConfig } from "@/lib/metadata";
+import { createOfferCatalog, officeAddresses } from "@/lib/schema";
 import type { ReactNode } from "react";
 
 export function PersonaSchema({ persona }: { persona: Persona }): ReactNode {
@@ -14,25 +15,8 @@ export function PersonaSchema({ persona }: { persona: Persona }): ReactNode {
     description: persona.metaDescription,
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
-    address: [
-      {
-        "@type": "PostalAddress",
-        streetAddress: "350 Motor Parkway, Suite 300",
-        addressLocality: "Hauppauge",
-        addressRegion: "NY",
-        postalCode: "11788",
-        addressCountry: "US",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "1979 Marcus Avenue, Suite 210",
-        addressLocality: "Lake Success",
-        addressRegion: "NY",
-        postalCode: "11042",
-        addressCountry: "US",
-      },
-    ],
-    serviceType: persona.serviceTypes,
+    address: officeAddresses,
+    hasOfferCatalog: createOfferCatalog(persona.serviceTypes),
     priceRange: "$$",
     parentOrganization: {
       "@type": "Organization",

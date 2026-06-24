@@ -11,6 +11,7 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { createMetadata } from "@/lib/metadata";
+import { createOfferCatalog } from "@/lib/schema";
 import { towns, getTownBySlug, getNearbyTowns } from "@/lib/towns";
 import { ArrowRight, MapPin } from "lucide-react";
 import type { Metadata } from "next";
@@ -86,7 +87,7 @@ function TownSchema({ slug }: { slug: string }) {
       "@type": a.type,
       name: a.name,
     })),
-    serviceType: town.primaryServices,
+    hasOfferCatalog: createOfferCatalog(town.primaryServices),
     priceRange: "$$",
     parentOrganization: {
       "@type": "Organization",

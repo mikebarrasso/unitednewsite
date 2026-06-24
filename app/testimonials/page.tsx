@@ -3,6 +3,7 @@ import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { createMetadata } from "@/lib/metadata";
+import { officeAddresses } from "@/lib/schema";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -22,6 +23,7 @@ function ReviewsSchema() {
     "@id": "https://unitedfpg.com/#organization",
     name: "United Financial Planning Group",
     url: "https://unitedfpg.com",
+    address: officeAddresses,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",

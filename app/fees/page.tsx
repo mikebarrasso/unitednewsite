@@ -8,6 +8,7 @@ import {
 } from "@/components/fees-content";
 import { Footer } from "@/components/footer";
 import { createMetadata, siteConfig } from "@/lib/metadata";
+import { officeAddresses } from "@/lib/schema";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -41,6 +42,7 @@ function FeesPageSchema() {
     url: `${siteConfig.url}/fees`,
     description:
       "Transparent, fee-only pricing with no hidden fees. Comprehensive financial planning, tax planning, and wealth management. See exactly what you'll pay before we start working together.",
+    address: officeAddresses,
     priceRange: "$$",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
