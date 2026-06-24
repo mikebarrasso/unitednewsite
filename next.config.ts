@@ -304,7 +304,7 @@ const legacyRedirects = [
 
 const nextConfig: NextConfig = {
   
-  allowedDevOrigins: ["*.vercel.run", "*.vercel.app", "*.modal.run", "*.modal.host"],
+  allowedDevOrigins: ["*.vercel.run", "*.vercel.app", "*.modal.run", "*.modal.host", "*.w.modal.run", "*.w.modal.host"],
 trailingSlash: false,
   productionBrowserSourceMaps: false,
   // Remove console.log in production
