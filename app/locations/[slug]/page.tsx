@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import { locations, getLocationBySlug, getOtherLocations } from "@/lib/locations";
 import { ServiceHero } from "@/components/service-hero";
 import { LocationContent } from "@/components/location-content";
@@ -49,18 +49,19 @@ const geoCoordinates: Record<string, { lat: number; lng: number }> = {
 
 function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof getLocationBySlug>> }) {
   const coords = geoCoordinates[location.slug];
+  const baseUrl = siteConfig.url;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: `United Financial Planning Group - ${location.city}`,
     description: location.metaDescription,
-    url: `https://unitedfpg.com/locations/${location.slug}`,
+    url: `${baseUrl}/locations/${location.slug}`,
     telephone: location.phone,
     faxNumber: location.fax,
     email: "info@unitedfpg.com",
-    image: "https://unitedfpg.com/logo-black-cropped.png",
-    logo: "https://unitedfpg.com/logo-black-cropped.png",
+    image: `${baseUrl}/logo-black-cropped.png`,
+    logo: `${baseUrl}/logo-black-cropped.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: location.address,
@@ -91,9 +92,9 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
     ],
     parentOrganization: {
       "@type": "Organization",
-      "@id": "https://unitedfpg.com/#organization",
+      "@id": `${baseUrl}/#organization`,
       name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      url: baseUrl,
     },
     areaServed: [
       {
@@ -136,6 +137,8 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
 }
 
 function BreadcrumbSchema({ location }: { location: NonNullable<ReturnType<typeof getLocationBySlug>> }) {
+  const baseUrl = siteConfig.url;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -144,19 +147,19 @@ function BreadcrumbSchema({ location }: { location: NonNullable<ReturnType<typeo
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://unitedfpg.com",
+        item: baseUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Locations",
-        item: "https://unitedfpg.com/locations",
+        item: `${baseUrl}/locations`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: `${location.city}, ${location.stateAbbr}`,
-        item: `https://unitedfpg.com/locations/${location.slug}`,
+        item: `${baseUrl}/locations/${location.slug}`,
       },
     ],
   };

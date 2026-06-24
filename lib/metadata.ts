@@ -11,7 +11,7 @@ export const siteConfig = {
   authors: [
     {
       name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      url: "https://www.unitedfpg.com",
     },
   ],
   keywords: [

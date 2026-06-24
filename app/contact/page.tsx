@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { Footer } from "@/components/footer";
 import { TallyContactForm } from "@/components/tally-contact-form";
 import { MapPin, Mail, Phone, Printer } from "lucide-react";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -18,7 +18,7 @@ function ContactSchema() {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: "United Financial Planning Group",
-    url: "https://unitedfpg.com",
+    url: siteConfig.url,
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     faxNumber: "(631) 584-3763",

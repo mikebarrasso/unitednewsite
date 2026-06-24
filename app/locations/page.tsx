@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/breadcrumb";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import { locations } from "@/lib/locations";
 import { Footer } from "@/components/footer";
 import { FinalCTA } from "@/components/final-cta";
@@ -21,7 +21,7 @@ function LocationsSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "United Financial Planning Group",
-    url: "https://unitedfpg.com",
+    url: siteConfig.url,
     location: locations.map((loc) => ({
       "@type": "Place",
       name: `United Financial Planning Group - ${loc.city}`,

@@ -9,7 +9,7 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { faqItems } from "@/lib/faq-data";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -22,16 +22,17 @@ export const metadata: Metadata = createMetadata({
 });
 
 function OrganizationSchema() {
-  const orgId = "https://unitedfpg.com/#organization";
+  const baseUrl = siteConfig.url;
+  const orgId = `${baseUrl}/#organization`;
 
   // Single canonical Organization, with each office expressed as a separate
   // FinancialService branch so Google can model them as discrete locations.
   const branches = [
     {
       "@type": "FinancialService",
-      "@id": "https://unitedfpg.com/locations/hauppauge-ny#financialservice",
+      "@id": `${baseUrl}/locations/hauppauge-ny#financialservice`,
       name: "United Financial Planning Group — Hauppauge",
-      url: "https://unitedfpg.com/locations/hauppauge-ny",
+      url: `${baseUrl}/locations/hauppauge-ny`,
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
       address: {
@@ -45,9 +46,9 @@ function OrganizationSchema() {
     },
     {
       "@type": "FinancialService",
-      "@id": "https://unitedfpg.com/locations/manhattan-ny#financialservice",
+      "@id": `${baseUrl}/locations/manhattan-ny#financialservice`,
       name: "United Financial Planning Group — Manhattan",
-      url: "https://unitedfpg.com/locations/manhattan-ny",
+      url: `${baseUrl}/locations/manhattan-ny`,
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
       address: {
@@ -61,9 +62,9 @@ function OrganizationSchema() {
     },
     {
       "@type": "FinancialService",
-      "@id": "https://unitedfpg.com/locations/lake-success-ny#financialservice",
+      "@id": `${baseUrl}/locations/lake-success-ny#financialservice`,
       name: "United Financial Planning Group — Lake Success",
-      url: "https://unitedfpg.com/locations/lake-success-ny",
+      url: `${baseUrl}/locations/lake-success-ny`,
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
       address: {
@@ -82,8 +83,8 @@ function OrganizationSchema() {
     "@type": "FinancialService",
     "@id": orgId,
     name: "United Financial Planning Group",
-    url: "https://unitedfpg.com",
-    logo: "https://unitedfpg.com/logo-black-cropped.png",
+    url: baseUrl,
+    logo: `${baseUrl}/logo-black-cropped.png`,
     description:
       "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
     telephone: "(631) 234-0871",

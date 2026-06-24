@@ -10,7 +10,7 @@ import { Features2 } from "@/components/blocks/features-2";
 import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -22,12 +22,14 @@ export const metadata: Metadata = createMetadata({
 });
 
 function LongIslandSchema() {
+  const baseUrl = siteConfig.url;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: "United Financial Planning Group - Long Island",
-    url: "https://unitedfpg.com/financial-advisor-long-island",
-    logo: "https://unitedfpg.com/logo-black-cropped.png",
+    url: `${baseUrl}/financial-advisor-long-island`,
+    logo: `${baseUrl}/logo-black-cropped.png`,
     description:
       "Fee-only financial advisory firm serving Long Island families and professionals. CFP® professionals, CPAs, and Enrolled Agents providing integrated financial planning, investment management, and tax services from offices in Hauppauge and Lake Success.",
     telephone: "(631) 234-0871",
@@ -81,7 +83,7 @@ function LongIslandSchema() {
     parentOrganization: {
       "@type": "Organization",
       name: "United Financial Planning Group",
-      url: "https://unitedfpg.com",
+      url: baseUrl,
     },
   };
 
@@ -93,13 +95,13 @@ function LongIslandSchema() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://unitedfpg.com",
+        item: baseUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Financial Advisor on Long Island",
-        item: "https://unitedfpg.com/financial-advisor-long-island",
+        item: `${baseUrl}/financial-advisor-long-island`,
       },
     ],
   };
