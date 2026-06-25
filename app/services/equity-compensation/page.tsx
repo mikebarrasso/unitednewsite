@@ -10,6 +10,8 @@ import {
   WhyDifferentSection,
   EquityStrategyGrid,
   IntegrationSection,
+  ExecutiveSection,
+  StartupSection,
   WhoSection,
   EquityCompCTA,
 } from "@/components/equity-comp-content";
@@ -54,6 +56,10 @@ export default function EquityCompensationPage(): ReactNode {
         <EquityStrategyGrid />
 
         <IntegrationSection />
+
+        <ExecutiveSection />
+
+        <StartupSection />
 
         <WhoSection />
 

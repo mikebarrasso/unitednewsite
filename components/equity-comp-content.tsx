@@ -21,6 +21,7 @@ import {
   Rocket,
   PieChart,
   CreditCard,
+  Gem,
   CheckCircle,
   XCircle,
 } from "lucide-react";
@@ -317,6 +318,116 @@ export function IntegrationSection() {
               <p className="text-sm text-emerald-700 dark:text-emerald-400 font-semibold">One team. Every angle. Before you act.</p>
             </motion.div>
           </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ═══════ For Corporate Executives ═══════ */
+
+const executiveItems = [
+  {
+    icon: PieChart,
+    title: "Concentrated position risk",
+    body: "When a single stock makes up most of your net worth, the company's earnings report moves your retirement date. We build a multi-year diversification schedule that helps coordinate sell-downs with your tax picture and the rest of your plan, rather than reacting to each vest as it arrives.",
+  },
+  {
+    icon: Briefcase,
+    title: "ISO and NSO coordination",
+    body: "Incentive stock options and non-qualified options are taxed under different rules and at different moments. We model each grant against your other income and your AMT crossover, so the sequence and the number of shares exercised this year versus next is a decision, not a guess.",
+  },
+  {
+    icon: DollarSign,
+    title: "RSU vesting and sell strategy",
+    body: "RSUs are taxed as ordinary income at vest, whether you sell or hold. We help you decide what to sell at vest to cover the tax and fund your plan, and what to hold, instead of defaulting to hold-everything and quietly building an unplanned concentrated position.",
+  },
+  {
+    icon: FileSpreadsheet,
+    title: "Rule 10b5-1 trading plans",
+    body: "As an insider, trading windows and Section 16 reporting restrict when you can act. A properly structured Rule 10b5-1 plan lets you pre-set a diversification program in advance, at a time you're not in possession of material non-public information. We help coordinate the plan with your vesting calendar and your broader diversification timeline.",
+  },
+];
+
+export function ExecutiveSection() {
+  return (
+    <section className="relative w-full bg-background py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-3xl mb-12">
+          <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-[#1e6eae] font-medium mb-4">For Corporate Executives</motion.p>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground mb-6">
+            Equity Compensation Planning for Corporate Executives
+          </motion.h2>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            New York executives rarely hold one grant type. ISOs, NSOs, and RSUs vest on overlapping schedules, insiders can&apos;t sell when the news breaks, and most of your net worth sits in a single ticker. We plan across all of it together.
+          </motion.p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          {executiveItems.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="p-6 sm:p-8 rounded-2xl bg-card border border-border">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#1e6eae]/10 flex items-center justify-center mb-5"><Icon className="w-6 h-6 text-[#1e6eae]" /></div>
+                <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ═══════ For Startup Employees & Early Hires ═══════ */
+
+const startupItems = [
+  {
+    icon: Calculator,
+    title: "ISO exercise timing",
+    body: "Exercising incentive stock options triggers AMT, not just regular tax, and waiting too long risks a disqualified disposition that converts favorable treatment into ordinary income. We model the spread, your AMT exposure, and the holding-period clock so you exercise in a year that actually makes sense for your income.",
+  },
+  {
+    icon: Gem,
+    title: "QSBS planning",
+    body: "Qualified Small Business Stock may exclude a significant portion of your gain from federal capital gains tax if you hold the shares for more than five years and meet the qualifying-issuer rules. We help track the holding period, confirm eligibility, and structure around the exclusion limit before a liquidity event closes the window.",
+  },
+  {
+    icon: Rocket,
+    title: "Double-trigger RSU vesting",
+    body: "Many pre-IPO grants vest on two triggers: time and a liquidity event like an IPO or acquisition. We help you understand what your grant actually requires to convert, model the tax hit at the moment the second trigger fires, and plan your cash and sell decisions so you&apos;re not making them in the first weeks after the lockup lifts.",
+  },
+  {
+    icon: Building2,
+    title: "Early-hire concentration and liquidity",
+    body: "Early employees often hold a meaningful share of their net worth in private stock they can&apos;t sell. We help you plan around illiquidity, evaluate secondary-sale and tender-offer opportunities as they arise, and line up the tax and diversification steps so a liquidity event turns into a plan instead of a windfall.",
+  },
+];
+
+export function StartupSection() {
+  return (
+    <section className="relative w-full bg-muted/30 py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-3xl mb-12">
+          <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-[#1e6eae] font-medium mb-4">For Startup Employees &amp; Early Hires</motion.p>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-foreground mb-6">
+            Equity Compensation Planning for Startup Employees
+          </motion.h2>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            Startup equity rewards you for staying, but the tax rules punish timing mistakes quietly. ISO exercises, QSBS holding periods, and double-trigger vesting each have windows that close without warning. We help you plan them before the liquidity event, not after.
+          </motion.p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          {startupItems.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="p-6 sm:p-8 rounded-2xl bg-card border border-border">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#1e6eae]/10 flex items-center justify-center mb-5"><Icon className="w-6 h-6 text-[#1e6eae]" /></div>
+                <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
