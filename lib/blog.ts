@@ -118,6 +118,116 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "equity-compensation-planning-startup-employees",
+    title: "Equity Compensation Planning for Startup Employees",
+    date: "2026-06-05",
+    category: "Equity Compensation",
+    excerpt:
+      "A comprehensive guide for startup employees on navigating ISOs, NSOs, RSUs, AMT, and concentration risk to build and protect wealth.",
+    author: "United Financial Planning Group",
+    type: "blog",
+    relatedServices: [
+      "/services/equity-compensation",
+      "/services/tax-planning",
+      "/services/financial-planning",
+      "/services/investment-management",
+    ],
+    relatedSlugs: [
+      "recession-2026-new-york-investors",
+      "investment-management-strategies-high-net-worth",
+      "why-fee-only-fiduciary-financial-planner",
+    ],
+    content: `<h2>Navigating the Wealth: Equity Compensation Planning for Startup Employees</h2>
+
+<p>Joining a startup is an exciting venture. Beyond the mission and the fast-paced culture, one of the most compelling aspects of startup employment is <strong>equity compensation</strong>. Whether you are an early-stage employee or joining a late-stage scale-up, equity represents a unique vehicle for building life-changing wealth.</p>
+
+<p>However, startup equity is also notoriously complex. Between <strong>ISOs, NSOs, RSUs, AMT, 83(b) elections, and liquidity constraints</strong>, it is easy to make costly mistakes that can erode your hard-earned gains.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, we specialize in integrating tax planning, investment management, and equity compensation under one roof. Here is our comprehensive guide on how startup employees can navigate their equity compensation to build and protect their wealth.</p>
+
+<h2>1. Understand Your Equity Type</h2>
+
+<p>The first step in equity compensation planning is knowing exactly what you hold. Startups generally grant equity in one of three forms:</p>
+
+<h3>A. Incentive Stock Options (ISOs)</h3>
+
+<p>ISOs are highly tax-advantaged but come with strict regulatory rules.</p>
+
+<ul>
+<li><strong>The Benefit:</strong> If you hold the shares for at least two years from the grant date and one year from the exercise date (known as a <strong>Qualifying Disposition</strong>), your gains are taxed at the lower <strong>Long-Term Capital Gains</strong> rate rather than your ordinary income tax rate.</li>
+<li><strong>The Pitfall:</strong> When you exercise ISOs, the spread between the fair market value (the 409A valuation) and your strike price is treated as income for <strong>Alternative Minimum Tax (AMT)</strong> purposes. This can trigger a massive tax bill <em>before</em> you can actually sell your shares for cash.</li>
+</ul>
+
+<h3>B. Non-Qualified Stock Options (NSOs)</h3>
+
+<p>NSOs are simpler than ISOs but are taxed more aggressively.</p>
+
+<ul>
+<li><strong>The Benefit:</strong> No AMT calculation is required.</li>
+<li><strong>The Pitfall:</strong> When you exercise NSOs, the spread is immediately taxed as ordinary income, and your employer is required to withhold taxes (which may or may not cover your actual liability). Any subsequent growth is taxed as capital gains when you sell.</li>
+</ul>
+
+<h3>C. Restricted Stock Units (RSUs)</h3>
+
+<p>Typically awarded by later-stage startups, RSUs are a promise to deliver shares once certain vesting conditions are met.</p>
+
+<ul>
+<li><strong>The Double-Trigger Pitfall:</strong> Many private startups use &ldquo;double-trigger&rdquo; RSUs. They vest only after you meet a time-based condition <em>and</em> the company goes through a liquidity event (like an IPO or acquisition). When that event occurs, all of your accumulated RSUs vest at once, potentially pushing you into the highest income tax bracket overnight.</li>
+</ul>
+
+<h2>2. Key Strategies for Private Startup Equity</h2>
+
+<p>To maximize your wealth, you must proactively manage your equity before, during, and after vesting.</p>
+
+<h3>The 83(b) Election (For Early-Stage Grants)</h3>
+
+<p>If you receive stock options or restricted stock at a very early stage (when the 409A valuation is close to zero), you can file an <strong>83(b) election</strong> with the IRS within 30 days of the grant.</p>
+
+<ul>
+<li>This election allows you to pay taxes on the current value of the stock today (which is minimal) rather than when it vests in the future. All future growth is then taxed as capital gains.</li>
+<li><strong>Warning:</strong> If the startup fails, you cannot recover the taxes paid upfront. It is a calculated risk that requires expert guidance.</li>
+</ul>
+
+<h3>The Exercise Strategy: Cash Flow &amp; AMT Planning</h3>
+
+<p>Exercising stock options requires cash&mdash;both to pay the strike price and to cover potential tax liabilities (especially AMT for ISOs).</p>
+
+<ul>
+<li><strong>Early Exercise:</strong> Some startups allow you to exercise options before they vest. If paired with an 83(b) election, this can dramatically reduce your tax burden.</li>
+<li><strong>Vesting Schedule Alignment:</strong> We help clients map out their exercise schedule to spread out AMT liability across multiple tax years, avoiding a single, overwhelming tax event.</li>
+</ul>
+
+<h2>3. Mitigating the &ldquo;Concentrated Position&rdquo; Risk</h2>
+
+<p>One of the biggest financial planning challenges for startup employees is <strong>concentration risk</strong>. It is easy to become emotionally attached to the company you are helping to build, but having 50%, 80%, or even 100% of your net worth tied up in a single, illiquid stock is dangerous.</p>
+
+<p>If the company thrives, you win big. But if the company struggles or fails, you lose both your primary income source and your investment portfolio.</p>
+
+<h3>The 10% Rule of Thumb</h3>
+
+<p>As a general rule, we advise clients to limit their exposure to any single stock to <strong>no more than 10% to 15% of their total net worth</strong>. Once your startup stock vests and has liquidity, implementing a disciplined, automated sell-off strategy (such as a 10b5-1 plan for executives) allows you to systematically diversify your wealth into a balanced, institutional-grade investment portfolio.</p>
+
+<h2>4. How We Help: The United Financial Advantage</h2>
+
+<p>Many financial advisors only look at your investments. Many tax professionals only look at your tax return.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, we believe that equity planning cannot be done in a vacuum. By bringing <strong>tax planning, investment management, and equity compensation</strong> under one roof, we provide an integrated strategy:</p>
+
+<ol>
+<li><strong>Tax Projection Modeling:</strong> We simulate ISO exercise scenarios to calculate your exact AMT exposure and determine the most cash-flow-efficient times to exercise.</li>
+<li><strong>Liquidity Planning:</strong> We help you prepare for lock-up periods and execute post-IPO diversification plans.</li>
+<li><strong>W-2 and Equity Optimization:</strong> We ensure your salary, bonus, and equity are fully optimized for your long-term personal wealth goals.</li>
+</ol>
+
+<h2>Ready to Optimize Your Startup Equity?</h2>
+
+<p>Whether you hold ISOs, NSOs, or RSUs, a proactive plan is the difference between a massive tax bill and generational wealth.</p>
+
+<p><a href="/contact"><strong>Schedule a complimentary equity consultation with our team today.</strong></a></p>
+
+<p><em>Disclaimer: United Financial Planning Group is a registered investment advisor. This material is for educational purposes and does not constitute personalized tax or investment advice. Consult a tax professional regarding your specific situation.</em></p>`,
+  },
+  {
     slug: "recession-2026-new-york-investors",
     title: "Recession 2026: What New York Investors Should Actually Do",
     date: "2026-04-18",
