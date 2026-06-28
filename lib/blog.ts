@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     ],
     content: `<p>Recession concerns have moved to the front of the conversation in 2026. The questions we are hearing from clients and prospective clients &mdash; <em>Will there be a recession this year? Should I sell my stocks? How will tariffs affect my portfolio?</em> &mdash; are reasonable ones. Tariff policy, growth concerns, and persistent uncertainty about inflation and interest rates have made the path forward feel less predictable than it did even a year ago.</p>
 
-<p>I have been advising clients through markets since 1991. I have lived through the early-1990s recession, the dot-com bust, the 2008&ndash;2009 financial crisis, the 2020 pandemic shock, and the 2022 drawdown. Every cycle has its own narrative. The frameworks we have found most useful across those cycles have not been about predicting which narrative wins. They have been about controlling what is actually controllable, in the context of a written plan.</p>
+<p>I have lived through the early-1990s recession, the dot-com bust, the 2008&ndash;2009 financial crisis, the 2020 pandemic shock, and the 2022 drawdown. Every cycle has its own narrative. The frameworks we have found most useful across those cycles have not been about predicting which narrative wins. They have been about controlling what is actually controllable, in the context of a written plan.</p>
 
 <p>This piece is intended as a calm framework for thinking about recession risk in 2026, not a prediction. Whenever something here touches on a personal financial decision, the appropriate next step is a conversation with a qualified advisor about your specific situation.</p>
 
