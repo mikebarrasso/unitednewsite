@@ -121,6 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: "equity-compensation-planning-startup-employees",
     title: "Equity Compensation Planning for Startup Employees",
     date: "2026-06-27",
+    updatedDate: "2026-06-29",
     category: "Equity Compensation",
     excerpt:
       "A comprehensive guide for startup employees on navigating ISOs, NSOs, RSUs, AMT, and concentration risk to build and protect wealth.",
