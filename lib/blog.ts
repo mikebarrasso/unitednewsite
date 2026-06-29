@@ -1428,6 +1428,473 @@ export const blogPosts: BlogPost[] = [
 <p>For those in Long Island, Manhattan, Westchester, and beyond, aligning with a fee-only fiduciary financial planner offers a path illuminated by transparency, trust, and genuine dedication to your financial goals. For holistic <a href="/services/financial-planning">financial planning</a> and expert <a href="/services/investment-management">wealth management</a>, <a href="/contact">contact us</a> today.</p>`,
   },
   {
+    slug: "pre-retirement-tax-transition-managing-brackets-rmds",
+    title:
+      "The Pre-Retirement Tax Transition: Managing Brackets Between Career and RMDs",
+    date: "2026-06-29",
+    category: "Tax Planning",
+    excerpt:
+      "The years between retirement and age 73&mdash;when Required Minimum Distributions begin&mdash;are a critical tax-planning window. Learn how tactical Roth conversions, IRMAA management, and Qualified Charitable Distributions can dramatically reduce your lifetime tax burden.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/tax-planning",
+      "/services/retirement-planning",
+      "/services/financial-planning",
+      "/services/investment-management",
+    ],
+    relatedSlugs: [
+      "modern-guide-retirement-planning",
+      "retirement-portfolio-strategies-market-downturns",
+      "secure-retirement-investment-management",
+    ],
+    faqs: [
+      {
+        question: "When do Required Minimum Distributions begin?",
+        answer:
+          "Under the SECURE 2.0 Act, the age at which Required Minimum Distributions (RMDs) must begin is 73 for individuals who turn 72 after December 31, 2022. The RMD age is scheduled to increase to 75 for individuals who turn 74 after December 31, 2032. RMDs apply to traditional IRAs, SEP IRAs, SIMPLE IRAs, and most employer-sponsored plans including traditional 401(k)s and 403(b)s. Roth IRAs are not subject to RMDs during the account owner&rsquo;s lifetime.",
+      },
+      {
+        question: "What is the tax gap and why is it a planning opportunity?",
+        answer:
+          "The \u201ctax gap\u201d refers to the period between when someone retires and when their Required Minimum Distributions begin at age 73. During this window, many retirees have significantly lower taxable income than they did during their working years. They are no longer receiving a salary, Social Security may not yet have begun, and RMDs have not started. This creates an opportunity to take advantage of lower tax brackets by doing Roth conversions, harvesting capital gains at preferential rates, or otherwise moving money out of tax-deferred accounts at relatively low tax cost.",
+      },
+      {
+        question: "What is IRMAA and how does it affect Medicare premiums?",
+        answer:
+          "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added to Medicare Part B and Part D premiums for beneficiaries whose income exceeds certain thresholds. Medicare uses your income from two years prior (e.g., your 2024 income affects your 2026 Medicare premiums). The surcharges can be significant: at the highest income brackets, Part B premiums can more than triple compared to the base rate. Because IRMAA is calculated on Modified Adjusted Gross Income (MAGI), Roth conversions in the pre-retirement tax gap years can inadvertently trigger or increase IRMAA in retirement. This must be carefully modeled.",
+      },
+      {
+        question: "What is a Qualified Charitable Distribution?",
+        answer:
+          "A Qualified Charitable Distribution (QCD) allows IRA owners who are age 70\u00bd or older to transfer up to $105,000 per year (indexed for inflation after 2023) directly from their IRA to a qualified charity. The QCD counts toward the IRA owner&rsquo;s RMD for the year but is excluded from their taxable income. This is more tax-efficient than taking an RMD and then donating cash, because the QCD exclusion reduces Adjusted Gross Income directly&mdash;which can lower Social Security taxation, reduce IRMAA exposure, and keep the donor in a lower tax bracket.",
+      },
+    ],
+    content: `<h2>The Pre-Retirement Tax Window: The Most Important Planning Period Most People Ignore</h2>
+
+<p>For most Americans, the years between retirement and age 73 represent the single most important&mdash;and most underutilized&mdash;tax planning opportunity of their financial lives.</p>
+
+<p>During your working years, tax planning is largely reactive. Your salary is fixed, your employer withholds taxes automatically, and your ability to shift income between years is limited. In retirement, however, you gain a remarkable degree of control over your taxable income. But that control is time-limited. Once Required Minimum Distributions begin at age 73, the IRS dictates how much you must take out of your tax-deferred accounts each year&mdash;whether you need the money or not, and regardless of your tax bracket.</p>
+
+<p>The window between retirement and age 73 is what financial planners call the <strong>pre-RMD tax gap</strong>. Used strategically, this period can permanently reduce your lifetime tax burden, lower your Medicare premiums, and leave more wealth to your heirs. Used passively, it becomes a missed opportunity that you cannot recover.</p>
+
+<p>This article explains the three most powerful tools for managing this transition: tactical Roth conversions, IRMAA management, and Qualified Charitable Distributions.</p>
+
+<h2>Understanding the Tax Gap</h2>
+
+<p>Here is the fundamental dynamic: during your peak earning years, you likely contributed heavily to pre-tax retirement accounts&mdash;traditional 401(k)s, 403(b)s, traditional IRAs&mdash;because the tax deduction was valuable in your high bracket. These accounts grew tax-deferred for decades. Now, in the pre-RMD years of early retirement, your ordinary income may be relatively low. You are not earning a salary, you may have not yet claimed Social Security, and your portfolio withdrawals are at your discretion.</p>
+
+<p>This temporary low-income window is your opportunity to <strong>convert tax-deferred wealth to tax-free wealth</strong> at a lower tax cost than you will ever have again.</p>
+
+<p>Without intervention, the story typically plays out like this: your pre-tax accounts continue to grow through your 60s. At 73, the IRS requires you to take RMDs calculated on your entire account balance. By that point, those accounts may have grown substantially, pushing you into higher brackets. Your Social Security benefits become more taxable. Your IRMAA-driven Medicare premiums increase. And your estate leaves your heirs a large pre-tax inheritance that they must draw down over 10 years under the SECURE Act rules&mdash;potentially at high income tax rates of their own.</p>
+
+<p>Proactive planning in the tax gap years can rewrite this outcome significantly.</p>
+
+<h2>Strategy 1: Tactical Roth Conversions to Fill Lower Brackets</h2>
+
+<p>A <strong>Roth conversion</strong> is the transfer of funds from a traditional IRA (or other pre-tax account) to a Roth IRA. The converted amount is included in your taxable income in the year of conversion, just as if you had taken a distribution. But unlike a regular withdrawal, the converted funds are now in a Roth account, where they grow tax-free and are never subject to RMDs during your lifetime.</p>
+
+<h3>Why Convert During the Tax Gap?</h3>
+
+<p>The calculus is straightforward: if you can convert pre-tax IRA funds at a 22% or 24% marginal rate today, but you would otherwise have been forced to take RMDs that push you into the 32% or 37% bracket in your 70s and 80s, you have permanently saved the difference on every converted dollar. Multiply that by hundreds of thousands of dollars in conversions, and the lifetime tax savings can be very large.</p>
+
+<h3>How to Execute a Tactical Roth Conversion Strategy</h3>
+
+<p>The goal is to <strong>fill your tax bracket</strong>&mdash;convert enough in each year to bring your taxable income up to, but not above, the top of your current bracket. The specific amount requires careful modeling:</p>
+
+<ol>
+<li><strong>Start with a baseline income projection:</strong> Estimate what your income will be in the conversion year from all sources&mdash;Social Security, pension, part-time work, capital gains, and portfolio distributions.</li>
+<li><strong>Identify available bracket space:</strong> Calculate how much additional income you can recognize before crossing into the next bracket.</li>
+<li><strong>Model future RMD projections:</strong> Project your pre-tax account balances forward using reasonable growth assumptions to estimate what your RMDs will be at age 73, 75, and 80. This shows you how large the future tax problem is without action.</li>
+<li><strong>Run a break-even analysis:</strong> Determine the number of years required for the tax-free Roth growth to offset the upfront conversion tax. For most investors in their 60s, the break-even is typically reached within 5 to 10 years, well within their life expectancy.</li>
+<li><strong>Coordinate with other income events:</strong> In years where you have large deductions (a major charitable gift, a business loss, medical expenses), you may be able to convert more than usual at lower net tax cost.</li>
+</ol>
+
+<h3>Roth Conversion Pitfalls to Avoid</h3>
+
+<ul>
+<li><strong>Converting too aggressively in a single year:</strong> Stacking too much income in one year can push you into a higher bracket, trigger IRMAA surcharges, increase Social Security taxation, and create a lumpy tax bill. Spreading conversions across multiple years is almost always superior.</li>
+<li><strong>Ignoring state taxes:</strong> New York State taxes Roth conversions as ordinary income, and the benefits of conversion look different for a New York resident than for a resident of a no-income-tax state. The analysis must incorporate state-level taxes.</li>
+<li><strong>Not having enough liquidity to pay the tax:</strong> The optimal approach is to pay the conversion tax from outside the IRA (using taxable brokerage funds), preserving the full converted amount in the Roth. If you must use IRA funds to pay the conversion tax, the benefit is reduced.</li>
+</ul>
+
+<h2>Strategy 2: Managing Income to Avoid Medicare IRMAA Surcharges</h2>
+
+<p>Medicare premiums are not flat rates. Under the Income-Related Monthly Adjustment Amount (IRMAA) rules, your Part B and Part D premiums increase in steps based on your Modified Adjusted Gross Income (MAGI) from two years prior.</p>
+
+<h3>How IRMAA Works</h3>
+
+<p>For 2025, the standard Medicare Part B premium is approximately $185 per month. For a married couple filing jointly with MAGI above $394,000, the combined IRMAA surcharge can add over $7,000 per year to their total Medicare costs. These thresholds are adjusted annually for inflation, but the stair-step structure means a Roth conversion that nudges you just over an IRMAA tier can cost thousands in additional premiums.</p>
+
+<p>Because Medicare uses a two-year lookback, income recognized in the pre-RMD years directly affects premiums two years later. This creates an important planning consideration: aggressive Roth conversions in your late 60s can trigger IRMAA surcharges in your early 70s. The question is whether the long-term Roth benefit outweighs the near-term premium increase&mdash;which is a calculation your advisor should run explicitly.</p>
+
+<h3>IRMAA Mitigation Strategies</h3>
+
+<ul>
+<li><strong>Be precise about bracket boundaries:</strong> With careful income management, you may be able to stay just below an IRMAA threshold that would otherwise be crossed. Small differences in conversion amount can have outsized premium effects.</li>
+<li><strong>Appeal IRMAA after life events:</strong> IRMAA can be appealed based on a &ldquo;life-changing event&rdquo; such as retirement, marriage, divorce, or death of a spouse. If your income in the lookback year was unusually high due to a one-time event, an appeal may successfully reduce your premium surcharge.</li>
+<li><strong>Use QCDs to reduce MAGI:</strong> Qualified Charitable Distributions (discussed below) reduce your Adjusted Gross Income directly and can help keep your income below IRMAA thresholds.</li>
+</ul>
+
+<h2>Strategy 3: Qualified Charitable Distributions to Satisfy RMDs Tax-Free</h2>
+
+<p>Once you reach age 70&frac12;, you are eligible to make <strong>Qualified Charitable Distributions (QCDs)</strong> directly from your IRA to qualifying charitable organizations. The annual limit is $105,000 per person (indexed for inflation after 2023, with rounding to the nearest $1,000).</p>
+
+<h3>Why QCDs Are So Powerful</h3>
+
+<p>The tax advantage of a QCD is subtle but significant. Unlike a regular charitable deduction, which reduces your taxable income only if you itemize deductions, a QCD reduces your <strong>Adjusted Gross Income</strong> directly&mdash;before the standard deduction calculation. This has cascading benefits:</p>
+
+<ul>
+<li><strong>Reduces taxable Social Security benefits:</strong> Social Security benefits become taxable when your &ldquo;combined income&rdquo; (AGI plus non-taxable interest plus half of Social Security) exceeds certain thresholds. A lower AGI means less Social Security income is subject to tax.</li>
+<li><strong>Reduces IRMAA exposure:</strong> Lower MAGI may keep you below IRMAA surcharge thresholds, directly reducing Medicare premiums.</li>
+<li><strong>Counts toward your RMD:</strong> A QCD satisfies your Required Minimum Distribution for the year, meaning you can meet your IRS obligation without recognizing taxable income.</li>
+<li><strong>Allows charitable giving even without itemizing:</strong> Post-Tax Cuts and Jobs Act, the higher standard deduction means most retirees no longer itemize. A QCD provides a tax benefit for charitable giving even for non-itemizers.</li>
+</ul>
+
+<h3>QCD Best Practices</h3>
+
+<ul>
+<li><strong>Direct transfers only:</strong> The distribution must go directly from your IRA custodian to the qualifying charity. If you take the distribution and then write a personal check to the charity, it does not qualify as a QCD.</li>
+<li><strong>Traditional IRAs only:</strong> QCDs are permitted from traditional IRAs (and SEP or SIMPLE IRAs, provided no active contributions are being made). They are not available from 401(k)s, 403(b)s, or other employer plans, though rolling those accounts into a traditional IRA first makes QCDs accessible.</li>
+<li><strong>Plan the giving calendar early:</strong> QCDs must be completed by December 31 of the tax year. Waiting until late December can create custodian processing delays that disqualify the distribution.</li>
+</ul>
+
+<h2>Coordinating All Three Strategies in a Pre-Retirement Tax Plan</h2>
+
+<p>The real power of pre-retirement tax planning comes from coordinating Roth conversions, IRMAA management, and QCDs as part of a single, multi-year plan rather than executing each in isolation.</p>
+
+<p>Consider a hypothetical: a couple retires at age 62 with $2 million in traditional IRA assets. Without any planning, their projected RMDs beginning at age 73 would push them firmly into the 22% to 24% federal bracket, increase their Medicare premiums, and cause more of their Social Security to be taxable.</p>
+
+<p>With a coordinated strategy: they execute $80,000 to $120,000 in Roth conversions per year from age 62 to 72, carefully modeled to fill their current bracket without crossing IRMAA thresholds. They direct $20,000 to $30,000 annually from their IRAs to charity via QCDs once they reach age 70&frac12;, satisfying part of their RMD tax-free. By age 73, their traditional IRA balance is meaningfully smaller, their RMDs are manageable within their target bracket, and they have a substantial Roth balance available tax-free for supplemental spending or inheritance.</p>
+
+<p>The difference in lifetime taxes paid&mdash;and in wealth transferred to heirs&mdash;can be several hundred thousand dollars or more.</p>
+
+<h2>Where to Start</h2>
+
+<p>The pre-retirement tax gap is a time-limited opportunity. Every year of inaction narrows the window and reduces the potential benefit. The first step is a comprehensive tax projection that models your current trajectory&mdash;RMDs, Social Security, Medicare, and bracket exposure&mdash;against the outcomes achievable through coordinated planning.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, our team of CFP&reg; professionals, CPAs, and Enrolled Agents brings integrated tax planning and retirement planning under one roof. We build multi-year tax transition roadmaps tailored to your specific accounts, income sources, and goals.</p>
+
+<p>If you are within 5 to 10 years of retirement&mdash;or have already retired&mdash;this is the right time to evaluate whether you are making the most of the pre-RMD window. <a href="/contact">Schedule a conversation with our team</a>, or learn more about our <a href="/services/tax-planning">tax planning services</a> and <a href="/services/retirement-planning">retirement planning services</a>.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only. It does not constitute investment, tax, legal, or accounting advice. Tax laws, Medicare premium schedules, and RMD rules are subject to change. The projections and examples used are for illustrative purposes only and should not be relied upon as a guarantee of future results. Consult a qualified financial, tax, and legal advisor before making decisions regarding your retirement or tax planning.</p>`,
+  },
+  {
+    slug: "tax-efficient-diversification-unwind-concentrated-stock",
+    title:
+      "Tax-Efficient Diversification: How to Unwind a Concentrated Stock Position",
+    date: "2026-06-29",
+    category: "Investment Management",
+    excerpt:
+      "Holding more than 10-15% of your net worth in a single stock creates significant risk. Learn tax-aware strategies&mdash;10b5-1 plans, Donor-Advised Funds, exchange funds, and disciplined reinvestment&mdash;to de-risk a concentrated position without a catastrophic tax bill.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/investment-management",
+      "/services/tax-planning",
+      "/services/equity-compensation",
+      "/services/financial-planning",
+    ],
+    relatedSlugs: [
+      "equity-compensation-isos-vs-nsos-ny-startup-employees",
+      "investment-management-strategies-high-net-worth",
+      "passive-income-hnw-investment-management",
+    ],
+    faqs: [
+      {
+        question: "What percentage of net worth in a single stock is considered too concentrated?",
+        answer:
+          "Most financial planning professionals use 10% to 15% of net worth as a general concentration threshold. Above that level, the idiosyncratic risk of a single company&mdash;the possibility that company-specific events, not broad market forces, drive a large loss&mdash;becomes a meaningful threat to your financial plan. Executives, founders, and long-tenured employees often have 40%, 60%, or even more of their net worth in a single employer, making proactive diversification planning essential.",
+      },
+      {
+        question: "What is a 10b5-1 plan and who should use one?",
+        answer:
+          "A Rule 10b5-1 plan is a pre-arranged trading plan that allows corporate insiders&mdash;executives, directors, and employees with access to material non-public information&mdash;to sell company stock in a structured, scheduled manner. Because the plan is established when the insider is not aware of MNPI, sales under a properly structured 10b5-1 plan are generally protected from insider trading liability. These plans are ideal for corporate executives or large shareholders who need to diversify but are frequently inside trading windows.",
+      },
+      {
+        question: "Can I donate appreciated stock to avoid capital gains taxes?",
+        answer:
+          "Yes. Donating long-term appreciated stock directly to a qualified charity or to a Donor-Advised Fund (DAF) allows you to claim a fair market value charitable deduction while permanently avoiding the capital gains tax that would have been owed if you sold the shares first. For a stock with a very low cost basis, this strategy can be far more tax-efficient than selling shares and donating cash proceeds.",
+      },
+      {
+        question: "What is an exchange fund?",
+        answer:
+          "An exchange fund (sometimes called a swap fund) allows multiple investors, each with a different concentrated stock position, to pool their shares into a partnership or fund in exchange for a diversified interest in the combined pool. The exchange is generally structured to be tax-deferred under Section 721 of the Internal Revenue Code. Investors typically must hold their fund interest for at least seven years. Exchange funds are generally available only to accredited investors and carry complexity and fees; they are most appropriate for very large, very low-basis concentrated positions.",
+      },
+    ],
+    content: `<h2>The Concentration Problem: When a Single Stock Becomes a Risk</h2>
+
+<p>Concentrated stock positions are often a sign of success&mdash;a founder whose startup went public, an executive who held company stock through decades of appreciation, or a startup employee whose equity vested at exactly the right time. But what creates wealth can also destroy it if left unmanaged.</p>
+
+<p>When a single stock represents more than <strong>10% to 15% of your total net worth</strong>, you are exposed to idiosyncratic risk: the possibility that events specific to that one company&mdash;an earnings miss, a regulatory change, executive misconduct, or a competitive disruption&mdash;can cause devastating losses that a well-diversified portfolio would have absorbed with far less damage.</p>
+
+<p>The challenge is that unwinding a concentrated position is not simply a matter of selling shares. For most investors in this situation, those shares have appreciated significantly, and selling them outright would trigger a substantial capital gains tax bill. The cost of diversification, in the short term, can feel prohibitive.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, we help clients with concentrated positions think systematically about how to de-risk over time in a way that is tax-aware, aligned with their values, and integrated with their broader financial plan. Here is a comprehensive framework for thinking through the problem.</p>
+
+<h2>Why Concentration Is a Genuine Risk</h2>
+
+<p>Before outlining solutions, it is worth internalizing the risk. The data on individual stocks is sobering: a substantial percentage of individual stocks underperform the broader market over long periods, and a meaningful percentage eventually lose most or all of their value. The companies most people hold in concentrated positions&mdash;former high-fliers in technology, finance, or healthcare&mdash;are not immune to these dynamics.</p>
+
+<p>Beyond return risk, concentrated positions can create:</p>
+
+<ul>
+<li><strong>Liquidity risk:</strong> If the position is in a private company, you may be unable to sell at all until a liquidity event that may never come.</li>
+<li><strong>Retirement plan risk:</strong> If your retirement security depends on the continued value of a single stock, a sharp decline can compromise your ability to retire on schedule.</li>
+<li><strong>Estate planning complications:</strong> A highly concentrated estate creates complexity for heirs and may trigger forced sales at inopportune times.</li>
+<li><strong>Emotional anchoring:</strong> Investors frequently hold concentrated positions long past the point of prudence because of loyalty to an employer, fear of taxes, or anchoring to a prior peak price. These behavioral biases are not a strategy.</li>
+</ul>
+
+<h2>The Core Tax Challenge</h2>
+
+<p>The primary obstacle to unwinding a concentrated position is usually the embedded capital gain. If you hold shares with a very low cost basis&mdash;common for founders, early employees, or long-tenured executives&mdash;selling those shares triggers a capital gains tax on the difference between your cost basis and the current market price.</p>
+
+<p>Federal long-term capital gains rates top out at 20% for high earners, and the 3.8% Net Investment Income Tax may apply, bringing the federal rate to 23.8%. For New York residents, state and city taxes add another 10% to 14% on top of that. An investor with a $5 million position and a near-zero cost basis could face $1.5 million or more in combined taxes on a full outright sale&mdash;a real cost that must be weighed against the risk of remaining concentrated.</p>
+
+<p>The goal of tax-efficient diversification is not to avoid taxes forever, but to <strong>manage the timing and pace of recognition</strong> in a way that makes economic sense and fits within a long-term plan.</p>
+
+<h2>Strategy 1: Disciplined Systematic Sales</h2>
+
+<p>The most straightforward approach is simply to sell a portion of the concentrated position each year, thoughtfully timed to manage your annual tax liability.</p>
+
+<p>The key discipline is having a plan before you start. Decide in advance:</p>
+
+<ul>
+<li>What target allocation you want to reach (e.g., reduce from 60% of portfolio to under 15% over five years).</li>
+<li>How much in capital gains taxes you are willing to recognize in each year.</li>
+<li>Whether you want to accelerate sales in years where other deductions (charitable gifts, business losses) offset gains.</li>
+</ul>
+
+<p>Systematic selling works best when combined with other strategies below, particularly charitable giving, to reduce the net tax cost of each tranche sold.</p>
+
+<h2>Strategy 2: Rule 10b5-1 Plans for Executives and Insiders</h2>
+
+<p>Corporate insiders&mdash;executives, directors, and employees with regular access to material non-public information (MNPI)&mdash;face a specific obstacle: they are frequently prohibited from trading during blackout periods and may rarely be &ldquo;in the window&rdquo; to sell. This makes ad hoc selling nearly impossible.</p>
+
+<p>A <strong>Rule 10b5-1 plan</strong>, established under SEC rules, solves this problem. The insider establishes a pre-arranged trading plan when they are not aware of MNPI. The plan specifies the amount, price, and timing of future sales. Once the plan is in place, the sales execute automatically according to the predetermined schedule, regardless of whether the insider is in a trading window or in possession of inside information.</p>
+
+<p>Post-2023 SEC rule changes introduced a mandatory cooling-off period before the first sale can occur under a new 10b5-1 plan (typically 90 days for non-CEO/CFO insiders, and the later of 90 days or the next quarterly earnings release for CEOs and CFOs). These changes reinforce the importance of working with legal counsel and a financial advisor when establishing the plan.</p>
+
+<h2>Strategy 3: Donating Appreciated Stock to a Donor-Advised Fund</h2>
+
+<p>For investors with charitable intent, donating appreciated stock directly to a <strong>Donor-Advised Fund (DAF)</strong> is one of the most tax-efficient moves available. Here is why it is so powerful:</p>
+
+<ul>
+<li>You receive a <strong>charitable deduction equal to the fair market value</strong> of the shares (not your cost basis) in the year of donation, subject to applicable AGI limits.</li>
+<li>You <strong>permanently avoid the capital gains tax</strong> you would have owed on a sale.</li>
+<li>The DAF sells the shares and reinvests the proceeds in a diversified portfolio, which continues to grow tax-free inside the fund.</li>
+<li>You can then recommend grants from the DAF to your chosen charities over time&mdash;immediately or over many years.</li>
+</ul>
+
+<p>Consider an example: you hold $200,000 in a stock with a $10,000 cost basis. If you sell, you pay capital gains taxes on $190,000 of gain. If instead you donate those shares to a DAF, you avoid the capital gains entirely, claim a $200,000 charitable deduction, and the full $200,000 is available to support your charitable goals. Replacing the donated shares in your portfolio with a diversified investment simultaneously reduces your concentration without selling.</p>
+
+<p>DAF donations are a core tool in the annual tax planning process for any high-net-worth investor with significant unrealized gains and philanthropic intentions.</p>
+
+<h2>Strategy 4: Exchange Funds</h2>
+
+<p>An <strong>exchange fund</strong> (sometimes called a swap fund) is a sophisticated strategy for investors with very large, very low-basis concentrated positions who want to achieve diversification without immediately triggering capital gains.</p>
+
+<p>The mechanics: multiple investors each contribute their different concentrated stock holdings into a limited partnership or limited liability company. Each investor receives a pro-rata interest in the combined, diversified pool. Under Section 721 of the Internal Revenue Code, this contribution is generally treated as a tax-deferred exchange rather than a taxable sale.</p>
+
+<p>Important constraints:</p>
+
+<ul>
+<li>Investors must hold their fund interest for <strong>at least seven years</strong> before withdrawing, or the deferred gain becomes taxable.</li>
+<li>At least 20% of the fund&rsquo;s assets must be in qualifying &ldquo;nonmarketable&rdquo; assets (typically real estate or other illiquid investments).</li>
+<li>Exchange funds are generally available only to <strong>qualified purchasers</strong> (typically individuals with $5 million or more in investable assets).</li>
+<li>Management fees and structural complexity are higher than standard investment accounts.</li>
+</ul>
+
+<p>Exchange funds are not a fit for everyone, but for an investor with a $10 million or $20 million position and a near-zero basis who wants diversification and can accept a seven-year lockup, they can be genuinely transformative.</p>
+
+<h2>Building the Complementary Reinvestment Portfolio</h2>
+
+<p>Diversification is not just about removing risk&mdash;it is about rebuilding it intelligently. As you reduce your concentrated position, the proceeds (whether from systematic sales, charitable replacement, or other strategies) need to be reinvested into a portfolio that is <strong>deliberately constructed to complement</strong> what you still hold.</p>
+
+<p>This means:</p>
+
+<ul>
+<li><strong>Factor exposure:</strong> If your concentrated position is in a large-cap US technology company, your reinvestment portfolio should underweight large-cap US technology to avoid doubling down on the same risk factors.</li>
+<li><strong>Asset class diversification:</strong> Adding exposure to international equities, small-cap, value, fixed income, and real assets that are lowly correlated with your concentrated position.</li>
+<li><strong>Tax-loss harvesting opportunities:</strong> A well-managed diversified portfolio creates ongoing opportunities to harvest losses that can offset the gains recognized as you gradually sell the concentrated position.</li>
+</ul>
+
+<h2>Putting It All Together: An Integrated Approach</h2>
+
+<p>No single strategy is optimal for every investor. The right plan depends on:</p>
+
+<ul>
+<li>The size of the position and the embedded gain.</li>
+<li>Whether the stock is publicly traded (liquid) or private (illiquid).</li>
+<li>Whether you are a corporate insider subject to trading restrictions.</li>
+<li>Your charitable intentions and timeline.</li>
+<li>Your overall tax situation, including other income and deductions.</li>
+<li>Your estate planning goals&mdash;if you intend to leave the shares to heirs, a stepped-up cost basis at death eliminates the capital gains entirely.</li>
+</ul>
+
+<p>Most clients benefit from a combination of strategies deployed in a coordinated, multi-year plan. At <strong>United Financial Planning Group</strong>, our CFP&reg; professionals, CPAs, and investment managers work together to model these scenarios, stress-test your financial plan against adverse scenarios for the concentrated position, and execute a tax-aware diversification roadmap that makes sense for your specific situation.</p>
+
+<p>If you hold a concentrated stock position and are unsure where to start, we would welcome a conversation. <a href="/contact">Contact us here</a> or learn more about our <a href="/services/investment-management">investment management services</a>.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only. It does not constitute investment, tax, legal, or accounting advice, and nothing here should be construed as a solicitation or recommendation to buy or sell any security. Tax laws are subject to change. Strategies involving charitable vehicles, exchange funds, and insider trading rules are complex and fact-specific. Readers should consult qualified legal, tax, and investment professionals before taking action.</p>`,
+  },
+  {
+    slug: "equity-compensation-isos-vs-nsos-ny-startup-employees",
+    title:
+      "The Equity Compensation Strategy: ISOs vs. NSOs for NY Tech &amp; Startup Employees",
+    date: "2026-06-29",
+    category: "Equity Compensation",
+    excerpt:
+      "Understand the critical tax differences between ISOs and NSOs, the AMT risk unique to incentive options, and how New York State and NYC taxes affect your equity exercise strategy as a tech or startup employee.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/equity-compensation",
+      "/services/tax-planning",
+      "/services/financial-planning",
+    ],
+    relatedSlugs: [
+      "equity-compensation-planning-startup-employees",
+      "investment-management-strategies-high-net-worth",
+      "why-fee-only-fiduciary-financial-planner",
+    ],
+    faqs: [
+      {
+        question: "What is the difference between ISOs and NSOs?",
+        answer:
+          "Incentive Stock Options (ISOs) are a tax-advantaged form of equity granted only to employees. If holding period requirements are met, gains are taxed at long-term capital gains rates rather than ordinary income rates. Non-Qualified Stock Options (NSOs) can be granted to employees, contractors, and board members. The spread at exercise is taxed immediately as ordinary income, and the employer must withhold taxes. The key tradeoff is that ISOs carry Alternative Minimum Tax (AMT) risk at exercise, while NSOs trigger ordinary income tax at exercise but have no AMT exposure.",
+      },
+      {
+        question: "How does AMT work when exercising ISOs?",
+        answer:
+          "When you exercise ISOs, the spread between the fair market value (FMV) and your strike price is an AMT preference item. This means it is not taxed for regular income tax purposes at exercise, but it is added to your Alternative Minimum Tax income calculation. If your AMT liability exceeds your regular tax liability, you owe the difference. For employees at New York tech companies where FMV has risen significantly above the strike price, this can create a substantial cash tax bill before you can even sell shares.",
+      },
+      {
+        question: "Does New York City tax stock option income?",
+        answer:
+          "Yes. New York City residents pay city income tax on top of federal and New York State taxes. For NSO exercises, the ordinary income recognized is subject to NYC's resident income tax, which tops out near 3.876%. Combined with the top New York State rate of 10.9% and federal ordinary income rates, NYC residents can face a combined marginal rate exceeding 50% on NSO spread income. ISO qualifying dispositions receive long-term capital gains treatment federally, but New York State and NYC tax long-term capital gains as ordinary income, which meaningfully reduces the ISO advantage for state tax purposes.",
+      },
+      {
+        question: "What is a qualifying vs. disqualifying disposition for ISOs?",
+        answer:
+          "A qualifying disposition occurs when you sell ISO shares at least two years after the grant date AND at least one year after the exercise date. The entire gain is taxed at long-term capital gains rates federally. A disqualifying disposition occurs when you sell before meeting both holding period requirements. In that case, the spread at exercise is taxed as ordinary income, and only appreciation beyond the FMV at exercise receives capital gains treatment.",
+      },
+    ],
+    content: `<h2>ISOs vs. NSOs: Why the Distinction Matters Enormously for NY Tech Employees</h2>
+
+<p>If you work at a New York technology company or startup, equity compensation is likely one of your most significant financial assets&mdash;and one of the most complex to manage. The difference between an Incentive Stock Option (ISO) and a Non-Qualified Stock Option (NSO) can translate into hundreds of thousands of dollars in tax liability depending on how and when you act.</p>
+
+<p>Add in the Alternative Minimum Tax, New York State&rsquo;s top income tax rate of 10.9%, and New York City&rsquo;s resident income tax, and the stakes become even higher. This article walks through the mechanics of each option type, the specific risks and opportunities they create, and a disciplined framework for equity compensation planning as a startup employee.</p>
+
+<h2>Understanding ISOs: The Tax-Advantaged Option With a Hidden Trap</h2>
+
+<p>Incentive Stock Options are the more tax-favorable of the two option types at the federal level. ISOs can only be granted to employees (not contractors or board members) and must meet specific requirements under Section 422 of the Internal Revenue Code.</p>
+
+<h3>The ISO Tax Advantage: Qualifying Dispositions</h3>
+
+<p>If you satisfy the ISO holding period rules&mdash;holding shares for at least <strong>two years from the grant date</strong> and <strong>one year from the exercise date</strong>&mdash;your sale is treated as a &ldquo;qualifying disposition.&rdquo; The entire gain from your strike price to your sale price is taxed at the long-term capital gains rate, which tops out at 20% federally (plus the 3.8% Net Investment Income Tax for higher earners).</p>
+
+<p>Compare this to ordinary income tax rates, which can reach 37% federally. The differential is dramatic, and for employees with significant ISO grants, structuring a qualifying disposition can save six figures in federal taxes.</p>
+
+<h3>The ISO Trap: The Alternative Minimum Tax (AMT)</h3>
+
+<p>Here is the catch that blindsides many startup employees: <strong>at the moment you exercise ISOs, the spread between the fair market value and your strike price becomes an AMT preference item</strong>&mdash;even if you do not sell the shares and receive no cash.</p>
+
+<p>The AMT is a parallel tax system designed to ensure high-income taxpayers pay a minimum level of tax. It adds back certain deductions and preferences that reduce your regular tax liability and calculates tax at a flat rate (26% or 28%). If your AMT liability exceeds your regular income tax liability, you pay the difference.</p>
+
+<p>For a startup employee with a large ISO grant, this can create a brutal situation: you exercise options, immediately owe AMT on the paper gain&mdash;sometimes hundreds of thousands of dollars&mdash;and yet hold illiquid private shares that you cannot sell to pay the bill. This scenario has forced some employees into financial hardship when companies decline in value after exercise.</p>
+
+<h3>Strategies to Manage ISO AMT Risk</h3>
+
+<ul>
+<li><strong>Spread exercises across tax years:</strong> Rather than exercising all ISOs at once, spread them across multiple tax years to keep the AMT spread below your AMT exemption threshold each year.</li>
+<li><strong>Calculate your AMT crossover point:</strong> Work with a CPA or fee-only advisor to determine exactly how many ISO shares you can exercise in a given year before triggering AMT. This is your &ldquo;safe exercise&rdquo; amount.</li>
+<li><strong>Early exercise (83(b) election):</strong> Exercising ISOs shortly after grant when the FMV equals or is close to the strike price minimizes the AMT spread and starts the holding period clock early. However, this involves paying real money upfront for shares that may or may not be worth anything.</li>
+<li><strong>AMT credit carryforward:</strong> Any AMT paid on ISO exercises generates an AMT credit that can offset future regular tax liability. This credit can eventually be recovered, but only if your regular tax exceeds AMT in future years&mdash;which may take time.</li>
+</ul>
+
+<h2>Understanding NSOs: Simpler, But Taxed More Aggressively</h2>
+
+<p>Non-Qualified Stock Options are the more straightforward of the two types. They can be granted to employees, contractors, directors, and advisors. There are no IRS-mandated holding periods and no AMT at exercise.</p>
+
+<h3>How NSOs Are Taxed</h3>
+
+<p>When you exercise an NSO, the spread between the fair market value and your strike price is treated as <strong>ordinary income in the year of exercise</strong>. Your employer is required to withhold employment taxes (Social Security, Medicare) on this amount and will report it on your W-2 (for employees) or 1099-NEC (for non-employees).</p>
+
+<p>Any appreciation <em>after</em> exercise is taxed as a capital gain when you sell&mdash;short-term if you held for a year or less, long-term if you held longer than a year.</p>
+
+<h3>NSO Timing Strategies</h3>
+
+<ul>
+<li><strong>Exercise in a lower-income year:</strong> If you anticipate a year with reduced income (career transition, sabbatical, or early retirement), exercising NSOs in that year can reduce the ordinary income tax bite significantly.</li>
+<li><strong>Exercise-and-hold for capital gains:</strong> If you believe the company stock will continue to appreciate, exercise NSOs and hold the shares for more than one year to convert future gains to long-term capital gains rates.</li>
+<li><strong>Cashless exercises:</strong> In a public company context, same-day-sale exercises convert the entire spread to taxable income immediately but eliminate the risk of holding concentrated, illiquid shares.</li>
+</ul>
+
+<h2>The New York State and NYC Tax Dimension</h2>
+
+<p>New York is one of the highest-tax states in the country, and its treatment of stock option income compounds the federal complexity for NYC tech employees.</p>
+
+<h3>New York State Does Not Recognize ISO Preference Treatment on Capital Gains</h3>
+
+<p>This is a critical distinction. While the federal government taxes ISO qualifying disposition gains at the preferential long-term capital gains rate, <strong>New York State taxes all capital gains as ordinary income</strong>. The top New York State income tax rate is <strong>10.9%</strong> for incomes above $25 million, but rates of 6.85% to 9.65% apply to incomes commonly earned by NYC tech professionals.</p>
+
+<p>What this means in practice: even on a perfectly structured ISO qualifying disposition, you will owe New York State ordinary income tax on the gain. The federal advantage remains meaningful, but the combined rate for a New York City resident can still be substantial.</p>
+
+<h3>New York City Resident Tax</h3>
+
+<p>New York City residents pay an additional city resident income tax on their taxable income. The top NYC rate is approximately <strong>3.876%</strong>. This applies to both NSO ordinary income and ISO qualifying disposition gains (since NYC also does not recognize preferential capital gains treatment).</p>
+
+<p>The combined marginal rate for a high-earning NYC resident&mdash;federal ordinary income, federal NIIT, New York State, and New York City&mdash;can exceed <strong>50%</strong> on NSO spread income. This makes the timing and structure of equity exercises extraordinarily consequential.</p>
+
+<h3>Nonresident and Part-Year Resident Considerations</h3>
+
+<p>If you worked for a New York company but relocated to another state before exercising your options, your New York tax exposure depends on the allocation of option income. New York State generally taxes option income allocated to the period when services were performed in New York, which can create complex apportionment calculations requiring professional guidance.</p>
+
+<h2>A Strategic Exercise Framework for NY Startup Employees</h2>
+
+<p>Given the complexity above, a disciplined equity exercise strategy should consider the following steps:</p>
+
+<h3>Step 1: Know Exactly What You Hold</h3>
+
+<p>Gather your option agreements and create a complete inventory: grant type (ISO vs. NSO), grant date, strike price, number of shares vested and unvested, current FMV (the 409A valuation for private companies), and expiration dates.</p>
+
+<h3>Step 2: Model the Tax Scenarios</h3>
+
+<p>Work with a CPA or fee-only financial advisor to model the tax impact of various exercise scenarios&mdash;exercising all options this year, spreading across multiple years, exercising enough ISOs to stay below your AMT crossover point, or waiting until a liquidity event for NSOs. The differences between scenarios can be enormous.</p>
+
+<h3>Step 3: Manage Concentration Risk</h3>
+
+<p>As your equity position grows, so does your concentration risk. If a single company represents a disproportionate share of your net worth, develop a diversification plan that is tax-aware. For public company employees, a <strong>Rule 10b5-1 plan</strong> allows scheduled sales during trading windows without running afoul of insider trading rules.</p>
+
+<h3>Step 4: Plan for Liquidity Events</h3>
+
+<p>An IPO or acquisition can trigger a cascade of tax events&mdash;RSU vesting, ISO holding period decisions, and NSO exercises&mdash;all in a compressed window. Preparing a &ldquo;liquidity event playbook&rdquo; in advance, with your advisor, ensures you can execute quickly rather than making rushed decisions under pressure.</p>
+
+<h3>Step 5: Coordinate With Your Overall Financial Plan</h3>
+
+<p>Equity compensation does not exist in isolation. The after-tax proceeds from a successful exercise must be integrated into a broader investment plan, tax plan, and retirement strategy. A fee-only, fiduciary advisor who understands both equity compensation and tax planning&mdash;and who does not earn commissions on investment products&mdash;is the most aligned partner for this work.</p>
+
+<h2>How United Financial Planning Group Can Help</h2>
+
+<p><strong>United Financial Planning Group</strong> brings together CFP&reg; professionals, CPAs, and Enrolled Agents under one roof, which means your equity compensation planning is coordinated with your tax returns, investment strategy, and overall financial plan&mdash;not siloed across three separate firms.</p>
+
+<p>We work with technology professionals and startup employees throughout New York to model ISO and NSO exercise strategies, manage AMT exposure, and build tax-efficient plans for liquidity events. If you have equity compensation questions, we would welcome a conversation.</p>
+
+<p><a href="/contact">Schedule a complimentary consultation</a> or learn more about our <a href="/services/equity-compensation">equity compensation planning services</a>.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only. It does not constitute investment, tax, legal, or accounting advice, and no portion of it should be construed as a solicitation or offer to buy or sell any security. Tax laws are subject to change, and individual circumstances vary significantly. Readers should consult a qualified tax professional or financial advisor before making any decisions regarding their equity compensation.</p>`,
+  },
+  {
     slug: "financial-tips-business-owners",
     title:
       "Financial Tips for Business Owners: Navigating Wealth, Taxes, and Succession Planning",
