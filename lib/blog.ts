@@ -142,17 +142,17 @@ export const blogPosts: BlogPost[] = [
       {
         question: "What is the most important first step in retirement planning?",
         answer:
-          "The most important first step is understanding your cash flow needs in retirement. Before choosing accounts or investments, you need a realistic estimate of your future expenses&mdash;housing, healthcare, travel, and daily living&mdash;so you can calculate the total savings required to fund your lifestyle without running out of money.",
+          "The most important first step is understanding your cash flow needs in retirement. Before choosing accounts or investments, you need a realistic estimate of your future expenses: housing, healthcare, travel, and daily living, so you can calculate the total savings required to fund your lifestyle without running out of money.",
       },
       {
         question: "What is a tax-efficient withdrawal sequence in retirement?",
         answer:
-          "A tax-efficient withdrawal sequence means drawing down accounts in a specific order to minimize lifetime taxes. A common strategy is to first spend taxable brokerage accounts, then tax-deferred accounts like traditional IRAs and 401(k)s, and finally Roth accounts. However, the optimal sequence depends on your income level, tax bracket, and estate planning goals&mdash;which is why coordinated planning matters.",
+          "A tax-efficient withdrawal sequence means drawing down accounts in a specific order to minimize lifetime taxes. A common strategy is to first spend taxable brokerage accounts, then tax-deferred accounts like traditional IRAs and 401(k)s, and finally Roth accounts. However, the optimal sequence depends on your income level, tax bracket, and estate planning goals, which is why coordinated planning matters.",
       },
       {
         question: "What is sequence-of-returns risk and why does it matter?",
         answer:
-          "Sequence-of-returns risk is the danger that poor investment returns early in your retirement&mdash;when you are making large withdrawals&mdash;can permanently deplete your portfolio, even if long-term average returns are fine. Managing this risk through asset allocation, a cash buffer, and flexible withdrawal strategies is one of the most critical elements of retirement investment planning.",
+          "Sequence-of-returns risk is the danger that poor investment returns early in your retirement (when you are making large withdrawals) can permanently deplete your portfolio, even if long-term average returns are fine. Managing this risk through asset allocation, a cash buffer, and flexible withdrawal strategies is one of the most critical elements of retirement investment planning.",
       },
       {
         question: "Should I do a Roth conversion before I retire?",
@@ -162,7 +162,7 @@ export const blogPosts: BlogPost[] = [
     ],
     content: `<h2>The Changing Retirement Landscape</h2>
 
-<p>Retirement planning has never been more complex&mdash;or more consequential. Americans are living longer than ever, with many retirees spending 25 to 30 years or more in retirement. At the same time, the rules governing taxes, Social Security, and retirement accounts continue to evolve, and financial markets remain unpredictable.</p>
+<p>Retirement planning has never been more complex, or more consequential. Americans are living longer than ever, with many retirees spending 25 to 30 years or more in retirement. At the same time, the rules governing taxes, Social Security, and retirement accounts continue to evolve, and financial markets remain unpredictable.</p>
 
 <p>For decades, the traditional approach to retirement planning meant working with separate professionals: a financial planner here, an accountant there, and a stockbroker somewhere else. Each advisor worked in a silo, optimizing their own piece of the puzzle without a view of the whole. That fragmented model is no longer adequate for the complex financial realities most retirees face today.</p>
 
@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Pillar 1: Integrated Wealth &amp; Cash Flow Planning</h2>
 
-<p>Every successful retirement plan starts with a fundamental question: <em>How much will I actually need?</em> The answer requires a detailed, honest look at your future life&mdash;not just a generic rule of thumb.</p>
+<p>Every successful retirement plan starts with a fundamental question: <em>How much will I actually need?</em> The answer requires a detailed, honest look at your future life, not just a generic rule of thumb.</p>
 
 <h3>Estimating Your Retirement Expenses</h3>
 
@@ -200,7 +200,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li><strong>Social Security:</strong> Claiming strategies matter enormously. Delaying benefits from age 62 to age 70 can increase your monthly benefit by as much as 76%, providing a larger inflation-adjusted income for life.</li>
 <li><strong>Pension or annuity income:</strong> If you have a defined benefit pension or are considering an annuity, the payout structure and its interaction with your other income sources must be carefully analyzed.</li>
-<li><strong>Portfolio withdrawals:</strong> The amount, timing, and account source of your withdrawals have major tax implications&mdash;which brings us to Pillar 2.</li>
+<li><strong>Portfolio withdrawals:</strong> The amount, timing, and account source of your withdrawals have major tax implications, which brings us to Pillar 2.</li>
 </ul>
 
 <h2>Pillar 2: Tax-Efficient Wealth Accumulation &amp; Distributions</h2>
@@ -212,20 +212,20 @@ export const blogPosts: BlogPost[] = [
 <p>Different retirement accounts have fundamentally different tax treatments:</p>
 
 <ul>
-<li><strong>Traditional (pre-tax) accounts</strong> &mdash; 401(k)s, 403(b)s, traditional IRAs: Contributions reduce your taxable income today, but every dollar withdrawn in retirement is taxed as ordinary income. Additionally, the IRS requires you to begin taking <strong>Required Minimum Distributions (RMDs)</strong> at age 73, whether you need the money or not.</li>
-<li><strong>Roth accounts</strong> &mdash; Roth IRAs, Roth 401(k)s: Contributions are made with after-tax dollars, but qualified withdrawals in retirement are completely tax-free. Roth IRAs have no RMD requirements during the owner&rsquo;s lifetime, giving you greater control over your taxable income.</li>
+<li><strong>Traditional (pre-tax) accounts</strong> (401(k)s, 403(b)s, traditional IRAs): Contributions reduce your taxable income today, but every dollar withdrawn in retirement is taxed as ordinary income. Additionally, the IRS requires you to begin taking <strong>Required Minimum Distributions (RMDs)</strong> at age 73, whether you need the money or not.</li>
+<li><strong>Roth accounts</strong> (Roth IRAs, Roth 401(k)s): Contributions are made with after-tax dollars, but qualified withdrawals in retirement are completely tax-free. Roth IRAs have no RMD requirements during the owner&rsquo;s lifetime, giving you greater control over your taxable income.</li>
 <li><strong>Taxable brokerage accounts:</strong> Withdrawals are not taxed as ordinary income. Instead, you pay capital gains tax only on the growth, often at preferential long-term rates. These accounts also offer significant estate planning flexibility.</li>
 </ul>
 
 <h3>Managing Tax Brackets in Retirement</h3>
 
-<p>One of the most powerful (and underused) tax planning strategies is <strong>bracket management</strong>&mdash;deliberately controlling how much taxable income you recognize in each year to avoid &ldquo;bracket creep.&rdquo;</p>
+<p>One of the most powerful (and underused) tax planning strategies is <strong>bracket management</strong>: deliberately controlling how much taxable income you recognize in each year to avoid &ldquo;bracket creep.&rdquo;</p>
 
 <p>For example, if your income in a given year falls in the 22% bracket and you have room before reaching the 24% bracket, you might take additional distributions from your traditional IRA to &ldquo;fill up&rdquo; the 22% bracket. This reduces your future RMDs and lowers the overall tax burden across your retirement years.</p>
 
 <h3>Roth Conversions: The Pre-RMD Window</h3>
 
-<p>The years between retirement and age 73&mdash;when RMDs begin&mdash;often represent a unique, low-income window that is ideal for <strong>Roth conversions</strong>. By converting a portion of your traditional IRA to a Roth IRA during this window, you can:</p>
+<p>The years between retirement and age 73 (when RMDs begin) often represent a unique, low-income window that is ideal for <strong>Roth conversions</strong>. By converting a portion of your traditional IRA to a Roth IRA during this window, you can:</p>
 
 <ul>
 <li>Reduce the size of future RMDs, which can push you into higher tax brackets in your 70s and 80s.</li>
@@ -252,7 +252,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Tailoring Your Asset Allocation</h3>
 
-<p>Your asset allocation&mdash;the mix of stocks, bonds, and other assets in your portfolio&mdash;should reflect your time horizon, income needs, and risk tolerance. A common mistake is becoming too conservative too quickly, leaving your portfolio unable to keep pace with inflation over a 25- to 30-year retirement. Conversely, being too aggressive exposes you to the damaging effects of a market downturn in the early years of retirement.</p>
+<p>Your asset allocation (the mix of stocks, bonds, and other assets in your portfolio) should reflect your time horizon, income needs, and risk tolerance. A common mistake is becoming too conservative too quickly, leaving your portfolio unable to keep pace with inflation over a 25- to 30-year retirement. Conversely, being too aggressive exposes you to the damaging effects of a market downturn in the early years of retirement.</p>
 
 <p>A well-designed retirement portfolio typically balances:</p>
 
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Managing Sequence-of-Returns Risk</h3>
 
-<p><strong>Sequence-of-returns risk</strong> is the single most underappreciated danger in retirement investing. If the market suffers a major decline in the first few years of your retirement&mdash;when your portfolio is at its largest and you are taking regular withdrawals&mdash;the damage can be permanent, even if the market eventually recovers.</p>
+<p><strong>Sequence-of-returns risk</strong> is the single most underappreciated danger in retirement investing. If the market suffers a major decline in the first few years of your retirement (when your portfolio is at its largest and you are taking regular withdrawals), the damage can be permanent, even if the market eventually recovers.</p>
 
 <p>Strategies to mitigate sequence-of-returns risk include:</p>
 
@@ -276,7 +276,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Regular Rebalancing</h3>
 
-<p>Over time, market movements will cause your portfolio&rsquo;s asset allocation to drift away from its targets. Without regular rebalancing, a portfolio that started as 60% equities and 40% bonds after a strong bull market could become 80% equities&mdash;far more risk than intended. Disciplined rebalancing keeps your risk profile aligned with your plan and, when done tax-efficiently, can also improve after-tax returns.</p>
+<p>Over time, market movements will cause your portfolio&rsquo;s asset allocation to drift away from its targets. Without regular rebalancing, a portfolio that started as 60% equities and 40% bonds after a strong bull market could become 80% equities, far more risk than intended. Disciplined rebalancing keeps your risk profile aligned with your plan and, when done tax-efficiently, can also improve after-tax returns.</p>
 
 <h2>Why the &ldquo;Under One Roof&rdquo; Philosophy Matters</h2>
 
@@ -286,13 +286,13 @@ export const blogPosts: BlogPost[] = [
 
 <p>When your financial planner, tax professional, and investment manager are all separate, uncoordinated advisors, critical details fall through the cracks. The financial planner may not know about a large capital gain your accountant is expecting. The investment manager may not know that a Roth conversion is being planned this year. The accountant may not know how your portfolio&rsquo;s income interacts with your Medicare premiums.</p>
 
-<p>Our integrated team&mdash;with in-house CFP&reg; professionals, CPAs, and investment managers&mdash;holds weekly strategy sessions and shares a complete picture of each client&rsquo;s financial life. Every recommendation is stress-tested across all three pillars before implementation.</p>
+<p>Our integrated team (with in-house CFP&reg; professionals, CPAs, and investment managers) holds weekly strategy sessions and shares a complete picture of each client&rsquo;s financial life. Every recommendation is stress-tested across all three pillars before implementation.</p>
 
 <p>The result is a retirement plan that is not just theoretically sound, but practically optimized for your taxes, your investments, and your life.</p>
 
 <h2>Take the Next Step: A Retirement Readiness Review</h2>
 
-<p>Whether retirement is 10 years away or right around the corner, now is the time to ensure your plan covers all three pillars&mdash;and that they are working together, not in isolation.</p>
+<p>Whether retirement is 10 years away or right around the corner, now is the time to ensure your plan covers all three pillars, and that they are working together, not in isolation.</p>
 
 <p>We invite you to schedule a <strong>complimentary Retirement Readiness Review</strong> with United Financial Planning Group. In this conversation, we will:</p>
 
