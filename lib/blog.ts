@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: "modern-guide-retirement-planning",
     title:
       "The Modern Guide to Retirement Planning: Integrating Wealth, Taxes, and Investments",
-    date: "2026-06-29",
+    date: "2026-06-30",
     category: "Retirement Planning",
     excerpt:
       "A comprehensive foundational guide to modern retirement planning. Learn how integrating financial planning, tax strategy, and investment management under one roof helps you build a secure, stress-free retirement.",
