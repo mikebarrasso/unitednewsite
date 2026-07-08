@@ -3578,7 +3578,7 @@ export const towns: Town[] = [
       { type: "City", name: "Nassau County" },
       { type: "City", name: "New York" }
     ],
-    nearbyTownSlugs: ["east-hills-ny", "old-westbury-ny", "jericho-ny", "garden-city-ny"],
+    nearbyTownSlugs: ["east-hills-ny", "old-westbury-ny", "jericho-ny", "garden-city-ny", "massapequa-ny"],
     primaryServices: [
       "Financial Planning",
       "Retirement Planning",
@@ -3660,7 +3660,7 @@ export const towns: Town[] = [
       { type: "City", name: "Nassau County" },
       { type: "City", name: "New York" }
     ],
-    nearbyTownSlugs: ["garden-city-ny", "roslyn-ny", "east-hills-ny"],
+    nearbyTownSlugs: ["garden-city-ny", "roslyn-ny", "east-hills-ny", "massapequa-ny"],
     primaryServices: [
       "Retirement Planning",
       "Financial Planning",
@@ -3742,7 +3742,7 @@ export const towns: Town[] = [
       { type: "City", name: "Nassau County" },
       { type: "City", name: "New York" }
     ],
-    nearbyTownSlugs: ["mineola-ny", "east-hills-ny", "jericho-ny", "roslyn-ny"],
+    nearbyTownSlugs: ["mineola-ny", "east-hills-ny", "jericho-ny", "roslyn-ny", "massapequa-ny"],
     primaryServices: [
       "Tax Planning",
       "Financial Planning",
@@ -4052,6 +4052,107 @@ export const towns: Town[] = [
     ],
     nearbyTownSlugs: ["roslyn-ny", "old-westbury-ny", "jericho-ny", "garden-city-ny"],
     primaryServices: ["Business Owner Planning", "Buy-Sell Agreements", "Tax Planning", "Financial Planning", "Investment Management"]
+  },
+  {
+    slug: "massapequa-ny",
+    name: "Massapequa",
+    county: "Nassau",
+    tier: 2,
+    nearestOffice: "Lake Success",
+    nearestOfficeAddress: "1979 Marcus Avenue, Suite 210",
+    nearestOfficeZip: "11042",
+    distanceToOffice: "20 minutes",
+    lirr: "Babylon Branch · ~50 min to Penn Station",
+    medianIncome: "$120K+",
+    avgHomeValue: "$550K–$750K",
+    seoTitle: "Financial Advisor in Massapequa, NY",
+    metaDescription:
+      "Fee-only financial advisor near Massapequa, NY. Retirement income planning, tax-aware investing, and Social Security coordination for South Shore Nassau families. CFP® professionals and CPAs under one roof, 20 min from our Lake Success office.",
+    h1: "Retirement Income Planning for Massapequa: Making Sure Everything Works Together",
+    heroSubtitle:
+      "United Financial Planning Group serves Massapequa families with retirement distribution strategies, tax-aware investing, and Social Security coordination, all from one team of CFP® professionals, CPAs, and Enrolled Agents at our Lake Success office, about 20 minutes away.",
+    heroBadge: "20 Min from Massapequa · Lake Success Office",
+    heroLabel: "CFP® professionals, CPAs, and Enrolled Agents serving Massapequa families.",
+    valuePropHeading: "Why Massapequa Families Choose United",
+    valuePropSubheading:
+      "Massapequa's pre-retirees and retirees have spent decades building wealth through careers, retirement accounts, and home equity. Protecting and coordinating all of it, without gaps between your planner and your tax person, is exactly what we do.",
+    valueProps: [
+      {
+        title: "Retirement income distribution planning",
+        description:
+          "For Massapequa residents approaching or in retirement, we design a tax-efficient withdrawal strategy that coordinates your IRAs, 401(k)s, Social Security timing, and taxable accounts. The goal is a sustainable income stream that minimizes taxes and preserves your portfolio for the long run.",
+      },
+      {
+        title: "Social Security timing and coordination",
+        description:
+          "Choosing when to claim Social Security is one of the most consequential financial decisions you'll make, and getting it wrong can cost tens of thousands of dollars over a retirement. We model your break-even points, tax impact, and spousal benefit options so you claim at exactly the right time for your situation.",
+      },
+      {
+        title: "Tax-aware investing and Roth conversion strategies",
+        description:
+          "The years between retirement and age 73 (when required minimum distributions begin) are often the best window for Roth conversions. We build a multi-year conversion roadmap that fills your lower tax brackets each year, reducing your future RMD burden and creating a more tax-efficient retirement income mix.",
+      },
+      {
+        title: "CFP, CPA, and EA under one roof",
+        description:
+          "Most Massapequa families use a separate financial advisor and accountant who rarely talk to each other. Our team includes CFP® professionals, CPAs, and Enrolled Agents working side by side, so your investment strategy, tax planning, and retirement income are always coordinated, not siloed.",
+      },
+      {
+        title: "Fee-only, always",
+        description:
+          "We don't earn commissions or sell products. Every recommendation we make is legally required to be in your best interest. You know exactly what you're paying, and you know our only incentive is to give you the best advice possible.",
+      },
+    ],
+    insightHeading: "Massapequa's Retirement Moment",
+    insight:
+      "Massapequa has one of Nassau County's most stable, long-tenured resident bases, families who bought their homes decades ago and have built real wealth through careers, pension plans, and investment accounts that now need to be coordinated into a retirement income strategy. The challenge isn't accumulation anymore; it's distribution. How do you draw from your accounts in the right order, claim Social Security at the right time, and manage taxes on a fixed income without running short? That's the planning work we do every day, and it's the work that matters most for Massapequa families in or approaching retirement.",
+    faqHeading: "Questions From Massapequa Clients",
+    faqs: [
+      {
+        question: "How do you help Massapequa families plan for retirement income?",
+        answer:
+          "We build a comprehensive retirement income plan that sequences withdrawals from your accounts in the most tax-efficient order, coordinates Social Security timing, and accounts for healthcare costs, RMDs, and inflation. The goal is a plan where every piece works together, not a collection of unrelated accounts.",
+      },
+      {
+        question: "When should I claim Social Security?",
+        answer:
+          "The right answer depends on your health, other income sources, spousal situation, and tax bracket. We model your specific break-even analysis and show you the long-term income difference between claiming at 62, 67, and 70 so you can make a fully informed decision rather than guessing.",
+      },
+      {
+        question: "What is a Roth conversion, and should I do one?",
+        answer:
+          "A Roth conversion moves money from a traditional IRA or 401(k) into a Roth account. You pay taxes now, but future growth and withdrawals are tax-free, and Roth accounts have no required minimum distributions. For many Massapequa pre-retirees in lower-income years before Social Security, partial conversions can significantly reduce lifetime taxes.",
+      },
+      {
+        question: "Do you prepare tax returns as well as financial plans?",
+        answer:
+          "Yes. Our team includes CPAs and Enrolled Agents, so we can prepare your tax return and coordinate it directly with your financial plan. That integration means your investment decisions, Roth conversions, and retirement distributions are always made with a full picture of your tax situation, not in isolation.",
+      },
+      {
+        question: "How far is your office from Massapequa?",
+        answer:
+          "Our Lake Success office at 1979 Marcus Avenue is about 20 minutes from Massapequa via the Meadowbrook Parkway or Sunrise Highway to the LIE. We also offer virtual meetings for clients who prefer not to travel.",
+      },
+      {
+        question: "What does fee-only mean?",
+        answer:
+          "Fee-only means we are compensated exclusively by the fees our clients pay us, never by commissions, referral fees, or product sales. This eliminates the conflicts of interest that arise when advisors earn money by recommending certain products, and ensures every recommendation is made purely in your best interest.",
+      },
+    ],
+    areaServed: [
+      { type: "City", name: "Massapequa, NY" },
+      { type: "City", name: "Massapequa Park, NY" },
+      { type: "City", name: "Seaford, NY" },
+      { type: "City", name: "Amityville, NY" },
+    ],
+    nearbyTownSlugs: ["garden-city-ny", "mineola-ny", "roslyn-ny"],
+    primaryServices: [
+      "Retirement Income Planning",
+      "Social Security Optimization",
+      "Tax Planning",
+      "Roth Conversion Strategy",
+      "Investment Management",
+    ],
   },
 ];
 
