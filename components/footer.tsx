@@ -137,7 +137,7 @@ export function Footer(): ReactNode {
           <div className="pt-8 px-8 sm:px-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <p className="text-sm text-foreground/50 dark:text-white">
-                © {new Date().getUTCFullYear()} United Financial Planning Group.
+                © {new Date().getFullYear()} United Financial Planning Group.
                 All rights reserved.
               </p>
               <div className="flex flex-wrap gap-6">
