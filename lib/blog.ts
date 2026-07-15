@@ -425,7 +425,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: "2026-04-18",
     category: "Investment Management",
     excerpt:
-      "A calm, considered look at recession risk in 2026 — what history suggests, the costliest mistakes investors make, and the questions New York households should think through before reacting.",
+      "A calm, considered look at recession risk in 2026: what history suggests, the costliest mistakes investors make, and the questions New York households should think through before reacting.",
     author: "Gerry Barrasso, CFP\u00ae, CPA, PFS",
     authorSlug: "gerry-barrasso",
     type: "blog",
@@ -502,7 +502,7 @@ export const blogPosts: BlogPost[] = [
           "Reasonable triggers include: planning to retire within the next one to five years, sitting on concentrated stock or significant cash that has not been allocated against a written plan, considering a major financial decision (selling a business, buying property, gifting), or noticing that headlines are driving emotionally significant changes to how you view your portfolio. A consultation does not commit you to a service relationship.",
       },
     ],
-    content: `<p>Recession concerns have moved to the front of the conversation in 2026. The questions we are hearing from clients and prospective clients &mdash; <em>Will there be a recession this year? Should I sell my stocks? How will tariffs affect my portfolio?</em> &mdash; are reasonable ones. Tariff policy, growth concerns, and persistent uncertainty about inflation and interest rates have made the path forward feel less predictable than it did even a year ago.</p>
+    content: `<p>Recession concerns have moved to the front of the conversation in 2026. The questions we are hearing from clients and prospective clients (<em>Will there be a recession this year? Should I sell my stocks? How will tariffs affect my portfolio?</em>) are reasonable ones. Tariff policy, growth concerns, and persistent uncertainty about inflation and interest rates have made the path forward feel less predictable than it did even a year ago.</p>
 
 <p>I have lived through the early-1990s recession, the dot-com bust, the 2008&ndash;2009 financial crisis, the 2020 pandemic shock, and the 2022 drawdown. Every cycle has its own narrative. The frameworks we have found most useful across those cycles have not been about predicting which narrative wins. They have been about controlling what is actually controllable, in the context of a written plan.</p>
 
@@ -510,18 +510,18 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What &ldquo;recession&rdquo; actually means</h2>
 
-<p>In the United States, a recession is formally dated by the <a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener noreferrer">Business Cycle Dating Committee of the National Bureau of Economic Research (NBER)</a>. The committee evaluates a broad set of indicators &mdash; including real personal income, employment, consumer spending, and industrial production &mdash; rather than relying on a single rule of thumb.</p>
+<p>In the United States, a recession is formally dated by the <a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener noreferrer">Business Cycle Dating Committee of the National Bureau of Economic Research (NBER)</a>. The committee evaluates a broad set of indicators (including real personal income, employment, consumer spending, and industrial production) rather than relying on a single rule of thumb.</p>
 
 <p>The popular shorthand of &ldquo;two consecutive quarters of negative GDP&rdquo; is not the official definition. It is also not how NBER decides. Official recession declarations are typically made <em>after</em> a recession has already begun, sometimes by many months. By the time a recession is named, markets have usually already reflected substantial information about it.</p>
 
 <p>The practical implication for an investor is straightforward: by the time you are certain a recession has arrived, large portfolio reactions have historically been associated with poorer outcomes for many investors than disciplined inaction.</p>
 
-<h2>What history suggests &mdash; and what it cannot tell us</h2>
+<h2>What history suggests and what it cannot tell us</h2>
 
 <p>Looking at U.S. equity markets across post-war recessions, a few observations have generally held. Per the <a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener noreferrer">NBER recession chronology</a> together with publicly available S&amp;P 500 historical return data:</p>
 
 <ul>
-<li>Equity drawdowns around recessions have been substantial. Bear markets &mdash; commonly defined as a peak-to-trough decline of 20% or more in a major index &mdash; have not been rare. They are an expected feature of long-term equity investing, not a malfunction.</li>
+<li>Equity drawdowns around recessions have been substantial. Bear markets (commonly defined as a peak-to-trough decline of 20% or more in a major index) have not been rare. They are an expected feature of long-term equity investing, not a malfunction.</li>
 <li>U.S. equity markets have, over multi-year horizons, recovered from each post-war recessionary drawdown. The length of those recoveries has varied widely, and the historical record does not guarantee that any future cycle will follow the same pattern.</li>
 <li>According to <a href="https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/guide-to-the-markets/" target="_blank" rel="noopener noreferrer">JPMorgan Asset Management&rsquo;s <em>Guide to the Markets</em></a>, in the 20-year period from January 2005 through December 2024, seven of the ten best trading days for the S&amp;P 500 occurred within two weeks of the ten worst days. Missing the ten best days during that period would have substantially reduced an investor&rsquo;s overall return. Strategies that try to step out and back in have, in that historical record, struggled to consistently capture those rebounds.</li>
 </ul>
@@ -532,9 +532,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>In our experience, the largest avoidable cost in a portfolio rarely comes from picking the &ldquo;wrong&rdquo; investment. It comes from the decision to abandon a long-term plan during a short-term drawdown and then re-enter the market after prices have recovered.</p>
 
-<p>The gap between an investment&rsquo;s reported return and the return investors actually earn &mdash; popularized by financial author <a href="https://behaviorgap.com/" target="_blank" rel="noopener noreferrer">Carl Richards as the <em>behavior gap</em></a> and quantified annually by <a href="https://www.morningstar.com/lp/mind-the-gap" target="_blank" rel="noopener noreferrer">Morningstar&rsquo;s <em>Mind the Gap</em> study</a> &mdash; is driven by well-documented cognitive biases. <em>Loss aversion</em> (originally documented by psychologists Daniel Kahneman and Amos Tversky in their work on prospect theory) describes the tendency to feel losses more acutely than equivalent gains. <em>Recency bias</em> leads us to extrapolate the recent past. <em>Herding</em> leads us to take cues from the people around us.</p>
+<p>The gap between an investment&rsquo;s reported return and the return investors actually earn (popularized by financial author <a href="https://behaviorgap.com/" target="_blank" rel="noopener noreferrer">Carl Richards as the <em>behavior gap</em></a> and quantified annually by <a href="https://www.morningstar.com/lp/mind-the-gap" target="_blank" rel="noopener noreferrer">Morningstar&rsquo;s <em>Mind the Gap</em> study</a>) is driven by well-documented cognitive biases. <em>Loss aversion</em> (originally documented by psychologists Daniel Kahneman and Amos Tversky in their work on prospect theory) describes the tendency to feel losses more acutely than equivalent gains. <em>Recency bias</em> leads us to extrapolate the recent past. <em>Herding</em> leads us to take cues from the people around us.</p>
 
-<p>Those biases are not character flaws. They are universal. Recognizing them in yourself is part of why a written plan exists in the first place &mdash; so that decisions made under pressure are constrained by decisions made calmly.</p>
+<p>Those biases are not character flaws. They are universal. Recognizing them in yourself is part of why a written plan exists in the first place, so that decisions made under pressure are constrained by decisions made calmly.</p>
 
 <h2>What you can actually control</h2>
 
@@ -573,11 +573,11 @@ export const blogPosts: BlogPost[] = [
 
 <h3>1. Cash needs over the next one to three years</h3>
 
-<p>Money you expect to spend in the next 12 to 36 months &mdash; living expenses for a near-retiree, a planned home purchase, an upcoming tuition payment &mdash; generally is not well suited to a portfolio whose value can move significantly over short periods. Confirming that short-horizon needs are funded from short-horizon assets is one of the most important pre-recession exercises an investor can do.</p>
+<p>Money you expect to spend in the next 12 to 36 months (living expenses for a near-retiree, a planned home purchase, an upcoming tuition payment) generally is not well suited to a portfolio whose value can move significantly over short periods. Confirming that short-horizon needs are funded from short-horizon assets is one of the most important pre-recession exercises an investor can do.</p>
 
 <h3>2. Asset allocation versus actual time horizon</h3>
 
-<p>The appropriate equity allocation for a 35-year-old funding retirement in 30 years is generally different from the appropriate equity allocation for a 65-year-old funding the next ten years. Many portfolios drift over time as some assets outperform others. A periodic rebalancing review &mdash; based on the original written plan, not on the current headlines &mdash; helps keep risk aligned with purpose.</p>
+<p>The appropriate equity allocation for a 35-year-old funding retirement in 30 years is generally different from the appropriate equity allocation for a 65-year-old funding the next ten years. Many portfolios drift over time as some assets outperform others. A periodic rebalancing review (based on the original written plan, not on the current headlines) helps keep risk aligned with purpose.</p>
 
 <h3>3. Tax-aware decisions</h3>
 
@@ -585,7 +585,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>4. Diversification</h3>
 
-<p>A diversified portfolio is not a guarantee against losses. It is a strategy designed to reduce the impact of any single position or asset class on the overall outcome. The goal is not to eliminate volatility &mdash; it is to ensure that no single bad outcome can damage the plan beyond repair.</p>
+<p>A diversified portfolio is not a guarantee against losses. It is a strategy designed to reduce the impact of any single position or asset class on the overall outcome. The goal is not to eliminate volatility, but to ensure that no single bad outcome can damage the plan beyond repair.</p>
 
 <h3>5. Estate, beneficiary, and insurance basics</h3>
 
@@ -597,7 +597,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>High combined tax burden.</strong> New York&rsquo;s top marginal state income tax bracket sits among the highest in the country, and New York City residents pay an additional municipal income tax on top of that. A given pre-tax investment decision can have a meaningfully different after-tax outcome here than it would for a resident of a no-income-tax state.</li>
-<li><strong>State and local tax deduction limits.</strong> Federal limitations on the deductibility of state and local taxes have meaningfully shaped itemized deduction strategy for many New York households since 2018, and the specifics of those limitations have been the subject of ongoing legislative attention. Coordinating charitable giving, large realizations, and Roth conversions with the current rules in mind is a meaningful planning lever &mdash; and a topic where current-year guidance from a tax professional matters.</li>
+<li><strong>State and local tax deduction limits.</strong> Federal limitations on the deductibility of state and local taxes have meaningfully shaped itemized deduction strategy for many New York households since 2018, and the specifics of those limitations have been the subject of ongoing legislative attention. Coordinating charitable giving, large realizations, and Roth conversions with the current rules in mind is a meaningful planning lever, and a topic where current-year guidance from a tax professional matters.</li>
 <li><strong>High property taxes.</strong> Long Island consistently ranks among the highest property tax jurisdictions in the United States. <a href="https://www.tax-rates.org/new_york/nassau_county_property_tax" target="_blank" rel="noopener noreferrer">Nassau County</a> ranks 2nd of 3,143 counties nationwide by median property tax bill, and <a href="https://www.tax-rates.org/new_york/suffolk_county_property_tax" target="_blank" rel="noopener noreferrer">Suffolk County</a> ranks 12th. For households who carry significant fixed property tax obligations, maintaining adequate liquid reserves takes on additional weight during periods of economic uncertainty.</li>
 <li><strong>Equity compensation and concentrated positions.</strong> A meaningful portion of NYC professionals hold a significant share of household wealth in employer stock through ISOs, NSOs, RSUs, ESPPs, or deferred compensation. Recession concerns do not change the underlying complexity, but they often make the trade-offs (diversification versus tax cost, AMT exposure, holding-period planning) feel more urgent. Those decisions warrant model-based analysis, not headline-driven reactions.</li>
 <li><strong>Multi-state filers.</strong> If you live in New Jersey or Connecticut and earn in New York, or vice versa, the state allocation of any realized gains or losses interacts with credits and reciprocity rules. This is a place where coordinating investment decisions with the actual tax return preparation matters.</li>
@@ -623,7 +623,7 @@ export const blogPosts: BlogPost[] = [
 <li>A written <a href="/services/financial-planning">financial plan</a> that defines what the money is actually for, by goal and by time horizon.</li>
 <li>An <a href="/services/investment-management">investment policy</a> built around that plan, with explicit guidance for how to react to drawdowns before they occur.</li>
 <li>Integrated <a href="/services/tax-planning">tax planning</a> and <a href="/services/tax-preparation">tax preparation</a>, so that investment decisions are evaluated against the actual after-tax outcome rather than a hypothetical pre-tax one.</li>
-<li>Behavioral coaching during periods of volatility &mdash; not because clients lack discipline, but because a second set of eyes is genuinely useful when the headlines are loud.</li>
+<li>Behavioral coaching during periods of volatility, not because clients lack discipline, but because a second set of eyes is genuinely useful when the headlines are loud.</li>
 </ul>
 
 <p>At United Financial Planning Group, our team includes <a href="/team">CFP&reg; professionals, CPAs, and Enrolled Agents</a> working in the same firm. We are <a href="/why-united">fee-only</a>, which means we do not earn commissions or sell products, and we are held to a fiduciary standard. If you would like to talk through how recession risk fits your specific situation, you can <a href="/contact">schedule a complimentary conversation</a>. There is no obligation, and the goal of that first call is simply to determine whether working together would actually serve your needs.</p>
