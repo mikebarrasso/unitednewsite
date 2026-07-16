@@ -124,7 +124,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-02",
     category: "Tax Planning",
     excerpt:
-      "For pre-retirees, the years after leaving a high-earning career&mdash;but before Social Security and RMDs begin&mdash;can be a narrow, powerful window for Roth conversions. Learn how to evaluate a Roth conversion strategy, avoid common bracket and IRMAA mistakes, and why coordinated planning makes all the difference.",
+      "For pre-retirees, the years after leaving a high-earning career&mdash;but before RMDs and Social Security begin&mdash;create a unique window for lower-tax-bracket Roth conversions. Learn how to evaluate a Roth conversion strategy, avoid common bracket and IRMAA mistakes, and why coordinated planning makes all the difference.",
     author: "United Financial Planning Group",
     authorSlug: "gerry-barrasso",
     type: "blog",
