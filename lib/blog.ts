@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: "roth-conversion-strategy-pre-retirees",
     title:
       "The Roth Conversion Window: When It Makes Sense for Pre-Retirees",
-    date: "2026-07-02",
+    date: "2026-07-16",
     category: "Tax Planning",
     excerpt:
       "For pre-retirees, the years after leaving a high-earning career&mdash;but before RMDs and Social Security begin&mdash;create a unique window for lower-tax-bracket Roth conversions. Learn how to evaluate a Roth conversion strategy, avoid common bracket and IRMAA mistakes, and why coordinated planning makes all the difference.",
@@ -2129,7 +2129,12 @@ export function getRelatedPosts(post: BlogPost): BlogPost[] {
 }
 
 export function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("en-US", {
+  // Append a local-noon time so the date is never shifted by timezone offset
+  // when parsed. Plain ISO date strings like "2026-07-16" are treated as UTC
+  // midnight by the Date constructor, which causes the date to display one day
+  // earlier in any timezone behind UTC (e.g. US/Eastern on a Node SSR server).
+  const normalized = dateStr.includes("T") ? dateStr : `${dateStr}T12:00:00`;
+  return new Date(normalized).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
