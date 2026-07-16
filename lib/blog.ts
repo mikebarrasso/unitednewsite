@@ -118,6 +118,170 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "roth-conversion-strategy-pre-retirees",
+    title:
+      "The Roth Conversion Window: When It Makes Sense for Pre-Retirees",
+    date: "2026-07-02",
+    category: "Tax Planning",
+    excerpt:
+      "For pre-retirees, the years after leaving a high-earning career&mdash;but before Social Security and RMDs begin&mdash;can be a narrow, powerful window for Roth conversions. Learn how to evaluate a Roth conversion strategy, avoid common bracket and IRMAA mistakes, and why coordinated planning makes all the difference.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/retirement-planning",
+      "/services/tax-planning",
+      "/services/financial-planning",
+    ],
+    relatedSlugs: [
+      "pre-retirement-tax-transition-managing-brackets-rmds",
+      "modern-guide-retirement-planning",
+      "retirement-portfolio-strategies-market-downturns",
+    ],
+    faqs: [
+      {
+        question: "What is a Roth conversion and how does it work?",
+        answer:
+          "A Roth conversion is the process of moving money from a traditional IRA (or other pre-tax retirement account) into a Roth IRA. The converted amount is added to your taxable income in the year of conversion and taxed at your ordinary income rate. In exchange, the funds now grow tax-free inside the Roth IRA and are not subject to Required Minimum Distributions (RMDs) during the account owner\u2019s lifetime. Qualified withdrawals in retirement are completely tax-free.",
+      },
+      {
+        question:
+          "What is the Roth conversion window for pre-retirees?",
+        answer:
+          "The \u201cconversion window\u201d refers to the period between retirement (or a significant reduction in earned income) and the time when Required Minimum Distributions begin at age 73 and Social Security benefits start. During this window, many pre-retirees are in a lower tax bracket than they were during their peak earning years and lower than they expect to be when RMDs force large taxable distributions later. This temporary low-income period creates an opportunity to convert traditional IRA funds to Roth at a relatively favorable tax rate.",
+      },
+      {
+        question: "What is IRMAA and how does it affect Roth conversion planning?",
+        answer:
+          "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added to Medicare Part B and Part D premiums for beneficiaries whose Modified Adjusted Gross Income (MAGI) exceeds certain thresholds. Because IRMAA is based on income from two years prior (for example, your 2024 income affects your 2026 Medicare premiums), a Roth conversion that pushes MAGI above an IRMAA tier can increase Medicare costs significantly. The surcharges are structured as stair-steps, meaning a small excess over a threshold can trigger thousands of dollars in additional annual premiums. This must be carefully modeled when sizing annual conversions.",
+      },
+      {
+        question: "What is the Roth five-year rule?",
+        answer:
+          "There are actually two five-year rules for Roth IRAs. The first applies to the earnings inside a Roth: to take qualified, tax-free withdrawals of earnings, the account must have been open for at least five tax years and the owner must be age 59\u00bd or older. The second applies to each individual Roth conversion: converted funds must remain in the Roth for five years before withdrawal to avoid the 10% early withdrawal penalty (if the account owner is under 59\u00bd). For most pre-retirees over age 59\u00bd, the five-year penalty rule on conversions is less of a concern, but the earnings rule still matters if you are opening a new Roth IRA for the first time.",
+      },
+      {
+        question:
+          "Should I pay Roth conversion taxes from my IRA or from outside funds?",
+        answer:
+          "In most cases, paying the conversion tax from outside the IRA&mdash;using funds in a taxable brokerage account, savings, or other non-retirement assets&mdash;is more advantageous. When you pay the tax from outside the IRA, the full converted amount moves into the Roth, maximizing the tax-free growth. If you withhold from the IRA itself to cover the tax, you effectively convert a smaller amount and lose the benefit of that withheld portion growing tax-free. In addition, if you are under age 59\u00bd, withholding from the IRA may trigger a 10% early withdrawal penalty on the withheld portion.",
+      },
+    ],
+    content: `<h2>Why the Conversion Window Matters</h2>
+
+<p>For decades of your working career, a Roth IRA may have been out of reach. High earned income pushed you above the contribution limits, and the tax deduction from a traditional 401(k) or IRA was too valuable to give up. So you did the right thing: you saved in pre-tax accounts and let those funds compound for years.</p>
+
+<p>Now the calculus is changing. You are within five to ten years of retirement&mdash;or perhaps you have already left your primary career. Your earned income has dropped. Social Security has not started. Required Minimum Distributions are still years away. And your traditional IRA or 401(k) has grown substantially.</p>
+
+<p>This is the <strong>Roth conversion window</strong>: the years when your taxable income is temporarily low, giving you an opportunity to move money from pre-tax accounts into a Roth IRA at a lower marginal tax rate than you faced during your peak earning years&mdash;and likely lower than the rates that will apply when RMDs force large mandatory distributions in your 70s and 80s.</p>
+
+<p>Used strategically, this window can permanently reduce your lifetime tax burden, lower Medicare premiums, and leave your heirs a more tax-efficient inheritance. Missed entirely, it closes quietly and you cannot recover it.</p>
+
+<h2>What a Roth Conversion Actually Is</h2>
+
+<p>A <strong>Roth conversion</strong> is straightforward in mechanics: you move funds from a traditional IRA (or roll over a pre-tax 401(k) into a traditional IRA first, then convert) into a Roth IRA. The converted amount is included in your gross income for the year as ordinary income and taxed at your marginal rate. In exchange, those funds now sit in a Roth IRA where they grow tax-free and are never subject to RMDs during your lifetime.</p>
+
+<p>There is no income limit for conversions. Anyone with a traditional IRA can execute a <strong>traditional IRA to Roth conversion</strong>, regardless of income. This is sometimes called the &ldquo;backdoor Roth&rdquo; strategy when used by high earners who cannot contribute directly, but for pre-retirees in the conversion window, it is simply a direct transfer executed with your IRA custodian.</p>
+
+<h2>Evaluating Whether a Roth Conversion Makes Sense</h2>
+
+<p>The Roth conversion decision is not a one-size-fits-all rule of thumb. It is a calculation that requires looking at your actual situation across multiple dimensions.</p>
+
+<h3>Current vs. Expected Future Tax Brackets</h3>
+
+<p>The core question in any <strong>Roth conversion tax bracket</strong> analysis is: are you in a lower bracket today than you expect to be when you start taking distributions?</p>
+
+<p>For many pre-retirees, the answer is yes&mdash;but the magnitude matters. If you are currently in the 22% federal bracket and project that RMDs plus Social Security will push you into the 24% or 28% bracket in your mid-70s, a conversion at 22% today creates a permanent saving on every converted dollar. If your future bracket will be roughly the same as today, the benefit is less clear-cut, though Roth accounts still offer estate planning and RMD flexibility advantages.</p>
+
+<p>A thorough analysis models:</p>
+
+<ul>
+<li><strong>Your projected RMDs at ages 73, 75, and 80</strong> based on current account balances and realistic growth assumptions.</li>
+<li><strong>Social Security income</strong> and at what income levels your benefits become taxable (up to 85% of benefits can be taxable once your &ldquo;combined income&rdquo; exceeds IRS thresholds).</li>
+<li><strong>Any pension or part-time income</strong> that will continue into retirement.</li>
+<li><strong>Your available bracket space today</strong>: how much additional taxable income can you recognize before crossing into the next federal bracket?</li>
+</ul>
+
+<p>Getting these projections right requires actual tax-return-level modeling&mdash;not a quick calculator estimate. The difference between $80,000 and $100,000 in Roth conversions in a given year can mean the difference between staying in the 22% bracket and tripping into the 24% bracket, or crossing an IRMAA tier that costs thousands in Medicare premiums two years later.</p>
+
+<h3>IRMAA: The Medicare Premium Surcharge Cliffs</h3>
+
+<p>One of the most important&mdash;and most commonly overlooked&mdash;dimensions of <strong>Roth conversion strategy</strong> planning is Medicare&rsquo;s Income-Related Monthly Adjustment Amount, or IRMAA. Under IRMAA, your Medicare Part B and Part D premiums are not flat rates. They increase in steps based on your Modified Adjusted Gross Income (MAGI) from two years prior.</p>
+
+<p>The mechanics matter: income you recognize during your conversion window directly affects your Medicare premiums two years later. Aggressive conversions in your late 60s can trigger IRMAA surcharges in your early 70s, adding thousands of dollars per year in healthcare costs. For a married couple, the combined impact can exceed $7,000 annually at higher income tiers.</p>
+
+<p>The stair-step structure means precision is critical. Recognizing just $1 above an IRMAA threshold triggers the full surcharge for that tier. A conversion analysis that does not explicitly model IRMAA thresholds is incomplete.</p>
+
+<h3>Net Investment Income Tax (NIIT) Thresholds</h3>
+
+<p>If your MAGI exceeds $200,000 (single) or $250,000 (married filing jointly), net investment income&mdash;interest, dividends, and capital gains&mdash;is subject to an additional 3.8% Net Investment Income Tax. Roth conversions increase your MAGI, which can pull otherwise below-threshold investment income into NIIT exposure. For pre-retirees with substantial taxable brokerage income, this interaction deserves explicit modeling.</p>
+
+<h3>New York State Tax Considerations</h3>
+
+<p>For our clients on Long Island, in Manhattan, and throughout the New York metro area: New York State taxes Roth conversions as ordinary income at state rates. New York&rsquo;s top rate of 10.9% (for high earners) means a conversion that looks cost-effective at the federal level may be more expensive in total when state taxes are included. Conversely, if you plan to relocate to a no-income-tax state in retirement, converting before you move can eliminate the state tax entirely&mdash;a significant planning opportunity worth evaluating carefully.</p>
+
+<h2>Common Roth Conversion Mistakes</h2>
+
+<p>The conversion window is an opportunity, but it is possible to execute it poorly. Here are the most common mistakes we see:</p>
+
+<h3>Converting Too Much in One Year</h3>
+
+<p>The most frequent error is converting too aggressively in a single year without modeling the full tax impact. A large conversion can:</p>
+
+<ul>
+<li>Push you from the 22% to the 24% (or higher) federal bracket, reducing the tax efficiency of the conversion.</li>
+<li>Trigger an IRMAA tier that raises your Medicare premiums for the following two years.</li>
+<li>Cause more of your Social Security benefits to become taxable.</li>
+<li>Subject more of your investment income to the 3.8% NIIT.</li>
+</ul>
+
+<p>The optimal approach is usually to spread conversions across multiple years, filling your current bracket carefully each year rather than attempting a large one-time conversion.</p>
+
+<h3>Paying the Tax Bill From Inside the IRA</h3>
+
+<p>If you withhold funds from the IRA itself to cover the conversion tax, you reduce the amount that actually lands in the Roth&mdash;and you lose the long-term compounding benefit of those withheld dollars growing tax-free. The optimal approach is to pay the conversion tax from a taxable brokerage account or other non-retirement savings, so the full converted amount moves into the Roth. If you are under age 59&frac12;, withholding from the IRA to pay the tax can also trigger a 10% penalty on the withheld portion.</p>
+
+<h3>Ignoring the Five-Year Rule</h3>
+
+<p>Roth IRAs have two five-year rules, and confusing them is a common source of errors. Each conversion begins its own five-year clock for penalty-free access to that specific converted amount (for those under 59&frac12;). The separate five-year rule on Roth IRA earnings requires the account to have been open at least five tax years before earnings can be withdrawn tax-free. For most pre-retirees converting in their 60s, the penalty issue is less pressing&mdash;but if you are opening a Roth IRA for the first time as part of this strategy, the earnings five-year clock starts now and is worth factoring into your planning timeline.</p>
+
+<h3>Converting Without a Multi-Year Plan</h3>
+
+<p>A Roth conversion executed without a multi-year projection is guesswork. Whether conversions make sense&mdash;and how much to convert each year&mdash;depends on your full income picture: expected Social Security timing, projected RMD amounts, capital gains harvesting plans, charitable giving, and future tax law expectations. Executing conversions year by year without a coordinated roadmap often results in suboptimal bracket and IRMAA outcomes that could have been avoided.</p>
+
+<h2>Why Coordinated Planning and Tax Preparation Matter</h2>
+
+<p>Roth conversion analysis is one of the clearest illustrations of why financial planning and tax preparation work best when they happen under the same roof.</p>
+
+<p>A conversion decision is not simply a financial planning question (&ldquo;does the math work over 20 years?&rdquo;). It is also a tax preparation question that requires knowing your current-year AGI, your itemized vs. standard deduction, your capital gains, your MAGI relative to IRMAA thresholds, and your state income tax position&mdash;all simultaneously. Without the actual tax picture in front of them, a financial planner is estimating. Without the long-term projection, a tax preparer is optimizing only for this year.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, our team of <strong>CFP&reg; professionals, CPAs, and Enrolled Agents</strong> approaches Roth conversion analysis exactly this way. We are not relying on a generic planning calculator. We build multi-year conversion models using tax-return-level detail: your specific account balances, projected growth rates, expected income sources, IRMAA thresholds, NIIT exposure, and New York State tax impact&mdash;all modeled together so we can identify the optimal conversion amount for each year of the window.</p>
+
+<p>Because our advisors work alongside our tax professionals, there are no &ldquo;surprises&rdquo; at tax time. The conversion amounts we plan in the spring are coordinated with your tax return in the winter. Adjustments can be made in real time as your income picture changes&mdash;something that is simply not possible when your financial planner and your accountant are in separate firms that communicate once a year, if at all.</p>
+
+<p>We are <a href="/services/retirement-planning">fee-only and fiduciary</a>&mdash;we have no financial incentive to recommend a Roth conversion (or any other strategy) except that it is in your best interest. No commissions, ever.</p>
+
+<h2>Is This the Right Time for You?</h2>
+
+<p>The conversion window is time-limited by definition. Once RMDs begin at age 73, your annual taxable income rises mechanically and the conversion math changes. Once Social Security starts, your combined income pushes higher. Every year of inaction narrows the window.</p>
+
+<p>The question is not whether Roth conversions are theoretically valuable&mdash;for most pre-retirees with substantial traditional IRA balances, they are. The question is <em>how much to convert</em>, <em>in which years</em>, and <em>how to coordinate it</em> with the rest of your income, tax, and investment picture. That is where the real planning work happens.</p>
+
+<p>If you are within five to ten years of retirement&mdash;or have already stopped working&mdash;this is the right time to have that analysis done properly. Learn more about our approach to <a href="/services/tax-planning">tax planning</a> and <a href="/services/retirement-planning">retirement planning</a>, or reach out directly.</p>
+
+<h2>Schedule a Personalized Roth Conversion Analysis</h2>
+
+<p>We invite you to schedule a complimentary conversation with our team at United Financial Planning Group. We serve clients in Hauppauge, Manhattan, Lake Success, and throughout New York&mdash;as well as clients nationwide who value the integrated planning approach.</p>
+
+<p>In this conversation, we will review your current account structure, model your projected RMDs and Social Security income, identify your available conversion window, and assess whether a multi-year Roth conversion strategy fits your situation. There is no pressure and no obligation&mdash;just a clear-eyed look at whether this strategy makes sense for you.</p>
+
+<p><a href="/contact">Contact United Financial Planning Group</a> to schedule your complimentary analysis. The window may be open longer than you think&mdash;but it will not stay open forever.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Roth conversion analysis involves complex variables specific to each individual&rsquo;s income, tax bracket, account balances, state of residence, and long-term financial goals. Tax laws, Medicare premium schedules, IRMAA thresholds, and RMD rules are subject to change. The examples and scenarios described are for illustrative purposes only and should not be relied upon as a projection or guarantee of results. Please consult a qualified financial advisor and tax professional regarding your specific circumstances before making any decisions.</p>`,
+  },
+  {
     slug: "modern-guide-retirement-planning",
     title:
       "The Modern Guide to Retirement Planning: Integrating Wealth, Taxes, and Investments",
