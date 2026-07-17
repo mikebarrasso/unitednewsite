@@ -17,6 +17,7 @@ import {
 } from "@/lib/blog";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -324,6 +325,19 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                   </span>
                 </Link>
               </div>
+
+              {post.image && (
+                <div className="mt-6 relative aspect-[16/9] w-full rounded-xl overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt ?? post.title}
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                  />
+                </div>
+              )}
 
               {post.type === "media" && post.externalUrl && (
                 <div className="mt-6 p-4 bg-muted/50 rounded-xl border border-border">

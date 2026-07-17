@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts, formatDate, type BlogPost } from "@/lib/blog";
 
@@ -20,10 +21,22 @@ function ArticleCard({
         className="flex flex-col gap-3 group"
       >
         <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-muted flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-foreground/10" />
-          <span className="text-4xl font-serif text-foreground/10 select-none">
-            UFPG
-          </span>
+          {post.image ? (
+            <Image
+              src={post.image}
+              alt={post.imageAlt ?? post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          ) : (
+            <>
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-foreground/10" />
+              <span className="text-4xl font-serif text-foreground/10 select-none">
+                UFPG
+              </span>
+            </>
+          )}
           <span className="absolute top-3 right-3 px-3 py-1 bg-background text-foreground text-xs font-medium rounded-full shadow-sm border border-border">
             {post.category}
           </span>

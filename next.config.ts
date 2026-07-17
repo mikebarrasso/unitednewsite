@@ -321,6 +321,10 @@ trailingSlash: false,
         protocol: "https",
         hostname: "pbs.twimg.com",
       },
+      {
+        protocol: "https",
+        hostname: "nz2q9bvkofj2xcya.public.blob.vercel-storage.com",
+      },
     ],
   },
   async redirects() {
