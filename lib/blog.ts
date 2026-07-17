@@ -113,6 +113,10 @@ export type BlogPost = {
     description?: string;
     steps: HowToStep[];
   };
+  /** Optional featured/hero image URL used as og:image and in Article schema. */
+  image?: string;
+  /** Alt text for the featured image (required when `image` is set). */
+  imageAlt?: string;
   content: string;
 };
 
@@ -128,6 +132,10 @@ export const blogPosts: BlogPost[] = [
     author: "United Financial Planning Group",
     authorSlug: "gerry-barrasso",
     type: "blog",
+    image:
+      "https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/2ab2309d-0380-441f-b7a2-ce44fea22384-MJkWeRhbyLKDgOiy5uP41sqN8x1eOx.jpg",
+    imageAlt:
+      "Roth IRA jar and coins illustrating tax-free growth for retirement",
     relatedServices: [
       "/services/retirement-planning",
       "/services/tax-planning",

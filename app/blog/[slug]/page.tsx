@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.excerpt,
     path: `/blog/${post.slug}`,
+    ...(post.image ? { image: post.image } : {}),
   });
 }
 
@@ -75,8 +76,9 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
   const dateModified = getPostLastModified(post);
   const author = getAuthor(post);
   const isIndividualAuthor = author.url.startsWith("/team/");
-  // Falls back to the firm-wide dynamic OG image if the post has no custom image.
-  const imageUrl = `${siteConfig.url}/opengraph-image`;
+  // Uses the post's featured image when available; falls back to the firm-wide dynamic OG image.
+  const imageUrl = post.image ?? `${siteConfig.url}/opengraph-image`;
+  const imageAlt = post.imageAlt ?? post.title;
   const wordCount = htmlToWordCount(post.content);
 
   const authorEntity = isIndividualAuthor
@@ -121,6 +123,7 @@ function ArticleSchema({ post }: { post: NonNullable<ReturnType<typeof getPostBy
     image: {
       "@type": "ImageObject",
       url: imageUrl,
+      ...(imageAlt ? { description: imageAlt } : {}),
       width: 1200,
       height: 630,
     },
