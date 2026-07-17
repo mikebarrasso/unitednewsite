@@ -124,7 +124,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-16",
     category: "Tax Planning",
     excerpt:
-      "For pre-retirees, the years after leaving a high-earning career&mdash;but before RMDs and Social Security begin&mdash;create a unique window for lower-tax-bracket Roth conversions. Learn how to evaluate a Roth conversion strategy, avoid common bracket and IRMAA mistakes, and why coordinated planning makes all the difference.",
+      "For many pre-retirees, the years between leaving a full-time career and the start of Required Minimum Distributions at age 73 are the most favorable tax window they will ever have for Roth conversions. Income is temporarily low, brackets are more forgiving, and the decisions made here can compound quietly for decades. But sizing those conversions correctly — without triggering IRMAA surcharges or bracket creep — requires your financial plan and your tax picture to work together, not in parallel.",
     author: "United Financial Planning Group",
     authorSlug: "gerry-barrasso",
     type: "blog",
