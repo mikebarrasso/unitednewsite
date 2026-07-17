@@ -183,6 +183,55 @@ export const blogPosts: BlogPost[] = [
 
 <p>There is no income limit for conversions. Anyone with a traditional IRA can execute a <strong>traditional IRA to Roth conversion</strong>, regardless of income. This is sometimes called the &ldquo;backdoor Roth&rdquo; strategy when used by high earners who cannot contribute directly, but for pre-retirees in the conversion window, it is simply a direct transfer executed with your IRA custodian.</p>
 
+<h2>Traditional IRA vs. Roth IRA: Key Differences at a Glance</h2>
+
+<p>Before modeling whether a conversion makes sense for your situation, it helps to see the two account types side by side. The table below summarizes the core tax treatment differences that drive the Roth conversion decision.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">For illustrative and educational purposes only. Tax rules are subject to change. Consult a qualified tax professional regarding your individual situation.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Feature</th>
+<th class="text-left p-3 border border-border font-semibold">Traditional IRA / 401(k)</th>
+<th class="text-left p-3 border border-border font-semibold">Roth IRA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Contributions</td>
+<td class="p-3 border border-border">Pre-tax (reduces taxable income in the contribution year, subject to income and participation rules)</td>
+<td class="p-3 border border-border">After-tax (no deduction; income limits apply for direct contributions, but there is no limit for conversions)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Growth</td>
+<td class="p-3 border border-border">Tax-deferred (no tax on dividends, interest, or gains while inside the account)</td>
+<td class="p-3 border border-border">Tax-free (qualified earnings grow and are withdrawn free of federal income tax)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Withdrawals in Retirement</td>
+<td class="p-3 border border-border">Fully taxable as ordinary income at your marginal rate in the year of withdrawal</td>
+<td class="p-3 border border-border">Tax-free for qualified distributions (account open &ge;5 tax years; owner age 59&frac12; or older)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Required Minimum Distributions (RMDs)</td>
+<td class="p-3 border border-border">Required beginning at age 73 (under current law), whether you need the income or not; RMDs are taxable</td>
+<td class="p-3 border border-border">No RMDs during the original owner&rsquo;s lifetime; assets can grow tax-free indefinitely or be passed to heirs</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Estate / Inheritance</td>
+<td class="p-3 border border-border">Heirs pay ordinary income tax on inherited distributions (10-year rule for most non-spouse beneficiaries under SECURE 2.0)</td>
+<td class="p-3 border border-border">Heirs generally receive distributions income-tax-free (10-year rule applies, but the distributions themselves are not taxable)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">IRMAA / Medicare Impact</td>
+<td class="p-3 border border-border">Withdrawals count toward MAGI, which drives Medicare Part B and D premium surcharges</td>
+<td class="p-3 border border-border">Qualified withdrawals do not count toward MAGI, so they do not increase Medicare premium surcharges</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <h2>Evaluating Whether a Roth Conversion Makes Sense</h2>
 
 <p>The Roth conversion decision is not a one-size-fits-all rule of thumb. It is a calculation that requires looking at your actual situation across multiple dimensions.</p>
@@ -248,6 +297,80 @@ export const blogPosts: BlogPost[] = [
 <h3>Converting Without a Multi-Year Plan</h3>
 
 <p>A Roth conversion executed without a multi-year projection is guesswork. Whether conversions make sense&mdash;and how much to convert each year&mdash;depends on your full income picture: expected Social Security timing, projected RMD amounts, capital gains harvesting plans, charitable giving, and future tax law expectations. Executing conversions year by year without a coordinated roadmap often results in suboptimal bracket and IRMAA outcomes that could have been avoided.</p>
+
+<h2>What a Multi-Year Roth Conversion Ladder Might Look Like</h2>
+
+<p>One of the most effective ways to use the conversion window is to spread conversions across several years, carefully filling up a lower tax bracket each year rather than converting a large lump sum all at once. The table below shows a <strong>hypothetical illustration</strong> of how this might work for a married couple filing jointly who retire at 63 with a $1.2 million traditional IRA, modest other income, and Social Security beginning at 70.</p>
+
+<p><em>Important: The numbers below are entirely hypothetical and for illustration only. They are not a projection or guarantee of results, and they do not reflect any specific client situation. Federal bracket boundaries, IRMAA thresholds, and tax rates are subject to change. Individual circumstances vary significantly. This is not personalized tax or financial advice.</em></p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Hypothetical illustration only &mdash; not a projection or individualized advice. Assumes 2024 federal brackets (MFJ), 5% annual IRA growth, and illustrative Social Security and other income figures. Actual results will differ based on your specific situation.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Year / Age</th>
+<th class="text-left p-3 border border-border font-semibold">Other Taxable Income (Illus.)</th>
+<th class="text-left p-3 border border-border font-semibold">Roth Conversion Amount (Illus.)</th>
+<th class="text-left p-3 border border-border font-semibold">Approx. Top Bracket Used</th>
+<th class="text-left p-3 border border-border font-semibold">Key Consideration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Year 1 &mdash; Age 63</td>
+<td class="p-3 border border-border">$40,000 (part-time / dividends)</td>
+<td class="p-3 border border-border">$50,000</td>
+<td class="p-3 border border-border">22% federal</td>
+<td class="p-3 border border-border">First year of conversion window; fill lower portion of 22% bracket. Pay tax from taxable savings, not IRA.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Year 2 &mdash; Age 64</td>
+<td class="p-3 border border-border">$35,000 (investment income)</td>
+<td class="p-3 border border-border">$55,000</td>
+<td class="p-3 border border-border">22% federal</td>
+<td class="p-3 border border-border">Slightly larger conversion; confirm IRMAA MAGI stays below first threshold (~$206,000 MFJ for 2024). Two-year lookback means 2024 income affects 2026 Medicare premiums.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Year 3 &mdash; Age 65</td>
+<td class="p-3 border border-border">$35,000 (investment income)</td>
+<td class="p-3 border border-border">$55,000</td>
+<td class="p-3 border border-border">22% federal</td>
+<td class="p-3 border border-border">Medicare begins at 65 &mdash; IRMAA exposure is now active. This year&rsquo;s MAGI (2027) affects 2029 Medicare premiums. Careful sizing required.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Years 4&ndash;6 &mdash; Ages 66&ndash;68</td>
+<td class="p-3 border border-border">$30,000&ndash;$35,000</td>
+<td class="p-3 border border-border">$50,000&ndash;$60,000 per year</td>
+<td class="p-3 border border-border">22%&ndash;24% federal</td>
+<td class="p-3 border border-border">Conversions continue annually. Total MAGI (other income + conversion) is modeled to stay below IRMAA Tier 1 each year. Conversion amount may vary based on that year&rsquo;s actual income.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Year 7 &mdash; Age 69</td>
+<td class="p-3 border border-border">$30,000</td>
+<td class="p-3 border border-border">$45,000</td>
+<td class="p-3 border border-border">22% federal</td>
+<td class="p-3 border border-border">Approaching Social Security start (age 70). Modeling confirms that once SS begins (~$40,000/year taxable equivalent), the optimal conversion amount decreases significantly. Final full-bracket conversion year.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Age 70+: Social Security Begins</td>
+<td class="p-3 border border-border">$40,000 SS (taxable portion) + investment income</td>
+<td class="p-3 border border-border">Reduced or paused</td>
+<td class="p-3 border border-border">Varies</td>
+<td class="p-3 border border-border">Income rises meaningfully. Conversions may still occur in smaller amounts if bracket space remains, but the math is re-evaluated each year.</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Age 73+: RMDs Begin</td>
+<td class="p-3 border border-border">SS + RMD (potentially $60,000&ndash;$80,000+)</td>
+<td class="p-3 border border-border">Likely minimal or none</td>
+<td class="p-3 border border-border">24%&ndash;32% (illustrative)</td>
+<td class="p-3 border border-border">RMDs from the (now smaller) traditional IRA are mandatory and taxable. Because conversions reduced the traditional IRA balance over years 1&ndash;7, RMDs are lower than they would have been &mdash; this is the long-term benefit of the strategy.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The illustrative outcome: by converting roughly <strong>$360,000&ndash;$380,000 over seven years</strong> (hypothetical), this couple moves a meaningful portion of their pre-tax savings into a Roth IRA at the 22% federal bracket, before Social Security and RMDs would push that income into higher brackets. The traditional IRA balance at age 73 is smaller, which means lower mandatory distributions&mdash;and potentially lower Medicare premiums&mdash;throughout their 70s and 80s. The specific numbers for any individual will differ substantially based on their actual income, balances, state taxes, and life circumstances.</p>
 
 <h2>Why Coordinated Planning and Tax Preparation Matter</h2>
 
