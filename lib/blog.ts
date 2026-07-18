@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
         question:
           "Should I pay Roth conversion taxes from my IRA or from outside funds?",
         answer:
-          "In most cases, paying the conversion tax from outside the IRA&mdash;using funds in a taxable brokerage account, savings, or other non-retirement assets&mdash;is more advantageous. When you pay the tax from outside the IRA, the full converted amount moves into the Roth, maximizing the tax-free growth. If you withhold from the IRA itself to cover the tax, you effectively convert a smaller amount and lose the benefit of that withheld portion growing tax-free. In addition, if you are under age 59\u00bd, withholding from the IRA may trigger a 10% early withdrawal penalty on the withheld portion.",
+          "In most cases, paying the conversion tax from outside the IRA—using funds in a taxable brokerage account, savings, or other non-retirement assets—is more advantageous. When you pay the tax from outside the IRA, the full converted amount moves into the Roth, maximizing the tax-free growth. If you withhold from the IRA itself to cover the tax, you effectively convert a smaller amount and lose the benefit of that withheld portion growing tax-free. In addition, if you are under age 59\u00bd, withholding from the IRA may trigger a 10% early withdrawal penalty on the withheld portion.",
       },
     ],
     content: `<h2>Why the Conversion Window Matters</h2>
