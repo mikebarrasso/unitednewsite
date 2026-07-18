@@ -814,6 +814,126 @@ export const personas: Persona[] = [
     ],
   },
 
+  // ─── RAMP EMPLOYEES ───
+  {
+    slug: "ramp-employees",
+    name: "Ramp Employees",
+    seoTitle: "Financial Advisor for Ramp Employees | Equity, Pre-IPO & Tax Planning",
+    metaDescription:
+      "Fee-only financial planning for Ramp employees. RSU vesting, concentration risk, tender offer decisions, QSBS, AMT from ISOs, and pre-IPO tax planning. CFPs, CPAs, and EAs under one roof.",
+    h1: "Financial Planning Built for Ramp's Late-Stage Equity",
+    heroSubtitle:
+      "Ramp is one of the most-watched fintech IPO candidates in the country, with a valuation history that spans multiple funding rounds and a real path to liquidity. If you work at Ramp, your equity situation is specific: RSU vesting schedules, potential tender offer windows, ISO/QSBS considerations, and a future IPO that could change your tax picture overnight. Our CFPs, CPAs, and EAs work as one team to plan around all of it. We are based in NYC and work with clients nationwide.",
+    eyebrow: "For Ramp Employees",
+    icon: "BarChart3",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+    imageAlt:
+      "Financial professional reviewing equity compensation data on a modern workstation",
+    problemsHeading:
+      "Late-Stage Fintech Equity Comes With Its Own Set of Planning Problems",
+    problemsSubheading:
+      "Ramp sits at an unusual inflection point: private enough that your equity is still illiquid on most days, but advanced enough that IPO planning, secondary liquidity, and tax exposure are real and near-term considerations. Most financial advisors have never worked through this stage up close.",
+    problems: [
+      {
+        heading: "RSU concentration risk grows with every vesting cycle",
+        description:
+          "Each time a tranche of RSUs vests, your exposure to Ramp as a single position increases. At a private company, you cannot simply sell as you go the way you might at a public employer. That means concentration builds until a liquidity event arrives, and the tax consequences of unwinding it all at once can be significant. Planning for diversification has to start well before you have the ability to act.",
+      },
+      {
+        heading: "Tender offers and secondary windows close fast",
+        description:
+          "Late-stage private companies at Ramp's scale occasionally offer employees periodic liquidity through tender offers or secondary transactions. Each window is short, the information available is limited, and the decision of how much to sell, which shares to sell, and what the tax consequences will be requires analysis you cannot complete in a day or two. Arriving prepared is the only way to make a good decision.",
+      },
+      {
+        heading: "A potential IPO changes your tax exposure, not just your liquidity",
+        description:
+          "An IPO is not just a liquidity event. It is a tax event. Depending on how your equity is structured, the timing of your grants relative to the IPO, and your income in the year shares become liquid, you could face a significant and compressible tax bill. Planning for that in advance, not after the fact, is the difference between managing your tax liability and simply paying it.",
+      },
+      {
+        heading: "ISO and QSBS mechanics are easy to miss until the window closes",
+        description:
+          "If any of your Ramp equity involves incentive stock options (ISOs), exercising them before an IPO can trigger the Alternative Minimum Tax even if you have not sold a single share. Separately, shares in certain qualifying startups may be eligible for the Section 1202 QSBS exclusion, which can shield a meaningful portion of your gain from federal capital gains tax, but only if specific conditions are met and a five-year holding period is maintained. Both require proactive planning, not year-end discovery.",
+      },
+    ],
+    servicesHeading:
+      "Equity Planning, Tax Strategy, and Financial Planning on One Team",
+    servicesSubheading:
+      "Our CFP® professionals, CPAs, and Enrolled Agents work together on your plan so your Ramp equity decisions, tax exposure, and long-term financial goals are built as one coordinated whole. We are fee-only fiduciaries: no commissions, ever.",
+    services: [
+      {
+        title: "Equity Compensation Planning",
+        description:
+          "We work through the details that matter for late-stage private company employees: RSU vesting and concentration risk, secondary sale and tender offer analysis, ISO exercise strategy with AMT modeling, and QSBS eligibility tracking. Each decision is evaluated in the context of your full financial picture.",
+        href: "/services/equity-compensation",
+      },
+      {
+        title: "Tax Planning",
+        description:
+          "Our CPAs and Enrolled Agents work alongside your financial planner year-round. We model your tax exposure before tender offer windows close, estimate AMT impact from ISO exercises, and build a forward-looking plan for managing ordinary income and capital gains when a liquidity event arrives.",
+        href: "/services/tax-planning",
+      },
+      {
+        title: "Financial Planning",
+        description:
+          "We help you see your full financial picture: liquid savings, illiquid equity, pre-IPO concentration risk, retirement readiness, and long-term goals. For Ramp employees with equity milestones on the horizon, we integrate your equity timeline with the rest of your financial plan.",
+        href: "/services/financial-planning",
+      },
+      {
+        title: "Investment Management",
+        description:
+          "After a tender offer or IPO generates liquidity, the decisions around investing that capital require coordination with your tax situation and your remaining equity exposure. We manage investments with the full picture in view, not in isolation from it.",
+        href: "/services/investment-management",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do RSU vesting schedules at a private company like Ramp affect my taxes?",
+        answer:
+          "At a public company, RSUs typically vest on a time-based schedule and you owe ordinary income tax at vest, based on the market price of the shares that day. At a private company, the tax treatment can work differently depending on how the grants are structured. Some private-company RSUs use double-trigger vesting, meaning shares only deliver and taxes become due when both a time condition and a liquidity event are satisfied. Understanding which structure applies to your grants, and what that means for your planning, is a foundational step.",
+      },
+      {
+        question: "Should I participate in a Ramp tender offer or secondary sale?",
+        answer:
+          "There is no universal answer. The right decision depends on your cost basis, your current income, your overall financial picture, your view of the company's long-term trajectory, and whether you hold QSBS-eligible shares you want to hold through the five-year mark or ISO shares where a sale could affect your AMT position. These are exactly the kinds of decisions we help clients work through before tender offer windows close, not during them.",
+      },
+      {
+        question: "What should I be doing now to prepare for a potential Ramp IPO?",
+        answer:
+          "The period leading up to a potential IPO is when planning matters most and options are still open. We help Ramp employees model what their equity could be worth under different scenarios, understand the tax consequences of shares becoming liquid, evaluate whether to exercise any ISOs before the IPO to manage AMT exposure, and build a diversification and tax strategy for the proceeds. The goal is to arrive at any liquidity event with a plan already in place.",
+      },
+      {
+        question: "What is the QSBS exclusion and could it apply to my Ramp equity?",
+        answer:
+          "Section 1202 of the tax code allows qualifying shareholders of certain small business stock to exclude a significant portion of their gain from federal capital gains tax, provided shares are held for at least five years and other conditions are met at the time of issuance. Whether any of your Ramp equity qualifies depends on when and how it was issued, the nature of your grant, and factors specific to the company at that time. We evaluate this as part of our equity compensation planning work.",
+      },
+      {
+        question: "Can you help me understand AMT exposure from exercising ISOs?",
+        answer:
+          "Yes. Exercising incentive stock options at a private company can trigger the Alternative Minimum Tax in the year of exercise, even if you have not sold the shares and have not received any cash. The amount of AMT exposure depends on the spread between your exercise price and the current 409A valuation, your other income, and deductions available to you that year. We model this before you exercise so you can make an informed decision.",
+      },
+      {
+        question: "What does fee-only fiduciary mean, and why does it matter?",
+        answer:
+          "Fee-only means we are compensated only by the fees you pay us. We earn no commissions, no referral fees, and no revenue from investment products. As a fiduciary, we are legally required to act in your interest. That structure means our advice is based on your situation, not on what generates revenue for us.",
+      },
+      {
+        question: "Are you affiliated with or endorsed by Ramp?",
+        answer:
+          "No. United Financial Planning Group is an independent firm with no affiliation, partnership, endorsement, or sponsorship relationship with Ramp. We serve employees of Ramp and other late-stage private companies as independent financial advisors. Ramp is referenced on this page only to describe the professional background of clients we work with.",
+      },
+    ],
+    faqHeading: "Common Questions From Ramp Employees",
+    lastUpdated: "July 2026",
+    relatedPersonaSlugs: ["software-engineers", "executives", "startup-founders"],
+    serviceTypes: [
+      "Equity Compensation Planning",
+      "Tax Planning",
+      "Financial Planning",
+      "Investment Management",
+    ],
+  },
+
   // ─── HIGH NET WORTH ───
   {
     slug: "high-net-worth",
