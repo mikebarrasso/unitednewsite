@@ -699,6 +699,121 @@ export const personas: Persona[] = [
     ],
   },
 
+  // ─── ANTHROPIC EMPLOYEES ───
+  {
+    slug: "anthropic-employees",
+    name: "Anthropic Employees",
+    seoTitle: "Financial Advisor for Anthropic Employees | NYC Equity & Pre-IPO Planning",
+    metaDescription:
+      "Fee-only financial planning for Anthropic employees in NYC. Private-company RSU double-trigger vesting, tender offer liquidity, QSBS, 83(b) elections, and AMT planning. CFPs, CPAs, and EAs under one roof.",
+    h1: "Financial Planning Built for Anthropic's Private-Company Equity",
+    heroSubtitle:
+      "Anthropic recently leased space at 330 Hudson St in Hudson Square, bringing its NYC headcount to 1,000-plus by end of 2026. Our Manhattan office is minutes away. If you work at Anthropic or another pre-IPO AI company, your equity has a different set of rules from public-company RSUs. We help you navigate them.",
+    eyebrow: "For Anthropic and Pre-IPO AI Company Employees",
+    icon: "Code2",
+    imageUrl:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop",
+    imageAlt:
+      "AI researcher working at a modern desk with dual monitors displaying code",
+    problemsHeading:
+      "Private-Company Equity Works Differently. Most Financial Advisors Treat It Like It Doesn't.",
+    problemsSubheading:
+      "At a company like Anthropic, your equity isn't traded on a public exchange. The timing of your taxes, your liquidity, and your planning decisions all depend on mechanics that most financial advisors have never seen up close. Getting them wrong is costly and often irreversible.",
+    problems: [
+      {
+        heading: "Double-trigger RSU vesting means your tax clock starts at the liquidity event, not the vest date",
+        description:
+          "Most public-company RSU guides talk about tax at vest. Private-company RSUs often use double-trigger vesting: shares don't deliver until both a time-based schedule and a liquidity event (IPO, acquisition, or secondary sale) have been satisfied. That structure affects when you owe tax, how much you owe, and what planning moves are still available to you before and after the trigger.",
+      },
+      {
+        heading: "Tender offers and secondary sales require fast, coordinated decisions",
+        description:
+          "Anthropic has offered employees periodic liquidity through tender offers and secondary-market transactions. Each one comes with a short window, limited information, and real tax consequences. Whether to participate, how much to sell, and how to handle the resulting income requires a financial and tax analysis you can't rush.",
+      },
+      {
+        heading: "The 83(b) election window is 30 days, and missing it is permanent",
+        description:
+          "If you received restricted stock or early-exercised options at Anthropic before the equity was fully vested, you had 30 days to file an 83(b) election with the IRS. If that window passed without a filing, you may owe ordinary income tax on appreciation that hasn't generated any liquidity yet. For those still holding unvested shares, understanding where you stand on this decision is a foundational planning step.",
+      },
+      {
+        heading: "QSBS and AMT exposure are often overlooked until it's too late",
+        description:
+          "Shares in a company like Anthropic may qualify for the Section 1202 Qualified Small Business Stock exclusion if specific conditions are met and a five-year holding period is satisfied. Separately, if any incentive stock options (ISOs) are involved, exercising them can trigger Alternative Minimum Tax even before you've sold a share. Both situations require proactive, coordinated planning, not year-end discovery.",
+      },
+    ],
+    servicesHeading:
+      "Equity Planning, Tax Strategy, and Financial Planning on One Team",
+    servicesSubheading:
+      "Our CFP® professionals, CPAs, and Enrolled Agents work together on your plan, so your private-company equity decisions, tax exposure, and long-term financial goals are built as one coordinated whole. We are fee-only fiduciaries: no commissions, ever.",
+    services: [
+      {
+        title: "Equity Compensation Planning",
+        description:
+          "We work through the mechanics that matter for pre-IPO employees: double-trigger RSU structures, 83(b) elections, tender-offer participation decisions, QSBS eligibility tracking, and ISO exercise strategy with AMT modeling. Each decision is evaluated in the context of your full financial picture.",
+        href: "/services/equity-compensation",
+      },
+      {
+        title: "Tax Planning",
+        description:
+          "Our CPAs and Enrolled Agents work alongside your financial planner year-round. We model your tax exposure before tender offers close, estimate AMT impact from ISO exercises, and build a plan for managing ordinary income and capital gains when liquidity events arrive.",
+        href: "/services/tax-planning",
+      },
+      {
+        title: "Financial Planning",
+        description:
+          "We help you see your full financial picture: liquid savings, illiquid equity, pre-IPO concentration risk, and long-term goals. For senior staff and engineers approaching a potential retirement timeline, we integrate your equity milestones with retirement readiness planning.",
+        href: "/services/financial-planning",
+      },
+      {
+        title: "Investment Management",
+        description:
+          "After a tender offer or secondary sale generates liquidity, the decisions around investing that capital require coordination with your tax situation and your remaining equity exposure. We manage investments with the full picture in view.",
+        href: "/services/investment-management",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is double-trigger RSU vesting and why does it matter for tax planning?",
+        answer:
+          "Standard public-company RSUs vest on a time-based schedule, and you owe ordinary income tax at vest. Private-company RSUs at companies like Anthropic often use double-trigger vesting: shares only deliver when both a time condition and a liquidity event are satisfied. That second trigger changes when ordinary income tax is due. It also means your planning decisions before a liquidity event, such as whether to participate in a tender offer, carry real tax consequences that are specific to your situation.",
+      },
+      {
+        question: "Should I participate in Anthropic's tender offer?",
+        answer:
+          "There is no universal answer. Whether to sell, how much to sell, and which shares to sell depends on your cost basis, your current income, your overall financial picture, and your view of the company's long-term value. It also depends on whether you have QSBS-eligible shares you want to hold through the five-year mark, or ISO shares where a sale could affect your AMT position. These are exactly the kinds of decisions we help clients work through before tender offer windows close.",
+      },
+      {
+        question: "What is the QSBS five-year holding period and do my Anthropic shares qualify?",
+        answer:
+          "Section 1202 of the tax code allows certain shareholders of qualified small business stock to exclude a significant portion of their gain from federal capital gains tax, provided the shares are held for at least five years and other conditions are met. Whether Anthropic shares issued to you qualify depends on when they were issued, the nature of your grant, and factors specific to the company at the time of issuance. We evaluate this as part of our equity compensation planning work.",
+      },
+      {
+        question: "Can you help me understand my AMT exposure from ISO exercises?",
+        answer:
+          "Yes. Exercising incentive stock options at a pre-IPO company can trigger AMT in the year of exercise, even if you haven't sold the shares and haven't received any cash. The amount of AMT exposure depends on the spread between your exercise price and the current 409A valuation, your other income, and deductions available to you that year. We model this before you exercise, not after, so you can make an informed decision.",
+      },
+      {
+        question: "What does fee-only fiduciary mean, and why does it matter?",
+        answer:
+          "Fee-only means we are compensated only by the fees you pay us. We earn no commissions, no referral fees, and no revenue from investment products. As a fiduciary, we are legally required to act in your interest. That structure means our advice is based on your situation, not on what generates revenue for us.",
+      },
+      {
+        question: "Are you affiliated with or endorsed by Anthropic?",
+        answer:
+          "No. United Financial Planning Group is an independent firm with no affiliation, partnership, endorsement, or sponsorship relationship with Anthropic. We serve employees of Anthropic and other pre-IPO technology companies as independent financial advisors. Anthropic is referenced on this page only to describe the professional background of clients we work with.",
+      },
+    ],
+    faqHeading: "Common Questions From Pre-IPO Tech Employees",
+    lastUpdated: "July 2026",
+    relatedPersonaSlugs: ["software-engineers", "executives", "startup-founders"],
+    serviceTypes: [
+      "Equity Compensation Planning",
+      "Tax Planning",
+      "Financial Planning",
+      "Investment Management",
+    ],
+  },
+
   // ─── HIGH NET WORTH ───
   {
     slug: "high-net-worth",
