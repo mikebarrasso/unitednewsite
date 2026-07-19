@@ -1348,52 +1348,191 @@ export const blogPosts: BlogPost[] = [
     title:
       "Investment Management Strategies for High-Net-Worth Individuals",
     date: "2024-09-10",
-    updatedDate: "2026-03-02",
+    updatedDate: "2026-07-18",
     category: "Investment Management",
     excerpt:
-      "A comprehensive guide to investment management for high-net-worth individuals, covering financial planning, diversification, tax-efficient investing, risk management, and multi-generational wealth planning.",
+      "High-net-worth investment management is not just about picking the right funds. It requires a coordinated strategy across financial planning, tax, and investment decisions, with each piece working in sync. This guide breaks down the seven core strategies that distinguish sophisticated wealth management from generic advice, and explains how integrated planning under one roof changes the outcome.",
     author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
     type: "blog",
     relatedServices: [
       "/services/investment-management",
       "/services/financial-planning",
       "/services/tax-planning",
+      "/services/equity-compensation",
     ],
     relatedSlugs: [
       "passive-income-hnw-investment-management",
       "high-net-worth-financial-planning",
+      "roth-conversion-strategy-pre-retirees",
     ],
-    content: `<p>Managing significant wealth comes with unique challenges and opportunities. As a high-net-worth individual, your investment strategy needs to be more sophisticated than conventional approaches.</p>
+    faqs: [
+      {
+        question: "What counts as high-net-worth for investment planning purposes?",
+        answer:
+          "The term high-net-worth (HNW) is used differently depending on context. The SEC defines a \u201cqualified client\u201d at $2.2 million in assets under management or $2.2 million in net worth. Many advisors informally use $1 million in investable assets as the threshold where personalized investment management meaningfully outpaces generic strategies. At that level and above, the tax complexity, concentrated position risk, estate coordination needs, and retirement income planning become complex enough that a coordinated, customized approach creates measurable value.",
+      },
+      {
+        question: "How much does a high-net-worth investment strategy cost?",
+        answer:
+          "Investment management fees for high-net-worth individuals are typically structured as a percentage of assets under management (AUM), commonly ranging from 0.50% to 1.25% annually depending on the firm, the scope of services included, and the size of the portfolio. Fee-only advisors, who are compensated exclusively by you with no commissions, provide a transparent cost structure where the fee is your total advisory cost. Watch for hidden layering: advisory fees on top of high-expense-ratio funds can push your all-in cost above 1.5%, compounding against you over time. Ask any advisor for their all-in cost including fund expense ratios.",
+      },
+      {
+        question: "Do I need a separate CPA and financial advisor?",
+        answer:
+          "Not necessarily. The traditional model, a financial planner here, an accountant there, is increasingly being replaced by integrated firms that house both capabilities under one roof. The reason this matters at the high-net-worth level is that tax and investment decisions are deeply intertwined: tax-loss harvesting, Roth conversions, equity compensation timing, and withdrawal sequencing all require knowing your real-time tax picture and your investment allocation simultaneously. When those professionals are siloed, critical coordination falls through the cracks. At United Financial Planning Group, our CFP® professionals, CPAs, and Enrolled Agents work on the same team so that your investment decisions and your tax situation are always in view together.",
+      },
+      {
+        question: "What is tax-loss harvesting and how does it work for HNW investors?",
+        answer:
+          "Tax-loss harvesting is the practice of selling securities that have declined in value to realize a capital loss, which can offset taxable capital gains or up to $3,000 of ordinary income per year, with excess losses carried forward indefinitely. For high-net-worth investors with substantial taxable brokerage portfolios, systematic harvesting throughout the year (not just at year-end) can generate meaningful after-tax value, particularly during volatile markets. The harvested position is typically replaced with a similar but not substantially identical security to maintain market exposure while capturing the tax benefit. When your investment manager and tax advisor are working from the same data, harvesting opportunities can be identified and executed with real-time awareness of your overall tax picture.",
+      },
+      {
+        question: "How should an executive with RSUs or stock options approach investment management?",
+        answer:
+          "Executives with equity compensation face a layer of complexity that a general investment strategy does not address: concentrated single-stock risk, vesting event tax exposure, and the interaction of equity income with their broader tax picture. RSUs are taxed as ordinary income at vesting; Incentive Stock Options (ISOs) create AMT exposure at exercise; Non-Qualified Stock Options (NQSOs) trigger ordinary income tax at exercise. Managing these alongside a diversified portfolio requires coordinating vesting schedules, option exercise timing, and tax bracket management across multiple years. An advisor without specific equity compensation experience will default to generic \u201cdiversify your concentrated position\u201d advice without a concrete, tax-efficient roadmap for how to get there.",
+      },
+      {
+        question: "What is the difference between wealth preservation and growth in an investment strategy?",
+        answer:
+          "Wealth preservation strategies prioritize protecting existing capital and generating reliable income, typically through a heavier allocation to fixed income, short-duration bonds, and lower-volatility assets. Growth strategies accept more short-term volatility in exchange for higher long-term return potential, typically through a higher equity allocation. Most HNW investors need both orientations in their portfolio, balanced according to their time horizon, income needs, and risk tolerance. A common framework is to segment assets by purpose: near-term income needs funded by stable assets, long-term capital and legacy goals funded by growth assets. The right balance is not static; it should be revisited as your life circumstances and market conditions evolve.",
+      },
+    ],
+    content: `<p>Managing significant wealth is not simply a matter of picking the right funds and waiting. At the high-net-worth level, investment management intersects constantly with tax planning, retirement income strategy, estate coordination, and in many cases, equity compensation complexity. When those pieces are managed in silos, each one optimized separately, gaps emerge that cost money and create risk. When they are coordinated under one roof, the strategy works as a system.</p>
+
+<p>This guide covers the seven foundational strategies for high-net-worth investment management. Each section goes beyond the surface to explain the actual mechanics, common mistakes, and the places where integrated financial and tax planning changes the outcome.</p>
 
 <h2>1. Start with a Comprehensive Financial Plan</h2>
 
-<p>Before any money is invested, begin with a <a href="/services/financial-planning">comprehensive financial plan</a>. Many firms skip this step, focusing solely on managing assets without fully understanding a client's broader financial situation. A comprehensive plan allows us to develop strategies for estate planning and tax optimization, review potential risks, and align investment decisions with overall financial objectives.</p>
+<p>Before any investment decision is made, a <a href="/services/financial-planning">comprehensive financial plan</a> should frame the entire strategy. This is not a box-checking exercise. It is the foundation that determines how every other investment and tax decision gets made.</p>
+
+<p>A financial plan at the high-net-worth level quantifies several things that generic investment management ignores: your actual income needs in retirement versus your growth targets, the tax liability profile of your current holdings, the interaction between your investable assets and any business ownership or equity compensation, your estate planning structure and how it affects titling and beneficiary designations, and your liquidity needs over different time horizons.</p>
+
+<p>Many asset managers skip this step. They focus on managing the portfolio without understanding what the portfolio is actually supposed to accomplish. The result is an investment strategy that is technically competent but poorly calibrated: the right mix of funds for the wrong goals.</p>
+
+<p>At United Financial Planning Group, founded by <strong>Gerry Barrasso, CFP&reg;, CPA, PFS</strong>, every investment relationship begins with a full financial planning engagement. Investment decisions are made in the context of a complete understanding of your tax picture, your income needs, your estate plan, and your risk tolerance. That sequence matters.</p>
 
 <h2>2. Tailored Investment Strategies</h2>
 
-<p>Every HNW individual has unique goals, timelines, and risk profiles. Your strategy should be customized based on time horizon, risk tolerance, and personal financial goals\u2014whether focusing on preserving wealth, growing assets, or generating income.</p>
+<p>The phrase \u201ccustomized investment strategy\u201d is used by nearly every advisor. What it actually means in practice separates firms significantly.</p>
+
+<p>A genuinely tailored strategy begins with a rigorous goal-setting process that distinguishes between assets needed for income in the near term, assets targeted for long-term growth, and assets designated for legacy or charitable purposes. Each pool has a different time horizon and a different risk profile, which should drive a different investment approach.</p>
+
+<p>Beyond goals, true customization accounts for your tax situation. A high-income professional in the 37% federal bracket and subject to New York State tax has a very different after-tax return profile than the same person planning to retire to Florida in five years. Asset location decisions (which assets to hold in taxable accounts versus tax-deferred versus Roth accounts) can add meaningful after-tax return without changing the underlying investment selection at all.</p>
+
+<p>Customization also means acknowledging what you already own. Many HNW investors arrive with concentrated equity positions, often from decades of employer stock accumulation or equity compensation. A strategy that ignores those positions and simply builds a generic diversified portfolio alongside them is not actually a coordinated strategy. A tailored plan assesses the tax cost of unwinding concentration, models a timeline for doing so, and integrates the transition with your income and tax planning each year.</p>
 
 <h2>3. Diversification Across Asset Classes</h2>
 
-<p>We use index funds to provide exposure to a broad range of asset classes: equities for growth, fixed income for stability, international markets for global diversification, and real estate through REIT index funds for inflation protection.</p>
+<p>True diversification at the high-net-worth level goes beyond a standard 60/40 stock-bond portfolio. It means deliberate, tax-aware exposure across multiple asset classes and geographies, each chosen for a specific role in the portfolio.</p>
+
+<p>The core building blocks for HNW investors typically include domestic equities (growth engine, highest long-term return potential), international developed-market equities (global diversification, partial currency exposure), emerging-market equities (higher-volatility growth with lower correlation to U.S. markets), fixed income across duration and credit quality (stability and income), and real estate investment trusts (REITs) for inflation-sensitive income and diversification from pure equity exposure.</p>
+
+<p>Low-cost index funds are an efficient vehicle for most of these exposures. Broad-market index funds minimize transaction costs, keep capital gains distributions low (an important feature in taxable accounts), and avoid the performance drag that comes with high-expense active management. The focus shifts from manager selection to asset allocation precision and tax-efficient implementation.</p>
+
+<p>A common mistake at the HNW level is over-diversifying into complexity: adding alternative funds, structured products, or hedge fund strategies that charge high fees without delivering proportional benefit. True diversification reduces risk through low correlation between holdings. Complexity for its own sake reduces transparency and increases costs without improving outcomes.</p>
 
 <h2>4. Tax-Efficient Investing</h2>
 
-<p>Without careful <a href="/services/tax-planning">tax planning</a>, a significant portion of returns could be lost. Key strategies include tax-loss harvesting, tax-efficient index funds that minimize capital gains distributions, municipal bonds for tax-free income, and charitable giving strategies like donor-advised funds.</p>
+<p>For high-net-worth investors, after-tax return is the only return that matters. Two portfolios with identical pre-tax performance can have dramatically different outcomes for investors in high brackets. <a href="/services/tax-planning">Tax planning</a> integrated directly into investment management is not a nice-to-have; it is a core driver of long-term wealth.</p>
+
+<h3>Tax-Loss Harvesting</h3>
+
+<p>Tax-loss harvesting is one of the most reliable sources of after-tax value for HNW investors with taxable accounts. When holdings decline in value, those losses can be realized and used to offset capital gains elsewhere in the portfolio or reduce ordinary income by up to $3,000 per year, with excess losses carried forward indefinitely. The harvested position is replaced by a similar (but not substantially identical) security so market exposure is maintained while the tax benefit is captured.</p>
+
+<p>For investors in the highest federal brackets, a long-term capital gain that would otherwise be taxed at 23.8% (20% capital gains rate plus 3.8% Net Investment Income Tax) can instead be offset by a harvested loss, effectively creating a tax asset. Done systematically throughout the year rather than only at year-end, and coordinated with your actual tax position, harvesting can generate meaningful compounding benefit over time.</p>
+
+<p>The key requirement is that your investment manager and tax advisor see the same data simultaneously. At United Financial Planning Group, our CFP&reg; professionals and CPAs work on the same team, so harvesting decisions are made with full awareness of your current-year tax picture, your capital gains exposure elsewhere, and your state tax situation, not in isolation.</p>
+
+<h3>Asset Location</h3>
+
+<p>Asset location is the discipline of placing specific types of investments in the account type where they are most tax-efficient. High-dividend-yielding assets and taxable bond funds belong in tax-deferred accounts (traditional IRAs, 401(k)s) where their income is not taxed annually. Growth-oriented equity index funds, which generate minimal distributions, are well-suited for taxable accounts where gains can be deferred indefinitely and eventually stepped up at death. Tax-free municipal bonds belong in taxable accounts, not in IRAs where their tax-exempt status provides no incremental benefit.</p>
+
+<h3>Roth Conversion Strategy</h3>
+
+<p>For HNW investors approaching retirement, <a href="/blog/roth-conversion-strategy-pre-retirees">Roth conversion planning</a> during the pre-RMD window (the years between retirement and age 73, when Required Minimum Distributions begin) is a powerful complement to tax-efficient investing. Converting traditional IRA funds to Roth at today&#39;s rates, before RMDs and Social Security push income higher, reduces future mandatory distributions and builds a pool of tax-free assets for retirement income and estate planning. Sizing those conversions correctly requires real-time awareness of your IRMAA exposure, state tax position, and investment portfolio all at once.</p>
+
+<h3>Municipal Bonds and Donor-Advised Funds</h3>
+
+<p>For investors in top tax brackets, the after-tax yield on high-quality municipal bonds frequently exceeds taxable equivalents when adjusted for federal and state income tax rates. Donor-advised funds (DAFs) allow appreciated securities to be contributed at fair market value (avoiding capital gains tax), generating an immediate charitable deduction while allowing the funds to be granted to charities over time.</p>
 
 <h2>5. Risk Management</h2>
 
-<p>Our disciplined, long-term approach to indexing helps reduce the impact of market fluctuations, economic downturns, and currency fluctuations by spreading risk across a broad spectrum of assets\u2014without attempting to time the market.</p>
+<p>Risk management in a high-net-worth portfolio involves more than choosing a conservative asset allocation. It means identifying and mitigating several categories of risk that are specific to significant wealth.</p>
+
+<h3>Market Risk and Volatility</h3>
+
+<p>A broad, index-based approach naturally diversifies away stock-specific risk, leaving only market-level exposure that cannot be diversified away. The disciplined approach is to size that market exposure appropriately for the investor&#39;s time horizon and income needs, and to maintain it through volatility rather than reacting to short-term market moves. Attempting to time the market consistently, getting out before declines and back in before recoveries, is a return-destroying strategy at any wealth level.</p>
+
+<h3>Concentration Risk</h3>
+
+<p>Concentrated single-stock positions are among the most significant and underappreciated risks in HNW portfolios. Executives and long-tenure employees often accumulate employer stock through 401(k) contributions, stock purchase plans, restricted stock, and option exercises over decades. A portfolio with 30%, 50%, or more concentrated in a single name has dramatically higher volatility and downside risk than its overall size suggests.</p>
+
+<p>Unwinding concentration requires a tax-aware plan. Selling a large position with a low cost basis can generate a substantial capital gains tax bill. The transition strategy might involve systematic annual sales sized to fill bracket space efficiently, gifting appreciated shares to a DAF, charitable remainder trusts, or exchange funds in appropriate situations. The right approach depends on your cost basis, your tax bracket, your time horizon, and your estate plan, which is exactly why this work requires coordination across financial planning, tax, and investment management simultaneously.</p>
+
+<p>Executives with <a href="/services/equity-compensation">equity compensation</a> (RSUs, ISOs, NQSOs) face an additional layer: new shares vesting every year that add to existing concentration. Managing the interplay between vesting tax events, option exercise timing, and portfolio diversification requires a firm that understands equity compensation mechanics at the tax level, not just the financial planning level.</p>
+
+<h3>Sequence-of-Returns Risk in the Distribution Phase</h3>
+
+<p>As HNW investors approach and enter retirement, the risk profile of the portfolio changes. In the accumulation phase, a market decline is a buying opportunity. In the distribution phase, a major early decline combined with ongoing withdrawals can permanently impair the portfolio&#39;s ability to fund a 25- to 30-year retirement.</p>
+
+<p>Managing sequence-of-returns risk typically involves maintaining a cash or short-duration buffer funded by expected near-term withdrawals, so equities never need to be sold at depressed prices to fund living expenses. Flexible withdrawal strategies (taking less during down markets if possible) and a deliberately calibrated equity allocation for early retirement years all reduce this risk.</p>
 
 <h2>6. Wealth Preservation vs. Growth</h2>
 
-<p>At certain stages of life, wealth preservation takes priority. Strategies include shifting to lower-risk assets like bond index funds, establishing trusts to protect wealth, and philanthropy that creates tax benefits while making a positive impact.</p>
+<p>The balance between wealth preservation and growth is not a one-time allocation decision. It evolves continuously as life circumstances, tax situations, and market conditions change.</p>
+
+<p>Earlier in the accumulation phase, growth takes priority. A longer time horizon absorbs volatility and compounds returns. As retirement approaches, the calculus shifts: the portfolio needs to reliably fund income for potentially 30 or more years while also growing fast enough to outpace inflation, not an easy combination to optimize.</p>
+
+<p>For most HNW pre-retirees and retirees, the practical framework involves segmenting assets by purpose and time horizon. Near-term income needs (the next two to three years of living expenses) are funded by stable assets: short-duration bonds, money market instruments, and cash equivalents. Medium-term needs (years three through ten) are funded by a balanced mix of fixed income and moderate-growth equities. Long-term assets (ten-plus years) and legacy capital are invested more aggressively for growth, accepting short-term volatility in exchange for long-term compounding.</p>
+
+<p>This segmented approach, sometimes called a \u201cbucket strategy,\u201d also provides behavioral discipline. Seeing a dedicated short-term income pool funded removes the anxiety of watching equity markets decline in retirement, because the money needed in the near term is not in equities at all.</p>
+
+<p>On the preservation side, trusts can play an important role. Irrevocable trusts may remove assets from the taxable estate, protecting them from estate taxes and creditors. Charitable remainder trusts provide income during your lifetime and leave a residual legacy to charity. Dynasty trusts, available in certain jurisdictions, can extend wealth protection across multiple generations. These structures are part of the investment management conversation because they affect how assets are titled, invested, and eventually distributed.</p>
 
 <h2>7. Multi-Generational Wealth Planning</h2>
 
-<p>Effective <a href="/services/investment-management">investment management</a> incorporates trust structures (revocable, irrevocable, dynasty, and charitable remainder trusts), estate planning to minimize taxes, and family governance to align future generations with your financial vision.</p>
+<p>Effective <a href="/services/investment-management">investment management</a> at the high-net-worth level cannot be separated from estate and multi-generational planning. The investment decisions made today determine the tax efficiency of the wealth eventually transferred to the next generation, and the estate plan determines the structure within which investments are managed.</p>
 
-<p>Ready to take control of your financial future? <a href="/contact">Contact United Financial Planning Group</a> today to schedule a consultation and start building a customized investment strategy.</p>`,
+<h3>Trust Structures and Investment Management</h3>
+
+<p>Trusts are not just estate planning tools; they are investment vehicles. A revocable living trust holds assets that pass outside probate and remain under the grantor&#39;s control during their lifetime. An irrevocable trust removes assets from the taxable estate but requires its own investment policy and governance structure. Charitable remainder trusts invest a contributed asset pool and generate income for the grantor (or named beneficiaries) during their lifetime, with the remainder going to charity. Each structure has different investment constraints, tax treatment, and beneficiary considerations.</p>
+
+<p>Managing these trust assets in coordination with the personal portfolio requires a firm that understands the tax treatment at the trust level (trusts are taxed at compressed rates, reaching the top federal bracket at just $15,200 of income under current law) and can integrate trust and personal accounts into a cohesive overall allocation.</p>
+
+<h3>Step-Up in Basis and Estate Tax Planning</h3>
+
+<p>One of the most valuable (and most commonly overlooked) tools in multi-generational wealth planning is the step-up in cost basis at death. When appreciated assets pass through an estate, the cost basis is reset to fair market value at the date of death. This eliminates the embedded capital gains tax on those assets entirely. For HNW families with substantial appreciated holdings, the decision of which assets to hold until death (to benefit from the step-up) versus which to sell during life (to fund current income or Roth conversions) is a significant after-tax wealth optimization lever.</p>
+
+<p>Estate tax considerations add another layer. For estates above the current federal exemption thresholds, strategies including gifting programs, irrevocable life insurance trusts (ILITs), grantor retained annuity trusts (GRATs), and qualified personal residence trusts (QPRTs) may help reduce the estate tax burden. These strategies interact directly with the investment portfolio and require coordinated legal, tax, and financial planning to implement correctly.</p>
+
+<h3>Family Governance</h3>
+
+<p>For families with substantial wealth, formal governance structures, investment policy statements, family meetings, and the early financial education of the next generation, can be as important as the investment strategy itself. Wealth that is built over a generation and dissipated in the next is a common pattern. Developing shared values, financial literacy, and an articulated philosophy for the family&#39;s wealth purpose helps ensure that the investment and estate planning work translates into lasting benefit.</p>
+
+<h2>Why Coordination Under One Roof Changes the Outcome</h2>
+
+<p>Reading through these seven strategies, you may have noticed how frequently they intersect. Tax-loss harvesting requires knowing your capital gains picture. Roth conversion strategy requires knowing your projected income. Concentration risk management requires understanding your equity compensation vesting schedule. Multi-generational planning requires knowing your estate tax exposure. Every investment decision creates a tax ripple, and every tax decision affects the investment portfolio.</p>
+
+<p>This is why the fragmented advisory model, a financial planner in one firm, an accountant in another, a broker managing the portfolio separately, reliably underdelivers for HNW investors. Critical coordination falls through the cracks not because any individual is incompetent, but because no one holds the full picture simultaneously.</p>
+
+<p>United Financial Planning Group was built around a different model: <strong>CFP&reg; professionals, CPAs, and Enrolled Agents working together under one roof.</strong> As a <strong>fee-only, fiduciary firm</strong>, we are compensated entirely by our clients, with no commissions and no product-related incentives. Every recommendation is made in your interest, full stop.</p>
+
+<p>That integrated structure means tax planning is not a separate annual engagement. It is embedded in how we manage your portfolio, coordinate your equity compensation, size your Roth conversions, and build your retirement income plan. Your investment decisions are informed by your real tax picture, and your tax decisions are informed by your investment allocation, updated and coordinated throughout the year, not reconciled once at tax time.</p>
+
+<p>Learn more about our approach to <a href="/services/investment-management">investment management</a>, <a href="/services/tax-planning">tax planning</a>, and <a href="/services/financial-planning">financial planning</a>, or explore <a href="/why-united">why clients choose United Financial Planning Group</a>.</p>
+
+<h2>Ready to Build a Coordinated Investment Strategy?</h2>
+
+<p>If you are managing significant wealth, within five to ten years of retirement, dealing with equity compensation complexity, or simply recognizing that your current advisory model is not giving you the coordinated picture you need, we invite you to schedule a complimentary conversation with our team.</p>
+
+<p>We serve clients in Hauppauge, Manhattan, Lake Success, and throughout New York, as well as clients nationwide who value the integrated planning approach.</p>
+
+<p><a href="/contact">Contact United Financial Planning Group</a> to schedule your complimentary consultation. The right investment strategy is not just about the portfolio. It is about the entire financial picture, coordinated and working together.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Investment management involves risks, including the possible loss of principal. Tax strategies, estate planning structures, and investment approaches should be evaluated based on your individual circumstances. Tax laws and regulations are subject to change. Examples and scenarios described are for illustrative purposes only. Please consult a qualified financial advisor and tax professional regarding your specific situation before making any decisions.</p>`,
   },
   {
     slug: "navigating-financial-challenges-business-owner-new-york",
