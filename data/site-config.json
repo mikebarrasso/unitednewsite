@@ -1,16 +1,77 @@
 {
+  "version": 3,
   "siteId": "fc1baa26-67fb-4bda-8df5-8a06ead90442",
-  "advisorId": "",
-  "leadsApiUrl": "https://app.wealthreach.com/api/attract/leads",
-  "firmName": "United Financial Planning Group",
-  "tagline": "Financial Planning, Tax, & Investment Management Under One Roof",
-  "phone": "",
-  "email": "",
-  "address": "",
-  "logoUrl": "/logo-white-cropped.png",
-  "analyticsEndpoint": "https://portal.wealthreach.com/api/analytics/events",
-  "analyticsApiKey": "",
-  "calendarUrl": "",
+  "advisorId": "10296a07-3aa0-4d89-a4d8-f9f1553c540f",
+  "leadsApiUrl": "https://attract.wealthreach.ai/api/attract/leads",
+  "analyticsEndpoint": "https://attract.wealthreach.ai/api/analytics/events",
+  "analyticsApiKey": "ff291d99-2e5f-4173-a223-ff2b4d48688f",
+  "brand": {
+    "legalName": "United Financial Planning Group",
+    "displayName": "United Financial Planning Group",
+    "tagline": "Financial Planning, Tax, & Investment Management Under One Roof",
+    "logoUrl": "/logo-white-cropped.png"
+  },
+  "contact": {},
+  "booking": {
+    "provider": "none",
+    "mode": "embed"
+  },
+  "consent": {
+    "enabled": false
+  },
+  "header": {
+    "nav": [
+      {
+        "label": "Client Testimonials",
+        "href": "/testimonials"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "footer": {
+    "groups": [
+      {
+        "heading": "Quick Links",
+        "links": [
+          {
+            "label": "Client Testimonials",
+            "href": "/testimonials"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "twitter",
+        "url": "https://twitter.com/unitedfpg"
+      }
+    ]
+  },
+  "seo": {
+    "defaultTitle": "United Financial Planning Group",
+    "defaultDescription": "Financial Planning, Tax, & Investment Management Under One Roof",
+    "titleTemplate": "%s — United Financial Planning Group"
+  },
+  "compliance": {
+    "disclosures": [
+      "United Financial Planning Group is a registered investment advisor with the U.S. Securities and Exchange Commission (SEC). Registration does not imply a certain level of skill or training. Information presented on this website is for educational purposes and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. Past performance is not indicative of future results. All investing involves risk, including the potential loss of principal. Please review our Form ADV Part 2A for important disclosures."
+    ]
+  },
   "theme": {
     "typography": {
       "headingFont": "ui-serif, Georgia, Cambria, Times New Roman, Times, serif",
@@ -18,12 +79,32 @@
       "scale": "default",
       "headingWeight": 700
     },
+    "mode": "toggle",
     "color": {
-      "mode": "system",
-      "primary": "oklch(0.524 0.125 247.8)",
-      "accent": "oklch(0.524 0.125 247.8)",
-      "surface": "oklch(1 0 0)",
-      "foreground": "oklch(0.145 0 0)"
+      "light": {
+        "primary": "oklch(0.524 0.125 247.8)",
+        "primaryForeground": "#ffffff",
+        "accent": "oklch(0.524 0.125 247.8)",
+        "accentForeground": "#1c1917",
+        "surface": "oklch(1 0 0)",
+        "surfaceElevated": "#ffffff",
+        "foreground": "oklch(0.145 0 0)",
+        "mutedForeground": "#5b6472",
+        "border": "#e2e5ea",
+        "shadow": "0 1px 3px rgba(15, 23, 42, 0.08)"
+      },
+      "dark": {
+        "primary": "oklch(0.618 0.120 244.3)",
+        "primaryForeground": "#0b1524",
+        "accent": "oklch(0.524 0.125 247.8)",
+        "accentForeground": "#1c1917",
+        "surface": "oklch(0.145 0.005 248)",
+        "surfaceElevated": "#151e30",
+        "foreground": "oklch(0.985 0 0)",
+        "mutedForeground": "#9aa4b5",
+        "border": "#26324a",
+        "shadow": "0 1px 3px rgba(0, 0, 0, 0.5)"
+      }
     },
     "layout": {
       "maxWidth": "max-w-270",
@@ -34,29 +115,6 @@
       "entrance": "fade-up"
     }
   },
-  "navigation": [
-    {
-      "label": "Client Testimonials",
-      "href": "/testimonials"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact"
-    }
-  ],
-  "socialLinks": [
-    {
-      "platform": "twitter",
-      "url": "https://twitter.com/unitedfpg"
-    }
-  ],
-  "complianceDisclosures": [
-    "United Financial Planning Group is a registered investment advisor with the U.S. Securities and Exchange Commission (SEC). Registration does not imply a certain level of skill or training. Information presented on this website is for educational purposes and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. Past performance is not indicative of future results. All investing involves risk, including the potential loss of principal. Please review our Form ADV Part 2A for important disclosures."
-  ],
   "framework": "nextjs_app_router",
   "appRoot": "app",
   "blogModel": "data-blog"

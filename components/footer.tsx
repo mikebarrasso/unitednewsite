@@ -3,11 +3,12 @@
 import { type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import siteConfig from "../data/site-config.json";
 
 const footerLinks = {
   services: {
     title: "Services",
-    links: [
+    links: [ 
       { label: "Financial Planning", href: "/services/financial-planning" },
       { label: "Retirement Planning", href: "/services/retirement-planning" },
       { label: "Investment Management", href: "/services/investment-management" },
@@ -18,7 +19,7 @@ const footerLinks = {
   },
   company: {
     title: "Company",
-    links: [
+    links: [ 
       { label: "About", href: "/about" },
       { label: "Meet The Team", href: "/team" },
       { label: "Client Testimonials", href: "/testimonials" },
@@ -87,23 +88,21 @@ export function Footer(): ReactNode {
                 <Link href="/" className="inline-block">
                   <Image
                     src="/logo-black-cropped.png"
-                    alt="United Financial Planning Group"
+                    alt={siteConfig.brand.displayName}
                     width={160}
                     height={45}
                     className="h-14 w-auto dark:hidden"
                   />
                   <Image
                     src="/logo-white-cropped.png"
-                    alt="United Financial Planning Group"
+                    alt={siteConfig.brand.displayName}
                     width={160}
                     height={45}
                     className="h-14 w-auto hidden dark:block"
                   />
                 </Link>
                 <p className="mt-4 text-sm text-foreground/50 dark:text-white max-w-xs leading-relaxed">
-                  Fee-only financial planning, investment management, tax
-                  planning, and tax preparation, integrated under one roof for
-                  clients nationwide.
+                  {siteConfig.brand.tagline || "Fee-only financial planning, investment management, tax planning, and tax preparation, integrated under one roof for clients nationwide."}
                 </p>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12">
@@ -137,8 +136,7 @@ export function Footer(): ReactNode {
           <div className="pt-8 px-8 sm:px-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <p className="text-sm text-foreground/50 dark:text-white">
-                © {new Date().getFullYear()} United Financial Planning Group.
-                All rights reserved.
+                © {new Date().getFullYear()} {siteConfig.brand.legalName || siteConfig.brand.displayName}. All rights reserved.
               </p>
               <div className="flex flex-wrap gap-6">
                 {legalLinks.map((link) => (
@@ -153,7 +151,7 @@ export function Footer(): ReactNode {
               </div>
             </div>
             <p className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
-              United Financial Planning Group is a registered investment advisor
+              {siteConfig.brand.legalName || siteConfig.brand.displayName} is a registered investment advisor
               with the U.S. Securities and Exchange Commission (SEC).
               Registration does not imply a certain level of skill or training.
               Information presented on this website is for educational purposes

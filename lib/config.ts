@@ -9,12 +9,13 @@ import siteConfigData from "../data/site-config.json";
  */
 
 export const siteConfig = {
-  name: siteConfigData.firmName,
-  tagline: siteConfigData.tagline,
+  name: siteConfigData.brand.displayName,
+  tagline: siteConfigData.brand.tagline,
   description:
+    siteConfigData.seo.defaultDescription ||
     "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: "https://unitedfpg.com",
-  twitter: siteConfigData.socialLinks?.find(s => s.platform === "twitter")?.url || "@unitedfpg",
+  twitter: siteConfigData.footer?.socialLinks?.find(s => s.platform === "twitter")?.url || "@unitedfpg",
 
   nav: {
     cta: {
