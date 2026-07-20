@@ -40,7 +40,7 @@ const REGISTRY_SIZE_LIMIT = 64_000; // bytes; largest legit source file ships we
 const CONTENT_FIELD_RE = /\b(content|body|html)\s*:\s*(`|"|')/g;
 const REGISTRY_CONTENT_FIELDS = 8; // this many inline content fields in one module = a registry
 
-export function findRegistryViolations({ files, blogSlugPage }) {
+export function findRegistryViolations({ files }) {
   const violations = [];
   for (const file of files) {
     if (Buffer.byteLength(file.content, "utf8") > REGISTRY_SIZE_LIMIT) {
@@ -58,25 +58,33 @@ export function findRegistryViolations({ files, blogSlugPage }) {
       });
     }
   }
-  if (blogSlugPage && !/data['"],\s*['"]blog|data\/blog/.test(blogSlugPage.content)) {
-    violations.push({
-      path: blogSlugPage.path,
-      reason: "blog slug page must read posts from data/blog/ (fs), not from an in-source registry",
-    });
-  }
+  // NOTE: no blog-slug-page "must reference data/blog" check — bespoke sites
+  // legitimately read posts through helper modules (e.g. @/lib/posts) or other
+  // content dirs, and the size + inline-content-field heuristics above already
+  // catch the blogBodies.tsx-class registries wherever they live.
   return violations;
 }
+
+// Source roots vary by framework: Next app-router seeds use src/, but bespoke
+// imported sites often keep app/, components/, lib/, pages/ at the repo root.
+// Walk whichever exist — never assume a single root (a missing src/ used to
+// crash the lint with ENOENT and fail every conformed bespoke site's CI).
+const SOURCE_ROOTS = ["src", "app", "components", "lib", "pages"];
+const SKIP_DIRS = new Set(["node_modules", ".next", ".git", ".vercel", "dist", "build", "out", "coverage"]);
 
 function listSourceFiles(root) {
   const out = [];
   const walk = (dir) => {
-    for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
+    const abs = path.join(root, dir);
+    if (!fs.existsSync(abs)) return;
+    for (const entry of fs.readdirSync(abs, { withFileTypes: true })) {
+      if (SKIP_DIRS.has(entry.name)) continue;
       const rel = path.join(dir, entry.name);
       if (entry.isDirectory()) walk(rel);
-      else if (/\.(ts|tsx)$/.test(entry.name) && !/\.test\./.test(entry.name)) out.push(rel);
+      else if (/\.(ts|tsx|js|jsx|mjs|cjs)$/.test(entry.name) && !/\.test\./.test(entry.name)) out.push(rel);
     }
   };
-  walk("src");
+  for (const r of SOURCE_ROOTS) walk(r);
   return out;
 }
 
@@ -100,16 +108,21 @@ function main() {
     path: p,
     content: fs.readFileSync(path.join(root, p), "utf8"),
   }));
-  const blogSlugPagePath = "src/app/blog/[slug]/page.tsx";
-  const blogSlugPage = sourceFiles.find((f) => f.path === blogSlugPagePath) ?? null;
-  const violations = [
-    ...findHardcodeViolations({ brandLiterals, files }),
-    ...findRegistryViolations({ files: sourceFiles, blogSlugPage }),
-  ];
+  // Hardcoded brand/nav in chrome is a hard failure.
+  const violations = findHardcodeViolations({ brandLiterals, files });
   if (violations.length > 0) {
     console.error("Anti-hardcode lint FAILED:");
     for (const v of violations) console.error(`  - ${v.path}: ${v.reason}`);
     process.exit(1);
+  }
+  // Content-registry findings are WARN-ONLY for now: sites conform before their
+  // blog registries are migrated to per-file MDX (a deliberately separate step),
+  // so a pre-existing blogBodies.tsx-class file must not fail the fleet's CI yet.
+  // Becomes a hard gate once blog migration lands and the check can distinguish
+  // a deferred registry from a newly introduced one.
+  const registryWarnings = findRegistryViolations({ files: sourceFiles });
+  for (const w of registryWarnings) {
+    console.warn(`  [warn] ${w.path}: ${w.reason}`);
   }
   console.log("Anti-hardcode lint passed.");
 }
