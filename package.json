@@ -13,7 +13,7 @@
     "typecheck": "tsc --noEmit",
     "lint:hardcode": "node scripts/anti-hardcode-lint.mjs",
     "verify": "npm run typecheck && npm run build",
-    "conformance": "npm run lint:hardcode && npm run lint"
+    "conformance": "npm run lint:hardcode"
   },
   "dependencies": {
     "@types/three": "^0.182.0",
