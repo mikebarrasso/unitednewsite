@@ -14,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          # npm caching requires a package-lock.json; imported repos this
-          # workflow is synced into (by the conform pass) may be bun/pnpm-locked.
-          cache: ${{ hashFiles('package-lock.json') != '' && 'npm' || '' }}
+          # No `cache:` — setup-node rejects an empty-string cache value (startup
+          # failure), and imported repos synced by the conform pass may be
+          # bun/pnpm-locked with no package-lock.json for npm caching anyway.
       # Lock-aware install: `npm ci` hard-fails without package-lock.json.
       - run: |
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
