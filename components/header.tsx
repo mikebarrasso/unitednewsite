@@ -344,8 +344,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src={siteConfig.logoUrl}
-                alt={siteConfig.firmName}
+                src={siteConfig.brand.logoUrl}
+                alt={siteConfig.brand.displayName}
                 width={121}
                 height={63}
                 className="h-14 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -413,8 +413,8 @@ export function Header(): ReactNode {
               aria-label="Home"
             >
               <Image
-                src={siteConfig.logoUrl}
-                alt={siteConfig.firmName}
+                src={siteConfig.brand.logoUrl}
+                alt={siteConfig.brand.displayName}
                 width={121}
                 height={63}
                 className="h-12 w-auto translate-y-0.5 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
@@ -454,14 +454,14 @@ export function Header(): ReactNode {
               >
                 <Image
                   src="/logo-black-cropped.png"
-                  alt={siteConfig.firmName}
+                  alt={siteConfig.brand.displayName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 dark:hidden [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.55))]"
                 />
                 <Image
-                  src={siteConfig.logoUrl}
-                  alt={siteConfig.firmName}
+                  src={siteConfig.brand.logoUrl}
+                  alt={siteConfig.brand.displayName}
                   width={121}
                   height={63}
                   className="h-12 w-auto translate-y-0.5 hidden dark:block [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.9))]"
