@@ -10,7 +10,10 @@
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,json,css,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mjs,json,css,md}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint:hardcode": "node scripts/anti-hardcode-lint.mjs",
+    "verify": "npm run typecheck && npm run build",
+    "conformance": "npm run lint:hardcode"
   },
   "dependencies": {
     "@types/three": "^0.182.0",
