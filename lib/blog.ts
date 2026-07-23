@@ -1068,7 +1068,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Now consider what happens if you retire into a down market. You begin withdrawing from a portfolio that has already fallen 20% or 30%. Every dollar you take out to pay your mortgage, your groceries, your healthcare, is a dollar sold at a loss. And unlike a mid-career investor, you cannot simply wait. Your income needs are real and ongoing.</p>
 
-<p>The Nasdaq's steeper decline of 2.15% on July 23, 2026, relative to the Dow's 0.97% drop on the same day, illustrates how concentrated portfolios in growth and tech names can experience sharper drawdowns precisely when pre-retirees may be most exposed. A 52-week VIX range of 16.64 to 35.30 reflects how quickly the volatility environment can shift. <em>(Source: <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>, as of July 23, 2026.)</em></p>
+<p>The Nasdaq's steeper decline of 2.15% on July 23, 2026, relative to the Dow's 0.97% drop on the same day, illustrates how concentrated portfolios in growth and tech names can experience sharper drawdowns precisely when pre-retirees may be most exposed. A 52-week VIX range of 13.38 to 35.30 reflects how quickly the volatility environment can shift. <em>(Source: <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>, as of July 23, 2026.)</em></p>
 
 <h2>The Futility of Market Timing (and Why It Is Even Harder Near Retirement)</h2>
 
