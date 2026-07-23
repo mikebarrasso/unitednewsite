@@ -53,8 +53,8 @@ export default function WhyUnitedPage(): ReactNode {
           eyebrow="Why United?"
           title="What's the Value of an Advisor Who Sees Everything?"
           subtitle="Most advisory firms do one thing. We integrate four (financial planning, investment management, tax planning, and tax preparation) under one roof, for one reason: disconnected advice can be costly."
-          imageUrl="/240710_AJ8700-scaled%20(1).jpg"
-          imageAlt="The United Financial Planning Group team"
+          imageUrl="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Team_6J2A3739L_Horizontal-NPXQjzZGYoPF1uohaaH0k8wbL0n3rj.jpg"
+          imageAlt="The United Financial Planning Group team — six advisors standing together in front of a blue wall with the United logo"
           secondaryCtaHref="/services"
           secondaryCtaLabel="Explore Services"
           hasBreadcrumb
