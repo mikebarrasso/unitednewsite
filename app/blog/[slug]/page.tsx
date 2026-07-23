@@ -364,7 +364,7 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                 className="mb-8 rounded-xl border border-border bg-muted/40 p-5 text-sm leading-relaxed text-foreground/70"
               >
                 <p className="font-medium text-foreground mb-1">
-                  Educational article — not personal advice
+                  Educational article, not personal advice
                 </p>
                 <p>
                   This article is provided for general educational purposes and
