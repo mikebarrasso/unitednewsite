@@ -122,6 +122,198 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "qsbs-exclusion-section-1202-planning",
+    title:
+      "The QSBS Exclusion: What Founders and Pre-IPO Employees Need to Know About Section 1202",
+    date: "2026-07-23",
+    category: "Tax Planning",
+    excerpt:
+      "For founders and early employees who hold equity in a qualifying startup, Section 1202 of the tax code offers one of the most powerful gain exclusions available anywhere in the Internal Revenue Code. But the Section 1202 exclusion is not automatic, it is not permanent, and it is not self-executing. The planning decisions that determine whether you keep it or lose it have to be made well before a liquidity event arrives.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/equity-compensation",
+      "/services/tax-planning",
+      "/services/financial-planning",
+    ],
+    relatedSlugs: [
+      "equity-compensation-planning-startup-employees",
+      "roth-conversion-strategy-pre-retirees",
+      "why-fee-only-fiduciary-financial-planner",
+    ],
+    faqs: [
+      {
+        question: "What is the QSBS exclusion amount under Section 1202?",
+        answer:
+          "The federal exclusion amount depends on when you acquired your qualified small business stock. For stock acquired after September 27, 2010, the exclusion is 100% of the eligible gain, up to the greater of $10 million or ten times your adjusted basis in the shares. For stock acquired between February 18, 2009 and September 27, 2010, the exclusion is 75%. For stock acquired between August 10, 1993 and February 17, 2009, the exclusion is 50%. The 100% exclusion for post-2010 QSBS is also fully exempt from the 28% AMT preference item that applied to earlier exclusion percentages, making it significantly more valuable. Keep in mind that these rules apply only at the federal level; state treatment varies significantly.",
+      },
+      {
+        question: "Does my state recognize the QSBS exclusion under Section 1202?",
+        answer:
+          "Not all states conform to the federal QSBS exclusion. California, for example, does not recognize the Section 1202 exclusion at all, which means California residents who exclude 100% of a gain at the federal level can still owe California income tax at a rate of up to 13.3% on the full excluded amount. New York generally conforms to the federal exclusion. Pennsylvania, Massachusetts, and several other states have their own rules. If you live or work in a state that does not conform, state tax exposure can represent a meaningful portion of the gain even after the federal exclusion is applied. Your planning should account for both federal and state treatment before a liquidity event.",
+      },
+      {
+        question: "What happens if I sell my QSBS shares before the five-year holding period?",
+        answer:
+          "If you sell QSBS-eligible shares before you have held them for more than five years, you generally cannot claim the Section 1202 exclusion on the sale proceeds. However, there are two possible paths forward. First, under Section 1045, you may be able to roll over the proceeds into new QSBS within 60 days and preserve your eligibility, effectively continuing your holding period clock on a replacement investment. Second, if you receive shares in a qualifying reorganization or merger, there are rules that may allow you to tack your holding period. Neither option is automatic or without conditions. If a tender offer, secondary sale, or M&A event is approaching before the five-year mark, this is exactly the kind of decision that requires coordinated planning in advance.",
+      },
+      {
+        question: "Can I stack QSBS exclusions across multiple people or entities to cover more gain?",
+        answer:
+          "Yes, within the bounds of the rules. The $10 million per-taxpayer exclusion limit applies at the individual taxpayer level. A married couple filing jointly can each hold QSBS in their own name and each claim up to $10 million in exclusions on their respective shares, for a potential combined exclusion of $20 million from the same company. Trusts and certain pass-through entities can also hold QSBS and pass through their own exclusion capacity to beneficiaries, subject to the rules governing how QSBS transfers between entities. These stacking strategies require advance planning: shares generally must be acquired and held in the correct name from the beginning, and transfers after the fact may disqualify the exclusion. Proper structuring at the time of grant or early exercise is essential.",
+      },
+    ],
+    content: `<h2>What Is QSBS and Why Does It Matter?</h2>
+
+<p>Section 1202 of the Internal Revenue Code, commonly called the <strong>QSBS exclusion</strong> or the <strong>Section 1202 exclusion</strong>, allows eligible shareholders of <strong>qualified small business stock</strong> to exclude a substantial portion of their capital gain from federal income tax when they sell those shares. For stock acquired after September 27, 2010 and held for more than five years, the exclusion can be as high as 100% of the gain, subject to a per-taxpayer cap of the greater of $10 million or ten times the adjusted basis in the shares.</p>
+
+<p>To put that in context: a founder who paid $500,000 to acquire early shares in a startup that later sells for $11 million could potentially exclude all $10.5 million of gain from federal capital gains tax. At a combined federal long-term capital gains and net investment income tax rate that can approach 23.8% for high earners, that exclusion could represent more than $2 million in federal tax savings on a single transaction.</p>
+
+<p>Despite this, QSBS planning is one of the most frequently overlooked areas of equity compensation planning. The rules are technical, the eligibility requirements are ongoing, and the consequences of missing a condition, whether at the time of issuance or years later during the holding period, can be irreversible by the time a liquidity event arrives.</p>
+
+<p>This post explains how the Section 1202 exclusion works, what the eligibility requirements are, and how founders, early employees, and other pre-IPO equity holders should be thinking about QSBS as part of a coordinated tax and financial plan.</p>
+
+<h2>How the Section 1202 Exclusion Works: The Mechanics</h2>
+
+<p>The <strong>qualified small business stock exclusion</strong> operates as follows: when you sell shares that qualify as QSBS, you may exclude a percentage of the resulting capital gain from your federal gross income. The excluded gain is not counted in your taxable income at all. No tax is owed on the excluded portion at the federal level.</p>
+
+<p>The exclusion percentage depends on when the shares were originally issued:</p>
+
+<ul>
+<li><strong>Shares acquired after September 27, 2010:</strong> 100% exclusion, up to the per-taxpayer limit.</li>
+<li><strong>Shares acquired between February 18, 2009 and September 27, 2010:</strong> 75% exclusion.</li>
+<li><strong>Shares acquired between August 10, 1993 and February 17, 2009:</strong> 50% exclusion.</li>
+</ul>
+
+<p>For most founders and pre-IPO employees considering this today, the relevant provision is the 100% exclusion for post-2010 stock. Critically, gain excluded under the 100% exclusion is also exempt from the alternative minimum tax (AMT) preference item that applied to earlier exclusion percentages. This distinction matters for clients who are already managing ISO exercises and AMT exposure: the 100% QSBS exclusion does not add to your AMT calculation.</p>
+
+<h3>The Per-Taxpayer Cap</h3>
+
+<p>The exclusion is capped at the greater of $10 million or ten times your adjusted basis in the shares sold. This cap applies per taxpayer, per company. Gain above the cap is taxed at the applicable long-term capital gains rate. The ten-times-basis alternative is particularly valuable for early investors and founders who acquired shares at very low cost: if your adjusted basis is $2 million, your cap is $20 million, not $10 million.</p>
+
+<h2>Eligibility Requirements: What Has to Be True</h2>
+
+<p>The QSBS exclusion is available only when a specific set of conditions is met. Each requirement must be satisfied both at the time the stock is issued and, in some cases, continuously throughout the holding period. Missing any of them forfeits the exclusion on those shares.</p>
+
+<h3>1. The Issuing Entity Must Be a Domestic C Corporation</h3>
+
+<p>The shares must be issued by a domestic C corporation. LLCs, S corporations, and partnerships do not qualify. This is the most fundamental requirement and the one that eliminates many startups structured as pass-throughs.</p>
+
+<p>A critical planning implication: some startups begin as LLCs and later convert to C corporations before raising venture capital. Shares issued while the entity was an LLC do not qualify as QSBS, even if the company has since converted. Only shares issued after the entity became a C corporation can satisfy this requirement. If your company has converted, the date of your specific grant or purchase matters significantly.</p>
+
+<h3>2. The Gross Asset Test: $50 Million at the Time of Issuance</h3>
+
+<p>At the time the shares are issued to you, the corporation's aggregate gross assets (including amounts received in the transaction in which the shares were issued) must not exceed $50 million. This is measured by the tax basis of the corporation's assets, not fair market value. Once shares are issued, a subsequent increase in the company's gross assets does not cause previously issued QSBS to lose its eligibility, but shares issued after the company crossed the $50 million threshold do not qualify.</p>
+
+<p>For employees joining a startup at the Series B or Series C stage, this threshold deserves careful attention. A company that has raised significant venture capital may already have crossed $50 million in aggregate gross assets at the time of your grant. Whether your shares qualify requires looking at the company's balance sheet at the time of each grant, not just today.</p>
+
+<h3>3. The Qualified Trade or Business Requirement</h3>
+
+<p>The corporation must be engaged in a <strong>qualified trade or business</strong> throughout substantially all of the taxpayer's holding period. Several industries are specifically excluded from the definition, including:</p>
+
+<ul>
+<li>Businesses in the fields of health, law, engineering, architecture, accounting, actuarial science, performing arts, consulting, athletics, financial services, and brokerage services</li>
+<li>Banking, insurance, financing, and leasing businesses</li>
+<li>Hotels, motels, and restaurants</li>
+<li>Any business where the principal asset is the reputation or skill of one or more employees</li>
+</ul>
+
+<p>Technology companies, software businesses, manufacturing companies, and certain other industries generally qualify. But the exclusions are broader than many assume: a consulting firm or a financial services startup, even one built on technology, may not qualify if its principal business falls within the excluded categories. This is an area where the classification can be genuinely ambiguous, and where a tax professional with QSBS experience needs to evaluate the company's specific business activities.</p>
+
+<h3>4. The Five-Year Holding Period</h3>
+
+<p>The exclusion is available only if you hold the QSBS for <strong>more than five years</strong> before selling. This is not a soft guideline. A sale on day 1,824 of a 1,825-day holding period disqualifies the exclusion entirely on that sale.</p>
+
+<p>The five-year clock starts on the date of acquisition: generally the date the shares were issued to you, or, for stock options, the date you exercised the option and acquired the underlying shares (not the grant date). This matters enormously for employees who hold unexercised options: the clock does not start until exercise. An employee who has held options for six years but exercises them today starts a fresh five-year clock on the exercised shares.</p>
+
+<h3>5. Original Issuance Requirement</h3>
+
+<p>The stock must be acquired at original issuance in exchange for money, property, or services. Secondary market purchases of startup shares generally do not qualify. If you purchased shares from a departing co-founder or participated in a secondary transaction, those shares likely do not count as QSBS regardless of whether the company otherwise qualifies.</p>
+
+<h2>The Planning Angle: Where Coordinated Advice Makes the Difference</h2>
+
+<p>Understanding the eligibility rules is the foundation. But the real value in QSBS planning comes from applying those rules strategically to your specific situation: timing decisions, structuring ownership correctly, and coordinating the exclusion with the rest of your tax picture well before a liquidity event arrives. This is where the distinction between generic information and personalized, coordinated advice becomes concrete.</p>
+
+<h3>Stacking Exclusions Across Spouses and Trusts</h3>
+
+<p>The $10 million exclusion cap applies per taxpayer, per company. A married couple can each hold QSBS in their own names and each claim up to $10 million in exclusions on shares of the same company, for a potential combined federal exclusion of $20 million. This requires that the shares be held separately in each spouse's name from the time of acquisition, not transferred after the fact.</p>
+
+<p>Certain trusts can also hold QSBS and pass the exclusion through to beneficiaries. Non-grantor trusts that are themselves shareholders can claim their own exclusion capacity. Irrevocable trusts with multiple beneficiaries can, in some circumstances, allow additional exclusion capacity beyond what the individual shareholders could access directly.</p>
+
+<p>These strategies require advance planning. Shares generally must be issued or transferred into the intended ownership structure before the holding period begins. A post-exit gift of QSBS shares to a trust typically does not restart or expand the exclusion; the transferee steps into the shoes of the transferor. This is planning that has to happen early, which is exactly why clients who engage an integrated advisory team before a liquidity event are better positioned than those who arrive at a financial advisor's office after the term sheet is signed.</p>
+
+<h3>Timing the Exit Around the Holding Period</h3>
+
+<p>If a company is acquired or goes public and you are within the five-year holding period on some or all of your shares, you face a decision with potentially millions of dollars in tax consequences: sell now and forfeit the exclusion, or hold through the five-year mark and potentially qualify.</p>
+
+<p>This decision is not always straightforward. Post-IPO shares are publicly traded, which introduces concentration risk and lock-up period constraints. In an M&amp;A transaction, you may have limited ability to defer your sale. Tender offer windows at pre-IPO companies create similar pressures: the window may close before your five-year period is complete.</p>
+
+<p>The analysis requires modeling the after-tax cost of selling early versus the risk-adjusted benefit of holding through the five-year mark. For a client holding shares with a large unrealized gain, the value of the exclusion on those shares can exceed the diversification benefit of selling early. For a client with a more modest gain, the calculus may be different. This is precisely the type of decision that requires a tax professional and a financial planner working together on the same analysis at the same time.</p>
+
+<h3>Section 1045 Rollover: Preserving QSBS Eligibility on Early Sales</h3>
+
+<p>If you sell QSBS shares before the five-year holding period is complete, Section 1045 of the tax code provides a potential escape valve. Under Section 1045, a non-corporate taxpayer who sells QSBS before the five-year period may defer the gain by rolling over the proceeds into other qualified small business stock within 60 days of the sale.</p>
+
+<p>The new QSBS acquired in the rollover inherits the holding period of the original shares for purposes of the five-year test. So if you held the original QSBS for three years before selling, you are already three years into the holding period on the replacement shares, leaving only two more years before the exclusion becomes available.</p>
+
+<p>The 60-day window is strict and the rollover rules have conditions of their own. A Section 1045 rollover requires active identification and acquisition of qualifying replacement stock; it does not happen automatically. But for a client who receives a tender offer or secondary liquidity opportunity before the five-year mark, this provision can preserve a significant tax benefit that would otherwise be permanently lost.</p>
+
+<h3>What Happens if the Company Fails the Qualified-Business Test</h3>
+
+<p>One of the more complex QSBS scenarios arises when a company's business activities shift over time in a way that could jeopardize the qualified-business-status requirement. Recall that the corporation must be engaged in a qualified trade or business throughout <em>substantially all</em> of the taxpayer's holding period.</p>
+
+<p>A technology startup that pivots into financial services or consulting may find that its future business activities no longer satisfy the qualified-business-status test. A company that acquires a subsidiary in an excluded industry may create a question about whether the combined entity remains a qualified business. These are not hypothetical concerns: startup business models evolve, and the QSBS eligibility analysis must evolve with them.</p>
+
+<p>The practical implication is that QSBS eligibility is not a one-time determination at the time of issuance. It requires ongoing monitoring through the holding period. If the company's business activities change in a material way, that change should trigger a fresh eligibility review, not a discovery at the time of exit.</p>
+
+<h3>Coordinating the QSBS Exclusion with ISO Exercise and AMT Planning</h3>
+
+<p>Many founders and pre-IPO employees hold both QSBS-eligible shares and incentive stock options (ISOs). These two planning areas are deeply interconnected, and they often need to be managed together.</p>
+
+<p>ISOs, when exercised, generate an AMT preference item equal to the spread between the exercise price and the fair market value of the shares at exercise. For a client holding ISOs in a company with a high 409A valuation, exercising a large ISO grant can produce significant AMT liability even before any shares are sold. That AMT liability must be funded, typically from other resources, since the shares themselves are illiquid.</p>
+
+<p>QSBS planning and ISO exercise planning intersect in two ways. First, if you want your ISO shares to qualify as QSBS, you need to exercise the options and acquire the underlying shares, which starts the five-year clock and potentially triggers AMT. The decision of when to exercise, and how many options to exercise in a given tax year, needs to weigh both the AMT cost and the QSBS holding period benefit. Second, the 100% QSBS exclusion (for post-2010 shares) does not generate an AMT preference item at exit, unlike the 50% and 75% exclusions that applied to earlier-acquired stock. This makes the after-tax analysis cleaner for many clients: the gain excluded under Section 1202 simply does not appear in the AMT calculation at all.</p>
+
+<p>Getting this right requires tax-return-level modeling: your specific ISO grants, the current 409A valuation, your projected ordinary income for the year, your existing AMT credit carryforward, and how the QSBS holding period lines up with your likely liquidity timeline. This is not work that can be done accurately with a generic online calculator. It requires a CPA or Enrolled Agent who can work from your actual tax picture alongside a financial planner who can model the impact on your broader wealth plan.</p>
+
+<h2>A Note on Recordkeeping and Documentation</h2>
+
+<p>QSBS eligibility is self-reported on your federal tax return. The IRS does not pre-certify that shares qualify, and the burden of proof rests with the taxpayer. If your QSBS exclusion is ever challenged, you need to be able to demonstrate: the date of original issuance of your shares; the aggregate gross assets of the corporation at the time of issuance; the nature of the corporation's business throughout the holding period; your continuous ownership; and the adjusted basis of the shares sold.</p>
+
+<p>Many clients who hold QSBS-eligible shares have inadequate documentation because they never assembled it systematically. The company may have changed law firms, reorganized its cap table, or gone through a reorganization since the original issuance. Assembling the supporting documentation after the fact, under time pressure at an exit, is substantially harder than maintaining it throughout the holding period. If you believe you hold QSBS-eligible shares, starting that documentation now is a meaningful part of the planning work.</p>
+
+<h2>New York Considerations for QSBS Holders</h2>
+
+<p>New York State generally conforms to the federal Section 1202 exclusion. Gains excluded at the federal level are also excluded for New York State and New York City income tax purposes, which is a meaningful benefit given New York's top combined state and city rates. This is in contrast to states like California, which does not conform to the federal QSBS exclusion and taxes the full gain at state rates.</p>
+
+<p>For our clients in Long Island, Manhattan, and throughout the New York metro area, this conformity is a planning advantage. But it also reinforces the importance of maintaining New York residency documentation and ensuring your state return is prepared consistently with your federal QSBS treatment. A client who spends significant time in multiple states needs to be especially careful about domicile and residency, since the state in which you are a resident at the time of an exit is the state that taxes the gain.</p>
+
+<h2>Why Coordinated, Integrated Advice Matters for QSBS Planning</h2>
+
+<p>The QSBS exclusion is one of the clearest examples in the tax code of a benefit that is technically available to many people but practically captured by relatively few. The rules are real. The tax savings are real. But the conditions are strict, the timing windows are narrow, and the decisions that determine whether you keep the exclusion have to be made correctly, often years before the exit event that triggers the gain.</p>
+
+<p>A financial planner who works separately from your tax professional cannot do this analysis properly. The financial planner does not see your actual tax return. The tax preparer who meets with you once a year at filing time does not have visibility into your equity compensation structure or your liquidity timeline. The attorney who drafted your stock purchase agreement may not have tax planning expertise at all.</p>
+
+<p>At <strong>United Financial Planning Group</strong>, our team of <strong>CFP&reg; professionals, CPAs, and Enrolled Agents</strong> works under one roof and approaches QSBS planning exactly as it should be approached: as a coordinated engagement that spans financial planning, tax modeling, and investment management. We are a <strong>fee-only fiduciary</strong> firm: we receive no commissions, ever. Our only financial interest is in doing work that genuinely benefits our clients.</p>
+
+<p>For a client with significant pre-IPO equity, that means we are looking at your full picture: which of your grants are QSBS-eligible, how the five-year holding period aligns with your likely liquidity timeline, how an exit would interact with your ISO exercise history and AMT position, whether your ownership structure is optimized for the exclusion, and what the after-tax outcome looks like across both federal and New York State returns. We are not modeling one piece of the puzzle in isolation. We are building the whole picture.</p>
+
+<p>You can learn more about our approach to <a href="/services/equity-compensation">equity compensation planning</a> and <a href="/services/tax-planning">tax planning</a> on our services pages.</p>
+
+<h2>Start the Conversation</h2>
+
+<p>If you hold equity in a pre-IPO startup and you are not certain whether your shares qualify as QSBS, whether your holding period is on track, or how the Section 1202 exclusion fits into your broader financial plan, those are exactly the questions we help clients work through. The earlier in the process that planning happens, the more options are available.</p>
+
+<p>We invite you to schedule a complimentary conversation with our team. There is no pressure and no obligation: just a clear look at your equity picture and a candid assessment of where planning could make a meaningful difference.</p>
+
+<p><a href="/contact">Contact United Financial Planning Group</a> to start the conversation.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. The rules governing qualified small business stock under Section 1202 are complex and fact-specific. Tax laws, IRS guidance, and state conformity rules are subject to change. The scenarios described are for illustrative purposes only and should not be relied upon as applicable to any individual situation. Please consult a qualified tax attorney, CPA, or financial advisor regarding your specific circumstances before making any decisions related to qualified small business stock or the Section 1202 exclusion.</p>`,
+  },
+  {
     slug: "roth-conversion-strategy-pre-retirees",
     title:
       "The Roth Conversion Window: When It Makes Sense for Pre-Retirees",
