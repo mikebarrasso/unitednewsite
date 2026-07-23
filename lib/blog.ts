@@ -991,79 +991,164 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "market-volatility-financial-plan-advisor",
     title:
-      "Market Volatility Got You Worried? Why Having a Plan (and an Advisor) Is Key",
+      "Market Volatility Near Retirement: Why the Timing Matters More Than You Think",
     date: "2025-04-09",
-    updatedDate: "2026-03-03",
-    category: "Investment Management",
+    updatedDate: "2026-07-23",
+    category: "Retirement Planning",
     excerpt:
-      "Recent market turbulence, driven by tariff announcements and economic uncertainty, underscores why having a sound financial plan and a trusted advisor is crucial for long-term investment success.",
+      "A market downturn hits differently when you are two to five years from retirement. Sequence-of-returns risk means that withdrawing from a falling portfolio can lock in losses your portfolio may never fully recover from. Here is how a coordinated plan manages that risk.",
     author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
     type: "blog",
     relatedServices: [
-      "/services/investment-management",
-      "/services/financial-planning",
       "/services/retirement-planning",
+      "/services/financial-planning",
+      "/services/investment-management",
+      "/services/tax-planning",
     ],
     relatedSlugs: [
-      "recession-2026-new-york-investors",
       "retirement-portfolio-strategies-market-downturns",
-      "secure-retirement-investment-management",
+      "roth-conversion-strategy-pre-retirees",
+      "modern-guide-retirement-planning",
     ],
-    content: `<p>Recent weeks have seen significant turbulence in the financial markets, with major stock indices experiencing sharp declines. Events like the Dow Jones Industrial Average's third-largest one-day point drop can understandably cause concern for anyone watching their investments. However, it's important to remember that market ups and downs, while unsettling, are a normal part of the investment journey, especially over the long term.</p>
+    faqs: [
+      {
+        question: "What is sequence-of-returns risk?",
+        answer:
+          "Sequence-of-returns risk is the danger that poor investment returns early in retirement, when you are making regular withdrawals, can permanently deplete a portfolio even if long-term average returns eventually recover. A 30% market decline in year one of retirement is far more damaging than the same decline in year fifteen, because early withdrawals lock in losses and leave fewer shares available to participate in any recovery.",
+      },
+      {
+        question: "Why is market volatility more dangerous near retirement than mid-career?",
+        answer:
+          "Mid-career investors have time and ongoing contributions working in their favor. They can wait out a downturn and even buy more shares at lower prices. Pre-retirees and recent retirees have neither: their portfolio is at or near its peak size, they are about to start drawing from it, and they have limited ability to replenish losses through new earnings. That combination makes timing far more consequential.",
+      },
+      {
+        question: "What is a bucket strategy and how does it reduce sequence-of-returns risk?",
+        answer:
+          "A bucket strategy divides your portfolio into short-term, medium-term, and long-term segments. The short-term bucket holds one to three years of living expenses in cash or very low-risk assets, so you never have to sell equities during a downturn to meet income needs. The medium-term bucket holds bonds or balanced funds that can replenish the short-term bucket. The long-term bucket holds equities and is left alone during downturns, giving it time to recover without being touched.",
+      },
+      {
+        question: "Should I move to cash if markets drop near my retirement date?",
+        answer:
+          "Moving entirely to cash during a downturn is one of the most common and costly mistakes near-retirees make. It locks in losses, removes you from the recovery, and reintroduces reinvestment risk when you try to re-enter the market. The answer is not to abandon your equity allocation, but to ensure that your near-term income needs are funded from stable assets so you are never forced to sell equities at depressed prices.",
+      },
+      {
+        question: "How does Roth conversion strategy interact with market volatility?",
+        answer:
+          "A market downturn can actually create a Roth conversion opportunity. When account values are depressed, you convert fewer dollars of value for the same tax cost, and the recovery happens inside the tax-free Roth rather than the taxable traditional IRA. However, this only works if your overall cash flow and income plan are solid enough that you are not being forced to liquidate other assets to fund living expenses at the same time.",
+      },
+    ],
+    content: `<p><em>Educational article, not personal advice. See full disclosures at the end of this article.</em></p>
 
-<h2>What's Been Driving the Markets?</h2>
+<p>Markets moved sharply on July 23, 2026. The S&amp;P 500 closed at 7,408.97, down 1.20% on the day. The Nasdaq fell 2.15%, closing at 25,137.69, as tech and rate-sensitive names bore the brunt of the selling. The CBOE VIX, the market's implied volatility gauge, rose 12.38% to 18.70, well off its 52-week high of 35.30 but meaningfully elevated. <em>(Source: <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>, as of July 23, 2026.)</em></p>
 
-<p>The market volatility in early April 2025 has been fueled by new developments in international trade policy, specifically the announcement and implementation of new, broad-based U.S. tariffs.</p>
+<p>Days like this happen. They always have. If you are 45 or 50, a down day like this barely registers in your long-term plan. You keep contributing, you stay the course, and time does its work.</p>
 
-<p><strong>Economic Data:</strong> Inflation data (CPI & PPI) showed some easing prior to the tariffs but remained above the Fed's target. Concerns arose that tariffs could push prices higher. The March jobs report showed solid gains but also included downward revisions for prior months.</p>
+<p>But if you are 60, 62, or 65, the math is different. Not because the market behaved differently, but because <em>you</em> are in a different place. You are close to the moment when your portfolio stops growing from contributions and starts funding your life. And that transition changes everything about how a downturn affects you.</p>
 
-<p><strong>Tariff Impact:</strong> The tariffs, perceived as more aggressive than anticipated, led to a significant market sell-off. The Dow plunged over 2,200 points on April 4th, its third-largest point drop ever, and major indices saw their worst two-day performance since March 2020.</p>
+<p>This article is about that difference, and what a coordinated plan does to manage it.</p>
 
-<p><strong>Global Response:</strong> Key trading partners like China and the EU quickly announced retaliatory tariffs, escalating fears of a global trade war that could disrupt supply chains and slow economic growth.</p>
+<h2>The Risk That Does Not Get Enough Attention: Sequence of Returns</h2>
 
-<p><strong>Fed's Position:</strong> The Federal Reserve held interest rates steady at 4.25%-4.50% in its March meeting, lowering its 2025 GDP growth forecast and raising its core inflation projection.</p>
+<p>Most conversations about market volatility focus on long-term average returns. And for someone in their 30s or 40s, that framing is largely correct. Markets go up over time. Downturns are temporary. Stay invested.</p>
 
-<h2>Keeping Perspective in Turbulent Times</h2>
+<p>But averages obscure something critical for pre-retirees and recent retirees: the <strong>order</strong> in which returns arrive matters enormously once you are withdrawing from a portfolio rather than adding to it.</p>
 
-<p><strong>The Futility of Market Timing:</strong> Trying to sell before drops and buy before rebounds consistently is nearly impossible. Some of the market's best recovery days happen very close to the worst days. Missing just a handful of these key upswings can devastate long-term returns.</p>
+<p>This is <strong>sequence-of-returns risk</strong>. Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
 
-<p><strong>Volatility is Normal:</strong> Market fluctuations, including sharp downturns, are not unusual. Markets have weathered numerous crises throughout history and demonstrated long-term resilience.</p>
+<p>Why? Because when you sell shares during a downturn to fund living expenses, those shares are gone. They do not participate in the recovery. The hole in your portfolio grows larger every month you withdraw at depressed prices. The math compounds against you in a way it simply does not during the accumulation years.</p>
 
-<p><strong>Mind Over Market:</strong> Our emotions can lead to costly mistakes. Biases like loss aversion, herding, and recency bias can prompt panic selling during downturns, leading to a "Behavior Gap" where investors underperform the market due to emotional decisions.</p>
+<h2>Why the Two-to-Five Year Window Is the Most Vulnerable</h2>
 
-<h2>The High Cost of Missing the Best Days</h2>
+<p>The period from roughly five years before retirement through the first two to three years of retirement is, in many ways, the highest-stakes window in a person's financial life. Here is why.</p>
 
-<p>Bad timing can take a significant bite out of returns. Based on JP Morgan data (S&P 500 Index total returns from January 2003 to December 2022), missing out on just the 10 best trading days during that nearly 20-year period could have cost an investor the majority of their overall potential return. Seven of the ten best days occurred during bear markets.</p>
+<p>During your peak earning years, a market decline is painful on paper but manageable in practice. Your paycheck keeps arriving. You may even buy more shares at lower prices through your 401(k). Time works in your favor.</p>
 
-<h2>A Financial Plan: Your Anchor in the Storm</h2>
+<p>Enter the transition zone: two to five years from your planned retirement date. Your portfolio is likely at or near its peak size. You are no longer decades away from drawing on it. You may have already reduced your risk exposure somewhat, but probably not enough to be fully insulated from a significant drawdown.</p>
+
+<p>Now consider what happens if you retire into a down market. You begin withdrawing from a portfolio that has already fallen 20% or 30%. Every dollar you take out to pay your mortgage, your groceries, your healthcare, is a dollar sold at a loss. And unlike a mid-career investor, you cannot simply wait. Your income needs are real and ongoing.</p>
+
+<p>The Nasdaq's steeper decline of 2.15% on July 23, 2026, relative to the Dow's 0.97% drop on the same day, illustrates how concentrated portfolios in growth and tech names can experience sharper drawdowns precisely when pre-retirees may be most exposed. A 52-week VIX range of 16.64 to 35.30 reflects how quickly the volatility environment can shift. <em>(Source: <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>, as of July 23, 2026.)</em></p>
+
+<h2>The Futility of Market Timing (and Why It Is Even Harder Near Retirement)</h2>
+
+<p>The instinct when markets fall is to do something: move to cash, reduce equity exposure, wait for things to calm down. It feels prudent. It is, in fact, one of the most reliable ways to damage long-term outcomes.</p>
+
+<p>Based on JP Morgan data covering S&amp;P 500 total returns from January 2003 through December 2022, missing just the ten best trading days during that nearly 20-year period would have dramatically reduced an investor's cumulative return. Seven of those ten best days occurred during bear markets. The recovery days are clustered around the worst days, and no one rings a bell when they arrive.</p>
+
+<p>For a pre-retiree or recent retiree, the cost of mistiming is even higher. Moving to cash during a downturn means locking in losses and then facing the reinvestment problem: when do you get back in? Most investors who sell during a downturn stay in cash far longer than they intended, missing the early phase of the recovery that generates much of the rebound return.</p>
+
+<p>The answer is not reckless optimism. It is a plan that removes the need to make reactive decisions under pressure, because the income you need is already positioned in stable assets.</p>
+
+<h2>Why Diversification Still Matters, and What It Cannot Do Alone</h2>
+
+<p>Historical data from Vanguard shows that a 60/40 portfolio (60% stocks, 40% bonds) reduced the 2008 drawdown by nearly half compared to an all-stock portfolio, while still delivering solid long-term returns. Diversification across asset classes is a genuine risk-management tool, not just a platitude.</p>
+
+<p>According to Morningstar's 2022 research, low-cost funds outperformed high-cost funds in every asset class over a 10-year period, with fees being one of the strongest predictors of future performance. Cost discipline in a diversified portfolio compounds its benefit over time.</p>
+
+<p>But diversification alone does not solve the sequence-of-returns problem. A 60/40 portfolio can still fall 20% to 25% in a significant market event. If you are withdrawing 4% to 5% annually from a portfolio that falls 20%, you are drawing down a meaningfully larger share of what remains, and the recovery math becomes harder. Diversification is a necessary foundation; it needs to be combined with how and from where you withdraw.</p>
+
+<h2>How a Coordinated Plan Actually Manages This Risk</h2>
+
+<p>The strategies below are not theoretical. They are the practical levers that a coordinated <a href="/services/retirement-planning">retirement plan</a> uses to reduce sequence-of-returns exposure and give a portfolio the room it needs to recover without being drawn down under duress.</p>
+
+<h3>1. The Cash Reserve: Your First Line of Defense</h3>
+
+<p>The simplest and most effective protection against being forced to sell equities in a down market is having enough liquid, low-risk assets to fund one to three years of living expenses without touching your equity portfolio at all. Cash, short-term Treasuries, or money market funds set aside specifically for near-term income needs act as a buffer between you and market volatility.</p>
+
+<p>When markets fall, you draw from the buffer. When markets recover, you replenish it from your equity portfolio before the next down cycle. This breaks the dangerous feedback loop where withdrawals accelerate losses.</p>
+
+<h3>2. The Bucket Strategy: Building a Portfolio That Can Wait</h3>
+
+<p>A bucket strategy extends the cash reserve concept across the full retirement timeline. It divides a portfolio into segments:</p>
 
 <ul>
-<li><strong>The Discipline to Stay Invested:</strong> Strategies like Dollar-Cost Averaging (DCA)\u2014investing a fixed amount regularly\u2014reinforce discipline and turn downturns into opportunities to buy more shares at lower prices.</li>
-<li><strong>Time Horizon Matters:</strong> Long-term goals generally allow for more stock exposure, as there's time to recover from dips. A <a href="/services/financial-planning">financial plan</a> aligns investments with specific time horizons.</li>
-<li><strong>Diversification's Role:</strong> Spreading investments across different asset classes and sectors is crucial. It helps cushion the impact when specific areas are hit hard.</li>
-<li><strong>Built for Bumps:</strong> A robust financial plan anticipates periods of volatility and potential downturns.</li>
+<li><strong>Short-term bucket (years 1-2):</strong> Cash and very short-duration bonds. Funds near-term living expenses without any equity exposure.</li>
+<li><strong>Medium-term bucket (years 3-7):</strong> Bonds, balanced funds, and lower-volatility assets. Designed to be sold and used to refill the short-term bucket over time.</li>
+<li><strong>Long-term bucket (years 8+):</strong> Equities, including both domestic and international stocks. Given the time horizon, this bucket can survive a multi-year downturn without being touched.</li>
 </ul>
 
-<h2>The Value of Working with an Advisor</h2>
+<p>The critical discipline is leaving the long-term bucket alone during downturns. The worst outcomes occur when retirees break that discipline and liquidate equities at the bottom to fund immediate needs, needs that should have been funded by the short-term bucket in the first place.</p>
 
-<ul>
-<li><strong>Fiduciary Standard:</strong> Advisors operating under a fiduciary standard are legally obligated to act in your best interest, with a duty to disclose and manage conflicts of interest.</li>
-<li><strong>Expertise and Planning:</strong> Advisors bring expertise in <a href="/services/financial-planning">financial planning</a>, <a href="/services/investment-management">investment management</a>, and <a href="/services/tax-planning">tax strategies</a>.</li>
-<li><strong>Behavioral Coaching:</strong> Advisors help investors stay disciplined and focused on the long term, bridging the "Behavior Gap."</li>
-<li><strong>Objective Guidance:</strong> An advisor provides objective advice aligned with your goals, risk tolerance, and time horizon.</li>
-</ul>
+<h3>3. Withdrawal Sequencing: Which Account You Pull From Matters</h3>
 
-<h2>The Power of a Low-Cost, Diversified Portfolio</h2>
+<p>The question of <em>from which account</em> you withdraw each year is as important as how much you withdraw. Taxable brokerage accounts, traditional IRAs, and Roth IRAs are taxed very differently, and the sequence in which you draw them down has meaningful lifetime tax implications.</p>
 
-<p>A well-diversified, low-cost portfolio is foundational for navigating volatile markets. Historical data from Vanguard shows that a 60/40 portfolio reduced the 2008 drawdown by nearly half compared to an all-stock portfolio, while still achieving solid long-term returns.</p>
+<p>A common starting framework draws from taxable brokerage accounts first (taking advantage of lower capital gains rates), then from traditional IRAs and 401(k)s to manage bracket exposure, and preserves Roth accounts for last, allowing tax-free growth to compound as long as possible. But the right sequence for any individual depends on their income sources, bracket situation, estate planning goals, and Medicare premium exposure. This is where <a href="/services/financial-planning">integrated financial planning</a> and tax work need to be done together, not in separate conversations.</p>
 
-<p>According to Morningstar's 2022 research, low-cost funds outperformed high-cost funds in every asset class over a 10-year period, with fees being one of the strongest predictors of future performance.</p>
+<h3>4. Roth Conversion Timing: Turning a Down Market Into an Opportunity</h3>
 
-<h2>Ready to Build Your Plan?</h2>
+<p>A significant market decline can actually create a Roth conversion opportunity for pre-retirees. When your traditional IRA balance is down 20%, converting a given dollar amount moves fewer shares of value into the Roth at the same tax cost. The recovery then happens inside the Roth, where it grows and is eventually withdrawn tax-free, rather than inside the traditional IRA, where it would eventually be subject to Required Minimum Distributions and ordinary income tax.</p>
 
-<p>Building a plan that includes a <a href="/services/investment-management">low-cost, globally diversified portfolio</a> can reduce volatility, improve long-term outcomes, and give you the confidence to stay on track. Consider working with a fee-only fiduciary advisor who can help you build a plan, align your investments with your time horizon and risk tolerance, and avoid the pitfalls of emotional decision-making.</p>
+<p>This strategy only works, however, if your broader plan is solid enough that you are not simultaneously forced to liquidate other assets to fund living expenses. Opportunistic Roth conversion during a downturn requires cash reserves and income positioning to already be in place. Our <a href="/services/tax-planning">tax planning</a> team works alongside your investment management to identify these windows and size conversions carefully, staying below IRMAA thresholds and within optimal bracket ranges.</p>
 
-<p><a href="/contact">Contact us</a> today to get started.</p>`,
+<h3>5. Rebalancing Discipline During Downturns</h3>
+
+<p>A market decline that hits equities harder than bonds will cause your portfolio's allocation to drift below its equity target. Disciplined rebalancing, buying equities and trimming bonds to restore your target allocation, is counterintuitive during a downturn but is one of the clearest ways to buy low systematically. Done in a tax-aware way, it can also create tax-loss harvesting opportunities that improve after-tax returns. This is the mechanical opposite of panic selling, and it requires a plan and a steady hand to execute it.</p>
+
+<h2>The Coordinated Difference</h2>
+
+<p>None of these strategies works in isolation. A cash reserve without a withdrawal sequencing strategy may deplete the wrong accounts. A Roth conversion without the full tax picture may trigger an IRMAA surcharge that costs thousands in Medicare premiums two years later. A bucket strategy without an <a href="/services/investment-management">investment management</a> framework for rebalancing may fail to refill the buckets efficiently.</p>
+
+<p>This is why we built United Financial Planning Group the way we did: CFP&reg; professionals, CPAs, and Enrolled Agents working from the same complete picture of your financial life. No handoff between your financial planner and your accountant. No investment decisions made without the tax implications already accounted for. Our team holds weekly strategy sessions and reviews each client's full situation before any recommendation is made.</p>
+
+<p>We are fee-only fiduciaries. No commissions, ever. Our only interest is in the plan that actually serves you.</p>
+
+<h2>What This Means for You, Right Now</h2>
+
+<p>If you are within five years of retirement and you watched the markets move on July 23, 2026, with a knot in your stomach, that feeling is useful information. It is telling you something about whether your current plan is built for the life transition you are approaching.</p>
+
+<p>The right time to put sequence-of-returns protection in place is not after a significant downturn has already begun. It is before, when you have the flexibility to position your cash reserves, adjust your withdrawal sequencing, and identify Roth conversion opportunities from a position of strength rather than reaction.</p>
+
+<p>If you are already in retirement and navigating volatility with an existing plan, the same applies: the plan's value is most visible precisely when markets are unsettled and the alternative, reactive decisions made under pressure, is most costly.</p>
+
+<p>We work with pre-retirees and retirees throughout Long Island, Manhattan, and across New York, as well as clients nationwide who value the integrated approach. If you would like to talk through how your current plan handles a down market, we invite you to reach out. No pressure, no pitch, just a clear-eyed conversation about where you stand.</p>
+
+<p><a href="/contact">Schedule a complimentary consultation</a> with United Financial Planning Group. Learn more about our approach to <a href="/services/retirement-planning">retirement planning</a>, <a href="/services/financial-planning">financial planning</a>, <a href="/services/investment-management">investment management</a>, and <a href="/services/tax-planning">tax planning</a>.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Market data cited (S&amp;P 500, Dow Jones Industrial Average, Nasdaq Composite, CBOE VIX) is sourced from <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a> as of July 23, 2026, and reflects closing or intraday values as of that date; past market performance is not indicative of future results. The JP Morgan study referenced covers S&amp;P 500 Index total returns from January 2003 through December 2022. The Vanguard 60/40 drawdown comparison reflects the 2008 market event and is used for illustrative purposes only. The Morningstar low-cost fund research referenced is from Morningstar's 2022 fund cost study. All of these third-party data points are historical and are not a guarantee of future performance. Sequence-of-returns risk, bucket strategy concepts, Roth conversion analysis, and withdrawal sequencing are general educational frameworks; their applicability and benefit depend on individual circumstances including income, account balances, tax situation, state of residence, and retirement timeline. Results vary by individual. Please consult a qualified financial advisor and tax professional regarding your specific situation before making any decisions.</p>`,
   },
   {
     slug: "high-yield-savings-accounts-wsj-ryan-derousseau",
