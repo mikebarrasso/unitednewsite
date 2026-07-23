@@ -52,7 +52,7 @@ const teamMembers = [
     initials: "JV",
     accentColor: "oklch(0.618 0.120 244.3)",
     href: "/team/jose-vivero",
-    image: "/1600274056286.jpeg",
+    image: "https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Jose_Vivero_6J2A3751L_Vertical-BJzPxdP6foCsL2ZgznjRqjGYk7AffM.jpg",
   },
   {
     name: "Diana David",

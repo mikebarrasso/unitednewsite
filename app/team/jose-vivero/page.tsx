@@ -21,7 +21,7 @@ export default function JoseViveroPage(): ReactNode {
         name="Jose Vivero"
         jobTitle="Financial Advisor"
         description="Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning."
-        image="/1600274056286.jpeg"
+        image="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Jose_Vivero_6J2A3751L_Vertical-BJzPxdP6foCsL2ZgznjRqjGYk7AffM.jpg"
         credentials={["CFP®", "ChFC®", "CLU®", "RICP®"]}
         url="/team/jose-vivero"
         alumniOf={["Western Connecticut State University"]}
@@ -46,7 +46,7 @@ export default function JoseViveroPage(): ReactNode {
           credentials="CFP®, ChFC®, CLU®, RICP®"
           title="Financial Advisor"
           initials="JV"
-          image="/1600274056286.jpeg"
+          image="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Jose_Vivero_6J2A3751L_Vertical-BJzPxdP6foCsL2ZgznjRqjGYk7AffM.jpg"
           summary="A dedicated financial professional with over a decade of experience, committed to helping clients achieve their financial goals. Originally from Quito, Ecuador, Jose is a first-generation immigrant who came to the United States to pursue his education and career."
           location="Norwalk, CT"
           sections={[
