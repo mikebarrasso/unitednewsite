@@ -46,7 +46,7 @@ const teamMembers = [
   },
   {
     name: "Jose Vivero",
-    credentials: "CFP®, ChFC®, CLU®, RICP®",
+    credentials: "CFP®, EA",
     title: "Financial Advisor",
     bio: "Jose's deep roster of designations reflects his commitment to mastering every dimension of financial planning, from retirement income strategies to insurance and estate coordination.",
     initials: "JV",
