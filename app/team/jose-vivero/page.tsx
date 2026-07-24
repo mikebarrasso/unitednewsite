@@ -8,9 +8,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Jose Vivero, CFP®",
+  title: "Jose Vivero, CFP®, EA",
   description:
-    "Jose Vivero is a Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning.",
+    "Jose Vivero is a CFP\u00ae and Enrolled Agent at United Financial Planning Group with over a decade of experience in financial planning.",
   path: "/team/jose-vivero",
 });
 
@@ -20,9 +20,9 @@ export default function JoseViveroPage(): ReactNode {
       <PersonSchema
         name="Jose Vivero"
         jobTitle="Financial Advisor"
-        description="Financial Advisor at United Financial Planning Group with over a decade of experience and multiple advanced designations in financial planning."
+        description="CFP® professional and Enrolled Agent at United Financial Planning Group with over a decade of experience in financial planning."
         image="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Jose_Vivero_6J2A3751L_Vertical-BJzPxdP6foCsL2ZgznjRqjGYk7AffM.jpg"
-        credentials={["CFP®", "ChFC®", "CLU®", "RICP®"]}
+        credentials={["CFP®", "EA"]}
         url="/team/jose-vivero"
         alumniOf={["Western Connecticut State University"]}
         knowsAbout={[
@@ -43,7 +43,7 @@ export default function JoseViveroPage(): ReactNode {
         <TeamProfile
           name="Jose Vivero"
           hasBreadcrumb
-          credentials="CFP®, ChFC®, CLU®, RICP®"
+          credentials="CFP®, EA"
           title="Financial Advisor"
           initials="JV"
           image="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/Jose_Vivero_6J2A3751L_Vertical-BJzPxdP6foCsL2ZgznjRqjGYk7AffM.jpg"
@@ -70,9 +70,7 @@ export default function JoseViveroPage(): ReactNode {
           ]}
           designations={[
             "CERTIFIED FINANCIAL PLANNER® (CFP®)",
-            "Chartered Financial Consultant® (ChFC®)",
-            "Chartered Life Underwriter® (CLU®)",
-            "Retirement Income Certified Professional® (RICP®)",
+            "Enrolled Agent (EA)",
           ]}
           education={[
             "Bachelor\u2019s in Finance \u2014 Western Connecticut State University",
