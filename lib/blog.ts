@@ -132,6 +132,10 @@ export const blogPosts: BlogPost[] = [
     author: "United Financial Planning Group",
     authorSlug: "gerry-barrasso",
     type: "blog",
+    image:
+      "https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/AdobeStock_395083180-6eC21wG7tOv29F3bSt2Lrr4X3wqvaM.jpeg",
+    imageAlt:
+      "Software engineer at a multi-monitor workstation, representing pre-IPO tech employees evaluating QSBS Section 1202 stock option tax planning.",
     relatedServices: [
       "/services/equity-compensation",
       "/services/tax-planning",
