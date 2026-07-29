@@ -11,7 +11,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Our Services",
   description:
-    "Explore our fee-only services: financial planning, retirement planning, investment management, tax planning, tax preparation, and equity compensation guidance — all coordinated under one roof.",
+    "Explore our fee-only services: financial planning, retirement planning, investment management, tax planning, tax preparation, equity compensation, and estate planning coordination, all coordinated under one roof.",
   path: "/services",
 });
 
@@ -51,6 +51,12 @@ const services = [
     description:
       "Navigate stock options, RSUs, and equity awards with tax-coordinated planning that aligns vesting schedules with your broader financial strategy.",
     href: "/services/equity-compensation",
+  },
+  {
+    title: "Estate Planning Coordination",
+    description:
+      "Coordinate beneficiary designations, account titling, trust funding, and tax-efficient wealth transfer alongside your estate attorney, all integrated with your financial plan.",
+    href: "/services/estate-planning-coordination",
   },
 ];
 
