@@ -619,6 +619,10 @@ export const blogPosts: BlogPost[] = [
     author: "United Financial Planning Group",
     authorSlug: "gerry-barrasso",
     type: "blog",
+    image:
+      "https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/sites/fc1baa26-67fb-4bda-8df5-8a06ead90442/images/AdobeStock_606431113-WbyUWR7hDBmMhGZy5HplPKpf8iGIuZ.jpeg",
+    imageAlt:
+      "A multi-generational family walks together along the beach at sunset, holding hands and viewed from behind.",
     relatedServices: [
       "/services/financial-planning",
       "/services/tax-planning",
