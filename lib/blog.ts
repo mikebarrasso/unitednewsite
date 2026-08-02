@@ -810,7 +810,8 @@ export const blogPosts: BlogPost[] = [
     category: "Equity Compensation",
     excerpt:
       "A comprehensive guide for startup employees on navigating ISOs, NSOs, RSUs, AMT, and concentration risk to build and protect wealth.",
-    author: "United Financial Planning Group",
+    author: "Gerry Barrasso, CFP\u00ae, CPA, PFS",
+    authorSlug: "gerry-barrasso",
     type: "blog",
     relatedServices: [
       "/services/equity-compensation",
