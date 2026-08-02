@@ -806,10 +806,10 @@ export const blogPosts: BlogPost[] = [
     slug: "equity-compensation-planning-startup-employees",
     title: "Equity Compensation Planning for Startup Employees",
     date: "2026-06-27",
-    updatedDate: "2026-06-29",
+    updatedDate: "2026-08-02",
     category: "Equity Compensation",
     excerpt:
-      "A comprehensive guide for startup employees on navigating ISOs, NSOs, RSUs, AMT, and concentration risk to build and protect wealth.",
+      "A comprehensive guide for startup employees on navigating ISOs, NSOs, RSUs, AMT, and concentration risk to build and protect wealth. Updated August 2026 with current IRS figures, a 2026 AMT phase-out comparison, and Carta private-market liquidity data.",
     author: "Gerry Barrasso, CFP\u00ae, CPA, PFS",
     authorSlug: "gerry-barrasso",
     type: "blog",
@@ -862,6 +862,50 @@ export const blogPosts: BlogPost[] = [
 <li><strong>The Double-Trigger Pitfall:</strong> Many private startups use &ldquo;double-trigger&rdquo; RSUs. They vest only after you meet a time-based condition <em>and</em> the company goes through a liquidity event (like an IPO or acquisition). When that event occurs, all of your accumulated RSUs vest at once, potentially pushing you into the highest income tax bracket overnight.</li>
 </ul>
 
+<h3>ISO vs. NSO vs. RSU: Quick Comparison</h3>
+
+<p>The three grant types look similar on paper but have meaningfully different tax consequences. The table below summarizes the key distinctions at a glance.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">For illustrative and educational purposes only. Tax treatment depends on individual facts and circumstances. Consult a qualified tax professional regarding your specific situation.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Feature</th>
+<th class="text-left p-3 border border-border font-semibold">ISO</th>
+<th class="text-left p-3 border border-border font-semibold">NSO</th>
+<th class="text-left p-3 border border-border font-semibold">RSU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Tax trigger point</td>
+<td class="p-3 border border-border">At sale of shares (ordinary income only if disqualifying disposition; LTCG on qualifying disposition)</td>
+<td class="p-3 border border-border">At exercise: spread taxed as ordinary income immediately</td>
+<td class="p-3 border border-border">At vesting: full fair market value taxed as ordinary income</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">AMT exposure</td>
+<td class="p-3 border border-border">Yes: ISO spread at exercise is an AMT preference item</td>
+<td class="p-3 border border-border">No AMT preference item on exercise</td>
+<td class="p-3 border border-border">No AMT preference item; taxed as ordinary income at vesting</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Employer withholding at exercise/vesting</td>
+<td class="p-3 border border-border">No required withholding at exercise (AMT must be managed by employee)</td>
+<td class="p-3 border border-border">Employer withholds on the spread at exercise (may not cover full liability)</td>
+<td class="p-3 border border-border">Employer withholds on fair market value at vesting (share-withholding or cash common)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Typical holding-period consideration</td>
+<td class="p-3 border border-border">Must hold &gt;2 years from grant, &gt;1 year from exercise for qualifying disposition and LTCG rates; AMT timing makes multi-year modeling essential</td>
+<td class="p-3 border border-border">Holding period for LTCG starts at exercise; no qualifying-disposition rules apply</td>
+<td class="p-3 border border-border">Holding period for LTCG starts at vesting; no special holding-period requirement for favorable rate beyond standard one-year LTCG rule</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <h2>2. Key Strategies for Private Startup Equity</h2>
 
 <p>To maximize your wealth, you must proactively manage your equity before, during, and after vesting.</p>
@@ -875,14 +919,80 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Warning:</strong> If the startup fails, you cannot recover the taxes paid upfront. It is a calculated risk that requires expert guidance.</li>
 </ul>
 
-<h3>The Exercise Strategy: Cash Flow &amp; AMT Planning</h3>
+<h3>The Exercise Strategy: Cash Flow and AMT Planning</h3>
 
-<p>Exercising stock options requires cash&mdash;both to pay the strike price and to cover potential tax liabilities (especially AMT for ISOs).</p>
+<p>Exercising stock options requires cash: both to pay the strike price and to cover potential tax liabilities (especially AMT for ISOs).</p>
 
 <ul>
 <li><strong>Early Exercise:</strong> Some startups allow you to exercise options before they vest. If paired with an 83(b) election, this can dramatically reduce your tax burden.</li>
 <li><strong>Vesting Schedule Alignment:</strong> We help clients map out their exercise schedule to spread out AMT liability across multiple tax years, avoiding a single, overwhelming tax event.</li>
 </ul>
+
+<h3>2026 Numbers That Matter for Your Options</h3>
+
+<p>The AMT thresholds and capital gains brackets that govern ISO planning are adjusted each year. The table below shows the figures in effect for tax year 2026, including the phase-out change introduced by the One Big Beautiful Bill Act.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">For educational purposes only. These figures apply to federal tax year 2026. State treatment varies. Consult a qualified tax professional regarding your individual situation.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Item</th>
+<th class="text-left p-3 border border-border font-semibold">Single / Head of Household</th>
+<th class="text-left p-3 border border-border font-semibold">Married Filing Jointly</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">AMT exemption amount</td>
+<td class="p-3 border border-border">$90,100</td>
+<td class="p-3 border border-border">$140,200</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">AMT exemption phase-out begins</td>
+<td class="p-3 border border-border">$500,000</td>
+<td class="p-3 border border-border">$1,000,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">AMT phase-out rate</td>
+<td class="p-3 border border-border" colspan="2">$0.25 of exemption lost per $1.00 of AMTI above the threshold (i.e., exemption is reduced by 25 cents for each dollar over the threshold)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">0% long-term capital gains rate (up to)</td>
+<td class="p-3 border border-border">$49,450 taxable income</td>
+<td class="p-3 border border-border">$98,900 taxable income</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">15% long-term capital gains rate (up to)</td>
+<td class="p-3 border border-border">$545,500 taxable income</td>
+<td class="p-3 border border-border">$613,700 taxable income</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">20% long-term capital gains rate</td>
+<td class="p-3 border border-border" colspan="2">Above the 15% thresholds listed above</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="text-xs text-muted-foreground">Source: <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer">IRS Revenue Procedure 2025-32</a>, released October 2025, for tax year 2026 (irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill). As of August 2026.</p>
+
+<figure class="my-6">
+<img
+  src="https://nz2q9bvkofj2xcya.public.blob.vercel-storage.com/firms/988e32b2-2818-4677-b3cf-c7b46d62d4cc/email-images/chart-81eee22299287c43.png"
+  alt="Bar chart comparing the AMT exemption phase-out threshold for single and married filing jointly taxpayers in 2025 versus 2026"
+  class="w-full rounded-md"
+/>
+<figcaption class="text-xs text-muted-foreground mt-2">Source: IRS Revenue Procedure 2025-32.</figcaption>
+</figure>
+
+<h3>Why the Phase-Out Change Matters: A Hypothetical Example</h3>
+
+<p>The One Big Beautiful Bill Act reset the 2026 AMT phase-out threshold to $500,000 (single) and $1,000,000 (married filing jointly). That is a meaningful decrease from the 2025 thresholds, which stood at $626,350 (single) and $1,252,700 (MFJ). The practical consequence: a higher-income ISO exerciser who modeled their AMT exposure using 2025 rules could now face AMT they did not anticipate under 2026 rules.</p>
+
+<p><strong>Hypothetical example (for illustration only; does not represent any real client, company, or security):</strong> Suppose a single filer earned $300,000 in W-2 income in 2026 and exercised ISOs with a spread of $400,000 (the difference between the 409A fair market value and their strike price at exercise). Their Alternative Minimum Taxable Income (AMTI) is approximately $700,000. Under 2025 phase-out rules, the $626,350 threshold would have allowed a partial exemption that significantly reduced the AMT base. Under the 2026 threshold of $500,000, the phase-out begins $200,000 earlier, so more of the $90,100 exemption is eroded before the AMT calculation even starts. The result: this individual could owe several thousand dollars more in AMT in 2026 than a mechanical application of 2025 figures would have predicted. Every dollar of ISO spread exercised above the phase-out threshold now carries more AMT weight than it did last year.</p>
+
+<p>This is exactly the kind of multi-year exercise timing analysis that our team of <strong>CFP&reg; professionals, CPAs, and Enrolled Agents</strong> helps clients model at United Financial Planning Group. Knowing the 2026 numbers before you exercise, not after, is what allows you to sequence grants across tax years, manage the AMT credit carryforward, and avoid a surprise tax bill. Our fee-only fiduciary structure means we do this analysis in your interest, with no commissions or product sales in the picture.</p>
 
 <h2>3. Mitigating the &ldquo;Concentrated Position&rdquo; Risk</h2>
 
@@ -894,6 +1004,12 @@ export const blogPosts: BlogPost[] = [
 
 <p>As a general rule, we advise clients to limit their exposure to any single stock to <strong>no more than 10% to 15% of their total net worth</strong>. Once your startup stock vests and has liquidity, implementing a disciplined, automated sell-off strategy (such as a 10b5-1 plan for executives) allows you to systematically diversify your wealth into a balanced, institutional-grade investment portfolio.</p>
 
+<h3>The 2025 Private Market Reality: Tender Offers, Not IPOs</h3>
+
+<p>For most startup employees, the realistic path to liquidity in 2025 and into 2026 has been the <strong>tender offer</strong>, not the IPO. Carta data from its <em>State of Private Markets: Q1 2026</em> report shows that tender offer volume on the Carta platform reached 396 transactions in 2025, up 62% year over year. (<a href="https://carta.com/data/state-of-private-markets-q1-2026" target="_blank" rel="noopener noreferrer">Carta, State of Private Markets: Q1 2026</a>. As of August 2026.) Secondary tender offers have become the dominant liquidity mechanism for employees at late-stage private companies, providing partial liquidity before any public event arrives.</p>
+
+<p>The IPO market is reopening selectively, but it remains narrow. Carta reported 34 IPOs priced in Q1 2026, raising $9.9 billion, concentrated in fintech, AI, and cybersecurity. (<a href="https://carta.com/data/state-of-private-markets-q1-2026" target="_blank" rel="noopener noreferrer">Carta, State of Private Markets: Q1 2026</a>. As of August 2026.) That pace is far from the broad IPO windows of prior cycles. The practical implication for most startup employees: plan for years of illiquidity rather than assuming a near-term public event. Concentration risk is not a temporary condition waiting to be resolved at IPO; it is the baseline planning environment you need to manage around now. Tender offers, secondary transactions, and systematic post-vest diversification should all be on the planning calendar before an IPO ever materializes.</p>
+
 <h2>4. How We Help: The United Financial Advantage</h2>
 
 <p>Many financial advisors only look at your investments. Many tax professionals only look at your tax return.</p>
@@ -901,18 +1017,18 @@ export const blogPosts: BlogPost[] = [
 <p>At <strong>United Financial Planning Group</strong>, we believe that equity planning cannot be done in a vacuum. By bringing <strong>tax planning, investment management, and equity compensation</strong> under one roof, we provide an integrated strategy:</p>
 
 <ol>
-<li><strong>Tax Projection Modeling:</strong> We simulate ISO exercise scenarios to calculate your exact AMT exposure and determine the most cash-flow-efficient times to exercise.</li>
-<li><strong>Liquidity Planning:</strong> We help you prepare for lock-up periods and execute post-IPO diversification plans.</li>
+<li><strong>Tax Projection Modeling:</strong> We simulate ISO exercise scenarios to calculate your exact AMT exposure and determine the most cash-flow-efficient times to exercise, using the current year's thresholds including the 2026 phase-out change.</li>
+<li><strong>Liquidity Planning:</strong> We help you prepare for lock-up periods, evaluate tender offer opportunities, and execute post-IPO diversification plans.</li>
 <li><strong>W-2 and Equity Optimization:</strong> We ensure your salary, bonus, and equity are fully optimized for your long-term personal wealth goals.</li>
 </ol>
 
 <h2>Ready to Optimize Your Startup Equity?</h2>
 
-<p>Whether you hold ISOs, NSOs, or RSUs, a proactive plan is the difference between a massive tax bill and generational wealth.</p>
+<p>Whether you hold ISOs, NSOs, or RSUs, a proactive plan is the difference between a manageable tax outcome and an unexpected bill. The 2026 AMT phase-out change, ongoing private market illiquidity, and the complexity of multi-year exercise timing all underscore why coordinated, current-year planning matters.</p>
 
 <p><a href="/contact"><strong>Schedule a complimentary equity consultation with our team today.</strong></a></p>
 
-<p><em>Disclaimer: United Financial Planning Group is a registered investment advisor. This material is for educational purposes and does not constitute personalized tax or investment advice. Consult a tax professional regarding your specific situation.</em></p>`,
+<p><em>Disclaimer: United Financial Planning Group is a registered investment advisor. This material is for educational purposes and does not constitute personalized tax or investment advice. The hypothetical examples in this article are for illustrative purposes only and do not represent any actual client, company, or security. Tax laws are complex, change frequently, and may not apply to your specific situation. Consult a qualified tax professional regarding your individual circumstances.</em></p>`,
   },
   {
     slug: "recession-2026-new-york-investors",
