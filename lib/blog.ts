@@ -1310,7 +1310,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Market Volatility Near Retirement: Why the Timing Matters More Than You Think",
     date: "2025-04-09",
-    updatedDate: "2026-07-23",
+    updatedDate: "2026-08-02",
     category: "Retirement Planning",
     excerpt:
       "A market downturn hits differently when you are two to five years from retirement. Sequence-of-returns risk means that withdrawing from a falling portfolio can lock in losses your portfolio may never fully recover from. Here is how a coordinated plan manages that risk.",
@@ -1363,17 +1363,70 @@ export const blogPosts: BlogPost[] = [
 
 <p>But if you are 60, 62, or 65, the math is different. Not because the market behaved differently, but because <em>you</em> are in a different place. You are close to the moment when your portfolio stops growing from contributions and starts funding your life. And that transition changes everything about how a downturn affects you.</p>
 
-<p>This article is about that difference, and what a coordinated plan does to manage it.</p>
+<p>This article is about that difference, specifically the <strong>sequence of returns risk</strong> it creates near retirement, and what a coordinated plan does to manage it.</p>
 
-<h2>The Risk That Does Not Get Enough Attention: Sequence of Returns</h2>
+<h2>The Risk That Does Not Get Enough Attention: Sequence of Returns Risk</h2>
 
 <p>Most conversations about market volatility focus on long-term average returns. And for someone in their 30s or 40s, that framing is largely correct. Markets go up over time. Downturns are temporary. Stay invested.</p>
 
 <p>But averages obscure something critical for pre-retirees and recent retirees: the <strong>order</strong> in which returns arrive matters enormously once you are withdrawing from a portfolio rather than adding to it.</p>
 
-<p>This is <strong>sequence-of-returns risk</strong>. Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
+<p>This is <strong>sequence of returns risk</strong>. Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
 
 <p>Why? Because when you sell shares during a downturn to fund living expenses, those shares are gone. They do not participate in the recovery. The hole in your portfolio grows larger every month you withdraw at depressed prices. The math compounds against you in a way it simply does not during the accumulation years.</p>
+
+<h2>Sequence of Returns Risk: A Concrete Example</h2>
+
+<p><em>Hypothetical example for illustration only. Results not guaranteed.</em></p>
+
+<p>Numbers make sequence of returns risk concrete. Imagine two retirees, Retiree A and Retiree B, who each begin retirement with an identical $1,000,000 portfolio, withdraw $50,000 (5%) annually, and earn the same 6% average annual return over a 20-year retirement. The only difference between them is timing. Retiree A experiences a 25% market decline in year one of retirement, then average returns for the remaining 19 years. Retiree B experiences average returns for the first nine years, then the same 25% decline in year ten, followed by average returns again for the last ten years.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Hypothetical example for illustration only. Results not guaranteed. Assumes a $1,000,000 starting portfolio, $50,000 annual withdrawals, and an identical 6% average annual return for both retirees.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Milestone</th>
+<th class="text-left p-3 border border-border font-semibold">Retiree A (25% Decline in Year 1)</th>
+<th class="text-left p-3 border border-border font-semibold">Retiree B (25% Decline in Year 10)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Starting balance</td>
+<td class="p-3 border border-border">$1,000,000</td>
+<td class="p-3 border border-border">$1,000,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">End of Year 1</td>
+<td class="p-3 border border-border">$712,500</td>
+<td class="p-3 border border-border">$1,007,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">End of Year 5</td>
+<td class="p-3 border border-border">$668,000</td>
+<td class="p-3 border border-border">$1,039,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">End of Year 10</td>
+<td class="p-3 border border-border">$595,000</td>
+<td class="p-3 border border-border">$773,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">End of Year 15</td>
+<td class="p-3 border border-border">$497,000</td>
+<td class="p-3 border border-border">$735,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">End of Year 20</td>
+<td class="p-3 border border-border">$366,000</td>
+<td class="p-3 border border-border">$685,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Both retirees earned the identical 6% average annual return over 20 years. But because Retiree A's decline happened in year one, while the portfolio was near its peak size and withdrawals were already underway, the loss compounded against a smaller remaining balance for the rest of retirement. Retiree B's portfolio had nine years to grow before absorbing the same decline, leaving substantially more capital in place to recover and continue compounding. This is the core mechanic behind sequence of returns risk: the average return does not determine the outcome nearly as much as the order in which returns arrive relative to your withdrawals.</p>
 
 <h2>Why the Two-to-Five Year Window Is the Most Vulnerable</h2>
 
@@ -1403,11 +1456,13 @@ export const blogPosts: BlogPost[] = [
 
 <p>According to Morningstar's 2022 research, low-cost funds outperformed high-cost funds in every asset class over a 10-year period, with fees being one of the strongest predictors of future performance. Cost discipline in a diversified portfolio compounds its benefit over time.</p>
 
-<p>But diversification alone does not solve the sequence-of-returns problem. A 60/40 portfolio can still fall 20% to 25% in a significant market event. If you are withdrawing 4% to 5% annually from a portfolio that falls 20%, you are drawing down a meaningfully larger share of what remains, and the recovery math becomes harder. Diversification is a necessary foundation; it needs to be combined with how and from where you withdraw.</p>
+<p>For the equity sleeve of a portfolio, that cost discipline is best expressed through broad-market, low-cost index ETFs, the indexing approach that firms like Vanguard pioneered decades ago. This is a philosophy, not a specific product recommendation: rather than trying to select individual winners, a broad-market index ETF is designed to capture the return of an entire market or asset class at a very low ongoing cost. Paired with the Morningstar cost research above, the logic compounds over time. Over a 20 to 30 year retirement, every basis point saved in fees is a basis point that stays invested and continues compounding, and broad diversification helps reduce the risk that any single holding or sector drags down the whole portfolio. Broad-market index ETFs still carry full equity market risk and can decline sharply in a downturn like any other equity holding, but as a foundation, they are one of the most cost-efficient ways to combine diversification with the compounding runway a multi-decade retirement requires.</p>
 
-<h2>How a Coordinated Plan Actually Manages This Risk</h2>
+<p>But diversification alone does not solve the sequence of returns problem. A 60/40 portfolio can still fall 20% to 25% in a significant market event. If you are withdrawing 4% to 5% annually from a portfolio that falls 20%, you are drawing down a meaningfully larger share of what remains, and the recovery math becomes harder. Diversification is a necessary foundation; it needs to be combined with how and from where you withdraw.</p>
 
-<p>The strategies below are not theoretical. They are the practical levers that a coordinated <a href="/services/retirement-planning">retirement plan</a> uses to reduce sequence-of-returns exposure and give a portfolio the room it needs to recover without being drawn down under duress.</p>
+<h2>How to Mitigate Sequence of Returns Risk: A Coordinated Plan in Action</h2>
+
+<p>The strategies below are not theoretical. They are the practical levers that a coordinated <a href="/services/retirement-planning">retirement plan</a> uses to reduce sequence of returns exposure and give a portfolio the room it needs to recover without being drawn down under duress.</p>
 
 <h3>1. The Cash Reserve: Your First Line of Defense</h3>
 
@@ -1421,11 +1476,75 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Short-term bucket (years 1-2):</strong> Cash and very short-duration bonds. Funds near-term living expenses without any equity exposure.</li>
-<li><strong>Medium-term bucket (years 3-7):</strong> Bonds, balanced funds, and lower-volatility assets. Designed to be sold and used to refill the short-term bucket over time.</li>
+<li><strong>Medium-term bucket (years 3-7):</strong> Bonds, balanced funds, and lower-volatility assets, often structured as a bond ladder so that a portion matures each year. Designed to be sold or matured and used to refill the short-term bucket over time.</li>
 <li><strong>Long-term bucket (years 8+):</strong> Equities, including both domestic and international stocks. Given the time horizon, this bucket can survive a multi-year downturn without being touched.</li>
 </ul>
 
 <p>The critical discipline is leaving the long-term bucket alone during downturns. The worst outcomes occur when retirees break that discipline and liquidate equities at the bottom to fund immediate needs, needs that should have been funded by the short-term bucket in the first place.</p>
+
+<h3>The Bond Ladder Strategy: A Concrete Way to Build the Medium-Term Bucket</h3>
+
+<p>The medium-term bucket is often described in the abstract, but in practice a <strong>bond ladder strategy</strong> is one of the most concrete ways to build it. A bond ladder staggers bond maturities so that a rung of the ladder matures every year, returning principal on a schedule that lines up with your income needs. As each rung matures, you either spend the returning principal directly or reinvest it, without ever being forced to sell a bond, or an equity, at a loss to generate cash.</p>
+
+<p>A bond ladder for retirement income can be built with individual bonds or, increasingly, with funds designed specifically for this purpose. The table below illustrates the concept using a simple five-year ladder.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Hypothetical example for illustration only. Results not guaranteed.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Year</th>
+<th class="text-left p-3 border border-border font-semibold">Bond Maturity</th>
+<th class="text-left p-3 border border-border font-semibold">Estimated Annual Income</th>
+<th class="text-left p-3 border border-border font-semibold">Principal Return</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">1</td>
+<td class="p-3 border border-border">2027</td>
+<td class="p-3 border border-border">$2,400</td>
+<td class="p-3 border border-border">$50,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">2</td>
+<td class="p-3 border border-border">2028</td>
+<td class="p-3 border border-border">$2,200</td>
+<td class="p-3 border border-border">$50,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">3</td>
+<td class="p-3 border border-border">2029</td>
+<td class="p-3 border border-border">$2,100</td>
+<td class="p-3 border border-border">$50,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">4</td>
+<td class="p-3 border border-border">2030</td>
+<td class="p-3 border border-border">$2,000</td>
+<td class="p-3 border border-border">$50,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">5</td>
+<td class="p-3 border border-border">2031</td>
+<td class="p-3 border border-border">$1,900</td>
+<td class="p-3 border border-border">$50,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>A bond ladder strategy may help reduce the risk of being forced to sell assets during a downturn, but it does not eliminate market or credit risk entirely. Bond values can still fluctuate before maturity, and a ladder is only as strong as the credit quality of the bonds inside it.</p>
+
+<h3>Target-Maturity ETFs: A Modern Way to Build a Bond Ladder</h3>
+
+<p>Building and managing a ladder of individual bonds has traditionally required buying, tracking, and eventually reinvesting or spending each bond as it matures, a task that is manageable but operationally heavy for many households. A <strong>target maturity bond ETF</strong>, often just called a target maturity ETF, is a relatively recent innovation designed to address that problem. Each target maturity ETF holds a diversified portfolio of investment-grade corporate bonds that all mature in a specific target year, combining the maturity discipline of an individual bond with the diversification and liquidity of an ETF wrapper.</p>
+
+<p>As a target maturity ETF approaches its stated year, its duration declines, which is designed to reduce interest-rate sensitivity at roughly the point the money is likely to be needed. In practice, this means an investor, or an advisor building a plan on their behalf, can construct a bond ladder for retirement income by purchasing several target maturity ETFs, each targeting a different year, rather than sourcing and monitoring individual bonds one by one.</p>
+
+<p>This is a relatively new development in the ETF marketplace. In March 2026, Vanguard launched a suite of ten <a href="https://investor.vanguard.com/investor-resources-education/news/vanguards-new-target-maturity-corporate-bond-etf-suite" target="_blank" rel="noopener noreferrer">BondBuilder Target Maturity Corporate Bond ETFs</a>, spanning target maturity years from 2027 through 2036, designed to help investors and advisors build laddered fixed income exposure inside an ETF wrapper. Morningstar published an <a href="https://www.morningstar.com/bonds/vanguard-takes-aim-laddered-bond-etfs" target="_blank" rel="noopener noreferrer">analysis of this category in June 2026</a>, examining how target maturity ETF suites function as a way to implement a bond ladder at a lower cost. We reference both sources for educational purposes only, not as a recommendation of any specific fund.</p>
+
+<p>The benefit for a retiree building a medium-term bucket is meaningful: a target maturity bond ETF is designed to offer the cash-flow planning precision of a bond ladder without the operational burden of sourcing, tracking, and reinvesting individual bonds one at a time. The limitation matters just as much. These are corporate bond ETFs, which means they concentrate credit risk in a single sector of the bond market. They generally work best as a complement to Treasuries or other high-quality holdings within a medium-term bucket, not as a standalone core bond allocation, and like any bond investment, they can lose value before maturity and are not guaranteed against loss.</p>
 
 <h3>3. Withdrawal Sequencing: Which Account You Pull From Matters</h3>
 
@@ -1455,7 +1574,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you are within five years of retirement and you watched the markets move on July 23, 2026, with a knot in your stomach, that feeling is useful information. It is telling you something about whether your current plan is built for the life transition you are approaching.</p>
 
-<p>The right time to put sequence-of-returns protection in place is not after a significant downturn has already begun. It is before, when you have the flexibility to position your cash reserves, adjust your withdrawal sequencing, and identify Roth conversion opportunities from a position of strength rather than reaction.</p>
+<p>The right time to put sequence of returns protection in place is not after a significant downturn has already begun. It is before, when you have the flexibility to position your cash reserves, adjust your withdrawal sequencing, and identify Roth conversion opportunities from a position of strength rather than reaction.</p>
 
 <p>If you are already in retirement and navigating volatility with an existing plan, the same applies: the plan's value is most visible precisely when markets are unsettled and the alternative, reactive decisions made under pressure, is most costly.</p>
 
@@ -1465,7 +1584,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2 id="disclosures">Disclosures</h2>
 
-<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Market data cited (S&amp;P 500, Dow Jones Industrial Average, Nasdaq Composite, CBOE VIX) is sourced from <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a> as of July 23, 2026, and reflects closing or intraday values as of that date; past market performance is not indicative of future results. The JP Morgan study referenced covers S&amp;P 500 Index total returns from January 2003 through December 2022. The Vanguard 60/40 drawdown comparison reflects the 2008 market event and is used for illustrative purposes only. The Morningstar low-cost fund research referenced is from Morningstar's 2022 fund cost study. All of these third-party data points are historical and are not a guarantee of future performance. Sequence-of-returns risk, bucket strategy concepts, Roth conversion analysis, and withdrawal sequencing are general educational frameworks; their applicability and benefit depend on individual circumstances including income, account balances, tax situation, state of residence, and retirement timeline. Results vary by individual. Please consult a qualified financial advisor and tax professional regarding your specific situation before making any decisions.</p>`,
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Market data cited (S&amp;P 500, Dow Jones Industrial Average, Nasdaq Composite, CBOE VIX) is sourced from <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a> as of July 23, 2026, and reflects closing or intraday values as of that date; past market performance is not indicative of future results. The JP Morgan study referenced covers S&amp;P 500 Index total returns from January 2003 through December 2022. The Vanguard 60/40 drawdown comparison reflects the 2008 market event and is used for illustrative purposes only. The Morningstar low-cost fund research referenced is from Morningstar's 2022 fund cost study. This article also references Vanguard's BondBuilder Target Maturity Corporate Bond ETF suite, launched in March 2026, and a June 2026 Morningstar analysis of target maturity bond ETF strategies; both are cited for general educational purposes only and are not recommendations to buy or sell any specific security, and references to broad-market or target-maturity index ETFs throughout this article describe general investment strategies rather than product recommendations. All investing involves risk, including possible loss of principal, and all of these third-party data points are historical and are not a guarantee of future performance. The bond ladder table and the sequence of returns risk example presented in this article are hypothetical illustrations using assumed figures for educational purposes only; they do not represent actual investment results, are not projections, and are not a guarantee of future performance. Sequence of returns risk, bucket strategy concepts, bond ladder strategies, Roth conversion analysis, and withdrawal sequencing are general educational frameworks; their applicability and benefit depend on individual circumstances including income, account balances, tax situation, state of residence, and retirement timeline. Results vary by individual. Please consult a qualified financial advisor and tax professional regarding your specific situation before making any decisions.</p>`,
   },
   {
     slug: "high-yield-savings-accounts-wsj-ryan-derousseau",
