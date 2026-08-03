@@ -1310,7 +1310,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Sequence of Returns Risk: Why Market Volatility Near Retirement Hits Harder Than You Think",
     date: "2025-04-09",
-    updatedDate: "2026-08-02",
+    updatedDate: "2026-08-03",
     category: "Retirement Planning",
     excerpt:
       "A market downturn hits differently when you are two to five years from retirement. Sequence-of-returns risk means that withdrawing from a falling portfolio can lock in losses your portfolio may never fully recover from. Here is how a coordinated plan manages that risk.",
@@ -1369,7 +1369,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>But averages obscure something critical for pre-retirees and recent retirees: the <strong>order</strong> in which returns arrive matters enormously once you are withdrawing from a portfolio rather than adding to it.</p>
 
-<p>Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
+<p>Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is the sequence of returns: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
 
 <p>Why? Because when you sell shares during a downturn to fund living expenses, those shares are gone. They do not participate in the recovery. The hole in your portfolio grows larger every month you withdraw at depressed prices. The math compounds against you in a way it simply does not during the accumulation years.</p>
 
@@ -1377,7 +1377,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><em>Hypothetical example for illustration only. Results not guaranteed.</em></p>
 
-<p>Numbers make sequence of returns risk concrete. Imagine two retirees, Retiree A and Retiree B, who each begin retirement with an identical $1,000,000 portfolio, withdraw $50,000 (5%) annually, and earn the same 6% average annual return over a 20-year retirement. The only difference between them is timing. Retiree A experiences a 25% market decline in year one of retirement, then average returns for the remaining 19 years. Retiree B experiences average returns for the first nine years, then the same 25% decline in year ten, followed by average returns again for the last ten years.</p>
+<p>Numbers make sequence of returns risk concrete. Imagine two retirees, Retiree A and Retiree B, who each begin retirement with an identical $1,000,000 portfolio, withdraw $50,000 (5%) annually, and earn the same 6% average annual return over a 20-year retirement. The only difference between them is the sequence of returns: Retiree A experiences a 25% market decline in year one of retirement, then average returns for the remaining 19 years. Retiree B experiences average returns for the first nine years, then the same 25% decline in year ten, followed by average returns again for the last ten years.</p>
 
 <div class="overflow-x-auto my-6">
 <table class="w-full border-collapse text-sm">
@@ -1454,7 +1454,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>According to Morningstar's 2022 research, low-cost funds outperformed high-cost funds in every asset class over a 10-year period, with fees being one of the strongest predictors of future performance. Cost discipline in a diversified portfolio compounds its benefit over time.</p>
 
-<p>For the equity sleeve of a portfolio, that cost discipline is best expressed through broad-market, low-cost index ETFs, the indexing approach that firms like Vanguard pioneered decades ago. This is a philosophy, not a specific product recommendation: rather than trying to select individual winners, a broad-market index ETF is designed to capture the return of an entire market or asset class at a very low ongoing cost. Paired with the Morningstar cost research above, the logic compounds over time. Over a 20 to 30 year retirement, every basis point saved in fees is a basis point that stays invested and continues compounding, and broad diversification helps reduce the risk that any single holding or sector drags down the whole portfolio. Broad-market index ETFs still carry full equity market risk and can decline sharply in a downturn like any other equity holding, but as a foundation, they are one of the most cost-efficient ways to combine diversification with the compounding runway a multi-decade retirement requires.</p>
+<p>For the equity sleeve of a portfolio, that cost discipline is best expressed through broad-market, low-cost index ETFs, the indexing approach that firms like Vanguard pioneered decades ago. This is a philosophy, not a specific product recommendation: rather than trying to select individual winners, a broad-market index ETF is designed to capture the return of an entire market or asset class at a very low ongoing cost. Paired with the Morningstar cost research above, the logic compounds over time. Over a 20 to 30 year retirement, every basis point saved in fees is a basis point that stays invested and continues compounding, and broad diversification helps reduce the risk that any single holding or sector drags down the whole portfolio. Broad-market index ETFs still carry full equity market risk and can decline sharply in a downturn like any other equity holding, but as a foundation, they are one of the most cost-efficient ways to combine diversification with the compounding runway a multi-decade retirement requires. Because index fund selection, tax-loss harvesting, and account placement all interact, our CFP&reg; professionals and CPAs coordinate these decisions together rather than treating investment selection and tax planning as separate conversations, so the cost savings from a disciplined indexing approach are not quietly given back through avoidable tax drag or fund overlap.</p>
 
 <p>But diversification alone does not solve the sequence of returns problem. A 60/40 portfolio can still fall 20% to 25% in a significant market event. If you are withdrawing 4% to 5% annually from a portfolio that falls 20%, you are drawing down a meaningfully larger share of what remains, and the recovery math becomes harder. Diversification is a necessary foundation; it needs to be combined with how and from where you withdraw.</p>
 
@@ -1483,6 +1483,8 @@ export const blogPosts: BlogPost[] = [
 <h3>The Bond Ladder Strategy: A Concrete Way to Build the Medium-Term Bucket</h3>
 
 <p>The medium-term bucket is often described in the abstract, but in practice a <strong>bond ladder strategy</strong> is one of the most concrete ways to build it. A bond ladder staggers bond maturities so that a rung of the ladder matures every year, returning principal on a schedule that lines up with your income needs. As each rung matures, you either spend the returning principal directly or reinvest it, without ever being forced to sell a bond, or an equity, at a loss to generate cash.</p>
+
+<p>Because each rung's principal and interest arrive on a set schedule regardless of what equity markets are doing that year, a bond ladder is designed to supply income precisely when equity market conditions might otherwise force an untimely sale, which is the heart of managing sequence of returns risk in retirement.</p>
 
 <p>A bond ladder for retirement income can be built with individual bonds or, increasingly, with funds designed specifically for this purpose. The table below illustrates the concept using a simple five-year ladder.</p>
 
@@ -1533,6 +1535,8 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <p>A bond ladder strategy may help reduce the risk of being forced to sell assets during a downturn, but it does not eliminate market or credit risk entirely. Bond values can still fluctuate before maturity, and a ladder is only as strong as the credit quality of the bonds inside it.</p>
+
+<p>A bond ladder's income is also taxed differently depending on the type of bond, whether it sits in a taxable account, an IRA, or a Roth, and how its maturities line up with your withdrawal sequencing and any Roth conversion plans for that year. Building the ladder is one part of the work; coordinating its maturity schedule with your broader tax picture is another. This is the depth of fixed income planning our CFP&reg; professionals and CPAs work through together, so the income designed to protect you from sequence of returns risk in retirement also fits cleanly into your annual tax plan.</p>
 
 <h3>Target-Maturity ETFs: A Modern Way to Build a Bond Ladder</h3>
 
@@ -2558,6 +2562,8 @@ export const blogPosts: BlogPost[] = [
 <p>During your working years, tax planning is largely reactive. Your salary is fixed, your employer withholds taxes automatically, and your ability to shift income between years is limited. In retirement, however, you gain a remarkable degree of control over your taxable income. But that control is time-limited. Once Required Minimum Distributions begin at age 73, the IRS dictates how much you must take out of your tax-deferred accounts each year&mdash;whether you need the money or not, and regardless of your tax bracket.</p>
 
 <p>The window between retirement and age 73 is what financial planners call the <strong>pre-RMD tax gap</strong>. Used strategically, this period can permanently reduce your lifetime tax burden, lower your Medicare premiums, and leave more wealth to your heirs. Used passively, it becomes a missed opportunity that you cannot recover.</p>
+
+<p>This same window is often when a portfolio is most exposed to sequence of returns risk, the risk that a market downturn arriving just as you begin drawing on your accounts can permanently shorten how long your money lasts. We cover that dynamic in our guide to <a href="/blog/market-volatility-financial-plan-advisor">sequence of returns risk in retirement</a>, and coordinating tax-gap planning with market risk planning is exactly the kind of work our CFP&reg; and CPA team does together.</p>
 
 <p>This article explains the three most powerful tools for managing this transition: tactical Roth conversions, IRMAA management, and Qualified Charitable Distributions.</p>
 
