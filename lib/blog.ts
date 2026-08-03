@@ -1185,7 +1185,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>1. Cash needs over the next one to three years</h3>
 
-<p>Money you expect to spend in the next 12 to 36 months (living expenses for a near-retiree, a planned home purchase, an upcoming tuition payment) generally is not well suited to a portfolio whose value can move significantly over short periods. Confirming that short-horizon needs are funded from short-horizon assets is one of the most important pre-recession exercises an investor can do.</p>
+<p>Money you expect to spend in the next 12 to 36 months (living expenses for a near-retiree, a planned home purchase, an upcoming tuition payment) generally is not well suited to a portfolio whose value can move significantly over short periods. Confirming that short-horizon needs are funded from short-horizon assets is one of the most important pre-recession exercises an investor can do. If you are within a few years of retirement, this matters even more: a downturn that arrives right as withdrawals begin creates <a href="/blog/market-volatility-financial-plan-advisor">sequence of returns risk</a>, where the timing of losses, not just their size, can permanently change your retirement outcome.</p>
 
 <h3>2. Asset allocation versus actual time horizon</h3>
 
@@ -1308,7 +1308,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "market-volatility-financial-plan-advisor",
     title:
-      "Market Volatility Near Retirement: Why the Timing Matters More Than You Think",
+      "Sequence of Returns Risk: Why Market Volatility Near Retirement Hits Harder Than You Think",
     date: "2025-04-09",
     updatedDate: "2026-08-02",
     category: "Retirement Planning",
@@ -1359,19 +1359,17 @@ export const blogPosts: BlogPost[] = [
 
 <p>Markets moved sharply on July 23, 2026. The S&amp;P 500 closed at 7,408.97, down 1.20% on the day. The Nasdaq fell 2.15%, closing at 25,137.69, as tech and rate-sensitive names bore the brunt of the selling. The CBOE VIX, the market's implied volatility gauge, rose 12.38% to 18.70, well off its 52-week high of 35.30 but meaningfully elevated. <em>(Source: <a href="https://perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>, as of July 23, 2026.)</em></p>
 
-<p>Days like this happen. They always have. If you are 45 or 50, a down day like this barely registers in your long-term plan. You keep contributing, you stay the course, and time does its work.</p>
+<p>Days like this happen. If you are 45 or 50, a down day like this barely registers in your long-term plan: you keep contributing, stay the course, and let time do its work. But if you are 60, 62, or 65, the calculus changes, not because markets behave differently, but because you are standing in a different place in your financial life.</p>
 
-<p>But if you are 60, 62, or 65, the math is different. Not because the market behaved differently, but because <em>you</em> are in a different place. You are close to the moment when your portfolio stops growing from contributions and starts funding your life. And that transition changes everything about how a downturn affects you.</p>
+<h2>Sequence of Returns Risk in Retirement</h2>
 
-<p>This article is about that difference, specifically the <strong>sequence of returns risk</strong> it creates near retirement, and what a coordinated plan does to manage it.</p>
+<p><strong>Sequence of returns risk</strong> is the danger that poor market returns early in retirement, combined with ongoing withdrawals, can permanently deplete a portfolio, even if the average returns over the full retirement period would have been perfectly sufficient. It is not the average return alone that determines how long your money lasts. It is the order in which gains and losses arrive relative to when you are withdrawing.</p>
 
-<h2>The Risk That Does Not Get Enough Attention: Sequence of Returns Risk</h2>
-
-<p>Most conversations about market volatility focus on long-term average returns. And for someone in their 30s or 40s, that framing is largely correct. Markets go up over time. Downturns are temporary. Stay invested.</p>
+<p>Most conversations about market volatility focus on long-term average returns, and for someone in their 30s or 40s, that framing is largely correct. Markets go up over time. Downturns are temporary. Stay invested.</p>
 
 <p>But averages obscure something critical for pre-retirees and recent retirees: the <strong>order</strong> in which returns arrive matters enormously once you are withdrawing from a portfolio rather than adding to it.</p>
 
-<p>This is <strong>sequence of returns risk</strong>. Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
+<p>Consider two investors who both earn an identical 20-year average annual return on their retirement portfolios. The only difference is timing: one experiences the bad years early in retirement, the other experiences them late. The investor who faces the downturn early, while making large withdrawals from a peak-value portfolio, may run out of money well before the investor who faces the same downturn later, even though their average returns are identical on paper.</p>
 
 <p>Why? Because when you sell shares during a downturn to fund living expenses, those shares are gone. They do not participate in the recovery. The hole in your portfolio grows larger every month you withdraw at depressed prices. The math compounds against you in a way it simply does not during the accumulation years.</p>
 
@@ -1674,7 +1672,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The foremost concern retirees face during a recession is "sequence of returns risk." This occurs when investors start withdrawing from retirement savings during a market downturn, accelerating depletion of savings and jeopardizing retirement security.</p>
 
-<p>If retirement begins just as markets tumble, selling investments to cover living expenses forces retirees to lock in losses, permanently harming their portfolio's long-term potential.</p>
+<p>If retirement begins just as markets tumble, selling investments to cover living expenses forces retirees to lock in losses, permanently harming their portfolio's long-term potential. For a closer look at why this timing matters more than the size of the decline itself, see our deep dive on <a href="/blog/market-volatility-financial-plan-advisor">sequence of returns risk in retirement</a>.</p>
 
 <h2>Evaluating Your Portfolio's Current Risk Exposure</h2>
 
