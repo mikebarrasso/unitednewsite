@@ -122,6 +122,185 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "irmaa-medicare-surcharge-explained",
+    title: "IRMAA: The Medicare Surcharge That Surprises Retirees",
+    date: "2026-08-05",
+    category: "Retirement Planning",
+    excerpt:
+      "Earn one dollar over an income threshold and your Medicare premium can jump by hundreds of dollars a month, based on a tax return you filed two years ago. IRMAA is one of the most common, and most avoidable, surprises in retirement. Here is how the surcharge actually works, the current income brackets, when you can appeal it, and the planning levers that keep it under control.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/retirement-planning",
+      "/services/tax-planning",
+      "/services/financial-planning",
+    ],
+    relatedSlugs: [
+      "roth-conversion-strategy-pre-retirees",
+      "pre-retirement-tax-transition-managing-brackets-rmds",
+      "modern-guide-retirement-planning",
+    ],
+    faqs: [
+      {
+        question: "What is IRMAA?",
+        answer:
+          "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added on top of the standard Medicare Part B and Part D premiums for beneficiaries whose Modified Adjusted Gross Income (MAGI) exceeds certain thresholds. The Social Security Administration determines IRMAA each year using the MAGI reported on your federal tax return from two years earlier.",
+      },
+      {
+        question: "Why is IRMAA based on income from two years ago?",
+        answer:
+          "The Social Security Administration uses the most recent tax return the IRS has fully processed when it sets premiums each fall. In practice that means your premiums in a given year are set by the return you filed for the tax year two years prior. For example, 2026 premiums are based on 2024 MAGI. This lag is why a one-time income event, such as selling a business or a large Roth conversion, can raise your Medicare costs two years later, after your income has already come back down.",
+      },
+      {
+        question: "Is IRMAA a marginal tax or a cliff?",
+        answer:
+          "A cliff. Unlike income tax brackets, where only the dollars above a threshold are taxed at the higher rate, crossing an IRMAA threshold by even one dollar of MAGI triggers the full surcharge tier for both spouses for the entire year. This is why bracket-aware planning in the years before and during Medicare enrollment matters so much.",
+      },
+      {
+        question: "Can I appeal an IRMAA determination?",
+        answer:
+          "Yes, in specific circumstances. If your income has dropped since the tax year used in the determination because of a life-changing event (retirement or reduced work hours, marriage or divorce, the death of a spouse, or the loss of income-producing property, among others), you can file Form SSA-44 and ask the Social Security Administration to use your more recent, lower income instead. A one-time capital gain generally does not qualify on its own.",
+      },
+      {
+        question: "What strategies help manage IRMAA?",
+        answer:
+          "The most common levers are timing Roth conversions before Medicare enrollment or sizing them to stay under a threshold, using Qualified Charitable Distributions (QCDs) to satisfy RMDs without raising MAGI, harvesting gains in lower-income years, and coordinating which accounts you draw from each year. The right combination depends on your full tax picture, which is why we model IRMAA alongside every withdrawal and conversion decision rather than treating it as an afterthought.",
+      },
+    ],
+    howToSteps: {
+      name: "How to appeal IRMAA after a life-changing event",
+      description:
+        "If your income has fallen since the tax year the Social Security Administration used, you can ask them to use your current, lower income instead.",
+      steps: [
+        {
+          name: "Confirm you have a qualifying event",
+          text: "Review the SSA's list of life-changing events: work stoppage or reduction, marriage, divorce or annulment, death of a spouse, loss of income-producing property, loss of pension income, or an employer settlement payment. A one-time spike in investment income generally does not qualify.",
+        },
+        {
+          name: "Complete Form SSA-44",
+          text: "Report the life-changing event, the year your income dropped, and your estimated MAGI for that year. You are asking the SSA to substitute a more recent year for the two-year-old return they used.",
+        },
+        {
+          name: "Gather documentation",
+          text: "Attach evidence of the event and of your reduced income: a retirement letter from your employer, a death certificate, a divorce decree, or a signed statement of estimated income, along with your most recent tax return if available.",
+        },
+        {
+          name: "Submit and follow up",
+          text: "File by mail or in person at your local Social Security office. If your circumstances change again, or your estimate turns out to be off, update the SSA, since they will reconcile against your actual filed return.",
+        },
+      ],
+    },
+    content: `<h2>What IRMAA Is, and Why It Blindsides People</h2>
+
+<p>Most people expect their Medicare premium to be a fixed, modest number. Then the letter arrives from the Social Security Administration: because of your income, you will pay an <strong>Income-Related Monthly Adjustment Amount</strong>, or IRMAA, on top of the standard premium, for both Part B and Part D. For a married couple in the top tier, the combined surcharge can add more than $10,000 a year to Medicare costs.</p>
+
+<p>IRMAA is not a penalty, and it is not a mistake. It is a means-tested surcharge written into how Medicare is funded: higher-income beneficiaries pay a larger share of the program's cost. What makes it feel like an ambush is <em>when</em> and <em>how</em> it is measured.</p>
+
+<h2>The Two-Year Lookback</h2>
+
+<p>IRMAA for a given year is based on your <strong>Modified Adjusted Gross Income (MAGI) from two years earlier</strong>: the most recent return the IRS has fully processed when premiums are set. Your 2026 premiums are determined by your 2024 tax return.</p>
+
+<p>This lag is the root of most IRMAA surprises. The year you sell a business, exercise stock options, realize a large capital gain, or execute a sizable Roth conversion often <em>is not</em> the year you feel the cost. The bill arrives two years later, often in your first years of retirement, exactly when your income has already dropped and the surcharge feels least fair.</p>
+
+<h2>The Current Income Brackets</h2>
+
+<p>IRMAA is tiered by MAGI, with separate schedules for single and joint filers. The structure below shows how the surcharge escalates by tier for Part B, with a parallel (smaller) surcharge applying to Part D.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Illustrative tier structure. Dollar thresholds and surcharge amounts are adjusted annually; confirm current-year figures at Medicare.gov before making planning decisions.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">MAGI: Single Filer</th>
+<th class="text-left p-3 border border-border font-semibold">MAGI: Married Filing Jointly</th>
+<th class="text-left p-3 border border-border font-semibold">Part B Premium Impact</th>
+<th class="text-left p-3 border border-border font-semibold">Part D Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border">Up to ~$109,000</td>
+<td class="p-3 border border-border">Up to ~$218,000</td>
+<td class="p-3 border border-border">Standard premium (no surcharge)</td>
+<td class="p-3 border border-border">No surcharge</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border">Next tier (~$109k&ndash;$137k)</td>
+<td class="p-3 border border-border">~$218k&ndash;$274k</td>
+<td class="p-3 border border-border">Standard &times; ~1.4</td>
+<td class="p-3 border border-border">Modest monthly add-on</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border">Middle tiers</td>
+<td class="p-3 border border-border">Middle tiers</td>
+<td class="p-3 border border-border">Standard &times; ~2.0&ndash;2.6</td>
+<td class="p-3 border border-border">Escalating add-on</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border">Top tier (~$500k+)</td>
+<td class="p-3 border border-border">~$750k+</td>
+<td class="p-3 border border-border">Standard &times; ~3.4</td>
+<td class="p-3 border border-border">Maximum add-on</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="my-8">
+<svg viewBox="0 0 720 300" width="100%" role="img" aria-label="Step chart: Medicare Part B premium multiplier rises in cliffs at each IRMAA income threshold, from 1x below $218,000 of joint MAGI to about 3.4x above $750,000.">
+<line x1="56" y1="250" x2="700" y2="250" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="254" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">×1</text><line x1="56" y1="158" x2="700" y2="158" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="162" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">×2</text><line x1="56" y1="66" x2="700" y2="66" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="70" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">×3</text><line x1="58" y1="250" x2="161" y2="250" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="165" y1="219" x2="269" y2="219" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="273" y1="173" x2="376" y2="173" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="380" y1="127" x2="483" y2="127" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="487" y1="81" x2="591" y2="81" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="595" y1="66" x2="698" y2="66" style="stroke:var(--foreground);stroke-width:2.5" stroke-linecap="round"/><line x1="163" y1="250" x2="163" y2="219" style="stroke:var(--muted-foreground)" stroke-width="1.5" stroke-dasharray="3 4"/><line x1="271" y1="219" x2="271" y2="173" style="stroke:var(--muted-foreground)" stroke-width="1.5" stroke-dasharray="3 4"/><line x1="378" y1="173" x2="378" y2="127" style="stroke:var(--muted-foreground)" stroke-width="1.5" stroke-dasharray="3 4"/><line x1="485" y1="127" x2="485" y2="81" style="stroke:var(--muted-foreground)" stroke-width="1.5" stroke-dasharray="3 4"/><line x1="593" y1="81" x2="593" y2="66" style="stroke:var(--muted-foreground)" stroke-width="1.5" stroke-dasharray="3 4"/><text x="109" y="241" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×1.0</text><text x="217" y="210" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×1.4</text><text x="324" y="164" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×2.0</text><text x="431" y="118" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×2.6</text><text x="539" y="72" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×3.2</text><text x="646" y="57" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">×3.4</text><text x="163" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">$218k</text><text x="271" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">$274k</text><text x="378" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">$342k</text><text x="485" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">$410k</text><text x="593" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">$750k</text><text x="378" y="294" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">MAGI, married filing jointly (tier boundaries; axis not to scale)</text>
+<text x="76" y="96" font-size="11" font-style="italic" style="fill:var(--muted-foreground)">Each riser is a cliff: one dollar over a boundary moves you up the full step.</text>
+</svg>
+<p class="text-left text-xs text-muted-foreground mt-2">Part B premium multiplier by income tier. Illustrative thresholds; amounts are adjusted annually.</p>
+</div>
+
+<p>Two details worth internalizing from that table: the surcharge applies <strong>per person</strong>, so a married couple pays it twice; and the tiers apply to <em>both</em> Part B and Part D simultaneously.</p>
+
+<h2>The Cliff Problem: One Dollar Can Cost Thousands</h2>
+
+<p>IRMAA thresholds are cliffs, not phase-ins. Cross a threshold by a single dollar of MAGI and you owe the <strong>entire surcharge for that tier, for the full year, for both spouses</strong>.</p>
+
+<p>This is fundamentally different from ordinary tax brackets, where only the marginal dollars are taxed at the higher rate. It is also why IRMAA deserves a seat at the table in every year-end planning conversation. A $1,000 Roth conversion, a mutual fund's surprise capital gain distribution, or an ill-timed IRA withdrawal can each carry an effective cost far beyond its face amount if it nudges MAGI over a line.</p>
+
+<div class="my-8">
+<svg viewBox="0 0 720 300" width="100%" role="img" aria-label="Bar chart: combined annual Part B and Part D IRMAA surcharges for a married couple range from about $2,100 in the first tier to about $12,700 in the top tier.">
+<line x1="56" y1="250" x2="700" y2="250" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="254" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">$0</text><line x1="56" y1="175" x2="700" y2="175" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="179" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">$5k</text><line x1="56" y1="100" x2="700" y2="100" style="stroke:var(--border)" stroke-width="1"/><text x="48" y="104" text-anchor="end" font-size="11" style="fill:var(--muted-foreground)">$10k</text><path d="M86 250 L86 223 Q86 219 90 219 L150 219 Q154 219 154 223 L154 250 Z" style="fill:var(--foreground)"/><path d="M214 250 L214 175 Q214 171 218 171 L278 171 Q282 171 282 175 L282 250 Z" style="fill:var(--foreground)"/><path d="M343 250 L343 127 Q343 123 347 123 L407 123 Q411 123 411 127 L411 250 Z" style="fill:var(--foreground)"/><path d="M472 250 L472 79 Q472 75 476 75 L536 75 Q540 75 540 79 L540 250 Z" style="fill:var(--foreground)"/><path d="M601 250 L601 64 Q601 60 605 60 L665 60 Q669 60 669 64 L669 250 Z" style="fill:var(--foreground)"/><text x="120" y="211" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">$2,100</text><text x="248" y="163" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">$5,300</text><text x="377" y="115" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">$8,500</text><text x="506" y="67" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">$11,700</text><text x="635" y="52" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--foreground)">$12,700</text><text x="120" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">Tier 1</text><text x="248" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">Tier 2</text><text x="377" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">Tier 3</text><text x="506" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">Tier 4</text><text x="635" y="272" text-anchor="middle" font-size="11" style="fill:var(--muted-foreground)">Top tier</text></svg>
+<p class="text-left text-xs text-muted-foreground mt-2">Combined annual Part B + Part D surcharge for a married couple, both enrolled, by tier. Illustrative, based on recent-year surcharge levels.</p>
+</div>
+
+
+<h2>When You Can Appeal: Form SSA-44</h2>
+
+<p>Because of the two-year lookback, the SSA is often looking at income that no longer reflects your reality. If your income dropped because of a <strong>life-changing event</strong>, you can ask them to use your current, lower income instead by filing <strong>Form SSA-44</strong>. The process:</p>
+
+<ol>
+<li><strong>Confirm you have a qualifying event.</strong> Retirement or reduced work hours, marriage, divorce, the death of a spouse, loss of income-producing property, loss of pension income, or an employer settlement. A one-time investment gain generally does not qualify by itself.</li>
+<li><strong>Complete Form SSA-44</strong>, reporting the event and your estimated MAGI for the lower-income year.</li>
+<li><strong>Gather documentation</strong>: a retirement letter, decree, or death certificate, plus support for your income estimate.</li>
+<li><strong>Submit and follow up.</strong> The SSA will reconcile against your actual return, so update them if your estimate changes.</li>
+</ol>
+
+<p>The most common successful appeal is the newly retired client whose premiums were set by their final full year of employment income. If that is you, the appeal is often worth filing in your first Medicare year.</p>
+
+<h2>Planning Around IRMAA</h2>
+
+<p>The goal is not to avoid IRMAA at all costs. Sometimes paying a year of surcharge in exchange for decades of tax-free Roth growth is an excellent trade. The goal is to make the trade <em>deliberately</em>. The levers we use most often:</p>
+
+<p><strong>Time large income events before Medicare.</strong> The two-year lookback means income realized before age 63 never touches your initial premiums. The years between retirement and 63 are often the ideal window for aggressive Roth conversions.</p>
+
+<p><strong>Size conversions to the threshold, not past it.</strong> When converting after 63, we model MAGI to the dollar and fill up to the next IRMAA line and never past it, the same way we manage ordinary tax brackets.</p>
+
+<p><strong>Use QCDs after 70&frac12;.</strong> Qualified Charitable Distributions satisfy RMDs without ever entering MAGI, making them one of the cleanest IRMAA tools for charitably inclined clients.</p>
+
+<p><strong>Coordinate which accounts you draw from.</strong> Blending withdrawals across taxable, tax-deferred, and Roth accounts each year keeps MAGI, and the surcharge, under your control rather than the calendar's.</p>
+
+<h2>The Bottom Line</h2>
+
+<p>IRMAA is predictable. It is set by a number on a tax return you have not filed yet, measured against thresholds that are published every year. That means it can be planned for: modeled alongside Roth conversions, RMDs, charitable giving, and withdrawal sequencing as one integrated tax picture. That integration is the core of how we manage retirement income for our clients: the Medicare surcharge is simply one more line in the model, not a surprise in the mail.</p>`,
+  },
+  {
     slug: "qsbs-exclusion-section-1202-planning",
     title:
       "The QSBS Exclusion: What Founders and Pre-IPO Employees Need to Know About Section 1202",
