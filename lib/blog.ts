@@ -322,6 +322,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "The Roth Conversion Window: When It Makes Sense for Pre-Retirees",
     date: "2026-07-16",
+    updatedDate: "2026-08-05",
     category: "Tax Planning",
     excerpt:
       "For many pre-retirees, the years between leaving a full-time career and the start of Required Minimum Distributions at age 73 are the most favorable tax window they will ever have for Roth conversions. Income is temporarily low, brackets are more forgiving, and the decisions made here can compound quietly for decades. But sizing those conversions correctly, without triggering IRMAA surcharges or bracket creep, requires your financial plan and your tax picture to work together, not in parallel.",
@@ -457,6 +458,145 @@ export const blogPosts: BlogPost[] = [
 
 <p>Getting these projections right requires actual tax-return-level modeling: not a quick calculator estimate. The difference between $80,000 and $100,000 in Roth conversions in a given year can mean the difference between staying in the 22% bracket and tripping into the 24% bracket, or crossing an IRMAA tier that costs thousands in Medicare premiums two years later.</p>
 
+<h3>2026 Federal Tax Brackets: How Much Conversion Room Do You Have?</h3>
+
+<p>Knowing exactly where your current bracket ends is the starting point for sizing a conversion. Under the rates that apply for the 2026 tax year, following the One, Big, Beautiful Bill Act&rsquo;s extension of the current rate structure, the federal brackets are as follows.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">2026 federal marginal income tax brackets, for taxable income after deductions. Source: <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill">IRS, Revenue Procedure 2025-32</a>, as of October 9, 2025. Applies to income earned in 2026, returns filed in 2027. Subject to change.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Marginal Rate</th>
+<th class="text-left p-3 border border-border font-semibold">Single Filers</th>
+<th class="text-left p-3 border border-border font-semibold">Married Filing Jointly</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">10%</td>
+<td class="p-3 border border-border">$0 to $12,400</td>
+<td class="p-3 border border-border">$0 to $24,800</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">12%</td>
+<td class="p-3 border border-border">$12,401 to $50,400</td>
+<td class="p-3 border border-border">$24,801 to $100,800</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">22%</td>
+<td class="p-3 border border-border">$50,401 to $105,700</td>
+<td class="p-3 border border-border">$100,801 to $211,400</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">24%</td>
+<td class="p-3 border border-border">$105,701 to $201,775</td>
+<td class="p-3 border border-border">$211,401 to $403,550</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">32%</td>
+<td class="p-3 border border-border">$201,776 to $256,225</td>
+<td class="p-3 border border-border">$403,551 to $512,450</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">35%</td>
+<td class="p-3 border border-border">$256,226 to $640,600</td>
+<td class="p-3 border border-border">$512,451 to $768,700</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">37%</td>
+<td class="p-3 border border-border">Over $640,600</td>
+<td class="p-3 border border-border">Over $768,700</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The 2026 standard deduction is $16,100 for single filers and $32,200 for married couples filing jointly, per the same IRS guidance, so the first dollars of income convert without any federal tax at all before a bracket even applies. Knowing these breakpoints to the dollar, alongside your other projected income for the year, is what allows a conversion to be sized precisely rather than estimated.</p>
+
+<h3>Tax-Bracket Arbitrage: A Worked Example</h3>
+
+<p>The term &ldquo;bracket arbitrage&rdquo; simply describes converting a dollar of pre-tax savings today at a lower marginal rate than the rate that dollar would likely face if left in the IRA until RMDs begin. The size of that spread, not just its existence, is what determines whether a conversion is worthwhile.</p>
+
+<p><em>The following is a hypothetical example for illustration only and does not represent any specific client or outcome.</em> Consider a married couple with $60,000 of other taxable income in a given year. Using the 2026 MFJ brackets above, they have room to convert up to $151,400 (the gap between $60,000 and the top of the 22% bracket at $211,400) before crossing into the 24% bracket. The table below compares the hypothetical tax cost of converting that $150,000 today against withdrawing the same $150,000 later at two different projected future rates.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Hypothetical illustration only, not a projection or individualized advice. Assumes a flat marginal rate applied to the full converted amount for simplicity; actual tax owed depends on where the dollars fall across brackets.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Scenario</th>
+<th class="text-left p-3 border border-border font-semibold">Amount (Illus.)</th>
+<th class="text-left p-3 border border-border font-semibold">Marginal Rate Applied</th>
+<th class="text-left p-3 border border-border font-semibold">Approx. Tax Cost (Illus.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Convert now, in the 22% bracket</td>
+<td class="p-3 border border-border">$150,000</td>
+<td class="p-3 border border-border">22%</td>
+<td class="p-3 border border-border">$33,000</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Withdraw later, if RMDs and Social Security push income into the 24% bracket</td>
+<td class="p-3 border border-border">$150,000</td>
+<td class="p-3 border border-border">24%</td>
+<td class="p-3 border border-border">$36,000 ($3,000 more)</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Withdraw later, if income instead reaches the 32% bracket</td>
+<td class="p-3 border border-border">$150,000</td>
+<td class="p-3 border border-border">32%</td>
+<td class="p-3 border border-border">$48,000 ($15,000 more)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The wider the projected spread between your bracket today and your bracket later, the more a conversion accomplishes. When the spread is narrow (for example, staying in the 22% bracket either way), a conversion still offers RMD reduction and estate planning value, but the pure tax-rate arbitrage is smaller and the decision depends more on the other dimensions covered below.</p>
+
+<h3>RMD Planning: Modeling the Distributions Conversions Are Designed to Reduce</h3>
+
+<p>A Roth conversion is, in large part, a bet on reducing the size of mandatory distributions you will not be able to avoid later. Required Minimum Distributions are calculated by dividing your prior year-end traditional account balance by a life expectancy factor from the IRS Uniform Lifetime Table. A larger account balance at age 73 means a larger mandatory distribution, whether or not you need the income that year.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Selected IRS Uniform Lifetime Table factors, used to calculate RMDs. Source: Treas. Reg. &sect;1.401(a)(9)-9, effective for distribution years beginning on or after January 1, 2022.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Age</th>
+<th class="text-left p-3 border border-border font-semibold">Life Expectancy Factor</th>
+<th class="text-left p-3 border border-border font-semibold">Approx. % of Balance Withdrawn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">73</td>
+<td class="p-3 border border-border">26.5</td>
+<td class="p-3 border border-border">3.8%</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">75</td>
+<td class="p-3 border border-border">24.6</td>
+<td class="p-3 border border-border">4.1%</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">78</td>
+<td class="p-3 border border-border">22.0</td>
+<td class="p-3 border border-border">4.5%</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">80</td>
+<td class="p-3 border border-border">20.2</td>
+<td class="p-3 border border-border">5.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><em>Hypothetical example, for illustration only:</em> a $1,850,000 traditional IRA at age 73 with no prior conversions produces an RMD of roughly $69,800 (dividing by the age-73 factor of 26.5). If, instead, that same account holder had spent seven years converting a portion of the balance during the conversion window, leaving a projected $1,150,000 in the traditional IRA by age 73, the RMD on the smaller balance would be roughly $43,400. That is approximately $26,400 less mandatory taxable income in that single year, which in turn affects the bracket the RMD lands in, how much of Social Security becomes taxable, and whether an IRMAA tier is triggered. The effect compounds every year RMDs continue. These figures are illustrative only and do not reflect any specific account or client.</p>
+
 <h3>IRMAA: The Medicare Premium Surcharge Cliffs</h3>
 
 <p>One of the most important, and most commonly overlooked, dimensions of <strong>Roth conversion strategy</strong> planning is Medicare&rsquo;s Income-Related Monthly Adjustment Amount, or IRMAA. Under IRMAA, your Medicare Part B and Part D premiums are not flat rates. They increase in steps based on your Modified Adjusted Gross Income (MAGI) from two years prior.</p>
@@ -468,6 +608,64 @@ export const blogPosts: BlogPost[] = [
 <h3>Net Investment Income Tax (NIIT) Thresholds</h3>
 
 <p>If your MAGI exceeds $200,000 (single) or $250,000 (married filing jointly), net investment income (interest, dividends, and capital gains) is subject to an additional 3.8% Net Investment Income Tax. Roth conversions increase your MAGI, which can pull otherwise below-threshold investment income into NIIT exposure. For pre-retirees with substantial taxable brokerage income, this interaction deserves explicit modeling.</p>
+
+<h3>Market Timing: Converting When Account Values Are Temporarily Down</h3>
+
+<p>The tax owed on a conversion is based on the dollar value moved into the Roth, not on what that value does afterward. That mechanical fact creates an opportunity worth understanding, separate from any attempt to predict where markets are headed. If your traditional IRA is temporarily down in value, for example after a market pullback, converting the same target dollar amount moves more shares or units into the Roth for the same tax bill. If those holdings later recover, that recovery happens inside the Roth and is never taxed again. If they do not recover on the timeline you expected, the conversion still accomplished its purpose of reducing the traditional IRA balance and the RMDs tied to it; the tax cost simply reflected the account&rsquo;s value on that particular day.</p>
+
+<p>This is a reason some pre-retirees choose to accelerate a planned conversion during a down period within their multi-year schedule, not a reason to guess at market direction or delay conversions while waiting for a decline. A conversion plan built around your tax brackets and income projections should be the anchor; opportunistic timing within that plan is a secondary refinement, not the primary strategy.</p>
+
+<h3>Partial vs. Full Conversions: Two Different Decisions</h3>
+
+<p>Converting an entire traditional IRA balance in a single year is possible, but for most pre-retirees with substantial balances, it is not the right approach. A full conversion recognizes the entire balance as income in one year, which typically pushes a large portion of it through the higher brackets, triggers the top IRMAA tiers for at least one Medicare cycle, and may waste the lower-bracket space available in future years of the conversion window. A partial, laddered conversion spreads the same total amount across several years, filling only the target bracket each year.</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm not-prose">
+<caption class="text-left text-xs text-muted-foreground mb-2">General comparison for illustration; the right approach depends on account size, available bracket space, and time remaining in the conversion window.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Dimension</th>
+<th class="text-left p-3 border border-border font-semibold">Full, Single-Year Conversion</th>
+<th class="text-left p-3 border border-border font-semibold">Partial, Multi-Year Conversion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Tax bill timing</td>
+<td class="p-3 border border-border">One large bill due in a single tax year</td>
+<td class="p-3 border border-border">Smaller bills spread across several years</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Bracket impact</td>
+<td class="p-3 border border-border">Likely to cross into higher brackets on a large portion of the balance</td>
+<td class="p-3 border border-border">Can be sized each year to stay within a target bracket</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">IRMAA exposure</td>
+<td class="p-3 border border-border">High: a single-year MAGI spike can cross multiple surcharge tiers</td>
+<td class="p-3 border border-border">Lower: annual sizing can be modeled to manage MAGI relative to thresholds</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">RMD elimination</td>
+<td class="p-3 border border-border">Immediate and complete for the converted account</td>
+<td class="p-3 border border-border">Gradual, phased in over the length of the conversion window</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Planning complexity</td>
+<td class="p-3 border border-border">Lower: one transaction, but a materially higher upfront tax cost</td>
+<td class="p-3 border border-border">Higher: requires annual income modeling coordinated with your tax return</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>For most pre-retirees with meaningful traditional IRA balances, a partial approach sized to available bracket space each year produces a better outcome than either doing nothing or converting everything at once. A full conversion can occasionally make sense for a smaller account balance, or for an account holder with an unusually short time horizon before RMDs begin and limited concern about a single high-income year, but that determination should follow a full projection rather than a general rule.</p>
+
+<h3>The Five-Year Rules: Two Different Clocks</h3>
+
+<p>Roth IRAs are governed by two separate five-year rules, and the conversion window is exactly when the distinction matters most. The first is the rule on <strong>earnings</strong>: to withdraw earnings tax-free, your first Roth IRA must have been open for at least five tax years and you must be age 59&frac12; or older. The second is the rule on <strong>each individual conversion</strong>: the converted principal from each conversion must remain in the Roth for five years before it can be withdrawn without a 10% penalty, unless you are already 59&frac12; or older, in which case this second rule generally does not apply to you.</p>
+
+<p>For most pre-retirees in the conversion window who are past 59&frac12;, the conversion-specific five-year clock is not a practical obstacle since the penalty exception already applies. The earnings clock is the one to watch if you are opening your very first Roth IRA as part of this strategy: it starts on January 1 of the year of your first contribution or conversion, so opening that account earlier in the window, even with a modest initial conversion, starts the clock sooner rather than later.</p>
 
 <h3>New York State Tax Considerations</h3>
 
