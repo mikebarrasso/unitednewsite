@@ -9,6 +9,7 @@ import {
 } from "@/components/retirement-planning-content";
 import { ServiceHero } from "@/components/service-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
+import Link from "next/link";
 import { RelatedServices } from "@/components/related-services";
 import { ServiceFAQ } from "@/components/service-faq";
 import { ServiceCrossLinks } from "@/components/service-cross-links";
@@ -76,6 +77,24 @@ export default function RetirementPlanningPage(): ReactNode {
         <Stats2 />
 
         <ApproachSection />
+
+        <section className="w-full bg-background py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-foreground/70 leading-relaxed">
+              Social Security timing is one of the decisions we integrate
+              into that income plan. For a deeper look at how your claiming
+              age affects your taxes, Medicare premiums, and Roth conversion
+              windows, see our{" "}
+              <Link
+                href="/services/retirement-planning/social-security-claiming-strategy"
+                className="text-[#1e6eae] underline hover:no-underline"
+              >
+                Social Security claiming strategy guide
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
 
         <Features5 />
 

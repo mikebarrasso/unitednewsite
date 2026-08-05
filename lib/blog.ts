@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Your projected RMDs at ages 73, 75, and 80</strong> based on current account balances and realistic growth assumptions.</li>
-<li><strong>Social Security income</strong> and at what income levels your benefits become taxable (up to 85% of benefits can be taxable once your &ldquo;combined income&rdquo; exceeds IRS thresholds).</li>
+<li><strong>Social Security income</strong> and at what income levels your benefits become taxable (up to 85% of benefits can be taxable once your &ldquo;combined income&rdquo; exceeds IRS thresholds). How your Social Security claiming age fits into this picture matters too; see our <a href="/services/retirement-planning/social-security-claiming-strategy">Social Security claiming strategy guide</a> for a closer look.</li>
 <li><strong>Any pension or part-time income</strong> that will continue into retirement.</li>
 <li><strong>Your available bracket space today</strong>: how much additional taxable income can you recognize before crossing into the next federal bracket?</li>
 </ul>
