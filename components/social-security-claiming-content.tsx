@@ -6,7 +6,17 @@ export function SocialSecurityContent(): ReactNode {
     <section className="w-full bg-background py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="prose prose-lg prose-united dark:prose-invert max-w-none">
-          <h2>The Three Claiming Ages Explained</h2>
+          <p>
+            Your Social Security claiming strategy is the decision of when
+            to begin receiving retirement benefits, and how that timing fits
+            with your broader income, tax, and Medicare plan. The right age
+            to claim depends on your health, income needs, tax situation,
+            and whether you are coordinating with a spouse.
+          </p>
+          <p className="text-sm text-muted-foreground not-prose mb-8">
+            Last updated: August 2026
+          </p>
+          <h2>When Can You Claim Social Security? The Three Key Ages</h2>
           <p>
             Social Security gives you a range of ages at which to claim your
             retirement benefit, but three reference points anchor almost
@@ -91,14 +101,14 @@ export function SocialSecurityContent(): ReactNode {
             </table>
           </div>
 
-          <h2>How Benefits Scale Between Ages</h2>
+          <h2>How Social Security Benefits Change Between Claiming Ages</h2>
           <p>
-            Claiming is not a binary choice between three fixed points. You
-            can file for benefits in any month between age 62 and age 70, and
-            your benefit amount adjusts proportionally to the exact month you
-            claim, not just the calendar year. Claiming at 64 results in a
-            different reduction than claiming at 62. Claiming at 68 results
-            in a different increase than waiting until 70.
+            Social Security benefits are not a binary choice at 62, full
+            retirement age, or 70. You can claim at any month in between,
+            and your benefit adjusts proportionally for each month you wait
+            or claim early. Claiming at 64 results in a different reduction
+            than claiming at 62. Claiming at 68 results in a different
+            increase than waiting until 70.
           </p>
           <p>
             This granularity matters. The claiming decision is not really a
@@ -110,38 +120,44 @@ export function SocialSecurityContent(): ReactNode {
             everyone.
           </p>
 
-          <h2>Claiming Age and Continued Earnings</h2>
+          <h2>Working While Receiving Social Security: The Earnings Test</h2>
           <p>
             If you claim Social Security before your full retirement age and
-            continue to work, the Social Security earnings test may apply.
-            Under this rule, if your earnings from work exceed an annual
-            limit set by the Social Security Administration, a portion of
-            your benefit may be withheld. That limit is adjusted
+            continue working, your benefits may be temporarily reduced if
+            your earnings exceed an annual limit set by the Social Security
+            Administration. After you reach full retirement age, the
+            earnings test no longer applies. That limit is adjusted
             periodically, so it is worth checking the current figure
             directly with the Social Security Administration rather than
             relying on a figure you may have seen elsewhere.
           </p>
           <p>
-            Once you reach full retirement age, the earnings test no longer
-            applies, regardless of how much you earn from work. It is also
-            worth knowing that benefits withheld under the earnings test are
-            not lost forever. The Social Security Administration credits
-            them back starting at your full retirement age, which typically
+            Regardless of how much you earn from work once you reach full
+            retirement age, benefits withheld under the earnings test are not
+            lost forever. The Social Security Administration credits them
+            back starting at your full retirement age, which typically
             results in a higher monthly benefit going forward. That said,
             the timing still matters: a benefit withheld today and returned
             later is not the same as receiving it now, particularly if you
             need the income in the near term.
           </p>
 
-          <h2>Claiming Age and Your Tax Picture</h2>
+          <h2>How Your Claiming Age Affects Your Taxes</h2>
           <p>
-            Social Security benefits are not automatically tax-free.
-            Depending on your combined income, defined as your adjusted
-            gross income plus any nontaxable interest plus half of your
-            Social Security benefit, up to 85% of your benefit may be
-            subject to federal income tax. Where you land on that scale
-            depends heavily on when you claim and what other income you are
-            drawing at the same time.
+            Up to 85 percent of your Social Security benefits may be subject
+            to federal income tax, depending on your combined income. Your
+            claiming age affects how much taxable income you have in any
+            given year, which in turn affects your tax bracket. Combined
+            income is defined as your adjusted gross income plus any
+            nontaxable interest plus half of your Social Security benefit.
+          </p>
+          <p>
+            If your combined income is below $25,000 for single filers or
+            $32,000 for married filing jointly, your benefits are generally
+            not taxed. Above those thresholds, up to 50 percent of benefits
+            may become taxable. At higher combined income levels, up to 85
+            percent of benefits may be taxable. These thresholds are set by
+            the IRS and apply regardless of the age at which you claim.
           </p>
           <p>
             Claiming earlier while you are still working, or while you are
@@ -162,13 +178,14 @@ export function SocialSecurityContent(): ReactNode {
             exercise than picking an age off a benefits chart.
           </p>
 
-          <h2>IRMAA and Medicare Premiums</h2>
+          <h2>How Social Security Affects Medicare IRMAA Premiums</h2>
           <p>
-            Medicare Part B and Part D premiums are not flat amounts for
-            everyone. Under the Income-Related Monthly Adjustment Amount, or
-            IRMAA, your premiums are based on your modified adjusted gross
-            income from two years prior. A higher income in a given year can
-            mean a higher Medicare premium two years later.
+            Your Social Security claiming age can affect your Medicare
+            premiums through IRMAA, the Income-Related Monthly Adjustment
+            Amount, which sets Part B and Part D premium surcharges based on
+            your modified adjusted gross income from two years prior. A
+            higher income in a given year can mean a higher Medicare premium
+            two years later.
           </p>
           <p>
             Claiming Social Security while simultaneously drawing from
@@ -188,7 +205,14 @@ export function SocialSecurityContent(): ReactNode {
             positioned to evaluate together.
           </p>
 
-          <h2>Social Security and Roth Conversion Windows</h2>
+          <h2>How Claiming Age Affects Roth Conversion Windows</h2>
+          <p>
+            The gap between retirement and required minimum distributions
+            can be a window for Roth conversions at lower tax rates. If you
+            claim Social Security early, the added taxable income may
+            shrink the low-income years that make those conversions
+            efficient.
+          </p>
           <p>
             The years between retirement and the start of Required Minimum
             Distributions, currently age 73, can be a window of lower
@@ -201,12 +225,10 @@ export function SocialSecurityContent(): ReactNode {
             the account.
           </p>
           <p>
-            Claiming Social Security early adds taxable income during those
-            years, which can shrink or eliminate the low-income window that
-            makes conversions attractive. Delaying Social Security can
-            preserve more of that window, but it also means you need other
-            income sources, savings, part-time work, or portfolio
-            withdrawals, to cover living expenses in the meantime.
+            Delaying Social Security can preserve more of that window, but
+            it also means you need other income sources, savings, part-time
+            work, or portfolio withdrawals, to cover living expenses in the
+            meantime.
           </p>
           <p>
             There is no fixed rule for balancing these two decisions. The
@@ -217,16 +239,17 @@ export function SocialSecurityContent(): ReactNode {
             separately.
           </p>
 
-          <h2>Spousal and Survivor Considerations</h2>
+          <h2>Spousal and Survivor Social Security Strategies</h2>
           <p>
-            For married couples, the claiming decision is rarely just about
-            one person&apos;s benefit. A spousal benefit can be worth up to
-            50% of the higher earner&apos;s Primary Insurance Amount, but
-            only once the higher earner has claimed. Survivor benefits work
-            differently: they are based on the deceased spouse&apos;s benefit
-            amount, and if the higher earner claims early, the
-            survivor&apos;s future benefit is permanently reduced as a
-            result.
+            A spousal benefit can be up to 50 percent of the higher
+            earner&apos;s full retirement age benefit, but coordination
+            between spouses matters. If the higher earner claims early, the
+            survivor&apos;s benefit is permanently reduced. For married
+            couples, the claiming decision is rarely just about one
+            person&apos;s benefit: the spousal benefit is available only
+            once the higher earner has claimed, and survivor benefits are
+            based on the deceased spouse&apos;s benefit amount rather than
+            the survivor&apos;s own.
           </p>
           <p>
             Because of this, coordinating claiming ages between spouses is a
@@ -241,7 +264,7 @@ export function SocialSecurityContent(): ReactNode {
             discussing directly with your planning team.
           </p>
 
-          <h2>Why a Coordinated Review Matters</h2>
+          <h2>Why a Coordinated CFP and CPA Review Matters Before Claiming</h2>
           <p>
             The Social Security claiming decision sits at the intersection
             of benefits rules, tax law, Medicare premiums, and retirement

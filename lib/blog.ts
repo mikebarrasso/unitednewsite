@@ -693,7 +693,7 @@ export const blogPosts: BlogPost[] = [
 <p>A complete retirement cash flow plan coordinates multiple income sources:</p>
 
 <ul>
-<li><strong>Social Security:</strong> Claiming strategies matter enormously. Delaying benefits from age 62 to age 70 can increase your monthly benefit by as much as 76%, providing a larger inflation-adjusted income for life.</li>
+<li><strong>Social Security:</strong> Claiming strategies matter enormously. Delaying benefits from age 62 to age 70 can increase your monthly benefit by as much as 76%, providing a larger inflation-adjusted income for life. Your Social Security claiming age is one of those decisions that ripples through your tax picture and Medicare premiums; see our <a href="/services/retirement-planning/social-security-claiming-strategy">Social Security claiming strategy guide</a> for how it all fits together.</li>
 <li><strong>Pension or annuity income:</strong> If you have a defined benefit pension or are considering an annuity, the payout structure and its interaction with your other income sources must be carefully analyzed.</li>
 <li><strong>Portfolio withdrawals:</strong> The amount, timing, and account source of your withdrawals have major tax implications, which brings us to Pillar 2.</li>
 </ul>
@@ -1466,7 +1466,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The simplest and most effective protection against being forced to sell equities in a down market is having enough liquid, low-risk assets to fund one to three years of living expenses without touching your equity portfolio at all. Cash, short-term Treasuries, or money market funds set aside specifically for near-term income needs act as a buffer between you and market volatility.</p>
 
-<p>When markets fall, you draw from the buffer. When markets recover, you replenish it from your equity portfolio before the next down cycle. This breaks the dangerous feedback loop where withdrawals accelerate losses.</p>
+<p>When markets fall, you draw from the buffer. When markets recover, you replenish it from your equity portfolio before the next down cycle. This breaks the dangerous feedback loop where withdrawals accelerate losses. Your Social Security claiming age also affects how much you need to withdraw from your portfolio in down years; see our <a href="/services/retirement-planning/social-security-claiming-strategy">claiming strategy guide</a> for the coordination.</p>
 
 <h3>2. The Bucket Strategy: Building a Portfolio That Can Wait</h3>
 

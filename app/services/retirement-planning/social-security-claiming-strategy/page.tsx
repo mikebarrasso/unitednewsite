@@ -13,7 +13,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = createMetadata({
   title: "Social Security Claiming Strategy",
   description:
-    "When you claim Social Security affects your taxes, Medicare premiums, and Roth conversion windows. A coordinated claiming decision considers all three, not just the monthly benefit.",
+    "Your Social Security claiming strategy affects your taxes, Medicare IRMAA premiums, and Roth conversion windows. A coordinated CFP and CPA review helps you decide when to claim.",
   path: "/services/retirement-planning/social-security-claiming-strategy",
 });
 
@@ -42,6 +42,16 @@ const socialSecurityFaqs = [
     question: "What is the Social Security earnings test?",
     answer:
       "If you claim Social Security before your full retirement age and continue to work, benefits may be temporarily reduced if your earnings exceed an annual limit set by the Social Security Administration. Amounts withheld under the earnings test are credited back starting at full retirement age, typically resulting in a higher monthly benefit afterward.",
+  },
+  {
+    question: "Can I work and collect Social Security at the same time?",
+    answer:
+      "Yes, but if you claim before your full retirement age and your earnings exceed an annual limit set by the Social Security Administration, your benefits may be temporarily reduced. Once you reach full retirement age, the earnings test no longer applies, and benefits withheld earlier are credited back, resulting in a higher monthly benefit going forward.",
+  },
+  {
+    question: "What happens if I delay Social Security past full retirement age?",
+    answer:
+      "For each year you delay past full retirement age up to age 70, your benefit increases by approximately 8 percent due to delayed retirement credits. After age 70, there is no additional benefit to further delay. Whether delaying past full retirement age makes sense depends on your longevity expectations, income needs, and spousal situation.",
   },
 ];
 
