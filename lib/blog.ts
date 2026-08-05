@@ -122,6 +122,121 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tax-planning-for-business-owners-long-island",
+    title: "Tax Planning for Business Owners on Long Island: A Year-Round Playbook",
+    date: "2026-08-05",
+    category: "Tax Planning",
+    excerpt:
+      "Most business owners do not have a tax problem in April. They have a tax problem all year, and April is just when the bill arrives. Entity structure, retirement plan design, the QBI deduction, and New York's PTET election are decided months before filing season. Here is the playbook we run with Long Island business owners, and the order we run it in.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/tax-planning",
+      "/services/financial-planning",
+      "/services/retirement-planning",
+    ],
+    relatedSlugs: [
+      "roth-conversion-strategy-pre-retirees",
+      "irmaa-medicare-surcharge-explained",
+      "modern-guide-retirement-planning",
+    ],
+    faqs: [
+      {
+        question: "Should my Long Island business be an LLC or an S corporation for taxes?",
+        answer:
+          "It depends on profit level and payroll reality. A single-member LLC's profit all flows through as self-employment income, subject to self-employment tax. An S corporation lets you split income between a reasonable W-2 salary and distributions, which are not subject to self-employment tax; the savings become meaningful once profits comfortably exceed a market salary for your role. The tradeoffs are payroll administration, reasonable-compensation scrutiny, and New York State specifics, so we model both structures with real numbers before recommending a change.",
+      },
+      {
+        question: "What retirement plan gives a business owner the biggest deduction?",
+        answer:
+          "In rough order of contribution ceiling: a SEP IRA is the simplest with contributions up to 25% of compensation; a Solo 401(k) reaches similar limits at lower income because of the employee deferral component, and adds a Roth option; a cash balance plan can allow six-figure deductible contributions for owners in their 50s and 60s who want to catch up quickly. The right choice depends on age, income stability, and whether you have employees, because most plans must cover them too.",
+      },
+      {
+        question: "What is the QBI deduction and can I lose it?",
+        answer:
+          "The Qualified Business Income deduction lets many pass-through owners deduct up to 20% of business income. Above certain taxable-income thresholds it phases down, and for specified service businesses it can disappear entirely. Retirement plan contributions and other planning moves that lower taxable income can preserve a deduction that would otherwise phase out, which is why we coordinate the QBI math with plan design rather than treating them separately.",
+      },
+      {
+        question: "What is New York's PTET election?",
+        answer:
+          "The Pass-Through Entity Tax lets a partnership or S corporation elect to pay New York tax at the entity level. The entity deducts that state tax federally, effectively working around the individual SALT deduction cap, and the owners receive a credit on their New York returns. The election has a deadline and estimated-payment requirements, so it belongs on the calendar, not in the April scramble.",
+      },
+      {
+        question: "When should tax planning happen for a business owner?",
+        answer:
+          "Quarterly, at minimum. Entity and plan-design decisions are best made early in the year, the PTET election and estimated payments run on their own deadlines, and year-end is for harvesting, timing income and expenses, and funding what you established earlier. A return filed in April can only report what already happened; planning changes what happens.",
+      },
+    ],
+    content: `<h2>Filing Is Not Planning</h2>
+
+<p>Every business owner has an accountant who files the return. Far fewer have anyone responsible for the number on it. By the time a return is being prepared, almost every meaningful lever has already been set: how the business is structured, what retirement plan existed during the year, whether the PTET election was made, and how income and expenses landed across the calendar.</p>
+
+<p>That is the core of how we approach <strong>tax planning for business owners on Long Island</strong>: work the levers while they can still move. Here is the playbook, in the order the decisions actually happen.</p>
+
+<h2>Entity Structure: LLC vs. S Corp in New York</h2>
+
+<p>Profit flowing through a single-member LLC or sole proprietorship is hit with self-employment tax on top of income tax. An S corporation splits your take into a reasonable W-2 salary and distributions, and the distribution share avoids self-employment tax. Once profits comfortably exceed a market salary for your role, the arithmetic usually favors the S corp, net of payroll costs and the extra administration.</p>
+
+<p>New York adds its own wrinkles, from franchise-level fees to how New York City treats S corporations, so this is a modeled decision, not a rule of thumb.</p>
+
+<h2>Retirement Plans: Your Largest Deliberate Deduction</h2>
+
+<p>For most profitable owners, plan design is the single biggest controllable deduction, and it doubles as your own wealth building. The three workhorses:</p>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse text-sm">
+<caption class="text-left text-xs text-muted-foreground mb-2">Simplified comparison for a business owner; limits change annually and employee-coverage rules apply. Model before you commit.</caption>
+<thead>
+<tr class="bg-muted">
+<th class="text-left p-3 border border-border font-semibold">Plan</th>
+<th class="text-left p-3 border border-border font-semibold">Best For</th>
+<th class="text-left p-3 border border-border font-semibold">Contribution Ceiling</th>
+<th class="text-left p-3 border border-border font-semibold">Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">SEP IRA</td>
+<td class="p-3 border border-border">Simplicity; variable income; no employees</td>
+<td class="p-3 border border-border">Up to 25% of compensation</td>
+<td class="p-3 border border-border">Lowest</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Solo 401(k)</td>
+<td class="p-3 border border-border">Owner (plus spouse) businesses wanting max flexibility and a Roth option</td>
+<td class="p-3 border border-border">Employee deferral + employer share; higher than SEP at moderate income</td>
+<td class="p-3 border border-border">Moderate</td>
+</tr>
+<tr class="odd:bg-background even:bg-muted/30">
+<td class="p-3 border border-border font-medium">Cash Balance</td>
+<td class="p-3 border border-border">High, stable profits; owners 50+ catching up</td>
+<td class="p-3 border border-border">Often six figures per year, age-dependent</td>
+<td class="p-3 border border-border">Highest (actuarial)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The sequencing matters: plan contributions lower taxable income, which can also rescue the QBI deduction below.</p>
+
+<h2>The QBI Deduction, and Who Loses It</h2>
+
+<p>The Qualified Business Income deduction can shelter up to 20% of pass-through income, but it phases down above taxable-income thresholds, and specified service businesses can lose it entirely. This is where planning compounds: a well-designed retirement plan contribution can pull taxable income back under the threshold, preserving a deduction that would otherwise vanish. Two levers, one coordinated move.</p>
+
+<h2>New York's PTET: The SALT-Cap Workaround</h2>
+
+<p>The Pass-Through Entity Tax lets your partnership or S corp pay New York tax at the entity level, deduct it federally, and pass you a credit. For owners paying meaningful state tax, it is one of the cleanest savings available, and it is purely procedural: an election, on a deadline, with estimated payments. Miss the calendar and the savings are gone for the year.</p>
+
+<h2>The Year-Round Calendar</h2>
+
+<p><strong>Q1:</strong> entity review, plan design for the new year, PTET election. <strong>Q2 and Q3:</strong> estimated payments, monitor income against QBI thresholds, adjust salary levels. <strong>Q4:</strong> fund the plans you built, harvest losses, time income and equipment purchases. <strong>April:</strong> the return simply reports a year that was already planned.</p>
+
+<h2>Why Local Matters</h2>
+
+<p>Almost everything above has a New York layer: PTET mechanics, state treatment of S corporations, and the interaction with city taxes for some owners. We sit in Hauppauge and work with business owners across Long Island every day, with CPAs and CFP&reg; professionals under one roof, so the tax plan and the financial plan are the same conversation. If your current setup is "my accountant files it," a one-hour review usually pays for itself many times over.</p>`,
+  },
+  {
     slug: "irmaa-medicare-surcharge-explained",
     title: "IRMAA: The Medicare Surcharge That Surprises Retirees",
     date: "2026-08-05",
