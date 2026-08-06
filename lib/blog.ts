@@ -1508,11 +1508,11 @@ export const blogPosts: BlogPost[] = [
     title:
       "Sequence of Returns Risk: Why Market Volatility Near Retirement Hits Harder Than You Think",
     date: "2025-04-09",
-    updatedDate: "2026-08-03",
+    updatedDate: "2026-08-06",
     category: "Retirement Planning",
     excerpt:
-      "A market downturn hits differently when you are two to five years from retirement. Sequence-of-returns risk means that withdrawing from a falling portfolio can lock in losses your portfolio may never fully recover from. Here is how a coordinated plan manages that risk.",
-    author: "United Financial Planning Group",
+      "A market downturn hits differently when you are two to five years from retirement. Sequence of returns risk in retirement means that withdrawing from a falling portfolio can lock in losses your portfolio may never fully recover from. Here is how a coordinated plan manages that risk.",
+    author: "Gerry Barrasso, CFP\u00ae, CPA, PFS",
     authorSlug: "gerry-barrasso",
     type: "blog",
     relatedServices: [
