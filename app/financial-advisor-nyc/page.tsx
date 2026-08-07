@@ -11,6 +11,7 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { createMetadata } from "@/lib/metadata";
+import { coreServiceNames, createOfferCatalog } from "@/lib/schema";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -66,14 +67,7 @@ function NYCSchema() {
       { "@type": "City", name: "Jersey City, NJ" },
       { "@type": "AdministrativeArea", name: "Westchester County, NY" },
     ],
-    serviceType: [
-      "Financial Planning",
-      "Investment Management",
-      "Tax Planning",
-      "Tax Preparation",
-      "Retirement Planning",
-      "Equity Compensation Planning",
-    ],
+    hasOfferCatalog: createOfferCatalog(coreServiceNames),
     priceRange: "$$",
     parentOrganization: {
       "@type": "Organization",

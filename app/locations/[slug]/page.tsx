@@ -105,13 +105,6 @@ function LocationSchema({ location }: { location: NonNullable<ReturnType<typeof 
         name: area,
       })),
     ],
-    serviceType: [
-      "Financial Planning",
-      "Investment Management",
-      "Tax Planning",
-      "Tax Preparation",
-      "Retirement Planning",
-    ],
     priceRange: "$$",
     hasOfferCatalog: {
       "@type": "OfferCatalog",

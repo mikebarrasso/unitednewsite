@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/metadata";
+import { officeAddresses } from "@/lib/schema";
 import { type ReactNode } from "react";
 
 type ServiceSchemaProps = {
@@ -23,6 +24,7 @@ export function ServiceSchema({
       name: siteConfig.name,
       url: siteConfig.url,
       telephone: "(631) 234-0871",
+      address: officeAddresses,
       priceRange: "$$",
     },
     areaServed: {
