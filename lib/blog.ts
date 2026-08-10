@@ -122,6 +122,147 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "two-crucial-questions-interviewing-financial-advisor",
+    title:
+      "Questions to Ask a Financial Advisor: A Fee-Only Fiduciary Checklist",
+    date: "2026-08-10",
+    category: "Financial Planning",
+    excerpt:
+      "Most advisor interviews skip the questions that actually reveal how you'll be served. Here are eight questions to ask a financial advisor, starting with fiduciary duty and fees, that show whether planning, investments, and tax work are handled by one coordinated team or split across separate firms.",
+    author: "United Financial Planning Group",
+    authorSlug: "gerry-barrasso",
+    type: "blog",
+    relatedServices: [
+      "/services/financial-planning",
+      "/services/investment-management",
+      "/services/tax-planning",
+      "/services/retirement-planning",
+      "/services/equity-compensation",
+    ],
+    relatedSlugs: [
+      "why-fee-only-fiduciary-financial-planner",
+      "pre-retirement-tax-transition-managing-brackets-rmds",
+      "roth-conversion-strategy-pre-retirees",
+    ],
+    faqs: [
+      {
+        question: "What is a fee-only financial advisor?",
+        answer:
+          "A fee-only financial advisor is compensated exclusively by the clients they serve, through flat fees, hourly rates, or a percentage of assets managed. They do not earn commissions, referral fees, 12b-1 fees, or any other compensation from the products they recommend. That structure removes an entire category of conflict of interest that exists for advisors paid, in whole or in part, by product sales.",
+      },
+      {
+        question: "What does fiduciary duty mean?",
+        answer:
+          "Fiduciary duty is a legal obligation to act in a client's best interest at all times and to disclose any conflicts of interest. It is a higher standard than a suitability standard, which only requires a recommendation to be reasonable for the client, not necessarily the best option available. Registered Investment Advisers are held to the fiduciary standard at all times; ask any advisor you are interviewing whether they are a fiduciary at all times, in writing, or only in certain contexts.",
+      },
+      {
+        question: "What credentials should I look for in a financial advisor?",
+        answer:
+          "The CFP\u00ae (Certified Financial Planner) designation is the most widely recognized credential for comprehensive financial planning; it requires a defined curriculum, a comprehensive exam, experience requirements, and ongoing continuing education. If tax planning matters to you, look for a CPA (Certified Public Accountant), PFS (Personal Financial Specialist), or EA (Enrolled Agent) on the team as well, since those credentials indicate the professional can prepare returns and model your tax situation directly rather than through an outside preparer.",
+      },
+      {
+        question: "How often should I meet with my financial advisor?",
+        answer:
+          "There is no single right cadence, but ask for specifics rather than accepting a vague answer. Many advisors meet with clients at least annually for a full plan review, with additional check-ins around major life or market events. Ask who you will actually speak with, how quickly they respond between meetings, and whether reviews happen proactively or only when you request them.",
+      },
+      {
+        question: "What's the difference between fee-only and fee-based?",
+        answer:
+          "Fee-only means the advisor is paid only by clients, with no commissions or other product-related compensation. Fee-based means the advisor charges a fee to clients and can also earn commissions or other compensation from third parties for recommending certain products. The word \u201cbased\u201d is the distinction: fee-based advisors can be held to a lower suitability standard when acting in a broker-dealer capacity, rather than a fiduciary standard at all times.",
+      },
+    ],
+    content: `<h2>Why the Order of Your Questions Matters</h2>
+
+<p>Most people interviewing a financial advisor start with the wrong questions. They ask about market outlook, investment picks, or performance history. Those are understandable questions, but they skip the two things that actually determine whether an advisor is working for you: how the advisor is paid, and whether they are legally required to act in your best interest.</p>
+
+<p>Below are eight questions to ask a financial advisor before you hire one, in the order that matters most. Ask the first two regardless of your situation. The rest tell you whether the advisor&rsquo;s structure, credentials, and process match how you actually want to be served.</p>
+
+<h2>Start With Fiduciary Duty and Fees</h2>
+
+<h3>1. Are You a Fiduciary, and Will You Put That in Writing?</h3>
+
+<p>A fiduciary is legally required to act in your best interest and to disclose conflicts of interest. Not every professional who calls themselves a &ldquo;financial advisor&rdquo; is held to that standard at all times.</p>
+
+<p><strong>What a good answer looks like:</strong> &ldquo;Yes. We are a fee-only Registered Investment Adviser and act as a fiduciary at all times. That commitment is described in our Form ADV Part 2A, which we can provide before you hire us.&rdquo;</p>
+
+<p><strong>What to watch for:</strong> An advisor who says they are a fiduciary &ldquo;in most cases&rdquo; or only for certain accounts may revert to a lower suitability standard for other products or recommendations. Ask them to be specific about when the fiduciary standard applies and when it does not.</p>
+
+<h3>2. How Are You Paid?</h3>
+
+<p>Compensation structure shapes incentives. There are generally three models: commission-based (paid by the products sold), fee-based (a fee to you, plus the ability to earn commissions), and fee-only (compensated exclusively by you, with no commissions or product-related payments).</p>
+
+<p><strong>What a good answer looks like:</strong> A direct answer naming the model, with no hedging: &ldquo;We are fee-only. We are compensated only by our clients, and we do not accept commissions, referral fees, or other third-party compensation.&rdquo;</p>
+
+<p><strong>What to watch for:</strong> Vague language, or an advisor who describes themselves as &ldquo;fee-based&rdquo; as though it were the same as &ldquo;fee-only.&rdquo; The two are different, and the difference affects whose interests come first when a recommendation is made.</p>
+
+<h2>Then Ask About Expertise and Structure</h2>
+
+<h3>3. What Credentials Do You Hold, and What Do They Mean?</h3>
+
+<p>Credentials are a useful shorthand, but only if you know what they represent. A few of the most common in financial planning:</p>
+
+<ul>
+<li><strong>CFP&reg; (Certified Financial Planner):</strong> Requires completing a defined curriculum, passing a comprehensive exam, meeting experience requirements, and completing ongoing continuing education. It is the most widely recognized credential for comprehensive financial planning.</li>
+<li><strong>CPA (Certified Public Accountant):</strong> A state-licensed accounting credential. A CPA on your planning team can prepare tax returns and model your tax situation with return-level detail, rather than estimates.</li>
+<li><strong>PFS (Personal Financial Specialist):</strong> A financial planning credential available only to CPAs, combining tax expertise with financial planning training.</li>
+<li><strong>EA (Enrolled Agent):</strong> A federally licensed tax practitioner authorized by the IRS to represent taxpayers. An EA on the team means tax preparation and tax planning can happen without handing your return to an outside preparer.</li>
+</ul>
+
+<p>Ask where these professionals sit: on the advisor&rsquo;s own team, or outsourced to a separate firm you would need to coordinate with yourself.</p>
+
+<h3>4. Are Your Services Integrated or Siloed?</h3>
+
+<p>Some firms hand you off between separate specialists for planning, investment management, and tax work, each optimizing their own piece without a shared view of the whole picture. Others build financial planning, investment management, and tax planning and preparation around a single, coordinated plan.</p>
+
+<p><strong>What a good answer looks like:</strong> A description of how planning, investment, and tax decisions are made by the same team, using the same current information, rather than shared occasionally between separate firms. See how we approach <a href="/services/financial-planning">integrated financial planning</a> and <a href="/why-united">what makes our structure different</a>.</p>
+
+<p><strong>What to watch for:</strong> An answer that describes tax planning as &ldquo;something we coordinate with your accountant once a year.&rdquo; That structure leaves the two disciplines working from different, and sometimes outdated, information.</p>
+
+<h2>Ask About the Relationship Itself</h2>
+
+<h3>5. How Often Will We Communicate, and What Should I Expect?</h3>
+
+<p>Financial planning is not a one-time event. Ask how often you will meet, whether reviews are scheduled proactively or only when you ask, and how the advisor communicates between meetings when your circumstances change, such as a job change, an inheritance, or a market decline.</p>
+
+<p><strong>What a good answer looks like:</strong> A specific meeting cadence, for example at least annually with additional check-ins as needed, and a clear description of who you will actually talk to, rather than a rotating point of contact.</p>
+
+<h3>6. What Is Your Investment Philosophy?</h3>
+
+<p>Ask how the advisor builds portfolios, how they think about risk and cost, and how they would communicate with you during a market decline. Be cautious of anyone who promises to beat the market, time market moves, or guarantee a particular outcome. No advisor can make those promises, and an evidence-based approach acknowledges that markets involve risk and that past performance does not guarantee future results.</p>
+
+<p><strong>What a good answer looks like:</strong> A description of a disciplined, evidence-based process tied to your goals, time horizon, and risk tolerance, with clear information about all-in costs.</p>
+
+<h3>7. How Do You Coordinate Taxes With the Rest of My Financial Plan?</h3>
+
+<p>Tax decisions, including retirement account withdrawals, Roth conversions, and capital gains timing, are rarely independent of your investment and planning decisions. Ask whether tax planning happens on the same team, using the same data, at the same time as everything else, or whether it is handled separately and reactively at filing time.</p>
+
+<p><strong>What a good answer looks like:</strong> A description of how tax preparation and tax planning inform decisions made elsewhere in your plan throughout the year, not only at filing time. Learn more about our approach to <a href="/services/financial-planning">coordinated financial and tax planning</a>.</p>
+
+<h3>8. What Happens If I&rsquo;m Not Happy or Want to Leave?</h3>
+
+<p>A good advisor relationship should hold up to this question without discomfort. Ask about the notice period, any exit fees, and how your accounts and data would be transferred if you decide to leave.</p>
+
+<p><strong>What a good answer looks like:</strong> A straightforward explanation with no pressure, no long-term contract, and no penalty designed to keep you from leaving. The absence of a hard sell is itself part of the answer.</p>
+
+<h2>How to Evaluate the Answers You Get</h2>
+
+<ul>
+<li><strong>Specificity beats enthusiasm.</strong> A specific answer, with concrete detail, tells you more than reassuring language about &ldquo;holistic planning&rdquo; or &ldquo;your unique situation.&rdquo;</li>
+<li><strong>Good advisors welcome scrutiny.</strong> Defensiveness about fees, credentials, or fiduciary status is itself useful information.</li>
+<li><strong>Verify independently.</strong> Request the Form ADV Part 2A, confirm CFP&reg; status at cfp.net, and check CPA or EA licensure through the relevant state board or IRS directory.</li>
+</ul>
+
+<h2>Why We Built Our Firm Around These Questions</h2>
+
+<p>These eight questions describe how we operate at United Financial Planning Group. We are a fee-only fiduciary firm: we are compensated only by our clients, and we do not accept commissions or other third-party compensation. Our <a href="/services/financial-planning">financial planning</a> team includes CFP&reg; professionals, CPAs, and Enrolled Agents working together on the same plan, so that planning, investment, and tax decisions are made with the same information at the same time, rather than handed between separate firms. Read more about <a href="/why-united">what makes our approach different</a>.</p>
+
+<p>If you are interviewing advisors and want a no-pressure conversation about how we work, <a href="/contact">let&rsquo;s start with a conversation</a>. There is no obligation, and no pressure to move forward if it is not the right fit.</p>
+
+<h2 id="disclosures">Disclosures</h2>
+
+<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. Descriptions of advisor compensation models, credentials, and regulatory standards reflect general industry practices and are provided for informational purposes; always verify current regulatory requirements and individual firm disclosures directly, including through an advisor&rsquo;s Form ADV. References to fee-only status and fiduciary obligations are general in nature. Consult a qualified financial advisor and tax professional regarding your specific circumstances before making any decisions.</p>`,
+  },
+  {
     slug: "qsbs-exclusion-section-1202-planning",
     title:
       "The QSBS Exclusion: What Founders and Pre-IPO Employees Need to Know About Section 1202",
@@ -2341,193 +2482,6 @@ export const blogPosts: BlogPost[] = [
 <p>At United Financial Planning Group, we're proud of Ryan's success and his contribution to the broader <a href="/services/financial-planning">financial planning</a> community. His experience aligns with our firm's commitment to providing personalized, expert financial guidance to our clients.</p>
 
 <p>If you're a private practice therapist looking for financial guidance or simply interested in learning more about our services, don't hesitate to <a href="/contact">reach out</a>. <a href="https://www.naylornetwork.com/napf-nwl/articles/index.asp?aid=839314&issueID=102199" target="_blank" rel="noopener noreferrer">Click here to read Ryan's full article</a>.</p>`,
-  },
-  {
-    slug: "two-crucial-questions-interviewing-financial-advisor",
-    title:
-      "2 Crucial Questions to Ask When Interviewing a Financial Advisor",
-    date: "2024-08-07",
-    updatedDate: "2026-07-18",
-    category: "Financial Planning",
-    excerpt:
-      "Most advisor interviews skip the questions that matter most. Start with two: how they're compensated, and how their firm is structured. Then, if you're an executive, engineer, or professional within a decade of retirement, add these targeted questions about tax coordination, equity compensation, and retirement sequencing, the areas where the right advisor separates from the rest.",
-    author: "United Financial Planning Group",
-    authorSlug: "gerry-barrasso",
-    type: "blog",
-    relatedServices: [
-      "/services/financial-planning",
-      "/services/investment-management",
-      "/services/tax-planning",
-      "/services/retirement-planning",
-      "/services/equity-compensation",
-    ],
-    relatedSlugs: [
-      "why-fee-only-fiduciary-financial-planner",
-      "pre-retirement-tax-transition-managing-brackets-rmds",
-      "roth-conversion-strategy-pre-retirees",
-    ],
-    faqs: [
-      {
-        question: "What questions should I ask a financial advisor about fees?",
-        answer:
-          "Ask three specific questions: (1) Are you fee-only, fee-based, or commission-based? (2) What is your all-in annual cost to me, including advisory fees, fund expense ratios, and any transaction costs? (3) Do you or your firm receive any compensation, including 12b-1 fees, referral fees, or revenue-sharing arrangements, from any product you recommend? A fee-only advisor should answer all three clearly and without hesitation. If you get vague answers or the advisor conflates \u201cfee-based\u201d with \u201cfee-only,\u201d that is a meaningful red flag.",
-      },
-      {
-        question: "How do I know if a financial advisor is a fiduciary?",
-        answer:
-          "The clearest confirmation comes from the advisor\u2019s Form ADV Part 2A, which is a legally required disclosure document that must describe the advisor\u2019s fiduciary duty, conflicts of interest, and compensation. You can request it directly from the advisor or find it via the SEC\u2019s Investment Adviser Public Disclosure (IAPD) database at adviserinfo.sec.gov. Look for language stating the firm is a Registered Investment Adviser (RIA) and is held to a fiduciary standard at all times. Be cautious: some advisors claim to be fiduciaries only in certain contexts but revert to a \u201csuitability\u201d standard when selling products. A fee-only, RIA-registered advisor is the cleaner structure.",
-      },
-      {
-        question: "What is the difference between fee-only and fee-based?",
-        answer:
-          "Fee-only means the advisor is compensated exclusively by you, through flat fees, hourly rates, or a percentage of assets under management, and never earns commissions or product-related compensation. Fee-based means the advisor charges you a fee AND can also earn commissions or other compensation from third parties for recommending certain products. The word \u201cbased\u201d is the tell. Fee-based advisors are held only to a suitability standard when in their broker-dealer capacity, not a fiduciary one. The distinction matters most when the advisor is recommending insurance products, annuities, or actively managed funds where commission payouts are significant.",
-      },
-      {
-        question: "Should I ask a financial advisor about their credentials?",
-        answer:
-          "Yes, and look beyond the letters. The CFP\u00ae (Certified Financial Planner) designation requires completing a comprehensive curriculum, passing a rigorous exam, accumulating relevant experience, and maintaining ongoing continuing education; it is the most recognized standard for comprehensive financial planning. If tax planning is important to you, a CPA (Certified Public Accountant) or Enrolled Agent (EA) credential on the team is highly relevant, because those professionals can actually prepare your returns and model your tax picture with real-return-level precision, not just estimates. Ask where those professionals sit: on the same team or outsourced?",
-      },
-      {
-        question: "What should I ask a financial advisor about their investment approach?",
-        answer:
-          "Ask how they construct portfolios, what funds or vehicles they typically use, and what their average all-in investment cost is per year. Ask whether they use proprietary products. Ask how they decide when to rebalance and how that interacts with your tax situation. Ask how they handled client portfolios during a major market drawdown. For pre-retirees in particular, ask about sequence-of-returns risk and how they would structure withdrawals if markets decline early in your retirement. The answer tells you a great deal about how integrated their investment and planning thinking actually is.",
-      },
-      {
-        question: "How many questions should I ask when interviewing a financial advisor?",
-        answer:
-          "Focus on quality, not quantity. Two foundational questions, compensation model and firm structure, will reveal whether an advisor\u2019s incentives are aligned with yours. From there, three to five deeper questions tailored to your situation (equity compensation, tax coordination, retirement sequencing) will tell you whether the advisor has the specific expertise your plan requires. Most initial conversations run 30 to 45 minutes; a well-prepared advisor should be able to answer clearly without deflecting.",
-      },
-    ],
-    content: `<h2>Why Most Advisor Interviews Start With the Wrong Questions</h2>
-
-<p>When people interview a financial advisor for the first time, they usually ask about investment performance, market views, or how the advisor approaches retirement income. These are reasonable topics. But they are not the right starting point.</p>
-
-<p>Before any conversation about strategy makes sense, you need to know two things: how the advisor gets paid, and what structure they operate under. Those two answers determine whether the advisor is working for you or for someone else, and they will shape every recommendation you ever receive from that person.</p>
-
-<p>This post covers those two foundational questions, explains what a good answer looks like and what constitutes a red flag, and then adds the follow-up questions that matter most if you are an executive, engineer, or senior professional within ten years of retirement, the group that has the most to gain (or lose) from getting this decision right.</p>
-
-<h2>The 2 Foundational Questions to Ask Any Financial Advisor</h2>
-
-<h3>Question 1: What Is Your Compensation Model?</h3>
-
-<p>This is the most important question you can ask, and the answer tells you everything about whose interests the advisor is structurally required to prioritize.</p>
-
-<p>There are three compensation models in the industry, and they are not interchangeable.</p>
-
-<h4>Commission-Based Advisors</h4>
-
-<p>A commission-based advisor earns income when you buy a financial product: a mutual fund, annuity, life insurance policy, or other investment. The commission comes from the product manufacturer, not from you directly. This model creates a direct conflict of interest: the advisor has a financial incentive to recommend products that generate higher commissions, regardless of whether those products are the best fit for your situation.</p>
-
-<p><strong>What a red flag looks like:</strong> An advisor who leads with annuity recommendations, proprietary mutual funds with high expense ratios, or whole life insurance early in the relationship, before they have a complete picture of your financial life, is likely operating in this model even if they do not disclose it upfront.</p>
-
-<p><strong>What it costs you:</strong> Some products sold on commission carry front-load fees of up to 5%, meaning a $1 million investment immediately loses $50,000 at purchase. High-cost products also create a drag over time: an expense ratio of 1.5% versus 0.10% on a $1 million portfolio compounds to tens of thousands of dollars in reduced returns over a decade.</p>
-
-<h4>Fee-Based Advisors</h4>
-
-<p>A fee-based advisor charges you a fee (often a percentage of assets under management) AND can also earn commissions or other third-party compensation from product sales. This is a hybrid model, and the word &ldquo;based&rdquo; is the critical distinction from &ldquo;fee-only.&rdquo;</p>
-
-<p>Fee-based advisors are held to a &ldquo;suitability&rdquo; standard when recommending products in their broker-dealer capacity. Suitability means the product must be a reasonable fit; it does not require the advisor to recommend the <em>best</em> available option. This is a materially weaker standard than a fiduciary obligation.</p>
-
-<p><strong>What a red flag looks like:</strong> Hearing the phrase &ldquo;we are fee-based&rdquo; positioned as though it were equivalent to &ldquo;fee-only.&rdquo; The two are meaningfully different, and an advisor who blurs that distinction, intentionally or not, is worth scrutinizing further.</p>
-
-<h4>Fee-Only Advisors</h4>
-
-<p>A fee-only advisor is compensated exclusively by you. They do not earn commissions, referral fees, 12b-1 fees, or any other product-related compensation. Their only financial incentive is to do work that you value enough to continue paying for.</p>
-
-<p>Fee-only advisors are held to the <strong>fiduciary standard</strong> at all times, a legal requirement to act in your best interests, disclose conflicts of interest, and recommend what is genuinely best for your situation, not what generates the most revenue for the advisor.</p>
-
-<p><strong>What a good answer looks like:</strong> &ldquo;We are fee-only. We are compensated entirely by our clients. We do not accept commissions, referral fees, or any other third-party compensation. Our ADV Part 2A discloses this in detail.&rdquo; A confident, direct answer. No hedging, no qualifying language about &ldquo;in most circumstances.&rdquo;</p>
-
-<p><strong>What a red flag looks like:</strong> A vague or evasive answer. Anything that sounds like &ldquo;we are primarily fee-based&rdquo; or &ldquo;we receive compensation in a variety of ways depending on the service.&rdquo; Transparency here should be effortless.</p>
-
-<h3>Question 2: Under What Type of Business Structure Do You Operate?</h3>
-
-<p>Compensation model and business structure are related but distinct. Understanding the structure tells you what regulatory framework governs the advisor&rsquo;s conduct, and whether there is an institutional interest in conflict with yours.</p>
-
-<h4>Broker-Dealers</h4>
-
-<p>Broker-dealers are typically larger firms, including wirehouses, regional broker-dealers, and banks offering investment products (think UBS, Ameriprise, Northwestern Mutual, or the investment arms of major banks). In a broker-dealer model, the firm creates product shelves, sales incentives, and internal pressure structures that can influence which products advisors recommend. Advisors may push proprietary products that carry higher margins for the firm or participate in revenue-sharing arrangements with fund companies.</p>
-
-<p>The regulatory standard at a broker-dealer is &ldquo;best interest&rdquo; under Regulation Best Interest (Reg BI), an improvement over pure suitability but still meaningfully different from a true fiduciary obligation. Conflicts of interest are disclosed, but they are permitted to exist.</p>
-
-<p><strong>What it costs you:</strong> Beyond explicit fees, clients at broker-dealers are often steered toward higher-cost investment vehicles. Some clients do not realize they are paying 1% or more annually in fund fees on top of the advisor fee, a total cost that, on a $2 million portfolio, can exceed $30,000 per year.</p>
-
-<h4>Registered Investment Advisers (RIAs)</h4>
-
-<p>A Registered Investment Adviser is a firm registered with the SEC (or state regulators for smaller firms) that is legally bound to act as a fiduciary for its clients at all times. RIAs do not have proprietary product shelves in the traditional sense, which eliminates one significant category of structural conflict.</p>
-
-<p>That said, not all RIAs are equal. Some RIA firms are dually registered as broker-dealers, which means they can still sell products on commission through their broker-dealer license. The RIA registration alone does not guarantee fee-only practices, which is why the compensation model question (Question 1) is equally critical.</p>
-
-<p><strong>What a good answer looks like:</strong> &ldquo;We operate as a Registered Investment Adviser. We are not affiliated with a broker-dealer, and we do not have a proprietary product shelf. Our Form ADV is publicly available on the SEC&rsquo;s IAPD database.&rdquo;</p>
-
-<h4>How to Verify: Check the ADV</h4>
-
-<p>Every RIA is required to file a Form ADV, which is publicly available at <a href="https://adviserinfo.sec.gov" target="_blank" rel="noopener noreferrer">adviserinfo.sec.gov</a>. Part 2A (the &ldquo;brochure&rdquo;) describes the firm&rsquo;s services, fees, business practices, and conflicts of interest in plain language. Look specifically for the compensation section and the conflicts of interest disclosure. A legitimate fee-only RIA will have straightforward language in both sections.</p>
-
-<p>You can also verify fee-only status through professional membership organizations: <a href="https://www.napfa.org" target="_blank" rel="noopener noreferrer">NAPFA</a>, the Garrett Planning Network, and XYPN all require their members to maintain fee-only practices as a condition of membership.</p>
-
-<h2>Additional Questions for Pre-Retirees: Executives, Engineers, and Professionals with Equity Compensation</h2>
-
-<p>If you are an executive, senior engineer, or professional within five to ten years of retirement, particularly one with meaningful equity compensation in the form of RSUs, stock options, or a concentrated employer stock position, the two foundational questions are necessary but not sufficient. You need to probe for specific capabilities that most general financial advisors simply do not have.</p>
-
-<p>The following questions are designed for that profile. They are not hypothetical edge cases; they are the planning intersections where the quality of your advisor&rsquo;s answer has a six-figure impact on your outcomes.</p>
-
-<h3>Question 3: How Do You Coordinate Tax Planning with Investment and Retirement Decisions?</h3>
-
-<p>This question has a right answer and a lot of wrong ones. The wrong answer sounds like: &ldquo;We work with your accountant and share information at year-end.&rdquo; That describes a fragmented approach where two professionals optimize their respective pieces without anyone holding the full picture simultaneously.</p>
-
-<p>The right answer describes a coordinated process. For pre-retirees, the decisions that matter most, including Roth conversions, tax-loss harvesting, capital gains management, equity compensation timing, and RMD planning, require knowing your current-year AGI, your projected income for the next several years, your marginal state tax rate, and your investment allocation all at the same time. A financial planner who does not have direct access to your real tax data is estimating. An accountant who is not aware of the investment decisions being made is optimizing blindly for this year.</p>
-
-<p><strong>What a good answer looks like:</strong> &ldquo;Our planning and tax work happen on the same team. We model your tax picture using actual return-level data and build multi-year projections that account for Roth conversion opportunities, IRMAA thresholds, and your equity compensation vesting schedule. The investment decisions we make are informed by that tax picture, and vice versa.&rdquo;</p>
-
-<p><strong>What a red flag looks like:</strong> Any answer that positions tax planning as something handled by a separate firm, communicated annually, or addressed reactively at filing time. For pre-retirees, that approach leaves the most important planning windows, the years before RMDs begin at age 73, underused.</p>
-
-<p>At United Financial Planning Group, our team includes <strong>CFP&reg; professionals, CPAs, and Enrolled Agents</strong> working together under one roof. Tax planning is not a separate engagement; it is embedded in how we build and manage your plan.</p>
-
-<h3>Question 4: How Do You Handle RSUs, Stock Options, and Concentrated Stock Positions?</h3>
-
-<p>Equity compensation is one of the most tax-complex areas in personal finance, and it is one where a general financial advisor without specific experience will frequently give you incomplete guidance.</p>
-
-<p>The tax treatment differs substantially depending on the type of equity compensation: Restricted Stock Units (RSUs) are taxed as ordinary income at vesting; Incentive Stock Options (ISOs) trigger alternative minimum tax (AMT) exposure when exercised; Non-Qualified Stock Options (NQSOs) are taxed as ordinary income at exercise; and employer stock held in a 401(k) may qualify for Net Unrealized Appreciation (NUA) treatment at distribution. These are not interchangeable, and making the wrong decision, such as exercising ISOs in the wrong year or ignoring NUA, can cost tens of thousands of dollars in unnecessary taxes.</p>
-
-<p><strong>What a good answer looks like:</strong> The advisor should walk you through the specific tax treatment for each type of equity compensation you hold, describe how they model vesting events against your other income sources, explain how they approach the timing of option exercises relative to your AMT exposure and regular income bracket, and outline a strategy for managing concentration risk in your employer stock without triggering an avoidable tax event.</p>
-
-<p><strong>What a red flag looks like:</strong> Generic answers about &ldquo;diversification&rdquo; without a clear framework for the tax mechanics. If the advisor cannot distinguish between the tax treatment of RSUs versus ISOs, or does not mention AMT in the context of Incentive Stock Options, you are likely talking to someone without deep equity compensation experience. Ask specifically: &ldquo;Can you walk me through how you would handle the exercise of my ISOs given my projected income this year?&rdquo;</p>
-
-<h3>Question 5: How Will You Sequence My Retirement Income and Manage the Years Before RMDs Begin?</h3>
-
-<p>The years between your retirement date and age 73, when Required Minimum Distributions from traditional IRAs and 401(k)s become mandatory, are often the most consequential tax-planning window of your financial life. Income is temporarily lower, brackets are more forgiving, and every year of inaction narrows the opportunity.</p>
-
-<p>This period is where decisions about Roth conversions, Social Security claiming age, account withdrawal sequencing, and capital gains realization are made. A well-coordinated strategy during this window can reduce your lifetime tax burden by hundreds of thousands of dollars. A reactive one can leave you in higher brackets at 73 than you needed to be, paying larger Medicare premium surcharges (IRMAA) and facing larger mandatory distributions than the ones you could have avoided.</p>
-
-<p><strong>What a good answer looks like:</strong> The advisor should be able to describe, in concrete terms, how they model the pre-RMD window: what bracket space is available each year, how Roth conversion amounts are sized to stay below IRMAA thresholds, how Social Security claiming interacts with your conversion strategy, and how your investment portfolio is structured to fund living expenses during this window without forcing unnecessary taxable events.</p>
-
-<p><strong>What a red flag looks like:</strong> An answer that treats Roth conversions as a binary yes/no decision, or that does not mention IRMAA. The IRMAA surcharge, Medicare&rsquo;s income-related premium adjustment, is one of the sharpest cliffs in pre-retirement planning. A Roth conversion that exceeds an IRMAA threshold by even $1 can trigger thousands of dollars in additional Medicare premiums two years later. Any advisor working with pre-retirees should be able to explain this without prompting.</p>
-
-<h2>How to Evaluate the Answers You Receive</h2>
-
-<p>A few principles for assessing what you hear in any advisor interview:</p>
-
-<ul>
-<li><strong>Specificity beats enthusiasm.</strong> An advisor who answers with concrete examples and frameworks knows the subject. An advisor who answers with warm language about &ldquo;holistic planning&rdquo; and &ldquo;your unique situation&rdquo; is stalling.</li>
-<li><strong>Good advisors welcome scrutiny.</strong> If an advisor becomes defensive or vague when you ask about compensation or credentials, that is telling. A fee-only fiduciary has nothing to hide and should be able to answer your questions directly and without qualifications.</li>
-<li><strong>Verify, do not just trust.</strong> Pull the Form ADV. Check the NAPFA directory. Confirm credentials at cfp.net for CFP&reg; certification, verify CPA licensure with the state board, and check EA status with the IRS directory. These checks take ten minutes and eliminate a significant amount of uncertainty.</li>
-<li><strong>Assess the team, not just the individual.</strong> For complex financial situations, including equity compensation, pre-retirement tax planning, and coordinated investment and tax management, the quality of the team around the lead advisor matters as much as the advisor themselves. Find out who handles the tax work, whether those professionals are in-house or outsourced, and how frequently they coordinate.</li>
-</ul>
-
-<h2>What Integrated Planning Looks Like in Practice</h2>
-
-<p>The advisors who do this work best are the ones who do not separate the questions. Your compensation structure, your equity vesting schedule, your Roth conversion window, and your Medicare premium exposure are not independent problems; they interact in ways that require a single coordinated view to optimize.</p>
-
-<p>At United Financial Planning Group, we are <a href="/services/financial-planning">fee-only and fiduciary</a>: no commissions, no product sales, no outside compensation. Our team of <strong>CFP&reg; professionals, CPAs, and Enrolled Agents</strong> works together on the same plan, not in parallel at separate firms. That structure means the tax picture is never an afterthought, and the investment decisions we make are always informed by what they mean to your actual tax return.</p>
-
-<p>If you are interviewing advisors and want a point of comparison, we are happy to have a straightforward conversation about how we work and whether it fits your situation.</p>
-
-<p><a href="/contact">Schedule a complimentary conversation</a>, or learn more about our approach to <a href="/services/financial-planning">integrated financial planning</a>, <a href="/services/tax-planning">tax planning</a>, and <a href="/services/equity-compensation">equity compensation planning</a>.</p>
-
-<h2 id="disclosures">Disclosures</h2>
-
-<p>This article is provided for general educational and informational purposes only and does not constitute personalized financial, tax, investment, or legal advice. The descriptions of advisor compensation models and regulatory standards reflect general industry practices and are provided for informational purposes; always verify current regulatory requirements and individual firm disclosures directly. References to fee-only status, fiduciary obligations, and equity compensation tax treatment are general in nature and may not reflect recent regulatory changes. Consult a qualified financial advisor and tax professional regarding your specific circumstances before making any decisions.</p>`,
   },
   {
     slug: "investing-for-major-financial-goals",

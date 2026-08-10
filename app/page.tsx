@@ -6,6 +6,8 @@ import { Footer } from "@/components/footer";
 import { LazyHero } from "@/components/hero-lazy";
 import { LazyFeatures2 } from "@/components/blocks/features-2-lazy";
 import { Stats } from "@/components/stats";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { faqItems } from "@/lib/faq-data";
@@ -186,6 +188,24 @@ export default function HomePage(): ReactNode {
               What Our Clients Say
             </h2>
             <WealthtenderFirmReviews firmId="36778" />
+          </div>
+        </section>
+        <section className="bg-muted relative w-full py-12 sm:py-16">
+          <div className="mx-auto max-w-3xl px-6 text-center sm:px-8">
+            <h2 className="text-foreground mb-3 font-serif text-2xl font-medium sm:text-3xl">
+              Interviewing Financial Advisors?
+            </h2>
+            <p className="text-foreground/60 mx-auto mb-6 max-w-2xl">
+              Before you decide, see the questions worth asking, starting
+              with fiduciary duty and how an advisor is paid.
+            </p>
+            <Link
+              href="/blog/two-crucial-questions-interviewing-financial-advisor"
+              className="text-foreground inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70"
+            >
+              Read Our Fee-Only Fiduciary Checklist
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </section>
         <FAQ />
