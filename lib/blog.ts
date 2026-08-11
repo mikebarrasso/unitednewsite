@@ -249,12 +249,12 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li><strong>Specificity beats enthusiasm.</strong> A specific answer, with concrete detail, tells you more than reassuring language about &ldquo;holistic planning&rdquo; or &ldquo;your unique situation.&rdquo;</li>
 <li><strong>Good advisors welcome scrutiny.</strong> Defensiveness about fees, credentials, or fiduciary status is itself useful information.</li>
-<li><strong>Verify independently.</strong> Request the Form ADV Part 2A, confirm CFP&reg; status at cfp.net, and check CPA or EA licensure through the relevant state board or IRS directory.</li>
+<li><strong>Verify independently.</strong> Request the Form ADV Part 2A, confirm CFP&reg; status at cfp.net, check CPA or EA licensure through the relevant state board or IRS directory, and check the NAPFA directory to confirm fee-only status (our own firm is listed there as a NAPFA member).</li>
 </ul>
 
 <h2>Why We Built Our Firm Around These Questions</h2>
 
-<p>These eight questions describe how we operate at United Financial Planning Group. We are a fee-only fiduciary firm: we are compensated only by our clients, and we do not accept commissions or other third-party compensation. Our <a href="/services/financial-planning">financial planning</a> team includes CFP&reg; professionals, CPAs, and Enrolled Agents working together on the same plan, so that planning, investment, and tax decisions are made with the same information at the same time, rather than handed between separate firms. Read more about <a href="/why-united">what makes our approach different</a>.</p>
+<p>These eight questions describe how we operate at United Financial Planning Group. We are a fee-only fiduciary firm: we are compensated only by our clients, and we do not accept commissions or other third-party compensation. Our <a href="/services/financial-planning">financial planning</a> team includes CFP&reg; professionals, CPAs, and Enrolled Agents working together on the same plan, so that planning, investment, and tax decisions are made with the same information at the same time, rather than handed between separate firms. We are also a member of NAPFA (the National Association of Personal Financial Advisors), whose fee-only and fiduciary membership standards match how we already work. Read more about <a href="/why-united">what makes our approach different</a>.</p>
 
 <p>If you are interviewing advisors and want a no-pressure conversation about how we work, <a href="/contact">let&rsquo;s start with a conversation</a>. There is no obligation, and no pressure to move forward if it is not the right fit.</p>
 
