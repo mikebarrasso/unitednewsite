@@ -1,0 +1,11 @@
+{
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/investment-management",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "navigating-financial-challenges-business-owner-new-york",
+    "investing-for-major-financial-goals"
+  ]
+}

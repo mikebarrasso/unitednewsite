@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/tax-planning",
+    "/services/investment-management"
+  ],
+  "relatedSlugs": [
+    "retirement-portfolio-strategies-market-downturns",
+    "secure-retirement-investment-management",
+    "why-fee-only-fiduciary-financial-planner"
+  ],
+  "faqs": [
+    {
+      "question": "What is the most important first step in retirement planning?",
+      "answer": "The most important first step is understanding your cash flow needs in retirement. Before choosing accounts or investments, you need a realistic estimate of your future expenses: housing, healthcare, travel, and daily living, so you can calculate the total savings required to fund your lifestyle without running out of money."
+    },
+    {
+      "question": "What is a tax-efficient withdrawal sequence in retirement?",
+      "answer": "A tax-efficient withdrawal sequence means drawing down accounts in a specific order to minimize lifetime taxes. A common strategy is to first spend taxable brokerage accounts, then tax-deferred accounts like traditional IRAs and 401(k)s, and finally Roth accounts. However, the optimal sequence depends on your income level, tax bracket, and estate planning goals, which is why coordinated planning matters."
+    },
+    {
+      "question": "What is sequence-of-returns risk and why does it matter?",
+      "answer": "Sequence-of-returns risk is the danger that poor investment returns early in your retirement (when you are making large withdrawals) can permanently deplete your portfolio, even if long-term average returns are fine. Managing this risk through asset allocation, a cash buffer, and flexible withdrawal strategies is one of the most critical elements of retirement investment planning."
+    },
+    {
+      "question": "Should I do a Roth conversion before I retire?",
+      "answer": "For many pre-retirees, the years between retirement and age 73 (when Required Minimum Distributions begin) create a window of lower taxable income that is ideal for Roth conversions. Converting traditional IRA or 401(k) funds to a Roth during this window can reduce future RMDs, lower lifetime taxes, and leave a tax-free inheritance to heirs. Whether it makes sense for you depends on your specific tax situation."
+    }
+  ]
+}

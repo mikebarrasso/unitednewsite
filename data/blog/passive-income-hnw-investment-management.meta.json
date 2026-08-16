@@ -1,0 +1,11 @@
+{
+  "relatedServices": [
+    "/services/investment-management",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "investment-management-strategies-high-net-worth",
+    "secure-retirement-investment-management"
+  ]
+}

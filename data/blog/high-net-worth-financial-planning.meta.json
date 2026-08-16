@@ -1,0 +1,11 @@
+{
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/investment-management",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "investment-management-strategies-high-net-worth",
+    "passive-income-hnw-investment-management"
+  ]
+}
