@@ -2,7 +2,13 @@ import {
   BlogShowcaseClient,
   type BlogShowcasePost,
 } from "@/components/blog-showcase-client";
-import { getAllPosts, type BlogPost } from "@/lib/blog";
+import {
+  getAllPosts,
+  getPostFrontmatter,
+  isPostLive,
+  type BlogPost,
+} from "@/lib/blog";
+import { draftViewEnabled } from "@/lib/blog-contract/draft-view";
 
 function toBlogShowcasePost(post: BlogPost): BlogShowcasePost {
   return {
@@ -22,9 +28,13 @@ function toBlogShowcasePost(post: BlogPost): BlogShowcasePost {
   };
 }
 
-export function BlogShowcase() {
+export async function BlogShowcase() {
   // Full post bodies must never ship in the client bundle again: after contract
   // 3.5, a waiting post's body would be a public leak even while its URL 404s.
-  const posts = getAllPosts().slice(0, 3).map(toBlogShowcasePost);
+  const draftsVisible = await draftViewEnabled();
+  const posts = getAllPosts()
+    .filter((post) => draftsVisible || isPostLive(getPostFrontmatter(post)))
+    .slice(0, 3)
+    .map(toBlogShowcasePost);
   return <BlogShowcaseClient posts={posts} />;
 }

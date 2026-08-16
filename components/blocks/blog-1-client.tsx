@@ -11,6 +11,7 @@ export type BlogCardPost = {
   category: string;
   excerpt: string;
   image?: { src: string; alt: string };
+  isDraft?: boolean;
 };
 
 function formatDate(dateStr: string): string {
@@ -35,8 +36,17 @@ function ArticleCard({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay }}
-        className="flex flex-col gap-3 group"
+        className={
+          post.isDraft
+            ? "flex flex-col gap-3 group rounded-xl border border-dashed border-border p-3"
+            : "flex flex-col gap-3 group"
+        }
       >
+        {post.isDraft && (
+          <span className="w-fit rounded-full border border-dashed border-border px-3 py-1 text-xs font-medium text-muted-foreground">
+            Draft — not on your live site
+          </span>
+        )}
         <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-muted flex items-center justify-center">
           {post.image ? (
             <Image

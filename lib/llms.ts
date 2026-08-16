@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getPostFrontmatter, isPostLive } from "@/lib/blog";
 import { locations } from "@/lib/locations";
 import { siteConfig } from "@/lib/metadata";
 import { personas } from "@/lib/personas";
@@ -267,6 +267,7 @@ const allTownPages: LlmsLink[] = sortByTitle(
 );
 
 const articlePages: LlmsLink[] = getAllPosts()
+  .filter((post) => isPostLive(getPostFrontmatter(post)))
   .map((post) => ({
     title: post.title,
     path: `/blog/${post.slug}`,

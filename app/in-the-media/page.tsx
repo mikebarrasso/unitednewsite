@@ -1,7 +1,13 @@
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
-import { getMediaMentions, getBlogPosts, formatDate } from "@/lib/blog";
+import {
+  getMediaMentions,
+  getBlogPosts,
+  getPostFrontmatter,
+  isPostLive,
+  formatDate,
+} from "@/lib/blog";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -45,8 +51,12 @@ const publicationLogos: Record<string, string> = {
 };
 
 export default function InTheMediaPage(): ReactNode {
-  const mediaMentions = getMediaMentions();
-  const recentPosts = getBlogPosts().slice(0, 3);
+  const mediaMentions = getMediaMentions().filter((post) =>
+    isPostLive(getPostFrontmatter(post)),
+  );
+  const recentPosts = getBlogPosts()
+    .filter((post) => isPostLive(getPostFrontmatter(post)))
+    .slice(0, 3);
 
   return (
     <>

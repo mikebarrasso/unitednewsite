@@ -2,7 +2,7 @@ import {
   Blog1Client,
   type BlogCardPost,
 } from "@/components/blocks/blog-1-client";
-import { getAllPosts, type BlogPost } from "@/lib/blog";
+import { getPostFrontmatter, isPostLive, type BlogPost } from "@/lib/blog";
 
 function toBlogCardPost(post: BlogPost): BlogCardPost {
   return {
@@ -11,6 +11,7 @@ function toBlogCardPost(post: BlogPost): BlogCardPost {
     date: post.date,
     category: post.category,
     excerpt: post.excerpt,
+    ...(!isPostLive(getPostFrontmatter(post)) ? { isDraft: true } : {}),
     ...(post.image
       ? {
           image: {
@@ -22,9 +23,8 @@ function toBlogCardPost(post: BlogPost): BlogCardPost {
   };
 }
 
-export function Blog1() {
+export function Blog1({ posts }: { posts: BlogPost[] }) {
   // Full post bodies must never ship in the client bundle again: after contract
   // 3.5, a waiting post's body would be a public leak even while its URL 404s.
-  const posts = getAllPosts().map(toBlogCardPost);
-  return <Blog1Client posts={posts} />;
+  return <Blog1Client posts={posts.map(toBlogCardPost)} />;
 }

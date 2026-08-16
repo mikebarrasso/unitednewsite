@@ -1,11 +1,17 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { basename, join } from "node:path";
 
 import {
+  isPostLive,
   parseBlogDocument,
   type PostFrontmatter,
 } from "./blog-contract/frontmatter.ts";
 import { mediaPosts } from "./blog-media.ts";
+
+export {
+  isPostLive,
+  type PostFrontmatter,
+} from "./blog-contract/frontmatter.ts";
 
 export type AuthorSlug =
   | "gerry-barrasso"
@@ -164,9 +170,10 @@ function loadBlogPost(fileName: string): BlogPost {
   const slug = basename(fileName, ".mdx");
   const source = readFileSync(join(BLOG_DIRECTORY, fileName), "utf8");
   const { frontmatter, body } = parseBlogDocument(source);
-  const meta = JSON.parse(
-    readFileSync(join(BLOG_DIRECTORY, slug + ".meta.json"), "utf8"),
-  ) as BlogPostMeta;
+  const metaPath = join(BLOG_DIRECTORY, slug + ".meta.json");
+  const meta = existsSync(metaPath)
+    ? (JSON.parse(readFileSync(metaPath, "utf8")) as BlogPostMeta)
+    : {};
 
   const post: BlogPost = {
     slug,
@@ -261,10 +268,17 @@ export function getPostFrontmatter(
   return frontmatterBySlug.get(slug) ?? {};
 }
 
-export function getRelatedPosts(post: BlogPost): BlogPost[] {
+export function getRelatedPosts(
+  post: BlogPost,
+  { includeNotLive = false }: { includeNotLive?: boolean } = {},
+): BlogPost[] {
   return post.relatedSlugs
     .map((slug) => postBySlug.get(slug))
-    .filter((related): related is BlogPost => related !== undefined);
+    .filter(
+      (related): related is BlogPost =>
+        related !== undefined &&
+        (includeNotLive || isPostLive(getPostFrontmatter(related))),
+    );
 }
 
 export function formatDate(dateStr: string): string {
