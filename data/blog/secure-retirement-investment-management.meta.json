@@ -1,0 +1,11 @@
+{
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/investment-management",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "retirement-portfolio-strategies-market-downturns",
+    "passive-income-hnw-investment-management"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/investment-management",
+    "/services/tax-planning",
+    "/services/equity-compensation",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "equity-compensation-isos-vs-nsos-ny-startup-employees",
+    "investment-management-strategies-high-net-worth",
+    "passive-income-hnw-investment-management"
+  ],
+  "faqs": [
+    {
+      "question": "What percentage of net worth in a single stock is considered too concentrated?",
+      "answer": "Most financial planning professionals use 10% to 15% of net worth as a general concentration threshold. Above that level, the idiosyncratic risk of a single company&mdash;the possibility that company-specific events, not broad market forces, drive a large loss&mdash;becomes a meaningful threat to your financial plan. Executives, founders, and long-tenured employees often have 40%, 60%, or even more of their net worth in a single employer, making proactive diversification planning essential."
+    },
+    {
+      "question": "What is a 10b5-1 plan and who should use one?",
+      "answer": "A Rule 10b5-1 plan is a pre-arranged trading plan that allows corporate insiders&mdash;executives, directors, and employees with access to material non-public information&mdash;to sell company stock in a structured, scheduled manner. Because the plan is established when the insider is not aware of MNPI, sales under a properly structured 10b5-1 plan are generally protected from insider trading liability. These plans are ideal for corporate executives or large shareholders who need to diversify but are frequently inside trading windows."
+    },
+    {
+      "question": "Can I donate appreciated stock to avoid capital gains taxes?",
+      "answer": "Yes. Donating long-term appreciated stock directly to a qualified charity or to a Donor-Advised Fund (DAF) allows you to claim a fair market value charitable deduction while permanently avoiding the capital gains tax that would have been owed if you sold the shares first. For a stock with a very low cost basis, this strategy can be far more tax-efficient than selling shares and donating cash proceeds."
+    },
+    {
+      "question": "What is an exchange fund?",
+      "answer": "An exchange fund (sometimes called a swap fund) allows multiple investors, each with a different concentrated stock position, to pool their shares into a partnership or fund in exchange for a diversified interest in the combined pool. The exchange is generally structured to be tax-deferred under Section 721 of the Internal Revenue Code. Investors typically must hold their fund interest for at least seven years. Exchange funds are generally available only to accredited investors and carry complexity and fees; they are most appropriate for very large, very low-basis concentrated positions."
+    }
+  ]
+}
