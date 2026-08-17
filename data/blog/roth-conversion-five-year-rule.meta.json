@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "roth-conversion-strategy-pre-retirees",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "market-volatility-financial-plan-advisor"
+  ],
+  "faqs": [
+    {
+      "question": "Does the five-year rule apply if I am over 59 1/2?",
+      "answer": "The conversion five-year rule stops applying once you turn 59 1/2. That rule exists only to prevent an early withdrawal penalty, and once you reach 59 1/2 you are already old enough to take penalty-free distributions from a traditional IRA, so the concern the rule addresses no longer exists. You can withdraw converted funds at that point regardless of how recently they were converted. The separate five-year rule for tax-free earnings still requires the account to have been open five tax years, so it is worth checking which rule actually applies to the money you plan to withdraw."
+    },
+    {
+      "question": "Can I undo a Roth conversion if I realize the five-year rule affects my plan?",
+      "answer": "No. Roth conversions have not been reversible since the recharacterization option was eliminated for conversions made in 2018 and later. Once a conversion is completed, the income tax owed on it is due for that year and the transaction cannot be undone. This makes it especially important to think through the five-year timing and your likely need for the funds before converting, rather than after, which is one of the reasons we model conversion amounts and timing with clients in advance rather than reacting after the fact."
+    },
+    {
+      "question": "How does the five-year rule interact with inherited Roth IRAs?",
+      "answer": "A beneficiary who inherits a Roth IRA generally steps into the deceased owner's five-year clock rather than starting a new one, so if the original owner had already satisfied the five-year holding period, qualified withdrawals of earnings are typically tax-free to the beneficiary regardless of the beneficiary's own age. If the original owner had not yet met the five-year period at death, the beneficiary generally must wait out the remainder of that period for earnings to be treated as qualified. Beneficiaries are also subject to their own distribution timelines under current law, so this is an area where the mechanics can get layered and reviewing the specific account history with a tax professional is worthwhile."
+    },
+    {
+      "question": "What happens if I withdraw converted funds before the five-year clock expires?",
+      "answer": "If you are under age 59 1/2 and you withdraw converted funds before that specific conversion's five-year clock has expired, the withdrawn amount is generally subject to the 10% early withdrawal penalty, even though you already paid ordinary income tax on that amount in the year you converted it. You would not owe income tax again on that withdrawal, since it was already taxed at conversion, but the penalty applies separately. If you are 59 1/2 or older, the penalty does not apply regardless of how recently the conversion occurred."
+    }
+  ]
+}
