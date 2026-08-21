@@ -93,6 +93,19 @@ export default function RetirementPlanningPage(): ReactNode {
               </Link>
               .
             </p>
+            <p className="text-foreground/70 leading-relaxed mt-4">
+              Because withdrawal sequencing, Roth conversions, and Social
+              Security timing all carry tax consequences, our retirement
+              plans are built alongside our{" "}
+              <Link
+                href="/services/tax-planning"
+                className="text-[#1e6eae] underline hover:no-underline"
+              >
+                tax-aware retirement planning
+              </Link>{" "}
+              work, so the same CFP® professionals and CPAs evaluate every
+              income decision from both sides of the table.
+            </p>
           </div>
         </section>
 
