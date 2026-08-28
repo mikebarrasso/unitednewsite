@@ -1,7 +1,12 @@
 import type { MetadataRoute } from "next";
 import { statSync } from "node:fs";
 import { join } from "node:path";
-import { getAllPosts, getPostLastModified } from "@/lib/blog";
+import {
+  getAllPosts,
+  getPostFrontmatter,
+  getPostLastModified,
+  isPostLive,
+} from "@/lib/blog";
 import { locations } from "@/lib/locations";
 import { siteConfig } from "@/lib/metadata";
 import { personas } from "@/lib/personas";
@@ -276,12 +281,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPostPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
-    url: `${siteConfig.url}/blog/${post.slug}`,
-    lastModified: new Date(getPostLastModified(post)),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  const blogPostPages: MetadataRoute.Sitemap = getAllPosts()
+    .filter((post) => isPostLive(getPostFrontmatter(post)))
+    .map((post) => ({
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      lastModified: new Date(getPostLastModified(post)),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
 
   return [
     ...staticPages,

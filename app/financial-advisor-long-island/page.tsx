@@ -214,7 +214,7 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
         <FeatureHighlight />
         <LocalValueProp
           heading="Why Long Island Families Choose United"
-          subheading="Long Island's financial landscape is uniquely complex: high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
+          subheading="Long Island's financial planning landscape is uniquely complex: high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
           items={valueProps}
           insightHeading="The Long Island Tax Advantage"
           insight="For Long Island residents, smart tax planning isn't optional; it's essential. Between New York State income tax, high property taxes, and the SALT deduction cap, the financial decisions that matter most are the ones that reduce your lifetime tax burden. Our team handles your investment strategy, Roth conversions, charitable giving, and tax return preparation, all coordinated to keep more of what you've earned."

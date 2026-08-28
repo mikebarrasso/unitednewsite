@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/equity-compensation",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "equity-compensation-planning-startup-employees",
+    "investment-management-strategies-high-net-worth",
+    "why-fee-only-fiduciary-financial-planner"
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between ISOs and NSOs?",
+      "answer": "Incentive Stock Options (ISOs) are a tax-advantaged form of equity granted only to employees. If holding period requirements are met, gains are taxed at long-term capital gains rates rather than ordinary income rates. Non-Qualified Stock Options (NSOs) can be granted to employees, contractors, and board members. The spread at exercise is taxed immediately as ordinary income, and the employer must withhold taxes. The key tradeoff is that ISOs carry Alternative Minimum Tax (AMT) risk at exercise, while NSOs trigger ordinary income tax at exercise but have no AMT exposure."
+    },
+    {
+      "question": "How does AMT work when exercising ISOs?",
+      "answer": "When you exercise ISOs, the spread between the fair market value (FMV) and your strike price is an AMT preference item. This means it is not taxed for regular income tax purposes at exercise, but it is added to your Alternative Minimum Tax income calculation. If your AMT liability exceeds your regular tax liability, you owe the difference. For employees at New York tech companies where FMV has risen significantly above the strike price, this can create a substantial cash tax bill before you can even sell shares."
+    },
+    {
+      "question": "Does New York City tax stock option income?",
+      "answer": "Yes. New York City residents pay city income tax on top of federal and New York State taxes. For NSO exercises, the ordinary income recognized is subject to NYC's resident income tax, which tops out near 3.876%. Combined with the top New York State rate of 10.9% and federal ordinary income rates, NYC residents can face a combined marginal rate exceeding 50% on NSO spread income. ISO qualifying dispositions receive long-term capital gains treatment federally, but New York State and NYC tax long-term capital gains as ordinary income, which meaningfully reduces the ISO advantage for state tax purposes."
+    },
+    {
+      "question": "What is a qualifying vs. disqualifying disposition for ISOs?",
+      "answer": "A qualifying disposition occurs when you sell ISO shares at least two years after the grant date AND at least one year after the exercise date. The entire gain is taxed at long-term capital gains rates federally. A disqualifying disposition occurs when you sell before meeting both holding period requirements. In that case, the spread at exercise is taxed as ordinary income, and only appreciation beyond the FMV at exercise receives capital gains treatment."
+    }
+  ]
+}

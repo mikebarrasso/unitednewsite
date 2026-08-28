@@ -1,0 +1,40 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/investment-management",
+    "/services/financial-planning",
+    "/services/tax-planning",
+    "/services/equity-compensation"
+  ],
+  "relatedSlugs": [
+    "passive-income-hnw-investment-management",
+    "high-net-worth-financial-planning",
+    "roth-conversion-strategy-pre-retirees"
+  ],
+  "faqs": [
+    {
+      "question": "What counts as high-net-worth for investment planning purposes?",
+      "answer": "The term high-net-worth (HNW) is used differently depending on context. The SEC defines a “qualified client” at $2.2 million in assets under management or $2.2 million in net worth. Many advisors informally use $1 million in investable assets as the threshold where personalized investment management meaningfully outpaces generic strategies. At that level and above, the tax complexity, concentrated position risk, estate coordination needs, and retirement income planning become complex enough that a coordinated, customized approach creates measurable value."
+    },
+    {
+      "question": "How much does a high-net-worth investment strategy cost?",
+      "answer": "Investment management fees for high-net-worth individuals are typically structured as a percentage of assets under management (AUM), commonly ranging from 0.50% to 1.25% annually depending on the firm, the scope of services included, and the size of the portfolio. Fee-only advisors, who are compensated exclusively by you with no commissions, provide a transparent cost structure where the fee is your total advisory cost. Watch for hidden layering: advisory fees on top of high-expense-ratio funds can push your all-in cost above 1.5%, compounding against you over time. Ask any advisor for their all-in cost including fund expense ratios."
+    },
+    {
+      "question": "Do I need a separate CPA and financial advisor?",
+      "answer": "Not necessarily. The traditional model, a financial planner here, an accountant there, is increasingly being replaced by integrated firms that house both capabilities under one roof. The reason this matters at the high-net-worth level is that tax and investment decisions are deeply intertwined: tax-loss harvesting, Roth conversions, equity compensation timing, and withdrawal sequencing all require knowing your real-time tax picture and your investment allocation simultaneously. When those professionals are siloed, critical coordination falls through the cracks. At United Financial Planning Group, our CFP® professionals, CPAs, and Enrolled Agents work on the same team so that your investment decisions and your tax situation are always in view together."
+    },
+    {
+      "question": "What is tax-loss harvesting and how does it work for HNW investors?",
+      "answer": "Tax-loss harvesting is the practice of selling securities that have declined in value to realize a capital loss, which can offset taxable capital gains or up to $3,000 of ordinary income per year, with excess losses carried forward indefinitely. For high-net-worth investors with substantial taxable brokerage portfolios, systematic harvesting throughout the year (not just at year-end) can generate meaningful after-tax value, particularly during volatile markets. The harvested position is typically replaced with a similar but not substantially identical security to maintain market exposure while capturing the tax benefit. When your investment manager and tax advisor are working from the same data, harvesting opportunities can be identified and executed with real-time awareness of your overall tax picture."
+    },
+    {
+      "question": "How should an executive with RSUs or stock options approach investment management?",
+      "answer": "Executives with equity compensation face a layer of complexity that a general investment strategy does not address: concentrated single-stock risk, vesting event tax exposure, and the interaction of equity income with their broader tax picture. RSUs are taxed as ordinary income at vesting; Incentive Stock Options (ISOs) create AMT exposure at exercise; Non-Qualified Stock Options (NQSOs) trigger ordinary income tax at exercise. Managing these alongside a diversified portfolio requires coordinating vesting schedules, option exercise timing, and tax bracket management across multiple years. An advisor without specific equity compensation experience will default to generic “diversify your concentrated position” advice without a concrete, tax-efficient roadmap for how to get there."
+    },
+    {
+      "question": "What is the difference between wealth preservation and growth in an investment strategy?",
+      "answer": "Wealth preservation strategies prioritize protecting existing capital and generating reliable income, typically through a heavier allocation to fixed income, short-duration bonds, and lower-volatility assets. Growth strategies accept more short-term volatility in exchange for higher long-term return potential, typically through a higher equity allocation. Most HNW investors need both orientations in their portfolio, balanced according to their time horizon, income needs, and risk tolerance. A common framework is to segment assets by purpose: near-term income needs funded by stable assets, long-term capital and legacy goals funded by growth assets. The right balance is not static; it should be revisited as your life circumstances and market conditions evolve."
+    }
+  ]
+}

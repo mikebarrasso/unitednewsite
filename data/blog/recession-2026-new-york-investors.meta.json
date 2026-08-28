@@ -1,0 +1,66 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/investment-management",
+    "/services/financial-planning",
+    "/services/tax-planning",
+    "/services/retirement-planning"
+  ],
+  "relatedSlugs": [
+    "market-volatility-financial-plan-advisor",
+    "retirement-portfolio-strategies-market-downturns",
+    "investment-management-strategies-high-net-worth"
+  ],
+  "faqs": [
+    {
+      "question": "Is the U.S. officially in a recession in 2026?",
+      "answer": "A U.S. recession is formally declared by the National Bureau of Economic Research (NBER), which evaluates a range of indicators rather than relying on the popular \"two consecutive quarters of negative GDP\" shorthand. NBER declarations are typically made well after a recession has begun. Investors and policymakers often discuss recession risk in real time using leading indicators, but the official designation is retrospective."
+    },
+    {
+      "question": "Should I sell my stocks because of recession fears?",
+      "answer": "There is no general answer that fits every investor. Whether to adjust an allocation depends on your time horizon, cash needs over the next one to three years, tax situation, and how the position fits into a broader plan. Decisions driven primarily by news cycles or short-term price moves have historically been associated with worse long-term outcomes than decisions tied to a written plan. A fiduciary financial advisor can help evaluate trade-offs against your specific circumstances."
+    },
+    {
+      "question": "How have U.S. stocks historically behaved around recessions?",
+      "answer": "Historical data published by sources such as the National Bureau of Economic Research and major asset managers shows that U.S. equity markets have experienced significant drawdowns around recessions, but have also recovered over multi-year periods following each post-war recession. Past performance does not guarantee future results, and the timing and magnitude of any future recovery cannot be predicted."
+    },
+    {
+      "question": "What can New York investors do that doesn’t depend on predicting the market?",
+      "answer": "Most of the highest-impact decisions are unrelated to market timing: maintaining an appropriate emergency reserve, aligning the equity portion of a portfolio with the actual time horizon for each goal, harvesting tax losses where appropriate, coordinating Roth conversion strategy with current and projected tax brackets, and confirming beneficiary designations and estate documents are current. New York residents should also factor in state and local tax exposure when planning withdrawals or realizations."
+    },
+    {
+      "question": "Does Long Island’s high tax burden change the playbook?",
+      "answer": "It can affect how decisions are sequenced. Combined federal, New York State, and (for NYC residents) New York City income taxes, along with the federal cap on state and local tax deductions, mean that the after-tax impact of a portfolio decision can differ meaningfully from its pre-tax appearance. Coordinating investment decisions with tax preparation in the same engagement is one of the practical reasons families work with an integrated team."
+    },
+    {
+      "question": "When should I talk to a financial advisor about recession risk?",
+      "answer": "Reasonable triggers include: planning to retire within the next one to five years, sitting on concentrated stock or significant cash that has not been allocated against a written plan, considering a major financial decision (selling a business, buying property, gifting), or noticing that headlines are driving emotionally significant changes to how you view your portfolio. A consultation does not commit you to a service relationship."
+    }
+  ],
+  "howToSteps": {
+    "name": "How to think through a portfolio decision during recession headlines",
+    "description": "A five-step framework investors can use to evaluate whether a market-driven portfolio change actually reflects a change in their situation.",
+    "steps": [
+      {
+        "name": "Identify what actually changed",
+        "text": "Write down what changed in your situation. If the answer is 'the news cycle,' that is a useful signal in itself. If something has actually changed in your income, time horizon, family situation, or goals, that is a different conversation."
+      },
+      {
+        "name": "Confirm near-term cash needs are covered",
+        "text": "Confirm that the money you expect to spend in the next 12 to 36 months is funded from short-horizon assets, not from a portfolio whose value can move significantly. If short-term needs are covered, the long-term portion of the portfolio can be evaluated on its long-term merits."
+      },
+      {
+        "name": "Re-read your written plan",
+        "text": "If you have a written investment policy or financial plan, review what it says about how to react to drawdowns. Most well-built plans already anticipate periods of significant volatility."
+      },
+      {
+        "name": "Quantify the after-tax cost of any move",
+        "text": "Selling positions in taxable accounts can trigger capital gains, surtaxes, and (for New York residents) significant state tax. Sometimes the most sensible answer changes once the tax bill is on the page."
+      },
+      {
+        "name": "Decide against your plan, not the headlines",
+        "text": "If the decision still makes sense after the prior steps, it is more likely to be a decision you will not regret. If it only makes sense in the context of today's headlines, that is a reason to pause."
+      }
+    ]
+  }
+}

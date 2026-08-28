@@ -13,9 +13,6 @@ export function SocialSecurityContent(): ReactNode {
             to claim depends on your health, income needs, tax situation,
             and whether you are coordinating with a spouse.
           </p>
-          <p className="text-sm text-muted-foreground not-prose mb-8">
-            Last updated: August 2026
-          </p>
           <h2>When Can You Claim Social Security? The Three Key Ages</h2>
           <p>
             Social Security gives you a range of ages at which to claim your

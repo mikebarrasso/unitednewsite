@@ -2,7 +2,14 @@ import { Blog1 } from "@/components/blocks/blog-1";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
-import { getAllPosts, getPostLastModified } from "@/lib/blog";
+import {
+  getAllPosts,
+  getPostFrontmatter,
+  getPostLastModified,
+  isPostLive,
+  type BlogPost,
+} from "@/lib/blog";
+import { draftViewEnabled } from "@/lib/blog-contract/draft-view";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -16,8 +23,7 @@ export const metadata: Metadata = createMetadata({
   path: "/blog",
 });
 
-function BlogIndexSchema(): ReactNode {
-  const posts = getAllPosts();
+function BlogIndexSchema({ posts }: { posts: BlogPost[] }): ReactNode {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -68,13 +74,18 @@ function BlogIndexSchema(): ReactNode {
   );
 }
 
-export default function BlogPage(): ReactNode {
+export default async function BlogPage(): Promise<ReactNode> {
+  const draftsVisible = await draftViewEnabled();
+  const posts = getAllPosts().filter(
+    (post) => draftsVisible || isPostLive(getPostFrontmatter(post)),
+  );
+
   return (
     <>
-      <BlogIndexSchema />
+      <BlogIndexSchema posts={posts} />
       <main id="main-content" className="flex-1">
         <Breadcrumb items={[{ label: "Blog" }]} />
-        <Blog1 />
+        <Blog1 posts={posts} />
 
         <section className="bg-muted relative w-full py-12 sm:py-16">
           <div className="mx-auto max-w-5xl px-6 text-center sm:px-8">

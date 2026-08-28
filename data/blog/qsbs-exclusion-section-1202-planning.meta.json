@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/equity-compensation",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "equity-compensation-planning-startup-employees",
+    "roth-conversion-strategy-pre-retirees",
+    "why-fee-only-fiduciary-financial-planner"
+  ],
+  "faqs": [
+    {
+      "question": "What is the QSBS exclusion amount under Section 1202?",
+      "answer": "The federal exclusion amount depends on when you acquired your qualified small business stock. For stock acquired after September 27, 2010, the exclusion is 100% of the eligible gain, up to the greater of $10 million or ten times your adjusted basis in the shares. For stock acquired between February 18, 2009 and September 27, 2010, the exclusion is 75%. For stock acquired between August 10, 1993 and February 17, 2009, the exclusion is 50%. The 100% exclusion for post-2010 QSBS is also fully exempt from the 28% AMT preference item that applied to earlier exclusion percentages, making it significantly more valuable. Keep in mind that these rules apply only at the federal level; state treatment varies significantly."
+    },
+    {
+      "question": "Does my state recognize the QSBS exclusion under Section 1202?",
+      "answer": "Not all states conform to the federal QSBS exclusion. California, for example, does not recognize the Section 1202 exclusion at all, which means California residents who exclude 100% of a gain at the federal level can still owe California income tax at a rate of up to 13.3% on the full excluded amount. New York generally conforms to the federal exclusion. Pennsylvania, Massachusetts, and several other states have their own rules. If you live or work in a state that does not conform, state tax exposure can represent a meaningful portion of the gain even after the federal exclusion is applied. Your planning should account for both federal and state treatment before a liquidity event."
+    },
+    {
+      "question": "What happens if I sell my QSBS shares before the five-year holding period?",
+      "answer": "If you sell QSBS-eligible shares before you have held them for more than five years, you generally cannot claim the Section 1202 exclusion on the sale proceeds. However, there are two possible paths forward. First, under Section 1045, you may be able to roll over the proceeds into new QSBS within 60 days and preserve your eligibility, effectively continuing your holding period clock on a replacement investment. Second, if you receive shares in a qualifying reorganization or merger, there are rules that may allow you to tack your holding period. Neither option is automatic or without conditions. If a tender offer, secondary sale, or M&A event is approaching before the five-year mark, this is exactly the kind of decision that requires coordinated planning in advance."
+    },
+    {
+      "question": "Can I stack QSBS exclusions across multiple people or entities to cover more gain?",
+      "answer": "Yes, within the bounds of the rules. The $10 million per-taxpayer exclusion limit applies at the individual taxpayer level. A married couple filing jointly can each hold QSBS in their own name and each claim up to $10 million in exclusions on their respective shares, for a potential combined exclusion of $20 million from the same company. Trusts and certain pass-through entities can also hold QSBS and pass through their own exclusion capacity to beneficiaries, subject to the rules governing how QSBS transfers between entities. These stacking strategies require advance planning: shares generally must be acquired and held in the correct name from the beginning, and transfers after the fact may disqualify the exclusion. Proper structuring at the time of grant or early exercise is essential."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/tax-planning",
+    "/services/retirement-planning",
+    "/services/financial-planning",
+    "/services/investment-management"
+  ],
+  "relatedSlugs": [
+    "modern-guide-retirement-planning",
+    "retirement-portfolio-strategies-market-downturns",
+    "secure-retirement-investment-management"
+  ],
+  "faqs": [
+    {
+      "question": "When do Required Minimum Distributions begin?",
+      "answer": "Under the SECURE 2.0 Act, the age at which Required Minimum Distributions (RMDs) must begin is 73 for individuals who turn 72 after December 31, 2022. The RMD age is scheduled to increase to 75 for individuals who turn 74 after December 31, 2032. RMDs apply to traditional IRAs, SEP IRAs, SIMPLE IRAs, and most employer-sponsored plans including traditional 401(k)s and 403(b)s. Roth IRAs are not subject to RMDs during the account owner&rsquo;s lifetime."
+    },
+    {
+      "question": "What is the tax gap and why is it a planning opportunity?",
+      "answer": "The “tax gap” refers to the period between when someone retires and when their Required Minimum Distributions begin at age 73. During this window, many retirees have significantly lower taxable income than they did during their working years. They are no longer receiving a salary, Social Security may not yet have begun, and RMDs have not started. This creates an opportunity to take advantage of lower tax brackets by doing Roth conversions, harvesting capital gains at preferential rates, or otherwise moving money out of tax-deferred accounts at relatively low tax cost."
+    },
+    {
+      "question": "What is IRMAA and how does it affect Medicare premiums?",
+      "answer": "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added to Medicare Part B and Part D premiums for beneficiaries whose income exceeds certain thresholds. Medicare uses your income from two years prior (e.g., your 2024 income affects your 2026 Medicare premiums). The surcharges can be significant: at the highest income brackets, Part B premiums can more than triple compared to the base rate. Because IRMAA is calculated on Modified Adjusted Gross Income (MAGI), Roth conversions in the pre-retirement tax gap years can inadvertently trigger or increase IRMAA in retirement. This must be carefully modeled."
+    },
+    {
+      "question": "What is a Qualified Charitable Distribution?",
+      "answer": "A Qualified Charitable Distribution (QCD) allows IRA owners who are age 70½ or older to transfer up to $105,000 per year (indexed for inflation after 2023) directly from their IRA to a qualified charity. The QCD counts toward the IRA owner&rsquo;s RMD for the year but is excluded from their taxable income. This is more tax-efficient than taking an RMD and then donating cash, because the QCD exclusion reduces Adjusted Gross Income directly&mdash;which can lower Social Security taxation, reduce IRMAA exposure, and keep the donor in a lower tax bracket."
+    }
+  ]
+}

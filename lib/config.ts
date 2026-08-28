@@ -15,7 +15,7 @@ export const siteConfig = {
     siteConfigData.seo?.defaultDescription ||
     "United Financial Planning Group is a fee-only advisory firm with CFP® professionals, CPAs, and Enrolled Agents under one roof. Financial planning, investment management, and tax services, integrated for clients nationwide.",
   url: siteConfigData.seo?.siteUrl || "https://unitedfpg.com",
-  twitter: siteConfigData.footer?.socialLinks?.find((s: any) => s.platform === "twitter")?.url || "@unitedfpg",
+  twitter: siteConfigData.footer?.socialLinks?.find((s) => s.platform === "twitter")?.url || "@unitedfpg",
 
   nav: {
     cta: {
