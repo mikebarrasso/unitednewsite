@@ -14,24 +14,24 @@
   ],
   "faqs": [
     {
-      "question": "What is a fee-only financial advisor?",
-      "answer": "A fee-only financial advisor is compensated exclusively by the clients they serve, through flat fees, hourly rates, or a percentage of assets managed. They do not earn commissions, referral fees, 12b-1 fees, or any other compensation from the products they recommend. That structure removes an entire category of conflict of interest that exists for advisors paid, in whole or in part, by product sales."
+      "question": "What's the difference between fee-only and fee-based?",
+      "answer": "Fee-only means the advisor is paid only by clients, with no commissions or other product-related compensation. Fee-based means the advisor charges a fee to clients and can also earn commissions or other compensation from third parties for recommending certain products. The word “based” is the distinction: fee-based advisors can be held to a lower suitability standard when acting in a broker-dealer capacity, rather than a fiduciary standard at all times."
     },
     {
-      "question": "What does fiduciary duty mean?",
+      "question": "What does fiduciary duty actually mean in practice?",
       "answer": "Fiduciary duty is a legal obligation to act in a client's best interest at all times and to disclose any conflicts of interest. It is a higher standard than a suitability standard, which only requires a recommendation to be reasonable for the client, not necessarily the best option available. Registered Investment Advisers are held to the fiduciary standard at all times; ask any advisor you are interviewing whether they are a fiduciary at all times, in writing, or only in certain contexts."
+    },
+    {
+      "question": "How many questions should I ask a financial advisor in the first meeting?",
+      "answer": "There is no fixed number, but a first conversation should cover fiduciary status, compensation, credentials, whether services are integrated or siloed, communication cadence, investment philosophy, tax coordination, and how the advisor handles needs outside their normal scope. A good advisor expects to be asked all of these and answers each one directly."
     },
     {
       "question": "What credentials should I look for in a financial advisor?",
       "answer": "The CFP® (Certified Financial Planner) designation is the most widely recognized credential for comprehensive financial planning; it requires a defined curriculum, a comprehensive exam, experience requirements, and ongoing continuing education. If tax planning matters to you, look for a CPA (Certified Public Accountant), PFS (Personal Financial Specialist), or EA (Enrolled Agent) on the team as well, since those credentials indicate the professional can prepare returns and model your tax situation directly rather than through an outside preparer."
     },
     {
-      "question": "How often should I meet with my financial advisor?",
-      "answer": "There is no single right cadence, but ask for specifics rather than accepting a vague answer. Many advisors meet with clients at least annually for a full plan review, with additional check-ins around major life or market events. Ask who you will actually speak with, how quickly they respond between meetings, and whether reviews happen proactively or only when you request them."
-    },
-    {
-      "question": "What's the difference between fee-only and fee-based?",
-      "answer": "Fee-only means the advisor is paid only by clients, with no commissions or other product-related compensation. Fee-based means the advisor charges a fee to clients and can also earn commissions or other compensation from third parties for recommending certain products. The word “based” is the distinction: fee-based advisors can be held to a lower suitability standard when acting in a broker-dealer capacity, rather than a fiduciary standard at all times."
+      "question": "Should I ask a financial advisor for references?",
+      "answer": "You can ask, but privacy and confidentiality rules generally limit what an advisor can share about current clients. A more useful substitute is asking how long clients typically stay, why clients have left in the past, and verifying the firm's regulatory record directly through its Form ADV and any public disciplinary history."
     }
   ]
 }
