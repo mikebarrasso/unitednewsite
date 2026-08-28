@@ -443,6 +443,16 @@ export function ClosingSection() {
             </Link>
             , starting with fiduciary duty and fees.
           </p>
+          <p>
+            Based on Long Island? See how our{" "}
+            <Link
+              href="/financial-advisor-long-island"
+              className="underline hover:opacity-70 transition-opacity"
+            >
+              Long Island financial advisor
+            </Link>{" "}
+            team puts this coordination into practice.
+          </p>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2, ease }}>
           <Link href="/contact" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
