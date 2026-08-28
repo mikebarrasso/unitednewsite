@@ -1,7 +1,11 @@
 import { ArrowRight, Shield } from "lucide-react";
 import Link from "next/link";
-import { type ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { LazyWebGLBackground } from "@/components/webgl-background-lazy";
+import {
+  BaselineHeroCopy,
+  ReachDemoHeroCopy,
+} from "@/components/reach-demo-copy";
 
 export function Hero(): ReactNode {
   return (
@@ -36,16 +40,9 @@ export function Hero(): ReactNode {
               </span>
             </div>
 
-            <h1 className="w-full text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center leading-tighter tracking-tight max-w-4xl">
-              Integrated Financial Planning, Wealth Management &amp; Tax
-            </h1>
-
-            <p className="mt-5 text-lg text-white/70 text-left lg:text-center max-w-2xl">
-              United Financial Planning Group brings financial planning,
-              investment management, tax planning, and tax preparation together
-              under one roof, so every decision works in concert, not in
-              conflict.
-            </p>
+            <Suspense fallback={<BaselineHeroCopy />}>
+              <ReachDemoHeroCopy />
+            </Suspense>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-10 w-full sm:w-auto">
               <Link
