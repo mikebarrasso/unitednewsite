@@ -116,12 +116,14 @@ export default function AboutPage(): ReactNode {
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
               <p>
-                Gerry started his career as a tax preparer, sitting across the
-                table from clients, reviewing their returns, and getting an
-                unusually complete view of their financial lives. That work
-                brought him into regular contact with the investment advisors
-                those same clients were working with, and what he saw troubled
-                him.
+                Gerry has spent more than three decades helping families
+                coordinate investments, taxes, and retirement decisions with
+                confidence. He started his career as a tax preparer, sitting
+                across the table from clients, reviewing their returns, and
+                getting an unusually complete view of their financial lives.
+                That work brought him into regular contact with the investment
+                advisors those same clients were working with, and what he saw
+                troubled him.
               </p>
               <p>
                 Too many of those advisors had no fiduciary obligation to their

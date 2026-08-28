@@ -37,14 +37,12 @@ export function Hero(): ReactNode {
             </div>
 
             <h1 className="w-full text-4xl sm:text-5xl md:text-6xl font-medium font-serif text-white text-left lg:text-center leading-tighter tracking-tight max-w-4xl">
-              Integrated Financial Planning, Wealth Management &amp; Tax
+              Retire with a plan you understand &mdash; and a team that answers.
             </h1>
 
             <p className="mt-5 text-lg text-white/70 text-left lg:text-center max-w-2xl">
-              United Financial Planning Group brings financial planning,
-              investment management, tax planning, and tax preparation together
-              under one roof, so every decision works in concert, not in
-              conflict.
+              Independent, fiduciary advice for families who want clarity, not
+              jargon.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-10 w-full sm:w-auto">
