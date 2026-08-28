@@ -4,7 +4,12 @@ import { useSearchParams } from "next/navigation";
 import type { ReactNode } from "react";
 
 function useReachDemoReview(): boolean {
-  return useSearchParams().get("wr_demo") === "review";
+  const searchParams = useSearchParams();
+  return (
+    typeof window !== "undefined" &&
+    window.self !== window.top &&
+    searchParams.get("wr_demo") === "review"
+  );
 }
 
 function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {
