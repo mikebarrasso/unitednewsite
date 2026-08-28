@@ -11,8 +11,6 @@ import { Stats } from "@/components/stats";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { TrustedBy } from "@/components/trusted-by";
 import { createMetadata } from "@/lib/metadata";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -216,7 +214,7 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
         <FeatureHighlight />
         <LocalValueProp
           heading="Why Long Island Families Choose United"
-          subheading="Long Island's wealth management and financial planning landscape is uniquely complex: high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
+          subheading="Long Island's financial planning landscape is uniquely complex: high property taxes, significant commuter costs, and layered state and local tax obligations. We built our firm to address exactly that."
           items={valueProps}
           insightHeading="The Long Island Tax Advantage"
           insight="For Long Island residents, smart tax planning isn't optional; it's essential. Between New York State income tax, high property taxes, and the SALT deduction cap, the financial decisions that matter most are the ones that reduce your lifetime tax burden. Our team handles your investment strategy, Roth conversions, charitable giving, and tax return preparation, all coordinated to keep more of what you've earned."
@@ -237,60 +235,6 @@ export default function FinancialAdvisorLongIslandPage(): ReactNode {
           faqs={localFaqs}
           idPrefix="li-faq"
         />
-        <section className="relative w-full bg-muted py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6 sm:px-8">
-            <h2 className="text-2xl sm:text-3xl font-medium font-serif text-foreground mb-8">
-              Meet With Us at a Long Island Area Office
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <Link
-                href="/locations/hauppauge-ny"
-                className="group block p-6 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                  Hauppauge, NY Office
-                </h3>
-                <p className="text-sm text-foreground/60 mt-2 leading-relaxed">
-                  Our headquarters in Suffolk County, home to our CFP&reg; professionals, CPAs, and Enrolled Agents.
-                </p>
-                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  Visit page
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </div>
-              </Link>
-              <Link
-                href="/locations/lake-success-ny"
-                className="group block p-6 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                  Lake Success, NY Office
-                </h3>
-                <p className="text-sm text-foreground/60 mt-2 leading-relaxed">
-                  Serving Nassau County and the North Shore with the same integrated planning team.
-                </p>
-                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  Visit page
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </div>
-              </Link>
-              <Link
-                href="/locations/manhattan-ny"
-                className="group block p-6 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                  Manhattan, NYC Office
-                </h3>
-                <p className="text-sm text-foreground/60 mt-2 leading-relaxed">
-                  A convenient meeting point for clients who work in the city.
-                </p>
-                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  Visit page
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
         <FinalCTA />
       </main>
       <Footer />
