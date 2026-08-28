@@ -193,24 +193,6 @@ export default function HomePage(): ReactNode {
         <section className="bg-muted relative w-full py-12 sm:py-16">
           <div className="mx-auto max-w-3xl px-6 text-center sm:px-8">
             <h2 className="text-foreground mb-3 font-serif text-2xl font-medium sm:text-3xl">
-              Based on Long Island?
-            </h2>
-            <p className="text-foreground/60 mx-auto mb-6 max-w-2xl">
-              Our team works from offices in Hauppauge and Lake Success, with
-              clients across Suffolk and Nassau County and nationwide.
-            </p>
-            <Link
-              href="/financial-advisor-long-island"
-              className="text-foreground inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70"
-            >
-              See Our Long Island Financial Advisor Services
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </section>
-        <section className="bg-background relative w-full py-12 sm:py-16">
-          <div className="mx-auto max-w-3xl px-6 text-center sm:px-8">
-            <h2 className="text-foreground mb-3 font-serif text-2xl font-medium sm:text-3xl">
               Interviewing Financial Advisors?
             </h2>
             <p className="text-foreground/60 mx-auto mb-6 max-w-2xl">
