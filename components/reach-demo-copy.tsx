@@ -1,15 +1,29 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import type { ReactNode } from "react";
+import { type ReactNode, useSyncExternalStore } from "react";
+
+function subscribeToFrameState(): () => void {
+  return () => {};
+}
+
+function getFrameState(): boolean {
+  return window.self !== window.parent;
+}
+
+function getServerFrameState(): boolean {
+  return false;
+}
 
 function useReachDemoReview(): boolean {
   const searchParams = useSearchParams();
-  return (
-    typeof window !== "undefined" &&
-    window.self !== window.top &&
-    searchParams.get("wr_demo") === "review"
+  const isFramed = useSyncExternalStore(
+    subscribeToFrameState,
+    getFrameState,
+    getServerFrameState,
   );
+
+  return isFramed && searchParams.get("wr_demo") === "review";
 }
 
 function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {

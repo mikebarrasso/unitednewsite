@@ -6,7 +6,7 @@
  */
 if (
   typeof window !== "undefined" &&
-  window.self !== window.top &&
+  window.self !== window.parent &&
   new URLSearchParams(window.location.search).get("wr_demo") === "review"
 ) {
   if (!document.querySelector("script[data-wr-editor-bridge]")) {
