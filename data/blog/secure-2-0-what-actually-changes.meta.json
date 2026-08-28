@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "irmaa-medicare-surcharge-explained",
+    "roth-conversion-strategy-pre-retirees",
+    "pre-retirement-tax-transition-managing-brackets-rmds"
+  ],
+  "faqs": [
+    {
+      "question": "When do required minimum distributions begin under SECURE 2.0?",
+      "answer": "The applicable age is generally 73 for the current cohort and 75 for later cohorts under the statutory schedule. Your birth year and plan type determine the exact starting date, and delaying the first payment until the following April can place two RMDs in one tax year."
+    },
+    {
+      "question": "Who gets the larger catch-up contribution limit?",
+      "answer": "Many participants who are age 60, 61, 62, or 63 at the end of the calendar year may use the higher catch-up limit if their plan permits it. Annual dollar limits are indexed, so confirm the current amount with the plan administrator."
+    },
+    {
+      "question": "Do higher earners have to make catch-up contributions as Roth contributions?",
+      "answer": "Beginning in 2026, certain participants whose prior-year wages from the plan sponsor exceed the indexed threshold generally must make catch-up contributions on a Roth basis when the plan offers catch-ups. Plan and employment details matter, so confirm how the rule applies before changing payroll."
+    },
+    {
+      "question": "Can unused 529 money move to any Roth IRA?",
+      "answer": "A qualifying rollover must generally move directly to a Roth IRA for the 529 beneficiary. The 529 must satisfy the 15-year rule, annual Roth IRA contribution limits and a $35,000 lifetime limit apply, and recent contributions and related earnings are restricted."
+    }
+  ]
+}

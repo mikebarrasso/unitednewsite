@@ -1,0 +1,36 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/tax-planning",
+    "/services/investment-management",
+    "/services/equity-compensation"
+  ],
+  "relatedSlugs": [
+    "why-fee-only-fiduciary-financial-planner",
+    "two-crucial-questions-interviewing-financial-advisor",
+    "equity-compensation-planning-startup-employees"
+  ],
+  "faqs": [
+    {
+      "question": "What is a fiduciary financial advisor?",
+      "answer": "A fiduciary financial advisor is legally required to act in a client's best interest at all times and to disclose any conflicts of interest. This is a higher legal standard than a suitability standard, which only requires that a recommendation be reasonable for the client, not necessarily the best option available. SEC-registered investment advisers are held to the fiduciary standard at all times."
+    },
+    {
+      "question": "What is the difference between a fiduciary standard and a suitability standard?",
+      "answer": "A fiduciary standard requires an advisor to act in the client's best interest and to put that duty ahead of the advisor's own compensation. A suitability standard, which historically applied to broker-dealer representatives, only requires that a recommendation be reasonable given the client's circumstances. A product can be suitable and still not be the best available choice, or the lowest-cost choice, for that client."
+    },
+    {
+      "question": "What is a fee-only financial advisor in NYC?",
+      "answer": "A fee-only financial advisor in NYC is compensated exclusively by the clients they serve, through flat fees, hourly rates, or a percentage of assets managed. They do not accept commissions, referral fees, or revenue sharing from any product provider. That structure removes an entire category of conflict of interest that can exist for advisors who are paid, in whole or in part, by product sales."
+    },
+    {
+      "question": "How do I verify that a financial advisor in New York is actually a fiduciary?",
+      "answer": "Ask the advisor directly whether they are a fiduciary at all times, in writing, and request their Form ADV Part 2A, which discloses their fees, conflicts of interest, and disciplinary history. You can also confirm SEC or state registration through the SEC's Investment Adviser Public Disclosure database at adviserinfo.sec.gov, and confirm fee-only status through directories such as NAPFA or the Fee-Only Network."
+    },
+    {
+      "question": "Is United Financial Planning Group a fiduciary?",
+      "answer": "Yes. United Financial Planning Group is a fee-only, SEC-registered investment adviser and acts as a fiduciary at all times. We do not accept commissions, sell proprietary products, or receive revenue sharing from any product provider. Our team includes CFP professionals, CPAs, and Enrolled Agents who coordinate financial planning, investment management, and tax work under one roof."
+    }
+  ]
+}

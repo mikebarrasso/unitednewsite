@@ -433,6 +433,16 @@ export function ClosingSection() {
             We built United to reduce those gaps through integrated planning,
             investing, and tax strategy.
           </p>
+          <p>
+            Still comparing advisors? See the{" "}
+            <Link
+              href="/blog/two-crucial-questions-interviewing-financial-advisor"
+              className="underline hover:opacity-70 transition-opacity"
+            >
+              questions worth asking before you decide
+            </Link>
+            , starting with fiduciary duty and fees.
+          </p>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2, ease }}>
           <Link href="/contact" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:opacity-90 transition-opacity">

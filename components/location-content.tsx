@@ -381,6 +381,82 @@ function OtherLocations({
   );
 }
 
+// Related blog posts to surface on a given office page, for bidirectional
+// in-content links between the location page and posts that mention it.
+const RELATED_POSTS_BY_SLUG: Record<
+  string,
+  { href: string; title: string; description: string }[] | undefined
+> = {
+  "hauppauge-ny": [
+    {
+      href: "/blog/navigating-financial-challenges-business-owner-new-york",
+      title: "Navigating Financial Challenges as a Business Owner in New York",
+      description:
+        "Irregular income, retirement options, tax payments, and succession planning for New York's self-employed professionals.",
+    },
+    {
+      href: "/blog/financial-tips-business-owners",
+      title: "Financial Tips for Business Owners",
+      description:
+        "An integrated approach to wealth, tax optimization, and succession planning for business owners.",
+    },
+    {
+      href: "/blog/two-crucial-questions-interviewing-financial-advisor",
+      title: "Questions to Ask a Financial Advisor: A Fee-Only Fiduciary Checklist",
+      description:
+        "Eight questions to ask before you hire an advisor, starting with fiduciary duty and fees.",
+    },
+  ],
+};
+
+function RelatedReading({ location }: { location: Location }): ReactNode {
+  const posts = RELATED_POSTS_BY_SLUG[location.slug];
+  if (!posts) return null;
+
+  return (
+    <section className="relative w-full bg-muted py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+          className="text-2xl sm:text-3xl font-medium font-serif text-foreground mb-8"
+        >
+          Planning Insights from Our {location.city} Team
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {posts.map((post, index) => (
+            <motion.div
+              key={post.href}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 * index, ease }}
+            >
+              <Link
+                href={post.href}
+                className="group block h-full p-6 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
+              >
+                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-foreground/60 mt-2 leading-relaxed">
+                  {post.description}
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read the article
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Maps each office to its corresponding regional flagship hub. This lets the
 // office page link UP to the commercial hub instead of competing with it for
 // the same query intent.
@@ -446,6 +522,7 @@ export function LocationContent({
       <WhyIntegrated />
       <NearbyAreas location={location} />
       <OtherLocations others={otherLocations} />
+      <RelatedReading location={location} />
     </>
   );
 }

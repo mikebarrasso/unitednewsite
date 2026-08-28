@@ -1,0 +1,57 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning",
+    "/services/financial-planning"
+  ],
+  "relatedSlugs": [
+    "roth-conversion-strategy-pre-retirees",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "modern-guide-retirement-planning"
+  ],
+  "faqs": [
+    {
+      "question": "What is IRMAA?",
+      "answer": "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added on top of the standard Medicare Part B and Part D premiums for beneficiaries whose Modified Adjusted Gross Income (MAGI) exceeds certain thresholds. The Social Security Administration determines IRMAA each year using the MAGI reported on your federal tax return from two years earlier."
+    },
+    {
+      "question": "Why is IRMAA based on income from two years ago?",
+      "answer": "The Social Security Administration uses the most recent tax return the IRS has fully processed when it sets premiums each fall. In practice that means your premiums in a given year are set by the return you filed for the tax year two years prior. For example, 2026 premiums are based on 2024 MAGI. This lag is why a one-time income event, such as selling a business or a large Roth conversion, can raise your Medicare costs two years later, after your income has already come back down."
+    },
+    {
+      "question": "Is IRMAA a marginal tax or a cliff?",
+      "answer": "A cliff. Unlike income tax brackets, where only the dollars above a threshold are taxed at the higher rate, crossing an IRMAA threshold by even one dollar of MAGI triggers the full surcharge tier for both spouses for the entire year. This is why bracket-aware planning in the years before and during Medicare enrollment matters so much."
+    },
+    {
+      "question": "Can I appeal an IRMAA determination?",
+      "answer": "Yes, in specific circumstances. If your income has dropped since the tax year used in the determination because of a life-changing event (retirement or reduced work hours, marriage or divorce, the death of a spouse, or the loss of income-producing property, among others), you can file Form SSA-44 and ask the Social Security Administration to use your more recent, lower income instead. A one-time capital gain generally does not qualify on its own."
+    },
+    {
+      "question": "What strategies help manage IRMAA?",
+      "answer": "The most common levers are timing Roth conversions before Medicare enrollment or sizing them to stay under a threshold, using Qualified Charitable Distributions (QCDs) to satisfy RMDs without raising MAGI, harvesting gains in lower-income years, and coordinating which accounts you draw from each year. The right combination depends on your full tax picture, which is why we model IRMAA alongside every withdrawal and conversion decision rather than treating it as an afterthought."
+    }
+  ],
+  "howToSteps": {
+    "name": "How to appeal IRMAA after a life-changing event",
+    "description": "If your income has fallen since the tax year the Social Security Administration used, you can ask them to use your current, lower income instead.",
+    "steps": [
+      {
+        "name": "Confirm you have a qualifying event",
+        "text": "Review the SSA's list of life-changing events: work stoppage or reduction, marriage, divorce or annulment, death of a spouse, loss of income-producing property, loss of pension income, or an employer settlement payment. A one-time spike in investment income generally does not qualify."
+      },
+      {
+        "name": "Complete Form SSA-44",
+        "text": "Report the life-changing event, the year your income dropped, and your estimated MAGI for that year. You are asking the SSA to substitute a more recent year for the two-year-old return they used."
+      },
+      {
+        "name": "Gather documentation",
+        "text": "Attach evidence of the event and of your reduced income: a retirement letter from your employer, a death certificate, a divorce decree, or a signed statement of estimated income, along with your most recent tax return if available."
+      },
+      {
+        "name": "Submit and follow up",
+        "text": "File by mail or in person at your local Social Security office. If your circumstances change again, or your estimate turns out to be off, update the SSA, since they will reconcile against your actual filed return."
+      }
+    ]
+  }
+}

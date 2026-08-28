@@ -1,0 +1,12 @@
+{
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/tax-planning",
+    "/services/tax-preparation",
+    "/services/retirement-planning"
+  ],
+  "relatedSlugs": [
+    "financial-tips-business-owners",
+    "two-crucial-questions-interviewing-financial-advisor"
+  ]
+}

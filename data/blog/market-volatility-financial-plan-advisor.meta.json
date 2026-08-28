@@ -1,0 +1,36 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/financial-planning",
+    "/services/investment-management",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "retirement-portfolio-strategies-market-downturns",
+    "roth-conversion-strategy-pre-retirees",
+    "modern-guide-retirement-planning"
+  ],
+  "faqs": [
+    {
+      "question": "What is sequence-of-returns risk?",
+      "answer": "Sequence-of-returns risk is the danger that poor investment returns early in retirement, when you are making regular withdrawals, can permanently deplete a portfolio even if long-term average returns eventually recover. A 30% market decline in year one of retirement is far more damaging than the same decline in year fifteen, because early withdrawals lock in losses and leave fewer shares available to participate in any recovery."
+    },
+    {
+      "question": "Why is market volatility more dangerous near retirement than mid-career?",
+      "answer": "Mid-career investors have time and ongoing contributions working in their favor. They can wait out a downturn and even buy more shares at lower prices. Pre-retirees and recent retirees have neither: their portfolio is at or near its peak size, they are about to start drawing from it, and they have limited ability to replenish losses through new earnings. That combination makes timing far more consequential."
+    },
+    {
+      "question": "What is a bucket strategy and how does it reduce sequence-of-returns risk?",
+      "answer": "A bucket strategy divides your portfolio into short-term, medium-term, and long-term segments. The short-term bucket holds one to three years of living expenses in cash or very low-risk assets, so you never have to sell equities during a downturn to meet income needs. The medium-term bucket holds bonds or balanced funds that can replenish the short-term bucket. The long-term bucket holds equities and is left alone during downturns, giving it time to recover without being touched."
+    },
+    {
+      "question": "Should I move to cash if markets drop near my retirement date?",
+      "answer": "Moving entirely to cash during a downturn is one of the most common and costly mistakes near-retirees make. It locks in losses, removes you from the recovery, and reintroduces reinvestment risk when you try to re-enter the market. The answer is not to abandon your equity allocation, but to ensure that your near-term income needs are funded from stable assets so you are never forced to sell equities at depressed prices."
+    },
+    {
+      "question": "How does Roth conversion strategy interact with market volatility?",
+      "answer": "A market downturn can actually create a Roth conversion opportunity. When account values are depressed, you convert fewer dollars of value for the same tax cost, and the recovery happens inside the tax-free Roth rather than the taxable traditional IRA. However, this only works if your overall cash flow and income plan are solid enough that you are not being forced to liquidate other assets to fund living expenses at the same time."
+    }
+  ]
+}

@@ -8,14 +8,20 @@ import {
   getAuthor,
   getPostLastModified,
   getPostBySlug,
+  getPostFrontmatter,
   getRelatedPosts,
   formatDate,
   injectHeadingIds,
+  isPostLive,
   readingTimeIso,
   readingTimeMinutes,
   type BlogPost,
 } from "@/lib/blog";
 import { createMetadata, siteConfig } from "@/lib/metadata";
+import {
+  draftAudienceIsOwner,
+  draftViewEnabled,
+} from "@/lib/blog-contract/draft-view";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +32,13 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+function pageNotFoundMetadata(): Metadata {
+  return {
+    title: "Page Not Found",
+    robots: { index: false, follow: false },
+  };
+}
+
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
@@ -33,7 +46,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return {};
+  if (!post) return pageNotFoundMetadata();
+  if (!isPostLive(getPostFrontmatter(post)) && !(await draftViewEnabled())) {
+    return pageNotFoundMetadata();
+  }
 
   return createMetadata({
     title: post.title,
@@ -250,7 +266,14 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const relatedPosts = getRelatedPosts(post);
+  const postIsLive = isPostLive(getPostFrontmatter(post));
+  const draftEnabled = await draftViewEnabled();
+  if (!postIsLive && !draftEnabled) notFound();
+  const ownerDraftView =
+    !postIsLive && draftEnabled && (await draftAudienceIsOwner());
+  const relatedPosts = getRelatedPosts(post, {
+    includeNotLive: draftEnabled,
+  });
   const author = getAuthor(post);
   // Inject heading IDs once at render time so the TOC anchors and the rendered
   // article share the same slugs (avoids two passes that can drift over time).
@@ -277,6 +300,14 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
 
         <article className="px-4 sm:px-6 lg:px-8 pt-8 pb-16">
           <div className="max-w-3xl mx-auto">
+            {ownerDraftView && (
+              <p className="mb-8 rounded-xl border border-dashed border-border px-4 py-2.5 text-sm text-muted-foreground">
+                <span className="font-medium">
+                  Draft — not on your live site.
+                </span>{" "}
+                Visitors can&apos;t see this post yet.
+              </p>
+            )}
             <header className="mb-10">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4">
                 <span className="px-3 py-1 bg-muted text-foreground text-xs font-medium rounded-full border border-border">

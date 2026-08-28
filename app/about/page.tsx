@@ -1,9 +1,13 @@
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import {
+  BaselineGerryBio,
+  ReachDemoGerryBio,
+} from "@/components/reach-demo-copy";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
   title: "About Us",
@@ -115,14 +119,9 @@ export default function AboutPage(): ReactNode {
               Meet Gerry Barrasso, CFP®, CPA, PFS
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
-              <p>
-                Gerry started his career as a tax preparer, sitting across the
-                table from clients, reviewing their returns, and getting an
-                unusually complete view of their financial lives. That work
-                brought him into regular contact with the investment advisors
-                those same clients were working with, and what he saw troubled
-                him.
-              </p>
+              <Suspense fallback={<BaselineGerryBio />}>
+                <ReachDemoGerryBio />
+              </Suspense>
               <p>
                 Too many of those advisors had no fiduciary obligation to their
                 clients. Their compensation was tied to the products they sold,

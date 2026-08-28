@@ -1,0 +1,11 @@
+{
+  "relatedServices": [
+    "/services/financial-planning",
+    "/services/retirement-planning",
+    "/services/investment-management"
+  ],
+  "relatedSlugs": [
+    "secure-retirement-investment-management",
+    "balancing-ebbs-flows-hybrid-earners"
+  ]
+}

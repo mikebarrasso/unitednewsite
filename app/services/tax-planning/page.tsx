@@ -1,4 +1,5 @@
 import { Footer } from "@/components/footer";
+import Link from "next/link";
 import { ServiceHero } from "@/components/service-hero";
 import { TaxPlanningVisual } from "@/components/tax-planning-visual";
 import { Breadcrumb } from "@/components/breadcrumb";
@@ -80,6 +81,25 @@ export default function TaxPlanningPage(): ReactNode {
         <ImplementationSection />
 
         <YearRoundSection />
+
+        <section className="w-full bg-background py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-foreground/70 leading-relaxed">
+              Roth conversions, required minimum distributions, and
+              withdrawal sequencing are some of the most consequential tax
+              decisions you will make, which is why our tax planning is
+              built alongside our{" "}
+              <Link
+                href="/services/retirement-planning"
+                className="text-[#1e6eae] underline hover:no-underline"
+              >
+                tax-coordinated retirement planning
+              </Link>{" "}
+              work, so the same CFP® professionals and CPAs manage your
+              retirement income coordination and your tax return together.
+            </p>
+          </div>
+        </section>
 
         <RelatedServices
           services={[

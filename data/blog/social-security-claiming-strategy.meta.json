@@ -1,0 +1,35 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning",
+    "/services/retirement-planning/social-security-claiming-strategy"
+  ],
+  "relatedSlugs": [
+    "roth-conversion-strategy-pre-retirees",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "market-volatility-financial-plan-advisor"
+  ],
+  "faqs": [
+    {
+      "question": "What is the break-even age for a Social Security claiming decision?",
+      "answer": "The break-even age is the point at which the cumulative dollars received from delaying benefits catch up to and surpass the cumulative dollars received from claiming earlier. In a simplified hypothetical example with no cost-of-living adjustments, claiming at full retirement age overtakes claiming at 62 around age 79, and claiming at 70 overtakes full retirement age around age 82 to 83. Actual break-even ages shift once cost-of-living adjustments, investment returns, and taxes are factored in, so this framework is one input among several rather than the deciding factor."
+    },
+    {
+      "question": "How does my Social Security claiming age affect my future Medicare IRMAA surcharge?",
+      "answer": "Social Security income adds to the Modified Adjusted Gross Income (MAGI) that determines whether you owe an Income-Related Monthly Adjustment Amount (IRMAA) surcharge on Medicare Part B and Part D premiums. Medicare uses your MAGI from two years earlier, so a claiming decision made today can affect a premium bill two years from now, especially if the added income lands in the same tax year as a Roth conversion or another income event that pushes you past an IRMAA threshold."
+    },
+    {
+      "question": "What is the Roth conversion tax bracket gap and how does it relate to Social Security claiming?",
+      "answer": "The tax bracket gap refers to the years after earned income stops but before Social Security and Required Minimum Distributions (which begin at age 73 under current law) start. Taxable income is often lower during this window, which can make it a favorable time to convert traditional IRA assets to a Roth IRA. Delaying Social Security extends this window, while claiming earlier shortens it, so the claiming decision and the conversion plan are best sized together rather than separately."
+    },
+    {
+      "question": "How does the higher-earning spouse's claiming age affect the survivor benefit?",
+      "answer": "If the higher-earning spouse passes away first, the surviving spouse may generally step into the higher earner's benefit amount, including any delayed retirement credits that were earned, once the survivor reaches their own full retirement age or later. That means the higher earner's claiming age can set the surviving spouse's income for the remainder of the survivor's life, which is a separate consideration from the spousal benefit available while both spouses are living."
+    },
+    {
+      "question": "Is the Social Security file-and-suspend strategy still available?",
+      "answer": "No. File-and-suspend was repealed by Congress in 2015. A related option, restricted application, may still be available, but only to individuals born before January 2, 1954. Because that group is now in their early seventies or older, restricted application is generally not available to today's pre-retirees, who are instead subject to deemed filing rules."
+    }
+  ]
+}
