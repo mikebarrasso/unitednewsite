@@ -14,6 +14,7 @@ import {
   ExecutiveSection,
   StartupSection,
   WhoSection,
+  EquityCompRelatedReading,
   EquityCompCTA,
 } from "@/components/equity-comp-content";
 import { createMetadata } from "@/lib/metadata";
@@ -123,6 +124,8 @@ export default function EquityCompensationPage(): ReactNode {
           faqs={equityCompFaqs}
           heading="Equity Compensation Questions"
         />
+
+        <EquityCompRelatedReading />
 
         <EquityCompCTA />
       </main>

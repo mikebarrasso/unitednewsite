@@ -485,6 +485,80 @@ function FloatingCard({ card, smoothX, smoothY, index }: { card: (typeof floatin
     </motion.div>
   );
 }
+/* ═══════ Related Reading ═══════ */
+
+const equityCompRelatedPosts = [
+  {
+    href: "/blog/equity-compensation-isos-vs-nsos-ny-startup-employees",
+    title: "ISOs vs. NSOs for NY Tech Employees",
+    description:
+      "The tax differences between incentive and non-qualified stock options, the AMT risk unique to ISOs, and how New York State and NYC taxes affect your exercise strategy.",
+  },
+  {
+    href: "/blog/equity-compensation-planning-startup-employees",
+    title: "Equity Compensation Planning for Startup Employees",
+    description:
+      "A comprehensive guide to ISOs, NSOs, RSUs, AMT, and concentration risk for employees building wealth through startup equity.",
+  },
+  {
+    href: "/blog/tax-efficient-diversification-unwind-concentrated-stock",
+    title: "Tax-Efficient Diversification for Concentrated Stock Positions",
+    description:
+      "Tax-aware strategies, including 10b5-1 plans, donor-advised funds, and exchange funds, for de-risking a concentrated equity position over time.",
+  },
+  {
+    href: "/blog/qsbs-exclusion-section-1202-planning",
+    title: "The QSBS Exclusion: Section 1202 Planning for Founders",
+    description:
+      "How the Section 1202 gain exclusion works for qualified small business stock, and the eligibility requirements founders and early employees need to plan around.",
+  },
+];
+
+export function EquityCompRelatedReading() {
+  return (
+    <section className="relative w-full bg-muted py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+          className="text-2xl sm:text-3xl font-medium font-serif text-foreground mb-8"
+        >
+          Related Reading on Equity Compensation
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {equityCompRelatedPosts.map((post, index) => (
+            <motion.div
+              key={post.href}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 * index, ease }}
+            >
+              <Link
+                href={post.href}
+                className="group block h-full p-6 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
+              >
+                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-foreground/60 mt-2 leading-relaxed">
+                  {post.description}
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read the article
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function EquityCompCTA() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
