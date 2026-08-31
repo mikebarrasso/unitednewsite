@@ -166,43 +166,58 @@ function requiredScalar(
   return value;
 }
 
-function loadBlogPost(fileName: string): BlogPost {
+/**
+ * Fail closed per post, not per site: a file this loader cannot read or that
+ * lacks required frontmatter hides THAT post with a loud warning. This runs
+ * at module scope on every blog surface, so a throw here would fail whole
+ * pages over one bad file (Devin, WealthLine/mokanwealth#6 — same loader
+ * pattern fleet-wide; this file was its origin).
+ */
+function loadBlogPost(fileName: string): BlogPost | null {
   const slug = basename(fileName, ".mdx");
-  const source = readFileSync(join(BLOG_DIRECTORY, fileName), "utf8");
-  const { frontmatter, body } = parseBlogDocument(source);
-  const metaPath = join(BLOG_DIRECTORY, slug + ".meta.json");
-  const meta = existsSync(metaPath)
-    ? (JSON.parse(readFileSync(metaPath, "utf8")) as BlogPostMeta)
-    : {};
+  try {
+    const source = readFileSync(join(BLOG_DIRECTORY, fileName), "utf8");
+    const { frontmatter, body } = parseBlogDocument(source);
+    const metaPath = join(BLOG_DIRECTORY, slug + ".meta.json");
+    const meta = existsSync(metaPath)
+      ? (JSON.parse(readFileSync(metaPath, "utf8")) as BlogPostMeta)
+      : {};
 
-  const post: BlogPost = {
-    slug,
-    title: requiredScalar(frontmatter, "title", slug),
-    date: requiredScalar(frontmatter, "publishedAt", slug),
-    category: requiredScalar(frontmatter, "category", slug),
-    excerpt: requiredScalar(frontmatter, "description", slug),
-    author: requiredScalar(frontmatter, "author", slug),
-    type: "blog",
-    relatedServices: meta.relatedServices ?? [],
-    relatedSlugs: meta.relatedSlugs ?? [],
-    content: body,
-  };
+    const post: BlogPost = {
+      slug,
+      title: requiredScalar(frontmatter, "title", slug),
+      date: requiredScalar(frontmatter, "publishedAt", slug),
+      category: requiredScalar(frontmatter, "category", slug),
+      excerpt: requiredScalar(frontmatter, "description", slug),
+      author: requiredScalar(frontmatter, "author", slug),
+      type: "blog",
+      relatedServices: meta.relatedServices ?? [],
+      relatedSlugs: meta.relatedSlugs ?? [],
+      content: body,
+    };
 
-  if (frontmatter.updatedAt) post.updatedDate = frontmatter.updatedAt;
-  if (meta.authorSlug) post.authorSlug = meta.authorSlug;
-  if (meta.faqs) post.faqs = meta.faqs;
-  if (meta.howToSteps) post.howToSteps = meta.howToSteps;
-  if (frontmatter.image) post.image = frontmatter.image;
-  if (frontmatter.imageAlt) post.imageAlt = frontmatter.imageAlt;
+    if (frontmatter.updatedAt) post.updatedDate = frontmatter.updatedAt;
+    if (meta.authorSlug) post.authorSlug = meta.authorSlug;
+    if (meta.faqs) post.faqs = meta.faqs;
+    if (meta.howToSteps) post.howToSteps = meta.howToSteps;
+    if (frontmatter.image) post.image = frontmatter.image;
+    if (frontmatter.imageAlt) post.imageAlt = frontmatter.imageAlt;
 
-  frontmatterBySlug.set(slug, frontmatter);
-  return post;
+    frontmatterBySlug.set(slug, frontmatter);
+    return post;
+  } catch (error) {
+    console.warn(
+      `[blog] hiding "${slug}" — unreadable post file: ${error instanceof Error ? error.message : String(error)}`,
+    );
+    return null;
+  }
 }
 
 const fileBlogPosts = readdirSync(BLOG_DIRECTORY)
   .filter((fileName) => fileName.endsWith(".mdx"))
   .sort((a, b) => a.localeCompare(b))
-  .map(loadBlogPost);
+  .map(loadBlogPost)
+  .filter((post): post is BlogPost => post !== null);
 
 for (const post of mediaPosts) {
   frontmatterBySlug.set(post.slug, {

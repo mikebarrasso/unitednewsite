@@ -267,7 +267,9 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
   if (!post) notFound();
 
   const postIsLive = isPostLive(getPostFrontmatter(post));
-  const draftEnabled = await draftViewEnabled();
+  // Live posts never consult draft mode — keeps static generation robust
+  // regardless of how Next tracks the read (Devin, mokanwealth#6).
+  const draftEnabled = postIsLive ? false : await draftViewEnabled();
   if (!postIsLive && !draftEnabled) notFound();
   const ownerDraftView =
     !postIsLive && draftEnabled && (await draftAudienceIsOwner());
