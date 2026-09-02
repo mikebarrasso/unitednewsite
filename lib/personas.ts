@@ -20,6 +20,8 @@ export type Persona = {
   lastUpdated: string;
   relatedPersonaSlugs: string[];
   serviceTypes: string[];
+  /** When true, renders a standard "Let's Start With a Conversation" CTA block above the generic closing CTA for this persona only. */
+  showStandardCta?: boolean;
 };
 
 export const personas: Persona[] = [
@@ -1046,6 +1048,131 @@ export const personas: Persona[] = [
       "Financial Planning",
       "Estate Planning",
     ],
+  },
+
+  // ─── DATABRICKS EMPLOYEES ───
+  {
+    slug: "databricks-employees",
+    name: "Databricks Employees",
+    seoTitle:
+      "Financial Advisor for Databricks Employees | NYC Equity & Tax Planning",
+    metaDescription:
+      "Fee-only financial planning for Databricks employees in NYC. Databricks RSU, ISO, and QSBS tax planning from CFP and CPA professionals under one roof.",
+    h1: "Financial Planning for Databricks Employees Where Your Advisor and Your CPA Are the Same Team",
+    heroSubtitle:
+      "Databricks opened a New York research and development hub at 5 Bryant Park in early 2026, shortly after a Series L funding round valued the company near $134 billion (TechCrunch, February 2026). Employees hold a mix of double-trigger RSUs, incentive stock options, and in some cases QSBS-eligible shares, each with different tax mechanics as a potential IPO approaches. Our CFP® professionals and CPAs work together so those decisions are planned as one coordinated whole.",
+    eyebrow: "For Databricks Employees",
+    icon: "Code2",
+    imageUrl:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+    imageAlt:
+      "Data engineering workspace with code and analytics dashboards on screen",
+    problemsHeading:
+      "Your Databricks Equity Has Moving Parts Most Advisors Have Never Seen",
+    problemsSubheading:
+      "Double-trigger RSUs, incentive stock options, and potential QSBS eligibility create planning decisions that a standalone advisor or a CPA working alone often cannot fully coordinate, and the sequencing of those decisions can affect your tax bill for years.",
+    problems: [
+      {
+        heading:
+          "Double-trigger RSU vesting can create a tax bill before you have liquidity",
+        description:
+          "Databricks has granted many employees double-trigger RSUs: shares vest only once both a time-based schedule and a liquidity event, such as an IPO, have occurred. If that trigger happens, ordinary income tax may become due on shares that have already met the time-based schedule, even though a post-IPO lock-up period can prevent you from selling for months afterward. Planning for that gap between tax owed and cash available is something we work through with clients before it happens, not after.",
+      },
+      {
+        heading:
+          "ISO exercises can trigger AMT well before you sell a share",
+        description:
+          "If you hold incentive stock options, exercising them creates a spread between your strike price and the current fair market value, which is informed by Databricks' most recent funding round valuation. That spread can become an Alternative Minimum Tax preference item in the year you exercise, whether or not you sell. Depending on your income and grant size, this can create a meaningful cash tax obligation on shares you cannot yet sell.",
+      },
+      {
+        heading:
+          "QSBS eligibility depends on when your shares were granted, not just how long you have held them",
+        description:
+          "Section 1202 of the tax code may allow certain early Databricks shareholders to exclude a portion of their gain from federal capital gains tax, but eligibility depends on the company's aggregate gross assets at the time your shares were issued and a five-year holding period, among other conditions. Employees who joined when Databricks was earlier in its growth may be more likely to qualify, but this requires a document-by-document review rather than an assumption.",
+      },
+      {
+        heading:
+          "A concentrated position in a single pre-IPO company adds risk that is easy to underestimate",
+        description:
+          "For many Databricks employees, equity compensation can represent a large share of total compensation, sometimes in the range of 40 to 60 percent depending on level and tenure. That concentration ties a meaningful portion of your net worth to one company's outcome, including the timing and pricing of a future IPO, which is not guaranteed and could differ from current expectations. Coordinating a diversification plan around vesting, lock-up, and tax exposure is part of managing that risk.",
+      },
+    ],
+    servicesHeading: "How Coordinated Planning Helps Databricks Employees",
+    servicesSubheading:
+      "Our CFP® professionals, CPAs, and Enrolled Agents work side by side, so your equity decisions, tax exposure, and long-term financial plan are coordinated, not siloed.",
+    services: [
+      {
+        title: "Equity Compensation Planning",
+        description:
+          "We work through the mechanics specific to Databricks equity: double-trigger RSU vesting, ISO exercise timing with AMT modeling, and QSBS eligibility review for early grants. Each decision is evaluated alongside your full financial picture, and outcomes depend on your individual circumstances.",
+        href: "/services/equity-compensation",
+      },
+      {
+        title: "Tax Planning",
+        description:
+          "Our CPAs and Enrolled Agents work alongside your financial planner year-round to estimate AMT exposure from ISO exercises, model RSU vesting income against New York State and New York City tax brackets, and plan ahead of a potential IPO.",
+        href: "/services/tax-planning",
+      },
+      {
+        title: "Financial Planning",
+        description:
+          "We build a plan that accounts for your liquid savings, your illiquid Databricks equity, and the concentration risk that comes with it, so your broader goals are not left waiting on a future liquidity event that may not arrive on the timeline you expect.",
+        href: "/services/financial-planning",
+      },
+      {
+        title: "Investment Management",
+        description:
+          "When RSUs vest or a liquidity event provides cash, decisions about how to invest it are made with your remaining equity exposure and tax situation in view, not in isolation from them.",
+        href: "/services/investment-management",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do Databricks RSUs work?",
+        answer:
+          "Databricks has historically used double-trigger RSU vesting: shares vest only once both a time-based schedule, typically over four years, and a liquidity event, such as an IPO or acquisition, have occurred. When that liquidity event happens, RSUs that have already met the time-based schedule are treated as vested, and their value is generally taxed as ordinary income at that time. A post-IPO lock-up period, commonly around six months, can prevent you from selling shares for a period even after the tax obligation arises. Terms vary by grant, so reviewing your specific agreement matters.",
+      },
+      {
+        question: "What is my Databricks RSU value?",
+        answer:
+          "Databricks RSU value depends on the company's fair market value, which is currently informed by a recent funding round valuation near $134 billion (TechCrunch, February 2026). That figure can change with future funding rounds or an eventual IPO price, and it may differ from secondary marketplace pricing, such as Forge Global quotes, which do not always match the company's internal or last-round valuation. Actual liquidity, meaning your ability to convert vested shares to cash, depends on IPO timing and any post-IPO lock-up period, neither of which follows a guaranteed schedule.",
+      },
+      {
+        question: "Should I exercise my Databricks ISOs before the IPO?",
+        answer:
+          "This depends on your specific situation. Exercising incentive stock options creates a spread between your strike price and the current fair market value, and that spread can trigger Alternative Minimum Tax in the year you exercise, even if you have not sold any shares. Employees who leave the company typically have a limited window, often 90 days, to exercise vested ISOs before they convert to non-qualified stock options, which are taxed differently. Modeling your AMT exposure before you exercise, rather than after, is something we help clients do based on their income, grant size, and available cash.",
+      },
+      {
+        question: "Does QSBS apply to my Databricks stock?",
+        answer:
+          "It may, depending on your specific grant. Section 1202 of the tax code allows eligible shareholders of qualified small business stock to exclude a substantial portion of gain from federal capital gains tax, up to the greater of $10 million or ten times basis, provided the stock is held for at least five years and other requirements are met. Whether your Databricks shares qualify depends on the company's aggregate gross assets at the time your shares were issued, generally shares issued while gross assets were under $50 million are more likely to qualify, among other conditions. Employees who joined earlier are more likely to hold QSBS-eligible shares, but this requires review of your specific grant documents.",
+      },
+      {
+        question: "How does Databricks' New York office affect my tax situation?",
+        answer:
+          "Databricks opened a research and development hub in New York in early 2026, and both New York State and New York City apply their own income tax on top of federal tax. New York State's top marginal rate is 10.9%, and New York City residents pay an additional resident income tax that tops out near 3.876%. Both can apply to ordinary income recognized when RSUs vest or when an ISO exercise triggers AMT, which can meaningfully change the after-tax value of a vesting event. Coordinating the timing of equity decisions with your New York tax picture is part of how we plan for clients in this situation.",
+      },
+      {
+        question: "Are you affiliated with or endorsed by Databricks?",
+        answer:
+          "No. United Financial Planning Group is an independent firm with no affiliation, partnership, endorsement, or sponsorship relationship with Databricks. We serve employees of Databricks and other pre-IPO technology companies as independent financial advisors. Databricks is referenced on this page only to describe the professional background of clients we work with.",
+      },
+    ],
+    faqHeading: "Databricks Equity Compensation: Questions We Hear Often",
+    lastUpdated: "2026-09-02",
+    relatedPersonaSlugs: [
+      "anthropic-employees",
+      "software-engineers",
+      "executives",
+      "startup-founders",
+    ],
+    serviceTypes: [
+      "Equity Compensation Planning",
+      "Tax Planning",
+      "Financial Planning",
+      "Investment Management",
+    ],
+    showStandardCta: true,
   },
 ];
 

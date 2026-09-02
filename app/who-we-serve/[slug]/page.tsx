@@ -258,6 +258,24 @@ export default async function PersonaPage({
           </div>
         </section>
         <RelatedPersonas slug={slug} />
+        {persona.showStandardCta && (
+          <section className="relative w-full bg-background py-12 sm:py-16 overflow-hidden">
+            <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 border-t border-border pt-8">
+              <h2 className="text-2xl sm:text-3xl font-serif font-medium text-foreground">
+                Let&apos;s Start With a Conversation
+              </h2>
+              <p className="mt-3 text-foreground/70 leading-relaxed max-w-2xl">
+                <Link
+                  href="/contact"
+                  className="underline underline-offset-4 hover:text-foreground transition-colors"
+                >
+                  Let&apos;s Start With a Conversation
+                </Link>
+                . No sales pitch. No obligation.
+              </p>
+            </div>
+          </section>
+        )}
         <FinalCTA />
       </main>
       <Footer />
