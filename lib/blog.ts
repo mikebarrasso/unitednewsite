@@ -132,6 +132,10 @@ export type BlogPost = {
   image?: string;
   /** Alt text for the featured image (required when `image` is set). */
   imageAlt?: string;
+  /** Overrides the default "recession risk" phrase in the generic closing CTA block for this post only. */
+  ctaFocus?: string;
+  /** When true, prefixes this post's byline with "Reviewed by " (per-post override; does not affect other posts sharing the same author). */
+  reviewedByline?: boolean;
   content: string;
 };
 
@@ -141,6 +145,8 @@ type BlogPostMeta = {
   relatedSlugs?: string[];
   faqs?: BlogFAQ[];
   howToSteps?: BlogPost["howToSteps"];
+  ctaFocus?: string;
+  reviewedByline?: boolean;
 };
 
 const BLOG_DIRECTORY = join(process.cwd(), "data/blog");
@@ -192,6 +198,8 @@ function loadBlogPost(fileName: string): BlogPost {
   if (meta.authorSlug) post.authorSlug = meta.authorSlug;
   if (meta.faqs) post.faqs = meta.faqs;
   if (meta.howToSteps) post.howToSteps = meta.howToSteps;
+  if (meta.ctaFocus) post.ctaFocus = meta.ctaFocus;
+  if (meta.reviewedByline) post.reviewedByline = meta.reviewedByline;
   if (frontmatter.image) post.image = frontmatter.image;
   if (frontmatter.imageAlt) post.imageAlt = frontmatter.imageAlt;
 

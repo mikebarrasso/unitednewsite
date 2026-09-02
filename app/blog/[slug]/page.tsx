@@ -351,6 +351,7 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                     {author.initials}
                   </span>
                   <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    {post.reviewedByline ? "Reviewed by " : ""}
                     {author.name}
                     {author.credentials ? `, ${author.credentials}` : ""}
                   </span>
@@ -453,8 +454,9 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                 <p className="mt-3 text-foreground/70 leading-relaxed max-w-2xl">
                   Schedule a complimentary conversation with our team of CFP
                   &reg; professionals, CPAs, and Enrolled Agents. No obligation,
-                  no sales pitch &mdash; just a calm look at how recession risk
-                  fits into your specific plan.
+                  no sales pitch, just a calm look at how{" "}
+                  {post.ctaFocus ?? "recession risk"} fits into your specific
+                  plan.
                 </p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3">
                   <Link
