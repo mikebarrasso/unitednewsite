@@ -135,7 +135,10 @@ const staticRoutes: StaticRoute[] = [
   },
   {
     path: "/compliance",
-    sources: ["app/compliance/page.tsx"],
+    sources: [
+      "app/compliance/page.tsx",
+      "public/new_2026_compliance_docs_2/UFPG Form ADV Part 2B - 08192026.pdf",
+    ],
     changeFrequency: "yearly",
     priority: 0.3,
   },
@@ -147,7 +150,10 @@ const staticRoutes: StaticRoute[] = [
   },
   {
     path: "/adv-part-2b",
-    sources: ["app/adv-part-2b/page.tsx"],
+    sources: [
+      "app/adv-part-2b/page.tsx",
+      "public/new_2026_compliance_docs_2/UFPG Form ADV Part 2B - 08192026.pdf",
+    ],
     changeFrequency: "yearly",
     priority: 0.3,
   },

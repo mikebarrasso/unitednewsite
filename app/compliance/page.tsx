@@ -26,7 +26,7 @@ const documents = [
     description:
       "Supplemental information about the supervised persons who provide advisory services on behalf of our firm.",
     href: "/adv-part-2b",
-    date: "March 30, 2026",
+    date: "August 19, 2026",
   },
   {
     title: "Form CRS - Client Relationship Summary",
