@@ -12,6 +12,12 @@ import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews"
 import { TrustedBy } from "@/components/trusted-by";
 import { faqItems } from "@/lib/faq-data";
 import { createMetadata } from "@/lib/metadata";
+import {
+  coreServiceNames,
+  createOfferCatalog,
+  officeAddresses,
+  organizationSchemaId,
+} from "@/lib/schema";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -24,7 +30,7 @@ export const metadata: Metadata = createMetadata({
 });
 
 function OrganizationSchema() {
-  const orgId = "https://unitedfpg.com/#organization";
+  const orgId = organizationSchemaId;
 
   // Single canonical Organization, with each office expressed as a separate
   // FinancialService branch so Google can model them as discrete locations.
@@ -36,14 +42,7 @@ function OrganizationSchema() {
       url: "https://unitedfpg.com/locations/hauppauge-ny",
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "350 Motor Parkway, Suite 300",
-        addressLocality: "Hauppauge",
-        addressRegion: "NY",
-        postalCode: "11788",
-        addressCountry: "US",
-      },
+      address: officeAddresses[0],
     },
     {
       "@type": "FinancialService",
@@ -52,14 +51,7 @@ function OrganizationSchema() {
       url: "https://unitedfpg.com/locations/manhattan-ny",
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "14 Penn Plaza",
-        addressLocality: "New York",
-        addressRegion: "NY",
-        postalCode: "10122",
-        addressCountry: "US",
-      },
+      address: officeAddresses[1],
     },
     {
       "@type": "FinancialService",
@@ -68,14 +60,7 @@ function OrganizationSchema() {
       url: "https://unitedfpg.com/locations/lake-success-ny",
       branchOf: { "@id": orgId },
       telephone: "(631) 234-0871",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "1979 Marcus Avenue, Suite 210",
-        addressLocality: "Lake Success",
-        addressRegion: "NY",
-        postalCode: "11042",
-        addressCountry: "US",
-      },
+      address: officeAddresses[2],
     },
   ];
 
@@ -91,21 +76,16 @@ function OrganizationSchema() {
     telephone: "(631) 234-0871",
     email: "info@unitedfpg.com",
     foundingDate: "2008",
+    address: officeAddresses,
     founder: {
       "@type": "Person",
       name: "Gerry Barrasso",
       jobTitle: "President & Founder",
     },
     areaServed: { "@type": "Country", name: "United States" },
-    serviceType: [
-      "Financial Planning",
-      "Investment Management",
-      "Tax Planning",
-      "Tax Preparation",
-      "Retirement Planning",
-      "Equity Compensation Planning",
-    ],
+    hasOfferCatalog: createOfferCatalog(coreServiceNames),
     knowsAbout: [
+      ...coreServiceNames,
       "Fee-only financial planning",
       "Fiduciary investment management",
       "Tax-efficient investing",

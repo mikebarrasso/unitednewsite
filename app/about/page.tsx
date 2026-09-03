@@ -6,6 +6,7 @@ import {
   ReachDemoGerryBio,
 } from "@/components/reach-demo-copy";
 import { createMetadata, siteConfig } from "@/lib/metadata";
+import { officeAddresses } from "@/lib/schema";
 import type { Metadata } from "next";
 import { Suspense, type ReactNode } from "react";
 
@@ -62,6 +63,7 @@ function AboutPageSchema() {
         "@type": "FinancialService",
         name: siteConfig.name,
         url: siteConfig.url,
+        address: officeAddresses,
       },
     },
     {
