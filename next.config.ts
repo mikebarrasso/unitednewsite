@@ -328,10 +328,26 @@ trailingSlash: false,
     ],
   },
   async redirects() {
-    return legacyRedirects.map((redirect) => ({
-      ...redirect,
-      permanent: true,
-    }));
+    return [
+      {
+        source:
+          "/new_2026_compliance_docs_2/UFPG Form ADV Part 2B - 03302026.pdf",
+        destination:
+          "/new_2026_compliance_docs_2/UFPG Form ADV Part 2B - 08192026.pdf",
+        permanent: true,
+      },
+      {
+        source:
+          "/new_2026_compliance_docs_2/UFPG%20Form%20ADV%20Part%202B%20-%2003302026.pdf",
+        destination:
+          "/new_2026_compliance_docs_2/UFPG%20Form%20ADV%20Part%202B%20-%2008192026.pdf",
+        permanent: true,
+      },
+      ...legacyRedirects.map((redirect) => ({
+        ...redirect,
+        permanent: true,
+      })),
+    ];
   },
   async rewrites() {
     return [
