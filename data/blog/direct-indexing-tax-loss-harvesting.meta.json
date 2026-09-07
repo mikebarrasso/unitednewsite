@@ -12,19 +12,21 @@
   "faqs": [
     {
       "question": "What is tax-loss harvesting?",
-      "answer": "Tax-loss harvesting is the practice of selling an investment that has declined in value to realize a capital loss, then using that loss to offset capital gains recognized elsewhere in your portfolio. Any loss beyond what is needed to offset gains can also offset up to $3,000 of ordinary income per year, with the remainder carried forward indefinitely to future tax years."
+      "answer": "Tax-loss harvesting involves selling an investment that has declined in value to realize a capital loss. A realized loss may offset capital gains, and a net capital loss may generally offset up to $3,000 of ordinary income annually, with unused losses carried forward subject to tax rules. The tax effect depends on an individual's full circumstances."
     },
     {
-      "question": "What are the tax-loss harvesting rules I need to know?",
-      "answer": "The most important rule is the wash-sale rule: if you sell a security at a loss and buy the same security, or one the IRS considers substantially identical, within 30 days before or after the sale, the loss is disallowed and instead added to the cost basis of the replacement shares. Losses must also first offset gains of the same character, short-term losses against short-term gains and long-term against long-term, before offsetting the other type, and only $3,000 of net losses can offset ordinary income in a given year, with any excess carried forward."
+      "question": "What tax-loss harvesting rules should I understand?",
+      "answer": "The wash-sale rule is a central consideration. If substantially identical securities are purchased within 30 days before or after a sale at a loss, the loss may be disallowed and added to the basis of replacement shares. Gains and losses can also have different tax character and timing. A full review should consider all relevant household accounts and tax circumstances."
     },
     {
-      "question": "How is direct indexing different from investing in an index fund?",
-      "answer": "An index fund pools your money with other investors to buy all the securities in an index inside one fund share, so you can only realize a gain or loss on the fund as a whole. Direct indexing buys the individual underlying stocks directly in your own account, which means each stock has its own cost basis. That structure allows losses to be harvested company by company, sometimes even in a year when the overall index is flat or positive, which is not possible when you hold a single pooled fund position."
+      "question": "How is direct indexing different from a pooled fund?",
+      "answer": "A pooled fund is held as one investment position. Direct indexing holds individual securities in a separately managed account, so each holding has its own cost basis. That structure may allow individual positions to be reviewed for tax-loss harvesting, but it can also involve additional costs, administration, and tracking difference."
     },
     {
-      "question": "Does tax-loss harvesting guarantee better after-tax returns?",
-      "answer": "No. Tax-loss harvesting can improve after-tax returns in years when there is meaningful dispersion among individual holdings and available losses to harvest, but the outcome depends on market conditions, account size, and tax bracket, and it involves added trading activity and cost compared to a simple index fund. In years when a market or index rises steadily with little dispersion, there may be few or no losses available to harvest. It is a tax-efficiency tool, not a guaranteed source of additional return, and results vary by individual circumstances."
+      "question": "Does direct indexing guarantee a tax benefit?",
+      "answer": "No. Available losses, tax treatment, costs, market conditions, account restrictions, and the investor's circumstances all affect the result. In some periods there may be little or no loss to harvest. Direct indexing should be evaluated as part of a broader financial and tax plan rather than as a guaranteed source of tax savings."
     }
-  ]
+  ],
+  "ctaFocus": "taxable-account and tax-planning questions",
+  "reviewedByline": true
 }
