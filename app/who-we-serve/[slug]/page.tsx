@@ -101,11 +101,62 @@ function ServicesGrid({
   heading,
   subheading,
   services,
+  founderVariant = false,
 }: {
   heading: string;
   subheading: string;
   services: { title: string; description: string; href: string }[];
+  founderVariant?: boolean;
 }): ReactNode {
+  if (founderVariant) {
+    return (
+      <section className="relative w-full overflow-hidden bg-[#1e3a5f] py-24 sm:py-32 text-white">
+        <div aria-hidden="true" className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.42)_1px,transparent_0)] [background-size:24px_24px]" />
+        <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div className="lg:sticky lg:top-12 lg:self-start">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-200">
+                Your founder planning desk
+              </p>
+              <h2 className="mt-5 text-3xl font-medium font-serif leading-tight sm:text-4xl lg:text-5xl">
+                {heading}
+              </h2>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
+                {subheading}
+              </p>
+              <div className="mt-8 h-px w-20 bg-sky-200/80" />
+              <p className="mt-5 max-w-md text-sm leading-relaxed text-white/60">
+                Different questions may need attention at different stages. Start with the area most relevant to your next decision.
+              </p>
+            </div>
+            <div className="divide-y divide-white/15 border-y border-white/15">
+              {services.map((service, index) => (
+                <Link
+                  key={service.href}
+                  href={service.href}
+                  className="group grid grid-cols-[auto_1fr_auto] gap-x-5 py-7 sm:gap-x-7 sm:py-9"
+                >
+                  <span className="font-serif text-3xl leading-none text-sky-200/80 sm:text-4xl">
+                    0{index + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-sky-200">
+                      {service.title}
+                    </h3>
+                    <p className="mt-3 max-w-xl leading-relaxed text-white/70">
+                      {service.description}
+                    </p>
+                  </div>
+                  <ArrowRight className="mt-1 h-5 w-5 text-sky-200 transition-transform group-hover:translate-x-1" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative w-full bg-background py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -321,6 +372,7 @@ export default async function PersonaPage({
           heading={persona.servicesHeading}
           subheading={persona.servicesSubheading}
           services={persona.services}
+          founderVariant={persona.slug === "startup-founders"}
         />
         <FounderPlanningSections
           planningStages={persona.planningStages}
