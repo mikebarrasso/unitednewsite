@@ -140,6 +140,96 @@ function ServicesGrid({
   );
 }
 
+function FounderPlanningSections({
+  planningStages,
+  preparationItems,
+  resources,
+}: {
+  planningStages?: { title: string; description: string }[] | undefined;
+  preparationItems?: string[] | undefined;
+  resources?: { title: string; description: string; href: string }[] | undefined;
+}): ReactNode {
+  if (!planningStages && !preparationItems && !resources) return null;
+
+  return (
+    <>
+      {planningStages && (
+        <section className="relative w-full bg-muted py-24 sm:py-32 overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#1e6eae]">
+              A coordinated planning process
+            </p>
+            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground max-w-3xl">
+              Planning Through Each Stage of Founder Wealth
+            </h2>
+            <p className="mt-4 text-foreground/60 max-w-2xl leading-relaxed">
+              Founder planning is not a one-time event. The questions can change as your ownership, income, company, and personal priorities evolve.
+            </p>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {planningStages.map((stage, index) => (
+                <div key={stage.title} className="rounded-xl border border-border bg-background p-6 sm:p-8">
+                  <span className="text-sm font-semibold text-[#1e6eae]">0{index + 1}</span>
+                  <h3 className="mt-3 text-lg font-semibold text-foreground">{stage.title}</h3>
+                  <p className="mt-3 text-foreground/60 leading-relaxed">{stage.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      {preparationItems && (
+        <section className="relative w-full bg-background py-24 sm:py-28 overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-start">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#1e6eae]">
+                Optional preparation
+              </p>
+              <h2 className="mt-4 text-3xl sm:text-4xl font-medium font-serif leading-tight text-foreground">
+                A Few Documents Can Make the First Conversation More Productive
+              </h2>
+              <p className="mt-4 text-foreground/60 leading-relaxed">
+                You do not need to have everything organized before reaching out. If these documents are readily available, they can provide useful context.
+              </p>
+            </div>
+            <ul className="space-y-3 rounded-xl border border-border bg-muted p-6 sm:p-8">
+              {preparationItems.map((item) => (
+                <li key={item} className="flex gap-3 text-foreground/70 leading-relaxed">
+                  <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#1e6eae]" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+      {resources && (
+        <section className="relative w-full bg-muted py-24 sm:py-28 overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#1e6eae]">
+              Founder resources
+            </p>
+            <h2 className="mt-4 text-3xl sm:text-4xl font-medium font-serif leading-tight text-foreground">
+              Explore the Questions Behind the Decisions
+            </h2>
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {resources.map((resource) => (
+                <Link key={resource.href} href={resource.href} className="group rounded-xl border border-border bg-background p-6 sm:p-8 hover:border-foreground/20 transition-colors">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-[#1e6eae] transition-colors">{resource.title}</h3>
+                  <p className="mt-3 text-foreground/60 leading-relaxed">{resource.description}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground/50 group-hover:text-[#1e6eae] transition-colors">
+                    Read the article
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </>
+  );
+}
+
 function RelatedPersonas({ slug }: { slug: string }): ReactNode {
   const related = getRelatedPersonas(slug);
   if (related.length === 0) return null;
@@ -231,6 +321,11 @@ export default async function PersonaPage({
           heading={persona.servicesHeading}
           subheading={persona.servicesSubheading}
           services={persona.services}
+        />
+        <FounderPlanningSections
+          planningStages={persona.planningStages}
+          preparationItems={persona.preparationItems}
+          resources={persona.resources}
         />
         <FeatureHighlight />
         <LocalFAQ

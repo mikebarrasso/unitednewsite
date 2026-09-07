@@ -15,6 +15,9 @@ export type Persona = {
   servicesHeading: string;
   servicesSubheading: string;
   services: { title: string; description: string; href: string }[];
+  planningStages?: { title: string; description: string }[];
+  preparationItems?: string[];
+  resources?: { title: string; description: string; href: string }[];
   faqs: { question: string; answer: string }[];
   faqHeading: string;
   lastUpdated: string;
@@ -369,103 +372,157 @@ export const personas: Persona[] = [
   {
     slug: "startup-founders",
     name: "Founders",
-    seoTitle: "Financial Advisor for Startup Founders",
+    seoTitle: "Financial Planning for Startup Founders",
     metaDescription:
-      "Fee-only financial planning for startup founders. We handle equity, taxes, and wealth strategy — from 83(b) elections to post-exit diversification.",
-    h1: "Your Equity Is Complex. Your Financial Plan Should Account for All of It.",
+      "Financial planning for startup founders, coordinating equity decisions, tax planning, liquidity events, and personal wealth planning with CFP® professionals, CPAs, and Enrolled Agents.",
+    h1: "Founder Equity Decisions Deserve a Coordinated Financial Plan",
     heroSubtitle:
-      "From 83(b) elections and QSBS planning to liquidity events and what comes after, we help founders translate cap-table complexity into a personal financial plan built around how you actually earn wealth.",
+      "Equity grants, tax elections, company milestones, and personal goals can intersect quickly. Our CFP® professionals, CPAs, and Enrolled Agents help founders organize the planning questions around ownership, taxes, liquidity, and life beyond the company.",
     eyebrow: "For Founders",
     icon: "Rocket",
     imageUrl:
       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
     imageAlt: "Startup founder working through strategy with their team",
     problemsHeading:
-      "Your Cap Table Doesn't Fit a Standard Financial Plan",
+      "Your Cap Table Does Not Fit a Standard Financial Plan",
     problemsSubheading:
-      "Founder wealth is built differently — through equity stakes, irregular draws, and events that can shift your net worth dramatically in a single day. Most financial planning frameworks weren't designed with any of that in mind.",
+      "Founder wealth may be tied to equity, irregular compensation, and decisions that affect both company ownership and personal finances. A useful plan needs to account for those connections.",
     problems: [
       {
-        heading: "Missing the 83(b) window costs you later",
+        heading: "Equity tax elections have short decision windows",
         description:
-          "You have 30 days from the date of your equity grant to file an 83(b) election. Miss it and you may owe ordinary income tax on stock that hasn't generated a dollar of real liquidity yet. Most general financial planners don't catch this in time — or at all.",
+          "An 83(b) election is generally due within 30 days after a qualifying property transfer. The decision can involve tax, valuation, and liquidity considerations, so founders may benefit from coordinating with their tax and legal professionals promptly.",
       },
       {
-        heading: "QSBS exclusions require proactive, coordinated planning",
+        heading: "QSBS planning depends on facts and documentation",
         description:
-          "Qualified Small Business Stock can shield a significant portion of your gain from federal capital gains tax — but only if the right conditions are met and maintained. The rules are technical, the recordkeeping is ongoing, and the tax savings are forfeited if the planning isn't done correctly from the start.",
+          "Section 1202 treatment depends on statutory requirements, holding periods, company circumstances, and records that may need attention over time. We help integrate the financial and tax planning questions with your broader personal plan, alongside appropriate legal guidance.",
       },
       {
-        heading: "A liquidity event is not a financial plan",
+        heading: "Liquidity can create several decisions at once",
         description:
-          "A secondary sale or company exit can put more money in your account than you've ever seen at once. Without a plan for diversification, tax management, and long-term structure, the window for optimal decision-making closes fast.",
+          "A secondary sale or company exit may change your cash flow, tax picture, concentration, and estate considerations at the same time. Coordinated planning can help you evaluate trade-offs before acting under time pressure.",
       },
       {
-        heading: "Your income doesn't fit a standard financial model",
+        heading: "Founder income can change from year to year",
         description:
-          "Founder compensation often looks nothing like a W-2 salary — it's irregular draws, equity-heavy, and tied to milestones you can't always predict. Advisors who work primarily with salaried employees will build a plan that doesn't fit your reality.",
+          "Salary, draws, equity, and company milestones may not follow a predictable schedule. Your personal plan should reflect the uncertainty, liquidity constraints, and tax considerations that come with that structure.",
       },
     ],
     servicesHeading:
-      "From Cap Table to Personal Wealth — Fully Coordinated",
+      "From Cap Table to Personal Planning, Coordinated",
     servicesSubheading:
-      "Our CFP® professionals, CPAs, and Enrolled Agents work as a single team, so your equity planning, tax strategy, and personal financial plan are built together from the start — not patched together at year-end.",
+      "Our CFP® professionals, CPAs, and Enrolled Agents work together so equity planning, tax questions, and personal financial decisions can be considered in the same conversation.",
     services: [
       {
         title: "Equity Compensation Planning",
         description:
-          "We work through the details that matter to founders: 83(b) elections, ISO vs. NSO treatment, QSBS eligibility, early exercise strategy, and how your equity fits into the broader picture of your personal wealth.",
+          "We help founders organize the questions around equity grants, tax elections, early exercise decisions, QSBS considerations, and how ownership fits within a broader personal plan.",
         href: "/services/equity-compensation",
       },
       {
         title: "Tax Planning",
         description:
-          "Our CFPs, CPAs, and Enrolled Agents work together — not in separate offices — so the tax strategy behind your equity decisions is built into your financial plan from the beginning, not bolted on at the end of the year.",
+          "Our CFP® professionals, CPAs, and Enrolled Agents coordinate tax planning with the financial decisions surrounding equity, cash flow, and company milestones throughout the year.",
         href: "/services/tax-planning",
       },
       {
         title: "Financial Planning",
         description:
-          "We help you turn a cap table into a personal balance sheet: mapping out your net worth across liquid and illiquid assets, building a plan around volatile income, and giving you a clear picture of where you stand.",
+          "We help you organize liquid and illiquid assets, personal cash needs, evolving income, and long-term goals into a plan that reflects your circumstances.",
         href: "/services/financial-planning",
       },
       {
         title: "Investment Management",
         description:
-          "Post-liquidity, concentrated positions and diversification decisions require careful coordination with your tax situation. We manage investments with your full financial picture in view, not in isolation from it.",
+          "Following a liquidity event, investment decisions may need to be considered alongside taxes, concentration, cash needs, and your broader financial plan.",
         href: "/services/investment-management",
+      },
+    ],
+    planningStages: [
+      {
+        title: "Before an equity decision",
+        description:
+          "Review grant documents, timing considerations, cash needs, and the tax or legal questions that may need attention before you act.",
+      },
+      {
+        title: "As the company grows",
+        description:
+          "Coordinate evolving compensation, estimated taxes, personal cash flow, and planning priorities as circumstances change.",
+      },
+      {
+        title: "Before a liquidity event",
+        description:
+          "Assess tax exposure, concentration, charitable and estate considerations, and near-term liquidity needs before a sale or exit.",
+      },
+      {
+        title: "After liquidity",
+        description:
+          "Revisit cash flow, investment management, tax preparation, and long-term family goals in light of your new circumstances.",
+      },
+    ],
+    preparationItems: [
+      "An equity summary or cap table, if available",
+      "Grant agreements and exercise history",
+      "Your most recent tax return",
+      "Expected company milestones or liquidity constraints",
+      "Existing estate documents, if applicable",
+    ],
+    resources: [
+      {
+        title: "QSBS and Section 1202 planning",
+        description:
+          "A detailed overview of questions founders and pre-IPO employees may need to consider around Qualified Small Business Stock.",
+        href: "/blog/qsbs-exclusion-section-1202-planning",
+      },
+      {
+        title: "Equity compensation planning for startup employees",
+        description:
+          "How equity compensation can connect with tax planning and a broader personal financial plan.",
+        href: "/blog/equity-compensation-planning-startup-employees",
+      },
+      {
+        title: "ISO and NSO tax considerations",
+        description:
+          "An educational comparison of incentive stock options and nonqualified stock options for New York startup employees.",
+        href: "/blog/equity-compensation-isos-vs-nsos-ny-startup-employees",
+      },
+      {
+        title: "Planning around a concentrated stock position",
+        description:
+          "Questions to consider when a substantial share of personal wealth is tied to one company position.",
+        href: "/blog/tax-efficient-diversification-unwind-concentrated-stock",
       },
     ],
     faqs: [
       {
-        question: "Do you work with founders before a liquidity event?",
+        question: "When should a founder involve a financial planner?",
         answer:
-          "Yes — and that's often when the planning matters most. Decisions made around early equity grants, QSBS eligibility, and 83(b) elections have long-term consequences that are difficult or impossible to reverse later. We work with founders at every stage, not just after an exit.",
+          "A planning conversation can be useful before an equity election, exercise decision, secondary sale, or anticipated liquidity event. Earlier coordination may provide more time to identify questions for your tax and legal professionals, but the appropriate timing depends on your circumstances.",
       },
       {
-        question: "What does fee-only mean, and why does it matter?",
+        question: "What information is useful to bring to a first conversation?",
         answer:
-          "Fee-only means we are paid directly by you — not through commissions, product sales, or referral fees. We act as fiduciaries, which means we are legally required to act in your interest. This structure removes the financial incentives that can skew advice at commission-based firms.",
+          "If convenient, an equity summary, grant agreements, exercise history, recent tax return, and notes about upcoming company milestones can help us understand the planning questions. You do not need to have every document organized before reaching out.",
       },
       {
-        question:
-          "How does having financial planners and CPAs on the same team help founders?",
+        question: "How do you coordinate with my startup attorney and outside tax counsel?",
         answer:
-          "Founder wealth is built through equity, which means tax decisions and financial planning decisions are inseparable. When your CFP® and your CPA are on the same team — reviewing the same information, communicating in real time — the advice you receive is coordinated rather than siloed. That matters especially around 83(b) filings, AMT exposure from ISO exercises, and QSBS structuring.",
+          "We can work alongside your existing professionals to help align the personal financial planning and tax questions with the legal work they provide. Legal and tax conclusions remain with the appropriate licensed professional.",
       },
       {
-        question: "Can you help me understand my QSBS eligibility?",
+        question: "What should I consider before a secondary sale?",
         answer:
-          "Yes. We evaluate whether your shares qualify under Section 1202, assess whether the five-year holding period and other requirements are being maintained, and build that potential exclusion into your broader tax and financial plan. QSBS planning requires ongoing attention, not a one-time check.",
+          "The decision may involve tax consequences, liquidity needs, ownership restrictions, concentration, and personal goals. We help organize those financial planning questions with your tax situation in view, while you coordinate company and legal requirements with the appropriate parties.",
       },
       {
-        question: "What happens to my financial plan after an exit?",
+        question: "How can I evaluate QSBS considerations?",
         answer:
-          "A liquidity event typically triggers decisions around tax liability, asset diversification, estate planning considerations, and long-term investment structure — all at once, often under time pressure. We help you work through those decisions in a deliberate, coordinated way, so the plan you build after an exit reflects what you actually want your wealth to do.",
+          "Section 1202 treatment depends on the facts, documentation, holding periods, and other statutory requirements. We can help incorporate the tax planning questions into your broader financial plan and coordinate with your tax and legal professionals as appropriate.",
       },
     ],
     faqHeading: "Common Questions From Founders",
-    lastUpdated: "March 2026",
+    lastUpdated: "September 2026",
     relatedPersonaSlugs: ["software-engineers", "executives"],
     serviceTypes: [
       "Equity Compensation Planning",
