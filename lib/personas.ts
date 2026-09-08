@@ -576,7 +576,7 @@ export const personas: Persona[] = [
     servicesHeading:
       "One Team for Your Comp, Taxes, and Wealth",
     servicesSubheading:
-      "Our CFP® professionals, CPAs, and Enrolled Agents work together on your financial plan — so your equity strategy, tax withholding, and long-term goals are always moving in the same direction.",
+      "Our CFP® professionals, CPAs, and Enrolled Agents work together on your financial plan, so your equity strategy, tax withholding, and long-term goals can move in the same direction.",
     services: [
       {
         title: "Equity Compensation Planning",

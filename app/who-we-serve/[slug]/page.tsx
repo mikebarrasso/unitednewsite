@@ -149,11 +149,13 @@ function ServicesGrid({
   subheading,
   services,
   founderVariant = false,
+  softwareEngineerVariant = false,
 }: {
   heading: string;
   subheading: string;
   services: { title: string; description: string; href: string }[];
   founderVariant?: boolean;
+  softwareEngineerVariant?: boolean;
 }): ReactNode {
   if (founderVariant) {
     return (
@@ -198,6 +200,53 @@ function ServicesGrid({
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (softwareEngineerVariant) {
+    return (
+      <section className="relative w-full overflow-hidden bg-[#1e3a5f] py-24 text-white sm:py-32">
+        <div aria-hidden="true" className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.42)_1px,transparent_0)] [background-size:24px_24px]" />
+        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-12">
+          <div className="lg:sticky lg:top-12 lg:self-start">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-200">
+              Your integrated planning team
+            </p>
+            <h2 className="mt-5 max-w-xl font-serif text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
+              {heading}
+            </h2>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
+              {subheading}
+            </p>
+            <div className="mt-8 h-px w-20 bg-sky-200/80" />
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-white/60">
+              Each area informs the others, so the questions around your compensation can be considered in the context of your wider financial picture.
+            </p>
+          </div>
+          <div className="divide-y divide-white/15 border-y border-white/15">
+            {services.map((service, index) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="group grid grid-cols-[auto_1fr_auto] gap-x-5 py-7 sm:gap-x-7 sm:py-9"
+              >
+                <span className="font-serif text-3xl leading-none text-sky-200/80 sm:text-4xl">
+                  0{index + 1}
+                </span>
+                <div>
+                  <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-sky-200">
+                    {service.title}
+                  </h3>
+                  <p className="mt-3 max-w-xl leading-relaxed text-white/70">
+                    {service.description}
+                  </p>
+                </div>
+                <ArrowRight className="mt-1 h-5 w-5 text-sky-200 transition-transform group-hover:translate-x-1" />
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -421,6 +470,7 @@ export default async function PersonaPage({
           subheading={persona.servicesSubheading}
           services={persona.services}
           founderVariant={persona.slug === "startup-founders"}
+          softwareEngineerVariant={persona.slug === "software-engineers"}
         />
         <FounderPlanningSections
           planningStages={persona.planningStages}
