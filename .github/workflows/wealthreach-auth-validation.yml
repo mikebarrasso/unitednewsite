@@ -1,0 +1,8 @@
+name: WealthReach authentication validation
+on:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "true"
