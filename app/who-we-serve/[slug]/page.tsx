@@ -63,11 +63,58 @@ function ProblemSection({
   heading,
   subheading,
   problems,
+  softwareEngineerVariant = false,
 }: {
   heading: string;
   subheading: string;
   problems: { heading: string; description: string }[];
+  softwareEngineerVariant?: boolean;
 }): ReactNode {
+  if (softwareEngineerVariant) {
+    return (
+      <section className="relative w-full overflow-hidden bg-[#1e3a5f] py-24 text-white sm:py-32">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.42)_1px,transparent_0)] [background-size:24px_24px]"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div className="lg:sticky lg:top-12 lg:self-start">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-200">
+                Planning pressure points
+              </p>
+              <h2 className="mt-5 max-w-xl font-serif text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
+                {heading}
+              </h2>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
+                {subheading}
+              </p>
+              <div className="mt-8 h-px w-20 bg-sky-200/80" />
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+              {problems.map((problem, index) => (
+                <div
+                  key={problem.heading}
+                  className="rounded-xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm sm:p-8"
+                >
+                  <span className="text-sm font-semibold text-sky-200">
+                    0{index + 1}
+                  </span>
+                  <h3 className="mt-4 text-lg font-semibold text-white">
+                    {problem.heading}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-white/70">
+                    {problem.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative w-full bg-muted py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -367,6 +414,7 @@ export default async function PersonaPage({
           heading={persona.problemsHeading}
           subheading={persona.problemsSubheading}
           problems={persona.problems}
+          softwareEngineerVariant={persona.slug === "software-engineers"}
         />
         <ServicesGrid
           heading={persona.servicesHeading}
