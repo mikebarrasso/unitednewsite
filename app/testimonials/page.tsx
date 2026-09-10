@@ -53,7 +53,7 @@ export default function TestimonialsPage(): ReactNode {
               Client Testimonials
             </h1>
             <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
-              Don&apos;t take our word for it &mdash; hear directly from the
+              Don&apos;t take our word for it , hear directly from the
               clients we serve every day.
             </p>
           </div>

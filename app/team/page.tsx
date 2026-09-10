@@ -120,7 +120,7 @@ export default function TeamPage(): ReactNode {
             </h1>
             <p className="mt-6 text-lg text-foreground/60 max-w-2xl leading-relaxed">
               CFP® professionals, CPAs, and Enrolled Agents working together under one roof
-              &mdash; so every aspect of your financial life is understood,
+              , so every aspect of your financial life is understood,
               coordinated, and optimized.
             </p>
           </div>

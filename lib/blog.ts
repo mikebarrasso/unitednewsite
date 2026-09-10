@@ -342,7 +342,7 @@ function decodeHeadingText(raw: string): string {
     .replace(/&amp;/gi, "&")
     .replace(/&ldquo;|&rdquo;|&quot;/gi, '"')
     .replace(/&lsquo;|&rsquo;|&#8217;/gi, "\u2019")
-    .replace(/&mdash;/gi, "\u2014")
+    .replace(/&mdash;/gi, ",")
     .replace(/&ndash;/gi, "\u2013")
     .replace(/&reg;/gi, "\u00ae")
     .replace(/&trade;/gi, "\u2122")

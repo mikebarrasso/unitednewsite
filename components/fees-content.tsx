@@ -129,7 +129,7 @@ export function FeesHero() {
           className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-2xl"
         >
           You should know exactly what you&apos;re paying and exactly what
-          you&apos;re getting &mdash; before we start working together.
+          you&apos;re getting , before we start working together.
           Here&apos;s how it works.
         </motion.p>
 
@@ -270,7 +270,7 @@ export function ProcessSection() {
                 transition={{ duration: 0.5, ease }}
                 className="text-2xl sm:text-3xl md:text-4xl font-medium font-serif text-foreground mb-6"
               >
-                A Conversation &mdash; Not a Sales Pitch
+                A Conversation , Not a Sales Pitch
               </motion.h3>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -283,8 +283,8 @@ export function ProcessSection() {
                   This is where we get to know each other. You&apos;ll meet with
                   one of our advisors, who will ask about your situation, your
                   goals, and what you&apos;re looking for in an advisory
-                  relationship. We&apos;ll explain how we can help &mdash; in
-                  plain English, with no jargon &mdash; and answer any questions
+                  relationship. We&apos;ll explain how we can help , in
+                  plain English, with no jargon , and answer any questions
                   you have.
                 </p>
                 <p>
@@ -404,7 +404,7 @@ export function ProcessSection() {
                 <p>
                   This is where we build the foundation. Your financial plan is
                   a tailored roadmap that addresses every aspect of your
-                  financial life &mdash; investments, taxes, retirement income,
+                  financial life , investments, taxes, retirement income,
                   risk management, and beyond.
                 </p>
                 <p>
@@ -412,7 +412,7 @@ export function ProcessSection() {
                   specific situation, stress-test your plan against real tax
                   scenarios, and make sure every recommendation is coordinated.
                   You&apos;ll walk away with complete clarity on where you stand,
-                  what to do next, and why &mdash; with no question left
+                  what to do next, and why , with no question left
                   unanswered.
                 </p>
                 <p>
@@ -518,13 +518,13 @@ export function ProcessSection() {
                   This is where your financial plan comes to life. We implement
                   your strategy, manage your investments, and provide ongoing
                   coordination between your financial plan, your portfolio, and
-                  your taxes &mdash; all year, every year.
+                  your taxes , all year, every year.
                 </p>
                 <p>
                   This is also where United&apos;s integrated model delivers the
                   most value. Your investments are managed with your tax return
                   in mind. Your tax plan is updated when your portfolio changes.
-                  And your financial plan evolves alongside both &mdash; because
+                  And your financial plan evolves alongside both , because
                   the same team handles all three.
                 </p>
               </motion.div>
@@ -633,9 +633,9 @@ export function SubscriptionSection() {
             >
               <p>
                 If you&apos;re a high-earning professional with less than $500K
-                in investable assets &mdash; maybe you&apos;re early in your
+                in investable assets , maybe you&apos;re early in your
                 career, accumulating equity compensation, or growing a business
-                &mdash; our subscription model gives you access to the same
+                , our subscription model gives you access to the same
                 integrated advisory team without an AUM requirement.
               </p>
               <p>
@@ -795,7 +795,7 @@ export function FeesClosingSection() {
           transition={{ duration: 0.5, delay: 0.1, ease }}
           className="text-foreground/60 text-base sm:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
         >
-          We&apos;re happy to walk through our fee structure in detail &mdash;
+          We&apos;re happy to walk through our fee structure in detail ,
           no obligation, no pressure. The introductory call is the easiest way
           to get a clear picture of what working together would look like and
           what it would cost for your specific situation.

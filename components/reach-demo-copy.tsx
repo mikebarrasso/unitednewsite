@@ -32,7 +32,7 @@ function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {
       <h1 className="leading-tighter w-full max-w-4xl text-left font-serif text-4xl font-medium tracking-tight text-white sm:text-5xl md:text-6xl lg:text-center">
         {demoReview ? (
           <>
-            Retire with a plan you understand &mdash; and a team that answers.
+            Retire with a plan you understand , and a team that answers.
           </>
         ) : (
           <>Integrated Financial Planning, Wealth Management &amp; Tax</>

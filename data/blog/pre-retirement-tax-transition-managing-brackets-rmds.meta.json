@@ -26,7 +26,7 @@
     },
     {
       "question": "What is a Qualified Charitable Distribution?",
-      "answer": "A Qualified Charitable Distribution (QCD) allows IRA owners who are age 70½ or older to transfer up to $105,000 per year (indexed for inflation after 2023) directly from their IRA to a qualified charity. The QCD counts toward the IRA owner&rsquo;s RMD for the year but is excluded from their taxable income. This is more tax-efficient than taking an RMD and then donating cash, because the QCD exclusion reduces Adjusted Gross Income directly&mdash;which can lower Social Security taxation, reduce IRMAA exposure, and keep the donor in a lower tax bracket."
+      "answer": "A Qualified Charitable Distribution (QCD) allows IRA owners who are age 70½ or older to transfer up to $105,000 per year (indexed for inflation after 2023) directly from their IRA to a qualified charity. The QCD counts toward the IRA owner&rsquo;s RMD for the year but is excluded from their taxable income. This is more tax-efficient than taking an RMD and then donating cash, because the QCD exclusion reduces Adjusted Gross Income directly,which can lower Social Security taxation, reduce IRMAA exposure, and keep the donor in a lower tax bracket."
     }
   ]
 }
