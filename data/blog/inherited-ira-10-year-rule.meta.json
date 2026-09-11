@@ -1,0 +1,31 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "roth-conversion-strategy-pre-retirees"
+  ],
+  "faqs": [
+    {
+      "question": "Does the inherited IRA 10-year rule require distributions every year?",
+      "answer": "Not in every case. For many non-spouse designated beneficiaries, annual RMDs generally apply during years one through nine when the original owner died on or after the required beginning date. When the owner died before that date, annual distributions are generally not required, but the account generally must still be fully distributed by the end of year 10."
+    },
+    {
+      "question": "When does the 10-year period for an inherited IRA end?",
+      "answer": "For an account subject to the 10-year rule, the inherited IRA generally must be fully distributed by December 31 of the 10th calendar year after the original owner's death."
+    },
+    {
+      "question": "Are spouses subject to the same inherited IRA 10-year rule?",
+      "answer": "A surviving spouse may have options that differ from those available to a non-spouse beneficiary. The appropriate approach depends on the account, beneficiary designation, age, and other facts."
+    },
+    {
+      "question": "Do inherited Roth IRAs have annual RMDs during the 10-year period?",
+      "answer": "A typical non-eligible designated beneficiary subject to the 10-year rule generally does not have annual RMDs in years one through nine for an inherited Roth IRA, but the account generally must still be fully distributed by the end of year 10."
+    }
+  ],
+  "ctaFocus": "inherited IRA distribution timing and tax planning",
+  "reviewedByline": true
+}
