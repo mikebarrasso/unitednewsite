@@ -3,6 +3,8 @@
 import { type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CookieSettingsButton } from "@/components/consent/cookie-settings-button";
+import { siteConfig } from "@/lib/config";
 
 const footerLinks = {
   services: {
@@ -150,6 +152,9 @@ export function Footer(): ReactNode {
                     {link.label}
                   </Link>
                 ))}
+                {siteConfig.visitors?.enabled && (
+                  <CookieSettingsButton className="text-sm text-foreground/50 dark:text-white hover:text-foreground dark:hover:text-white transition-colors" />
+                )}
               </div>
             </div>
             <p className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
