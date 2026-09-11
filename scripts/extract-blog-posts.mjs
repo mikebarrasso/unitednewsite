@@ -1,6 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-import { blogPosts } from "../lib/blog.ts";
+import { getAllPosts } from "../lib/blog.ts";
+
+const blogPosts = getAllPosts();
 
 const blogDirectory = new URL("../data/blog/", import.meta.url);
 const mediaModule = new URL("../lib/blog-media.ts", import.meta.url);

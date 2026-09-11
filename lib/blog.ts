@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { basename, join } from "node:path";
 
 import {
@@ -151,7 +151,15 @@ type BlogPostMeta = {
 
 const BLOG_DIRECTORY = join(process.cwd(), "data/blog");
 const ORDER_MANIFEST = join(BLOG_DIRECTORY, "order.json");
-const frontmatterBySlug = new Map<string, PostFrontmatter>();
+
+type BlogIndex = {
+  /** Legacy order first, then newly authored file posts by filename. */
+  posts: BlogPost[];
+  postBySlug: Map<string, BlogPost>;
+  frontmatterBySlug: Map<string, PostFrontmatter>;
+  /** Directory listing + mtimes; changes when any post file changes. */
+  fingerprint: string;
+};
 
 function requiredScalar(
   frontmatter: PostFrontmatter,
@@ -172,7 +180,10 @@ function requiredScalar(
   return value;
 }
 
-function loadBlogPost(fileName: string): BlogPost {
+function loadBlogPost(
+  fileName: string,
+  frontmatterBySlug: Map<string, PostFrontmatter>,
+): BlogPost {
   const slug = basename(fileName, ".mdx");
   const source = readFileSync(join(BLOG_DIRECTORY, fileName), "utf8");
   const { frontmatter, body } = parseBlogDocument(source);
@@ -207,65 +218,114 @@ function loadBlogPost(fileName: string): BlogPost {
   return post;
 }
 
-const fileBlogPosts = readdirSync(BLOG_DIRECTORY)
-  .filter((fileName) => fileName.endsWith(".mdx"))
-  .sort((a, b) => a.localeCompare(b))
-  .map(loadBlogPost);
-
-for (const post of mediaPosts) {
-  frontmatterBySlug.set(post.slug, {
-    title: post.title,
-    description: post.excerpt,
-    publishedAt: post.date,
-    ...(post.updatedDate ? { updatedAt: post.updatedDate } : {}),
-    author: post.author,
-    category: post.category,
-    ...(post.image ? { image: post.image } : {}),
-    ...(post.imageAlt ? { imageAlt: post.imageAlt } : {}),
-  });
+function listBlogFiles(): string[] {
+  return readdirSync(BLOG_DIRECTORY)
+    .filter((fileName) => fileName.endsWith(".mdx"))
+    .sort((a, b) => a.localeCompare(b));
 }
 
-const postBySlug = new Map<string, BlogPost>();
-for (const post of [...fileBlogPosts, ...mediaPosts]) {
-  if (postBySlug.has(post.slug)) {
-    throw new Error('Duplicate blog slug: "' + post.slug + '".');
+/** Cheap change detector for development: names, sizes and mtimes of every
+ * file the index is built from. Never used in production. */
+function blogDirectoryFingerprint(): string {
+  return readdirSync(BLOG_DIRECTORY)
+    .sort((a, b) => a.localeCompare(b))
+    .map((fileName) => {
+      const stats = statSync(join(BLOG_DIRECTORY, fileName));
+      return fileName + ":" + stats.size + ":" + stats.mtimeMs;
+    })
+    .join("|");
+}
+
+function buildBlogIndex(fingerprint: string): BlogIndex {
+  const frontmatterBySlug = new Map<string, PostFrontmatter>();
+  const fileBlogPosts = listBlogFiles().map((fileName) =>
+    loadBlogPost(fileName, frontmatterBySlug),
+  );
+
+  for (const post of mediaPosts) {
+    frontmatterBySlug.set(post.slug, {
+      title: post.title,
+      description: post.excerpt,
+      publishedAt: post.date,
+      ...(post.updatedDate ? { updatedAt: post.updatedDate } : {}),
+      author: post.author,
+      category: post.category,
+      ...(post.image ? { image: post.image } : {}),
+      ...(post.imageAlt ? { imageAlt: post.imageAlt } : {}),
+    });
   }
-  postBySlug.set(post.slug, post);
+
+  const postBySlug = new Map<string, BlogPost>();
+  for (const post of [...fileBlogPosts, ...mediaPosts]) {
+    if (postBySlug.has(post.slug)) {
+      throw new Error('Duplicate blog slug: "' + post.slug + '".');
+    }
+    postBySlug.set(post.slug, post);
+  }
+
+  const preservedOrder = JSON.parse(
+    readFileSync(ORDER_MANIFEST, "utf8"),
+  ) as string[];
+  const orderedSlugs = new Set(preservedOrder);
+  const orderedPosts = preservedOrder.flatMap((slug) => {
+    const post = postBySlug.get(slug);
+    return post ? [post] : [];
+  });
+  const newlyAuthoredPosts = fileBlogPosts.filter(
+    (post) => !orderedSlugs.has(post.slug),
+  );
+
+  /**
+   * Preserves the legacy array order for byte-identical rendering. Newly
+   * authored file posts append deterministically by filename until a
+   * publishing workflow establishes their final order in data/blog/order.json.
+   */
+  return {
+    posts: [...orderedPosts, ...newlyAuthoredPosts],
+    postBySlug,
+    frontmatterBySlug,
+    fingerprint,
+  };
 }
 
-const preservedOrder = JSON.parse(
-  readFileSync(ORDER_MANIFEST, "utf8"),
-) as string[];
-const orderedSlugs = new Set(preservedOrder);
-const orderedPosts = preservedOrder.flatMap((slug) => {
-  const post = postBySlug.get(slug);
-  return post ? [post] : [];
-});
-const newlyAuthoredPosts = fileBlogPosts.filter(
-  (post) => !orderedSlugs.has(post.slug),
-);
+let cachedIndex: BlogIndex | null = null;
 
 /**
- * Preserves the legacy array order for byte-identical rendering. Newly authored
- * file posts append deterministically by filename until a publishing workflow
- * establishes their final order in data/blog/order.json.
+ * The index is built at REQUEST time, never at module evaluation.
+ *
+ * In production the files are immutable for the life of the deployment, so
+ * the first build is memoised for the process. In development the WealthReach
+ * editor writes `data/blog/*.mdx` into a running `next dev` box; those files
+ * are not part of the module graph, so nothing re-evaluates this module when
+ * they change. Re-checking the directory fingerprint per call keeps the
+ * editor preview honest about what is on disk without a dev-server restart.
  */
-export const blogPosts: BlogPost[] = [...orderedPosts, ...newlyAuthoredPosts];
+function getBlogIndex(): BlogIndex {
+  if (process.env.NODE_ENV === "production") {
+    cachedIndex ??= buildBlogIndex("production");
+    return cachedIndex;
+  }
+  const fingerprint = blogDirectoryFingerprint();
+  if (!cachedIndex || cachedIndex.fingerprint !== fingerprint) {
+    cachedIndex = buildBlogIndex(fingerprint);
+  }
+  return cachedIndex;
+}
 
 export function getBlogPosts(): BlogPost[] {
-  return blogPosts.filter((post) => post.type === "blog");
+  return getBlogIndex().posts.filter((post) => post.type === "blog");
 }
 
 export function getMediaMentions(): BlogPost[] {
-  return blogPosts.filter((post) => post.type === "media");
+  return getBlogIndex().posts.filter((post) => post.type === "media");
 }
 
 export function getAllPosts(): BlogPost[] {
-  return blogPosts;
+  return getBlogIndex().posts;
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
-  return postBySlug.get(slug);
+  return getBlogIndex().postBySlug.get(slug);
 }
 
 /** Frontmatter stays module-private on BlogPost objects so the public API shape is unchanged. */
@@ -273,13 +333,14 @@ export function getPostFrontmatter(
   post: BlogPost | string,
 ): PostFrontmatter {
   const slug = typeof post === "string" ? post : post.slug;
-  return frontmatterBySlug.get(slug) ?? {};
+  return getBlogIndex().frontmatterBySlug.get(slug) ?? {};
 }
 
 export function getRelatedPosts(
   post: BlogPost,
   { includeNotLive = false }: { includeNotLive?: boolean } = {},
 ): BlogPost[] {
+  const { postBySlug } = getBlogIndex();
   return post.relatedSlugs
     .map((slug) => postBySlug.get(slug))
     .filter(
