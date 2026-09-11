@@ -1,5 +1,29 @@
 import siteConfigData from "../data/site-config.json";
 
+/** Missing or invalid visitor settings leave Website Intelligence disabled. */
+function parseVisitors(value: unknown): {
+  visitors?: { enabled: boolean; siteScriptUrl: string; recordings: boolean };
+} {
+  if (!value || typeof value !== "object") return {};
+  const visitors = value as Record<string, unknown>;
+  let siteScriptUrl = "";
+  try {
+    const url = new URL(typeof visitors.siteScriptUrl === "string" ? visitors.siteScriptUrl : "");
+    if (url.protocol === "https:" || (url.protocol === "http:" && url.hostname === "localhost")) {
+      siteScriptUrl = url.href;
+    }
+  } catch {
+    // Invalid manifests stay dormant.
+  }
+  return {
+    visitors: {
+      enabled: visitors.enabled === true && Boolean(siteScriptUrl),
+      siteScriptUrl,
+      recordings: visitors.recordings === true,
+    },
+  };
+}
+
 /**
  * ============================================================================
  * SITE CONFIGURATION
@@ -9,6 +33,7 @@ import siteConfigData from "../data/site-config.json";
  */
 
 export const siteConfig = {
+  ...parseVisitors((siteConfigData as { visitors?: unknown }).visitors),
   name: siteConfigData.brand?.displayName || siteConfigData.brand?.legalName || "United Financial Planning Group",
   tagline: siteConfigData.brand?.tagline || "Financial Planning, Tax, & Investment Management Under One Roof",
   description:

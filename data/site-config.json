@@ -19,6 +19,11 @@
   "consent": {
     "enabled": false
   },
+  "visitors": {
+    "enabled": true,
+    "siteScriptUrl": "https://attract.wealthreach.ai/api/embed/site.js?site=fc1baa26-67fb-4bda-8df5-8a06ead90442",
+    "recordings": false
+  },
   "header": {
     "nav": [
       {
