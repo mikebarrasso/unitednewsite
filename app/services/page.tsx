@@ -52,6 +52,12 @@ const services = [
       "Navigate stock options, RSUs, and equity awards with tax-coordinated planning that aligns vesting schedules with your broader financial strategy.",
     href: "/services/equity-compensation",
   },
+  {
+    title: "Estate Planning Coordination",
+    description:
+      "Coordinate your financial plan, tax considerations, and family priorities with your estate planning attorney.",
+    href: "/services/estate-planning",
+  },
 ];
 
 const blindSpots = [
