@@ -1,8 +1,11 @@
 import { Header } from "@/components/header";
+import { VisitorConsentBanner } from "@/components/consent/visitor-consent-banner";
 import { Providers } from "@/components/providers";
 import { SkipToContent } from "@/components/skip-to-content";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { baseMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/config";
+import { visitorConsentBootstrap } from "@/lib/visitor-consent";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
@@ -41,6 +44,15 @@ export default function RootLayout({
 }>): ReactNode {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {siteConfig.visitors?.enabled && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: visitorConsentBootstrap(siteConfig.visitors.siteScriptUrl),
+            }}
+          />
+        )}
+      </head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-GN2NWJH73H"
         strategy="lazyOnload"
@@ -61,6 +73,7 @@ export default function RootLayout({
           <Header />
           <ThemeSwitch />
           {children}
+          {siteConfig.visitors?.enabled && <VisitorConsentBanner />}
           <Analytics />
         </Providers>
       </body>
