@@ -44,20 +44,25 @@ export function Hero(): ReactNode {
               <ReachDemoHeroCopy />
             </Suspense>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-10 w-full sm:w-auto">
-              <Link
-                href="/contact"
-                className="group h-12 px-6 text-sm font-medium bg-white text-black rounded-full hover:bg-white/90 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
-              >
-                Schedule a Conversation
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </Link>
-              <Link
-                href="/services"
-                className="h-12 px-6 text-sm font-medium border border-white/20 text-white rounded-full hover:bg-white/10 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
-              >
-                Explore Our Services
-              </Link>
+            <div className="mt-10 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <Link
+                  href="/contact"
+                  className="group h-12 px-6 text-sm font-medium bg-white text-black rounded-full hover:bg-white/90 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  Start With a Conversation
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+                <Link
+                  href="/services"
+                  className="h-12 px-6 text-sm font-medium border border-white/20 text-white rounded-full hover:bg-white/10 active:scale-[0.97] transition-all duration-150 flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  Explore Our Services
+                </Link>
+              </div>
+              <p className="mt-3 text-center text-xs text-white/65 sm:text-left">
+                No sales pitch. No obligation. Tell us what&apos;s on your mind.
+              </p>
             </div>
 
             <p className="flex items-center gap-2 mt-6 text-sm text-white/60">
