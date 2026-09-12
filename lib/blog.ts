@@ -235,9 +235,7 @@ function blogDirectoryFingerprint(): string {
       // saves do exactly that). A vanished entry contributes nothing rather than
 
       // failing the whole request.
-
       let stats: ReturnType<typeof statSync> | null = null;
-
       try {
 
         stats = statSync(join(BLOG_DIRECTORY, fileName));
@@ -331,7 +329,13 @@ function getBlogIndex(): BlogIndex {
     // A directory changing under our feet must not 500 the preview: serve the
     // last good index and pick up the new state on the next request. With no
     // prior index there is nothing safe to serve, so surface the error.
-    if (cachedIndex) return cachedIndex;
+    if (cachedIndex) {
+      console.warn(
+        "[blog] serving the previous post index — rebuilding it failed (fix the file and save again):",
+        error instanceof Error ? error.message : String(error),
+      );
+      return cachedIndex;
+    }
     throw error;
   }
 }
