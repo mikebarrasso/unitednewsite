@@ -230,8 +230,24 @@ function blogDirectoryFingerprint(): string {
   return readdirSync(BLOG_DIRECTORY)
     .sort((a, b) => a.localeCompare(b))
     .map((fileName) => {
-      const stats = statSync(join(BLOG_DIRECTORY, fileName));
-      return fileName + ":" + stats.size + ":" + stats.mtimeMs;
+      // An editor may rename or remove an entry between readdir and stat (atomic
+
+      // saves do exactly that). A vanished entry contributes nothing rather than
+
+      // failing the whole request.
+
+      let stats: ReturnType<typeof statSync> | null = null;
+
+      try {
+
+        stats = statSync(join(BLOG_DIRECTORY, fileName));
+
+      } catch (error) {
+
+        if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+
+      }
+      return stats ? fileName + ":" + stats.size + ":" + stats.mtimeMs : fileName + ":gone";
     })
     .join("|");
 }
@@ -305,11 +321,19 @@ function getBlogIndex(): BlogIndex {
     cachedIndex ??= buildBlogIndex("production");
     return cachedIndex;
   }
-  const fingerprint = blogDirectoryFingerprint();
-  if (!cachedIndex || cachedIndex.fingerprint !== fingerprint) {
-    cachedIndex = buildBlogIndex(fingerprint);
+  try {
+    const fingerprint = blogDirectoryFingerprint();
+    if (!cachedIndex || cachedIndex.fingerprint !== fingerprint) {
+      cachedIndex = buildBlogIndex(fingerprint);
+    }
+    return cachedIndex;
+  } catch (error) {
+    // A directory changing under our feet must not 500 the preview: serve the
+    // last good index and pick up the new state on the next request. With no
+    // prior index there is nothing safe to serve, so surface the error.
+    if (cachedIndex) return cachedIndex;
+    throw error;
   }
-  return cachedIndex;
 }
 
 export function getBlogPosts(): BlogPost[] {
