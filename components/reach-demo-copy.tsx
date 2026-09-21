@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { type ReactNode, useSyncExternalStore } from "react";
+import { type ReactNode, useMemo, useSyncExternalStore } from "react";
 
 function subscribeToFrameState(): () => void {
   return () => {};
@@ -15,7 +15,18 @@ function getServerFrameState(): boolean {
   return false;
 }
 
-function useReachDemoReview(): boolean {
+/**
+ * Which pre-built demo edits the framing platform wants shown. The Reach demo
+ * preview loads this site with `wr_demo=review&wr_variants=<published>,<preview>`
+ * so an edit becomes visible only once Reach has "made" it, and stays visible
+ * after it is published. A review frame that names no variants comes from an
+ * older platform build and gets every edit (the previous behaviour). Top-level
+ * visits never swap copy.
+ */
+const NO_VARIANTS: ReadonlySet<string> = new Set();
+const LEGACY_ALL_VARIANTS: ReadonlySet<string> = new Set(["hero-edit", "team-bio"]);
+
+function useReachDemoVariants(): ReadonlySet<string> {
   const searchParams = useSearchParams();
   const isFramed = useSyncExternalStore(
     subscribeToFrameState,
@@ -23,7 +34,17 @@ function useReachDemoReview(): boolean {
     getServerFrameState,
   );
 
-  return isFramed && searchParams.get("wr_demo") === "review";
+  return useMemo(() => {
+    if (!isFramed || searchParams.get("wr_demo") !== "review") return NO_VARIANTS;
+    const raw = searchParams.get("wr_variants");
+    if (raw === null) return LEGACY_ALL_VARIANTS;
+    return new Set(
+      raw
+        .split(",")
+        .map((variant) => variant.trim())
+        .filter(Boolean),
+    );
+  }, [isFramed, searchParams]);
 }
 
 function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {
@@ -62,7 +83,7 @@ export function BaselineHeroCopy(): ReactNode {
 }
 
 export function ReachDemoHeroCopy(): ReactNode {
-  return <HeroCopy demoReview={useReachDemoReview()} />;
+  return <HeroCopy demoReview={useReachDemoVariants().has("hero-edit")} />;
 }
 
 function GerryBio({ demoReview }: { demoReview: boolean }): ReactNode {
@@ -96,5 +117,5 @@ export function BaselineGerryBio(): ReactNode {
 }
 
 export function ReachDemoGerryBio(): ReactNode {
-  return <GerryBio demoReview={useReachDemoReview()} />;
+  return <GerryBio demoReview={useReachDemoVariants().has("team-bio")} />;
 }

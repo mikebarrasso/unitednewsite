@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "siteId": "fc1baa26-67fb-4bda-8df5-8a06ead90442",
-  "advisorId": "10296a07-3aa0-4d89-a4d8-f9f1553c540f",
+  "siteId": "cf4613eb-1742-4b8a-ac6f-45032f75b4d6",
+  "advisorId": "be3bc515-d11e-4c76-8049-2d3135284b10",
   "leadsApiUrl": "https://attract.wealthreach.ai/api/attract/leads",
   "analyticsEndpoint": "https://attract.wealthreach.ai/api/analytics/events",
-  "analyticsApiKey": "ff291d99-2e5f-4173-a223-ff2b4d48688f",
+  "analyticsApiKey": "c7330dd1-935a-4a14-8aca-bc52d4bb8cec",
   "brand": {
     "legalName": "United Financial Planning Group",
     "displayName": "United Financial Planning Group",
@@ -21,8 +21,8 @@
   },
   "visitors": {
     "enabled": true,
-    "siteScriptUrl": "https://attract.wealthreach.ai/api/embed/site.js?site=fc1baa26-67fb-4bda-8df5-8a06ead90442",
-    "recordings": false
+    "siteScriptUrl": "https://attract.wealthreach.ai/api/embed/site.js?site=cf4613eb-1742-4b8a-ac6f-45032f75b4d6",
+    "recordings": true
   },
   "header": {
     "nav": [
