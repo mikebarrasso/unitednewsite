@@ -1,0 +1,11 @@
+{
+  "authorSlug": "firm",
+  "relatedServices": [
+    "/services/tax-planning",
+    "/services/investment-management"
+  ],
+  "relatedSlugs": [
+    "direct-indexing-tax-loss-harvesting"
+  ],
+  "ctaFocus": "net investment income tax questions"
+}
