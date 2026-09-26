@@ -244,6 +244,7 @@ function ServiceCardComponent({
           className="flex items-center gap-1 mt-4 text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors"
         >
           Learn more
+          <span className="sr-only"> about {card.title}</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
         </Link>
       </div>

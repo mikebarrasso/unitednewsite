@@ -370,6 +370,9 @@ export function Features2() {
                               onClick={(e) => e.stopPropagation()}
                             >
                               Learn more
+                              <span className="sr-only">
+                                {" "}about {feature.title}
+                              </span>
                               <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
                             </Link>
                           </motion.div>
