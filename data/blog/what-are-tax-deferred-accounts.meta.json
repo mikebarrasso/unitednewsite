@@ -1,0 +1,29 @@
+{
+  "authorSlug": "firm",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "pre-retirement-tax-transition-managing-brackets-rmds"
+  ],
+  "faqs": [
+    {
+      "question": "What are tax-deferred accounts?",
+      "answer": "They are accounts in which applicable tax on contributions or earnings is postponed until a later event, commonly a withdrawal. In traditional retirement accounts, taxable distributions generally count as income when taken; deferral does not mean the money is never taxed. The exact treatment depends on the account and any previously taxed contributions."
+    },
+    {
+      "question": "Is a traditional IRA always tax-deferred?",
+      "answer": "Earnings in a traditional IRA generally are not taxed until distributed, but a contribution is not automatically deductible. Eligibility for a deduction and any nondeductible basis affect how a later distribution is taxed."
+    },
+    {
+      "question": "How is a Roth account different from a tax-deferred traditional account?",
+      "answer": "Roth contributions generally are not deductible, but qualified distributions generally are tax-free. Traditional account contributions may be deductible, while taxable distributions generally are included in income. Qualification and account-specific rules matter."
+    },
+    {
+      "question": "Do tax-deferred retirement accounts require withdrawals?",
+      "answer": "Many do. As of September 28, 2026, IRS guidance says traditional IRAs and many workplace plans generally have required minimum distributions starting for the year an owner reaches age 73, although workplace-plan timing and individual circumstances can differ. Original Roth IRA owners generally have no lifetime RMDs. See the IRS RMD FAQs linked in the article for current rules."
+    }
+  ],
+  "ctaFocus": "retirement withdrawals and tax treatment"
+}
