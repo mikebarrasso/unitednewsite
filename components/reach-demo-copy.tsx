@@ -119,3 +119,30 @@ export function BaselineGerryBio(): ReactNode {
 export function ReachDemoGerryBio(): ReactNode {
   return <GerryBio demoReview={useReachDemoVariants().has("team-bio")} />;
 }
+
+/** Only the framed review variant replaces the article introduction. */
+export function ReachDemoIrmaaArticle({ html }: { html: string }): ReactNode {
+  const edited = useReachDemoVariants().has("irmaa-post-edit");
+  const content = edited
+    ? html.replace(
+        /(<h2[^>]*>What IRMAA Is, and Why It Blindsides People<\/h2>)[\s\S]*?(?=<h2)/,
+        `$1
+<p>IRMAA adds an income-related surcharge to Medicare premiums. This guide explains the income lookback, premium tiers, and when an appeal may be available.</p>
+<aside aria-label="Three key takeaways" class="my-8 rounded-xl border border-border bg-muted/40 px-6 py-5">
+<h3 class="mt-0">Three key takeaways</h3>
+<ul class="mb-0">
+<li>Medicare uses an earlier income year to determine IRMAA.</li>
+<li>Crossing an income threshold can change your premium tier.</li>
+<li>Certain life-changing events may qualify you for an appeal.</li>
+</ul>
+</aside>
+`,
+      )
+    : html;
+  return (
+    <div
+      className="prose prose-lg prose-united max-w-none dark:prose-invert"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
+  );
+}
