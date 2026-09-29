@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  if (typeof window === "undefined" || window.self === window.top) return;
+  if (typeof window === "undefined" || window.self === window.parent) return;
 
   const ALLOWED_PARENT_ORIGINS = [
     "https://attract.wealthreach.ai",

@@ -1,0 +1,35 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/tax-planning",
+    "/services/financial-planning",
+    "/services/retirement-planning"
+  ],
+  "relatedSlugs": [
+    "roth-conversion-strategy-pre-retirees",
+    "irmaa-medicare-surcharge-explained",
+    "modern-guide-retirement-planning"
+  ],
+  "faqs": [
+    {
+      "question": "Should my Long Island business be an LLC or an S corporation for taxes?",
+      "answer": "It depends on profit level and payroll reality. A single-member LLC's profit all flows through as self-employment income, subject to self-employment tax. An S corporation lets you split income between a reasonable W-2 salary and distributions, which are not subject to self-employment tax; the savings become meaningful once profits comfortably exceed a market salary for your role. The tradeoffs are payroll administration, reasonable-compensation scrutiny, and New York State specifics, so we model both structures with real numbers before recommending a change."
+    },
+    {
+      "question": "What retirement plan gives a business owner the biggest deduction?",
+      "answer": "In rough order of contribution ceiling: a SEP IRA is the simplest with contributions up to 25% of compensation; a Solo 401(k) reaches similar limits at lower income because of the employee deferral component, and adds a Roth option; a cash balance plan can allow six-figure deductible contributions for owners in their 50s and 60s who want to catch up quickly. The right choice depends on age, income stability, and whether you have employees, because most plans must cover them too."
+    },
+    {
+      "question": "What is the QBI deduction and can I lose it?",
+      "answer": "The Qualified Business Income deduction lets many pass-through owners deduct up to 20% of business income. Above certain taxable-income thresholds it phases down, and for specified service businesses it can disappear entirely. Retirement plan contributions and other planning moves that lower taxable income can preserve a deduction that would otherwise phase out, which is why we coordinate the QBI math with plan design rather than treating them separately."
+    },
+    {
+      "question": "What is New York's PTET election?",
+      "answer": "The Pass-Through Entity Tax lets a partnership or S corporation elect to pay New York tax at the entity level. The entity deducts that state tax federally, effectively working around the individual SALT deduction cap, and the owners receive a credit on their New York returns. The election has a deadline and estimated-payment requirements, so it belongs on the calendar, not in the April scramble."
+    },
+    {
+      "question": "When should tax planning happen for a business owner?",
+      "answer": "Quarterly, at minimum. Entity and plan-design decisions are best made early in the year, the PTET election and estimated payments run on their own deadlines, and year-end is for harvesting, timing income and expenses, and funding what you established earlier. A return filed in April can only report what already happened; planning changes what happens."
+    }
+  ]
+}
