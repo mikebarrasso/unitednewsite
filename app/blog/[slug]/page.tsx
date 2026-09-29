@@ -26,7 +26,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
+import { ReachDemoIrmaaArticle } from "@/components/reach-demo-copy";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -417,10 +418,16 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
               <ArticleToc items={tocItems} />
             )}
 
+            {post.slug === "irmaa-medicare-surcharge-explained" ? (
+              <Suspense fallback={<div className="prose prose-lg prose-united max-w-none dark:prose-invert" dangerouslySetInnerHTML={{ __html: renderedContent }} />}>
+                <ReachDemoIrmaaArticle html={renderedContent} />
+              </Suspense>
+            ) : (
             <div
               className="prose prose-lg prose-united max-w-none dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: renderedContent }}
             />
+            )}
 
             {post.faqs && post.faqs.length > 0 && (
               <div className="mt-14 pt-8 border-t border-border">
