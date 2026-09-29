@@ -459,9 +459,9 @@ export default async function BlogPostPage({ params }: Props): Promise<ReactNode
                 </h2>
                 <p className="mt-3 text-foreground/70 leading-relaxed max-w-2xl">
                   Schedule a complimentary conversation with our team of CFP
-                  &reg; professionals, CPAs, and Enrolled Agents. No obligation,
-                  no sales pitch &mdash; just a calm look at how recession risk
-                  fits into your specific plan.
+                  &reg; professionals, CPAs, and Enrolled Agents. No obligation
+                  and no sales pitch. Just a calm look at your situation and
+                  planning questions.
                 </p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3">
                   <Link
