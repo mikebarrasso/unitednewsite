@@ -7,29 +7,36 @@
   ],
   "relatedSlugs": [
     "pre-retirement-tax-transition-managing-brackets-rmds",
-    "modern-guide-retirement-planning",
-    "retirement-portfolio-strategies-market-downturns"
+    "retirement-portfolio-strategies-market-downturns",
+    "social-security-claiming-strategy",
+    "net-investment-income-tax-2026-year-end-guide"
   ],
   "faqs": [
     {
       "question": "What is a Roth conversion and how does it work?",
-      "answer": "A Roth conversion is the process of moving money from a traditional IRA (or other pre-tax retirement account) into a Roth IRA. The converted amount is added to your taxable income in the year of conversion and taxed at your ordinary income rate. In exchange, the funds now grow tax-free inside the Roth IRA and are not subject to Required Minimum Distributions (RMDs) during the account owner’s lifetime. Qualified withdrawals in retirement are completely tax-free."
+      "answer": "A Roth conversion moves money from a traditional IRA (or other pre-tax retirement account) into a Roth IRA. The converted amount is added to your taxable income in the year of the conversion and taxed at your ordinary income rate. In exchange, the funds may grow tax-free inside the Roth IRA and are not subject to Required Minimum Distributions during the original owner's lifetime. Qualified withdrawals are generally free of federal income tax."
     },
     {
       "question": "What is the Roth conversion window for pre-retirees?",
-      "answer": "The “conversion window” refers to the period between retirement (or a significant reduction in earned income) and the time when Required Minimum Distributions begin at age 73 and Social Security benefits start. During this window, many pre-retirees are in a lower tax bracket than they were during their peak earning years and lower than they expect to be when RMDs force large taxable distributions later. This temporary low-income period creates an opportunity to convert traditional IRA funds to Roth at a relatively favorable tax rate."
+      "answer": "The conversion window is the period between leaving full-time work, or significantly reducing earned income, and the start of Required Minimum Distributions and Social Security benefits. During this period, some pre-retirees are in a lower tax bracket than during their peak earning years and possibly lower than the bracket they expect once RMDs begin. Whether a conversion makes sense depends on your income, brackets, and plans."
+    },
+    {
+      "question": "At what age do Required Minimum Distributions start?",
+      "answer": "Under SECURE 2.0, the RMD starting age is generally 73 for people born from 1951 through 1958 and 75 for people born in 1960 or later. People born in 1959 fall between the two rules, so confirm current IRS guidance for your situation. Your start age affects how long your conversion window may be."
     },
     {
       "question": "What is IRMAA and how does it affect Roth conversion planning?",
-      "answer": "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added to Medicare Part B and Part D premiums for beneficiaries whose Modified Adjusted Gross Income (MAGI) exceeds certain thresholds. Because IRMAA is based on income from two years prior (for example, your 2024 income affects your 2026 Medicare premiums), a Roth conversion that pushes MAGI above an IRMAA tier can increase Medicare costs significantly. The surcharges are structured as stair-steps, meaning a small excess over a threshold can trigger thousands of dollars in additional annual premiums. This must be carefully modeled when sizing annual conversions."
+      "answer": "IRMAA stands for Income-Related Monthly Adjustment Amount. It is a surcharge added to Medicare Part B and Part D premiums for beneficiaries whose Modified Adjusted Gross Income (MAGI) exceeds certain thresholds. Because IRMAA is based on income from two years earlier, a Roth conversion that pushes MAGI above a threshold can raise Medicare premiums later. The surcharges work in steps, so conversions are typically sized with the current thresholds in view."
     },
     {
       "question": "What is the Roth five-year rule?",
-      "answer": "There are actually two five-year rules for Roth IRAs. The first applies to the earnings inside a Roth: to take qualified, tax-free withdrawals of earnings, the account must have been open for at least five tax years and the owner must be age 59½ or older. The second applies to each individual Roth conversion: converted funds must remain in the Roth for five years before withdrawal to avoid the 10% early withdrawal penalty (if the account owner is under 59½). For most pre-retirees over age 59½, the five-year penalty rule on conversions is less of a concern, but the earnings rule still matters if you are opening a new Roth IRA for the first time."
+      "answer": "There are two five-year rules for Roth IRAs. The first applies to earnings: to take qualified, tax-free withdrawals of earnings, the account must have been open for at least five tax years and the owner must be age 59½ or older. The second applies to each conversion: converted funds generally must stay in the Roth for five years before withdrawal to avoid the 10% early withdrawal penalty if the owner is under 59½. For owners already over 59½, the conversion penalty rule is generally less of a concern, but the earnings rule still matters when opening a first Roth IRA."
     },
     {
       "question": "Should I pay Roth conversion taxes from my IRA or from outside funds?",
-      "answer": "In most cases, paying the conversion tax from outside the IRA (using funds in a taxable brokerage account, savings, or other non-retirement assets) is more advantageous. When you pay the tax from outside the IRA, the full converted amount moves into the Roth, maximizing the tax-free growth. If you withhold from the IRA itself to cover the tax, you effectively convert a smaller amount and lose the benefit of that withheld portion growing tax-free. In addition, if you are under age 59½, withholding from the IRA may trigger a 10% early withdrawal penalty on the withheld portion."
+      "answer": "Paying the tax from outside the IRA, such as from a taxable brokerage account or savings, generally allows the full converted amount to move into the Roth. Withholding tax from the IRA itself reduces the amount converted and, if you are under age 59½, may trigger a 10% early withdrawal penalty on the withheld portion. The right choice depends on your situation."
     }
-  ]
+  ],
+  "ctaFocus": "Roth conversion timing and tax planning",
+  "reviewedByline": true
 }
