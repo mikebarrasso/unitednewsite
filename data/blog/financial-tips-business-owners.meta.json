@@ -1,11 +1,38 @@
 {
+  "authorSlug": "gerry-barrasso",
   "relatedServices": [
     "/services/financial-planning",
     "/services/tax-planning",
-    "/services/tax-preparation"
+    "/services/tax-preparation",
+    "/services/retirement-planning"
   ],
   "relatedSlugs": [
-    "navigating-financial-challenges-business-owner-new-york",
+    "high-net-worth-financial-planning",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
     "two-crucial-questions-interviewing-financial-advisor"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What retirement plan options do business owners have?",
+      "answer": "Common options include a SEP IRA, a Solo 401(k) for owners with no employees other than a spouse, a SIMPLE IRA for small businesses with employees, and more complex profit-sharing or defined benefit plans. The right choice depends on staffing, income, how much you want to save, and administrative cost. Contribution limits change every year."
+    },
+    {
+      "question": "How does self-employment tax work?",
+      "answer": "The self-employment tax rate is 15.3%, made up of 12.4% for Social Security and 2.9% for Medicare. It generally applies to 92.35% of net earnings from self-employment, and the Social Security portion is subject to an annual wage limit. It is paid in addition to income tax, typically through quarterly estimated payments."
+    },
+    {
+      "question": "How much should a business owner set aside for taxes?",
+      "answer": "There is no single percentage. The amount depends on your income, deductions, entity type, and state. A CPA can estimate quarterly payments based on your actual numbers, and adjust them during the year."
+    },
+    {
+      "question": "When should a business owner start succession planning?",
+      "answer": "Earlier than most expect, because the options depend on the years available to prepare. A financial plan can model the personal cash-flow and tax effects of a transfer or sale, while an attorney prepares the legal documents."
+    },
+    {
+      "question": "Why does it help to have a CPA and financial planner work together?",
+      "answer": "Entity choice, owner compensation, retirement contributions, and a future sale all affect both the tax return and the long-term plan. When both professionals work from the same information, those effects can be reviewed together before decisions are made."
+    }
+  ],
+  "ctaFocus": "business owner tax and retirement planning",
+  "reviewedByline": true
 }

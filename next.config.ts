@@ -204,7 +204,11 @@ const legacyRedirects = [
   {
     source:
       "/blog/navigating-financial-challenges-as-a-business-owner-in-new-york",
-    destination: "/blog/navigating-financial-challenges-business-owner-new-york",
+    destination: "/blog/financial-tips-business-owners",
+  },
+  {
+    source: "/blog/navigating-financial-challenges-business-owner-new-york",
+    destination: "/blog/financial-tips-business-owners",
   },
   {
     source: "/blog/gerry-barrasso-cpa-cfp-pfs-quoted-in-fortune",
@@ -228,7 +232,7 @@ const legacyRedirects = [
   {
     source:
       "/2024/08/28/navigating-financial-challenges-as-a-business-owner-in-new-york",
-    destination: "/blog/navigating-financial-challenges-business-owner-new-york",
+    destination: "/blog/financial-tips-business-owners",
   },
   {
     source:
@@ -303,6 +307,7 @@ const legacyRedirects = [
 ] satisfies Array<{ source: string; destination: string }>;
 
 const nextConfig: NextConfig = {
+  devIndicators: false,
   
   allowedDevOrigins: ["*.vercel.run", "*.vercel.app", "*.modal.run", "*.modal.host", "*.w.modal.run", "*.w.modal.host"],
 trailingSlash: false,

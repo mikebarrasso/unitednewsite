@@ -389,16 +389,10 @@ const RELATED_POSTS_BY_SLUG: Record<
 > = {
   "hauppauge-ny": [
     {
-      href: "/blog/navigating-financial-challenges-business-owner-new-york",
-      title: "Navigating Financial Challenges as a Business Owner in New York",
-      description:
-        "Irregular income, retirement options, tax payments, and succession planning for New York's self-employed professionals.",
-    },
-    {
       href: "/blog/financial-tips-business-owners",
-      title: "Financial Tips for Business Owners",
+      title: "Financial Planning for Business Owners: Taxes, Retirement, and Succession",
       description:
-        "An integrated approach to wealth, tax optimization, and succession planning for business owners.",
+        "Irregular income, estimated taxes, retirement plan options, health coverage, and succession planning for business owners.",
     },
     {
       href: "/blog/two-crucial-questions-interviewing-financial-advisor",
