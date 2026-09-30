@@ -1,4 +1,5 @@
 {
+  "authorSlug": "gerry-barrasso",
   "relatedServices": [
     "/services/retirement-planning",
     "/services/investment-management",
@@ -6,6 +7,32 @@
   ],
   "relatedSlugs": [
     "retirement-portfolio-strategies-market-downturns",
-    "passive-income-hnw-investment-management"
-  ]
+    "social-security-claiming-strategy",
+    "roth-conversion-strategy-pre-retirees",
+    "pre-retirement-tax-transition-managing-brackets-rmds"
+  ],
+  "faqs": [
+    {
+      "question": "What does a secure retirement mean?",
+      "answer": "It means different things to different households, such as reliable income, covered healthcare costs, or not outliving savings. A plan can improve preparedness for those goals, but no strategy can guarantee an outcome, so plans are usually reviewed and adjusted each year."
+    },
+    {
+      "question": "What are the main steps in planning for retirement?",
+      "answer": "Common steps include taking stock of your full financial picture, aligning investment risk with your timeline, coordinating income sources such as Social Security and withdrawals, planning for taxes across the years, and reviewing the plan annually."
+    },
+    {
+      "question": "Is a secure retirement plan the same as the SECURE Act?",
+      "answer": "No. The SECURE Act and SECURE 2.0 are federal laws that changed retirement account rules, including required minimum distribution ages and inherited account rules. A retirement plan is your own strategy for income, investments, and taxes, which may be affected by those rules."
+    },
+    {
+      "question": "Which retirement accounts should I withdraw from first?",
+      "answer": "There is no single order. Taxable, tax-deferred, and Roth accounts are taxed differently, and the best sequence can change with your income, brackets, and required distributions. It is usually worth reviewing with both a planner and a CPA."
+    },
+    {
+      "question": "How often should I review my retirement plan?",
+      "answer": "At least once a year, and after major changes such as a market decline, a change in health, or a change in family circumstances."
+    }
+  ],
+  "ctaFocus": "retirement income and tax planning",
+  "reviewedByline": true
 }
