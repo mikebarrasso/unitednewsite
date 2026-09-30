@@ -1,12 +1,38 @@
 {
+  "authorSlug": "gerry-barrasso",
   "relatedServices": [
     "/services/retirement-planning",
     "/services/investment-management",
     "/services/tax-planning"
   ],
   "relatedSlugs": [
-    "recession-2026-new-york-investors",
-    "secure-retirement-investment-management",
-    "market-volatility-financial-plan-advisor"
-  ]
+    "market-volatility-financial-plan-advisor",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "roth-conversion-strategy-pre-retirees",
+    "social-security-claiming-strategy"
+  ],
+  "faqs": [
+    {
+      "question": "How can retirees prepare a portfolio for a market downturn?",
+      "answer": "Common steps include reviewing how much of the portfolio is exposed to declines, setting aside a cash reserve for near-term spending, choosing a withdrawal approach that can flex, and coordinating taxes. None of these removes risk, and each has trade-offs that depend on your situation."
+    },
+    {
+      "question": "What is sequence of returns risk?",
+      "answer": "Sequence of returns risk is the possibility that poor returns early in retirement, while you are taking withdrawals, can have a larger effect on how long savings last than the same returns later. The order of returns matters as well as the average."
+    },
+    {
+      "question": "How large should a cash reserve be for retirement?",
+      "answer": "There is no single answer. Some plans hold a reserve covering a number of years of expected spending. The right size depends on other income such as Social Security or a pension, essential versus discretionary spending, and the opportunity cost of holding cash."
+    },
+    {
+      "question": "Can tax-loss harvesting help during a downturn?",
+      "answer": "In a taxable account, realized losses may offset realized gains, subject to annual limits and the wash-sale rule. It does not apply to IRAs or 401(k) accounts, and the benefit depends on your tax situation."
+    },
+    {
+      "question": "Should I convert to a Roth IRA when markets are down?",
+      "answer": "A lower balance may allow more shares to be converted for the same taxable amount, but a conversion is taxable in the year it occurs. It should be weighed against your bracket, Medicare premiums, and cash needs, ideally with your CPA and planner together."
+    }
+  ],
+  "ctaFocus": "downturn and withdrawal planning",
+  "reviewedByline": true
 }
