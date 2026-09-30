@@ -1,11 +1,39 @@
 {
+  "authorSlug": "gerry-barrasso",
   "relatedServices": [
     "/services/financial-planning",
     "/services/investment-management",
-    "/services/tax-planning"
+    "/services/tax-planning",
+    "/services/equity-compensation"
   ],
   "relatedSlugs": [
+    "tax-efficient-diversification-unwind-concentrated-stock",
+    "pre-retirement-tax-transition-managing-brackets-rmds",
     "investment-management-strategies-high-net-worth",
-    "passive-income-hnw-investment-management"
-  ]
+    "net-investment-income-tax-2026-year-end-guide"
+  ],
+  "faqs": [
+    {
+      "question": "What is high-net-worth financial planning?",
+      "answer": "It is financial planning for households whose finances involve several interacting areas, such as multiple income sources, concentrated stock, a business, large taxable accounts, or legacy goals. It focuses on coordinating taxes, investments, retirement income, and estate considerations so decisions work together."
+    },
+    {
+      "question": "How much do you need to be considered high net worth?",
+      "answer": "There is no single definition. Banks, research firms, and advisory firms each use different thresholds. Planning needs usually depend more on complexity than on a specific dollar amount."
+    },
+    {
+      "question": "Why does it matter to have a CPA involved in financial planning?",
+      "answer": "Many planning decisions, including stock sales, Roth conversions, and charitable gifts, have tax consequences. When a CPA and a financial planner work together, those consequences can be reviewed before a decision is made instead of after the tax return is prepared."
+    },
+    {
+      "question": "Does a financial advisor handle estate planning documents?",
+      "answer": "Estate documents are prepared by an estate attorney. A financial advisor can coordinate with your attorney to review beneficiary designations, account titling, and how the documents fit the financial plan, but does not provide legal advice."
+    },
+    {
+      "question": "What does fee-only mean?",
+      "answer": "A fee-only advisor is paid directly by clients for advice and does not earn commissions on products. Ask any advisor to explain every way they are compensated."
+    }
+  ],
+  "ctaFocus": "high-net-worth planning",
+  "reviewedByline": true
 }
