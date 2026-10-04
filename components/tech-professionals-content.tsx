@@ -29,16 +29,34 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { useReducedMotion } from "@/lib/motion";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const reveal = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-60px" },
-};
+const VIEWPORT = { once: true, margin: "-80px" } as const;
+
+// Full transform strings, not Motion's x/y/scale shorthands: the shorthands
+// run on the main thread and drop frames while the page is still loading.
+// Reduced motion keeps the fade and drops the movement.
+function useReveal(from = "translateY(16px)", to = "translateY(0px)") {
+  const reduced = useReducedMotion();
+  return {
+    initial: { opacity: 0, transform: reduced ? to : from },
+    whileInView: { opacity: 1, transform: to },
+    viewport: VIEWPORT,
+  };
+}
+
+function useEnter() {
+  const reduced = useReducedMotion();
+  return (from: string, to: string) => ({
+    initial: { opacity: 0, transform: reduced ? to : from },
+    animate: { opacity: 1, transform: to },
+  });
+}
 
 function Eyebrow({ children }: { children: ReactNode }): ReactNode {
+  const reveal = useReveal();
   return (
     <motion.p
       {...reveal}
@@ -57,11 +75,12 @@ function SectionHeading({
   children: ReactNode;
   className?: string;
 }): ReactNode {
+  const reveal = useReveal();
   return (
     <motion.h2
       {...reveal}
       transition={{ duration: 0.5, ease }}
-      className={`text-foreground font-serif text-3xl font-medium leading-[1.1] sm:text-4xl md:text-5xl ${className}`}
+      className={`text-foreground font-serif text-3xl font-medium text-balance leading-[1.1] sm:text-4xl md:text-5xl ${className}`}
     >
       {children}
     </motion.h2>
@@ -78,11 +97,11 @@ const heroGrants = [
 ];
 
 function HeroVisual(): ReactNode {
+  const enter = useEnter();
   return (
     <div className="flex h-full w-full flex-col justify-center gap-4 p-6 sm:p-8 lg:p-10">
       <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
+        {...enter("translateY(12px)", "translateY(0px)")}
         transition={{ duration: 0.5, delay: 0.4, ease }}
         className="bg-background border-border rounded-2xl border p-5"
       >
@@ -97,8 +116,7 @@ function HeroVisual(): ReactNode {
         {heroGrants.map((g, i) => (
           <motion.div
             key={g.type}
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
+            {...enter("translateX(-8px)", "translateX(0px)")}
             transition={{ duration: 0.4, delay: 0.55 + i * 0.08, ease }}
             className={`flex items-center justify-between py-3 ${
               i < heroGrants.length - 1 ? "border-border/60 border-b" : ""
@@ -113,8 +131,7 @@ function HeroVisual(): ReactNode {
         ))}
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
+        {...enter("translateY(12px)", "translateY(0px)")}
         transition={{ duration: 0.5, delay: 0.9, ease }}
         className="grid grid-cols-2 gap-3"
       >
@@ -136,14 +153,14 @@ function HeroVisual(): ReactNode {
 }
 
 export function TechHero(): ReactNode {
+  const enter = useEnter();
   return (
     <section className="bg-background w-full px-4 pt-32 pb-16 sm:px-6 sm:pt-36 sm:pb-20 lg:px-8">
       <div className="mx-auto w-full max-w-[1400px]">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="flex flex-col space-y-6 sm:space-y-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              {...enter("translateY(16px)", "translateY(0px)")}
               transition={{ duration: 0.5, delay: 0.1, ease }}
               className="border-border flex w-fit items-center gap-2 rounded-full border p-1 sm:gap-3"
             >
@@ -156,19 +173,17 @@ export function TechHero(): ReactNode {
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              {...enter("translateY(16px)", "translateY(0px)")}
               transition={{ duration: 0.5, delay: 0.2, ease }}
-              className="text-foreground font-serif text-4xl font-medium leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+              className="text-foreground font-serif text-4xl font-medium text-balance leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
             >
               Financial Planning for High-Earning Tech Professionals
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              {...enter("translateY(16px)", "translateY(0px)")}
               transition={{ duration: 0.5, delay: 0.3, ease }}
-              className="text-foreground/70 max-w-xl text-base leading-relaxed sm:text-lg"
+              className="text-foreground/70 max-w-xl text-base leading-relaxed text-pretty sm:text-lg"
             >
               We help you turn your high income and complex company stock
               decisions into freedom, flexibility, and real wealth you can
@@ -176,13 +191,12 @@ export function TechHero(): ReactNode {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              {...enter("translateY(16px)", "translateY(0px)")}
               transition={{ duration: 0.5, delay: 0.4, ease }}
             >
               <Link
                 href="/contact"
-                className="bg-primary text-primary-foreground inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium transition-opacity hover:opacity-90 sm:w-auto sm:text-base"
+                className="bg-primary text-primary-foreground inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium transition-[scale,opacity] duration-150 ease-out hover:opacity-90 active:scale-[0.97] sm:w-auto sm:text-base"
               >
                 Meet With Our Team
                 <ArrowRight className="h-4 w-4" />
@@ -191,9 +205,8 @@ export function TechHero(): ReactNode {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3, ease }}
+            {...enter("scale(0.97)", "scale(1)")}
+            transition={{ duration: 0.5, delay: 0.3, ease }}
             className="bg-muted border-border/60 relative flex min-h-[320px] w-full items-center justify-center overflow-hidden rounded-4xl border sm:min-h-[480px]"
           >
             <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#1e6eae]/15 blur-3xl" />
@@ -214,6 +227,7 @@ const stats = [
 ];
 
 export function TechProofBand(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 pb-20 sm:px-6 sm:pb-24 lg:px-8">
       <div className="border-border mx-auto max-w-[1400px] rounded-4xl border">
@@ -225,7 +239,7 @@ export function TechProofBand(): ReactNode {
               transition={{ duration: 0.5, delay: i * 0.08, ease }}
               className="px-8 py-8 text-center sm:py-10"
             >
-              <p className="text-foreground font-serif text-5xl font-medium tracking-tight sm:text-6xl">
+              <p className="text-foreground font-serif text-5xl font-medium tracking-tight tabular-nums sm:text-6xl">
                 {s.value}
               </p>
               <p className="text-muted-foreground mt-2 text-sm">{s.label}</p>
@@ -262,6 +276,7 @@ const bigQuestions = [
 ];
 
 export function BigQuestionsSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-muted/40 w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -273,7 +288,7 @@ export function BigQuestionsSection(): ReactNode {
           <motion.p
             {...reveal}
             transition={{ duration: 0.5, delay: 0.1, ease }}
-            className="text-muted-foreground text-base leading-relaxed sm:text-lg"
+            className="text-muted-foreground text-base leading-relaxed text-pretty sm:text-lg"
           >
             You’ve done a lot right, but your finances still feel confusing.
             These are the kinds of questions that come up when you’re juggling
@@ -316,6 +331,7 @@ const helpItems = [
 ];
 
 export function HowWeHelpSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -326,7 +342,7 @@ export function HowWeHelpSection(): ReactNode {
             <motion.p
               {...reveal}
               transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="text-muted-foreground text-base leading-relaxed sm:text-lg"
+              className="text-muted-foreground text-base leading-relaxed text-pretty sm:text-lg"
             >
               We focus on the high-stakes decisions that matter most for tech
               professionals—so you can understand all your options, easily
@@ -379,6 +395,8 @@ const stockTypes = [
 ];
 
 export function StockTypesSection(): ReactNode {
+  const reveal = useReveal();
+  const pop = useReveal("scale(0.96)", "scale(1)");
   return (
     <section className="w-full bg-[#0f2a44] px-4 py-24 text-white sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -393,7 +411,7 @@ export function StockTypesSection(): ReactNode {
           <motion.h2
             {...reveal}
             transition={{ duration: 0.5, ease }}
-            className="mb-6 font-serif text-3xl font-medium leading-[1.1] sm:text-4xl md:text-5xl"
+            className="mb-6 font-serif text-3xl font-medium text-balance leading-[1.1] sm:text-4xl md:text-5xl"
           >
             Company Stock Is Complex — We Simplify It All
           </motion.h2>
@@ -411,9 +429,7 @@ export function StockTypesSection(): ReactNode {
           {stockTypes.map((t, i) => (
             <motion.span
               key={t}
-              initial={{ opacity: 0, scale: 0.94 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              {...pop}
               transition={{ duration: 0.35, delay: i * 0.03, ease }}
               className="rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5 text-sm font-medium text-white/90 sm:text-[15px]"
             >
@@ -504,6 +520,7 @@ const planningPillars = [
 ];
 
 export function PlanningLooksLikeSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -515,7 +532,7 @@ export function PlanningLooksLikeSection(): ReactNode {
           <motion.p
             {...reveal}
             transition={{ duration: 0.5, delay: 0.1, ease }}
-            className="text-muted-foreground text-base leading-relaxed sm:text-lg"
+            className="text-muted-foreground text-base leading-relaxed text-pretty sm:text-lg"
           >
             Here’s how our team of CERTIFIED FINANCIAL PLANNERS®, based in
             Austin, TX and fully virtual, can help. You no longer have to make
@@ -583,6 +600,7 @@ const mistakes = [
 ];
 
 export function MistakesSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-muted/40 w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -594,7 +612,7 @@ export function MistakesSection(): ReactNode {
           <motion.p
             {...reveal}
             transition={{ duration: 0.5, delay: 0.1, ease }}
-            className="text-muted-foreground text-base leading-relaxed sm:text-lg"
+            className="text-muted-foreground text-base leading-relaxed text-pretty sm:text-lg"
           >
             When your wealth grows quickly through equity, decisions involve
             multiple variables and mistakes are costly. All the moving parts
@@ -627,6 +645,7 @@ export function MistakesSection(): ReactNode {
 /* ═══════ Testimonials ═══════ */
 
 export function TestimonialsSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -662,7 +681,7 @@ export function TestimonialsSection(): ReactNode {
         <div className="mt-10 flex justify-center">
           <Link
             href="/testimonials"
-            className="border-border text-foreground hover:bg-muted inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition-colors"
+            className="border-border text-foreground hover:bg-muted inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition-[scale,background-color] duration-150 ease-out active:scale-[0.97]"
           >
             Read More Reviews
             <ArrowRight className="h-4 w-4" />
@@ -693,6 +712,7 @@ const whyUs = [
 ];
 
 export function ChooseAdvisorSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-muted/40 w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -759,6 +779,7 @@ const differentiators = [
 ];
 
 export function DifferentSection(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
@@ -770,7 +791,7 @@ export function DifferentSection(): ReactNode {
           <motion.p
             {...reveal}
             transition={{ duration: 0.5, delay: 0.1, ease }}
-            className="text-muted-foreground text-base leading-relaxed sm:text-lg"
+            className="text-muted-foreground text-base leading-relaxed text-pretty sm:text-lg"
           >
             Who you choose to be your thinking partner for big financial
             decisions is important. Here’s what makes our team unique.
@@ -827,11 +848,11 @@ export function TechFaqSection({ faqs }: { faqs: TechFaq[] }): ReactNode {
             <details
               key={faq.question}
               open={i === 0}
-              className="group bg-card border-border rounded-2xl border px-6 py-5 open:pb-6"
+              className="group bg-card border-border rounded-2xl border px-6 py-5 open:pb-6 [&::details-content]:opacity-0 [&::details-content]:transition-[opacity,content-visibility] [&::details-content]:duration-200 [&::details-content]:ease-out [&::details-content]:[transition-behavior:allow-discrete] open:[&::details-content]:opacity-100"
             >
               <summary className="text-foreground flex cursor-pointer list-none items-start justify-between gap-6 text-base font-semibold sm:text-lg [&::-webkit-details-marker]:hidden">
                 {faq.question}
-                <ChevronDown className="text-muted-foreground mt-1 h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
+                <ChevronDown className="text-muted-foreground mt-1 h-5 w-5 shrink-0 transition-transform duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] group-open:rotate-180" />
               </summary>
               <div className="text-muted-foreground mt-4 space-y-4 leading-relaxed">
                 {faq.answer}
@@ -847,16 +868,17 @@ export function TechFaqSection({ faqs }: { faqs: TechFaq[] }): ReactNode {
 /* ═══════ Final CTA ═══════ */
 
 export function TechFinalCta(): ReactNode {
+  const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
       <motion.div
         {...reveal}
-        transition={{ duration: 0.6, ease }}
+        transition={{ duration: 0.5, ease }}
         className="relative mx-auto max-w-[1400px] overflow-hidden rounded-4xl bg-[#0f2a44] px-6 py-20 text-center text-white sm:px-12 sm:py-24"
       >
         <div className="pointer-events-none absolute -top-32 left-1/2 h-96 w-[48rem] -translate-x-1/2 rounded-full bg-[#1e6eae]/40 blur-3xl" />
         <div className="relative mx-auto max-w-3xl">
-          <h2 className="mb-6 font-serif text-3xl font-medium leading-[1.1] sm:text-4xl md:text-5xl">
+          <h2 className="mb-6 font-serif text-3xl font-medium text-balance leading-[1.1] sm:text-4xl md:text-5xl">
             Ready to Turn Your Tech Success into Freedom, Flexibility, and
             Options?
           </h2>
@@ -867,7 +889,7 @@ export function TechFinalCta(): ReactNode {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#0f2a44] transition-opacity hover:opacity-90 sm:text-base"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#0f2a44] transition-[scale,opacity] duration-150 ease-out hover:opacity-90 active:scale-[0.97] sm:text-base"
           >
             <Calendar className="h-4 w-4" />
             Schedule A Call With Us
