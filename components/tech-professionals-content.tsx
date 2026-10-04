@@ -173,7 +173,7 @@ export function TechHero(): ReactNode {
 /* ═══════ Big questions (retirement "questions" layout) ═══════ */
 
 const bigQuestions: { icon: LucideIcon; text: string }[] = [
-  { icon: CalendarClock, text: "Should I exercise my stock options now, or wait—and how do taxes impact that decision?" },
+  { icon: CalendarClock, text: "Should I exercise my stock options now, or wait, and how do taxes impact that decision?" },
   { icon: Briefcase, text: "What happens to my equity if I leave for another company, get laid off, or take a break?" },
   { icon: Scale, text: "Am I taking too much risk by having so much of my net worth tied to my company?" },
   { icon: Search, text: "Are we missing something important or doing something inefficient without realizing it?" },
@@ -337,7 +337,7 @@ export function HowWeHelpSection(): ReactNode {
               className="text-foreground/70 max-w-md text-base leading-relaxed text-pretty sm:text-lg"
             >
               We focus on the high-stakes decisions that matter most for tech
-              professionals—so you can understand all your options, easily
+              professionals, so you can understand all your options, easily
               weigh trade-offs, and build a financial plan around what matters
               most to you.
             </motion.p>
@@ -414,7 +414,7 @@ export function StockTypesSection(): ReactNode {
             className="mb-6 font-serif text-3xl font-medium text-balance leading-[1.1] sm:text-4xl md:text-5xl"
           >
             <span className="sm:whitespace-nowrap">
-              Company Stock Is Complex —
+              Company Stock Is Complex:
             </span>{" "}
             <span className="sm:whitespace-nowrap">We Simplify It All</span>
           </motion.h2>
@@ -506,12 +506,12 @@ const planningTabs: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: Home,
     title: "Making big life decisions with confidence",
-    body: "We help you navigate big life decisions—home purchases, having kids, or lifestyle shifts—so you can move forward knowing you can easily afford what’s next.",
+    body: "We help you navigate big life decisions (home purchases, having kids, or lifestyle shifts) so you can move forward knowing you can easily afford what’s next.",
   },
   {
     icon: FolderKanban,
     title: "Bringing order and organization to your finances",
-    body: "We bring together all the moving parts—equity, cash flow, investments, and tax planning, so you know exactly what you have and no longer stress about taxes, diversification, or if you can afford the life you want.",
+    body: "We bring together all the moving parts: equity, cash flow, investments, and tax planning, so you know exactly what you have and no longer stress about taxes, diversification, or if you can afford the life you want.",
   },
 ];
 
@@ -779,7 +779,7 @@ export function TestimonialsSection(): ReactNode {
 
 const whyUs = [
   "We've worked with a variety of tech professionals, from engineers to executives.",
-  "We understand equity compensation inside and out—ISOs, NSOs, RSUs, ESPPs, and more.",
+  "We understand equity compensation inside and out: ISOs, NSOs, RSUs, ESPPs, and more.",
   "We speak your language and can help you unravel the complexity of it all.",
   "We're fiduciaries legally required to act in your best interest.",
   "We work with clients in Austin and nationwide. Your zip code isn't a barrier.",
