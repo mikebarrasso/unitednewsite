@@ -244,17 +244,18 @@ const helpItems: { icon: LucideIcon; label: string }[] = [
 
 export function HowWeHelpSection(): ReactNode {
   const reveal = useReveal();
-  const slideIn = useReveal("translateX(-12px)", "translateX(0px)");
   return (
     <section className="bg-muted/30 w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
-          <div className="lg:sticky lg:top-32 lg:self-start">
-            <SectionHeading className="mb-6">How We Help (At a Glance)</SectionHeading>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,8fr)] lg:gap-16">
+          <div>
+            <SectionHeading className="mb-6">
+              How We Help (At a Glance)
+            </SectionHeading>
             <motion.p
               {...reveal}
               transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="text-foreground/70 text-base leading-relaxed text-pretty sm:text-lg"
+              className="text-foreground/70 max-w-md text-base leading-relaxed text-pretty sm:text-lg"
             >
               We focus on the high-stakes decisions that matter most for tech
               professionals—so you can understand all your options, easily
@@ -262,26 +263,41 @@ export function HowWeHelpSection(): ReactNode {
               most to you.
             </motion.p>
           </div>
-          <ul className="grid grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-2">
+          <motion.ul
+            {...reveal}
+            transition={{ duration: 0.5, delay: 0.15, ease }}
+            className="bg-card border-border grid grid-cols-1 overflow-hidden rounded-3xl border shadow-[0_1px_2px_rgba(15,42,68,0.04),0_12px_32px_-16px_rgba(15,42,68,0.12)] sm:auto-rows-fr sm:grid-cols-2"
+          >
             {helpItems.map((item, i) => {
               const Icon = item.icon;
+              // "Name (detail)" labels: same words, the detail set quieter.
+              const split = item.label.indexOf(" (");
+              const lead = split === -1 ? item.label : item.label.slice(0, split);
+              const detail = split === -1 ? null : item.label.slice(split + 1);
               return (
-                <motion.li
+                <li
                   key={item.label}
-                  {...slideIn}
-                  transition={{ duration: 0.4, delay: (i % 6) * 0.05, ease }}
-                  className="flex items-start gap-3"
+                  className={`border-border flex items-center gap-4 px-5 py-4 sm:px-6 sm:py-5 ${
+                    i < helpItems.length - 1 ? "border-b" : ""
+                  } ${i >= helpItems.length - 2 ? "sm:border-b-0" : ""} ${
+                    i % 2 === 0 ? "sm:border-r" : ""
+                  }`}
                 >
-                  <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1e6eae]/10">
-                    <Icon className="h-4.5 w-4.5 text-[#1e6eae]" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1e6eae]/10">
+                    <Icon className="h-5 w-5 text-[#1e6eae]" />
                   </div>
-                  <p className="text-foreground pt-1.5 text-sm leading-relaxed font-semibold sm:text-[15px]">
-                    {item.label}
+                  <p className="text-foreground text-[15px] leading-snug font-semibold text-pretty">
+                    {lead}
+                    {detail && (
+                      <span className="text-muted-foreground mt-0.5 block text-sm font-normal">
+                        {detail}
+                      </span>
+                    )}
                   </p>
-                </motion.li>
+                </li>
               );
             })}
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </section>
