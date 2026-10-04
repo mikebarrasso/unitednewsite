@@ -8,7 +8,7 @@ import { faqItems, type FAQItem } from "@/lib/faq-data";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const faqs = faqItems;
+type FAQEntry = { question: string; answer: ReactNode };
 
 function FAQAccordionItem({
   item,
@@ -16,7 +16,7 @@ function FAQAccordionItem({
   onToggle,
   index,
 }: {
-  item: FAQItem;
+  item: FAQItem | FAQEntry;
   isOpen: boolean;
   onToggle: () => void;
   index: number;
@@ -67,9 +67,15 @@ function FAQAccordionItem({
             transition={{ duration: 0.3, ease }}
             className="overflow-hidden"
           >
-            <p className="pb-6 text-foreground/60 leading-relaxed max-w-2xl">
-              {item.answer}
-            </p>
+            {typeof item.answer === "string" ? (
+              <p className="pb-6 text-foreground/60 leading-relaxed max-w-2xl">
+                {item.answer}
+              </p>
+            ) : (
+              <div className="pb-6 text-foreground/60 leading-relaxed max-w-2xl space-y-4">
+                {item.answer}
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
@@ -77,11 +83,21 @@ function FAQAccordionItem({
   );
 }
 
-export function FAQ(): ReactNode {
+type FAQProps = {
+  heading?: ReactNode;
+  items?: Array<FAQItem | FAQEntry>;
+  className?: string;
+};
+
+export function FAQ({
+  heading = "Questions We Hear Often",
+  items = faqItems,
+  className = "bg-background",
+}: FAQProps = {}): ReactNode {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative w-full bg-background py-24 sm:py-32 overflow-hidden">
+    <section className={`relative w-full py-24 sm:py-32 overflow-hidden ${className}`}>
       <div className="relative mx-auto max-w-7xl px-0 xl:px-12">
         <div className="px-8 sm:px-12">
           <div className="max-w-2xl mb-12">
@@ -92,12 +108,12 @@ export function FAQ(): ReactNode {
               transition={{ duration: 0.6, ease }}
               className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
             >
-              Questions We Hear Often
+              {heading}
             </motion.h2>
           </div>
 
           <div className="border-t border-foreground/10">
-            {faqs.map((faq, index) => (
+            {items.map((faq, index) => (
               <FAQAccordionItem
                 key={faq.question}
                 item={faq}

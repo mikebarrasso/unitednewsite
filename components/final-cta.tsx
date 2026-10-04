@@ -143,7 +143,21 @@ const fragmentShader = `
   }
 `;
 
-export function FinalCTA(): ReactNode {
+type FinalCTAProps = {
+  title?: ReactNode;
+  description?: ReactNode;
+  ctaLabel?: string;
+  ctaHref?: string;
+  note?: ReactNode;
+};
+
+export function FinalCTA({
+  title = "Ready to Stop Coordinating Between Advisors?",
+  description = "Schedule a no-pressure conversation. We'll listen to what's going on in your financial life and help you decide if working together makes sense.",
+  ctaLabel = "Book Your Complimentary Consultation",
+  ctaHref = "/contact",
+  note,
+}: FinalCTAProps = {}): ReactNode {
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const frameIdRef = useRef<number>(0);
@@ -160,7 +174,14 @@ export function FinalCTA(): ReactNode {
     const scene = new THREE.Scene();
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    // No WebGL (hardware acceleration off, locked-down browsers): keep the
+    // plain background instead of letting the throw take down the page.
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+    } catch {
+      return;
+    }
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
@@ -225,7 +246,7 @@ export function FinalCTA(): ReactNode {
           transition={{ duration: 0.6, ease }}
           className="text-4xl md:text-5xl max-w-lg mx-auto font-medium font-serif text-foreground leading-tight"
         >
-          Ready to Stop Coordinating Between Advisors?
+          {title}
         </motion.h2>
 
         <motion.p
@@ -235,9 +256,7 @@ export function FinalCTA(): ReactNode {
           transition={{ duration: 0.5, delay: 0.1, ease }}
           className="mt-6 text-foreground/60 max-w-lg mx-auto"
         >
-          Schedule a no-pressure conversation. We&apos;ll listen to what&apos;s
-          going on in your financial life and help you decide if working
-          together makes sense.
+          {description}
         </motion.p>
 
         <motion.div
@@ -248,12 +267,15 @@ export function FinalCTA(): ReactNode {
           className="mt-10"
         >
           <Link
-            href="/contact"
+            href={ctaHref}
             className="group inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 active:scale-[0.97] transition-all duration-150"
           >
-            Book Your Complimentary Consultation
+            {ctaLabel}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </Link>
+          {note && (
+            <p className="mt-6 text-sm text-foreground/50">{note}</p>
+          )}
         </motion.div>
       </div>
     </section>

@@ -1,4 +1,7 @@
+import { FAQ } from "@/components/faq";
+import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { Stats } from "@/components/stats";
 import {
   BigQuestionsSection,
   ChooseAdvisorSection,
@@ -8,12 +11,8 @@ import {
   MistakesSection,
   PlanningLooksLikeSection,
   StockTypesSection,
-  TechFaqSection,
-  TechFinalCta,
   TechHero,
-  TechProofBand,
   TestimonialsSection,
-  type TechFaq,
 } from "@/components/tech-professionals-content";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -29,18 +28,12 @@ export const metadata: Metadata = createMetadata({
   noIndex: true,
 });
 
-const faqs: TechFaq[] = [
+const faqs = [
   {
     question:
       "Do you only work with tech professionals in Austin, or can you work with me if I live somewhere else?",
-    answer: (
-      <p>
-        We work with tech professionals in Austin and nationwide. While
-        we&apos;re based in Austin and have many local clients, all of our
-        relationships are fully remote. We use video calls, screen sharing, and
-        a secure document portal to work with you wherever you are.
-      </p>
-    ),
+    answer:
+      "We work with tech professionals in Austin and nationwide. While we're based in Austin and have many local clients, all of our relationships are fully remote. We use video calls, screen sharing, and a secure document portal to work with you wherever you are.",
   },
   {
     question: "How much do I need to have saved to work with you?",
@@ -106,7 +99,16 @@ export default function TechProfessionalsPage(): ReactNode {
     <>
       <main id="main-content" className="flex-1">
         <TechHero />
-        <TechProofBand />
+        <Stats
+          heading="Your Trusted Austin Financial Advisors Serving You Virtually Nationwide"
+          description={null}
+          items={[
+            { value: 200, suffix: "+", label: "Tech clients served*" },
+            { value: 18, suffix: "+", label: "Years of experience*" },
+            { value: 100, suffix: "%", label: "Fiduciary commitment" },
+          ]}
+          footnote="* All numbers updated 02/26/2026"
+        />
         <BigQuestionsSection />
         <HowWeHelpSection />
         <StockTypesSection />
@@ -116,8 +118,17 @@ export default function TechProfessionalsPage(): ReactNode {
         <TestimonialsSection />
         <ChooseAdvisorSection />
         <DifferentSection />
-        <TechFaqSection faqs={faqs} />
-        <TechFinalCta />
+        <FAQ
+          heading="Common Questions Tech Professionals Ask Us"
+          items={faqs}
+          className="bg-muted/30"
+        />
+        <FinalCTA
+          title="Ready to Turn Your Tech Success into Freedom, Flexibility, and Options?"
+          description="Schedule a conversation with our team to see if we’re a great fit. No pressure, no sales pitch. Just a kind, caring team of financial planners ready to help."
+          ctaLabel="Schedule A Call With Us"
+          note="Free 45-minute call • Fee-Only Financial Planners in Austin, TX • Fiduciaries"
+        />
       </main>
       <Footer />
     </>
