@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import {
   AlertTriangle,
+  ArrowLeft,
   ArrowRight,
   BadgeDollarSign,
   Briefcase,
@@ -34,7 +35,13 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import { LogoLoop, type LogoItem } from "@/components/logo-loop";
 import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { useReducedMotion } from "@/lib/motion";
@@ -180,45 +187,117 @@ const bigQuestions: { icon: LucideIcon; text: string }[] = [
 
 export function BigQuestionsSection(): ReactNode {
   const reveal = useReveal();
-  const slideIn = useReveal("translateX(-12px)", "translateX(0px)");
+  const reduced = useReducedMotion();
+  const trackRef = useRef<HTMLUListElement>(null);
+  const [progress, setProgress] = useState(0);
+
+  const syncProgress = useCallback(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    const max = el.scrollWidth - el.clientWidth;
+    setProgress(max > 0 ? Math.min(1, Math.max(0, el.scrollLeft / max)) : 0);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", syncProgress);
+    return () => window.removeEventListener("resize", syncProgress);
+  }, [syncProgress]);
+
+  const step = (dir: 1 | -1) => {
+    const el = trackRef.current;
+    const card = el?.querySelector("li");
+    if (!el || !card) return;
+    const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+    el.scrollBy({
+      left: dir * (card.getBoundingClientRect().width + gap),
+      behavior: reduced ? "auto" : "smooth",
+    });
+  };
+
+  const atStart = progress <= 0.01;
+  const atEnd = progress >= 0.99;
+  // Lines the cards up with the page's 1400px content column while letting
+  // the track run to the screen edge.
+  const gutter =
+    "px-4 sm:px-6 lg:px-[max(2rem,calc((100vw_-_1400px)_/_2_+_2rem))] scroll-px-4 sm:scroll-px-6 lg:scroll-px-[max(2rem,calc((100vw_-_1400px)_/_2_+_2rem))]";
+  const arrow =
+    "border-border text-foreground hover:bg-muted flex h-11 w-11 items-center justify-center rounded-full border transition-[scale,background-color,opacity] duration-150 ease-out active:scale-[0.97] disabled:pointer-events-none disabled:opacity-35";
+
   return (
-    <section className="bg-background relative w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
-          <div className="lg:sticky lg:top-32">
-            <SectionHeading className="mb-6">
-              The Big Questions We Help Tech Professionals Answer
-            </SectionHeading>
-            <motion.p
-              {...reveal}
-              transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="text-foreground/70 text-base leading-relaxed text-pretty sm:text-lg"
-            >
-              You’ve done a lot right, but your finances still feel confusing.
-              These are the kinds of questions that come up when you’re
-              juggling multiple moving parts and complex decisions.
-            </motion.p>
-          </div>
-          <div className="space-y-3">
-            {bigQuestions.map((q, i) => {
-              const Icon = q.icon;
-              return (
-                <motion.div
-                  key={q.text}
-                  {...slideIn}
-                  transition={{ duration: 0.4, delay: 0.05 + (i % 5) * 0.06, ease }}
-                  className="bg-background border-border flex items-start gap-4 rounded-xl border p-4"
-                >
-                  <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1e6eae]/10">
-                    <Icon className="h-4.5 w-4.5 text-[#1e6eae]" />
-                  </div>
-                  <p className="text-foreground/80 text-sm leading-relaxed font-medium sm:text-base">
-                    {q.text}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
+    <section className="bg-background relative w-full py-24 sm:py-32">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 grid grid-cols-1 items-end gap-6 lg:grid-cols-2 lg:gap-16">
+          <SectionHeading>
+            The Big Questions We Help Tech Professionals Answer
+          </SectionHeading>
+          <motion.p
+            {...reveal}
+            transition={{ duration: 0.5, delay: 0.1, ease }}
+            className="text-foreground/70 text-base leading-relaxed text-pretty sm:text-lg"
+          >
+            You’ve done a lot right, but your finances still feel confusing.
+            These are the kinds of questions that come up when you’re juggling
+            multiple moving parts and complex decisions.
+          </motion.p>
+        </div>
+      </div>
+
+      <motion.div {...reveal} transition={{ duration: 0.5, delay: 0.15, ease }}>
+        <ul
+          ref={trackRef}
+          onScroll={syncProgress}
+          tabIndex={0}
+          aria-label="The big questions"
+          className={`flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-2 [scrollbar-width:none] sm:gap-5 [&::-webkit-scrollbar]:hidden ${gutter}`}
+        >
+          {bigQuestions.map((q) => {
+            const Icon = q.icon;
+            return (
+              <li
+                key={q.text}
+                className="bg-muted/40 border-border flex min-h-[260px] w-[82%] shrink-0 snap-start flex-col justify-between gap-10 rounded-3xl border p-7 sm:w-[380px] sm:p-8 lg:w-[420px]"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#1e6eae]/10">
+                  <Icon className="h-5 w-5 text-[#1e6eae]" />
+                </div>
+                <p className="text-foreground font-serif text-xl leading-snug text-pretty sm:text-2xl">
+                  {q.text}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </motion.div>
+
+      <div className="mx-auto mt-8 flex max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+        <div
+          className="bg-border relative h-0.5 w-40 overflow-hidden rounded-full sm:w-64"
+          aria-hidden="true"
+        >
+          <div
+            className="absolute inset-y-0 left-0 w-full origin-left rounded-full bg-[#1e6eae]"
+            style={{ transform: `scaleX(${0.1 + progress * 0.9})` }}
+          />
+        </div>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            aria-label="Previous question"
+            disabled={atStart}
+            onClick={() => step(-1)}
+            className={arrow}
+          >
+            <ArrowLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            aria-label="Next question"
+            disabled={atEnd}
+            onClick={() => step(1)}
+            className={arrow}
+          >
+            <ArrowRight className="h-4 w-4" />
+          </button>
         </div>
       </div>
     </section>
