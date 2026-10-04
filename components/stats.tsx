@@ -96,22 +96,24 @@ export function Stats({
   return (
     <section className="relative w-full bg-muted py-24 sm:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif text-foreground leading-tight">
-            {heading}
-          </h2>
-          {description && (
-            <p className="mt-4 text-foreground/60 max-w-2xl mx-auto leading-relaxed">
-              {description}
-            </p>
-          )}
-        </motion.div>
+        {heading && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif text-foreground leading-tight">
+              {heading}
+            </h2>
+            {description && (
+              <p className="mt-4 text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+                {description}
+              </p>
+            )}
+          </motion.div>
+        )}
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
           {items.map((stat, index) => (
@@ -136,11 +138,7 @@ export function Stats({
             </motion.div>
           ))}
         </div>
-        {footnote && (
-          <p className="mt-10 text-center text-xs text-foreground/50">
-            {footnote}
-          </p>
-        )}
+        {footnote && <div className="mt-10 text-center">{footnote}</div>}
       </div>
     </section>
   );

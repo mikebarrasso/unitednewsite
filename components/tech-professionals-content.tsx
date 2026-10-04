@@ -63,19 +63,6 @@ function useEnter() {
   });
 }
 
-function Eyebrow({ children }: { children: ReactNode }): ReactNode {
-  const reveal = useReveal("translateY(8px)");
-  return (
-    <motion.p
-      {...reveal}
-      transition={{ duration: 0.4 }}
-      className="mb-4 text-sm font-medium text-[#1e6eae]"
-    >
-      {children}
-    </motion.p>
-  );
-}
-
 function SectionHeading({
   children,
   className = "",
@@ -115,69 +102,6 @@ function CheckDot(): ReactNode {
 
 /* ═══════ Hero (service-hero layout) ═══════ */
 
-const heroGrants = [
-  { type: "ISOs", detail: "Exercise scenarios modeled", tag: "AMT checked" },
-  { type: "RSUs", detail: "Withholding gap covered", tag: "Vesting Q3" },
-  { type: "ESPP", detail: "Qualifying sale date set", tag: "Holding" },
-  { type: "Company stock", detail: "Diversification plan in motion", tag: "On track" },
-];
-
-function HeroVisual(): ReactNode {
-  const enter = useEnter();
-  return (
-    <div className="flex h-full w-full flex-col justify-center gap-4 p-6 sm:p-8 lg:p-10">
-      <motion.div
-        {...enter("translateY(12px)", "translateY(0px)")}
-        transition={{ duration: 0.5, delay: 0.4, ease }}
-        className="bg-background border-border rounded-2xl border p-5"
-      >
-        <div className="mb-4 flex items-center justify-between">
-          <span className="text-foreground text-xs font-semibold">
-            Your equity, in one plan
-          </span>
-          <span className="rounded-full bg-[#1e6eae]/10 px-2 py-0.5 text-[10px] font-medium text-[#1e6eae]">
-            Coordinated
-          </span>
-        </div>
-        {heroGrants.map((g, i) => (
-          <motion.div
-            key={g.type}
-            {...enter("translateX(-8px)", "translateX(0px)")}
-            transition={{ duration: 0.4, delay: 0.55 + i * 0.08, ease }}
-            className={`flex items-center justify-between py-3 ${
-              i < heroGrants.length - 1 ? "border-border/60 border-b" : ""
-            }`}
-          >
-            <div>
-              <p className="text-foreground text-sm font-semibold">{g.type}</p>
-              <p className="text-muted-foreground text-xs">{g.detail}</p>
-            </div>
-            <span className="text-xs font-medium text-[#1e6eae]">{g.tag}</span>
-          </motion.div>
-        ))}
-      </motion.div>
-      <motion.div
-        {...enter("translateY(12px)", "translateY(0px)")}
-        transition={{ duration: 0.5, delay: 0.9, ease }}
-        className="grid grid-cols-2 gap-3"
-      >
-        <div className="bg-background border-border rounded-2xl border p-4">
-          <p className="text-muted-foreground text-[11px]">Next decision</p>
-          <p className="text-foreground mt-1 text-sm font-semibold">
-            Exercise before year-end?
-          </p>
-        </div>
-        <div className="rounded-2xl bg-[#1e6eae] p-4 text-white">
-          <p className="text-[11px] text-white/70">The goal</p>
-          <p className="mt-1 text-sm font-semibold">
-            Freedom, flexibility, options
-          </p>
-        </div>
-      </motion.div>
-    </div>
-  );
-}
-
 export function TechHero(): ReactNode {
   const enter = useEnter();
   return (
@@ -185,18 +109,6 @@ export function TechHero(): ReactNode {
       <div className="mx-auto w-full max-w-[1400px]">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="flex flex-col space-y-6 sm:space-y-8">
-            <motion.div
-              {...enter("translateY(16px)", "translateY(0px)")}
-              transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="border-border flex w-fit items-center gap-2 rounded-full border p-1 sm:gap-3"
-            >
-              <span className="bg-primary text-primary-foreground inline-flex items-center rounded-full px-3 py-1 text-xs font-medium sm:text-sm">
-                Tech
-              </span>
-              <span className="text-foreground/80 mr-2 text-sm sm:text-base">
-                For engineers, founders &amp; executives
-              </span>
-            </motion.div>
 
             <motion.h1
               {...enter("translateY(16px)", "translateY(0px)")}
@@ -224,7 +136,7 @@ export function TechHero(): ReactNode {
                 href="/contact"
                 className="bg-primary text-primary-foreground inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium transition-[scale,opacity] duration-150 ease-out hover:opacity-90 active:scale-[0.97] sm:w-auto sm:text-base"
               >
-                Meet With Our Team
+                MEET WITH OUR TEAM
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
@@ -233,10 +145,17 @@ export function TechHero(): ReactNode {
           <motion.div
             {...enter("scale(0.97)", "scale(1)")}
             transition={{ duration: 0.5, delay: 0.3, ease }}
-            className="bg-muted border-border/60 relative flex min-h-[320px] w-full items-center justify-center overflow-hidden rounded-4xl border sm:min-h-[480px]"
+            className="bg-muted border-border/60 relative min-h-[280px] w-full overflow-hidden rounded-4xl border sm:min-h-[480px]"
           >
-            <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#1e6eae]/15 blur-3xl" />
-            <HeroVisual />
+            {/* Same photo as the Software Engineers page. */}
+            <Image
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+              alt="Software engineer's workspace with code on screen"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
           </motion.div>
         </div>
       </div>
@@ -265,49 +184,40 @@ export function BigQuestionsSection(): ReactNode {
   return (
     <section className="bg-background relative w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <Eyebrow>The Big Questions</Eyebrow>
-            <SectionHeading className="mb-8">
+        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+          <div className="lg:sticky lg:top-32">
+            <SectionHeading className="mb-6">
               The Big Questions We Help Tech Professionals Answer
             </SectionHeading>
-            <div className="space-y-3">
-              {bigQuestions.map((q, i) => {
-                const Icon = q.icon;
-                return (
-                  <motion.div
-                    key={q.text}
-                    {...slideIn}
-                    transition={{ duration: 0.4, delay: 0.05 + (i % 5) * 0.06, ease }}
-                    className="bg-background border-border flex items-start gap-4 rounded-xl border p-4"
-                  >
-                    <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1e6eae]/10">
-                      <Icon className="h-4.5 w-4.5 text-[#1e6eae]" />
-                    </div>
-                    <p className="text-foreground/80 text-sm leading-relaxed font-medium sm:text-base">
-                      {q.text}
-                    </p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="lg:sticky lg:top-32 lg:pt-16">
-            <motion.div
+            <motion.p
               {...reveal}
-              transition={{ duration: 0.5, delay: 0.2, ease }}
-              className="rounded-2xl border border-[#1e6eae]/20 bg-[#1e6eae]/[0.06] p-6 sm:p-8"
+              transition={{ duration: 0.5, delay: 0.1, ease }}
+              className="text-foreground/70 text-base leading-relaxed text-pretty sm:text-lg"
             >
-              <p className="text-foreground font-serif text-2xl leading-snug text-pretty sm:text-3xl">
-                You’ve done a lot right, but your finances still feel
-                confusing.
-              </p>
-              <p className="text-muted-foreground mt-4 text-base leading-relaxed text-pretty sm:text-lg">
-                These are the kinds of questions that come up when you’re
-                juggling multiple moving parts and complex decisions.
-              </p>
-            </motion.div>
+              You’ve done a lot right, but your finances still feel confusing.
+              These are the kinds of questions that come up when you’re
+              juggling multiple moving parts and complex decisions.
+            </motion.p>
+          </div>
+          <div className="space-y-3">
+            {bigQuestions.map((q, i) => {
+              const Icon = q.icon;
+              return (
+                <motion.div
+                  key={q.text}
+                  {...slideIn}
+                  transition={{ duration: 0.4, delay: 0.05 + (i % 5) * 0.06, ease }}
+                  className="bg-background border-border flex items-start gap-4 rounded-xl border p-4"
+                >
+                  <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1e6eae]/10">
+                    <Icon className="h-4.5 w-4.5 text-[#1e6eae]" />
+                  </div>
+                  <p className="text-foreground/80 text-sm leading-relaxed font-medium sm:text-base">
+                    {q.text}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -340,8 +250,7 @@ export function HowWeHelpSection(): ReactNode {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <Eyebrow>At a Glance</Eyebrow>
-            <SectionHeading className="mb-6">How We Help</SectionHeading>
+            <SectionHeading className="mb-6">How We Help (At a Glance)</SectionHeading>
             <motion.p
               {...reveal}
               transition={{ duration: 0.5, delay: 0.1, ease }}
@@ -404,13 +313,6 @@ export function StockTypesSection(): ReactNode {
     <section className="w-full bg-[#0f2a44] px-4 py-24 text-white sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <motion.p
-            {...reveal}
-            transition={{ duration: 0.4 }}
-            className="mb-4 text-sm font-medium text-[#8cc2f0]"
-          >
-            Equity Compensation
-          </motion.p>
           <motion.h2
             {...reveal}
             transition={{ duration: 0.5, ease }}
@@ -447,7 +349,7 @@ export function StockTypesSection(): ReactNode {
 
 /* ═══════ Client companies (home logo marquee) ═══════ */
 
-// Placeholder wordmarks until the firm supplies real client-company logos.
+// Sample wordmarks standing in for "[INSERT TECH LOGOS HERE]".
 const placeholderLogos: LogoItem[] = [
   "acmecorp",
   "boltshift",
@@ -472,12 +374,12 @@ const placeholderLogos: LogoItem[] = [
 export function ClientCompaniesSection(): ReactNode {
   return (
     <section className="bg-background w-full pt-20 pb-16 sm:pt-24 sm:pb-20">
-      <p className="text-muted-foreground mb-10 px-4 text-center text-sm font-medium tracking-wide uppercase">
+      <h2 className="text-foreground mb-10 px-4 text-center font-serif text-2xl font-medium text-balance sm:text-3xl">
         Our Clients Work At Companies Like These
-      </p>
+      </h2>
       <LogoLoop logos={placeholderLogos} speed={40} logoHeight={40} gap={80} />
       <p className="text-muted-foreground/70 mt-8 px-4 text-center text-xs">
-        Sample logos shown. Client company logos go here.
+        [INSERT TECH LOGOS HERE]
       </p>
     </section>
   );
@@ -530,7 +432,6 @@ export function PlanningLooksLikeSection(): ReactNode {
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
         <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
-          <Eyebrow>Our Approach</Eyebrow>
           <SectionHeading className="mb-4">
             What Financial Planning For Tech Professionals Looks Like
           </SectionHeading>
@@ -623,10 +524,6 @@ export function PlanningLooksLikeSection(): ReactNode {
                 <p className="text-muted-foreground text-lg leading-relaxed text-pretty md:text-xl">
                   {tab.body}
                 </p>
-                <p className="text-muted-foreground/60 mt-10 text-sm tabular-nums">
-                  {String(active + 1).padStart(2, "0")} /{" "}
-                  {String(planningTabs.length).padStart(2, "0")}
-                </p>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -701,7 +598,6 @@ export function MistakesSection(): ReactNode {
       />
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="mb-12 md:mb-16">
-          <Eyebrow>Costly Mistakes</Eyebrow>
           <SectionHeading className="mb-6 max-w-4xl tracking-tight">
             Mistakes We Help Tech Professionals Avoid
           </SectionHeading>
@@ -757,7 +653,6 @@ export function TestimonialsSection(): ReactNode {
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-4xl text-center">
-        <Eyebrow>Client Stories</Eyebrow>
         <SectionHeading className="mb-14">
           What Our Clients Say It’s Like To Work With Us
         </SectionHeading>
@@ -767,25 +662,21 @@ export function TestimonialsSection(): ReactNode {
             aria-hidden="true"
           />
           <blockquote className="text-foreground/50 font-serif text-2xl leading-snug italic text-balance sm:text-3xl">
-            A testimonial from a tech professional client goes here.
+            [ADD TECH PROFESSIONAL TESTIMONIALS FROM HERE]
           </blockquote>
-          <figcaption className="mt-8">
-            <p className="text-foreground text-sm font-semibold">Client name</p>
-            <p className="text-muted-foreground text-sm">Role, tech company</p>
-          </figcaption>
         </motion.figure>
         <div className="mt-12 flex justify-center">
           <Link
             href="/testimonials"
             className="border-border text-foreground hover:bg-muted inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition-[scale,background-color] duration-150 ease-out active:scale-[0.97]"
           >
-            Read More Reviews
+            READ MORE REVIEWS
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
         <p className="text-muted-foreground mx-auto mt-10 max-w-3xl text-xs leading-relaxed text-pretty">
-          These testimonials were provided by current United Financial
-          Planning Group clients and may not be representative of the
+          These testimonials were provided by current [ADD FIRM NAME]
+          clients and may not be representative of the
           experiences of other clients. The clients were not compensated, nor
           are there material conflicts of interest that would affect the given
           testimonials. You can view a complete list of our reviews on Google.
@@ -875,7 +766,6 @@ export function DifferentSection(): ReactNode {
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-[1400px]">
-        <Eyebrow>Our Philosophy</Eyebrow>
         <SectionHeading className="mb-10 max-w-4xl">
           What Makes Us Different From Other Advisors
         </SectionHeading>

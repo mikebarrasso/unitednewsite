@@ -100,14 +100,24 @@ export default function TechProfessionalsPage(): ReactNode {
       <main id="main-content" className="flex-1">
         <TechHero />
         <Stats
-          heading="Your Trusted Austin Financial Advisors Serving You Virtually Nationwide"
+          heading={null}
           description={null}
           items={[
             { value: 200, suffix: "+", label: "Tech clients served*" },
             { value: 18, suffix: "+", label: "Years of experience*" },
             { value: 100, suffix: "%", label: "Fiduciary commitment" },
           ]}
-          footnote="* All numbers updated 02/26/2026"
+          footnote={
+            <>
+              <p className="text-foreground/50 text-xs">
+                * All numbers updated 02/26/2026
+              </p>
+              <h2 className="text-foreground mx-auto mt-14 max-w-3xl font-serif text-2xl font-medium text-balance sm:text-3xl lg:text-4xl">
+                Your Trusted Austin Financial Advisors Serving You Virtually
+                Nationwide
+              </h2>
+            </>
+          }
         />
         <BigQuestionsSection />
         <HowWeHelpSection />
@@ -122,6 +132,7 @@ export default function TechProfessionalsPage(): ReactNode {
           heading="Common Questions Tech Professionals Ask Us"
           items={faqs}
           className="bg-muted/30"
+          showContactLink={false}
         />
         <FinalCTA
           title="Ready to Turn Your Tech Success into Freedom, Flexibility, and Options?"

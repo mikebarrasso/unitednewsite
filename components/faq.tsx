@@ -87,12 +87,14 @@ type FAQProps = {
   heading?: ReactNode;
   items?: Array<FAQItem | FAQEntry>;
   className?: string;
+  showContactLink?: boolean;
 };
 
 export function FAQ({
   heading = "Questions We Hear Often",
   items = faqItems,
   className = "bg-background",
+  showContactLink = true,
 }: FAQProps = {}): ReactNode {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -126,22 +128,24 @@ export function FAQ({
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2, ease }}
-            className="mt-12 flex flex-col sm:flex-row sm:items-center gap-4"
-          >
-            <p className="text-foreground/60">Still have questions?</p>
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
+          {showContactLink && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2, ease }}
+              className="mt-12 flex flex-col sm:flex-row sm:items-center gap-4"
             >
-              Get in touch
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
-          </motion.div>
+              <p className="text-foreground/60">Still have questions?</p>
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
+              >
+                Get in touch
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
