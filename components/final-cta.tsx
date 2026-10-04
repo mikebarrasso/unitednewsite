@@ -145,6 +145,7 @@ const fragmentShader = `
 
 type FinalCTAProps = {
   title?: ReactNode;
+  titleClassName?: string;
   description?: ReactNode;
   ctaLabel?: string;
   ctaHref?: string;
@@ -153,6 +154,7 @@ type FinalCTAProps = {
 
 export function FinalCTA({
   title = "Ready to Stop Coordinating Between Advisors?",
+  titleClassName = "max-w-lg",
   description = "Schedule a no-pressure conversation. We'll listen to what's going on in your financial life and help you decide if working together makes sense.",
   ctaLabel = "Book Your Complimentary Consultation",
   ctaHref = "/contact",
@@ -244,7 +246,7 @@ export function FinalCTA({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease }}
-          className="text-4xl md:text-5xl max-w-lg mx-auto font-medium font-serif text-foreground leading-tight"
+          className={`text-4xl md:text-5xl mx-auto font-medium font-serif text-foreground leading-tight text-balance ${titleClassName}`}
         >
           {title}
         </motion.h2>

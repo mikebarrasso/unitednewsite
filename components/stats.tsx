@@ -138,7 +138,11 @@ export function Stats({
             </motion.div>
           ))}
         </div>
-        {footnote && <div className="mt-10 text-center">{footnote}</div>}
+        {footnote && (
+          <p className="mt-10 text-center text-xs text-foreground/50">
+            {footnote}
+          </p>
+        )}
       </div>
     </section>
   );

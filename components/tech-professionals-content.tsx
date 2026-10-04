@@ -20,7 +20,6 @@ import {
   LineChart,
   Plane,
   PiggyBank,
-  Quote,
   Receipt,
   Repeat,
   Scale,
@@ -37,6 +36,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { LogoLoop, type LogoItem } from "@/components/logo-loop";
+import { WealthtenderFirmReviews } from "@/components/wealthtender-firm-reviews";
 import { useReducedMotion } from "@/lib/motion";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -318,7 +318,10 @@ export function StockTypesSection(): ReactNode {
             transition={{ duration: 0.5, ease }}
             className="mb-6 font-serif text-3xl font-medium text-balance leading-[1.1] sm:text-4xl md:text-5xl"
           >
-            Company Stock Is Complex — We Simplify It All
+            <span className="sm:whitespace-nowrap">
+              Company Stock Is Complex —
+            </span>{" "}
+            <span className="sm:whitespace-nowrap">We Simplify It All</span>
           </motion.h2>
           <motion.p
             {...reveal}
@@ -373,14 +376,11 @@ const placeholderLogos: LogoItem[] = [
 
 export function ClientCompaniesSection(): ReactNode {
   return (
-    <section className="bg-background w-full pt-20 pb-16 sm:pt-24 sm:pb-20">
+    <section className="bg-background w-full pt-20 pb-4 sm:pt-24 sm:pb-8">
       <h2 className="text-foreground mb-10 px-4 text-center font-serif text-2xl font-medium text-balance sm:text-3xl">
         Our Clients Work At Companies Like These
       </h2>
       <LogoLoop logos={placeholderLogos} speed={40} logoHeight={40} gap={80} />
-      <p className="text-muted-foreground/70 mt-8 px-4 text-center text-xs">
-        [INSERT TECH LOGOS HERE]
-      </p>
     </section>
   );
 }
@@ -646,25 +646,19 @@ export function MistakesSection(): ReactNode {
   );
 }
 
-/* ═══════ Testimonial spotlight (placeholder) ═══════ */
+/* ═══════ Testimonials (home reviews widget) ═══════ */
 
 export function TestimonialsSection(): ReactNode {
   const reveal = useReveal();
   return (
     <section className="bg-background w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-4xl text-center">
+      <div className="mx-auto max-w-5xl text-center">
         <SectionHeading className="mb-14">
           What Our Clients Say It’s Like To Work With Us
         </SectionHeading>
-        <motion.figure {...reveal} transition={{ duration: 0.5, ease }}>
-          <Quote
-            className="mx-auto mb-6 h-10 w-10 text-[#1e6eae]/25"
-            aria-hidden="true"
-          />
-          <blockquote className="text-foreground/50 font-serif text-2xl leading-snug italic text-balance sm:text-3xl">
-            [ADD TECH PROFESSIONAL TESTIMONIALS FROM HERE]
-          </blockquote>
-        </motion.figure>
+        <motion.div {...reveal} transition={{ duration: 0.5, ease }}>
+          <WealthtenderFirmReviews firmId="36778" />
+        </motion.div>
         <div className="mt-12 flex justify-center">
           <Link
             href="/testimonials"

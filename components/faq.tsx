@@ -108,7 +108,7 @@ export function FAQ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
+              className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground text-balance"
             >
               {heading}
             </motion.h2>
