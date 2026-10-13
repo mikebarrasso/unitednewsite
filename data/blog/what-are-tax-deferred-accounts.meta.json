@@ -1,5 +1,5 @@
 {
-  "authorSlug": "firm",
+  "authorSlug": "gerry-barrasso",
   "relatedServices": [
     "/services/retirement-planning",
     "/services/tax-planning"
@@ -22,8 +22,13 @@
     },
     {
       "question": "Do tax-deferred retirement accounts require withdrawals?",
-      "answer": "Many do. As of September 28, 2026, IRS guidance says traditional IRAs and many workplace plans generally have required minimum distributions starting for the year an owner reaches age 73, although workplace-plan timing and individual circumstances can differ. Original Roth IRA owners generally have no lifetime RMDs. See the IRS RMD FAQs linked in the article for current rules."
+      "answer": "Many do. As of October 13, 2026, IRS final regulations (Internal Revenue Bulletin 2024-33) set the age for starting required minimum distributions at 73 for people born from 1951 through 1958 and at 75 for people born in 1960 or later, with age 73 proposed for those born in 1959. Workplace-plan timing and individual circumstances can differ, and original Roth IRA owners generally have no lifetime RMDs."
+    },
+    {
+      "question": "Can I hold tax-deferred accounts and Roth accounts at the same time?",
+      "answer": "Yes, many people hold a mix of traditional, Roth, and taxable accounts. Each has different tax treatment on contributions, growth, and withdrawals, and eligibility rules apply. A planning review looks at how the mix may work together over time; no single combination suits everyone."
     }
   ],
-  "ctaFocus": "retirement withdrawals and tax treatment"
+  "ctaFocus": "retirement withdrawals and tax treatment",
+  "reviewedByline": true
 }
