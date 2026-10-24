@@ -43,7 +43,7 @@ const navLinks: NavItem[] = [
       },
       {
         label: "Tax Planning",
-        description: "Proactive strategies to reduce your lifetime tax burden",
+        description: "Proactive, year-round tax planning for your full picture",
         href: "/services/tax-planning",
       },
       {

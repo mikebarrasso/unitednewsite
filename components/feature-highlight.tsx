@@ -14,7 +14,7 @@ const services = [
     short: "Tax",
     href: "/services/tax-planning",
     description:
-      "Year-round strategies to reduce your lifetime tax burden, prepared by CPAs and Enrolled Agents who already know your full story.",
+      "Year-round tax planning and preparation from CPAs and Enrolled Agents who already know your full story.",
     angle: 0,
   },
   {
@@ -32,7 +32,7 @@ const services = [
     short: "Planning",
     href: "/services/financial-planning",
     description:
-      "A roadmap built around your real life: retirement, education, estate, and risk. It's informed by deep tax expertise most planners don't have.",
+      "A roadmap built around your real life: retirement, education, estate, and risk. CFP® professionals and CPAs build it together, so tax considerations are part of the plan from the start.",
     angle: 240,
   },
 ];
@@ -381,10 +381,10 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.5, delay: 0.1, ease }}
               className="mt-6 text-foreground/70 dark:text-foreground leading-relaxed max-w-lg"
             >
-              Most advisory firms do one thing well and outsource the rest. At
-              United Financial Planning Group, your investment decisions,
-              retirement timeline, and tax planning reinforce each other,
-              because the same team handles all three.
+              Some advisory firms focus on one service and refer the rest to
+              others. At United Financial Planning Group, your investment
+              decisions, retirement timeline, and tax planning are considered
+              together, because the same team handles all three.
             </motion.p>
 
             {/* Interactive detail panel */}
