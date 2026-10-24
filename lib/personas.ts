@@ -22,6 +22,10 @@ export type Persona = {
   resources?: { title: string; description: string; href: string }[];
   /** Optional heading overrides for the resources block (defaults to founder copy). */
   resourcesCopy?: { eyebrow: string; heading: string };
+  /** Optional educational disclosure rendered next to the page's tax or legal statements. */
+  disclosure?: string;
+  /** Optional authoritative sources (label + URL) rendered with the disclosure. */
+  sources?: { label: string; href: string }[];
   faqs: { question: string; answer: string }[];
   faqHeading: string;
   lastUpdated: string;
@@ -1255,7 +1259,7 @@ export const personas: Persona[] = [
     problemsHeading:
       "Two States Can Each Have a Claim on the Same Paycheck",
     problemsSubheading:
-      "If you live in Fairfield County and work for a New York employer, or hold equity in one, your return can involve two sets of rules. Planning for both at the same time may help you avoid surprises at filing time.",
+      "If you live in Fairfield County and work for a New York employer, or hold equity in one, your return can involve two sets of rules. We plan with both sets of rules in view.",
     problems: [
       {
         heading: "You may file in two states every year",
@@ -1270,7 +1274,7 @@ export const personas: Persona[] = [
       {
         heading: "Remote and hybrid workdays can change where income is sourced",
         description:
-          "Many professionals now split time between a home office in Connecticut and an office in New York. The two states may not treat days worked from home the same way, and the treatment can depend on the facts of your employment. A simple log of where you worked can make the filing conversation much easier.",
+          "Many professionals now split time between a home office in Connecticut and an office in New York. The two states may not treat days worked from home the same way, and the treatment can depend on the facts of your employment. A simple log of where you worked gives you and your tax preparer something concrete to review.",
       },
       {
         heading: "Equity compensation adds timing questions on top of the filing questions",
@@ -1373,6 +1377,26 @@ export const personas: Persona[] = [
       eyebrow: "Related reading",
       heading: "Explore the Questions Behind the Decisions",
     },
+    disclosure:
+      "This page is educational and describes tax rules in general terms as of October 24, 2026. It is not tax, legal, or investment advice. Federal and state rules change, their application depends on individual facts, and results vary. Equity compensation and tax decisions may involve trade-offs, including the potential loss of value. Please review your own situation with a qualified tax professional.",
+    sources: [
+      {
+        label: "New York: Form IT-203 nonresident filing information",
+        href: "https://www.tax.ny.gov/pit/ads/it203_information.htm",
+      },
+      {
+        label: "Connecticut: Form CT-1040 instructions (Schedule 2 credit)",
+        href: "https://portal.ct.gov/-/media/drs/forms/2025/income/2025-ct-1040-instructions_1225.pdf?rev=d898db2e610641b9b3e6efe6f89c6fc2",
+      },
+      {
+        label: "IRS: Form 3921, Exercise of an Incentive Stock Option",
+        href: "https://www.irs.gov/forms-pubs/about-form-3921",
+      },
+      {
+        label: "26 U.S.C. § 1202, Qualified small business stock",
+        href: "https://www.law.cornell.edu/uscode/text/26/1202",
+      },
+    ],
     faqs: [
       {
         question:

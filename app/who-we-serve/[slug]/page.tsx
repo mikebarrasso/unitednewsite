@@ -492,6 +492,30 @@ export default async function PersonaPage({
         />
         <section className="relative w-full bg-background py-12 sm:py-16 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+            {(persona.disclosure || persona.sources) && (
+              <div className="mb-8 rounded-xl border border-border bg-muted p-6 text-sm leading-relaxed text-foreground/60">
+                {persona.disclosure && <p>{persona.disclosure}</p>}
+                {persona.sources && (
+                  <>
+                    <p className="mt-4 font-semibold text-foreground/70">Sources</p>
+                    <ul className="mt-2 list-disc space-y-1 pl-5">
+                      {persona.sources.map((source) => (
+                        <li key={source.href}>
+                          <a
+                            href={source.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline underline-offset-2 hover:text-foreground transition-colors"
+                          >
+                            {source.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            )}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-border pt-8">
               <p className="text-sm text-foreground/40">
                 Guidance from our team of CFP® professionals, CPAs, and Enrolled
