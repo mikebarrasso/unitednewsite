@@ -291,10 +291,14 @@ function FounderPlanningSections({
   planningStages,
   preparationItems,
   resources,
+  planningStagesCopy,
+  resourcesCopy,
 }: {
   planningStages?: { title: string; description: string }[] | undefined;
   preparationItems?: string[] | undefined;
   resources?: { title: string; description: string; href: string }[] | undefined;
+  planningStagesCopy?: { eyebrow: string; heading: string; intro: string } | undefined;
+  resourcesCopy?: { eyebrow: string; heading: string } | undefined;
 }): ReactNode {
   if (!planningStages && !preparationItems && !resources) return null;
 
@@ -304,13 +308,14 @@ function FounderPlanningSections({
         <section className="relative w-full bg-muted py-24 sm:py-32 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#1e6eae]">
-              A coordinated planning process
+              {planningStagesCopy?.eyebrow ?? "A coordinated planning process"}
             </p>
             <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground max-w-3xl">
-              Planning Through Each Stage of Founder Wealth
+              {planningStagesCopy?.heading ?? "Planning Through Each Stage of Founder Wealth"}
             </h2>
             <p className="mt-4 text-foreground/60 max-w-2xl leading-relaxed">
-              Founder planning is not a one-time event. The questions can change as your ownership, income, company, and personal priorities evolve.
+              {planningStagesCopy?.intro ??
+                "Founder planning is not a one-time event. The questions can change as your ownership, income, company, and personal priorities evolve."}
             </p>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
               {planningStages.map((stage, index) => (
@@ -353,10 +358,10 @@ function FounderPlanningSections({
         <section className="relative w-full bg-muted py-24 sm:py-28 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#1e6eae]">
-              Founder resources
+              {resourcesCopy?.eyebrow ?? "Founder resources"}
             </p>
             <h2 className="mt-4 text-3xl sm:text-4xl font-medium font-serif leading-tight text-foreground">
-              Explore the Questions Behind the Decisions
+              {resourcesCopy?.heading ?? "Explore the Questions Behind the Decisions"}
             </h2>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
               {resources.map((resource) => (
@@ -476,6 +481,8 @@ export default async function PersonaPage({
           planningStages={persona.planningStages}
           preparationItems={persona.preparationItems}
           resources={persona.resources}
+          planningStagesCopy={persona.planningStagesCopy}
+          resourcesCopy={persona.resourcesCopy}
         />
         <FeatureHighlight />
         <LocalFAQ

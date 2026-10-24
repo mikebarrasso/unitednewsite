@@ -16,8 +16,12 @@ export type Persona = {
   servicesSubheading: string;
   services: { title: string; description: string; href: string }[];
   planningStages?: { title: string; description: string }[];
+  /** Optional heading overrides for the planning stages block (defaults to founder copy). */
+  planningStagesCopy?: { eyebrow: string; heading: string; intro: string };
   preparationItems?: string[];
   resources?: { title: string; description: string; href: string }[];
+  /** Optional heading overrides for the resources block (defaults to founder copy). */
+  resourcesCopy?: { eyebrow: string; heading: string };
   faqs: { question: string; answer: string }[];
   faqHeading: string;
   lastUpdated: string;
@@ -1228,6 +1232,191 @@ export const personas: Persona[] = [
       "Tax Planning",
       "Financial Planning",
       "Investment Management",
+    ],
+    showStandardCta: true,
+  },
+
+  // ─── CONNECTICUT PROFESSIONALS (NY/CT DUAL-STATE) ───
+  {
+    slug: "connecticut-professionals",
+    name: "Connecticut Professionals",
+    seoTitle:
+      "Financial Planning for Connecticut Residents Working in New York",
+    metaDescription:
+      "Planning for Connecticut residents who work in New York: NY/CT dual-state filing, credit for taxes paid to another state, and RSU, ISO, and QSBS timing.",
+    h1: "Two-State Tax and Equity Compensation Planning, Coordinated by One Team",
+    heroSubtitle:
+      "Living in Connecticut and earning income in New York can mean filing in both states, claiming a credit for taxes paid to another state, and timing RSU, ISO, and QSBS decisions with both returns in view. Our CFP® professionals, CPAs, and Enrolled Agents plan these decisions together, so they are coordinated, not siloed.",
+    eyebrow: "For Connecticut Residents Working in New York",
+    icon: "BarChart3",
+    imageUrl:
+      "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Professional reviewing documents in a business meeting",
+    problemsHeading:
+      "Two States Can Each Have a Claim on the Same Paycheck",
+    problemsSubheading:
+      "If you live in Fairfield County and work for a New York employer, or hold equity in one, your return can involve two sets of rules. Planning for both at the same time may help you avoid surprises at filing time.",
+    problems: [
+      {
+        heading: "You may file in two states every year",
+        description:
+          "Connecticut generally taxes its residents on income from all sources. New York generally taxes nonresidents on income from New York sources, which commonly includes wages for work performed in New York. For many Connecticut residents who work in New York, that means a New York nonresident return and a Connecticut resident return, and the two need to agree with each other.",
+      },
+      {
+        heading: "The credit for taxes paid to another state has rules and limits",
+        description:
+          "Connecticut residents may be able to claim a credit on their Connecticut return for income tax paid to New York on the same income. The credit is generally limited, and the amount depends on how each state sources the income. The New York return usually comes first and feeds the Connecticut calculation, so the order of preparation matters. Results vary by individual situation.",
+      },
+      {
+        heading: "Remote and hybrid workdays can change where income is sourced",
+        description:
+          "Many professionals now split time between a home office in Connecticut and an office in New York. The two states may not treat days worked from home the same way, and the treatment can depend on the facts of your employment. A simple log of where you worked can make the filing conversation much easier.",
+      },
+      {
+        heading: "Equity compensation adds timing questions on top of the filing questions",
+        description:
+          "RSU vesting, ISO exercises, and a future sale of QSBS-eligible shares each create income or tax items in specific years. Part of that income may be allocated between New York and Connecticut based on where you worked, and state treatment can differ from federal treatment. Looking at the sequence across tax years, not one event at a time, is a core part of how we plan.",
+      },
+    ],
+    servicesHeading: "How Coordinated Planning Supports Two-State Households",
+    servicesSubheading:
+      "Our CFP® professionals, CPAs, and Enrolled Agents work side by side, so your equity decisions, your two state returns, and your longer-term plan are considered together.",
+    services: [
+      {
+        title: "Equity Compensation Planning",
+        description:
+          "We review RSU vesting, ISO exercise timing, and QSBS records alongside your cash needs and your overall financial picture. Each decision is evaluated for your individual circumstances, and outcomes are not guaranteed.",
+        href: "/services/equity-compensation",
+      },
+      {
+        title: "Tax Planning",
+        description:
+          "Our CPAs and Enrolled Agents estimate your New York nonresident and Connecticut resident tax together during the year, so withholding and estimated payments reflect both states.",
+        href: "/services/tax-planning",
+      },
+      {
+        title: "Tax Preparation",
+        description:
+          "The same team that plans your year prepares your returns, including the New York nonresident return, the Connecticut resident return, and the credit for taxes paid to another state.",
+        href: "/services/tax-preparation",
+      },
+      {
+        title: "Financial Planning",
+        description:
+          "We connect your equity, cash flow, and long-term goals into one plan, so a vesting or exercise decision is considered in the context of the rest of your finances.",
+        href: "/services/financial-planning",
+      },
+    ],
+    planningStages: [
+      {
+        title: "Each tax year: two returns, one picture",
+        description:
+          "Estimating your New York and Connecticut liability together during the year can help your withholding and estimated payments line up with what both states may ask for at filing time.",
+      },
+      {
+        title: "At RSU vesting",
+        description:
+          "Vested RSUs are generally taxed as ordinary income. Part of that income may be allocated between states based on where you worked between grant and vest, and withholding at vest may not match your final liability.",
+      },
+      {
+        title: "At ISO exercise",
+        description:
+          "An ISO exercise can create a federal Alternative Minimum Tax item even when no shares are sold, and state treatment can differ. Modeling the exercise before you make it can help you plan for the cash it may require.",
+      },
+      {
+        title: "Before and after a sale of QSBS-eligible shares",
+        description:
+          "Section 1202 eligibility depends on when the shares were issued, how long they are held, and the company's facts. The rules changed for stock issued after July 4, 2025, so the issue date matters. How each state treats the exclusion, and which state may tax a gain, should be confirmed before a sale.",
+      },
+    ],
+    planningStagesCopy: {
+      eyebrow: "Timing across two states",
+      heading: "Planning Through Each Equity and Tax Moment",
+      intro:
+        "Equity decisions and state filing rules interact at specific points in the year. These are the moments we most often review together.",
+    },
+    preparationItems: [
+      "Your most recent federal, New York nonresident (IT-203), and Connecticut resident (CT-1040) returns",
+      "Recent pay stubs or your W-2, showing state wages and state withholding",
+      "Equity award agreements and vesting schedules for RSUs, ISOs, and any other grants",
+      "RSU release statements and ISO exercise statements (including Form 3921, if you have exercised)",
+      "A simple record of the days you worked in New York and the days you worked from Connecticut",
+      "Any records related to QSBS, such as issue dates and company notices",
+    ],
+    resources: [
+      {
+        title: "QSBS and Section 1202 planning",
+        description:
+          "An educational overview of the questions founders and pre-IPO employees may need to consider around Qualified Small Business Stock.",
+        href: "/blog/qsbs-exclusion-section-1202-planning",
+      },
+      {
+        title: "ISO and NSO tax considerations",
+        description:
+          "A comparison of incentive stock options and nonqualified stock options for startup employees in the New York area.",
+        href: "/blog/equity-compensation-isos-vs-nsos-ny-startup-employees",
+      },
+      {
+        title: "Equity compensation planning for startup employees",
+        description:
+          "How equity compensation can connect with tax planning and a broader personal financial plan.",
+        href: "/blog/equity-compensation-planning-startup-employees",
+      },
+      {
+        title: "Diversifying a concentrated stock position",
+        description:
+          "Tax considerations to weigh when a single company stock becomes a large part of your net worth.",
+        href: "/blog/tax-efficient-diversification-unwind-concentrated-stock",
+      },
+    ],
+    resourcesCopy: {
+      eyebrow: "Related reading",
+      heading: "Explore the Questions Behind the Decisions",
+    },
+    faqs: [
+      {
+        question:
+          "If I live in Connecticut and work in New York, do I file in both states?",
+        answer:
+          "Often, yes. Connecticut generally taxes residents on all of their income, and New York generally taxes nonresidents on income from New York sources, which commonly includes wages for work performed in New York. That usually means a New York nonresident return and a Connecticut resident return. Your situation depends on where you actually perform your work and what other income you have, so it is worth confirming with a tax professional each year.",
+      },
+      {
+        question:
+          "How does the credit for taxes paid to another state work for a Connecticut resident?",
+        answer:
+          "Connecticut residents may be able to claim a credit on their Connecticut return for income tax paid to another qualifying state, such as New York, on the same income. The credit is generally limited to the Connecticut tax attributable to that income, so it may not offset every dollar paid to New York. The New York return is usually prepared first, and its figures feed the Connecticut credit calculation. Rules and forms change, so we confirm current instructions each filing season.",
+      },
+      {
+        question:
+          "Does working from home in Connecticut change what New York can tax?",
+        answer:
+          "It can. New York and Connecticut may not treat remote workdays the same way, and the answer can depend on the facts of your job, such as whether you work remotely by your employer's requirement or by your own choice. Keeping a record of where you work each day gives you and your tax preparer something concrete to rely on. This is an area where rules and agency guidance evolve, so we review it with you rather than assume a single answer.",
+      },
+      {
+        question:
+          "How are RSUs and ISOs taxed if I live in Connecticut and work for a New York company?",
+        answer:
+          "At the federal level, RSUs are generally taxed as ordinary income when they vest, and an ISO exercise may create an Alternative Minimum Tax item in the year of exercise even if you do not sell. At the state level, part of the income may be allocated between New York and Connecticut based on where you worked during the relevant period, and state treatment can differ from federal treatment. Because the outcome depends on your grant terms, work location, and income, we model it for your situation instead of relying on a rule of thumb.",
+      },
+      {
+        question: "Does QSBS apply to my shares, and does my state matter?",
+        answer:
+          "It may. Section 1202 can allow eligible shareholders to exclude part of the gain on qualified small business stock from federal tax, but eligibility depends on when the shares were issued, the holding period, the company's size at issuance, and other conditions. The federal rules changed for stock issued after July 4, 2025, so the date of your grant or exercise is an important fact. States can treat the exclusion differently, so we confirm how each state you are connected to handles it before a sale. Results vary by individual circumstances.",
+      },
+    ],
+    faqHeading: "NY/CT Tax and Equity Compensation: Questions We Hear Often",
+    lastUpdated: "2026-10-24",
+    relatedPersonaSlugs: [
+      "executives",
+      "software-engineers",
+      "startup-founders",
+      "pre-retirees",
+    ],
+    serviceTypes: [
+      "Equity Compensation Planning",
+      "Tax Planning",
+      "Tax Preparation",
+      "Financial Planning",
     ],
     showStandardCta: true,
   },
