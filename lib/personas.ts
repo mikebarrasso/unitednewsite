@@ -775,7 +775,7 @@ export const personas: Persona[] = [
       "Fee-only financial planning for Anthropic employees in NYC. Private-company RSU double-trigger vesting, tender offer liquidity, QSBS, 83(b) elections, and AMT planning. CFPs, CPAs, and EAs under one roof.",
     h1: "Financial Planning Built for Anthropic's Private-Company Equity",
     heroSubtitle:
-      "Anthropic recently leased space at 330 Hudson St in Hudson Square, bringing its NYC headcount to 1,000-plus by end of 2026. Our Manhattan office is minutes away. If you work at Anthropic or another pre-IPO AI company, your equity has a different set of rules from public-company RSUs. We help you navigate them.",
+      "If you work at Anthropic or another pre-IPO AI company, your equity may follow a different set of rules from public-company RSUs. Our Manhattan office serves employees across New York City, and we work with clients nationwide. We help you understand how those rules apply to your situation.",
     eyebrow: "For Anthropic and Pre-IPO AI Company Employees",
     icon: "Code2",
     imageUrl:
@@ -783,29 +783,29 @@ export const personas: Persona[] = [
     imageAlt:
       "AI researcher working at a modern desk with dual monitors displaying code",
     problemsHeading:
-      "Private-Company Equity Works Differently. Most Financial Advisors Treat It Like It Doesn't.",
+      "Private-Company Equity Works Differently From Public-Company Stock",
     problemsSubheading:
-      "At a company like Anthropic, your equity isn't traded on a public exchange. The timing of your taxes, your liquidity, and your planning decisions all depend on mechanics that most financial advisors have never seen up close. Getting them wrong is costly and often irreversible.",
+      "At a company like Anthropic, your equity isn't traded on a public exchange. The timing of your taxes, your liquidity, and your planning decisions all depend on mechanics that differ from public-company stock. Reviewing them early gives you more room to plan.",
     problems: [
       {
-        heading: "Double-trigger RSU vesting means your tax clock starts at the liquidity event, not the vest date",
+        heading: "With double-trigger RSUs, tax timing often follows the liquidity event, not the vest date",
         description:
           "Most public-company RSU guides talk about tax at vest. Private-company RSUs often use double-trigger vesting: shares don't deliver until both a time-based schedule and a liquidity event (IPO, acquisition, or secondary sale) have been satisfied. That structure affects when you owe tax, how much you owe, and what planning moves are still available to you before and after the trigger.",
       },
       {
-        heading: "Tender offers and secondary sales require fast, coordinated decisions",
+        heading: "Tender offers and secondary sales call for coordinated financial and tax decisions",
         description:
-          "Anthropic has offered employees periodic liquidity through tender offers and secondary-market transactions. Each one comes with a short window, limited information, and real tax consequences. Whether to participate, how much to sell, and how to handle the resulting income requires a financial and tax analysis you can't rush.",
+          "Private companies often offer employees periodic liquidity through tender offers and secondary-market transactions. Each one typically comes with a defined window, limited information, and tax consequences. Whether to participate, how much to sell, and how to handle the resulting income all benefit from financial and tax analysis done ahead of time.",
       },
       {
-        heading: "The 83(b) election window is 30 days, and missing it is permanent",
+        heading: "The 83(b) election has a 30-day window, so timing matters",
         description:
-          "If you received restricted stock or early-exercised options at Anthropic before the equity was fully vested, you had 30 days to file an 83(b) election with the IRS. If that window passed without a filing, you may owe ordinary income tax on appreciation that hasn't generated any liquidity yet. For those still holding unvested shares, understanding where you stand on this decision is a foundational planning step.",
+          "If you received restricted stock or early-exercised options before the equity was fully vested, you had 30 days to file an 83(b) election with the IRS. If the window passed without a filing, the equity is generally taxed as it vests instead, based on its value at that time. If you still hold unvested shares, understanding where you stand on this decision is a useful planning step. Outcomes depend on your individual circumstances.",
       },
       {
-        heading: "QSBS and AMT exposure are often overlooked until it's too late",
+        heading: "QSBS eligibility and AMT exposure are worth reviewing early",
         description:
-          "Shares in a company like Anthropic may qualify for the Section 1202 Qualified Small Business Stock exclusion if specific conditions are met and a five-year holding period is satisfied. Separately, if any incentive stock options (ISOs) are involved, exercising them can trigger Alternative Minimum Tax even before you've sold a share. Both situations require proactive, coordinated planning, not year-end discovery.",
+          "Shares in a company like Anthropic may qualify for the Section 1202 Qualified Small Business Stock exclusion if specific conditions are met and a five-year holding period is satisfied. Separately, if any incentive stock options (ISOs) are involved, exercising them can trigger Alternative Minimum Tax even before you've sold a share. Both situations benefit from coordinated planning throughout the year.",
       },
     ],
     servicesHeading:
@@ -845,9 +845,9 @@ export const personas: Persona[] = [
           "Standard public-company RSUs vest on a time-based schedule, and you owe ordinary income tax at vest. Private-company RSUs at companies like Anthropic often use double-trigger vesting: shares only deliver when both a time condition and a liquidity event are satisfied. That second trigger changes when ordinary income tax is due. It also means your planning decisions before a liquidity event, such as whether to participate in a tender offer, carry real tax consequences that are specific to your situation.",
       },
       {
-        question: "Should I participate in Anthropic's tender offer?",
+        question: "Should I participate in a tender offer?",
         answer:
-          "There is no universal answer. Whether to sell, how much to sell, and which shares to sell depends on your cost basis, your current income, your overall financial picture, and your view of the company's long-term value. It also depends on whether you have QSBS-eligible shares you want to hold through the five-year mark, or ISO shares where a sale could affect your AMT position. These are exactly the kinds of decisions we help clients work through before tender offer windows close.",
+          "There is no universal answer. Whether to sell, how much to sell, and which shares to sell depends on your cost basis, your current income, your overall financial picture, and your comfort with holding a concentrated position. It also depends on whether you have QSBS-eligible shares you want to hold through the five-year mark, or ISO shares where a sale could affect your AMT position. These are exactly the kinds of decisions we help clients work through before a tender offer window closes.",
       },
       {
         question: "What is the QSBS five-year holding period and do my Anthropic shares qualify?",
@@ -871,7 +871,7 @@ export const personas: Persona[] = [
       },
     ],
     faqHeading: "Common Questions From Pre-IPO Tech Employees",
-    lastUpdated: "July 2026",
+    lastUpdated: "October 2026",
     relatedPersonaSlugs: ["software-engineers", "executives", "startup-founders"],
     serviceTypes: [
       "Equity Compensation Planning",
