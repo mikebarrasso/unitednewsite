@@ -1,0 +1,36 @@
+{
+  "authorSlug": "gerry-barrasso",
+  "relatedServices": [
+    "/services/retirement-planning",
+    "/services/tax-planning"
+  ],
+  "relatedSlugs": [
+    "pre-retirement-tax-transition-managing-brackets-rmds",
+    "roth-conversion-strategy-pre-retirees",
+    "social-security-claiming-strategy"
+  ],
+  "faqs": [
+    {
+      "question": "What is IRMAA?",
+      "answer": "IRMAA is the income-related monthly adjustment amount, an extra charge added to Medicare Part B and Part D premiums when income is above certain levels. Social Security determines it using modified adjusted gross income from an earlier tax return. Sources: Social Security Administration, reviewed November 2, 2026."
+    },
+    {
+      "question": "How much income triggers IRMAA in 2026?",
+      "answer": "For 2026, IRMAA generally applies when modified adjusted gross income is above $109,000 for a single filer or above $218,000 for joint filers, based on the 2024 tax return. Higher tiers apply at higher income levels, and married filing separately uses a different table. Figures change each year, so confirm current amounts with Social Security or CMS."
+    },
+    {
+      "question": "Which year's income does Medicare use for IRMAA?",
+      "answer": "Social Security generally uses the most recent federal tax return the IRS provides, which is usually from two years earlier. For 2026 premiums, that is generally the 2024 return. Because of this lookback, income in the year you turn 63 may affect premiums when you turn 65."
+    },
+    {
+      "question": "Does investment income count toward IRMAA?",
+      "answer": "It can. IRMAA uses modified adjusted gross income, which is adjusted gross income plus tax-exempt interest. Interest, dividends, and realized capital gains that are part of adjusted gross income may therefore be counted. The exact treatment depends on the account type and your tax return."
+    },
+    {
+      "question": "Can an IRMAA surcharge be reduced if my income falls after I retire?",
+      "answer": "Possibly. Social Security may make a new decision if a qualifying life-changing event, such as work stoppage, reduced hours, marriage, divorce, or the death of a spouse, lowered your income. You request this with Form SSA-44 and supporting documents. Each request is decided on its own facts, and a reduction is not guaranteed."
+    }
+  ],
+  "ctaFocus": "Medicare premiums and retirement income",
+  "reviewedByline": true
+}
