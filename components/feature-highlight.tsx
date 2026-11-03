@@ -370,8 +370,8 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.6, ease }}
               className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
             >
-              What Changes When{" "}
-              <span className="italic">Everything Works Together</span>
+              What Changes When Your Investments, Taxes, and Retirement Plan{" "}
+              <span className="italic">Work Together</span>
             </motion.h2>
 
             <motion.p
@@ -382,9 +382,14 @@ export function FeatureHighlight(): ReactNode {
               className="mt-6 text-foreground/70 dark:text-foreground leading-relaxed max-w-lg"
             >
               Some advisory firms focus on one service and refer the rest to
-              others. At United Financial Planning Group, your investment
-              decisions, retirement timeline, and tax planning are considered
-              together, because the same team handles all three.
+              others. That can leave you carrying the job of connecting advice
+              from different offices. At United Financial Planning Group, your
+              investment decisions, retirement timeline, and tax planning are
+              considered together, because the same team handles all three.
+              When one piece of your plan changes, we look at how it may affect
+              the others before making a recommendation. Coordination does not
+              remove market risk or guarantee a particular tax result, but it
+              is designed to keep your decisions consistent with one another.
             </motion.p>
 
             {/* Interactive detail panel */}
