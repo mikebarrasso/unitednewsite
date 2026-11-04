@@ -1141,7 +1141,7 @@ export const personas: Persona[] = [
         heading:
           "Double-trigger RSU vesting can create a tax bill before you have liquidity",
         description:
-          "Databricks has granted many employees double-trigger RSUs: shares vest only once both a time-based schedule and a liquidity event, such as an IPO, have occurred. If that trigger happens, ordinary income tax may become due on shares that have already met the time-based schedule, even though a post-IPO lock-up period can prevent you from selling for months afterward. Planning for that gap between tax owed and cash available is something we work through with clients before it happens, not after.",
+          "Databricks has granted many employees double-trigger RSUs: shares vest only once both a time-based schedule and a liquidity event, such as an IPO, have occurred. If that trigger happens, ordinary income tax may become due on shares that have already met the time-based schedule, even though a post-IPO lock-up period can prevent you from selling for months afterward. That gap between tax owed and cash available is worth planning for before it happens, not after.",
       },
       {
         heading:
@@ -1169,7 +1169,7 @@ export const personas: Persona[] = [
       {
         title: "Equity Compensation Planning",
         description:
-          "We work through the mechanics specific to Databricks equity: double-trigger RSU vesting, ISO exercise timing with AMT modeling, and QSBS eligibility review for early grants. Each decision is evaluated alongside your full financial picture, and outcomes depend on your individual circumstances.",
+          "Planning around Databricks equity involves double-trigger RSU vesting, ISO exercise timing with AMT modeling, and QSBS eligibility review for early grants. Each decision is evaluated alongside your full financial picture, and outcomes depend on your individual circumstances.",
         href: "/services/equity-compensation",
       },
       {
@@ -1205,7 +1205,7 @@ export const personas: Persona[] = [
       {
         question: "Should I exercise my Databricks ISOs before the IPO?",
         answer:
-          "This depends on your specific situation. Exercising incentive stock options creates a spread between your strike price and the current fair market value, and that spread can trigger Alternative Minimum Tax in the year you exercise, even if you have not sold any shares. Employees who leave the company typically have a limited window, often 90 days, to exercise vested ISOs before they convert to non-qualified stock options, which are taxed differently. Modeling your AMT exposure before you exercise, rather than after, is something we help clients do based on their income, grant size, and available cash.",
+          "This depends on your specific situation. Exercising incentive stock options creates a spread between your strike price and the current fair market value, and that spread can trigger Alternative Minimum Tax in the year you exercise, even if you have not sold any shares. Employees who leave the company typically have a limited window, often 90 days, to exercise vested ISOs before they convert to non-qualified stock options, which are taxed differently. Modeling your AMT exposure before you exercise, rather than after, can help you weigh the decision based on your income, grant size, and available cash.",
       },
       {
         question: "Does QSBS apply to my Databricks stock?",
@@ -1215,12 +1215,12 @@ export const personas: Persona[] = [
       {
         question: "How does Databricks' New York office affect my tax situation?",
         answer:
-          "Databricks opened a research and development hub in New York in early 2026, and both New York State and New York City apply their own income tax on top of federal tax. New York State's top marginal rate is 10.9%, and New York City residents pay an additional resident income tax that tops out near 3.876%. Both can apply to ordinary income recognized when RSUs vest or when an ISO exercise triggers AMT, which can meaningfully change the after-tax value of a vesting event. Coordinating the timing of equity decisions with your New York tax picture is part of how we plan for clients in this situation.",
+          "Databricks opened a research and development hub in New York in early 2026, and both New York State and New York City apply their own income tax on top of federal tax. New York State's top marginal rate is 10.9%, and New York City residents pay an additional resident income tax that tops out near 3.876%. Both can apply to ordinary income recognized when RSUs vest or when an ISO exercise triggers AMT, which can meaningfully change the after-tax value of a vesting event. Coordinating the timing of equity decisions with your New York tax picture is part of planning in this situation.",
       },
       {
         question: "Are you affiliated with or endorsed by Databricks?",
         answer:
-          "No. United Financial Planning Group is an independent firm with no affiliation, partnership, endorsement, or sponsorship relationship with Databricks. We serve employees of Databricks and other pre-IPO technology companies as independent financial advisors. Databricks is referenced on this page only to describe the professional background of clients we work with.",
+          "No. United Financial Planning Group is an independent firm with no affiliation, partnership, endorsement, or sponsorship relationship with Databricks. Databricks is named on this page only to describe the kind of equity compensation questions it addresses.",
       },
     ],
     faqHeading: "Databricks Equity Compensation: Questions We Hear Often",
