@@ -11,6 +11,7 @@ import { locations } from "@/lib/locations";
 import { siteConfig } from "@/lib/metadata";
 import { personas } from "@/lib/personas";
 import { towns } from "@/lib/towns";
+import { CT_HUB_PATH, ctTowns } from "@/lib/ct-towns";
 
 type SitemapChangeFrequency =
   | "always"
@@ -188,6 +189,12 @@ const staticRoutes: StaticRoute[] = [
     priority: 0.9,
   },
   {
+    path: CT_HUB_PATH,
+    sources: ["app/financial-advisor-connecticut/page.tsx", "lib/ct-towns.ts"],
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
     path: "/financial-advisor-manhattan",
     sources: ["app/financial-advisor-manhattan/page.tsx"],
     changeFrequency: "monthly",
@@ -276,6 +283,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: town.tier === 1 ? 0.8 : town.tier === 2 ? 0.7 : 0.6,
   }));
 
+  const ctTownLastModified = getLatestModifiedDate([
+    "app/financial-advisor-connecticut/[slug]/page.tsx",
+    "lib/ct-towns.ts",
+  ]);
+  const ctTownPages: MetadataRoute.Sitemap = ctTowns.map((town) => ({
+    url: `${siteConfig.url}${CT_HUB_PATH}/${town.slug}`,
+    lastModified: ctTownLastModified,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   const personaLastModified = getLatestModifiedDate([
     "app/who-we-serve/[slug]/page.tsx",
     "lib/personas.ts",
@@ -301,6 +319,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...locationPages,
     ...personaPages,
     ...townPages,
+    ...ctTownPages,
     ...blogPostPages,
   ];
 }
