@@ -213,9 +213,9 @@ export default function FinancialAdvisorConnecticutPage(): ReactNode {
         />
         <LocalHero
           headline="Fee-Only Financial Planning for Connecticut Residents"
-          subtitle="Many Fairfield County households have income in New York, equity compensation, and a home in Connecticut. Our CFP® professionals, CPAs, and Enrolled Agents plan across both states, so your plan and your taxes are coordinated, not siloed."
+          subtitle="Fairfield County households may have income in New York, equity compensation, and a home in Connecticut. Our CFP® professionals, CPAs, and Enrolled Agents plan across both states, so your plan and your taxes are coordinated, not siloed."
           badge="Fairfield County, CT"
-          locationLabel="CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents."
+          locationLabel="CFP® professionals, CPAs, and Enrolled Agents under one roof."
         />
         <FeatureHighlight />
         <LocalValueProp

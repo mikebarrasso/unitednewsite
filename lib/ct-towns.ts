@@ -38,7 +38,7 @@ export const ctTowns: CtTown[] = [
       "Greenwich households may have income that touches New York, equity or deferred compensation, and a concentrated position in one employer. Our CFP® professionals, CPAs, and Enrolled Agents plan these pieces together, so your investments, your tax return, and your compensation decisions are coordinated, not siloed.",
     heroBadge: "Fee-Only Planning for Greenwich, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning Built Around a Greenwich Household",
     valuePropSubheading:
       "Compensation that spans several forms, a New York workplace, and a Connecticut home can each pull a plan in a different direction. This page describes how we approach that coordination. Outcomes depend on your individual circumstances.",
@@ -109,7 +109,7 @@ export const ctTowns: CtTown[] = [
       "Stamford professionals may work for a local employer, commute into New York, or split the week between a home office and an office in either state. Each setup can change how your income is taxed and how your equity compensation is planned. Our CFP® professionals, CPAs, and Enrolled Agents work through those details together.",
     heroBadge: "Fee-Only Planning for Stamford, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning for Stamford Professionals",
     valuePropSubheading:
       "Equity awards, bonuses, and a workweek that crosses state lines call for a plan that looks at the whole picture. Results vary by individual situation and may involve trade-offs.",
@@ -179,7 +179,7 @@ export const ctTowns: CtTown[] = [
       "When one or both earners work in New York and the family lives in Darien, taxes, retirement savings, and investments all have to fit together across two states. Our CFP® professionals, CPAs, and Enrolled Agents plan the household as a whole.",
     heroBadge: "Fee-Only Planning for Darien, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning for the Whole Darien Household",
     valuePropSubheading:
       "A household plan looks at savings, taxes, investments, and long-term goals together. The right choices depend on your circumstances and involve trade-offs.",
@@ -224,7 +224,7 @@ export const ctTowns: CtTown[] = [
       {
         question: "How often do we meet?",
         answer:
-          "It depends on the engagement and your needs. Many clients prefer a regular planning meeting plus check-ins around specific events such as a job change, a vesting date, or tax season.",
+          "It depends on the engagement and your needs. Some households prefer a regular planning meeting plus check-ins around specific events such as a job change, a vesting date, or tax season.",
       },
       {
         question: "Do we have to meet in person?",
@@ -248,7 +248,7 @@ export const ctTowns: CtTown[] = [
       "The years before and after retirement bring decisions about Social Security timing, Roth conversions, required distributions, and Medicare premiums that affect each other. Our CFP® professionals, CPAs, and Enrolled Agents plan those decisions together for New Canaan households.",
     heroBadge: "Fee-Only Planning for New Canaan, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning the Years Around Retirement",
     valuePropSubheading:
       "Retirement planning is a series of linked choices. The sequence you choose can change your tax picture, and each option carries trade-offs. Results depend on individual circumstances.",
@@ -316,7 +316,7 @@ export const ctTowns: CtTown[] = [
       "Owners and founders often have personal and business finances that affect each other: how you pay yourself, which retirement plan fits, and what happens when equity becomes liquid. Our CFP® professionals, CPAs, and Enrolled Agents plan both sides together for Westport households.",
     heroBadge: "Fee-Only Planning for Westport, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning for Owners and Founders",
     valuePropSubheading:
       "The business and the household share one balance sheet. Coordinated planning aims to keep the two aligned. Outcomes vary and involve trade-offs.",
@@ -384,7 +384,7 @@ export const ctTowns: CtTown[] = [
       "Technology professionals in Norwalk may hold RSUs, stock options, or shares in a private company, and may work remotely for an employer in another state. Our CFP® professionals, CPAs, and Enrolled Agents plan equity decisions and state taxes together.",
     heroBadge: "Fee-Only Planning for Norwalk, CT",
     heroLabel:
-      "CFP® professionals, CPAs, and Enrolled Agents working with Connecticut residents.",
+      "CFP® professionals, CPAs, and Enrolled Agents under one roof.",
     valuePropHeading: "Planning for Norwalk Technology Professionals",
     valuePropSubheading:
       "Equity compensation can create tax bills before the shares can be sold. Planning ahead gives you more options, and each option has trade-offs.",
