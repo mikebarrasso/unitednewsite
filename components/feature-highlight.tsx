@@ -353,7 +353,13 @@ function ServiceFlow({
   );
 }
 
-export function FeatureHighlight(): ReactNode {
+export function FeatureHighlight({
+  headingLead = "What Changes When",
+  headingAccent = "Everything Works Together",
+}: {
+  headingLead?: string;
+  headingAccent?: string;
+} = {}): ReactNode {
   const [activeId, setActiveId] = useState<string | null>(null);
   const activeService = services.find((s) => s.id === activeId);
 
@@ -370,8 +376,8 @@ export function FeatureHighlight(): ReactNode {
               transition={{ duration: 0.6, ease }}
               className="text-3xl sm:text-4xl lg:text-5xl font-medium font-serif leading-tight text-foreground"
             >
-              What Changes When{" "}
-              <span className="italic">Everything Works Together</span>
+              {headingLead}{" "}
+              <span className="italic">{headingAccent}</span>
             </motion.h2>
 
             <motion.p

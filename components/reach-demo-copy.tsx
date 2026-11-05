@@ -35,7 +35,10 @@ function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {
             Retire with a plan you understand , and a team that answers.
           </>
         ) : (
-          <>Integrated Financial Planning, Wealth Management &amp; Tax</>
+          <>
+            Integrated Financial Planning, Wealth Management &amp; Tax Planning
+            Under One Roof
+          </>
         )}
       </h1>
 

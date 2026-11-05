@@ -178,7 +178,10 @@ export default function HomePage(): ReactNode {
       <main id="main-content" className="flex-1">
         <LazyHero />
         <TrustedBy />
-        <FeatureHighlight />
+        <FeatureHighlight
+          headingLead="What Changes When Your Planning, Investments, and Taxes"
+          headingAccent="All Work Together"
+        />
         <FeatureCards />
         <LazyFeatures2 />
         <Stats />
