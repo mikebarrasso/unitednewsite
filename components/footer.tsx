@@ -50,6 +50,7 @@ const footerLinks = {
       { label: "Long Island Advisor", href: "/financial-advisor-long-island" },
       { label: "Manhattan Advisor", href: "/financial-advisor-manhattan" },
       { label: "NYC Advisor", href: "/financial-advisor-nyc" },
+      { label: "Connecticut Advisor", href: "/financial-advisor-connecticut" },
       { label: "Hauppauge, NY Office (HQ)", href: "/locations/hauppauge-ny" },
       { label: "Manhattan, NY Office", href: "/locations/manhattan-ny" },
       { label: "Lake Success, NY Office", href: "/locations/lake-success-ny" },
