@@ -36,8 +36,7 @@ function HeroCopy({ demoReview }: { demoReview: boolean }): ReactNode {
           </>
         ) : (
           <>
-            Integrated Financial Planning, Wealth Management &amp; Tax Planning
-            Under One Roof
+            Integrated Financial Planning, Wealth Management &amp; Tax
           </>
         )}
       </h1>
