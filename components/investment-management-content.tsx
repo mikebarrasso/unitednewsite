@@ -524,7 +524,7 @@ const taxTiles = [
     icon: TrendingDown,
     title: "Tax-Loss Harvesting",
     description:
-      "When positions decline, we strategically realize losses to offset gains elsewhere, coordinated with your actual tax situation, because a loss that saves you 37 cents on the dollar is worth a lot more than one that saves you 12.",
+      "When positions decline, we strategically realize losses to offset gains elsewhere, coordinated with your actual tax situation, because the tax value of a loss depends on your tax bracket and the type of gain it offsets. Results vary and involve trade-offs.",
   },
   {
     icon: Map,

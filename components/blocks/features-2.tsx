@@ -25,7 +25,7 @@ const features = [
         {
           label: "Roth conversion strategy",
           status: "In Progress",
-          detail: "$85K converted in low-bracket year",
+          detail: "Conversion sized for a low-bracket year",
         },
         {
           label: "Health insurance bridge modeled",
@@ -54,7 +54,7 @@ const features = [
         {
           label: "RMD pre-planning active",
           status: "On Track",
-          detail: "Projected savings: $142K",
+          detail: "Distribution timing reviewed",
         },
         {
           label: "IRMAA threshold managed",
@@ -78,7 +78,7 @@ const features = [
         {
           label: "Entity structure reviewed",
           status: "Optimized",
-          detail: "S-Corp election saving $38K/yr",
+          detail: "S-Corp election evaluated",
         },
         {
           label: "Succession plan drafted",
@@ -107,7 +107,7 @@ const features = [
         {
           label: "QSBS & holding period tracked",
           status: "Active",
-          detail: "Potential $10M+ exclusion modeled",
+          detail: "Potential exclusion modeled",
         },
         {
           label: "Secondary / tender readiness",
@@ -165,7 +165,7 @@ const features = [
         {
           label: "ISO exercise plan modeled",
           status: "Ready",
-          detail: "AMT impact: $12K vs $47K naive",
+          detail: "AMT impact modeled by scenario",
         },
         {
           label: "RSU vesting tax strategy",
@@ -194,7 +194,7 @@ const features = [
         {
           label: "Charitable giving strategy",
           status: "Executing",
-          detail: "DAF funded, $250K tax benefit",
+          detail: "Donor-advised fund strategy reviewed",
         },
         {
           label: "Estate plan coordinated",

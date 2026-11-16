@@ -21,7 +21,7 @@ export function Features5() {
       icon: ChartLine,
       title: "Social Security Optimization",
       description:
-        "The difference between the best and worst claiming strategy for a married couple can be six figures over a lifetime. We model your specific situation (factoring in your tax picture, your other income sources, and your longevity assumptions) so you make this irreversible decision with confidence.",
+        "For a married couple, the choice of claiming strategy can meaningfully change lifetime benefits, depending on health, longevity and taxes. We model your specific situation (factoring in your tax picture, your other income sources, and your longevity assumptions) so you make this irreversible decision with confidence.",
     },
     {
       icon: FileSpreadsheet,

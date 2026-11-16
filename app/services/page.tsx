@@ -57,7 +57,7 @@ const services = [
 const blindSpots = [
   "Your advisor rebalances your portfolio in December, triggering capital gains your CPA didn't expect and can't offset.",
   "You convert to a Roth IRA based on a rule of thumb, without modeling how it impacts your Medicare premiums two years later.",
-  "You exercise stock options on your own timeline, unaware that waiting three months would have saved you $40,000 in taxes.",
+  "You exercise stock options on your own timeline, unaware that the timing of the exercise can change your tax picture in ways that are hard to see after the fact.",
 ];
 
 function ServicesPageSchema() {

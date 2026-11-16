@@ -174,8 +174,9 @@ export function WhyDifferentSection() {
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease }} className="text-base sm:text-lg text-muted-foreground leading-relaxed">
             Every grant type carries its own tax rules, timing sensitivities,
-            and interactions with your other income. The difference between
-            exercising in December versus January can be five figures.
+            and interactions with your other income. The timing of an
+            exercise, such as December versus January, can change the tax
+            outcome depending on your situation.
           </motion.p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
