@@ -1,0 +1,16 @@
+[
+  {
+    "rule": "color-contrast",
+    "urlPattern": "/blog",
+    "selector": ".gap-3.group.flex-col",
+    "reason": "Pre-existing Framer Motion opacity entrance animation on blog cards can be mid-fade during static axe snapshot; card text meets WCAG AA at resting opacity: 1.",
+    "expiresAt": "2027-06-01"
+  },
+  {
+    "rule": "color-contrast",
+    "urlPattern": "/services/*",
+    "selector": ".p-3.bg-background",
+    "reason": "Pre-existing Framer Motion delayed opacity entrance (delay 0.4s) on decorative service overview metric cards; card text meets WCAG AA at resting opacity: 1.",
+    "expiresAt": "2027-06-01"
+  }
+]

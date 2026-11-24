@@ -1,3 +1,4 @@
+import { withWealthReach } from "@wealthreach/site-kit/next";
 import type { NextConfig } from "next";
 
 const legacyRedirects = [
@@ -306,12 +307,9 @@ const legacyRedirects = [
   },
 ] satisfies Array<{ source: string; destination: string }>;
 
-const nextConfig: NextConfig = {
-  devIndicators: false,
-  
-  allowedDevOrigins: ["*.vercel.run", "*.vercel.app", "*.modal.run", "*.modal.host", "*.w.modal.run", "*.w.modal.host"],
-trailingSlash: false,
-  productionBrowserSourceMaps: false,
+const nextConfig: NextConfig = withWealthReach({
+  rootDir: __dirname,
+  trailingSlash: false,
   // Remove console.log in production
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
@@ -362,6 +360,6 @@ trailingSlash: false,
       },
     ];
   },
-};
+});
 
 export default nextConfig;

@@ -21,7 +21,7 @@ export function Breadcrumb({ items }: BreadcrumbProps): ReactNode {
         <li>
           <Link
             href="/"
-            className="text-xs text-foreground/40 hover:text-foreground/70 transition-colors"
+            className="text-xs text-foreground/70 hover:text-foreground transition-colors"
           >
             Home
           </Link>
@@ -29,19 +29,19 @@ export function Breadcrumb({ items }: BreadcrumbProps): ReactNode {
         {items.map((item, index) => (
           <li key={item.label} className="flex items-center gap-1.5">
             <ChevronRight
-              className="w-3 h-3 text-foreground/25 shrink-0"
+              className="w-3 h-3 text-foreground/40 shrink-0"
               aria-hidden="true"
             />
             {item.href && index < items.length - 1 ? (
               <Link
                 href={item.href}
-                className="text-xs text-foreground/40 hover:text-foreground/70 transition-colors"
+                className="text-xs text-foreground/70 hover:text-foreground transition-colors"
               >
                 {item.label}
               </Link>
             ) : (
               <span
-                className="text-xs text-foreground/60"
+                className="text-xs text-foreground/75"
                 aria-current="page"
               >
                 {item.label}

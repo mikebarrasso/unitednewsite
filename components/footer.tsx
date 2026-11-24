@@ -3,8 +3,11 @@
 import { type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CookieSettingsButton } from "@/components/consent/cookie-settings-button";
-import { siteConfig } from "@/lib/config";
+import { PrivacyChoicesButton } from "@wealthreach/site-kit/consent";
+import {
+  disclosureLinkProps,
+  disclosureRegionProps,
+} from "@wealthreach/site-kit/disclosures";
 
 const footerLinks = {
   services: {
@@ -58,11 +61,15 @@ const footerLinks = {
   },
 };
 
-const legalLinks = [
+const legalLinks: Array<{
+  label: string;
+  href: string;
+  mark?: "form-adv" | "form-crs";
+}> = [
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Form ADV Part 2A", href: "/adv-part-2a" },
+  { label: "Form ADV Part 2A", href: "/adv-part-2a", mark: "form-adv" },
   { label: "Form ADV Part 2B", href: "/adv-part-2b" },
-  { label: "Form CRS", href: "/form-crs" },
+  { label: "Form CRS", href: "/form-crs", mark: "form-crs" },
 ];
 
 export function Footer(): ReactNode {
@@ -103,7 +110,7 @@ export function Footer(): ReactNode {
                     className="h-14 w-auto hidden dark:block"
                   />
                 </Link>
-                <p className="mt-4 text-sm text-foreground/50 dark:text-white max-w-xs leading-relaxed">
+                <p className="mt-4 text-sm text-foreground/70 dark:text-white max-w-xs leading-relaxed">
                   Fee-only financial planning, investment management, tax
                   planning, and tax preparation, integrated under one roof for
                   clients nationwide.
@@ -112,7 +119,7 @@ export function Footer(): ReactNode {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12">
                 {Object.values(footerLinks).map((section) => (
                   <div key={section.title}>
-                    <h3 className="text-xs font-medium uppercase tracking-wider text-foreground/40 dark:text-white mb-5">
+                    <h3 className="text-xs font-medium uppercase tracking-wider text-foreground/70 dark:text-white mb-5">
                       {section.title}
                     </h3>
                     <ul className="space-y-3">
@@ -137,9 +144,9 @@ export function Footer(): ReactNode {
 
       <div className="relative flex items-center justify-center px-6 sm:px-8 pb-12">
         <div className="relative w-full max-w-270">
-          <div className="pt-8 px-8 sm:px-12">
+          <div className="pt-8 px-8 sm:px-12" {...disclosureRegionProps()}>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <p className="text-sm text-foreground/50 dark:text-white">
+              <p className="text-sm text-foreground/70 dark:text-white">
                 © {new Date().getFullYear()} United Financial Planning Group.
                 All rights reserved.
               </p>
@@ -148,17 +155,19 @@ export function Footer(): ReactNode {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="text-sm text-foreground/50 dark:text-white hover:text-foreground dark:hover:text-white transition-colors"
+                    {...(link.mark ? disclosureLinkProps(link.mark) : {})}
+                    className="text-sm text-foreground/70 dark:text-white hover:text-foreground dark:hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
                 ))}
-                {siteConfig.visitors?.enabled && (
-                  <CookieSettingsButton className="text-sm text-foreground/50 dark:text-white hover:text-foreground dark:hover:text-white transition-colors" />
-                )}
+                <PrivacyChoicesButton
+                  label="Privacy choices"
+                  className="text-sm text-foreground/70 dark:text-white hover:text-foreground dark:hover:text-white transition-colors cursor-pointer"
+                />
               </div>
             </div>
-            <p className="mt-6 text-[11px] text-foreground/30 dark:text-white leading-relaxed max-w-4xl">
+            <p className="mt-6 text-[11px] text-foreground/70 dark:text-white leading-relaxed max-w-4xl">
               United Financial Planning Group is a registered investment advisor
               with the U.S. Securities and Exchange Commission (SEC).
               Registration does not imply a certain level of skill or training.
@@ -169,7 +178,7 @@ export function Footer(): ReactNode {
               including the potential loss of principal. Please review our{" "}
               <Link
                 href="/adv-part-2a"
-                className="underline hover:text-foreground/50 dark:hover:text-white transition-colors"
+                className="underline hover:text-foreground dark:hover:text-white transition-colors"
               >
                 Form ADV Part 2A
               </Link>{" "}

@@ -12,7 +12,7 @@
   --united-blue-dark: oklch(0.427 0.117 251.7);
   --united-blue-muted: oklch(0.933 0.026 248.2);
   --muted: oklch(0.965 0.005 248);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(0.48 0 0);
   --border: oklch(0.922 0.005 248);
   --ring: var(--united-blue);
   --accent: var(--united-blue);
@@ -45,9 +45,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0.005 248);
   --sidebar-ring: var(--united-blue);
+  --wr-surface: var(--background);
+  --wr-foreground: var(--foreground);
+  --wr-border: var(--border);
+  --wr-primary: var(--primary);
+  --wr-primary-foreground: var(--primary-foreground);
+  --wr-radius: var(--radius);
 }
 
 .dark {
+  --wr-primary-foreground: #0b1524;
   --background: oklch(0.145 0.005 248);
   --foreground: oklch(0.985 0 0);
   --muted: oklch(0.22 0.01 248);

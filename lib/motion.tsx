@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type MotionProps, type Variants } from "motion/react";
+import { motion, MotionConfig, type MotionProps, type Variants } from "motion/react";
 import {
   createContext,
   useContext,
@@ -40,9 +40,11 @@ export function ReducedMotionProvider({
   );
 
   return (
-    <ReducedMotionContext.Provider value={prefersReducedMotion}>
-      {children}
-    </ReducedMotionContext.Provider>
+    <MotionConfig reducedMotion="user">
+      <ReducedMotionContext.Provider value={prefersReducedMotion}>
+        {children}
+      </ReducedMotionContext.Provider>
+    </MotionConfig>
   );
 }
 

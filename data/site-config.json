@@ -2,7 +2,7 @@
   "version": 3,
   "siteId": "fc1baa26-67fb-4bda-8df5-8a06ead90442",
   "advisorId": "10296a07-3aa0-4d89-a4d8-f9f1553c540f",
-  "leadsApiUrl": "https://attract.wealthreach.ai/api/attract/leads",
+  "leadsApiUrl": "https://attract.wealthreach.ai/api/attract/site-leads",
   "analyticsEndpoint": "https://attract.wealthreach.ai/api/analytics/events",
   "analyticsApiKey": "ff291d99-2e5f-4173-a223-ff2b4d48688f",
   "brand": {
@@ -17,7 +17,12 @@
     "mode": "embed"
   },
   "consent": {
-    "enabled": false
+    "enabled": true,
+    "policyUrl": "/privacy-policy",
+    "hideFloatingPrivacyButton": true
+  },
+  "integrations": {
+    "ga4MeasurementId": "G-GN2NWJH73H"
   },
   "visitors": {
     "enabled": true,
@@ -90,6 +95,8 @@
     "siteUrl": "https://www.unitedfpg.com"
   },
   "compliance": {
+    "formAdvUrl": "/adv-part-2a",
+    "formCrsUrl": "/form-crs",
     "disclosures": [
       "United Financial Planning Group is a registered investment advisor with the U.S. Securities and Exchange Commission (SEC). Registration does not imply a certain level of skill or training. Information presented on this website is for educational purposes and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. Past performance is not indicative of future results. All investing involves risk, including the potential loss of principal. Please review our Form ADV Part 2A for important disclosures."
     ]

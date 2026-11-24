@@ -1,4 +1,7 @@
+import { defineSiteConfig } from "@wealthreach/site-kit/config";
 import siteConfigData from "../data/site-config.json";
+
+export const getWealthReachConfig = defineSiteConfig(siteConfigData);
 
 /** Missing or invalid visitor settings leave Website Intelligence disabled. */
 function parseVisitors(value: unknown): {
