@@ -1,15 +1,19 @@
 import { Header } from "@/components/header";
-import { VisitorConsentBanner } from "@/components/consent/visitor-consent-banner";
 import { Providers } from "@/components/providers";
 import { SkipToContent } from "@/components/skip-to-content";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { baseMetadata } from "@/lib/metadata";
-import { siteConfig } from "@/lib/config";
-import { visitorConsentBootstrap } from "@/lib/visitor-consent";
+import { getWealthReachConfig } from "@/lib/config";
+import { WealthReachHead } from "@wealthreach/site-kit/a11y";
+import { PageTracker } from "@wealthreach/site-kit/analytics";
+import {
+  ConsentBanner,
+  ConsentGate,
+  ConsentProvider,
+} from "@wealthreach/site-kit/consent";
 import type { Metadata, Viewport } from "next";
 import { geistSans, geistMono } from "./google-fonts";
 import { Analytics } from "@vercel/analytics/next";
-import Script from "next/script";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -30,39 +34,30 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode;
 }>): ReactNode {
+  const wrConfig = getWealthReachConfig();
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {siteConfig.visitors?.enabled && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: visitorConsentBootstrap(siteConfig.visitors.siteScriptUrl),
-            }}
-          />
-        )}
+        <WealthReachHead config={wrConfig} />
       </head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-GN2NWJH73H"
-        strategy="lazyOnload"
-      />
-      <Script id="google-analytics" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-GN2NWJH73H');
-        `}
-      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
         <Providers>
-          <SkipToContent />
-          <Header />
-          <ThemeSwitch />
-          {children}
-          {siteConfig.visitors?.enabled && <VisitorConsentBanner />}
-          <Analytics />
+          <ConsentProvider config={wrConfig}>
+            <SkipToContent />
+            <Header />
+            <ThemeSwitch />
+            {children}
+            <ConsentBanner />
+            <PageTracker />
+            {!wrConfig.visitors?.enabled && (
+              <ConsentGate>
+                <Analytics />
+              </ConsentGate>
+            )}
+          </ConsentProvider>
         </Providers>
       </body>
     </html>

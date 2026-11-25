@@ -322,27 +322,31 @@ export function Features2() {
                 const isActive = activeIndex === index;
 
                 return (
-                  <motion.button
+                  <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                    onClick={() => handleFeatureClick(index)}
-                    className={`w-full text-left flex items-start gap-3 py-3 px-4 rounded-lg transition-[background-color] duration-200 cursor-pointer ${
+                    className={`w-full rounded-lg transition-[background-color] duration-200 ${
                       isActive
                         ? "bg-muted"
                         : "hover:bg-muted/50"
                     }`}
                   >
-                    <Icon
-                      className={`w-5 h-5 mt-0.5 shrink-0 transition-colors duration-200 ${
-                        isActive
-                          ? "text-foreground"
-                          : "text-muted-foreground"
-                      }`}
-                    />
-                    <div>
+                    <button
+                      type="button"
+                      aria-expanded={isActive}
+                      onClick={() => handleFeatureClick(index)}
+                      className="w-full text-left flex items-start gap-3 py-3 px-4 cursor-pointer"
+                    >
+                      <Icon
+                        className={`w-5 h-5 mt-0.5 shrink-0 transition-colors duration-200 ${
+                          isActive
+                            ? "text-foreground"
+                            : "text-muted-foreground"
+                        }`}
+                      />
                       <span
                         className={`text-base sm:text-lg font-medium transition-colors duration-200 block ${
                           isActive
@@ -352,31 +356,30 @@ export function Features2() {
                       >
                         {feature.title}
                       </span>
-                      <AnimatePresence>
-                        {isActive && (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="overflow-hidden"
+                    </button>
+                    <AnimatePresence>
+                      {isActive && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden pl-12 pr-4 pb-3"
+                        >
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {feature.description}
+                          </p>
+                          <Link
+                            href={feature.href}
+                            className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-[#1e6eae] hover:opacity-70 transition-opacity mt-2"
                           >
-                            <p className="text-sm text-muted-foreground leading-relaxed mt-1">
-                              {feature.description}
-                            </p>
-                            <Link
-                              href={feature.href}
-                              className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-[#1e6eae] hover:opacity-70 transition-opacity mt-2"
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              Learn more
-                              <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
-                            </Link>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  </motion.button>
+                            Learn more
+                            <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
+                          </Link>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
                 );
               })}
             </div>

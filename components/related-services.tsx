@@ -39,18 +39,18 @@ export function RelatedServices({
                 <p className="text-sm font-semibold text-foreground group-hover:text-[#1e6eae] transition-colors">
                   {service.label}
                 </p>
-                <p className="text-xs text-foreground/50 mt-1 leading-relaxed">
+                <p className="text-xs text-foreground/70 mt-1 leading-relaxed">
                   {service.description}
                 </p>
               </div>
-              <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-[#1e6eae] group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5" />
+              <ArrowRight className="w-4 h-4 text-foreground/40 group-hover:text-[#1e6eae] group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5" />
             </Link>
           ))}
         </div>
         <div className="mt-8">
           <Link
             href="/services"
-            className="inline-flex items-center gap-1.5 text-sm text-foreground/50 hover:text-foreground transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-foreground/70 hover:text-foreground transition-colors"
           >
             View all services
             <ArrowRight className="w-3.5 h-3.5" />
