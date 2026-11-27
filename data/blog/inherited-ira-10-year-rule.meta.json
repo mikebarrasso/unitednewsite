@@ -22,6 +22,14 @@
       "answer": "A surviving spouse may have options that differ from those available to a non-spouse beneficiary. The appropriate approach depends on the account, beneficiary designation, age, and other facts."
     },
     {
+      "question": "How do inherited IRA rules differ for a surviving spouse?",
+      "answer": "A surviving spouse who is the sole beneficiary generally can treat the IRA as their own, roll it into their own IRA, or remain a beneficiary. Each path has different distribution timing and tax trade-offs, so the choice depends on the spouse's age, the owner's required beginning date, and account details."
+    },
+    {
+      "question": "Are inherited IRA distributions taxable?",
+      "answer": "Distributions from an inherited traditional IRA are generally taxed as ordinary income to the beneficiary, except for any after-tax basis. Inherited Roth IRA distributions are generally tax-free when the five-year period has been met, and earnings may be taxable if it has not. State rules and individual facts can change the result."
+    },
+    {
       "question": "Do inherited Roth IRAs have annual RMDs during the 10-year period?",
       "answer": "A typical non-eligible designated beneficiary subject to the 10-year rule generally does not have annual RMDs in years one through nine for an inherited Roth IRA, but the account generally must still be fully distributed by the end of year 10."
     }
